@@ -754,3 +754,55 @@
 [2023-04-13 01:04:49] INFO root fetch - main [MainThread]: End processing [dann5]: success
 [2023-04-13 01:04:55] INFO root fetch - main [MainThread]: End processing [dnacentersdk]: success
 [2023-04-13 01:04:55] INFO root fetch - main [MainThread]: Store serial: [17682899]
+[2023-04-13 01:10:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682899]
+[2023-04-13 01:10:05] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 01:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smobot-api
+[2023-04-13 01:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-04-13 01:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sal-code-generator
+[2023-04-13 01:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: summerepi2
+[2023-04-13 01:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: athletes-unlimited-py
+[2023-04-13 01:10:05] INFO root fetch - processPackages [athletes-unlimited-py]: New version: [0.0.1a5] Old Version: [0.0.1a4]
+[2023-04-13 01:10:05] INFO root fetch - processPackages [smobot-api]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-13 01:10:05] INFO root fetch - processPackages [sal-code-generator]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-13 01:10:05] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.271] Old Version: [0.3.270]
+[2023-04-13 01:10:05] INFO root fetch - processPackages [summerepi2]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-13 01:10:05] ERROR root fetch - processPackages [smobot-api]: Unable to fetch info: No such project/version 'smobot-api' 0.0.3
+[2023-04-13 01:10:05] INFO root fetch - processPackages [smobot-api]: Start processing: smobot-api
+[2023-04-13 01:10:05] INFO root fetch - main [MainThread]: End processing [smobot-api] error
+[2023-04-13 01:10:05] WARNING root fetch - processPackages [smobot-api]: Skipping, unable to determine old version
+[2023-04-13 01:10:05] INFO root fetch - processPackages [smobot-api]: Start processing: certora-cli-alpha-master
+[2023-04-13 01:10:05] INFO root fetch - main [MainThread]: End processing [smobot-api] error
+[2023-04-13 01:10:05] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230412.23.12.934517] Old Version: [20230412.22.31.217951]
+[2023-04-13 01:10:05] INFO root fetch - processPackages [athletes-unlimited-py]: Downloading https://files.pythonhosted.org/packages/d3/ae/24e9601e01844c53df29c5b820d5e2c8e7fe96ee5ef2741b8fbff3c7d6a2/athletes_unlimited_py-0.0.1a4.tar.gz
+[2023-04-13 01:10:05] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/47/03/25a6c0e3afc59c8043593eb3269f96055f4bcb1c8c5f62209f80b8865333/pepperize.cdk-ses-smtp-credentials-0.3.271.tar.gz
+[2023-04-13 01:10:05] INFO root fetch - processPackages [sal-code-generator]: Downloading https://files.pythonhosted.org/packages/e7/ff/ae0108839ce0d38385d4685d834452c5dce00b1064ac9b05b4f16918b3d3/sal-code-generator-0.0.3.tar.gz
+[2023-04-13 01:10:05] INFO root fetch - processPackages [summerepi2]: Downloading https://files.pythonhosted.org/packages/47/f1/0a2e7a8eac27261f0af48e23d86337346310170c867cf5f69d96f5e9bcec/summerepi2-1.2.1.tar.gz
+[2023-04-13 01:10:05] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/6e/a8/68325a14bbae440bb6e1cea59e21b7f122d54a1e5e1bbe8a588e4d2f5c99/certora-cli-alpha-master-20230412.22.31.217951.tar.gz
+[2023-04-13 01:10:05] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-04-13 01:10:05] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.270.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.271.tar.gz --markdown 20230413/p/pepperize.cdk-ses-smtp-credentials/0.3.270-0.3.271/diff.md --exclude *.pyd
+[2023-04-13 01:10:05] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 28058030>=10485760
+[2023-04-13 01:10:05] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: ghost-in-bash
+[2023-04-13 01:10:05] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-13 01:10:05] WARNING root fetch - processPackages [ghost-in-bash]: Skipping, unable to determine old version
+[2023-04-13 01:10:05] INFO root fetch - processPackages [ghost-in-bash]: Start processing: esphome
+[2023-04-13 01:10:05] INFO root fetch - main [MainThread]: End processing [ghost-in-bash] error
+[2023-04-13 01:10:05] INFO root fetch - processPackages [sal-code-generator]: Downloading https://files.pythonhosted.org/packages/8c/40/59f892fc27fa3c441db0b53d647960796727bdff15eb24b4bcb95b3ccaa0/sal-code-generator-0.0.5.tar.gz
+[2023-04-13 01:10:05] INFO root fetch - processPackages [athletes-unlimited-py]: Downloading https://files.pythonhosted.org/packages/8c/56/e213cd36ddea2f912adfb417b5c68afdbf8268b63be6e404848948d53a5e/athletes_unlimited_py-0.0.1a5.tar.gz
+[2023-04-13 01:10:05] INFO root fetch - processPackages [esphome]: New version: [2023.4.0b1] Old Version: [2023.3.2]
+[2023-04-13 01:10:05] INFO root fetch - processPackages [summerepi2]: Downloading https://files.pythonhosted.org/packages/94/50/02baa116fbdc9feaf5c45b45ed24379bde77f43c64f0c5a4b6de283ffa12/summerepi2-1.2.2.tar.gz
+[2023-04-13 01:10:05] INFO root fetch - processPackages [sal-code-generator]: executing diffoscope
+[2023-04-13 01:10:05] INFO root fetch - processPackages [sal-code-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sal-code-generator-0.0.3.tar.gz tmp/sal-code-generator-0.0.5.tar.gz --markdown 20230413/s/sal-code-generator/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 01:10:05] INFO root fetch - processPackages [athletes-unlimited-py]: executing diffoscope
+[2023-04-13 01:10:05] INFO root fetch - processPackages [athletes-unlimited-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athletes_unlimited_py-0.0.1a4.tar.gz tmp/athletes_unlimited_py-0.0.1a5.tar.gz --markdown 20230413/a/athletes-unlimited-py/0.0.1a4-0.0.1a5/diff.md --exclude *.pyd
+[2023-04-13 01:10:06] INFO root fetch - processPackages [esphome]: Downloading https://files.pythonhosted.org/packages/0e/af/35ff91cbdba5fd306d85c157d79ff8096a70589fd58abcb0c8635ad14baf/esphome-2023.3.2.tar.gz
+[2023-04-13 01:10:06] INFO root fetch - processPackages [summerepi2]: executing diffoscope
+[2023-04-13 01:10:06] INFO root fetch - processPackages [summerepi2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/summerepi2-1.2.1.tar.gz tmp/summerepi2-1.2.2.tar.gz --markdown 20230413/s/summerepi2/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-13 01:10:06] INFO root fetch - processPackages [esphome]: Downloading https://files.pythonhosted.org/packages/ce/9b/acbbcdfd35f60a3939be77161a883fd03ddd314a4e7a3a99ff5df901d25d/esphome-2023.4.0b1.tar.gz
+[2023-04-13 01:10:06] INFO root fetch - main [MainThread]: End processing [sal-code-generator]: success
+[2023-04-13 01:10:06] INFO root fetch - processPackages [esphome]: executing diffoscope
+[2023-04-13 01:10:06] INFO root fetch - processPackages [esphome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esphome-2023.3.2.tar.gz tmp/esphome-2023.4.0b1.tar.gz --markdown 20230413/e/esphome/2023.3.2-2023.4.0b1/diff.md --exclude *.pyd
+[2023-04-13 01:10:06] INFO root fetch - main [MainThread]: End processing [athletes-unlimited-py]: success
+[2023-04-13 01:10:07] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-04-13 01:10:07] INFO root fetch - main [MainThread]: End processing [summerepi2]: success
+[2023-04-13 01:10:59] INFO root fetch - main [MainThread]: End processing [esphome]: success
+[2023-04-13 01:10:59] INFO root fetch - main [MainThread]: Store serial: [17682928]
