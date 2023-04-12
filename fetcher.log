@@ -568,3 +568,56 @@
 [2023-04-13 00:43:45] INFO root fetch - main [MainThread]: End processing [databind.json]: success
 [2023-04-13 00:43:46] INFO root fetch - main [MainThread]: End processing [vocode]: success
 [2023-04-13 00:43:46] INFO root fetch - main [MainThread]: Store serial: [17682782]
+[2023-04-13 00:48:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682782]
+[2023-04-13 00:48:53] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 00:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: orchestra-logger
+[2023-04-13 00:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-cfdi
+[2023-04-13 00:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: noteable-origami
+[2023-04-13 00:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gamma-pytools
+[2023-04-13 00:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-permissions-auditor
+[2023-04-13 00:48:53] INFO root fetch - processPackages [orchestra-logger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 00:48:53] INFO root fetch - processPackages [django-cfdi]: New version: [2.99] Old Version: [2.98]
+[2023-04-13 00:48:53] INFO root fetch - processPackages [django-permissions-auditor]: New version: [1.1.0] Old Version: [1.0.5]
+[2023-04-13 00:48:53] INFO root fetch - processPackages [gamma-pytools]: New version: [2.1rc1] Old Version: [2.1rc0]
+[2023-04-13 00:48:53] INFO root fetch - processPackages [noteable-origami]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 00:48:53] INFO root fetch - processPackages [gamma-pytools]: executing diffoscope
+[2023-04-13 00:48:53] INFO root fetch - processPackages [gamma-pytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gamma-pytools-2.1rc0.tar.gz tmp/gamma-pytools-2.1rc1.tar.gz --markdown 20230413/g/gamma-pytools/2.1rc0-2.1rc1/diff.md --exclude *.pyd
+[2023-04-13 00:48:53] INFO root fetch - processPackages [django-permissions-auditor]: Downloading https://files.pythonhosted.org/packages/8f/b7/80d54c4b3beacb81e5da1314949528699a9fced0719b248a8fab2278b14a/django-permissions-auditor-1.0.5.tar.gz
+[2023-04-13 00:48:53] INFO root fetch - processPackages [noteable-origami]: Downloading https://files.pythonhosted.org/packages/0c/92/f5b5a17bb583fdce32e401cc77337788271177c1388d60111670ac4b92fc/noteable_origami-0.0.8.tar.gz
+[2023-04-13 00:48:53] INFO root fetch - processPackages [django-cfdi]: executing diffoscope
+[2023-04-13 00:48:53] INFO root fetch - processPackages [django-cfdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_cfdi-2.98-py3-none-any.whl.zip tmp/django_cfdi-2.99-py3-none-any.whl.zip --markdown 20230413/d/django-cfdi/2.98-2.99/diff.md --exclude *.pyd
+[2023-04-13 00:48:53] INFO root fetch - processPackages [orchestra-logger]: executing diffoscope
+[2023-04-13 00:48:53] INFO root fetch - processPackages [orchestra-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orchestra-logger-0.0.8.tar.gz tmp/orchestra-logger-0.0.9.tar.gz --markdown 20230413/o/orchestra-logger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 00:48:54] INFO root fetch - processPackages [django-permissions-auditor]: Downloading https://files.pythonhosted.org/packages/15/99/0eeb19a85b0e1d201888f7575e60100567b93230d2eed384590f0cd22c99/django-permissions-auditor-1.1.0.tar.gz
+[2023-04-13 00:48:54] INFO root fetch - processPackages [django-permissions-auditor]: executing diffoscope
+[2023-04-13 00:48:54] INFO root fetch - processPackages [django-permissions-auditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-permissions-auditor-1.0.5.tar.gz tmp/django-permissions-auditor-1.1.0.tar.gz --markdown 20230413/d/django-permissions-auditor/1.0.5-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 00:48:54] INFO root fetch - processPackages [noteable-origami]: Downloading https://files.pythonhosted.org/packages/bc/8a/148c28e6da363c15abeb9e8e2b1c939b91abbcfa800f6a680eedc8237896/noteable_origami-0.0.9.tar.gz
+[2023-04-13 00:48:54] INFO root fetch - processPackages [noteable-origami]: executing diffoscope
+[2023-04-13 00:48:54] INFO root fetch - processPackages [noteable-origami]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noteable_origami-0.0.8.tar.gz tmp/noteable_origami-0.0.9.tar.gz --markdown 20230413/n/noteable-origami/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 00:48:54] INFO root fetch - processPackages [orchestra-logger]: Start processing: ghost-in-bash
+[2023-04-13 00:48:54] INFO root fetch - main [MainThread]: End processing [orchestra-logger]: success
+[2023-04-13 00:48:55] INFO root fetch - processPackages [gamma-pytools]: Start processing: mage-ai
+[2023-04-13 00:48:55] INFO root fetch - main [MainThread]: End processing [gamma-pytools]: success
+[2023-04-13 00:48:55] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-13 00:48:55] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-04-13 00:48:55] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230413/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-13 00:48:55] WARNING root fetch - processPackages [ghost-in-bash]: Skipping, unable to determine old version
+[2023-04-13 00:48:55] INFO root fetch - processPackages [ghost-in-bash]: Start processing: qudi-hira-analysis
+[2023-04-13 00:48:55] INFO root fetch - main [MainThread]: End processing [ghost-in-bash] error
+[2023-04-13 00:48:55] INFO root fetch - processPackages [qudi-hira-analysis]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-13 00:48:55] INFO root fetch - processPackages [django-permissions-auditor]: Start processing: django-microsoft-authentication
+[2023-04-13 00:48:55] INFO root fetch - main [MainThread]: End processing [django-permissions-auditor]: success
+[2023-04-13 00:48:55] INFO root fetch - processPackages [django-microsoft-authentication]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-13 00:48:55] INFO root fetch - processPackages [qudi-hira-analysis]: Downloading https://files.pythonhosted.org/packages/91/e5/d073583d214e3386d213022dc7a918ff8506e523d13ed80cbb090fe63ffc/qudi_hira_analysis-1.4.1.tar.gz
+[2023-04-13 00:48:55] INFO root fetch - processPackages [django-microsoft-authentication]: Downloading https://files.pythonhosted.org/packages/7c/7c/fa1254dcf2e182bf9957a1c7d3c5118d7ca88edc203e8f1bc0cf8fcedcf0/django-microsoft-authentication-0.1.4.tar.gz
+[2023-04-13 00:48:55] INFO root fetch - main [MainThread]: End processing [noteable-origami]: success
+[2023-04-13 00:48:55] INFO root fetch - processPackages [qudi-hira-analysis]: executing diffoscope
+[2023-04-13 00:48:55] INFO root fetch - processPackages [qudi-hira-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qudi_hira_analysis-1.4.0.tar.gz tmp/qudi_hira_analysis-1.4.1.tar.gz --markdown 20230413/q/qudi-hira-analysis/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-13 00:48:55] INFO root fetch - processPackages [django-microsoft-authentication]: Downloading https://files.pythonhosted.org/packages/00/30/af464ea54233a1c3e0cd86b37a1874e7f59d8a469236039b48e770cc23fe/django-microsoft-authentication-0.1.5.tar.gz
+[2023-04-13 00:48:56] INFO root fetch - processPackages [django-microsoft-authentication]: executing diffoscope
+[2023-04-13 00:48:56] INFO root fetch - processPackages [django-microsoft-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-microsoft-authentication-0.1.4.tar.gz tmp/django-microsoft-authentication-0.1.5.tar.gz --markdown 20230413/d/django-microsoft-authentication/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-13 00:48:57] INFO root fetch - main [MainThread]: End processing [qudi-hira-analysis]: success
+[2023-04-13 00:48:57] INFO root fetch - main [MainThread]: End processing [django-microsoft-authentication]: success
+[2023-04-13 00:49:02] INFO root fetch - main [MainThread]: End processing [django-cfdi]: success
+[2023-04-13 00:49:06] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-04-13 00:49:06] INFO root fetch - main [MainThread]: Store serial: [17682820]
