@@ -806,3 +806,71 @@
 [2023-04-13 01:10:07] INFO root fetch - main [MainThread]: End processing [summerepi2]: success
 [2023-04-13 01:10:59] INFO root fetch - main [MainThread]: End processing [esphome]: success
 [2023-04-13 01:10:59] INFO root fetch - main [MainThread]: Store serial: [17682928]
+[2023-04-13 01:16:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682928]
+[2023-04-13 01:16:06] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-13 01:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fling-core
+[2023-04-13 01:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sal-code-generator
+[2023-04-13 01:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yotpy
+[2023-04-13 01:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baseball
+[2023-04-13 01:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modal-client
+[2023-04-13 01:16:06] INFO root fetch - processPackages [fling-core]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 01:16:06] INFO root fetch - processPackages [sal-code-generator]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-13 01:16:06] INFO root fetch - processPackages [baseball]: New version: [9.9] Old Version: [9.8]
+[2023-04-13 01:16:06] INFO root fetch - processPackages [yotpy]: New version: [0.0.61] Old Version: [0.0.6]
+[2023-04-13 01:16:06] INFO root fetch - processPackages [modal-client]: New version: [0.48.1853] Old Version: [0.48.1847]
+[2023-04-13 01:16:07] INFO root fetch - processPackages [sal-code-generator]: executing diffoscope
+[2023-04-13 01:16:07] INFO root fetch - processPackages [sal-code-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sal-code-generator-0.0.3.tar.gz tmp/sal-code-generator-0.0.5.tar.gz --markdown 20230413/s/sal-code-generator/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 01:16:07] INFO root fetch - processPackages [yotpy]: Downloading https://files.pythonhosted.org/packages/05/9f/2cc3dc31e90cea09d9811d96770a731c02d9f639452fb4066d4dadbc470f/yotpy-0.0.6.tar.gz
+[2023-04-13 01:16:07] INFO root fetch - processPackages [fling-core]: Downloading https://files.pythonhosted.org/packages/85/fa/213d896bc018fab35ad64e4d1f22c9e4e454fa648ad494ec06bedb7cc14b/fling_core-0.1.1.tar.gz
+[2023-04-13 01:16:07] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/04/2a/8b198995c2f8d35c19f4b1e0e6c5c067e955f1258d57c1b1341eab88715e/baseball-9.8.tar.gz
+[2023-04-13 01:16:07] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/c4/08/99d355ece810b08d68a347cc410102ed46b134ab21aa7b71a76bb026710e/modal_client-0.48.1853-py3-none-any.whl
+[2023-04-13 01:16:07] INFO root fetch - processPackages [fling-core]: Downloading https://files.pythonhosted.org/packages/6d/9b/5b97e1e4c2f04f050f1511526b2063e48cece52a3e4b8f7092da5a892316/fling_core-0.1.2.tar.gz
+[2023-04-13 01:16:07] INFO root fetch - processPackages [fling-core]: executing diffoscope
+[2023-04-13 01:16:07] INFO root fetch - processPackages [fling-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fling_core-0.1.1.tar.gz tmp/fling_core-0.1.2.tar.gz --markdown 20230413/f/fling-core/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 01:16:07] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2023-04-13 01:16:07] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.48.1847-py3-none-any.whl.zip tmp/modal_client-0.48.1853-py3-none-any.whl.zip --markdown 20230413/m/modal-client/0.48.1847-0.48.1853/diff.md --exclude *.pyd
+[2023-04-13 01:16:07] INFO root fetch - processPackages [baseball]: Downloading https://files.pythonhosted.org/packages/1a/e0/fb3c48a01fd33034695694663cfddfb7a099e47f8aa30dc6c901a5fcee37/baseball-9.9.tar.gz
+[2023-04-13 01:16:07] INFO root fetch - processPackages [yotpy]: Downloading https://files.pythonhosted.org/packages/56/cb/b5d5da9b7f8014e563e681e64aa0338901638b26a12c913c448582fcc75e/yotpy-0.0.61.tar.gz
+[2023-04-13 01:16:07] INFO root fetch - processPackages [baseball]: executing diffoscope
+[2023-04-13 01:16:07] INFO root fetch - processPackages [baseball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseball-9.8.tar.gz tmp/baseball-9.9.tar.gz --markdown 20230413/b/baseball/9.8-9.9/diff.md --exclude *.pyd
+[2023-04-13 01:16:07] INFO root fetch - processPackages [yotpy]: executing diffoscope
+[2023-04-13 01:16:07] INFO root fetch - processPackages [yotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yotpy-0.0.6.tar.gz tmp/yotpy-0.0.61.tar.gz --markdown 20230413/y/yotpy/0.0.6-0.0.61/diff.md --exclude *.pyd
+[2023-04-13 01:16:08] INFO root fetch - processPackages [fling-core]: Start processing: cqepyutils
+[2023-04-13 01:16:08] INFO root fetch - main [MainThread]: End processing [fling-core]: success
+[2023-04-13 01:16:08] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 01:16:08] INFO root fetch - processPackages [sal-code-generator]: Start processing: hello-robot-stretch-factory
+[2023-04-13 01:16:08] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-13 01:16:08] INFO root fetch - main [MainThread]: End processing [sal-code-generator]: success
+[2023-04-13 01:16:08] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230413/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 01:16:08] INFO root fetch - processPackages [hello-robot-stretch-factory]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-13 01:16:08] INFO root fetch - processPackages [yotpy]: Start processing: yohsin3d
+[2023-04-13 01:16:08] INFO root fetch - main [MainThread]: End processing [yotpy]: success
+[2023-04-13 01:16:08] INFO root fetch - processPackages [yohsin3d]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-13 01:16:08] INFO root fetch - processPackages [hello-robot-stretch-factory]: Downloading https://files.pythonhosted.org/packages/8b/94/052edfcbc748b876cb03953278a2f4bdd8f17738eda7e9f7e80f74377e49/hello_robot_stretch_factory-0.4.1.tar.gz
+[2023-04-13 01:16:09] INFO root fetch - processPackages [hello-robot-stretch-factory]: executing diffoscope
+[2023-04-13 01:16:09] INFO root fetch - processPackages [hello-robot-stretch-factory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello_robot_stretch_factory-0.4.0.tar.gz tmp/hello_robot_stretch_factory-0.4.1.tar.gz --markdown 20230413/h/hello-robot-stretch-factory/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-13 01:16:09] INFO root fetch - processPackages [yohsin3d]: Downloading https://files.pythonhosted.org/packages/6d/9b/caa2e56b518af7b2c1d8d9d4f974d36212519f1095473f99d6c11fa12fec/yohsin3d-0.3.0.tar.gz
+[2023-04-13 01:16:09] INFO root fetch - processPackages [modal-client]: Start processing: django-google-cloud-tasks
+[2023-04-13 01:16:09] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2023-04-13 01:16:09] INFO root fetch - processPackages [yohsin3d]: executing diffoscope
+[2023-04-13 01:16:09] INFO root fetch - processPackages [yohsin3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yohsin3d-0.2.0.tar.gz tmp/yohsin3d-0.3.0.tar.gz --markdown 20230413/y/yohsin3d/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-13 01:16:09] INFO root fetch - processPackages [django-google-cloud-tasks]: New version: [2.1.5] Old Version: [2.1.4]
+[2023-04-13 01:16:09] INFO root fetch - processPackages [baseball]: Start processing: pulse-cookie
+[2023-04-13 01:16:09] INFO root fetch - main [MainThread]: End processing [baseball]: success
+[2023-04-13 01:16:09] WARNING root fetch - processPackages [pulse-cookie]: Skipping, unable to determine old version
+[2023-04-13 01:16:09] INFO root fetch - processPackages [pulse-cookie]: Start processing: keeper-secrets-manager-cli
+[2023-04-13 01:16:09] INFO root fetch - main [MainThread]: End processing [pulse-cookie] error
+[2023-04-13 01:16:09] INFO root fetch - processPackages [django-google-cloud-tasks]: Downloading https://files.pythonhosted.org/packages/4d/6b/2bbc1ece3f554779d7f9da8f2d341a419ec7b7902b9576897b2c7838d8fb/django_google_cloud_tasks-2.1.5.tar.gz
+[2023-04-13 01:16:09] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-13 01:16:09] INFO root fetch - processPackages [django-google-cloud-tasks]: executing diffoscope
+[2023-04-13 01:16:09] INFO root fetch - processPackages [django-google-cloud-tasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_google_cloud_tasks-2.1.4.tar.gz tmp/django_google_cloud_tasks-2.1.5.tar.gz --markdown 20230413/d/django-google-cloud-tasks/2.1.4-2.1.5/diff.md --exclude *.pyd
+[2023-04-13 01:16:09] INFO root fetch - processPackages [keeper-secrets-manager-cli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 01:16:09] INFO root fetch - processPackages [keeper-secrets-manager-cli]: Downloading https://files.pythonhosted.org/packages/43/65/c0f26e8dbc315fb042f57deefda8e6229e1626a90a7b56b09f2f84a5ef0b/keeper-secrets-manager-cli-1.0.8.tar.gz
+[2023-04-13 01:16:10] INFO root fetch - processPackages [keeper-secrets-manager-cli]: Downloading https://files.pythonhosted.org/packages/c4/c5/c31d93310d41836988c5ec44aa21a86021187256869f50c5f064b120e099/keeper-secrets-manager-cli-1.0.9.tar.gz
+[2023-04-13 01:16:10] INFO root fetch - processPackages [keeper-secrets-manager-cli]: executing diffoscope
+[2023-04-13 01:16:10] INFO root fetch - processPackages [keeper-secrets-manager-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keeper-secrets-manager-cli-1.0.8.tar.gz tmp/keeper-secrets-manager-cli-1.0.9.tar.gz --markdown 20230413/k/keeper-secrets-manager-cli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 01:16:10] INFO root fetch - main [MainThread]: End processing [hello-robot-stretch-factory]: success
+[2023-04-13 01:16:10] INFO root fetch - main [MainThread]: End processing [yohsin3d]: success
+[2023-04-13 01:16:10] INFO root fetch - main [MainThread]: End processing [django-google-cloud-tasks]: success
+[2023-04-13 01:16:11] INFO root fetch - main [MainThread]: End processing [keeper-secrets-manager-cli]: success
+[2023-04-13 01:16:11] INFO root fetch - main [MainThread]: Store serial: [17682961]
