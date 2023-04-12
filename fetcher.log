@@ -258,3 +258,52 @@
 [2023-04-13 00:12:30] INFO root fetch - main [MainThread]: End processing [usgs-strec]: success
 [2023-04-13 00:12:31] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2023-04-13 00:12:31] INFO root fetch - main [MainThread]: Store serial: [17682600]
+[2023-04-13 00:17:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682600]
+[2023-04-13 00:17:38] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-13 00:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: basecfg
+[2023-04-13 00:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: forings
+[2023-04-13 00:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: awscli-mate
+[2023-04-13 00:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tts-arranger
+[2023-04-13 00:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simple-cog-client
+[2023-04-13 00:17:38] INFO root fetch - processPackages [simple-cog-client]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 00:17:38] INFO root fetch - processPackages [awscli-mate]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-13 00:17:38] INFO root fetch - processPackages [tts-arranger]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 00:17:38] WARNING root fetch - processPackages [forings]: Skipping, unable to determine old version
+[2023-04-13 00:17:38] INFO root fetch - processPackages [forings]: Start processing: yafti
+[2023-04-13 00:17:38] INFO root fetch - main [MainThread]: End processing [forings] error
+[2023-04-13 00:17:38] INFO root fetch - processPackages [basecfg]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-04-13 00:17:38] INFO root fetch - processPackages [yafti]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-13 00:17:39] INFO root fetch - processPackages [simple-cog-client]: Downloading https://files.pythonhosted.org/packages/30/a2/43ed290009c0a79b706b7e3ff1e7c8f9dca8f513108efc157256e1f14300/simple_cog_client-0.1.1.tar.gz
+[2023-04-13 00:17:39] INFO root fetch - processPackages [awscli-mate]: Downloading https://files.pythonhosted.org/packages/2e/a8/269f10b9293891a6b33d6e850448aa9a6f291043d627028ab267d09fac55/awscli_mate-0.3.1.tar.gz
+[2023-04-13 00:17:39] INFO root fetch - processPackages [tts-arranger]: Downloading https://files.pythonhosted.org/packages/c1/50/ed49e954654a8b770a8a9732f997788ef45c04a01570715e91d5241b7ec9/tts_arranger-0.1.1.tar.gz
+[2023-04-13 00:17:39] INFO root fetch - processPackages [yafti]: Downloading https://files.pythonhosted.org/packages/f2/e6/028fd8f52c70f934a2877ea417590a539c599ccc7258484af755ee78c037/yafti-0.5.0.tar.gz
+[2023-04-13 00:17:39] INFO root fetch - processPackages [basecfg]: Downloading https://files.pythonhosted.org/packages/33/8d/8c985bbd3959d3e6a71f12643bfbee8489a683ae5ca313244475c33551f0/basecfg-2.1.0.tar.gz
+[2023-04-13 00:17:39] INFO root fetch - processPackages [tts-arranger]: executing diffoscope
+[2023-04-13 00:17:39] INFO root fetch - processPackages [tts-arranger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tts_arranger-0.1.0.tar.gz tmp/tts_arranger-0.1.1.tar.gz --markdown 20230413/t/tts-arranger/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 00:17:39] INFO root fetch - processPackages [basecfg]: executing diffoscope
+[2023-04-13 00:17:39] INFO root fetch - processPackages [basecfg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basecfg-2.0.0.tar.gz tmp/basecfg-2.1.0.tar.gz --markdown 20230413/b/basecfg/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-04-13 00:17:39] INFO root fetch - processPackages [simple-cog-client]: Downloading https://files.pythonhosted.org/packages/93/c1/e4eeeffc3b224a13c30394d10369bcec8ce68018b4a56ba698d6929f802b/simple_cog_client-0.1.2.tar.gz
+[2023-04-13 00:17:39] INFO root fetch - processPackages [awscli-mate]: Downloading https://files.pythonhosted.org/packages/20/c0/cfe799effec43d643e6e769f22483c90fee19acb1bd0e4aed73e25087404/awscli_mate-0.3.2.tar.gz
+[2023-04-13 00:17:39] INFO root fetch - processPackages [simple-cog-client]: executing diffoscope
+[2023-04-13 00:17:39] INFO root fetch - processPackages [simple-cog-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_cog_client-0.1.1.tar.gz tmp/simple_cog_client-0.1.2.tar.gz --markdown 20230413/s/simple-cog-client/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 00:17:39] INFO root fetch - processPackages [awscli-mate]: executing diffoscope
+[2023-04-13 00:17:39] INFO root fetch - processPackages [awscli-mate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awscli_mate-0.3.1.tar.gz tmp/awscli_mate-0.3.2.tar.gz --markdown 20230413/a/awscli-mate/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-13 00:17:39] INFO root fetch - processPackages [yafti]: Downloading https://files.pythonhosted.org/packages/4d/31/ccb9972e52661467643dcd9eb215f4affff38beb6e2c81b7b61682812ac5/yafti-0.6.0.tar.gz
+[2023-04-13 00:17:39] INFO root fetch - processPackages [yafti]: executing diffoscope
+[2023-04-13 00:17:39] INFO root fetch - processPackages [yafti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yafti-0.5.0.tar.gz tmp/yafti-0.6.0.tar.gz --markdown 20230413/y/yafti/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-13 00:17:40] INFO root fetch - processPackages [tts-arranger]: Start processing: geotrouvetout
+[2023-04-13 00:17:40] INFO root fetch - main [MainThread]: End processing [tts-arranger]: success
+[2023-04-13 00:17:40] WARNING root fetch - processPackages [geotrouvetout]: Skipping, unable to determine old version
+[2023-04-13 00:17:40] INFO root fetch - processPackages [geotrouvetout]: Start processing: odoo14-addon-l10n-br-fiscal
+[2023-04-13 00:17:40] INFO root fetch - main [MainThread]: End processing [geotrouvetout] error
+[2023-04-13 00:17:40] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: New version: [14.0.9.2.1.dev3] Old Version: [14.0.9.2.1.dev2]
+[2023-04-13 00:17:40] INFO root fetch - main [MainThread]: End processing [basecfg]: success
+[2023-04-13 00:17:40] INFO root fetch - main [MainThread]: End processing [simple-cog-client]: success
+[2023-04-13 00:17:40] INFO root fetch - main [MainThread]: End processing [awscli-mate]: success
+[2023-04-13 00:17:40] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: Downloading https://files.pythonhosted.org/packages/b6/ae/9800d777e4d7166c8a0ee02cd7c2602421433738397b582d529f48db7c5b/odoo14_addon_l10n_br_fiscal-14.0.9.2.1.dev2-py3-none-any.whl
+[2023-04-13 00:17:40] INFO root fetch - main [MainThread]: End processing [yafti]: success
+[2023-04-13 00:17:41] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: Downloading https://files.pythonhosted.org/packages/3e/9d/f06739d0fc5ac83076dbdce19b1fc1ffc33e068724d0f81d8a08b9fed2ef/odoo14_addon_l10n_br_fiscal-14.0.9.2.1.dev3-py3-none-any.whl
+[2023-04-13 00:17:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: executing diffoscope
+[2023-04-13 00:17:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_fiscal-14.0.9.2.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_fiscal-14.0.9.2.1.dev3-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-l10n-br-fiscal/14.0.9.2.1.dev2-14.0.9.2.1.dev3/diff.md --exclude *.pyd
+[2023-04-13 00:17:45] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-fiscal]: success
+[2023-04-13 00:17:45] INFO root fetch - main [MainThread]: Store serial: [17682648]
