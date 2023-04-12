@@ -203,3 +203,58 @@
 [2023-04-13 00:06:41] INFO root fetch - main [MainThread]: End processing [g2p]: success
 [2023-04-13 00:07:09] INFO root fetch - main [MainThread]: End processing [sematic]: success
 [2023-04-13 00:07:09] INFO root fetch - main [MainThread]: Store serial: [17682561]
+[2023-04-13 00:12:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682561]
+[2023-04-13 00:12:27] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-13 00:12:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: botocore-stubs
+[2023-04-13 00:12:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: get-patchlib
+[2023-04-13 00:12:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: usgs-strec
+[2023-04-13 00:12:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fmetools
+[2023-04-13 00:12:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TransLiter
+[2023-04-13 00:12:27] INFO root fetch - processPackages [fmetools]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-04-13 00:12:27] INFO root fetch - processPackages [usgs-strec]: New version: [2.2.7] Old Version: [2.2.6]
+[2023-04-13 00:12:27] WARNING root fetch - processPackages [TransLiter]: Skipping, unable to determine old version
+[2023-04-13 00:12:27] INFO root fetch - processPackages [TransLiter]: Start processing: cexprtk
+[2023-04-13 00:12:27] INFO root fetch - main [MainThread]: End processing [TransLiter] error
+[2023-04-13 00:12:27] INFO root fetch - processPackages [botocore-stubs]: New version: [1.29.99] Old Version: [1.29.98]
+[2023-04-13 00:12:27] INFO root fetch - processPackages [cexprtk]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-13 00:12:27] WARNING root fetch - processPackages [get-patchlib]: Skipping, unable to determine old version
+[2023-04-13 00:12:27] INFO root fetch - processPackages [get-patchlib]: Start processing: slg-dev-ops
+[2023-04-13 00:12:27] INFO root fetch - main [MainThread]: End processing [get-patchlib] error
+[2023-04-13 00:12:27] INFO root fetch - processPackages [slg-dev-ops]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-13 00:12:27] INFO root fetch - processPackages [fmetools]: Downloading https://files.pythonhosted.org/packages/8f/bf/1792ee026198b35c52b2886d9320a0b2b2d81f9cc1881c87d41fb7127fad/fmetools-0.5.1-py2.py3-none-any.whl
+[2023-04-13 00:12:27] INFO root fetch - processPackages [slg-dev-ops]: executing diffoscope
+[2023-04-13 00:12:27] INFO root fetch - processPackages [slg-dev-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slg-dev-ops-1.8.0.tar.gz tmp/slg-dev-ops-1.9.0.tar.gz --markdown 20230413/s/slg-dev-ops/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-13 00:12:27] INFO root fetch - processPackages [cexprtk]: Downloading https://files.pythonhosted.org/packages/1c/6c/d5e3b2c7b77ced6cd0823c94e816d2f34a78b042490b16eb25dca427328a/cexprtk-0.4.0.tar.gz
+[2023-04-13 00:12:27] INFO root fetch - processPackages [botocore-stubs]: executing diffoscope
+[2023-04-13 00:12:27] INFO root fetch - processPackages [botocore-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore_stubs-1.29.98.tar.gz tmp/botocore_stubs-1.29.99.tar.gz --markdown 20230413/b/botocore-stubs/1.29.98-1.29.99/diff.md --exclude *.pyd
+[2023-04-13 00:12:27] INFO root fetch - processPackages [usgs-strec]: Downloading https://files.pythonhosted.org/packages/f5/34/de811238e899c843bf5efffceb62955e77c30600a3bb5393875f7e7d9ef8/usgs-strec-2.2.7.tar.gz
+[2023-04-13 00:12:27] INFO root fetch - processPackages [cexprtk]: Downloading https://files.pythonhosted.org/packages/bb/f0/50fd7e90aa7c09a586adfd1d1c20bcd8f4e51938013a9c65126b263a2011/cexprtk-0.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-13 00:12:27] INFO root fetch - processPackages [usgs-strec]: executing diffoscope
+[2023-04-13 00:12:27] INFO root fetch - processPackages [usgs-strec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usgs-strec-2.2.6.tar.gz tmp/usgs-strec-2.2.7.tar.gz --markdown 20230413/u/usgs-strec/2.2.6-2.2.7/diff.md --exclude *.pyd
+[2023-04-13 00:12:27] INFO root fetch - processPackages [fmetools]: Downloading https://files.pythonhosted.org/packages/d3/14/9e1e642175fdb90c5a6b449e1c05291f0ec8806dbb4ca689d6ec2138c6ff/fmetools-0.6.0-py2.py3-none-any.whl
+[2023-04-13 00:12:27] INFO root fetch - processPackages [fmetools]: executing diffoscope
+[2023-04-13 00:12:27] INFO root fetch - processPackages [fmetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmetools-0.5.1-py2.py3-none-any.whl.zip tmp/fmetools-0.6.0-py2.py3-none-any.whl.zip --markdown 20230413/f/fmetools/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-04-13 00:12:27] WARNING root fetch - processPackages [cexprtk]: Skipping package: exceeds size limit 22992624>=10485760
+[2023-04-13 00:12:27] INFO root fetch - processPackages [cexprtk]: Start processing: coiled
+[2023-04-13 00:12:27] INFO root fetch - main [MainThread]: End processing [cexprtk] error
+[2023-04-13 00:12:27] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-13 00:12:28] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-13 00:12:28] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230413/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-13 00:12:28] INFO root fetch - processPackages [slg-dev-ops]: Start processing: frexco-pylogger
+[2023-04-13 00:12:28] INFO root fetch - main [MainThread]: End processing [slg-dev-ops]: success
+[2023-04-13 00:12:28] INFO root fetch - processPackages [frexco-pylogger]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-13 00:12:28] INFO root fetch - processPackages [frexco-pylogger]: executing diffoscope
+[2023-04-13 00:12:28] INFO root fetch - processPackages [frexco-pylogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frexco_pylogger-0.2.3.tar.gz tmp/frexco_pylogger-0.2.4.tar.gz --markdown 20230413/f/frexco-pylogger/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-13 00:12:28] INFO root fetch - processPackages [fmetools]: Start processing: async-openai
+[2023-04-13 00:12:28] INFO root fetch - main [MainThread]: End processing [fmetools]: success
+[2023-04-13 00:12:29] INFO root fetch - processPackages [async-openai]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 00:12:29] INFO root fetch - processPackages [async-openai]: Downloading https://files.pythonhosted.org/packages/8a/e5/bb649267c87fc7d7dc85e792edcb3b7dd043284b88c956c8be74b529d583/async_openai-0.0.8.tar.gz
+[2023-04-13 00:12:29] INFO root fetch - main [MainThread]: End processing [frexco-pylogger]: success
+[2023-04-13 00:12:29] INFO root fetch - processPackages [async-openai]: Downloading https://files.pythonhosted.org/packages/b6/c9/d79d42fbc5b2cd10efe405bb34874c5a87ed664075c990e4017839409496/async_openai-0.0.9.tar.gz
+[2023-04-13 00:12:29] INFO root fetch - processPackages [async-openai]: executing diffoscope
+[2023-04-13 00:12:29] INFO root fetch - processPackages [async-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_openai-0.0.8.tar.gz tmp/async_openai-0.0.9.tar.gz --markdown 20230413/a/async-openai/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 00:12:29] INFO root fetch - main [MainThread]: End processing [botocore-stubs]: success
+[2023-04-13 00:12:30] INFO root fetch - main [MainThread]: End processing [async-openai]: success
+[2023-04-13 00:12:30] INFO root fetch - main [MainThread]: End processing [usgs-strec]: success
+[2023-04-13 00:12:31] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-13 00:12:31] INFO root fetch - main [MainThread]: Store serial: [17682600]
