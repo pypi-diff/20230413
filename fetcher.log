@@ -696,3 +696,61 @@
 [2023-04-13 00:59:25] INFO root fetch - main [MainThread]: End processing [pcleaner]: success
 [2023-04-13 00:59:26] INFO root fetch - main [MainThread]: End processing [tmnt]: success
 [2023-04-13 00:59:26] INFO root fetch - main [MainThread]: Store serial: [17682866]
+[2023-04-13 01:04:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682866]
+[2023-04-13 01:04:33] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-13 01:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt
+[2023-04-13 01:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torch-simple-timing
+[2023-04-13 01:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transformers-gradients
+[2023-04-13 01:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SeanFunctions
+[2023-04-13 01:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dnacentersdk
+[2023-04-13 01:04:33] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230412] Old Version: [0.7.0b20230411]
+[2023-04-13 01:04:33] WARNING root fetch - processPackages [transformers-gradients]: Skipping, unable to determine old version
+[2023-04-13 01:04:33] INFO root fetch - processPackages [transformers-gradients]: Start processing: yotpy
+[2023-04-13 01:04:33] INFO root fetch - main [MainThread]: End processing [transformers-gradients] error
+[2023-04-13 01:04:33] INFO root fetch - processPackages [dnacentersdk]: New version: [2.6.0] Old Version: [2.5.6]
+[2023-04-13 01:04:33] INFO root fetch - processPackages [torch-simple-timing]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 01:04:33] INFO root fetch - processPackages [SeanFunctions]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-13 01:04:33] INFO root fetch - processPackages [yotpy]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 01:04:33] INFO root fetch - processPackages [dnacentersdk]: executing diffoscope
+[2023-04-13 01:04:33] INFO root fetch - processPackages [dnacentersdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnacentersdk-2.5.6.tar.gz tmp/dnacentersdk-2.6.0.tar.gz --markdown 20230413/d/dnacentersdk/2.5.6-2.6.0/diff.md --exclude *.pyd
+[2023-04-13 01:04:34] INFO root fetch - processPackages [SeanFunctions]: executing diffoscope
+[2023-04-13 01:04:34] INFO root fetch - processPackages [SeanFunctions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SeanFunctions-0.4.4.tar.gz tmp/SeanFunctions-0.4.5.tar.gz --markdown 20230413/S/SeanFunctions/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-13 01:04:34] INFO root fetch - processPackages [torch-simple-timing]: Downloading https://files.pythonhosted.org/packages/46/58/f9962fd8cd9ff23d0b17c2efbb370fbc23b3e8cd832c179b7b38f52f39fe/torch_simple_timing-0.1.0.tar.gz
+[2023-04-13 01:04:34] INFO root fetch - processPackages [yotpy]: Downloading https://files.pythonhosted.org/packages/37/61/bf03e56c9311a07b15763c365128d365fb4b8ceae0455654564f15c85303/yotpy-0.0.5.tar.gz
+[2023-04-13 01:04:34] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-04-13 01:04:34] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230411.tar.gz tmp/tmnt-0.7.0b20230412.tar.gz --markdown 20230413/t/tmnt/0.7.0b20230411-0.7.0b20230412/diff.md --exclude *.pyd
+[2023-04-13 01:04:34] INFO root fetch - processPackages [yotpy]: executing diffoscope
+[2023-04-13 01:04:34] INFO root fetch - processPackages [yotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yotpy-0.0.4.tar.gz tmp/yotpy-0.0.5.tar.gz --markdown 20230413/y/yotpy/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 01:04:34] INFO root fetch - processPackages [torch-simple-timing]: Downloading https://files.pythonhosted.org/packages/fd/55/012e6db9a596aee2367cff301bd84e93d1c2e6b7719cb6b14fd7430cacb4/torch_simple_timing-0.1.1.tar.gz
+[2023-04-13 01:04:34] INFO root fetch - processPackages [torch-simple-timing]: executing diffoscope
+[2023-04-13 01:04:34] INFO root fetch - processPackages [torch-simple-timing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_simple_timing-0.1.0.tar.gz tmp/torch_simple_timing-0.1.1.tar.gz --markdown 20230413/t/torch-simple-timing/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 01:04:35] INFO root fetch - processPackages [SeanFunctions]: Start processing: fschat
+[2023-04-13 01:04:35] INFO root fetch - main [MainThread]: End processing [SeanFunctions]: success
+[2023-04-13 01:04:35] INFO root fetch - processPackages [fschat]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-13 01:04:35] INFO root fetch - processPackages [fschat]: executing diffoscope
+[2023-04-13 01:04:35] INFO root fetch - processPackages [fschat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fschat-0.1.9.tar.gz tmp/fschat-0.2.0.tar.gz --markdown 20230413/f/fschat/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 01:04:35] INFO root fetch - processPackages [yotpy]: Start processing: mama
+[2023-04-13 01:04:35] INFO root fetch - main [MainThread]: End processing [yotpy]: success
+[2023-04-13 01:04:35] INFO root fetch - processPackages [tmnt]: Start processing: oc-preprocessing
+[2023-04-13 01:04:35] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-04-13 01:04:35] INFO root fetch - processPackages [oc-preprocessing]: New version: [0.0.5] Old Version: [0.0.1]
+[2023-04-13 01:04:35] INFO root fetch - processPackages [mama]: New version: [0.7.9] Old Version: [0.7.7]
+[2023-04-13 01:04:35] INFO root fetch - processPackages [oc-preprocessing]: Downloading https://files.pythonhosted.org/packages/1b/38/c1b9db819ef15dd18f4cc5b7f59eb80dfa12323897b28acca6aa3e646589/oc_preprocessing-0.0.1.tar.gz
+[2023-04-13 01:04:35] INFO root fetch - processPackages [torch-simple-timing]: Start processing: dann5
+[2023-04-13 01:04:35] INFO root fetch - main [MainThread]: End processing [torch-simple-timing]: success
+[2023-04-13 01:04:35] INFO root fetch - processPackages [dann5]: New version: [2.1.3] Old Version: [2.1.1]
+[2023-04-13 01:04:35] INFO root fetch - processPackages [dann5]: Downloading https://files.pythonhosted.org/packages/8d/98/392faa5a262d980890cd57a759800dee9a33fcc9ecc1128febd9f6e1f1ae/dann5-2.1.1.tar.gz
+[2023-04-13 01:04:35] INFO root fetch - processPackages [mama]: executing diffoscope
+[2023-04-13 01:04:35] INFO root fetch - processPackages [mama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mama-0.7.7.tar.gz tmp/mama-0.7.9.tar.gz --markdown 20230413/m/mama/0.7.7-0.7.9/diff.md --exclude *.pyd
+[2023-04-13 01:04:35] INFO root fetch - processPackages [oc-preprocessing]: Downloading https://files.pythonhosted.org/packages/1b/02/de710bec42e662155c89650d8bafc9b9ca2d40f7fe127ac7b220435d528b/oc_preprocessing-0.0.5.tar.gz
+[2023-04-13 01:04:36] INFO root fetch - processPackages [oc-preprocessing]: executing diffoscope
+[2023-04-13 01:04:36] INFO root fetch - processPackages [oc-preprocessing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oc_preprocessing-0.0.1.tar.gz tmp/oc_preprocessing-0.0.5.tar.gz --markdown 20230413/o/oc-preprocessing/0.0.1-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 01:04:36] INFO root fetch - processPackages [dann5]: Downloading https://files.pythonhosted.org/packages/a3/1e/8fec8090505e27d0d5774bbe15b9d7d2aac2b4bacc27c87408f0c7d222df/dann5-2.1.3.tar.gz
+[2023-04-13 01:04:36] INFO root fetch - processPackages [dann5]: executing diffoscope
+[2023-04-13 01:04:36] INFO root fetch - processPackages [dann5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dann5-2.1.1.tar.gz tmp/dann5-2.1.3.tar.gz --markdown 20230413/d/dann5/2.1.1-2.1.3/diff.md --exclude *.pyd
+[2023-04-13 01:04:36] INFO root fetch - main [MainThread]: End processing [fschat]: success
+[2023-04-13 01:04:37] INFO root fetch - main [MainThread]: End processing [mama]: success
+[2023-04-13 01:04:37] INFO root fetch - main [MainThread]: End processing [oc-preprocessing]: success
+[2023-04-13 01:04:49] INFO root fetch - main [MainThread]: End processing [dann5]: success
+[2023-04-13 01:04:55] INFO root fetch - main [MainThread]: End processing [dnacentersdk]: success
+[2023-04-13 01:04:55] INFO root fetch - main [MainThread]: Store serial: [17682899]
