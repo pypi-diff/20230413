@@ -410,3 +410,41 @@
 [2023-04-13 00:28:10] INFO root fetch - main [MainThread]: End processing [awc]: success
 [2023-04-13 00:28:10] INFO root fetch - main [MainThread]: End processing [google-auth]: success
 [2023-04-13 00:28:10] INFO root fetch - main [MainThread]: Store serial: [17682713]
+[2023-04-13 00:33:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682713]
+[2023-04-13 00:33:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-13 00:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxrie
+[2023-04-13 00:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nanolayer
+[2023-04-13 00:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-radiance
+[2023-04-13 00:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: faradaysec
+[2023-04-13 00:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dragonfly-energy
+[2023-04-13 00:33:17] INFO root fetch - processPackages [jaxrie]: New version: [5] Old Version: [4]
+[2023-04-13 00:33:17] INFO root fetch - processPackages [dragonfly-radiance]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-13 00:33:17] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-13 00:33:17] INFO root fetch - processPackages [faradaysec]: New version: [4.3.5] Old Version: [4.3.4]
+[2023-04-13 00:33:17] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-13 00:33:17] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-13 00:33:17] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230413/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-13 00:33:17] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2023-04-13 00:33:17] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20230413/d/dragonfly-energy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-13 00:33:17] INFO root fetch - processPackages [jaxrie]: Downloading https://files.pythonhosted.org/packages/63/9f/cb2a01f691c907efbb8cb908df42fab23108a296a61fe361415bee1887f4/jaxrie-5.tar.gz
+[2023-04-13 00:33:17] INFO root fetch - processPackages [dragonfly-radiance]: executing diffoscope
+[2023-04-13 00:33:17] INFO root fetch - processPackages [dragonfly-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-radiance-0.2.8.tar.gz tmp/dragonfly-radiance-0.2.9.tar.gz --markdown 20230413/d/dragonfly-radiance/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-13 00:33:18] INFO root fetch - processPackages [jaxrie]: executing diffoscope
+[2023-04-13 00:33:18] INFO root fetch - processPackages [jaxrie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxrie-4.tar.gz tmp/jaxrie-5.tar.gz --markdown 20230413/j/jaxrie/4-5/diff.md --exclude *.pyd
+[2023-04-13 00:33:18] INFO root fetch - processPackages [faradaysec]: Downloading https://files.pythonhosted.org/packages/b3/15/4799cff6f76b533c689b216d48c907475c92e95cc636f87ce425ae4afb38/faradaysec-4.3.5.tar.gz
+[2023-04-13 00:33:18] INFO root fetch - processPackages [faradaysec]: executing diffoscope
+[2023-04-13 00:33:18] INFO root fetch - processPackages [faradaysec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faradaysec-4.3.4.tar.gz tmp/faradaysec-4.3.5.tar.gz --markdown 20230413/f/faradaysec/4.3.4-4.3.5/diff.md --exclude *.pyd
+[2023-04-13 00:33:18] INFO root fetch - processPackages [nanolayer]: Start processing: lbt-dragonfly
+[2023-04-13 00:33:18] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-04-13 00:33:19] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-13 00:33:19] INFO root fetch - processPackages [jaxrie]: Start processing: json-composite-encoder
+[2023-04-13 00:33:19] INFO root fetch - main [MainThread]: End processing [jaxrie]: success
+[2023-04-13 00:33:19] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2023-04-13 00:33:19] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20230413/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-13 00:33:19] WARNING root fetch - processPackages [json-composite-encoder]: Skipping, unable to determine old version
+[2023-04-13 00:33:19] INFO root fetch - main [MainThread]: End processing [json-composite-encoder] error
+[2023-04-13 00:33:19] INFO root fetch - main [MainThread]: End processing [dragonfly-radiance]: success
+[2023-04-13 00:33:20] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2023-04-13 00:33:20] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2023-04-13 00:33:22] INFO root fetch - main [MainThread]: End processing [faradaysec]: success
+[2023-04-13 00:33:22] INFO root fetch - main [MainThread]: Store serial: [17682734]
