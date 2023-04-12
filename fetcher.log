@@ -347,3 +347,66 @@
 [2023-04-13 00:22:55] INFO root fetch - main [MainThread]: End processing [cijoe]: success
 [2023-04-13 00:22:58] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-br-fiscal]: success
 [2023-04-13 00:22:58] INFO root fetch - main [MainThread]: Store serial: [17682682]
+[2023-04-13 00:28:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682682]
+[2023-04-13 00:28:05] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-13 00:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paasta-tools
+[2023-04-13 00:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openart
+[2023-04-13 00:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: itkwasm
+[2023-04-13 00:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: caikit
+[2023-04-13 00:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shandy-sqlfmt
+[2023-04-13 00:28:05] WARNING root fetch - processPackages [openart]: Skipping, unable to determine old version
+[2023-04-13 00:28:05] INFO root fetch - processPackages [openart]: Start processing: limacharlie
+[2023-04-13 00:28:05] INFO root fetch - main [MainThread]: End processing [openart] error
+[2023-04-13 00:28:05] INFO root fetch - processPackages [caikit]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 00:28:05] INFO root fetch - processPackages [itkwasm]: New version: [1.0b93] Old Version: [1.0b82]
+[2023-04-13 00:28:05] INFO root fetch - processPackages [paasta-tools]: New version: [0.92.1] Old Version: [0.92.0]
+[2023-04-13 00:28:05] INFO root fetch - processPackages [shandy-sqlfmt]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 00:28:05] INFO root fetch - processPackages [limacharlie]: New version: [4.4.0] Old Version: [4.3.7]
+[2023-04-13 00:28:05] INFO root fetch - processPackages [caikit]: Downloading https://files.pythonhosted.org/packages/d4/05/6f90d77cc1ce0b0561b2b9d52a43555d8398b144d9a4098383646aed957f/caikit-0.1.0.tar.gz
+[2023-04-13 00:28:06] INFO root fetch - processPackages [limacharlie]: Downloading https://files.pythonhosted.org/packages/ba/f5/dc655514ecf7fa98f5d39cff05224d10c8a325610d2fc12aa459d5d5b9d8/limacharlie-4.3.7.tar.gz
+[2023-04-13 00:28:06] INFO root fetch - processPackages [shandy-sqlfmt]: Downloading https://files.pythonhosted.org/packages/6a/f3/a47406ac26c9c3f2da66d2a0c95247503555af0abd754e041c32d9a93c2a/shandy-sqlfmt-0.8.0.tar.gz
+[2023-04-13 00:28:06] INFO root fetch - processPackages [itkwasm]: Downloading https://files.pythonhosted.org/packages/f6/52/c11dee14bec4938b0e2db52d6b3ca31059616cb2fb5690f0454afc77bdcc/itkwasm-1.0b82.tar.gz
+[2023-04-13 00:28:06] INFO root fetch - processPackages [caikit]: Downloading https://files.pythonhosted.org/packages/62/8a/eb0f7a9fde4a1afb906cef1f7dcc75a17214782f2284a420a980c38b6811/caikit-0.1.1.tar.gz
+[2023-04-13 00:28:06] INFO root fetch - processPackages [paasta-tools]: executing diffoscope
+[2023-04-13 00:28:06] INFO root fetch - processPackages [paasta-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paasta-tools-0.92.0.tar.gz tmp/paasta-tools-0.92.1.tar.gz --markdown 20230413/p/paasta-tools/0.92.0-0.92.1/diff.md --exclude *.pyd
+[2023-04-13 00:28:06] INFO root fetch - processPackages [caikit]: executing diffoscope
+[2023-04-13 00:28:06] INFO root fetch - processPackages [caikit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caikit-0.1.0.tar.gz tmp/caikit-0.1.1.tar.gz --markdown 20230413/c/caikit/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 00:28:06] INFO root fetch - processPackages [limacharlie]: Downloading https://files.pythonhosted.org/packages/b1/5e/15a8ae52b124ffb68bf503e8856659d41a30879fbef80ec31dcef10c2951/limacharlie-4.4.0.tar.gz
+[2023-04-13 00:28:06] INFO root fetch - processPackages [limacharlie]: executing diffoscope
+[2023-04-13 00:28:06] INFO root fetch - processPackages [limacharlie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limacharlie-4.3.7.tar.gz tmp/limacharlie-4.4.0.tar.gz --markdown 20230413/l/limacharlie/4.3.7-4.4.0/diff.md --exclude *.pyd
+[2023-04-13 00:28:06] INFO root fetch - processPackages [itkwasm]: Downloading https://files.pythonhosted.org/packages/b5/f3/0f7c784a82ea68f56df2cc5c7a3935b4e7acfd71ee86ba1b8dffc4b2ffd9/itkwasm-1.0b93.tar.gz
+[2023-04-13 00:28:06] INFO root fetch - processPackages [shandy-sqlfmt]: Downloading https://files.pythonhosted.org/packages/c8/3f/822481411f40cc263d3e36323365a501caa9317e6386586c95a500c8f229/shandy-sqlfmt-0.9.0.tar.gz
+[2023-04-13 00:28:06] INFO root fetch - processPackages [itkwasm]: executing diffoscope
+[2023-04-13 00:28:06] INFO root fetch - processPackages [itkwasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm-1.0b82.tar.gz tmp/itkwasm-1.0b93.tar.gz --markdown 20230413/i/itkwasm/1.0b82-1.0b93/diff.md --exclude *.pyd
+[2023-04-13 00:28:06] INFO root fetch - processPackages [shandy-sqlfmt]: executing diffoscope
+[2023-04-13 00:28:06] INFO root fetch - processPackages [shandy-sqlfmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shandy-sqlfmt-0.8.0.tar.gz tmp/shandy-sqlfmt-0.9.0.tar.gz --markdown 20230413/s/shandy-sqlfmt/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 00:28:07] INFO root fetch - processPackages [limacharlie]: Start processing: python-hilo
+[2023-04-13 00:28:07] INFO root fetch - main [MainThread]: End processing [limacharlie]: success
+[2023-04-13 00:28:07] INFO root fetch - processPackages [python-hilo]: New version: [2023.4.3] Old Version: [2023.4.2]
+[2023-04-13 00:28:08] INFO root fetch - processPackages [shandy-sqlfmt]: Start processing: google-auth
+[2023-04-13 00:28:08] INFO root fetch - main [MainThread]: End processing [shandy-sqlfmt]: success
+[2023-04-13 00:28:08] INFO root fetch - processPackages [python-hilo]: Downloading https://files.pythonhosted.org/packages/2c/e6/cfc53ce1a150beb4ef0ad5f4d89c5001e5e904e66a826b78000a9070a5bd/python_hilo-2023.4.3.tar.gz
+[2023-04-13 00:28:08] INFO root fetch - processPackages [google-auth]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-04-13 00:28:08] INFO root fetch - processPackages [python-hilo]: executing diffoscope
+[2023-04-13 00:28:08] INFO root fetch - processPackages [python-hilo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_hilo-2023.4.2.tar.gz tmp/python_hilo-2023.4.3.tar.gz --markdown 20230413/p/python-hilo/2023.4.2-2023.4.3/diff.md --exclude *.pyd
+[2023-04-13 00:28:08] INFO root fetch - processPackages [itkwasm]: Start processing: certora-cli-alpha-master
+[2023-04-13 00:28:08] INFO root fetch - main [MainThread]: End processing [itkwasm]: success
+[2023-04-13 00:28:08] INFO root fetch - processPackages [google-auth]: Downloading https://files.pythonhosted.org/packages/ae/bc/b79ffd264b657a2ab59bbfe4786cfbd8d7105e69eea8dcbd3e4ceb71ff71/google-auth-2.9.0.tar.gz
+[2023-04-13 00:28:08] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230412.20.0.561839] Old Version: [20230412.17.31.123961]
+[2023-04-13 00:28:08] INFO root fetch - processPackages [google-auth]: Downloading https://files.pythonhosted.org/packages/1a/90/0a278aeed278363ab26ccb23529092b48ee3eff8867472236a1b5141f626/google-auth-2.9.1.tar.gz
+[2023-04-13 00:28:08] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/85/12/127c245e3e437924a2aa25edc0dab34eef0cde1aa41492a07dabd1a2327f/certora-cli-alpha-master-20230412.17.31.123961.tar.gz
+[2023-04-13 00:28:08] INFO root fetch - processPackages [google-auth]: executing diffoscope
+[2023-04-13 00:28:08] INFO root fetch - processPackages [google-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-auth-2.9.0.tar.gz tmp/google-auth-2.9.1.tar.gz --markdown 20230413/g/google-auth/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-04-13 00:28:08] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 28058072>=10485760
+[2023-04-13 00:28:08] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: awc
+[2023-04-13 00:28:08] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-13 00:28:08] INFO root fetch - processPackages [awc]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-13 00:28:08] INFO root fetch - main [MainThread]: End processing [paasta-tools]: success
+[2023-04-13 00:28:08] INFO root fetch - processPackages [awc]: Downloading https://files.pythonhosted.org/packages/8b/aa/4f94eeaa43899dd835caa68332538c4da02766935294a7206ee747adcb3a/awc-1.1.0-py2.py3-none-any.whl
+[2023-04-13 00:28:08] INFO root fetch - processPackages [awc]: executing diffoscope
+[2023-04-13 00:28:08] INFO root fetch - processPackages [awc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc-1.0.1-py2.py3-none-any.whl.zip tmp/awc-1.1.0-py2.py3-none-any.whl.zip --markdown 20230413/a/awc/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 00:28:09] INFO root fetch - main [MainThread]: End processing [caikit]: success
+[2023-04-13 00:28:09] INFO root fetch - main [MainThread]: End processing [python-hilo]: success
+[2023-04-13 00:28:10] INFO root fetch - main [MainThread]: End processing [awc]: success
+[2023-04-13 00:28:10] INFO root fetch - main [MainThread]: End processing [google-auth]: success
+[2023-04-13 00:28:10] INFO root fetch - main [MainThread]: Store serial: [17682713]
