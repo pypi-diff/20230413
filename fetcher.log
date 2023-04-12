@@ -896,3 +896,39 @@
 [2023-04-13 01:21:23] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
 [2023-04-13 01:21:51] INFO root fetch - main [MainThread]: End processing [hotdoc]: success
 [2023-04-13 01:21:51] INFO root fetch - main [MainThread]: Store serial: [17682969]
+[2023-04-13 01:26:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682969]
+[2023-04-13 01:26:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-13 01:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycoare
+[2023-04-13 01:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dj-beatcloud
+[2023-04-13 01:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dr-lord-of-the-rings-sdk
+[2023-04-13 01:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dr-lord-of-the-rings-sdk
+[2023-04-13 01:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: athletes-unlimited-py
+[2023-04-13 01:26:59] INFO root fetch - processPackages [athletes-unlimited-py]: New version: [0.0.1a5] Old Version: [0.0.1a4]
+[2023-04-13 01:26:59] INFO root fetch - processPackages [pycoare]: New version: [2023.4a2] Old Version: [2023.4a1]
+[2023-04-13 01:26:59] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 01:26:59] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 01:26:59] INFO root fetch - processPackages [athletes-unlimited-py]: executing diffoscope
+[2023-04-13 01:26:59] INFO root fetch - processPackages [athletes-unlimited-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athletes_unlimited_py-0.0.1a4.tar.gz tmp/athletes_unlimited_py-0.0.1a5.tar.gz --markdown 20230413/a/athletes-unlimited-py/0.0.1a4-0.0.1a5/diff.md --exclude *.pyd
+[2023-04-13 01:26:59] INFO root fetch - processPackages [dj-beatcloud]: New version: [2.4.1b3] Old Version: [2.4.1b2]
+[2023-04-13 01:26:59] INFO root fetch - processPackages [pycoare]: Downloading https://files.pythonhosted.org/packages/a1/16/adda393c30a3c70b8608cfea83f8dcfbcf7d32e466f9776ad63ea4457452/pycoare-2023.4a1.tar.gz
+[2023-04-13 01:26:59] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: Downloading https://files.pythonhosted.org/packages/fc/ed/afda9e92911f176d8ec92032b3bdd0f02d115704084471eba305b9b9eaa9/dr-lord-of-the-rings-sdk-0.0.1.tar.gz
+[2023-04-13 01:26:59] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: Downloading https://files.pythonhosted.org/packages/fc/ed/afda9e92911f176d8ec92032b3bdd0f02d115704084471eba305b9b9eaa9/dr-lord-of-the-rings-sdk-0.0.1.tar.gz
+[2023-04-13 01:26:59] INFO root fetch - processPackages [dj-beatcloud]: Downloading https://files.pythonhosted.org/packages/b8/d3/185f65fd74ebaf464f417e4a02c2ee984bf804d51f9bd56b5d6e0dd3085e/dj_beatcloud-2.4.1b2.tar.gz
+[2023-04-13 01:26:59] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: Downloading https://files.pythonhosted.org/packages/0c/d9/3d9259d7616da4103dc0c7169e195f43f91680e76c64fd04a3cf399c7aed/dr-lord-of-the-rings-sdk-0.0.2.tar.gz
+[2023-04-13 01:26:59] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: Downloading https://files.pythonhosted.org/packages/0c/d9/3d9259d7616da4103dc0c7169e195f43f91680e76c64fd04a3cf399c7aed/dr-lord-of-the-rings-sdk-0.0.2.tar.gz
+[2023-04-13 01:27:00] INFO root fetch - processPackages [pycoare]: Downloading https://files.pythonhosted.org/packages/4c/df/6d638c41cb3e810567c02e09bf28173c9fb1803065d67dc26c6c7b4e64f1/pycoare-2023.4a2.tar.gz
+[2023-04-13 01:27:00] INFO root fetch - processPackages [dj-beatcloud]: Downloading https://files.pythonhosted.org/packages/fb/73/35c12e5c82f896aa52f4327f1b2e047031388eb8d654771917d9b5101ae7/dj_beatcloud-2.4.1b3.tar.gz
+[2023-04-13 01:27:00] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: executing diffoscope
+[2023-04-13 01:27:00] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dr-lord-of-the-rings-sdk-0.0.1.tar.gz tmp/dr-lord-of-the-rings-sdk-0.0.2.tar.gz --markdown 20230413/d/dr-lord-of-the-rings-sdk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 01:27:00] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: executing diffoscope
+[2023-04-13 01:27:00] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dr-lord-of-the-rings-sdk-0.0.1.tar.gz tmp/dr-lord-of-the-rings-sdk-0.0.2.tar.gz --markdown 20230413/d/dr-lord-of-the-rings-sdk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 01:27:00] INFO root fetch - processPackages [pycoare]: executing diffoscope
+[2023-04-13 01:27:00] INFO root fetch - processPackages [pycoare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycoare-2023.4a1.tar.gz tmp/pycoare-2023.4a2.tar.gz --markdown 20230413/p/pycoare/2023.4a1-2023.4a2/diff.md --exclude *.pyd
+[2023-04-13 01:27:00] INFO root fetch - processPackages [dj-beatcloud]: executing diffoscope
+[2023-04-13 01:27:00] INFO root fetch - processPackages [dj-beatcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_beatcloud-2.4.1b2.tar.gz tmp/dj_beatcloud-2.4.1b3.tar.gz --markdown 20230413/d/dj-beatcloud/2.4.1b2-2.4.1b3/diff.md --exclude *.pyd
+[2023-04-13 01:27:00] INFO root fetch - main [MainThread]: End processing [athletes-unlimited-py]: success
+[2023-04-13 01:27:01] INFO root fetch - main [MainThread]: End processing [dr-lord-of-the-rings-sdk]: success
+[2023-04-13 01:27:01] INFO root fetch - main [MainThread]: End processing [dr-lord-of-the-rings-sdk]: success
+[2023-04-13 01:27:01] INFO root fetch - main [MainThread]: End processing [pycoare]: success
+[2023-04-13 01:27:01] INFO root fetch - main [MainThread]: End processing [dj-beatcloud]: success
+[2023-04-13 01:27:01] INFO root fetch - main [MainThread]: Store serial: [17682987]
