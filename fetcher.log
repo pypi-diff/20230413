@@ -1009,3 +1009,25 @@
 [2023-04-13 01:40:22] INFO root fetch - main [MainThread]: End processing [nebari]: success
 [2023-04-13 01:40:22] INFO root fetch - main [MainThread]: End processing [dragonfly-grasshopper]: success
 [2023-04-13 01:40:22] INFO root fetch - main [MainThread]: Store serial: [17683050]
+[2023-04-13 01:45:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17683050]
+[2023-04-13 01:45:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-13 01:45:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: risset
+[2023-04-13 01:45:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: numba-aot-compiler
+[2023-04-13 01:45:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yamal
+[2023-04-13 01:45:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: adaux
+[2023-04-13 01:45:29] WARNING root fetch - processPackages [numba-aot-compiler]: Skipping, unable to determine old version
+[2023-04-13 01:45:29] INFO root fetch - main [MainThread]: End processing [numba-aot-compiler] error
+[2023-04-13 01:45:29] INFO root fetch - processPackages [yamal]: New version: [7.2.9] Old Version: [7.2.33]
+[2023-04-13 01:45:29] INFO root fetch - processPackages [risset]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-04-13 01:45:29] INFO root fetch - processPackages [adaux]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-04-13 01:45:29] INFO root fetch - processPackages [adaux]: executing diffoscope
+[2023-04-13 01:45:29] INFO root fetch - processPackages [adaux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adaux-2.2.0.tar.gz tmp/adaux-2.3.0.tar.gz --markdown 20230413/a/adaux/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-04-13 01:45:29] INFO root fetch - processPackages [yamal]: Downloading https://files.pythonhosted.org/packages/a4/cc/ceec5fa87eb0992fe8c88ae982123df844a17751ee66d0290418458a06e3/yamal-7.2.33-py3-none-manylinux_2_17_x86_64.whl
+[2023-04-13 01:45:29] WARNING root fetch - processPackages [yamal]: Skipping package: exceeds size limit 11402381>=10485760
+[2023-04-13 01:45:29] INFO root fetch - main [MainThread]: End processing [yamal] error
+[2023-04-13 01:45:30] INFO root fetch - processPackages [risset]: Downloading https://files.pythonhosted.org/packages/89/23/51645356c2daeed139c8b33e3eae38c0fa96cc1bc59961e294bb029f9526/risset-2.3.1.tar.gz
+[2023-04-13 01:45:30] INFO root fetch - processPackages [risset]: executing diffoscope
+[2023-04-13 01:45:30] INFO root fetch - processPackages [risset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/risset-2.3.0.tar.gz tmp/risset-2.3.1.tar.gz --markdown 20230413/r/risset/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-04-13 01:45:31] INFO root fetch - main [MainThread]: End processing [risset]: success
+[2023-04-13 01:45:31] INFO root fetch - main [MainThread]: End processing [adaux]: success
+[2023-04-13 01:45:31] INFO root fetch - main [MainThread]: Store serial: [17683063]
