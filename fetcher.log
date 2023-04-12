@@ -932,3 +932,29 @@
 [2023-04-13 01:27:01] INFO root fetch - main [MainThread]: End processing [pycoare]: success
 [2023-04-13 01:27:01] INFO root fetch - main [MainThread]: End processing [dj-beatcloud]: success
 [2023-04-13 01:27:01] INFO root fetch - main [MainThread]: Store serial: [17682987]
+[2023-04-13 01:32:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682987]
+[2023-04-13 01:32:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-13 01:32:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aicspylibczi
+[2023-04-13 01:32:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redcap-study-id-generator
+[2023-04-13 01:32:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dr-lord-of-the-rings-sdk
+[2023-04-13 01:32:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ansys-fluent-core
+[2023-04-13 01:32:08] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 01:32:08] INFO root fetch - processPackages [aicspylibczi]: New version: [3.1.1.dev0] Old Version: [3.1.0]
+[2023-04-13 01:32:08] INFO root fetch - processPackages [ansys-fluent-core]: New version: [0.13.dev5] Old Version: [0.13.dev4]
+[2023-04-13 01:32:08] WARNING root fetch - processPackages [redcap-study-id-generator]: Skipping, unable to determine old version
+[2023-04-13 01:32:08] INFO root fetch - main [MainThread]: End processing [redcap-study-id-generator] error
+[2023-04-13 01:32:08] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: executing diffoscope
+[2023-04-13 01:32:08] INFO root fetch - processPackages [dr-lord-of-the-rings-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dr-lord-of-the-rings-sdk-0.0.1.tar.gz tmp/dr-lord-of-the-rings-sdk-0.0.2.tar.gz --markdown 20230413/d/dr-lord-of-the-rings-sdk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 01:32:08] INFO root fetch - processPackages [aicspylibczi]: Downloading https://files.pythonhosted.org/packages/bd/b9/81849b6c8426e434d863f5b45522fd7a782cde79483c5b6465d3558bb1dc/aicspylibczi-3.1.0.tar.gz
+[2023-04-13 01:32:09] INFO root fetch - processPackages [ansys-fluent-core]: Downloading https://files.pythonhosted.org/packages/1c/40/4638fa1c3cb5c4e230e265131a3cfc229b24986a8f86953ea1074f178a55/ansys-fluent-core-0.13.dev4.tar.gz
+[2023-04-13 01:32:09] INFO root fetch - processPackages [aicspylibczi]: Downloading https://files.pythonhosted.org/packages/4f/af/0f31f79869621a93c725700ec88932fcfa1a93c2a1f544534f75c78790ad/aicspylibczi-3.1.1.dev0.tar.gz
+[2023-04-13 01:32:09] INFO root fetch - processPackages [aicspylibczi]: executing diffoscope
+[2023-04-13 01:32:09] INFO root fetch - processPackages [aicspylibczi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aicspylibczi-3.1.0.tar.gz tmp/aicspylibczi-3.1.1.dev0.tar.gz --markdown 20230413/a/aicspylibczi/3.1.0-3.1.1.dev0/diff.md --exclude *.pyd
+[2023-04-13 01:32:09] INFO root fetch - processPackages [ansys-fluent-core]: Downloading https://files.pythonhosted.org/packages/94/b8/721ed45ea6a4910c03bad447f601bdcaac9f1a57e75e8e0029a1211a6b45/ansys-fluent-core-0.13.dev5.tar.gz
+[2023-04-13 01:32:09] INFO root fetch - processPackages [ansys-fluent-core]: executing diffoscope
+[2023-04-13 01:32:09] INFO root fetch - processPackages [ansys-fluent-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansys-fluent-core-0.13.dev4.tar.gz tmp/ansys-fluent-core-0.13.dev5.tar.gz --markdown 20230413/a/ansys-fluent-core/0.13.dev4-0.13.dev5/diff.md --exclude *.pyd
+[2023-04-13 01:32:09] INFO root fetch - main [MainThread]: End processing [dr-lord-of-the-rings-sdk]: success
+[2023-04-13 01:32:12] INFO root fetch - main [MainThread]: End processing [aicspylibczi]: success
+[2023-04-13 01:35:09] ERROR root fetch - processPackages [ansys-fluent-core]: Timeout during execution of pkgdiff
+[2023-04-13 01:35:09] INFO root fetch - main [MainThread]: End processing [ansys-fluent-core] error
+[2023-04-13 01:35:09] INFO root fetch - main [MainThread]: Store serial: [17683021]
