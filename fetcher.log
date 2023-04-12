@@ -98,3 +98,108 @@
 [2023-04-13 00:01:10] INFO root fetch - main [MainThread]: End processing [awscli]: success
 [2023-04-13 00:01:23] INFO root fetch - main [MainThread]: End processing [botocore]: success
 [2023-04-13 00:01:23] INFO root fetch - main [MainThread]: Store serial: [17682501]
+[2023-04-13 00:06:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682501]
+[2023-04-13 00:06:30] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-13 00:06:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mypy-boto3-groundstation
+[2023-04-13 00:06:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mypy-boto3-managedblockchain
+[2023-04-13 00:06:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mypy-boto3
+[2023-04-13 00:06:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: boto3-stubs
+[2023-04-13 00:06:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: boto3-stubs-lite
+[2023-04-13 00:06:30] INFO root fetch - processPackages [boto3-stubs]: New version: [1.26.99] Old Version: [1.26.98]
+[2023-04-13 00:06:30] INFO root fetch - processPackages [boto3-stubs-lite]: New version: [1.26.99] Old Version: [1.26.98]
+[2023-04-13 00:06:30] INFO root fetch - processPackages [mypy-boto3-managedblockchain]: New version: [1.26.9] Old Version: [1.26.81]
+[2023-04-13 00:06:30] INFO root fetch - processPackages [mypy-boto3-groundstation]: New version: [1.26.61] Old Version: [1.26.6]
+[2023-04-13 00:06:30] INFO root fetch - processPackages [mypy-boto3]: New version: [1.26.99] Old Version: [1.26.98]
+[2023-04-13 00:06:30] INFO root fetch - processPackages [mypy-boto3-managedblockchain]: Downloading https://files.pythonhosted.org/packages/d7/38/7dabe60b3f0a507d7714d712d3520bbe3d673176d0f1a597ca19dc149a7e/mypy-boto3-managedblockchain-1.26.81.tar.gz
+[2023-04-13 00:06:30] INFO root fetch - processPackages [mypy-boto3-groundstation]: Downloading https://files.pythonhosted.org/packages/66/2c/97cd729cd2e71b228e8110ed3bd26e45b3338cde3d216e56af295bbe579a/mypy-boto3-groundstation-1.26.6.tar.gz
+[2023-04-13 00:06:30] INFO root fetch - processPackages [boto3-stubs]: executing diffoscope
+[2023-04-13 00:06:30] INFO root fetch - processPackages [boto3-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boto3-stubs-1.26.98.tar.gz tmp/boto3-stubs-1.26.99.tar.gz --markdown 20230413/b/boto3-stubs/1.26.98-1.26.99/diff.md --exclude *.pyd
+[2023-04-13 00:06:30] INFO root fetch - processPackages [mypy-boto3]: executing diffoscope
+[2023-04-13 00:06:30] INFO root fetch - processPackages [mypy-boto3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-1.26.98.tar.gz tmp/mypy-boto3-1.26.99.tar.gz --markdown 20230413/m/mypy-boto3/1.26.98-1.26.99/diff.md --exclude *.pyd
+[2023-04-13 00:06:30] INFO root fetch - processPackages [mypy-boto3-managedblockchain]: Downloading https://files.pythonhosted.org/packages/49/83/ef38f5510bc83f10f3ddffdba2cb1569ebdcc8354e07b024fee7a1dcd8a7/mypy-boto3-managedblockchain-1.26.9.tar.gz
+[2023-04-13 00:06:31] INFO root fetch - processPackages [mypy-boto3-managedblockchain]: executing diffoscope
+[2023-04-13 00:06:31] INFO root fetch - processPackages [mypy-boto3-managedblockchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-managedblockchain-1.26.81.tar.gz tmp/mypy-boto3-managedblockchain-1.26.9.tar.gz --markdown 20230413/m/mypy-boto3-managedblockchain/1.26.81-1.26.9/diff.md --exclude *.pyd
+[2023-04-13 00:06:31] INFO root fetch - processPackages [mypy-boto3-groundstation]: Downloading https://files.pythonhosted.org/packages/08/b2/b1409f9b88d2fc25f796db25ee324c5a68c40333b923f8dd3f69ce539345/mypy-boto3-groundstation-1.26.61.tar.gz
+[2023-04-13 00:06:31] INFO root fetch - processPackages [boto3-stubs-lite]: executing diffoscope
+[2023-04-13 00:06:31] INFO root fetch - processPackages [boto3-stubs-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boto3-stubs-lite-1.26.98.tar.gz tmp/boto3-stubs-lite-1.26.99.tar.gz --markdown 20230413/b/boto3-stubs-lite/1.26.98-1.26.99/diff.md --exclude *.pyd
+[2023-04-13 00:06:31] INFO root fetch - processPackages [mypy-boto3-groundstation]: executing diffoscope
+[2023-04-13 00:06:31] INFO root fetch - processPackages [mypy-boto3-groundstation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy-boto3-groundstation-1.26.6.tar.gz tmp/mypy-boto3-groundstation-1.26.61.tar.gz --markdown 20230413/m/mypy-boto3-groundstation/1.26.6-1.26.61/diff.md --exclude *.pyd
+[2023-04-13 00:06:32] INFO root fetch - processPackages [mypy-boto3-managedblockchain]: Start processing: dkist-processing-pac
+[2023-04-13 00:06:32] INFO root fetch - main [MainThread]: End processing [mypy-boto3-managedblockchain]: success
+[2023-04-13 00:06:32] INFO root fetch - processPackages [dkist-processing-pac]: New version: [2.1.0] Old Version: [2.0.0rc5]
+[2023-04-13 00:06:32] INFO root fetch - processPackages [mypy-boto3]: Start processing: pycallrail
+[2023-04-13 00:06:32] INFO root fetch - main [MainThread]: End processing [mypy-boto3]: success
+[2023-04-13 00:06:32] INFO root fetch - processPackages [pycallrail]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-13 00:06:32] INFO root fetch - processPackages [boto3-stubs]: Start processing: ultiutils
+[2023-04-13 00:06:32] INFO root fetch - main [MainThread]: End processing [boto3-stubs]: success
+[2023-04-13 00:06:32] INFO root fetch - processPackages [ultiutils]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-04-13 00:06:32] INFO root fetch - processPackages [dkist-processing-pac]: Downloading https://files.pythonhosted.org/packages/de/08/4fbb36163faedf1f4e8719c19d2357e83293ed874be7ec38e60969678266/dkist-processing-pac-2.1.0.tar.gz
+[2023-04-13 00:06:32] INFO root fetch - processPackages [boto3-stubs-lite]: Start processing: sematic
+[2023-04-13 00:06:32] INFO root fetch - main [MainThread]: End processing [boto3-stubs-lite]: success
+[2023-04-13 00:06:32] INFO root fetch - processPackages [sematic]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 00:06:32] INFO root fetch - processPackages [pycallrail]: Downloading https://files.pythonhosted.org/packages/0e/1b/dde284b13667a9368d4970c63df556fda752cdaeee967cdcf5d6af109d4d/pycallrail-0.5.2.tar.gz
+[2023-04-13 00:06:32] INFO root fetch - processPackages [dkist-processing-pac]: executing diffoscope
+[2023-04-13 00:06:32] INFO root fetch - processPackages [dkist-processing-pac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-processing-pac-2.0.0rc5.tar.gz tmp/dkist-processing-pac-2.1.0.tar.gz --markdown 20230413/d/dkist-processing-pac/2.0.0rc5-2.1.0/diff.md --exclude *.pyd
+[2023-04-13 00:06:32] INFO root fetch - processPackages [ultiutils]: Downloading https://files.pythonhosted.org/packages/3c/f2/e11d6673e565328c6fe3dea0d5d655a46387f7fb41e7102365cfe7196a41/ultiutils-1.1.0.tar.gz
+[2023-04-13 00:06:33] INFO root fetch - processPackages [mypy-boto3-groundstation]: Start processing: staremaster
+[2023-04-13 00:06:33] INFO root fetch - main [MainThread]: End processing [mypy-boto3-groundstation]: success
+[2023-04-13 00:06:33] INFO root fetch - processPackages [pycallrail]: Downloading https://files.pythonhosted.org/packages/ab/f8/f8152a840fcfb39cab5db6a4f9abfc9d66f662ac32f64110a32816960008/pycallrail-0.5.3.tar.gz
+[2023-04-13 00:06:33] INFO root fetch - processPackages [staremaster]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 00:06:33] INFO root fetch - processPackages [pycallrail]: executing diffoscope
+[2023-04-13 00:06:33] INFO root fetch - processPackages [pycallrail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycallrail-0.5.2.tar.gz tmp/pycallrail-0.5.3.tar.gz --markdown 20230413/p/pycallrail/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-13 00:06:33] INFO root fetch - processPackages [sematic]: executing diffoscope
+[2023-04-13 00:06:33] INFO root fetch - processPackages [sematic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sematic-0.8.0-py3-none-any.whl.zip tmp/sematic-0.9.0-py3-none-any.whl.zip --markdown 20230413/s/sematic/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 00:06:33] INFO root fetch - processPackages [ultiutils]: executing diffoscope
+[2023-04-13 00:06:33] INFO root fetch - processPackages [ultiutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultiutils-1.0.9.tar.gz tmp/ultiutils-1.1.0.tar.gz --markdown 20230413/u/ultiutils/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 00:06:33] INFO root fetch - processPackages [staremaster]: Downloading https://files.pythonhosted.org/packages/64/5d/22c998b74a74d18ac9eef7500f5aba3f66c046a73b269e193cd71631229b/staremaster-0.0.4.tar.gz
+[2023-04-13 00:06:33] INFO root fetch - processPackages [staremaster]: Downloading https://files.pythonhosted.org/packages/e9/dd/abab3e3237d0b9b22d1889bc43d69631bac2e3d21ab26f4f22d0f4427449/staremaster-0.0.5.tar.gz
+[2023-04-13 00:06:33] INFO root fetch - processPackages [staremaster]: executing diffoscope
+[2023-04-13 00:06:33] INFO root fetch - processPackages [staremaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staremaster-0.0.4.tar.gz tmp/staremaster-0.0.5.tar.gz --markdown 20230413/s/staremaster/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 00:06:34] INFO root fetch - processPackages [ultiutils]: Start processing: pymongocrypt
+[2023-04-13 00:06:34] INFO root fetch - main [MainThread]: End processing [ultiutils]: success
+[2023-04-13 00:06:34] INFO root fetch - processPackages [pymongocrypt]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-13 00:06:34] INFO root fetch - processPackages [pycallrail]: Start processing: trame-xterm
+[2023-04-13 00:06:34] INFO root fetch - main [MainThread]: End processing [pycallrail]: success
+[2023-04-13 00:06:34] INFO root fetch - processPackages [trame-xterm]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 00:06:34] INFO root fetch - processPackages [pymongocrypt]: Downloading https://files.pythonhosted.org/packages/39/36/063bb57ebed7c1cfb97de20ca9904b761814b9e47b6bffea1171b36b820c/pymongocrypt-1.5.1.tar.gz
+[2023-04-13 00:06:34] INFO root fetch - processPackages [dkist-processing-pac]: Start processing: nanolayer
+[2023-04-13 00:06:34] INFO root fetch - main [MainThread]: End processing [dkist-processing-pac]: success
+[2023-04-13 00:06:34] INFO root fetch - processPackages [trame-xterm]: Downloading https://files.pythonhosted.org/packages/b5/97/198fd0c983bb9d37e4e9acedabe5d6352cd338a21dae6de07850f82725b3/trame-xterm-0.1.1.tar.gz
+[2023-04-13 00:06:34] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-13 00:06:34] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-13 00:06:34] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230413/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-13 00:06:34] INFO root fetch - processPackages [trame-xterm]: Downloading https://files.pythonhosted.org/packages/93/39/775ca826eee9ee3145b73141e84fee6c2a81ba5528ea22e3fdb5db25d99f/trame-xterm-0.1.2.tar.gz
+[2023-04-13 00:06:34] INFO root fetch - processPackages [pymongocrypt]: Downloading https://files.pythonhosted.org/packages/d4/d8/44631bceaab3ac9f82b26c55d739a24c26dc90d18c07976ce6870fe26d01/pymongocrypt-1.5.2.tar.gz
+[2023-04-13 00:06:34] INFO root fetch - processPackages [staremaster]: Start processing: marpdown
+[2023-04-13 00:06:34] INFO root fetch - main [MainThread]: End processing [staremaster]: success
+[2023-04-13 00:06:34] INFO root fetch - processPackages [marpdown]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-13 00:06:34] INFO root fetch - processPackages [trame-xterm]: executing diffoscope
+[2023-04-13 00:06:34] INFO root fetch - processPackages [trame-xterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trame-xterm-0.1.1.tar.gz tmp/trame-xterm-0.1.2.tar.gz --markdown 20230413/t/trame-xterm/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 00:06:34] INFO root fetch - processPackages [pymongocrypt]: executing diffoscope
+[2023-04-13 00:06:34] INFO root fetch - processPackages [pymongocrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymongocrypt-1.5.1.tar.gz tmp/pymongocrypt-1.5.2.tar.gz --markdown 20230413/p/pymongocrypt/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-13 00:06:35] INFO root fetch - processPackages [marpdown]: Downloading https://files.pythonhosted.org/packages/95/67/b4c4da4ffcfb0613129d4461ccf7f6fc06d58ee116e897123c18413f71d6/marpdown-0.3.0.tar.gz
+[2023-04-13 00:06:35] INFO root fetch - processPackages [marpdown]: executing diffoscope
+[2023-04-13 00:06:35] INFO root fetch - processPackages [marpdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marpdown-0.2.0.tar.gz tmp/marpdown-0.3.0.tar.gz --markdown 20230413/m/marpdown/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-13 00:06:35] INFO root fetch - processPackages [nanolayer]: Start processing: g2p
+[2023-04-13 00:06:35] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-04-13 00:06:35] INFO root fetch - processPackages [g2p]: New version: [1.0.20230412] Old Version: [1.0.20230228]
+[2023-04-13 00:06:35] INFO root fetch - processPackages [g2p]: Downloading https://files.pythonhosted.org/packages/4d/67/8ef5a2a095b1f7b3730affecf5ede5adf56820840cc1bc8aff9b43ec64f5/g2p-1.0.20230228.tar.gz
+[2023-04-13 00:06:36] INFO root fetch - processPackages [marpdown]: Start processing: pepperize.cdk-serverless-cluster-from-snapshot
+[2023-04-13 00:06:36] INFO root fetch - main [MainThread]: End processing [marpdown]: success
+[2023-04-13 00:06:36] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-13 00:06:36] INFO root fetch - processPackages [g2p]: Downloading https://files.pythonhosted.org/packages/ce/27/2083b8c6b2e1b957eaf49b9ae3e3bef57a9b75c00c7ed1d6aeb597a3b37f/g2p-1.0.20230412.tar.gz
+[2023-04-13 00:06:36] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-04-13 00:06:36] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230413/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 00:06:36] INFO root fetch - processPackages [pymongocrypt]: Start processing: pulumi-azure-native
+[2023-04-13 00:06:36] INFO root fetch - main [MainThread]: End processing [pymongocrypt]: success
+[2023-04-13 00:06:36] INFO root fetch - processPackages [g2p]: executing diffoscope
+[2023-04-13 00:06:36] INFO root fetch - processPackages [g2p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g2p-1.0.20230228.tar.gz tmp/g2p-1.0.20230412.tar.gz --markdown 20230413/g/g2p/1.0.20230228-1.0.20230412/diff.md --exclude *.pyd
+[2023-04-13 00:06:36] INFO root fetch - processPackages [pulumi-azure-native]: New version: [1.99.2a1681334154] Old Version: [1.99.2a1681331400]
+[2023-04-13 00:06:36] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/e6/06/59ee84f4ba9a86685d09f95569aba6addd283f7d6a120426a646e8e92e72/pulumi_azure_native-1.99.2a1681331400.tar.gz
+[2023-04-13 00:06:37] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 62791347>=10485760
+[2023-04-13 00:06:37] INFO root fetch - main [MainThread]: End processing [pulumi-azure-native] error
+[2023-04-13 00:06:38] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
+[2023-04-13 00:06:38] INFO root fetch - main [MainThread]: End processing [trame-xterm]: success
+[2023-04-13 00:06:41] INFO root fetch - main [MainThread]: End processing [g2p]: success
+[2023-04-13 00:07:09] INFO root fetch - main [MainThread]: End processing [sematic]: success
+[2023-04-13 00:07:09] INFO root fetch - main [MainThread]: Store serial: [17682561]
