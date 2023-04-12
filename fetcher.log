@@ -496,3 +496,75 @@
 [2023-04-13 00:38:33] INFO root fetch - main [MainThread]: End processing [rasaio.integrations]: success
 [2023-04-13 00:38:33] INFO root fetch - main [MainThread]: End processing [pulumi]: success
 [2023-04-13 00:38:33] INFO root fetch - main [MainThread]: Store serial: [17682754]
+[2023-04-13 00:43:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682754]
+[2023-04-13 00:43:41] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-13 00:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: theseus-ai-nightly
+[2023-04-13 00:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: general-superstaq
+[2023-04-13 00:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qiskit-superstaq
+[2023-04-13 00:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cirq-superstaq
+[2023-04-13 00:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SupermarQ
+[2023-04-13 00:43:41] INFO root fetch - processPackages [cirq-superstaq]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 00:43:41] INFO root fetch - processPackages [SupermarQ]: New version: [0.3.24] Old Version: [0.3.23]
+[2023-04-13 00:43:41] INFO root fetch - processPackages [general-superstaq]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 00:43:41] INFO root fetch - processPackages [theseus-ai-nightly]: New version: [2023.4.12] Old Version: [2023.4.11]
+[2023-04-13 00:43:41] INFO root fetch - processPackages [qiskit-superstaq]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 00:43:41] INFO root fetch - processPackages [cirq-superstaq]: Downloading https://files.pythonhosted.org/packages/24/23/2e53aa7d71a86e1b918795598b7e648a3c8b392493d0399d085b8a34a69f/cirq_superstaq-0.3.8-py3-none-any.whl
+[2023-04-13 00:43:41] INFO root fetch - processPackages [SupermarQ]: Downloading https://files.pythonhosted.org/packages/6a/6b/113fcbbea48f8253294c7994350f3cdfce58ab7bac3abd07a223686306ab/SupermarQ-0.3.23-py3-none-any.whl
+[2023-04-13 00:43:41] INFO root fetch - processPackages [general-superstaq]: Downloading https://files.pythonhosted.org/packages/87/05/cd59ba3d55d20ac1221d7dbd1216dc5e2bfecd1d1bbdafcc4e49114575ae/general_superstaq-0.3.8-py3-none-any.whl
+[2023-04-13 00:43:41] INFO root fetch - processPackages [qiskit-superstaq]: Downloading https://files.pythonhosted.org/packages/33/d9/9afdc846fffea309c28e8f6c909c0db105ac4da2afb792672fef85880186/qiskit_superstaq-0.3.8-py3-none-any.whl
+[2023-04-13 00:43:41] INFO root fetch - processPackages [theseus-ai-nightly]: Downloading https://files.pythonhosted.org/packages/e3/fd/755e91aed143ea17267de683e55a0841cc72166fb7c4490c61ed9928fb4a/theseus-ai-nightly-2023.4.12.tar.gz
+[2023-04-13 00:43:41] INFO root fetch - processPackages [SupermarQ]: Downloading https://files.pythonhosted.org/packages/0d/32/80460930bbb51796432d014d593fd543c7fa0f0091e5895e8b4d8df51f9e/SupermarQ-0.3.24-py3-none-any.whl
+[2023-04-13 00:43:41] INFO root fetch - processPackages [general-superstaq]: Downloading https://files.pythonhosted.org/packages/d3/61/5004f0f681b41698dc740d5c70e69d5eef3be2a6bb1c9b142d04914b67ff/general_superstaq-0.3.9-py3-none-any.whl
+[2023-04-13 00:43:41] INFO root fetch - processPackages [theseus-ai-nightly]: executing diffoscope
+[2023-04-13 00:43:41] INFO root fetch - processPackages [theseus-ai-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/theseus-ai-nightly-2023.4.11.tar.gz tmp/theseus-ai-nightly-2023.4.12.tar.gz --markdown 20230413/t/theseus-ai-nightly/2023.4.11-2023.4.12/diff.md --exclude *.pyd
+[2023-04-13 00:43:41] INFO root fetch - processPackages [SupermarQ]: executing diffoscope
+[2023-04-13 00:43:41] INFO root fetch - processPackages [SupermarQ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SupermarQ-0.3.23-py3-none-any.whl.zip tmp/SupermarQ-0.3.24-py3-none-any.whl.zip --markdown 20230413/S/SupermarQ/0.3.23-0.3.24/diff.md --exclude *.pyd
+[2023-04-13 00:43:42] INFO root fetch - processPackages [general-superstaq]: executing diffoscope
+[2023-04-13 00:43:42] INFO root fetch - processPackages [general-superstaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/general_superstaq-0.3.8-py3-none-any.whl.zip tmp/general_superstaq-0.3.9-py3-none-any.whl.zip --markdown 20230413/g/general-superstaq/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 00:43:42] INFO root fetch - processPackages [qiskit-superstaq]: Downloading https://files.pythonhosted.org/packages/06/a8/93bc82c36803b1fdfe08be69e96d149fb909954aab455e01b4163459073b/qiskit_superstaq-0.3.9-py3-none-any.whl
+[2023-04-13 00:43:42] INFO root fetch - processPackages [cirq-superstaq]: Downloading https://files.pythonhosted.org/packages/5f/d7/90cf6503b553892d091d3ad8ba050b2ec5744880829c43fa4090da82ce8b/cirq_superstaq-0.3.9-py3-none-any.whl
+[2023-04-13 00:43:42] INFO root fetch - processPackages [qiskit-superstaq]: executing diffoscope
+[2023-04-13 00:43:42] INFO root fetch - processPackages [qiskit-superstaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qiskit_superstaq-0.3.8-py3-none-any.whl.zip tmp/qiskit_superstaq-0.3.9-py3-none-any.whl.zip --markdown 20230413/q/qiskit-superstaq/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 00:43:42] INFO root fetch - processPackages [cirq-superstaq]: executing diffoscope
+[2023-04-13 00:43:42] INFO root fetch - processPackages [cirq-superstaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_superstaq-0.3.8-py3-none-any.whl.zip tmp/cirq_superstaq-0.3.9-py3-none-any.whl.zip --markdown 20230413/c/cirq-superstaq/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 00:43:43] INFO root fetch - processPackages [general-superstaq]: Start processing: lnschema_core
+[2023-04-13 00:43:43] INFO root fetch - main [MainThread]: End processing [general-superstaq]: success
+[2023-04-13 00:43:43] INFO root fetch - processPackages [SupermarQ]: Start processing: openart
+[2023-04-13 00:43:43] INFO root fetch - main [MainThread]: End processing [SupermarQ]: success
+[2023-04-13 00:43:43] INFO root fetch - processPackages [openart]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 00:43:43] INFO root fetch - processPackages [lnschema_core]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-13 00:43:43] INFO root fetch - processPackages [openart]: Downloading https://files.pythonhosted.org/packages/f2/8d/f961929576604af38a563c4e96920253f3cdde086e03d9935ca7458d66bd/openart-0.0.1.tar.gz
+[2023-04-13 00:43:43] INFO root fetch - processPackages [openart]: Downloading https://files.pythonhosted.org/packages/16/53/8e1059bcd70587768a5094e6d3f80a97072981d2ccdb3d1ce5a3f478ec9d/openart-0.0.2.tar.gz
+[2023-04-13 00:43:43] INFO root fetch - processPackages [qiskit-superstaq]: Start processing: vocode
+[2023-04-13 00:43:43] INFO root fetch - main [MainThread]: End processing [qiskit-superstaq]: success
+[2023-04-13 00:43:43] INFO root fetch - processPackages [vocode]: New version: [0.1.91] Old Version: [0.1.90]
+[2023-04-13 00:43:43] INFO root fetch - processPackages [cirq-superstaq]: Start processing: databind
+[2023-04-13 00:43:43] INFO root fetch - main [MainThread]: End processing [cirq-superstaq]: success
+[2023-04-13 00:43:43] INFO root fetch - processPackages [databind]: New version: [4.2.4] Old Version: [4.2.3]
+[2023-04-13 00:43:43] INFO root fetch - processPackages [openart]: executing diffoscope
+[2023-04-13 00:43:43] INFO root fetch - processPackages [openart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openart-0.0.1.tar.gz tmp/openart-0.0.2.tar.gz --markdown 20230413/o/openart/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 00:43:43] INFO root fetch - processPackages [lnschema_core]: executing diffoscope
+[2023-04-13 00:43:43] INFO root fetch - processPackages [lnschema_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_core-0.8.1.tar.gz tmp/lnschema_core-0.9.0.tar.gz --markdown 20230413/l/lnschema_core/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 00:43:43] INFO root fetch - processPackages [theseus-ai-nightly]: Start processing: databind.core
+[2023-04-13 00:43:43] INFO root fetch - main [MainThread]: End processing [theseus-ai-nightly]: success
+[2023-04-13 00:43:43] INFO root fetch - processPackages [databind.core]: New version: [4.2.4] Old Version: [4.2.3]
+[2023-04-13 00:43:43] INFO root fetch - processPackages [vocode]: Downloading https://files.pythonhosted.org/packages/db/8f/e43c5fa7d87797ffe6302d6fe0e82d3411d240a394db03fd71d6f47173f9/vocode-0.1.91.tar.gz
+[2023-04-13 00:43:43] INFO root fetch - processPackages [databind]: Downloading https://files.pythonhosted.org/packages/93/e7/7b24a90e1d1e40c8912ea6044d45abceab62cfb0209514f619ad9baba2be/databind-4.2.4.tar.gz
+[2023-04-13 00:43:44] INFO root fetch - processPackages [databind]: executing diffoscope
+[2023-04-13 00:43:44] INFO root fetch - processPackages [databind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind-4.2.3.tar.gz tmp/databind-4.2.4.tar.gz --markdown 20230413/d/databind/4.2.3-4.2.4/diff.md --exclude *.pyd
+[2023-04-13 00:43:44] INFO root fetch - processPackages [databind.core]: Downloading https://files.pythonhosted.org/packages/5b/6c/e3b3d25b014e3ac964f6c5981c07bd760fb79c1bfab689c5f37f0c9ad8f8/databind.core-4.2.4.tar.gz
+[2023-04-13 00:43:44] INFO root fetch - processPackages [databind.core]: executing diffoscope
+[2023-04-13 00:43:44] INFO root fetch - processPackages [databind.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind.core-4.2.3.tar.gz tmp/databind.core-4.2.4.tar.gz --markdown 20230413/d/databind.core/4.2.3-4.2.4/diff.md --exclude *.pyd
+[2023-04-13 00:43:44] INFO root fetch - processPackages [vocode]: executing diffoscope
+[2023-04-13 00:43:44] INFO root fetch - processPackages [vocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocode-0.1.90.tar.gz tmp/vocode-0.1.91.tar.gz --markdown 20230413/v/vocode/0.1.90-0.1.91/diff.md --exclude *.pyd
+[2023-04-13 00:43:44] INFO root fetch - processPackages [openart]: Start processing: databind.json
+[2023-04-13 00:43:44] INFO root fetch - main [MainThread]: End processing [openart]: success
+[2023-04-13 00:43:44] INFO root fetch - processPackages [databind.json]: New version: [4.2.3] Old Version: [4.2.2]
+[2023-04-13 00:43:44] INFO root fetch - processPackages [databind.json]: executing diffoscope
+[2023-04-13 00:43:44] INFO root fetch - processPackages [databind.json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind.json-4.2.2.tar.gz tmp/databind.json-4.2.3.tar.gz --markdown 20230413/d/databind.json/4.2.2-4.2.3/diff.md --exclude *.pyd
+[2023-04-13 00:43:44] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
+[2023-04-13 00:43:45] INFO root fetch - main [MainThread]: End processing [databind]: success
+[2023-04-13 00:43:45] INFO root fetch - main [MainThread]: End processing [databind.core]: success
+[2023-04-13 00:43:45] INFO root fetch - main [MainThread]: End processing [databind.json]: success
+[2023-04-13 00:43:46] INFO root fetch - main [MainThread]: End processing [vocode]: success
+[2023-04-13 00:43:46] INFO root fetch - main [MainThread]: Store serial: [17682782]
