@@ -307,3 +307,43 @@
 [2023-04-13 00:17:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_fiscal-14.0.9.2.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_fiscal-14.0.9.2.1.dev3-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-l10n-br-fiscal/14.0.9.2.1.dev2-14.0.9.2.1.dev3/diff.md --exclude *.pyd
 [2023-04-13 00:17:45] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-fiscal]: success
 [2023-04-13 00:17:45] INFO root fetch - main [MainThread]: Store serial: [17682648]
+[2023-04-13 00:22:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682648]
+[2023-04-13 00:22:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-13 00:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxrie
+[2023-04-13 00:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dragonfly-core
+[2023-04-13 00:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reminder-detector
+[2023-04-13 00:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: paneltime
+[2023-04-13 00:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo12-addon-l10n-br-fiscal
+[2023-04-13 00:22:52] INFO root fetch - processPackages [jaxrie]: New version: [4] Old Version: [3]
+[2023-04-13 00:22:52] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-13 00:22:52] INFO root fetch - processPackages [paneltime]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-13 00:22:52] INFO root fetch - processPackages [reminder-detector]: New version: [1.1.0] Old Version: [1.0.5]
+[2023-04-13 00:22:52] INFO root fetch - processPackages [odoo12-addon-l10n-br-fiscal]: New version: [12.0.9.0.0] Old Version: [12.0.8.0.0.99.dev3]
+[2023-04-13 00:22:53] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/93/fd/7cad9d4c9406e421f7ce31b725936bb32ec8a421f9b143e829c33cae55dd/dragonfly-core-1.8.1.tar.gz
+[2023-04-13 00:22:53] INFO root fetch - processPackages [odoo12-addon-l10n-br-fiscal]: Downloading https://files.pythonhosted.org/packages/08/a3/f6425a364d6c7326499a78a8d4470153d9d31656db1d0b26423dfbad2e33/odoo12_addon_l10n_br_fiscal-12.0.8.0.0.99.dev3-py3-none-any.whl
+[2023-04-13 00:22:53] INFO root fetch - processPackages [reminder-detector]: Downloading https://files.pythonhosted.org/packages/c5/c2/4c43e2bbe8ffcdd89e733e78de18cf86ecf6b16369cb17b9972a4d439a0f/reminder-detector-1.0.5.tar.gz
+[2023-04-13 00:22:53] INFO root fetch - processPackages [jaxrie]: Downloading https://files.pythonhosted.org/packages/53/32/ecd7836afbbca3fe14d1f0f8e3cabe4f8ebf93a661523888dbb5b3eacf7c/jaxrie-4.tar.gz
+[2023-04-13 00:22:53] INFO root fetch - processPackages [paneltime]: executing diffoscope
+[2023-04-13 00:22:53] INFO root fetch - processPackages [paneltime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paneltime-1.2.8-py3-none-any.whl.zip tmp/paneltime-1.2.9.tar.gz --markdown 20230413/p/paneltime/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-13 00:22:53] INFO root fetch - processPackages [jaxrie]: executing diffoscope
+[2023-04-13 00:22:53] INFO root fetch - processPackages [jaxrie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxrie-3.tar.gz tmp/jaxrie-4.tar.gz --markdown 20230413/j/jaxrie/3-4/diff.md --exclude *.pyd
+[2023-04-13 00:22:53] INFO root fetch - processPackages [reminder-detector]: Downloading https://files.pythonhosted.org/packages/f5/3b/12906ddbfdc79ab66b4fcb85b7b9144b72817f690b2240274878f0343b70/reminder-detector-1.1.0.tar.gz
+[2023-04-13 00:22:53] INFO root fetch - processPackages [reminder-detector]: executing diffoscope
+[2023-04-13 00:22:53] INFO root fetch - processPackages [reminder-detector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reminder-detector-1.0.5.tar.gz tmp/reminder-detector-1.1.0.tar.gz --markdown 20230413/r/reminder-detector/1.0.5-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 00:22:53] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/75/cb/4a1ce4726a070a188305b8d5343b4300bf24190845d85c8718cc31aa3e53/dragonfly-core-1.9.0.tar.gz
+[2023-04-13 00:22:53] INFO root fetch - processPackages [odoo12-addon-l10n-br-fiscal]: Downloading https://files.pythonhosted.org/packages/c5/f9/b53bf0c3db3456a6e89d7b5b44a07026de1de4272ffa3ced344e1be9c634/odoo12_addon_l10n_br_fiscal-12.0.9.0.0-py3-none-any.whl
+[2023-04-13 00:22:54] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2023-04-13 00:22:54] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20230413/d/dragonfly-core/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-13 00:22:54] INFO root fetch - processPackages [odoo12-addon-l10n-br-fiscal]: executing diffoscope
+[2023-04-13 00:22:54] INFO root fetch - processPackages [odoo12-addon-l10n-br-fiscal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_l10n_br_fiscal-12.0.8.0.0.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_l10n_br_fiscal-12.0.9.0.0-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-l10n-br-fiscal/12.0.8.0.0.99.dev3-12.0.9.0.0/diff.md --exclude *.pyd
+[2023-04-13 00:22:54] INFO root fetch - processPackages [jaxrie]: Start processing: cijoe
+[2023-04-13 00:22:54] INFO root fetch - main [MainThread]: End processing [jaxrie]: success
+[2023-04-13 00:22:54] INFO root fetch - processPackages [cijoe]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 00:22:54] INFO root fetch - main [MainThread]: End processing [paneltime]: success
+[2023-04-13 00:22:54] INFO root fetch - main [MainThread]: End processing [reminder-detector]: success
+[2023-04-13 00:22:54] INFO root fetch - processPackages [cijoe]: executing diffoscope
+[2023-04-13 00:22:54] INFO root fetch - processPackages [cijoe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cijoe-0.9.8.tar.gz tmp/cijoe-0.9.9.tar.gz --markdown 20230413/c/cijoe/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 00:22:55] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2023-04-13 00:22:55] INFO root fetch - main [MainThread]: End processing [cijoe]: success
+[2023-04-13 00:22:58] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-br-fiscal]: success
+[2023-04-13 00:22:58] INFO root fetch - main [MainThread]: Store serial: [17682682]
