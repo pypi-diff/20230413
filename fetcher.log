@@ -448,3 +448,51 @@
 [2023-04-13 00:33:20] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
 [2023-04-13 00:33:22] INFO root fetch - main [MainThread]: End processing [faradaysec]: success
 [2023-04-13 00:33:22] INFO root fetch - main [MainThread]: Store serial: [17682734]
+[2023-04-13 00:38:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682734]
+[2023-04-13 00:38:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-13 00:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dragonfly-uwg
+[2023-04-13 00:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytheus
+[2023-04-13 00:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: typeapi
+[2023-04-13 00:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: async-sqs-consumer
+[2023-04-13 00:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lbt-dragonfly
+[2023-04-13 00:38:30] INFO root fetch - processPackages [typeapi]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-13 00:38:30] INFO root fetch - processPackages [async-sqs-consumer]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-13 00:38:30] INFO root fetch - processPackages [pytheus]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-13 00:38:30] INFO root fetch - processPackages [dragonfly-uwg]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-04-13 00:38:30] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-13 00:38:30] INFO root fetch - processPackages [typeapi]: Downloading https://files.pythonhosted.org/packages/d4/4f/eeda9dff48c6456a24230a002c5d88a49e6d694a1d89a57c0224126c4a68/typeapi-1.4.1.tar.gz
+[2023-04-13 00:38:30] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2023-04-13 00:38:30] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20230413/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-13 00:38:30] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/a6/3c/7afbd082f170d8d51ed57abdf8bb67058ca404ede70f9d982fd95c8bb807/dragonfly-uwg-0.5.98.tar.gz
+[2023-04-13 00:38:30] INFO root fetch - processPackages [pytheus]: Downloading https://files.pythonhosted.org/packages/17/8a/d2d7100c5f1d47ce86242e8e75a852c62fd0ef6a4bf6de0f50d950720730/pytheus-0.0.7.tar.gz
+[2023-04-13 00:38:30] INFO root fetch - processPackages [typeapi]: Downloading https://files.pythonhosted.org/packages/a3/1b/08c2d2293573ac02adc016a0d715b1f77a40bffc8a9dd6293d40779aa240/typeapi-1.4.2.tar.gz
+[2023-04-13 00:38:30] INFO root fetch - processPackages [async-sqs-consumer]: Downloading https://files.pythonhosted.org/packages/e3/15/c9825ec20f363c1520e2d8de8ccbaf5b80a055220f19b49bd9992039d608/async_sqs_consumer-0.3.8.tar.gz
+[2023-04-13 00:38:30] INFO root fetch - processPackages [pytheus]: executing diffoscope
+[2023-04-13 00:38:30] INFO root fetch - processPackages [pytheus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytheus-0.0.6.tar.gz tmp/pytheus-0.0.7.tar.gz --markdown 20230413/p/pytheus/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-13 00:38:30] INFO root fetch - processPackages [typeapi]: executing diffoscope
+[2023-04-13 00:38:30] INFO root fetch - processPackages [typeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typeapi-1.4.1.tar.gz tmp/typeapi-1.4.2.tar.gz --markdown 20230413/t/typeapi/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-13 00:38:30] INFO root fetch - processPackages [async-sqs-consumer]: executing diffoscope
+[2023-04-13 00:38:30] INFO root fetch - processPackages [async-sqs-consumer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_sqs_consumer-0.3.7.tar.gz tmp/async_sqs_consumer-0.3.8.tar.gz --markdown 20230413/a/async-sqs-consumer/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-13 00:38:31] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/55/b3/3f9a36d82b87f343d4e196e93a8cf3e838b9c80b0849f927d4f3505355af/dragonfly-uwg-0.5.99.tar.gz
+[2023-04-13 00:38:31] INFO root fetch - processPackages [dragonfly-uwg]: executing diffoscope
+[2023-04-13 00:38:31] INFO root fetch - processPackages [dragonfly-uwg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-uwg-0.5.98.tar.gz tmp/dragonfly-uwg-0.5.99.tar.gz --markdown 20230413/d/dragonfly-uwg/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-04-13 00:38:31] INFO root fetch - processPackages [lbt-dragonfly]: Start processing: rasaio.integrations
+[2023-04-13 00:38:31] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2023-04-13 00:38:31] INFO root fetch - processPackages [pytheus]: Start processing: pulumi
+[2023-04-13 00:38:31] INFO root fetch - main [MainThread]: End processing [pytheus]: success
+[2023-04-13 00:38:31] INFO root fetch - processPackages [rasaio.integrations]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 00:38:31] INFO root fetch - processPackages [pulumi]: New version: [3.9.1] Old Version: [3.9.0a1627480147]
+[2023-04-13 00:38:31] INFO root fetch - main [MainThread]: End processing [async-sqs-consumer]: success
+[2023-04-13 00:38:31] INFO root fetch - main [MainThread]: End processing [typeapi]: success
+[2023-04-13 00:38:31] INFO root fetch - processPackages [rasaio.integrations]: Downloading https://files.pythonhosted.org/packages/0f/97/00e962219b3eca606b6743e2ccfbbea4c4046fb6ed06ddaddff5d796546c/rasaio.integrations-0.0.8.tar.gz
+[2023-04-13 00:38:31] INFO root fetch - processPackages [pulumi]: Downloading https://files.pythonhosted.org/packages/c1/86/e81db20648ca7b8fbc7fb663e6795bc30d94e7f71c35856cda04bb48fb84/pulumi-3.9.0a1627480147-py2.py3-none-any.whl
+[2023-04-13 00:38:32] INFO root fetch - processPackages [rasaio.integrations]: Downloading https://files.pythonhosted.org/packages/c6/f4/b818a4a31bec268f8e313d2ea330da66544db8e22f518c54b9a1a1303d5b/rasaio.integrations-0.0.9.tar.gz
+[2023-04-13 00:38:32] INFO root fetch - processPackages [rasaio.integrations]: executing diffoscope
+[2023-04-13 00:38:32] INFO root fetch - processPackages [rasaio.integrations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rasaio.integrations-0.0.8.tar.gz tmp/rasaio.integrations-0.0.9.tar.gz --markdown 20230413/r/rasaio.integrations/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 00:38:32] INFO root fetch - processPackages [pulumi]: Downloading https://files.pythonhosted.org/packages/ba/a5/2a7580020b4c5bf7a2141ea9a534e88935a103da4dff30a205e4afdfb95d/pulumi-3.9.1-py2.py3-none-any.whl
+[2023-04-13 00:38:32] INFO root fetch - processPackages [pulumi]: executing diffoscope
+[2023-04-13 00:38:32] INFO root fetch - processPackages [pulumi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi-3.9.0a1627480147-py2.py3-none-any.whl.zip tmp/pulumi-3.9.1-py2.py3-none-any.whl.zip --markdown 20230413/p/pulumi/3.9.0a1627480147-3.9.1/diff.md --exclude *.pyd
+[2023-04-13 00:38:32] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
+[2023-04-13 00:38:33] INFO root fetch - main [MainThread]: End processing [rasaio.integrations]: success
+[2023-04-13 00:38:33] INFO root fetch - main [MainThread]: End processing [pulumi]: success
+[2023-04-13 00:38:33] INFO root fetch - main [MainThread]: Store serial: [17682754]
