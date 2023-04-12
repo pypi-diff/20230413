@@ -621,3 +621,27 @@
 [2023-04-13 00:49:02] INFO root fetch - main [MainThread]: End processing [django-cfdi]: success
 [2023-04-13 00:49:06] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
 [2023-04-13 00:49:06] INFO root fetch - main [MainThread]: Store serial: [17682820]
+[2023-04-13 00:54:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682820]
+[2023-04-13 00:54:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-13 00:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cqepyutils
+[2023-04-13 00:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lamindb
+[2023-04-13 00:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fasthr
+[2023-04-13 00:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gpeopleapiwrapper
+[2023-04-13 00:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: polywrap-msgpack
+[2023-04-13 00:54:13] INFO root fetch - processPackages [polywrap-msgpack]: New version: [0.1.0a9] Old Version: [0.1.0a8]
+[2023-04-13 00:54:13] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 00:54:14] WARNING root fetch - processPackages [gpeopleapiwrapper]: Skipping, unable to determine old version
+[2023-04-13 00:54:14] INFO root fetch - main [MainThread]: End processing [gpeopleapiwrapper] error
+[2023-04-13 00:54:14] WARNING root fetch - processPackages [fasthr]: Skipping, unable to determine old version
+[2023-04-13 00:54:14] INFO root fetch - main [MainThread]: End processing [fasthr] error
+[2023-04-13 00:54:14] INFO root fetch - processPackages [lamindb]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-04-13 00:54:14] INFO root fetch - processPackages [polywrap-msgpack]: executing diffoscope
+[2023-04-13 00:54:14] INFO root fetch - processPackages [polywrap-msgpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_msgpack-0.1.0a8.tar.gz tmp/polywrap_msgpack-0.1.0a9.tar.gz --markdown 20230413/p/polywrap-msgpack/0.1.0a8-0.1.0a9/diff.md --exclude *.pyd
+[2023-04-13 00:54:14] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-13 00:54:14] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230413/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 00:54:14] INFO root fetch - processPackages [lamindb]: executing diffoscope
+[2023-04-13 00:54:14] INFO root fetch - processPackages [lamindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb-0.9.4.tar.gz tmp/lamindb-0.9.6.tar.gz --markdown 20230413/l/lamindb/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-04-13 00:54:15] INFO root fetch - main [MainThread]: End processing [polywrap-msgpack]: success
+[2023-04-13 00:54:15] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-13 00:54:15] INFO root fetch - main [MainThread]: End processing [lamindb]: success
+[2023-04-13 00:54:15] INFO root fetch - main [MainThread]: Store serial: [17682840]
