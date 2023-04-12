@@ -874,3 +874,25 @@
 [2023-04-13 01:16:10] INFO root fetch - main [MainThread]: End processing [django-google-cloud-tasks]: success
 [2023-04-13 01:16:11] INFO root fetch - main [MainThread]: End processing [keeper-secrets-manager-cli]: success
 [2023-04-13 01:16:11] INFO root fetch - main [MainThread]: Store serial: [17682961]
+[2023-04-13 01:21:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17682961]
+[2023-04-13 01:21:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-13 01:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quantconnect-stubs
+[2023-04-13 01:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cijoe-pkg-qemu
+[2023-04-13 01:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hotdoc
+[2023-04-13 01:21:18] INFO root fetch - processPackages [cijoe-pkg-qemu]: New version: [6.1.9] Old Version: [6.1.8]
+[2023-04-13 01:21:18] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-13 01:21:18] INFO root fetch - processPackages [hotdoc]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-13 01:21:18] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-13 01:21:18] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230413/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-13 01:21:18] INFO root fetch - processPackages [cijoe-pkg-qemu]: Downloading https://files.pythonhosted.org/packages/ed/a4/5f878bddf207f71dd8b17766b3a1aa7f9e29b4e7ba6ce8bfc60b1f4c11d8/cijoe-pkg-qemu-6.1.8.tar.gz
+[2023-04-13 01:21:18] INFO root fetch - processPackages [hotdoc]: Downloading https://files.pythonhosted.org/packages/de/f5/4491afc47ccc28114f6e262d460723d1cd7b37bc4a78c89b7379a44867ac/hotdoc-0.9.5.tar.gz
+[2023-04-13 01:21:19] INFO root fetch - processPackages [cijoe-pkg-qemu]: Downloading https://files.pythonhosted.org/packages/e1/b6/b1074015c36d67f4e730f2b3ab85a2e13f77db2e1fc837ad23b2b0ae1418/cijoe-pkg-qemu-6.1.9.tar.gz
+[2023-04-13 01:21:19] INFO root fetch - processPackages [cijoe-pkg-qemu]: executing diffoscope
+[2023-04-13 01:21:19] INFO root fetch - processPackages [cijoe-pkg-qemu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cijoe-pkg-qemu-6.1.8.tar.gz tmp/cijoe-pkg-qemu-6.1.9.tar.gz --markdown 20230413/c/cijoe-pkg-qemu/6.1.8-6.1.9/diff.md --exclude *.pyd
+[2023-04-13 01:21:19] INFO root fetch - processPackages [hotdoc]: Downloading https://files.pythonhosted.org/packages/d0/61/6137385dec37ae993f400d51a1ccf38e7120e897f9bee6b42775754fb4ea/hotdoc-0.9.6.tar.gz
+[2023-04-13 01:21:20] INFO root fetch - processPackages [hotdoc]: executing diffoscope
+[2023-04-13 01:21:20] INFO root fetch - processPackages [hotdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotdoc-0.9.5.tar.gz tmp/hotdoc-0.9.6.tar.gz --markdown 20230413/h/hotdoc/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-13 01:21:20] INFO root fetch - main [MainThread]: End processing [cijoe-pkg-qemu]: success
+[2023-04-13 01:21:23] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-04-13 01:21:51] INFO root fetch - main [MainThread]: End processing [hotdoc]: success
+[2023-04-13 01:21:51] INFO root fetch - main [MainThread]: Store serial: [17682969]
