@@ -1077,3 +1077,25 @@
 [2023-04-13 01:50:41] INFO root fetch - main [MainThread]: End processing [fal-serverless]: success
 [2023-04-13 01:50:41] INFO root fetch - main [MainThread]: End processing [access]: success
 [2023-04-13 01:50:41] INFO root fetch - main [MainThread]: Store serial: [17683090]
+[2023-04-13 01:55:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17683090]
+[2023-04-13 01:55:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-13 01:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bible-alignments
+[2023-04-13 01:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tremolo
+[2023-04-13 01:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: risset
+[2023-04-13 01:55:48] INFO root fetch - processPackages [tremolo]: New version: [0.0.82] Old Version: [0.0.81]
+[2023-04-13 01:55:48] INFO root fetch - processPackages [bible-alignments]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-13 01:55:48] INFO root fetch - processPackages [risset]: New version: [2.4.0] Old Version: [2.3.1]
+[2023-04-13 01:55:48] INFO root fetch - processPackages [bible-alignments]: Downloading https://files.pythonhosted.org/packages/79/27/cd289dd066cd0f459c4c9138f2b1069b09a9624830305b9915861bd71c55/bible_alignments-0.2.4.tar.gz
+[2023-04-13 01:55:48] INFO root fetch - processPackages [tremolo]: Downloading https://files.pythonhosted.org/packages/ea/d6/d1fa725bc0802d33fd0d457695e626e5864a9c6afb854c8d231392805b74/tremolo-0.0.82.tar.gz
+[2023-04-13 01:55:48] INFO root fetch - processPackages [risset]: Downloading https://files.pythonhosted.org/packages/13/f7/57adac360327853edd606e5bbc81692b67f98fdd8a61816ee68f31d0375d/risset-2.4.0.tar.gz
+[2023-04-13 01:55:48] INFO root fetch - processPackages [tremolo]: executing diffoscope
+[2023-04-13 01:55:48] INFO root fetch - processPackages [tremolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tremolo-0.0.81.tar.gz tmp/tremolo-0.0.82.tar.gz --markdown 20230413/t/tremolo/0.0.81-0.0.82/diff.md --exclude *.pyd
+[2023-04-13 01:55:49] INFO root fetch - processPackages [bible-alignments]: Downloading https://files.pythonhosted.org/packages/2c/96/91ca0ec9ce1ddf39e2063e0a30cb18aa4098be9df7a83cadcbbce530ef84/bible_alignments-0.2.5.tar.gz
+[2023-04-13 01:55:49] INFO root fetch - processPackages [risset]: executing diffoscope
+[2023-04-13 01:55:49] INFO root fetch - processPackages [risset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/risset-2.3.1.tar.gz tmp/risset-2.4.0.tar.gz --markdown 20230413/r/risset/2.3.1-2.4.0/diff.md --exclude *.pyd
+[2023-04-13 01:55:49] INFO root fetch - processPackages [bible-alignments]: executing diffoscope
+[2023-04-13 01:55:49] INFO root fetch - processPackages [bible-alignments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bible_alignments-0.2.4.tar.gz tmp/bible_alignments-0.2.5.tar.gz --markdown 20230413/b/bible-alignments/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-13 01:55:50] INFO root fetch - main [MainThread]: End processing [tremolo]: success
+[2023-04-13 01:55:50] INFO root fetch - main [MainThread]: End processing [risset]: success
+[2023-04-13 01:55:50] INFO root fetch - main [MainThread]: End processing [bible-alignments]: success
+[2023-04-13 01:55:50] INFO root fetch - main [MainThread]: Store serial: [17683100]
