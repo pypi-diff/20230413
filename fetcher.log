@@ -16262,3 +16262,131 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 14:14:51] INFO root fetch - main [MainThread]: End processing [blockapi]: success
 [2023-04-13 14:14:51] INFO root fetch - main [MainThread]: End processing [invenio-app-rdm]: success
 [2023-04-13 14:14:51] INFO root fetch - main [MainThread]: Store serial: [17691988]
+[2023-04-13 14:19:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17691988]
+[2023-04-13 14:19:59] INFO root fetch - main [MainThread]: Found 24 changed packages
+[2023-04-13 14:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-hell-auth
+[2023-04-13 14:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polywrap-msgpack
+[2023-04-13 14:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: few-shot-priming
+[2023-04-13 14:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xpip-python
+[2023-04-13 14:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datagen-tech
+[2023-04-13 14:19:59] WARNING root fetch - processPackages [xpip-python]: Skipping, unable to determine old version
+[2023-04-13 14:19:59] INFO root fetch - processPackages [xpip-python]: Start processing: arkitekt
+[2023-04-13 14:19:59] INFO root fetch - processPackages [django-hell-auth]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 14:19:59] INFO root fetch - main [MainThread]: End processing [xpip-python] error
+[2023-04-13 14:19:59] INFO root fetch - processPackages [datagen-tech]: New version: [1.9.0rc2] Old Version: [1.9.0rc1]
+[2023-04-13 14:19:59] INFO root fetch - processPackages [polywrap-msgpack]: New version: [0.1.0a9] Old Version: [0.1.0a8]
+[2023-04-13 14:19:59] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 14:19:59] INFO root fetch - processPackages [arkitekt]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-13 14:19:59] INFO root fetch - processPackages [django-hell-auth]: Downloading https://files.pythonhosted.org/packages/33/85/81edc0898095350040f0190cf2fa1d8337ce63f72cd1fa1337ae96b46a2f/django_hell_auth-0.0.2.tar.gz
+[2023-04-13 14:20:00] INFO root fetch - processPackages [polywrap-msgpack]: executing diffoscope
+[2023-04-13 14:20:00] INFO root fetch - processPackages [polywrap-msgpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_msgpack-0.1.0a8.tar.gz tmp/polywrap_msgpack-0.1.0a9.tar.gz --markdown 20230413/p/polywrap-msgpack/0.1.0a8-0.1.0a9/diff.md --exclude *.pyd
+[2023-04-13 14:20:00] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 14:20:00] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 14:20:00] INFO root fetch - processPackages [arkitekt]: executing diffoscope
+[2023-04-13 14:20:00] INFO root fetch - processPackages [arkitekt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkitekt-0.4.8.tar.gz tmp/arkitekt-0.4.9.tar.gz --markdown 20230413/a/arkitekt/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-13 14:20:00] INFO root fetch - processPackages [django-hell-auth]: Downloading https://files.pythonhosted.org/packages/a6/aa/c417f603b50a863cd48527e1dd6cb5e74c98428a963594ec6ac188e17ca2/django_hell_auth-0.0.3.tar.gz
+[2023-04-13 14:20:00] INFO root fetch - processPackages [datagen-tech]: executing diffoscope
+[2023-04-13 14:20:00] INFO root fetch - processPackages [datagen-tech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_tech-1.9.0rc1.tar.gz tmp/datagen_tech-1.9.0rc2.tar.gz --markdown 20230413/d/datagen-tech/1.9.0rc1-1.9.0rc2/diff.md --exclude *.pyd
+[2023-04-13 14:20:00] INFO root fetch - processPackages [django-hell-auth]: executing diffoscope
+[2023-04-13 14:20:00] INFO root fetch - processPackages [django-hell-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_hell_auth-0.0.2.tar.gz tmp/django_hell_auth-0.0.3.tar.gz --markdown 20230413/d/django-hell-auth/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 14:20:01] INFO root fetch - processPackages [polywrap-msgpack]: Start processing: bridgecrew
+[2023-04-13 14:20:01] INFO root fetch - main [MainThread]: End processing [polywrap-msgpack]: success
+[2023-04-13 14:20:01] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-13 14:20:01] INFO root fetch - processPackages [few-shot-priming]: Start processing: cybrid-api-bank-python
+[2023-04-13 14:20:01] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 14:20:01] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 14:20:01] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-13 14:20:01] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230413/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-13 14:20:01] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-04-13 14:20:01] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230413/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 14:20:01] INFO root fetch - processPackages [django-hell-auth]: Start processing: cybrid-api-organization-python
+[2023-04-13 14:20:01] INFO root fetch - main [MainThread]: End processing [django-hell-auth]: success
+[2023-04-13 14:20:01] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 14:20:01] INFO root fetch - processPackages [arkitekt]: Start processing: fastapi-myhelper
+[2023-04-13 14:20:01] INFO root fetch - main [MainThread]: End processing [arkitekt]: success
+[2023-04-13 14:20:01] INFO root fetch - processPackages [fastapi-myhelper]: New version: [0.1.6] Old Version: [0.1.5.3]
+[2023-04-13 14:20:01] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-04-13 14:20:01] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230413/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 14:20:01] INFO root fetch - processPackages [fastapi-myhelper]: Downloading https://files.pythonhosted.org/packages/74/b4/a94fc60aba4f870240e313086c7e81b4741c9e3c47991c0fea29d8c95b73/fastapi_myhelper-0.1.6.tar.gz
+[2023-04-13 14:20:02] INFO root fetch - processPackages [fastapi-myhelper]: executing diffoscope
+[2023-04-13 14:20:02] INFO root fetch - processPackages [fastapi-myhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_myhelper-0.1.5.3.tar.gz tmp/fastapi_myhelper-0.1.6.tar.gz --markdown 20230413/f/fastapi-myhelper/0.1.5.3-0.1.6/diff.md --exclude *.pyd
+[2023-04-13 14:20:02] INFO root fetch - processPackages [bridgecrew]: Start processing: alicloud-gateway-iot
+[2023-04-13 14:20:02] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-13 14:20:02] WARNING root fetch - processPackages [alicloud-gateway-iot]: Skipping, unable to determine old version
+[2023-04-13 14:20:02] INFO root fetch - processPackages [alicloud-gateway-iot]: Start processing: polywrap-manifest
+[2023-04-13 14:20:02] INFO root fetch - main [MainThread]: End processing [alicloud-gateway-iot] error
+[2023-04-13 14:20:02] INFO root fetch - processPackages [polywrap-manifest]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-13 14:20:02] INFO root fetch - processPackages [polywrap-manifest]: executing diffoscope
+[2023-04-13 14:20:02] INFO root fetch - processPackages [polywrap-manifest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_manifest-0.1.0a7.tar.gz tmp/polywrap_manifest-0.1.0a8.tar.gz --markdown 20230413/p/polywrap-manifest/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-13 14:20:02] INFO root fetch - processPackages [cybrid-api-organization-python]: Start processing: alicloud-gateway-iot-py2
+[2023-04-13 14:20:02] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-04-13 14:20:02] WARNING root fetch - processPackages [alicloud-gateway-iot-py2]: Skipping, unable to determine old version
+[2023-04-13 14:20:02] INFO root fetch - processPackages [alicloud-gateway-iot-py2]: Start processing: odoo14-addon-shopinvader
+[2023-04-13 14:20:02] INFO root fetch - main [MainThread]: End processing [alicloud-gateway-iot-py2] error
+[2023-04-13 14:20:02] INFO root fetch - processPackages [odoo14-addon-shopinvader]: New version: [14.0.5.9.3] Old Version: [14.0.5.9.2]
+[2023-04-13 14:20:03] INFO root fetch - processPackages [odoo14-addon-shopinvader]: executing diffoscope
+[2023-04-13 14:20:03] INFO root fetch - processPackages [odoo14-addon-shopinvader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shopinvader-14.0.5.9.2-py3-none-any.whl.zip tmp/odoo14_addon_shopinvader-14.0.5.9.3-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-shopinvader/14.0.5.9.2-14.0.5.9.3/diff.md --exclude *.pyd
+[2023-04-13 14:20:03] INFO root fetch - processPackages [fastapi-myhelper]: Start processing: lumeny
+[2023-04-13 14:20:03] INFO root fetch - main [MainThread]: End processing [fastapi-myhelper]: success
+[2023-04-13 14:20:03] INFO root fetch - processPackages [lumeny]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 14:20:03] INFO root fetch - processPackages [lumeny]: Downloading https://files.pythonhosted.org/packages/70/d9/e6c7a662ed9a76a54cf59ce1f93c0b422eee0d777037208ae075b7cd30df/lumeny-0.1.0.tar.gz
+[2023-04-13 14:20:03] INFO root fetch - processPackages [polywrap-manifest]: Start processing: mercurial
+[2023-04-13 14:20:03] INFO root fetch - main [MainThread]: End processing [polywrap-manifest]: success
+[2023-04-13 14:20:03] INFO root fetch - processPackages [mercurial]: New version: [6.4rc0] Old Version: [6.4.1]
+[2023-04-13 14:20:03] INFO root fetch - processPackages [lumeny]: Downloading https://files.pythonhosted.org/packages/db/3f/42672b06e267ca0646983fa50732f5e5fb3de45703b1235bcb9aeb6068eb/lumeny-0.1.1.tar.gz
+[2023-04-13 14:20:03] INFO root fetch - processPackages [mercurial]: Downloading https://files.pythonhosted.org/packages/6b/bb/f032be723388294429f154f6176abe95e76be5ad5ef66554aab306cc16ca/mercurial-6.4.1.tar.gz
+[2023-04-13 14:20:03] INFO root fetch - processPackages [lumeny]: executing diffoscope
+[2023-04-13 14:20:03] INFO root fetch - processPackages [lumeny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumeny-0.1.0.tar.gz tmp/lumeny-0.1.1.tar.gz --markdown 20230413/l/lumeny/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 14:20:04] INFO root fetch - processPackages [mercurial]: Downloading https://files.pythonhosted.org/packages/45/70/5868446eae400fb15aedb993cc232fab244cb976c86426a854d371c1010f/mercurial-6.4rc0.tar.gz
+[2023-04-13 14:20:04] INFO root fetch - processPackages [cybrid-api-bank-python]: Start processing: polywrap-core
+[2023-04-13 14:20:04] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-04-13 14:20:04] INFO root fetch - processPackages [polywrap-core]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-13 14:20:04] INFO root fetch - processPackages [polywrap-core]: executing diffoscope
+[2023-04-13 14:20:04] INFO root fetch - processPackages [polywrap-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_core-0.1.0a7.tar.gz tmp/polywrap_core-0.1.0a8.tar.gz --markdown 20230413/p/polywrap-core/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-13 14:20:04] INFO root fetch - processPackages [odoo14-addon-shopinvader]: Start processing: few-shot-priming
+[2023-04-13 14:20:04] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopinvader]: success
+[2023-04-13 14:20:04] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 14:20:04] INFO root fetch - processPackages [datagen-tech]: Start processing: pytest-mpiexec
+[2023-04-13 14:20:04] INFO root fetch - main [MainThread]: End processing [datagen-tech]: success
+[2023-04-13 14:20:04] INFO root fetch - processPackages [pytest-mpiexec]: New version: [0.0.1a1] Old Version: [0.0.1.dev0]
+[2023-04-13 14:20:05] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 14:20:05] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 14:20:05] INFO root fetch - processPackages [lumeny]: Start processing: polywrap-plugin
+[2023-04-13 14:20:05] INFO root fetch - main [MainThread]: End processing [lumeny]: success
+[2023-04-13 14:20:05] INFO root fetch - processPackages [polywrap-plugin]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-13 14:20:05] INFO root fetch - processPackages [pytest-mpiexec]: Downloading https://files.pythonhosted.org/packages/0f/f4/31246969eb8e761c95076791a2e7f44cc59487735625d689fb9115eed571/pytest_mpiexec-0.0.1.dev0.tar.gz
+[2023-04-13 14:20:05] INFO root fetch - processPackages [mercurial]: executing diffoscope
+[2023-04-13 14:20:05] INFO root fetch - processPackages [mercurial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mercurial-6.4.1.tar.gz tmp/mercurial-6.4rc0.tar.gz --markdown 20230413/m/mercurial/6.4.1-6.4rc0/diff.md --exclude *.pyd
+[2023-04-13 14:20:05] INFO root fetch - processPackages [polywrap-plugin]: executing diffoscope
+[2023-04-13 14:20:05] INFO root fetch - processPackages [polywrap-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_plugin-0.1.0a6.tar.gz tmp/polywrap_plugin-0.1.0a7.tar.gz --markdown 20230413/p/polywrap-plugin/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 14:20:05] INFO root fetch - processPackages [pytest-mpiexec]: Downloading https://files.pythonhosted.org/packages/9f/38/52f97f2a66632b1bbe1547ff9ba8121c95c3a43f47bbc59d37efa6e7d430/pytest_mpiexec-0.0.1a1.tar.gz
+[2023-04-13 14:20:05] INFO root fetch - processPackages [pytest-mpiexec]: executing diffoscope
+[2023-04-13 14:20:05] INFO root fetch - processPackages [pytest-mpiexec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_mpiexec-0.0.1.dev0.tar.gz tmp/pytest_mpiexec-0.0.1a1.tar.gz --markdown 20230413/p/pytest-mpiexec/0.0.1.dev0-0.0.1a1/diff.md --exclude *.pyd
+[2023-04-13 14:20:05] INFO root fetch - processPackages [polywrap-core]: Start processing: cybrid-api-id-python
+[2023-04-13 14:20:05] INFO root fetch - main [MainThread]: End processing [polywrap-core]: success
+[2023-04-13 14:20:05] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 14:20:05] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-04-13 14:20:05] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230413/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 14:20:06] INFO root fetch - processPackages [few-shot-priming]: Start processing: watchtower-browser-testing
+[2023-04-13 14:20:06] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 14:20:06] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-13 14:20:06] INFO root fetch - processPackages [polywrap-plugin]: Start processing: blockapi
+[2023-04-13 14:20:06] INFO root fetch - main [MainThread]: End processing [polywrap-plugin]: success
+[2023-04-13 14:20:06] INFO root fetch - processPackages [blockapi]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-13 14:20:06] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-13 14:20:06] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.7.tar.gz tmp/watchtower_browser_testing-0.2.9.tar.gz --markdown 20230413/w/watchtower-browser-testing/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-13 14:20:06] INFO root fetch - processPackages [blockapi]: executing diffoscope
+[2023-04-13 14:20:06] INFO root fetch - processPackages [blockapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockapi-0.8.1.tar.gz tmp/blockapi-0.9.0.tar.gz --markdown 20230413/b/blockapi/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 14:20:06] INFO root fetch - processPackages [pytest-mpiexec]: Start processing: parse-1c-build
+[2023-04-13 14:20:06] INFO root fetch - main [MainThread]: End processing [pytest-mpiexec]: success
+[2023-04-13 14:20:06] INFO root fetch - processPackages [parse-1c-build]: New version: [5.9.0] Old Version: [5.8.1]
+[2023-04-13 14:20:07] INFO root fetch - processPackages [parse-1c-build]: Downloading https://files.pythonhosted.org/packages/fe/c6/fc030880eee030197ac5ae412350eea49b48b10772fe2a64b9e5e393a81b/parse-1c-build-5.8.1.tar.gz
+[2023-04-13 14:20:07] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-04-13 14:20:07] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-04-13 14:20:07] INFO root fetch - processPackages [parse-1c-build]: Downloading https://files.pythonhosted.org/packages/3c/1f/b50af57b9a06a1790997d135763f4a53ae843421e1db8e997114e1e00720/parse-1c-build-5.9.0.tar.gz
+[2023-04-13 14:20:08] INFO root fetch - processPackages [parse-1c-build]: executing diffoscope
+[2023-04-13 14:20:08] INFO root fetch - processPackages [parse-1c-build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse-1c-build-5.8.1.tar.gz tmp/parse-1c-build-5.9.0.tar.gz --markdown 20230413/p/parse-1c-build/5.8.1-5.9.0/diff.md --exclude *.pyd
+[2023-04-13 14:20:08] INFO root fetch - main [MainThread]: End processing [blockapi]: success
+[2023-04-13 14:20:08] INFO root fetch - main [MainThread]: End processing [parse-1c-build]: success
+[2023-04-13 14:21:02] INFO root fetch - main [MainThread]: End processing [mercurial]: success
+[2023-04-13 14:21:02] INFO root fetch - main [MainThread]: Store serial: [17692064]
