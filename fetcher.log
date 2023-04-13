@@ -7218,3 +7218,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:56:33] INFO root fetch - main [MainThread]: End processing [dpsa4fl-bindings]: success
 [2023-04-13 05:56:33] INFO root fetch - main [MainThread]: End processing [nextpcg]: success
 [2023-04-13 05:56:33] INFO root fetch - main [MainThread]: Store serial: [17686641]
+[2023-04-13 06:01:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686641]
+[2023-04-13 06:01:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 06:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepdriver
+[2023-04-13 06:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-casdoor
+[2023-04-13 06:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-casdoor
+[2023-04-13 06:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py3dchart
+[2023-04-13 06:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-typomatic
+[2023-04-13 06:01:41] INFO root fetch - processPackages [fastapi-casdoor]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-13 06:01:41] INFO root fetch - processPackages [django-typomatic]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-04-13 06:01:41] INFO root fetch - processPackages [py3dchart]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-13 06:01:41] INFO root fetch - processPackages [fastapi-casdoor]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-13 06:01:41] INFO root fetch - processPackages [deepdriver]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-13 06:01:41] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/fb/f0/3f0791db19032a374ed742c8f364f8f3b9f150975ea24d207ce75d772090/fastapi_casdoor-0.1.4-py3.8.egg
+[2023-04-13 06:01:41] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/fb/f0/3f0791db19032a374ed742c8f364f8f3b9f150975ea24d207ce75d772090/fastapi_casdoor-0.1.4-py3.8.egg
+[2023-04-13 06:01:41] INFO root fetch - processPackages [django-typomatic]: Downloading https://files.pythonhosted.org/packages/b3/47/b9163a7e6ca70657fc4ff1bd19ad05c5c2c4066032aebacf722eae038007/django-typomatic-2.1.1.tar.gz
+[2023-04-13 06:01:41] INFO root fetch - processPackages [py3dchart]: Downloading https://files.pythonhosted.org/packages/0c/d5/852a1f1985bdeb1b4acb77485cb706a1e743fae0eb861fcca595b8455e00/py3dchart-0.1.3.tar.gz
+[2023-04-13 06:01:41] INFO root fetch - processPackages [deepdriver]: executing diffoscope
+[2023-04-13 06:01:41] INFO root fetch - processPackages [deepdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdriver-0.9.4.tar.gz tmp/deepdriver-0.9.5.tar.gz --markdown 20230413/d/deepdriver/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-13 06:01:41] INFO root fetch - processPackages [django-typomatic]: Downloading https://files.pythonhosted.org/packages/ef/b6/83408ca9833a10097be34ca6c796ad0bfcc91e0c6c0c79ad70f1b5ee992f/django-typomatic-2.2.0.tar.gz
+[2023-04-13 06:01:41] INFO root fetch - processPackages [py3dchart]: executing diffoscope
+[2023-04-13 06:01:41] INFO root fetch - processPackages [py3dchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3dchart-0.1.2.tar.gz tmp/py3dchart-0.1.3.tar.gz --markdown 20230413/p/py3dchart/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-13 06:01:41] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/c2/85/2eb332dd710ee1388fce72cdaefd111ee07bc141e3557806b618e1cd506d/fastapi_casdoor-0.1.5-py3.8.egg
+[2023-04-13 06:01:41] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/c2/85/2eb332dd710ee1388fce72cdaefd111ee07bc141e3557806b618e1cd506d/fastapi_casdoor-0.1.5-py3.8.egg
+[2023-04-13 06:01:41] INFO root fetch - processPackages [django-typomatic]: executing diffoscope
+[2023-04-13 06:01:41] INFO root fetch - processPackages [django-typomatic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-typomatic-2.1.1.tar.gz tmp/django-typomatic-2.2.0.tar.gz --markdown 20230413/d/django-typomatic/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-04-13 06:01:41] INFO root fetch - processPackages [fastapi-casdoor]: executing diffoscope
+[2023-04-13 06:01:41] INFO root fetch - processPackages [fastapi-casdoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_casdoor-0.1.4-py3.8.egg tmp/fastapi_casdoor-0.1.5-py3.8.egg --markdown 20230413/f/fastapi-casdoor/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-13 06:01:41] INFO root fetch - processPackages [fastapi-casdoor]: executing diffoscope
+[2023-04-13 06:01:41] INFO root fetch - processPackages [fastapi-casdoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_casdoor-0.1.4-py3.8.egg tmp/fastapi_casdoor-0.1.5-py3.8.egg --markdown 20230413/f/fastapi-casdoor/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-13 06:01:42] INFO root fetch - processPackages [py3dchart]: Start processing: HawaData
+[2023-04-13 06:01:42] INFO root fetch - main [MainThread]: End processing [py3dchart]: success
+[2023-04-13 06:01:42] INFO root fetch - processPackages [HawaData]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-13 06:01:42] INFO root fetch - processPackages [deepdriver]: Start processing: nonebot-plugin-clock
+[2023-04-13 06:01:42] INFO root fetch - main [MainThread]: End processing [deepdriver]: success
+[2023-04-13 06:01:42] INFO root fetch - processPackages [nonebot-plugin-clock]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-04-13 06:01:42] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/4e/f6/f79a0b87ff0bc717c4d2d9575f5a98bf346bd07c03089576e9792f88bd45/HawaData-0.2.6.tar.gz
+[2023-04-13 06:01:42] INFO root fetch - processPackages [django-typomatic]: Start processing: conflore
+[2023-04-13 06:01:42] INFO root fetch - main [MainThread]: End processing [django-typomatic]: success
+[2023-04-13 06:01:42] INFO root fetch - processPackages [conflore]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 06:01:43] INFO root fetch - processPackages [fastapi-casdoor]: Start processing: odoo-addons-oca-delivery-carrier
+[2023-04-13 06:01:43] INFO root fetch - main [MainThread]: End processing [fastapi-casdoor]: success
+[2023-04-13 06:01:43] INFO root fetch - main [MainThread]: End processing [fastapi-casdoor]: success
+[2023-04-13 06:01:43] INFO root fetch - processPackages [nonebot-plugin-clock]: Downloading https://files.pythonhosted.org/packages/46/21/10bec28a0f106f8b1097dd464abd2dce79d66da4e14c487c0d30ddb05131/nonebot-plugin-clock-0.8.4.tar.gz
+[2023-04-13 06:01:43] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: New version: [16.0.20230412.0] Old Version: [16.0.20230209.0]
+[2023-04-13 06:01:43] INFO root fetch - processPackages [conflore]: Downloading https://files.pythonhosted.org/packages/1e/b8/689231d26f2e1a7cdb04fa8ca0cdb58dd11bd9c7ee08d817adb64b971556/conflore-0.2.0-py3-none-any.whl
+[2023-04-13 06:01:43] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/62/af/fe1287b573f58cbe9883b2e0e4333afa82f42e7ec323459443e999d2b8a3/HawaData-0.2.7.tar.gz
+[2023-04-13 06:01:43] INFO root fetch - processPackages [nonebot-plugin-clock]: executing diffoscope
+[2023-04-13 06:01:43] INFO root fetch - processPackages [nonebot-plugin-clock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-clock-0.8.3.tar.gz tmp/nonebot-plugin-clock-0.8.4.tar.gz --markdown 20230413/n/nonebot-plugin-clock/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-04-13 06:01:43] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: Downloading https://files.pythonhosted.org/packages/ab/35/dd163f8ab0e228656323badb606438319af87b58dffe1bfcf4fa0cfe12a4/odoo_addons_oca_delivery_carrier-16.0.20230209.0-py3-none-any.whl
+[2023-04-13 06:01:43] INFO root fetch - processPackages [HawaData]: executing diffoscope
+[2023-04-13 06:01:43] INFO root fetch - processPackages [HawaData]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HawaData-0.2.6.tar.gz tmp/HawaData-0.2.7.tar.gz --markdown 20230413/H/HawaData/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-13 06:01:43] INFO root fetch - processPackages [conflore]: Downloading https://files.pythonhosted.org/packages/88/ce/2efb485e224d6faa7f7e6787246bdb7600f2cff30b14ff403e996eefd5f3/conflore-0.2.1-py3-none-any.whl
+[2023-04-13 06:01:44] INFO root fetch - processPackages [conflore]: executing diffoscope
+[2023-04-13 06:01:44] INFO root fetch - processPackages [conflore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conflore-0.2.0-py3-none-any.whl.zip tmp/conflore-0.2.1-py3-none-any.whl.zip --markdown 20230413/c/conflore/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 06:01:44] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: Downloading https://files.pythonhosted.org/packages/07/95/d331c94e1d53ad46714a11e496d3cfe0ffac6ed578ad57d72ea1855264e7/odoo_addons_oca_delivery_carrier-16.0.20230412.0-py3-none-any.whl
+[2023-04-13 06:01:44] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: executing diffoscope
+[2023-04-13 06:01:44] INFO root fetch - processPackages [odoo-addons-oca-delivery-carrier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_delivery_carrier-16.0.20230209.0-py3-none-any.whl.zip tmp/odoo_addons_oca_delivery_carrier-16.0.20230412.0-py3-none-any.whl.zip --markdown 20230413/o/odoo-addons-oca-delivery-carrier/16.0.20230209.0-16.0.20230412.0/diff.md --exclude *.pyd
+[2023-04-13 06:01:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-clock]: success
+[2023-04-13 06:01:44] INFO root fetch - main [MainThread]: End processing [HawaData]: success
+[2023-04-13 06:01:45] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-delivery-carrier]: success
+[2023-04-13 06:01:45] INFO root fetch - main [MainThread]: End processing [conflore]: success
+[2023-04-13 06:01:45] INFO root fetch - main [MainThread]: Store serial: [17686667]
