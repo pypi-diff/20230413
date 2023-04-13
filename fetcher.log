@@ -11173,3 +11173,119 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 10:28:21] INFO root fetch - main [MainThread]: End processing [pontos]: success
 [2023-04-13 10:28:43] INFO root fetch - main [MainThread]: End processing [udata-front]: success
 [2023-04-13 10:28:43] INFO root fetch - main [MainThread]: Store serial: [17689133]
+[2023-04-13 10:33:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689133]
+[2023-04-13 10:33:52] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-13 10:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lucupy
+[2023-04-13 10:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfkbnufft
+[2023-04-13 10:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: porchlight
+[2023-04-13 10:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: comwares
+[2023-04-13 10:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: me-setups
+[2023-04-13 10:33:52] INFO root fetch - processPackages [porchlight]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-13 10:33:52] INFO root fetch - processPackages [me-setups]: New version: [1.6.6] Old Version: [1.6.5]
+[2023-04-13 10:33:52] INFO root fetch - processPackages [comwares]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 10:33:52] INFO root fetch - processPackages [tfkbnufft]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-13 10:33:52] INFO root fetch - processPackages [lucupy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 10:33:52] INFO root fetch - processPackages [porchlight]: Downloading https://files.pythonhosted.org/packages/38/fa/180f57df4084b7b442249828fffe128722ff4594250e850753cda3056570/porchlight-1.0.2.tar.gz
+[2023-04-13 10:33:52] INFO root fetch - processPackages [me-setups]: Downloading https://files.pythonhosted.org/packages/ed/9b/5415cdf2902346dc0ec7337f7aa5695b261278977a8f307450feafafde91/me_setups-1.6.5.tar.gz
+[2023-04-13 10:33:52] INFO root fetch - processPackages [tfkbnufft]: Downloading https://files.pythonhosted.org/packages/a9/f8/b5f86421c2718b388c6c8b68d7bde1f65f28d8230c0ce953f69bbf25fe01/tfkbnufft-0.2.4.tar.gz
+[2023-04-13 10:33:52] INFO root fetch - processPackages [comwares]: Downloading https://files.pythonhosted.org/packages/60/ff/ff10a4308943acc1c6fbbdb4b8ff4b706f1d24a0f066d544552dac2e2476/comwares-0.1.2.tar.gz
+[2023-04-13 10:33:52] INFO root fetch - processPackages [comwares]: executing diffoscope
+[2023-04-13 10:33:52] INFO root fetch - processPackages [comwares]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comwares-0.1.1.tar.gz tmp/comwares-0.1.2.tar.gz --markdown 20230413/c/comwares/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 10:33:52] INFO root fetch - processPackages [lucupy]: executing diffoscope
+[2023-04-13 10:33:52] INFO root fetch - processPackages [lucupy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lucupy-0.1.8.tar.gz tmp/lucupy-0.1.9.tar.gz --markdown 20230413/l/lucupy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 10:33:52] INFO root fetch - processPackages [porchlight]: Downloading https://files.pythonhosted.org/packages/ae/d8/bea66f8c944e69dc6d4ce86432a5ab758d428494e1a76a2925e673447373/porchlight-1.1.0.tar.gz
+[2023-04-13 10:33:52] INFO root fetch - processPackages [porchlight]: executing diffoscope
+[2023-04-13 10:33:52] INFO root fetch - processPackages [porchlight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porchlight-1.0.2.tar.gz tmp/porchlight-1.1.0.tar.gz --markdown 20230413/p/porchlight/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 10:33:52] INFO root fetch - processPackages [tfkbnufft]: Downloading https://files.pythonhosted.org/packages/6b/b5/3e3f9505d3620c7757d762e4fc472d2d2cff4ce3b8cb3f82746c77a51a04/tfkbnufft-0.2.5.tar.gz
+[2023-04-13 10:33:52] INFO root fetch - processPackages [tfkbnufft]: executing diffoscope
+[2023-04-13 10:33:52] INFO root fetch - processPackages [tfkbnufft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfkbnufft-0.2.4.tar.gz tmp/tfkbnufft-0.2.5.tar.gz --markdown 20230413/t/tfkbnufft/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-13 10:33:52] INFO root fetch - processPackages [me-setups]: Downloading https://files.pythonhosted.org/packages/f3/88/aaf83d1d4070206645b211594dfd1a58ca4b7f74c0f556d203aad73cfaef/me_setups-1.6.6.tar.gz
+[2023-04-13 10:33:52] INFO root fetch - processPackages [me-setups]: executing diffoscope
+[2023-04-13 10:33:52] INFO root fetch - processPackages [me-setups]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/me_setups-1.6.5.tar.gz tmp/me_setups-1.6.6.tar.gz --markdown 20230413/m/me-setups/1.6.5-1.6.6/diff.md --exclude *.pyd
+[2023-04-13 10:33:53] INFO root fetch - processPackages [comwares]: Start processing: pcl-pangu
+[2023-04-13 10:33:53] INFO root fetch - main [MainThread]: End processing [comwares]: success
+[2023-04-13 10:33:53] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 10:33:53] INFO root fetch - processPackages [lucupy]: Start processing: few-shot-priming
+[2023-04-13 10:33:53] INFO root fetch - main [MainThread]: End processing [lucupy]: success
+[2023-04-13 10:33:53] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 10:33:53] INFO root fetch - processPackages [porchlight]: Start processing: qontract-reconcile
+[2023-04-13 10:33:53] INFO root fetch - main [MainThread]: End processing [porchlight]: success
+[2023-04-13 10:33:53] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 10:33:53] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 10:33:53] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-13 10:33:53] INFO root fetch - processPackages [tfkbnufft]: Start processing: fal-serverless
+[2023-04-13 10:33:53] INFO root fetch - main [MainThread]: End processing [tfkbnufft]: success
+[2023-04-13 10:33:54] INFO root fetch - processPackages [fal-serverless]: New version: [0.6.28] Old Version: [0.6.27]
+[2023-04-13 10:33:54] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-13 10:33:54] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230413/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-13 10:33:54] INFO root fetch - processPackages [me-setups]: Start processing: tmctl
+[2023-04-13 10:33:54] INFO root fetch - main [MainThread]: End processing [me-setups]: success
+[2023-04-13 10:33:54] INFO root fetch - processPackages [tmctl]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-13 10:33:54] INFO root fetch - processPackages [fal-serverless]: Downloading https://files.pythonhosted.org/packages/0a/59/b2390c58d47ff669669a9675b8b9d33a73be507c9e6dfae0dc4e97c60f5a/fal_serverless-0.6.27.tar.gz
+[2023-04-13 10:33:54] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 10:33:54] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 10:33:54] INFO root fetch - processPackages [tmctl]: Downloading https://files.pythonhosted.org/packages/45/0e/2e4c24022b1ef2accaad9bfa4fa9c1b93abc7cdf0bcf8175237b80bae758/tmctl-0.0.1.tar.gz
+[2023-04-13 10:33:54] INFO root fetch - processPackages [tmctl]: Downloading https://files.pythonhosted.org/packages/f4/e3/dac77b07fdb99acbf21e98471b5a02ec1594cd3818e6ad74b36d14a9028f/tmctl-0.1.0.tar.gz
+[2023-04-13 10:33:54] INFO root fetch - processPackages [fal-serverless]: Downloading https://files.pythonhosted.org/packages/2e/b2/10c8433a62429347a137e143251fca64df5df4264b134dcb5cf00cfd0e29/fal_serverless-0.6.28.tar.gz
+[2023-04-13 10:33:54] INFO root fetch - processPackages [fal-serverless]: executing diffoscope
+[2023-04-13 10:33:54] INFO root fetch - processPackages [tmctl]: executing diffoscope
+[2023-04-13 10:33:54] INFO root fetch - processPackages [fal-serverless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fal_serverless-0.6.27.tar.gz tmp/fal_serverless-0.6.28.tar.gz --markdown 20230413/f/fal-serverless/0.6.27-0.6.28/diff.md --exclude *.pyd
+[2023-04-13 10:33:54] INFO root fetch - processPackages [tmctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmctl-0.0.1.tar.gz tmp/tmctl-0.1.0.tar.gz --markdown 20230413/t/tmctl/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-13 10:33:55] INFO root fetch - processPackages [few-shot-priming]: Start processing: certora-cli-alpha-master
+[2023-04-13 10:33:55] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 10:33:55] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230413.8.35.508903] Old Version: [20230412.23.12.934517]
+[2023-04-13 10:33:55] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/88/58/009d6b595820c4a14f325d6959ae4d16d24812e3004658ba8b46e19d82dc/certora-cli-alpha-master-20230412.23.12.934517.tar.gz
+[2023-04-13 10:33:55] INFO root fetch - processPackages [tmctl]: Start processing: napari-lattice
+[2023-04-13 10:33:55] INFO root fetch - main [MainThread]: End processing [tmctl]: success
+[2023-04-13 10:33:55] INFO root fetch - processPackages [napari-lattice]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-13 10:33:55] INFO root fetch - processPackages [fal-serverless]: Start processing: pysura
+[2023-04-13 10:33:55] INFO root fetch - main [MainThread]: End processing [fal-serverless]: success
+[2023-04-13 10:33:55] INFO root fetch - processPackages [pysura]: New version: [0.99.99] Old Version: [0.99.98]
+[2023-04-13 10:33:55] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 28058103>=10485760
+[2023-04-13 10:33:55] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: jina-now
+[2023-04-13 10:33:55] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-13 10:33:55] INFO root fetch - processPackages [jina-now]: New version: [0.0.9.dev2] Old Version: [0.0.9]
+[2023-04-13 10:33:55] INFO root fetch - processPackages [pysura]: executing diffoscope
+[2023-04-13 10:33:55] INFO root fetch - processPackages [pysura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysura-0.99.98.tar.gz tmp/pysura-0.99.99.tar.gz --markdown 20230413/p/pysura/0.99.98-0.99.99/diff.md --exclude *.pyd
+[2023-04-13 10:33:55] INFO root fetch - processPackages [napari-lattice]: Downloading https://files.pythonhosted.org/packages/ee/17/b82745261b190f46d9acec7731ee6c447451ae577e77b388c9e319f0d55c/napari-lattice-0.2.6.tar.gz
+[2023-04-13 10:33:55] INFO root fetch - processPackages [jina-now]: executing diffoscope
+[2023-04-13 10:33:55] INFO root fetch - processPackages [jina-now]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jina-now-0.0.9.tar.gz tmp/jina-now-0.0.9.dev2.tar.gz --markdown 20230413/j/jina-now/0.0.9-0.0.9.dev2/diff.md --exclude *.pyd
+[2023-04-13 10:33:56] WARNING root fetch - processPackages [napari-lattice]: Skipping package: exceeds size limit 98070903>=10485760
+[2023-04-13 10:33:56] INFO root fetch - processPackages [napari-lattice]: Start processing: metaflow-netflixext
+[2023-04-13 10:33:56] INFO root fetch - main [MainThread]: End processing [napari-lattice] error
+[2023-04-13 10:33:56] INFO root fetch - processPackages [metaflow-netflixext]: New version: [0.1.0rc5] Old Version: [0.1.0rc4]
+[2023-04-13 10:33:56] INFO root fetch - processPackages [metaflow-netflixext]: Downloading https://files.pythonhosted.org/packages/3b/5c/5fcac65152eb1662825fb02b46f9e5d9b4d05b516689266e5d4b0774f148/metaflow-netflixext-0.1.0rc4.tar.gz
+[2023-04-13 10:33:56] INFO root fetch - processPackages [pcl-pangu]: Start processing: configchronicles
+[2023-04-13 10:33:56] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 10:33:56] WARNING root fetch - processPackages [configchronicles]: Skipping, unable to determine old version
+[2023-04-13 10:33:56] INFO root fetch - processPackages [configchronicles]: Start processing: hagworm
+[2023-04-13 10:33:56] INFO root fetch - main [MainThread]: End processing [configchronicles] error
+[2023-04-13 10:33:56] INFO root fetch - processPackages [hagworm]: New version: [5.4.2] Old Version: [5.4.1]
+[2023-04-13 10:33:56] INFO root fetch - processPackages [metaflow-netflixext]: Downloading https://files.pythonhosted.org/packages/92/2d/415eaea9c2556488fe05a793576d68929610df6640d92352d327c5f298bf/metaflow-netflixext-0.1.0rc5.tar.gz
+[2023-04-13 10:33:56] INFO root fetch - processPackages [hagworm]: executing diffoscope
+[2023-04-13 10:33:56] INFO root fetch - processPackages [hagworm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagworm-5.4.1.tar.gz tmp/hagworm-5.4.2.tar.gz --markdown 20230413/h/hagworm/5.4.1-5.4.2/diff.md --exclude *.pyd
+[2023-04-13 10:33:56] INFO root fetch - processPackages [metaflow-netflixext]: executing diffoscope
+[2023-04-13 10:33:56] INFO root fetch - processPackages [metaflow-netflixext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaflow-netflixext-0.1.0rc4.tar.gz tmp/metaflow-netflixext-0.1.0rc5.tar.gz --markdown 20230413/m/metaflow-netflixext/0.1.0rc4-0.1.0rc5/diff.md --exclude *.pyd
+[2023-04-13 10:33:57] INFO root fetch - processPackages [pysura]: Start processing: paketmutfak
+[2023-04-13 10:33:57] INFO root fetch - main [MainThread]: End processing [pysura]: success
+[2023-04-13 10:33:57] INFO root fetch - processPackages [paketmutfak]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-13 10:33:57] INFO root fetch - processPackages [jina-now]: Start processing: teleapp
+[2023-04-13 10:33:57] INFO root fetch - main [MainThread]: End processing [jina-now]: success
+[2023-04-13 10:33:57] INFO root fetch - processPackages [paketmutfak]: executing diffoscope
+[2023-04-13 10:33:57] INFO root fetch - processPackages [paketmutfak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paketmutfak-1.1.8.tar.gz tmp/paketmutfak-1.1.9.tar.gz --markdown 20230413/p/paketmutfak/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-13 10:33:57] INFO root fetch - processPackages [teleapp]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 10:33:57] INFO root fetch - processPackages [teleapp]: Downloading https://files.pythonhosted.org/packages/2c/7b/9d6b5754eadc7ec3bb3f96d2f127229cdba3bfc7462575f0ac070cd178cd/teleapp-0.1.1-cp38-cp38-manylinux1_x86_64.whl
+[2023-04-13 10:33:58] INFO root fetch - processPackages [hagworm]: Start processing: playmolecule
+[2023-04-13 10:33:58] INFO root fetch - main [MainThread]: End processing [hagworm]: success
+[2023-04-13 10:33:58] INFO root fetch - processPackages [teleapp]: Downloading https://files.pythonhosted.org/packages/08/46/d48730da04ff2ad517c0dc92c7fe5d63ff2d43623c31269ed4df0b7ead24/teleapp-0.1.2-cp36-cp36m-manylinux2014_aarch64.whl
+[2023-04-13 10:33:58] INFO root fetch - processPackages [playmolecule]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-04-13 10:33:58] INFO root fetch - main [MainThread]: End processing [metaflow-netflixext]: success
+[2023-04-13 10:33:58] INFO root fetch - processPackages [teleapp]: executing diffoscope
+[2023-04-13 10:33:58] INFO root fetch - processPackages [teleapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teleapp-0.1.1-cp38-cp38-manylinux1_x86_64.whl.zip tmp/teleapp-0.1.2-cp36-cp36m-manylinux2014_aarch64.whl.zip --markdown 20230413/t/teleapp/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 10:33:58] INFO root fetch - main [MainThread]: End processing [paketmutfak]: success
+[2023-04-13 10:33:58] INFO root fetch - processPackages [playmolecule]: executing diffoscope
+[2023-04-13 10:33:58] INFO root fetch - processPackages [playmolecule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playmolecule-1.6.4.tar.gz tmp/playmolecule-1.6.5.tar.gz --markdown 20230413/p/playmolecule/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-04-13 10:33:59] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-04-13 10:33:59] INFO root fetch - main [MainThread]: End processing [teleapp]: success
+[2023-04-13 10:33:59] INFO root fetch - main [MainThread]: End processing [playmolecule]: success
+[2023-04-13 10:33:59] INFO root fetch - main [MainThread]: Store serial: [17689187]
