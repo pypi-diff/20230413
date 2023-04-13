@@ -9738,3 +9738,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 09:07:00] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
 [2023-04-13 09:07:02] INFO root fetch - main [MainThread]: End processing [psa-car-controller]: success
 [2023-04-13 09:07:02] INFO root fetch - main [MainThread]: Store serial: [17688095]
+[2023-04-13 09:12:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17688095]
+[2023-04-13 09:12:09] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-13 09:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CLIbrary
+[2023-04-13 09:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-models-nightly
+[2023-04-13 09:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyWizardLite
+[2023-04-13 09:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-04-13 09:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scmrepo
+[2023-04-13 09:12:09] INFO root fetch - processPackages [scmrepo]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 09:12:09] INFO root fetch - processPackages [PyWizardLite]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-13 09:12:09] INFO root fetch - processPackages [CLIbrary]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-04-13 09:12:09] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-04-13 09:12:09] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-04-13 09:12:09] INFO root fetch - processPackages [CLIbrary]: Downloading https://files.pythonhosted.org/packages/af/f6/e975234e8b82b2aa9a1846e48a34b12b4e810fb35f09393942e6ff6a5daf/clibrary-1.5.0.tar.gz
+[2023-04-13 09:12:09] INFO root fetch - processPackages [PyWizardLite]: Downloading https://files.pythonhosted.org/packages/8b/06/b0ac0f9cf8738814c85c83fd7255c751858a0fadd0eb5fb7779308d39e33/PyWizardLite-0.0.7.tar.gz
+[2023-04-13 09:12:09] INFO root fetch - processPackages [scmrepo]: Downloading https://files.pythonhosted.org/packages/70/4c/9d97506be14608816cbb635cff8afff57f8654ed9c2b744c6a99b0245d3e/scmrepo-1.0.1.tar.gz
+[2023-04-13 09:12:10] ERROR root fetch - processPackages [CLIbrary]: Unable to fetch info: No such project/version 'CLIbrary' 1.6.0
+[2023-04-13 09:12:10] INFO root fetch - processPackages [CLIbrary]: Start processing: OpenGeode-Geosciences
+[2023-04-13 09:12:10] INFO root fetch - main [MainThread]: End processing [CLIbrary] error
+[2023-04-13 09:12:10] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-04-13 09:12:10] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230413/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 09:12:10] INFO root fetch - processPackages [OpenGeode-Geosciences]: New version: [6.1.0] Old Version: [6.0.3]
+[2023-04-13 09:12:10] INFO root fetch - processPackages [PyWizardLite]: Downloading https://files.pythonhosted.org/packages/57/77/4d72492b4abb1ec5a25e2ad4d1f205b501ceb3d094ea0215dcb4298054d9/PyWizardLite-0.0.8.tar.gz
+[2023-04-13 09:12:10] INFO root fetch - processPackages [scmrepo]: executing diffoscope
+[2023-04-13 09:12:10] INFO root fetch - processPackages [scmrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scmrepo-1.0.0.tar.gz tmp/scmrepo-1.0.1.tar.gz --markdown 20230413/s/scmrepo/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 09:12:10] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-04-13 09:12:10] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230413/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-04-13 09:12:10] INFO root fetch - processPackages [PyWizardLite]: executing diffoscope
+[2023-04-13 09:12:10] INFO root fetch - processPackages [PyWizardLite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyWizardLite-0.0.7.tar.gz tmp/PyWizardLite-0.0.8.tar.gz --markdown 20230413/P/PyWizardLite/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-13 09:12:10] INFO root fetch - processPackages [OpenGeode-Geosciences]: Downloading https://files.pythonhosted.org/packages/1d/aa/40e41fa4e97f670ba9d8f72d543825d5b2de17921f80e004019254ea6f39/OpenGeode_Geosciences-6.0.3-cp39-cp39-win_amd64.whl
+[2023-04-13 09:12:10] INFO root fetch - processPackages [OpenGeode-Geosciences]: Downloading https://files.pythonhosted.org/packages/04/52/e7d9666472825870aada602f806a9fea384cd55fcb46ea2e6cbc05756d0e/OpenGeode_Geosciences-6.1.0-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-13 09:12:10] INFO root fetch - processPackages [OpenGeode-Geosciences]: executing diffoscope
+[2023-04-13 09:12:10] INFO root fetch - processPackages [OpenGeode-Geosciences]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_Geosciences-6.0.3-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_Geosciences-6.1.0-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230413/O/OpenGeode-Geosciences/6.0.3-6.1.0/diff.md --exclude *.pyd
+[2023-04-13 09:12:11] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: Start processing: test-data-fabric
+[2023-04-13 09:12:11] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-04-13 09:12:11] INFO root fetch - processPackages [PyWizardLite]: Start processing: odoo12-addon-sale-blanket-order
+[2023-04-13 09:12:11] INFO root fetch - main [MainThread]: End processing [PyWizardLite]: success
+[2023-04-13 09:12:11] WARNING root fetch - processPackages [test-data-fabric]: Skipping, unable to determine old version
+[2023-04-13 09:12:11] INFO root fetch - processPackages [test-data-fabric]: Start processing: tfq-nightly
+[2023-04-13 09:12:11] INFO root fetch - main [MainThread]: End processing [test-data-fabric] error
+[2023-04-13 09:12:11] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230412] Old Version: [0.7.3.dev20230411]
+[2023-04-13 09:12:11] INFO root fetch - processPackages [scmrepo]: Start processing: danmakuC
+[2023-04-13 09:12:11] INFO root fetch - main [MainThread]: End processing [scmrepo]: success
+[2023-04-13 09:12:11] INFO root fetch - processPackages [odoo12-addon-sale-blanket-order]: New version: [12.0.1.0.2.99.dev9] Old Version: [12.0.1.0.2.99.dev8]
+[2023-04-13 09:12:11] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/c9/8d/a83f60bf5d088ec3e015f362e8798c9d57b0539a1a490bb5967ff0ee0ca0/tfq_nightly-0.7.3.dev20230411-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-13 09:12:11] INFO root fetch - processPackages [danmakuC]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-13 09:12:11] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819849>=10485760
+[2023-04-13 09:12:11] INFO root fetch - processPackages [tfq-nightly]: Start processing: CLIbrary
+[2023-04-13 09:12:11] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-04-13 09:12:11] INFO root fetch - processPackages [CLIbrary]: New version: [1.6.1] Old Version: [1.5.0]
+[2023-04-13 09:12:11] INFO root fetch - processPackages [danmakuC]: Downloading https://files.pythonhosted.org/packages/c0/1d/aa03d453f0762b6271f7a3491f524f2cff0194cf5eecd9ae8d763fa30905/danmakuC-0.3.3-pp39-pypy39_pp73-win_amd64.whl
+[2023-04-13 09:12:12] INFO root fetch - processPackages [odoo12-addon-sale-blanket-order]: executing diffoscope
+[2023-04-13 09:12:12] INFO root fetch - processPackages [odoo12-addon-sale-blanket-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_blanket_order-12.0.1.0.2.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_sale_blanket_order-12.0.1.0.2.99.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-sale-blanket-order/12.0.1.0.2.99.dev8-12.0.1.0.2.99.dev9/diff.md --exclude *.pyd
+[2023-04-13 09:12:12] INFO root fetch - main [MainThread]: End processing [OpenGeode-Geosciences]: success
+[2023-04-13 09:12:12] INFO root fetch - processPackages [CLIbrary]: Downloading https://files.pythonhosted.org/packages/3f/ac/c985657a9dd0ca4b01eb434c374e090ea76a73c5ba1384999427d1c619e6/clibrary-1.6.1.tar.gz
+[2023-04-13 09:12:12] INFO root fetch - processPackages [danmakuC]: Downloading https://files.pythonhosted.org/packages/76/ab/b5b9e02eaec018824785dbe10f601a1142d36a794e836356a5ac352d64e2/danmakuC-0.3.4-cp311-cp311-macosx_11_0_arm64.whl
+[2023-04-13 09:12:12] INFO root fetch - processPackages [CLIbrary]: executing diffoscope
+[2023-04-13 09:12:12] INFO root fetch - processPackages [CLIbrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clibrary-1.5.0.tar.gz tmp/clibrary-1.6.1.tar.gz --markdown 20230413/C/CLIbrary/1.5.0-1.6.1/diff.md --exclude *.pyd
+[2023-04-13 09:12:12] INFO root fetch - processPackages [danmakuC]: executing diffoscope
+[2023-04-13 09:12:12] INFO root fetch - processPackages [danmakuC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danmakuC-0.3.3-pp39-pypy39_pp73-win_amd64.whl.zip tmp/danmakuC-0.3.4-cp311-cp311-macosx_11_0_arm64.whl.zip --markdown 20230413/d/danmakuC/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-13 09:12:13] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-blanket-order]: success
+[2023-04-13 09:12:13] INFO root fetch - main [MainThread]: End processing [CLIbrary]: success
+[2023-04-13 09:12:13] INFO root fetch - main [MainThread]: End processing [danmakuC]: success
+[2023-04-13 09:12:25] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-04-13 09:12:25] INFO root fetch - main [MainThread]: Store serial: [17688136]
