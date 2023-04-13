@@ -13790,3 +13790,91 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 12:53:32] INFO root fetch - main [MainThread]: End processing [extr]: success
 [2023-04-13 12:53:32] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
 [2023-04-13 12:53:32] INFO root fetch - main [MainThread]: Store serial: [17690769]
+[2023-04-13 12:58:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690769]
+[2023-04-13 12:58:40] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-13 12:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sdkpoc
+[2023-04-13 12:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-yettagam
+[2023-04-13 12:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hordelib
+[2023-04-13 12:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alibabacloud-hologram20220601
+[2023-04-13 12:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygoogalytics
+[2023-04-13 12:58:40] WARNING root fetch - processPackages [sdkpoc]: Skipping, unable to determine old version
+[2023-04-13 12:58:40] INFO root fetch - processPackages [sdkpoc]: Start processing: openscad-docsgen
+[2023-04-13 12:58:40] INFO root fetch - main [MainThread]: End processing [sdkpoc] error
+[2023-04-13 12:58:40] WARNING root fetch - processPackages [alibabacloud-hologram20220601]: Skipping, unable to determine old version
+[2023-04-13 12:58:40] INFO root fetch - processPackages [alibabacloud-hologram20220601]: Start processing: dorsa-logging
+[2023-04-13 12:58:40] INFO root fetch - main [MainThread]: End processing [alibabacloud-hologram20220601] error
+[2023-04-13 12:58:40] INFO root fetch - processPackages [py-yettagam]: New version: [0.0.2.9] Old Version: [0.0.2.8]
+[2023-04-13 12:58:40] INFO root fetch - processPackages [pygoogalytics]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-13 12:58:40] INFO root fetch - processPackages [hordelib]: New version: [0.8.0] Old Version: [0.7.3]
+[2023-04-13 12:58:40] INFO root fetch - processPackages [dorsa-logging]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 12:58:40] INFO root fetch - processPackages [openscad-docsgen]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-13 12:58:40] INFO root fetch - processPackages [openscad-docsgen]: executing diffoscope
+[2023-04-13 12:58:40] INFO root fetch - processPackages [openscad-docsgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openscad_docsgen-2.0.8-py2.py3-none-any.whl.zip tmp/openscad_docsgen-2.0.9-py2.py3-none-any.whl.zip --markdown 20230413/o/openscad-docsgen/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-13 12:58:40] INFO root fetch - processPackages [dorsa-logging]: Downloading https://files.pythonhosted.org/packages/60/7b/44d348b55d4156c1aa33a78fb6d9853fda3d00a1539632480d196b6d9d09/dorsa_logging-1.0.0.tar.gz
+[2023-04-13 12:58:40] INFO root fetch - processPackages [pygoogalytics]: Downloading https://files.pythonhosted.org/packages/bb/a1/1e566b2d33e884257d5833dbfd1077064ad74184163aaa2b44ba7cf8f94f/pygoogalytics-0.2.8.tar.gz
+[2023-04-13 12:58:40] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/6a/d3/cbabbccfdd367fbb8fb639eb855a03e6a3d05d41ce3e6811ce59bb43fa37/hordelib-0.8.0.tar.gz
+[2023-04-13 12:58:40] INFO root fetch - processPackages [py-yettagam]: Downloading https://files.pythonhosted.org/packages/81/0c/c4dfec6ae8bb571ecb30cff2447406dd15d8e4a31fbdba77548a436e97e0/py_yettagam-0.0.2.8.tar.gz
+[2023-04-13 12:58:40] INFO root fetch - processPackages [pygoogalytics]: executing diffoscope
+[2023-04-13 12:58:40] INFO root fetch - processPackages [pygoogalytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygoogalytics-0.2.7.tar.gz tmp/pygoogalytics-0.2.8.tar.gz --markdown 20230413/p/pygoogalytics/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-13 12:58:41] INFO root fetch - processPackages [py-yettagam]: Downloading https://files.pythonhosted.org/packages/b1/7f/c9244186c75fe2771cd270d2751aafa75ab4504f4249f8c0b21a487c013a/py_yettagam-0.0.2.9.tar.gz
+[2023-04-13 12:58:41] INFO root fetch - processPackages [dorsa-logging]: Downloading https://files.pythonhosted.org/packages/3a/a7/34ec85c84c4a6a980ca5882a3b3a01a060fcbfc591446f37c114eb9415b6/dorsa_logging-1.0.1.tar.gz
+[2023-04-13 12:58:41] INFO root fetch - processPackages [py-yettagam]: executing diffoscope
+[2023-04-13 12:58:41] INFO root fetch - processPackages [py-yettagam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_yettagam-0.0.2.8.tar.gz tmp/py_yettagam-0.0.2.9.tar.gz --markdown 20230413/p/py-yettagam/0.0.2.8-0.0.2.9/diff.md --exclude *.pyd
+[2023-04-13 12:58:41] INFO root fetch - processPackages [dorsa-logging]: executing diffoscope
+[2023-04-13 12:58:41] INFO root fetch - processPackages [dorsa-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorsa_logging-1.0.0.tar.gz tmp/dorsa_logging-1.0.1.tar.gz --markdown 20230413/d/dorsa-logging/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 12:58:41] INFO root fetch - processPackages [openscad-docsgen]: Start processing: autometrics
+[2023-04-13 12:58:41] INFO root fetch - main [MainThread]: End processing [openscad-docsgen]: success
+[2023-04-13 12:58:41] INFO root fetch - processPackages [autometrics]: New version: [0.4] Old Version: [0.3]
+[2023-04-13 12:58:42] INFO root fetch - processPackages [pygoogalytics]: Start processing: desc-opt
+[2023-04-13 12:58:42] INFO root fetch - main [MainThread]: End processing [pygoogalytics]: success
+[2023-04-13 12:58:42] INFO root fetch - processPackages [autometrics]: Downloading https://files.pythonhosted.org/packages/03/1b/6ab9d276b9c3d900c3f716718da6839ba8735847911acb62593eb0bf4394/autometrics-0.3.tar.gz
+[2023-04-13 12:58:42] INFO root fetch - processPackages [desc-opt]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-13 12:58:42] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-13 12:58:42] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.7.3.tar.gz tmp/hordelib-0.8.0.tar.gz --markdown 20230413/h/hordelib/0.7.3-0.8.0/diff.md --exclude *.pyd
+[2023-04-13 12:58:42] INFO root fetch - processPackages [desc-opt]: Downloading https://files.pythonhosted.org/packages/d5/f8/f50e339739ac1513473f06f2a5ec80be1926f3f261f140554276b6596287/desc-opt-0.8.1.tar.gz
+[2023-04-13 12:58:42] INFO root fetch - processPackages [dorsa-logging]: Start processing: sienna
+[2023-04-13 12:58:42] INFO root fetch - main [MainThread]: End processing [dorsa-logging]: success
+[2023-04-13 12:58:42] INFO root fetch - processPackages [py-yettagam]: Start processing: jina
+[2023-04-13 12:58:42] INFO root fetch - main [MainThread]: End processing [py-yettagam]: success
+[2023-04-13 12:58:42] INFO root fetch - processPackages [sienna]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-13 12:58:42] INFO root fetch - processPackages [autometrics]: Downloading https://files.pythonhosted.org/packages/ca/0d/300a0a4478f837dd666725f32448502ee7007f644aed9934538e14201bd9/autometrics-0.4.tar.gz
+[2023-04-13 12:58:42] INFO root fetch - processPackages [jina]: New version: [3.9.3.dev9] Old Version: [3.9.3.dev8]
+[2023-04-13 12:58:42] INFO root fetch - processPackages [jina]: executing diffoscope
+[2023-04-13 12:58:42] INFO root fetch - processPackages [jina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jina-3.9.3.dev8.tar.gz tmp/jina-3.9.3.dev9.tar.gz --markdown 20230413/j/jina/3.9.3.dev8-3.9.3.dev9/diff.md --exclude *.pyd
+[2023-04-13 12:58:42] INFO root fetch - processPackages [sienna]: Downloading https://files.pythonhosted.org/packages/30/8e/36b04cee96392ef0bf7a556de58999a344d06cbad94025e9c3b578092aa7/sienna-0.2.2.tar.gz
+[2023-04-13 12:58:42] INFO root fetch - processPackages [autometrics]: executing diffoscope
+[2023-04-13 12:58:42] INFO root fetch - processPackages [autometrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autometrics-0.3.tar.gz tmp/autometrics-0.4.tar.gz --markdown 20230413/a/autometrics/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-13 12:58:42] INFO root fetch - processPackages [sienna]: executing diffoscope
+[2023-04-13 12:58:42] INFO root fetch - processPackages [sienna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sienna-0.2.1.tar.gz tmp/sienna-0.2.2.tar.gz --markdown 20230413/s/sienna/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-13 12:58:42] INFO root fetch - processPackages [desc-opt]: Downloading https://files.pythonhosted.org/packages/36/9e/eca5b05b971332ea3ff6933b207a279897ec97089593870254aa79c3146d/desc-opt-0.8.2.tar.gz
+[2023-04-13 12:58:43] INFO root fetch - processPackages [desc-opt]: executing diffoscope
+[2023-04-13 12:58:43] INFO root fetch - processPackages [desc-opt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desc-opt-0.8.1.tar.gz tmp/desc-opt-0.8.2.tar.gz --markdown 20230413/d/desc-opt/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-13 12:58:43] INFO root fetch - processPackages [autometrics]: Start processing: localstack-core
+[2023-04-13 12:58:43] INFO root fetch - main [MainThread]: End processing [autometrics]: success
+[2023-04-13 12:58:43] INFO root fetch - processPackages [localstack-core]: New version: [2.0.2.dev20230413105914] Old Version: [2.0.2.dev20230412071939]
+[2023-04-13 12:58:43] INFO root fetch - processPackages [sienna]: Start processing: bcedd
+[2023-04-13 12:58:43] INFO root fetch - main [MainThread]: End processing [sienna]: success
+[2023-04-13 12:58:43] WARNING root fetch - processPackages [bcedd]: Skipping, unable to determine old version
+[2023-04-13 12:58:43] INFO root fetch - processPackages [bcedd]: Start processing: relation-validator
+[2023-04-13 12:58:43] INFO root fetch - main [MainThread]: End processing [bcedd] error
+[2023-04-13 12:58:43] INFO root fetch - processPackages [relation-validator]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 12:58:43] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/db/94/5feee5d2589ba0616a8734fce328ee52c3f48c386ac5789bb7e0ee8bdb21/localstack-core-2.0.2.dev20230412071939.tar.gz
+[2023-04-13 12:58:44] INFO root fetch - processPackages [relation-validator]: Downloading https://files.pythonhosted.org/packages/68/c7/e26a43de6105a31a756fbb3be238099f0eaadbddcae2151aa93396350704/relation_validator-0.2.1.tar.gz
+[2023-04-13 12:58:44] INFO root fetch - processPackages [relation-validator]: executing diffoscope
+[2023-04-13 12:58:44] INFO root fetch - processPackages [relation-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relation_validator-0.2.0.tar.gz tmp/relation_validator-0.2.1.tar.gz --markdown 20230413/r/relation-validator/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 12:58:44] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/47/a9/c40c72fd9c1a999c6f3e792909eb7947a98aad581ff6c954e8cc4dea1615/localstack-core-2.0.2.dev20230413105914.tar.gz
+[2023-04-13 12:58:44] INFO root fetch - processPackages [jina]: Start processing: cyclic-boosting
+[2023-04-13 12:58:44] INFO root fetch - main [MainThread]: End processing [jina]: success
+[2023-04-13 12:58:44] INFO root fetch - processPackages [cyclic-boosting]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 12:58:44] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-04-13 12:58:44] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.2.dev20230412071939.tar.gz tmp/localstack-core-2.0.2.dev20230413105914.tar.gz --markdown 20230413/l/localstack-core/2.0.2.dev20230412071939-2.0.2.dev20230413105914/diff.md --exclude *.pyd
+[2023-04-13 12:58:44] INFO root fetch - processPackages [cyclic-boosting]: Downloading https://files.pythonhosted.org/packages/e0/28/68210673fb58a22209216b2776e20b26adacb837164b4a4994c169dd3bc3/cyclic-boosting-0.0.4.tar.gz
+[2023-04-13 12:58:45] INFO root fetch - processPackages [cyclic-boosting]: Downloading https://files.pythonhosted.org/packages/82/b7/f7eae7a837e52f048d3f4c587d09becf6255a6460b2680bbf06118a5fbb6/cyclic-boosting-0.0.5.tar.gz
+[2023-04-13 12:58:45] INFO root fetch - main [MainThread]: End processing [relation-validator]: success
+[2023-04-13 12:58:45] INFO root fetch - processPackages [cyclic-boosting]: executing diffoscope
+[2023-04-13 12:58:45] INFO root fetch - processPackages [cyclic-boosting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclic-boosting-0.0.4.tar.gz tmp/cyclic-boosting-0.0.5.tar.gz --markdown 20230413/c/cyclic-boosting/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 12:58:47] INFO root fetch - main [MainThread]: End processing [desc-opt]: success
+[2023-04-13 12:58:49] INFO root fetch - main [MainThread]: End processing [cyclic-boosting]: success
+[2023-04-13 12:58:51] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-04-13 12:58:52] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-04-13 12:58:52] INFO root fetch - main [MainThread]: Store serial: [17690829]
