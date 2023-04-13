@@ -6227,3 +6227,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:27:46] INFO root fetch - main [MainThread]: End processing [aicspylibczi]: success
 [2023-04-13 04:27:48] INFO root fetch - main [MainThread]: End processing [shared-atomic-enterprise]: success
 [2023-04-13 04:27:48] INFO root fetch - main [MainThread]: Store serial: [17686017]
+[2023-04-13 04:32:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686017]
+[2023-04-13 04:32:59] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 04:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htmlfilesforquiz
+[2023-04-13 04:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netbox-loadbalancer
+[2023-04-13 04:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-sops-secrets
+[2023-04-13 04:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: antchain-fairopennet
+[2023-04-13 04:32:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rtx-deep
+[2023-04-13 04:32:59] WARNING root fetch - processPackages [netbox-loadbalancer]: Skipping, unable to determine old version
+[2023-04-13 04:32:59] INFO root fetch - processPackages [htmlfilesforquiz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 04:32:59] INFO root fetch - processPackages [netbox-loadbalancer]: Start processing: odoo14-addon-account-analytic-sequence
+[2023-04-13 04:32:59] INFO root fetch - main [MainThread]: End processing [netbox-loadbalancer] error
+[2023-04-13 04:32:59] INFO root fetch - processPackages [antchain-fairopennet]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-13 04:32:59] INFO root fetch - processPackages [rtx-deep]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-04-13 04:32:59] INFO root fetch - processPackages [odoo14-addon-account-analytic-sequence]: New version: [14.0.1.0.2.dev2] Old Version: [14.0.1.0.2.dev1]
+[2023-04-13 04:32:59] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-13 04:32:59] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-13 04:32:59] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230413/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-13 04:32:59] INFO root fetch - processPackages [odoo14-addon-account-analytic-sequence]: Downloading https://files.pythonhosted.org/packages/f2/c5/0cfcada16ecb3c50150b85c0b0a32c752b5fb0950b892485f994e39d1e5a/odoo14_addon_account_analytic_sequence-14.0.1.0.2.dev1-py3-none-any.whl
+[2023-04-13 04:32:59] INFO root fetch - processPackages [htmlfilesforquiz]: executing diffoscope
+[2023-04-13 04:32:59] INFO root fetch - processPackages [htmlfilesforquiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmlfilesforquiz-0.0.8.tar.gz tmp/htmlfilesforquiz-0.0.9.tar.gz --markdown 20230413/h/htmlfilesforquiz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:32:59] INFO root fetch - processPackages [rtx-deep]: Downloading https://files.pythonhosted.org/packages/89/98/5fa7ce1cab11dd00a2a736a2bfe2982fcf150c7ff65a85b537823b427373/rtx_deep-1.3.5-py39-none-any.whl
+[2023-04-13 04:32:59] INFO root fetch - processPackages [rtx-deep]: executing diffoscope
+[2023-04-13 04:32:59] INFO root fetch - processPackages [rtx-deep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtx_deep-1.3.4-py39-none-any.whl.zip tmp/rtx_deep-1.3.5-py39-none-any.whl.zip --markdown 20230413/r/rtx-deep/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-04-13 04:32:59] INFO root fetch - processPackages [antchain-fairopennet]: Downloading https://files.pythonhosted.org/packages/9d/4e/819e7a7b69c8b09cf4a237e1d16438de88f6a7f290a8a7ea36b582251e07/antchain_fairopennet-1.0.5.tar.gz
+[2023-04-13 04:32:59] INFO root fetch - processPackages [antchain-fairopennet]: executing diffoscope
+[2023-04-13 04:32:59] INFO root fetch - processPackages [antchain-fairopennet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_fairopennet-1.0.4.tar.gz tmp/antchain_fairopennet-1.0.5.tar.gz --markdown 20230413/a/antchain-fairopennet/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-13 04:33:00] INFO root fetch - processPackages [odoo14-addon-account-analytic-sequence]: Downloading https://files.pythonhosted.org/packages/43/1a/dc8d4b82fabd6fde90430b0f7b7df292ff1db0d01f2edc3e9f241bb2b975/odoo14_addon_account_analytic_sequence-14.0.1.0.2.dev2-py3-none-any.whl
+[2023-04-13 04:33:00] INFO root fetch - processPackages [odoo14-addon-account-analytic-sequence]: executing diffoscope
+[2023-04-13 04:33:00] INFO root fetch - processPackages [odoo14-addon-account-analytic-sequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_analytic_sequence-14.0.1.0.2.dev1-py3-none-any.whl.zip tmp/odoo14_addon_account_analytic_sequence-14.0.1.0.2.dev2-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-account-analytic-sequence/14.0.1.0.2.dev1-14.0.1.0.2.dev2/diff.md --exclude *.pyd
+[2023-04-13 04:33:00] INFO root fetch - processPackages [htmlfilesforquiz]: Start processing: odoo-addon-purchase-analytic
+[2023-04-13 04:33:00] INFO root fetch - main [MainThread]: End processing [htmlfilesforquiz]: success
+[2023-04-13 04:33:01] INFO root fetch - processPackages [odoo-addon-purchase-analytic]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2023-04-13 04:33:01] INFO root fetch - processPackages [antchain-fairopennet]: Start processing: buildlackey
+[2023-04-13 04:33:01] INFO root fetch - main [MainThread]: End processing [antchain-fairopennet]: success
+[2023-04-13 04:33:01] INFO root fetch - processPackages [cdk-sops-secrets]: Start processing: data-ecosystem-services
+[2023-04-13 04:33:01] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-04-13 04:33:01] INFO root fetch - processPackages [data-ecosystem-services]: New version: [202304.0.9] Old Version: [202304.0.8]
+[2023-04-13 04:33:01] INFO root fetch - processPackages [odoo-addon-purchase-analytic]: Downloading https://files.pythonhosted.org/packages/07/33/f2f4167741d081697658745f14cde4759a2d7cb44482dda9bbb105fb8b2b/odoo_addon_purchase_analytic-16.0.1.0.0.5-py3-none-any.whl
+[2023-04-13 04:33:01] INFO root fetch - processPackages [buildlackey]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-13 04:33:01] INFO root fetch - processPackages [data-ecosystem-services]: executing diffoscope
+[2023-04-13 04:33:01] INFO root fetch - processPackages [data-ecosystem-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_ecosystem_services-202304.0.8.tar.gz tmp/data_ecosystem_services-202304.0.9.tar.gz --markdown 20230413/d/data-ecosystem-services/202304.0.8-202304.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:33:01] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-analytic-sequence]: success
+[2023-04-13 04:33:01] INFO root fetch - main [MainThread]: End processing [rtx-deep]: success
+[2023-04-13 04:33:01] INFO root fetch - processPackages [odoo-addon-purchase-analytic]: Downloading https://files.pythonhosted.org/packages/4e/be/9ac66cc6937c904781e4b31b92cae4e18cb90ee0cc0f686dce32832c3ce1/odoo_addon_purchase_analytic-16.0.1.0.0.6-py3-none-any.whl
+[2023-04-13 04:33:01] INFO root fetch - processPackages [buildlackey]: Downloading https://files.pythonhosted.org/packages/02/65/be43a893f7cd5e36dc20b308ee4f1688968982f7b6970745dd45ba05d3c5/buildlackey-0.7.0.tar.gz
+[2023-04-13 04:33:01] INFO root fetch - processPackages [odoo-addon-purchase-analytic]: executing diffoscope
+[2023-04-13 04:33:01] INFO root fetch - processPackages [odoo-addon-purchase-analytic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_purchase_analytic-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_purchase_analytic-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-purchase-analytic/16.0.1.0.0.5-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-04-13 04:33:01] INFO root fetch - processPackages [buildlackey]: executing diffoscope
+[2023-04-13 04:33:01] INFO root fetch - processPackages [buildlackey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildlackey-0.6.0.tar.gz tmp/buildlackey-0.7.0.tar.gz --markdown 20230413/b/buildlackey/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-13 04:33:02] INFO root fetch - main [MainThread]: End processing [data-ecosystem-services]: success
+[2023-04-13 04:33:02] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-analytic]: success
+[2023-04-13 04:33:02] INFO root fetch - main [MainThread]: End processing [buildlackey]: success
+[2023-04-13 04:33:02] INFO root fetch - main [MainThread]: Store serial: [17686082]
