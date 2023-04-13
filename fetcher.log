@@ -6001,3 +6001,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:05:55] INFO root fetch - main [MainThread]: End processing [ob-metaflow-extensions]: success
 [2023-04-13 04:05:55] INFO root fetch - main [MainThread]: End processing [mia-accounting]: success
 [2023-04-13 04:05:55] INFO root fetch - main [MainThread]: Store serial: [17685855]
+[2023-04-13 04:10:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17685855]
+[2023-04-13 04:11:02] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-13 04:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inhandtest
+[2023-04-13 04:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: symdexer
+[2023-04-13 04:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: happydomain
+[2023-04-13 04:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: heizer
+[2023-04-13 04:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaxrie
+[2023-04-13 04:11:03] INFO root fetch - processPackages [happydomain]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-13 04:11:03] INFO root fetch - processPackages [jaxrie]: New version: [7] Old Version: [6]
+[2023-04-13 04:11:03] WARNING root fetch - processPackages [symdexer]: Skipping, unable to determine old version
+[2023-04-13 04:11:03] INFO root fetch - processPackages [heizer]: New version: [999999.dev1681350078] Old Version: [999999.dev1679944487]
+[2023-04-13 04:11:03] INFO root fetch - processPackages [inhandtest]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 04:11:03] INFO root fetch - processPackages [symdexer]: Start processing: isolate-proto
+[2023-04-13 04:11:03] INFO root fetch - main [MainThread]: End processing [symdexer] error
+[2023-04-13 04:11:03] INFO root fetch - processPackages [isolate-proto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 04:11:03] INFO root fetch - processPackages [isolate-proto]: executing diffoscope
+[2023-04-13 04:11:03] INFO root fetch - processPackages [isolate-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isolate_proto-0.0.8.tar.gz tmp/isolate_proto-0.0.9.tar.gz --markdown 20230413/i/isolate-proto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:11:03] INFO root fetch - processPackages [happydomain]: Downloading https://files.pythonhosted.org/packages/41/a4/a70891a00fe2f503a4c6e5cd05968d6afc88339e5a3c0559a8eb032397a2/happydomain-0.0.4.tar.gz
+[2023-04-13 04:11:03] INFO root fetch - processPackages [jaxrie]: Downloading https://files.pythonhosted.org/packages/2f/bf/e8a7d5adf09a5ea5c6e7e9036889e6eb2dd507646cef691c706a1ec75a76/jaxrie-7.tar.gz
+[2023-04-13 04:11:03] INFO root fetch - processPackages [heizer]: executing diffoscope
+[2023-04-13 04:11:03] INFO root fetch - processPackages [heizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heizer-999999.dev1679944487.tar.gz tmp/heizer-999999.dev1681350078.tar.gz --markdown 20230413/h/heizer/999999.dev1679944487-999999.dev1681350078/diff.md --exclude *.pyd
+[2023-04-13 04:11:03] INFO root fetch - processPackages [happydomain]: executing diffoscope
+[2023-04-13 04:11:03] INFO root fetch - processPackages [happydomain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/happydomain-0.0.3.tar.gz tmp/happydomain-0.0.4.tar.gz --markdown 20230413/h/happydomain/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-13 04:11:03] INFO root fetch - processPackages [inhandtest]: executing diffoscope
+[2023-04-13 04:11:03] INFO root fetch - processPackages [inhandtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inhandtest-0.0.4.tar.gz tmp/inhandtest-0.0.5.tar.gz --markdown 20230413/i/inhandtest/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 04:11:03] INFO root fetch - processPackages [jaxrie]: executing diffoscope
+[2023-04-13 04:11:03] INFO root fetch - processPackages [jaxrie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxrie-6.tar.gz tmp/jaxrie-7.tar.gz --markdown 20230413/j/jaxrie/6-7/diff.md --exclude *.pyd
+[2023-04-13 04:11:04] INFO root fetch - processPackages [isolate-proto]: Start processing: OSS-Webcrawler
+[2023-04-13 04:11:04] INFO root fetch - main [MainThread]: End processing [isolate-proto]: success
+[2023-04-13 04:11:04] WARNING root fetch - processPackages [OSS-Webcrawler]: Skipping, unable to determine old version
+[2023-04-13 04:11:04] INFO root fetch - processPackages [OSS-Webcrawler]: Start processing: LabGym
+[2023-04-13 04:11:04] INFO root fetch - main [MainThread]: End processing [OSS-Webcrawler] error
+[2023-04-13 04:11:04] INFO root fetch - processPackages [LabGym]: New version: [1.8.1] Old Version: [1.8]
+[2023-04-13 04:11:04] INFO root fetch - processPackages [LabGym]: Downloading https://files.pythonhosted.org/packages/f2/9c/340d8ec976e9c73d5e1475800e649355bb01cba105e5e443d87e4ada5478/LabGym-1.8.tar.gz
+[2023-04-13 04:11:04] INFO root fetch - main [MainThread]: End processing [happydomain]: success
+[2023-04-13 04:11:04] INFO root fetch - main [MainThread]: End processing [inhandtest]: success
+[2023-04-13 04:11:04] WARNING root fetch - processPackages [LabGym]: Skipping package: exceeds size limit 53589563>=10485760
+[2023-04-13 04:11:04] INFO root fetch - main [MainThread]: End processing [LabGym] error
+[2023-04-13 04:11:04] INFO root fetch - main [MainThread]: End processing [jaxrie]: success
+[2023-04-13 04:11:04] INFO root fetch - main [MainThread]: End processing [heizer]: success
+[2023-04-13 04:11:04] INFO root fetch - main [MainThread]: Store serial: [17685885]
