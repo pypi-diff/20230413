@@ -12779,3 +12779,83 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 11:42:42] INFO root fetch - main [MainThread]: End processing [sihodictapi]: success
 [2023-04-13 11:42:47] INFO root fetch - main [MainThread]: End processing [fake-bge-module-latest]: success
 [2023-04-13 11:42:47] INFO root fetch - main [MainThread]: Store serial: [17690064]
+[2023-04-13 11:47:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690064]
+[2023-04-13 11:47:56] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-13 11:47:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hbshare
+[2023-04-13 11:47:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: test-query-tool
+[2023-04-13 11:47:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tripmaster
+[2023-04-13 11:47:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sihodictapi
+[2023-04-13 11:47:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Photini
+[2023-04-13 11:47:56] INFO root fetch - processPackages [tripmaster]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-13 11:47:56] INFO root fetch - processPackages [test-query-tool]: New version: [0.2.87] Old Version: [0.2.7]
+[2023-04-13 11:47:56] INFO root fetch - processPackages [sihodictapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 11:47:56] INFO root fetch - processPackages [Photini]: New version: [2023.4.0.1] Old Version: [2023.4.0]
+[2023-04-13 11:47:56] INFO root fetch - processPackages [hbshare]: New version: [3.7.9] Old Version: [3.7.8]
+[2023-04-13 11:47:56] INFO root fetch - processPackages [test-query-tool]: Downloading https://files.pythonhosted.org/packages/fd/1b/a3707ad3365a02c1207d5923aefdfd63a5f44dcf8d7367c2c1d81699c480/test_query_tool-0.2.7.tar.gz
+[2023-04-13 11:47:56] INFO root fetch - processPackages [sihodictapi]: executing diffoscope
+[2023-04-13 11:47:56] INFO root fetch - processPackages [sihodictapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sihodictapi-0.1.8.tar.gz tmp/sihodictapi-0.1.9.tar.gz --markdown 20230413/s/sihodictapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 11:47:56] INFO root fetch - processPackages [hbshare]: executing diffoscope
+[2023-04-13 11:47:56] INFO root fetch - processPackages [hbshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbshare-3.7.8.tar.gz tmp/hbshare-3.7.9.tar.gz --markdown 20230413/h/hbshare/3.7.8-3.7.9/diff.md --exclude *.pyd
+[2023-04-13 11:47:56] INFO root fetch - processPackages [tripmaster]: Downloading https://files.pythonhosted.org/packages/3f/2f/db57ae60a74f9c8710729c0e8c288247df06d6e29ac3de357cbc8954812f/tripmaster-1.0.4-py3-none-any.whl
+[2023-04-13 11:47:56] INFO root fetch - processPackages [tripmaster]: executing diffoscope
+[2023-04-13 11:47:56] INFO root fetch - processPackages [tripmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tripmaster-1.0.3-py3-none-any.whl.zip tmp/tripmaster-1.0.4-py3-none-any.whl.zip --markdown 20230413/t/tripmaster/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-13 11:47:56] INFO root fetch - processPackages [test-query-tool]: Downloading https://files.pythonhosted.org/packages/46/ab/e3fca3c92abd8dd74ad7a48b85253e3a224818243d9342cc87a63fe79df8/test_query_tool-0.2.87.tar.gz
+[2023-04-13 11:47:56] INFO root fetch - processPackages [Photini]: Downloading https://files.pythonhosted.org/packages/d7/ce/436f1bbe51b4909e35338d4ff4fc1863ec61c97f748926855d24e7f91a4f/Photini-2023.4.0.1.tar.gz
+[2023-04-13 11:47:56] INFO root fetch - processPackages [test-query-tool]: executing diffoscope
+[2023-04-13 11:47:56] INFO root fetch - processPackages [test-query-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_query_tool-0.2.7.tar.gz tmp/test_query_tool-0.2.87.tar.gz --markdown 20230413/t/test-query-tool/0.2.7-0.2.87/diff.md --exclude *.pyd
+[2023-04-13 11:47:57] INFO root fetch - processPackages [sihodictapi]: Start processing: pdstools
+[2023-04-13 11:47:57] INFO root fetch - main [MainThread]: End processing [sihodictapi]: success
+[2023-04-13 11:47:57] INFO root fetch - processPackages [pdstools]: New version: [3.1.2] Old Version: [3.1.1]
+[2023-04-13 11:47:57] INFO root fetch - processPackages [pdstools]: Downloading https://files.pythonhosted.org/packages/bf/28/8fa93fbd6aa0f6f224f29bed610d9ff79d6156a45cd4be33e01de78ac18f/pdstools-3.1.2.tar.gz
+[2023-04-13 11:47:57] INFO root fetch - processPackages [pdstools]: executing diffoscope
+[2023-04-13 11:47:57] INFO root fetch - processPackages [pdstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdstools-3.1.1.tar.gz tmp/pdstools-3.1.2.tar.gz --markdown 20230413/p/pdstools/3.1.1-3.1.2/diff.md --exclude *.pyd
+[2023-04-13 11:47:57] INFO root fetch - processPackages [tripmaster]: Start processing: pilab-binama
+[2023-04-13 11:47:57] INFO root fetch - main [MainThread]: End processing [tripmaster]: success
+[2023-04-13 11:47:57] INFO root fetch - processPackages [pilab-binama]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-13 11:47:58] INFO root fetch - processPackages [Photini]: executing diffoscope
+[2023-04-13 11:47:58] INFO root fetch - processPackages [Photini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Photini-2023.4.0.tar.gz tmp/Photini-2023.4.0.1.tar.gz --markdown 20230413/P/Photini/2023.4.0-2023.4.0.1/diff.md --exclude *.pyd
+[2023-04-13 11:47:58] INFO root fetch - processPackages [pilab-binama]: Downloading https://files.pythonhosted.org/packages/c1/df/eccc4389296465fd635346cf3fc9d7638e0996f7b42b660f8c74f8497b83/pilab-binama-0.0.7.tar.gz
+[2023-04-13 11:47:58] INFO root fetch - processPackages [pilab-binama]: Downloading https://files.pythonhosted.org/packages/75/b7/95bac3b3e8a6cc5a0b40bfd68f552529857db593705686e17bbec85a40f1/pilab-binama-0.0.8.tar.gz
+[2023-04-13 11:47:58] INFO root fetch - processPackages [pilab-binama]: executing diffoscope
+[2023-04-13 11:47:58] INFO root fetch - processPackages [pilab-binama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pilab-binama-0.0.7.tar.gz tmp/pilab-binama-0.0.8.tar.gz --markdown 20230413/p/pilab-binama/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-13 11:47:58] INFO root fetch - processPackages [pdstools]: Start processing: ccs-fit
+[2023-04-13 11:47:58] INFO root fetch - main [MainThread]: End processing [pdstools]: success
+[2023-04-13 11:47:58] INFO root fetch - processPackages [ccs-fit]: New version: [0.21.2] Old Version: [0.21.1]
+[2023-04-13 11:47:59] INFO root fetch - processPackages [ccs-fit]: Downloading https://files.pythonhosted.org/packages/b2/16/741520193884de36611eac78c2b397555f4b59b45a86517cd6c092f9e9cd/ccs_fit-0.21.2.tar.gz
+[2023-04-13 11:47:59] INFO root fetch - processPackages [ccs-fit]: executing diffoscope
+[2023-04-13 11:47:59] INFO root fetch - processPackages [ccs-fit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccs_fit-0.21.1.tar.gz tmp/ccs_fit-0.21.2.tar.gz --markdown 20230413/c/ccs-fit/0.21.1-0.21.2/diff.md --exclude *.pyd
+[2023-04-13 11:47:59] INFO root fetch - processPackages [pilab-binama]: Start processing: eisenmp-examples
+[2023-04-13 11:47:59] INFO root fetch - main [MainThread]: End processing [pilab-binama]: success
+[2023-04-13 11:47:59] INFO root fetch - processPackages [eisenmp-examples]: New version: [0.3] Old Version: [0.2]
+[2023-04-13 11:47:59] INFO root fetch - processPackages [hbshare]: Start processing: few-shot-priming
+[2023-04-13 11:47:59] INFO root fetch - main [MainThread]: End processing [hbshare]: success
+[2023-04-13 11:47:59] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:47:59] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:47:59] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:47:59] INFO root fetch - processPackages [eisenmp-examples]: Downloading https://files.pythonhosted.org/packages/60/6f/74c8cc598e2a623e88b984c1227e43134629961d657260f079ea5f47d679/eisenmp_examples-0.2.tar.gz
+[2023-04-13 11:47:59] INFO root fetch - processPackages [eisenmp-examples]: Downloading https://files.pythonhosted.org/packages/c4/57/6ec0fec82e3f10ac4bfbd3e56b743e3b90b9eaf705e7e0f55f13552bc85f/eisenmp_examples-0.3.tar.gz
+[2023-04-13 11:47:59] INFO root fetch - processPackages [eisenmp-examples]: executing diffoscope
+[2023-04-13 11:47:59] INFO root fetch - processPackages [eisenmp-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eisenmp_examples-0.2.tar.gz tmp/eisenmp_examples-0.3.tar.gz --markdown 20230413/e/eisenmp-examples/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-13 11:48:00] INFO root fetch - processPackages [ccs-fit]: Start processing: cg
+[2023-04-13 11:48:00] INFO root fetch - main [MainThread]: End processing [ccs-fit]: success
+[2023-04-13 11:48:00] INFO root fetch - processPackages [cg]: New version: [27.2.9] Old Version: [27.2.8]
+[2023-04-13 11:48:00] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-04-13 11:48:00] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-27.2.8.tar.gz tmp/cg-27.2.9.tar.gz --markdown 20230413/c/cg/27.2.8-27.2.9/diff.md --exclude *.pyd
+[2023-04-13 11:48:00] INFO root fetch - processPackages [few-shot-priming]: Start processing: datamodelsFrontier
+[2023-04-13 11:48:00] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:48:00] INFO root fetch - processPackages [datamodelsFrontier]: New version: [1.0] Old Version: [0.2]
+[2023-04-13 11:48:00] INFO root fetch - processPackages [datamodelsFrontier]: Downloading https://files.pythonhosted.org/packages/60/df/0d7ce0caba03c4023d5e30765bc633c0f7782b72c9093d8f3b19a0654846/datamodelsFrontier-0.2.tar.gz
+[2023-04-13 11:48:01] INFO root fetch - processPackages [datamodelsFrontier]: Downloading https://files.pythonhosted.org/packages/49/cc/4c8c156261c27c675cc15679b75a4b87f2dfd39f289ce8015a36ac046757/datamodelsFrontier-1.0.tar.gz
+[2023-04-13 11:48:01] INFO root fetch - processPackages [datamodelsFrontier]: executing diffoscope
+[2023-04-13 11:48:01] INFO root fetch - processPackages [datamodelsFrontier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamodelsFrontier-0.2.tar.gz tmp/datamodelsFrontier-1.0.tar.gz --markdown 20230413/d/datamodelsFrontier/0.2-1.0/diff.md --exclude *.pyd
+[2023-04-13 11:48:01] INFO root fetch - processPackages [eisenmp-examples]: Start processing: qontract-reconcile
+[2023-04-13 11:48:01] INFO root fetch - main [MainThread]: End processing [eisenmp-examples]: success
+[2023-04-13 11:48:01] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-13 11:48:01] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-13 11:48:01] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230413/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-13 11:48:02] INFO root fetch - main [MainThread]: End processing [datamodelsFrontier]: success
+[2023-04-13 11:48:02] INFO root fetch - main [MainThread]: End processing [Photini]: success
+[2023-04-13 11:48:06] INFO root fetch - main [MainThread]: End processing [test-query-tool]: success
+[2023-04-13 11:48:06] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-04-13 11:48:11] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-04-13 11:48:11] INFO root fetch - main [MainThread]: Store serial: [17690100]
