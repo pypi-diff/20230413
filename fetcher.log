@@ -8167,3 +8167,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 07:23:35] INFO root fetch - main [MainThread]: End processing [ml-logger]: success
 [2023-04-13 07:23:36] INFO root fetch - main [MainThread]: End processing [viur-cli]: success
 [2023-04-13 07:23:36] INFO root fetch - main [MainThread]: Store serial: [17687241]
+[2023-04-13 07:28:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687241]
+[2023-04-13 07:28:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-13 07:28:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pe-analyzer
+[2023-04-13 07:28:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2023-04-13 07:28:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gitarootools
+[2023-04-13 07:28:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gtdblib
+[2023-04-13 07:28:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbt-cloud-cli
+[2023-04-13 07:28:43] WARNING root fetch - processPackages [pe-analyzer]: Skipping, unable to determine old version
+[2023-04-13 07:28:43] INFO root fetch - main [MainThread]: End processing [pe-analyzer] error
+[2023-04-13 07:28:43] INFO root fetch - processPackages [gtdblib]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-13 07:28:43] INFO root fetch - processPackages [gitarootools]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-13 07:28:43] INFO root fetch - processPackages [dbt-cloud-cli]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-04-13 07:28:43] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-13 07:28:43] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-13 07:28:43] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230413/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-13 07:28:43] INFO root fetch - processPackages [dbt-cloud-cli]: Downloading https://files.pythonhosted.org/packages/65/47/230534550bb73ec806c5db0f213665beba1481b18a952fecdebcaf7958e9/dbt-cloud-cli-0.7.4.tar.gz
+[2023-04-13 07:28:43] INFO root fetch - processPackages [gtdblib]: Downloading https://files.pythonhosted.org/packages/75/8f/39b03539fc4ed55d21ccc0cf71b2891308823cb37b9ae04c24dfc3fa526d/gtdblib-1.8.0.tar.gz
+[2023-04-13 07:28:43] INFO root fetch - processPackages [gitarootools]: Downloading https://files.pythonhosted.org/packages/f7/9f/f09b8f092ed31d748c3bfdcfbca76ac6fda754bec9a1b5d857b865252db4/gitarootools-0.1.5.tar.gz
+[2023-04-13 07:28:44] INFO root fetch - processPackages [dbt-cloud-cli]: Downloading https://files.pythonhosted.org/packages/04/1d/c4cc11af4fbab67d032f310bcfaa13d8d61fa49a62210e88c23b7a3375db/dbt-cloud-cli-0.7.5.tar.gz
+[2023-04-13 07:28:44] INFO root fetch - processPackages [gitarootools]: Downloading https://files.pythonhosted.org/packages/b3/29/93a2e96e402e87ef1fdad823b74df647690fc05e80d4d52841ec62f11b48/gitarootools-0.1.6.tar.gz
+[2023-04-13 07:28:44] INFO root fetch - processPackages [gtdblib]: Downloading https://files.pythonhosted.org/packages/8a/83/cb5638cd94a0602e3bbb999da86c2e9691b76ca4b91c2889002e007023ad/gtdblib-1.9.0.tar.gz
+[2023-04-13 07:28:44] INFO root fetch - processPackages [gitarootools]: executing diffoscope
+[2023-04-13 07:28:44] INFO root fetch - processPackages [gitarootools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitarootools-0.1.5.tar.gz tmp/gitarootools-0.1.6.tar.gz --markdown 20230413/g/gitarootools/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-13 07:28:44] INFO root fetch - processPackages [dbt-cloud-cli]: executing diffoscope
+[2023-04-13 07:28:44] INFO root fetch - processPackages [dbt-cloud-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-cloud-cli-0.7.4.tar.gz tmp/dbt-cloud-cli-0.7.5.tar.gz --markdown 20230413/d/dbt-cloud-cli/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-04-13 07:28:44] INFO root fetch - processPackages [gtdblib]: executing diffoscope
+[2023-04-13 07:28:44] INFO root fetch - processPackages [gtdblib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtdblib-1.8.0.tar.gz tmp/gtdblib-1.9.0.tar.gz --markdown 20230413/g/gtdblib/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-13 07:28:44] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-13 07:28:45] INFO root fetch - main [MainThread]: End processing [gitarootools]: success
+[2023-04-13 07:28:46] INFO root fetch - main [MainThread]: End processing [gtdblib]: success
+[2023-04-13 07:28:46] INFO root fetch - main [MainThread]: End processing [dbt-cloud-cli]: success
+[2023-04-13 07:28:46] INFO root fetch - main [MainThread]: Store serial: [17687259]
