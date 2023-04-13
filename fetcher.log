@@ -7053,3 +7053,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:40:40] INFO root fetch - main [MainThread]: End processing [pinyin-jyutping]: success
 [2023-04-13 05:40:40] INFO root fetch - main [MainThread]: End processing [pinyin-jyutping]: success
 [2023-04-13 05:40:40] INFO root fetch - main [MainThread]: Store serial: [17686543]
+[2023-04-13 05:45:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686543]
+[2023-04-13 05:45:48] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-13 05:45:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-clock
+[2023-04-13 05:45:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pcl-pangu
+[2023-04-13 05:45:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inhandtest
+[2023-04-13 05:45:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gqt
+[2023-04-13 05:45:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo12-addon-contract
+[2023-04-13 05:45:48] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 05:45:48] INFO root fetch - processPackages [inhandtest]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 05:45:49] INFO root fetch - processPackages [nonebot-plugin-clock]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-13 05:45:49] INFO root fetch - processPackages [gqt]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-13 05:45:49] INFO root fetch - processPackages [odoo12-addon-contract]: New version: [12.0.8.6.1.99.dev5] Old Version: [12.0.8.6.1.99.dev4]
+[2023-04-13 05:45:49] INFO root fetch - processPackages [gqt]: executing diffoscope
+[2023-04-13 05:45:49] INFO root fetch - processPackages [gqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqt-0.98.0.tar.gz tmp/gqt-0.99.0.tar.gz --markdown 20230413/g/gqt/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-13 05:45:49] INFO root fetch - processPackages [inhandtest]: executing diffoscope
+[2023-04-13 05:45:49] INFO root fetch - processPackages [inhandtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inhandtest-0.0.4.tar.gz tmp/inhandtest-0.0.5.tar.gz --markdown 20230413/i/inhandtest/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 05:45:49] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 05:45:49] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 05:45:49] INFO root fetch - processPackages [nonebot-plugin-clock]: Downloading https://files.pythonhosted.org/packages/e6/f5/c4a0e8a9f8b38cfef0076f4132cf860cb77bb783326eef35023a32c658a7/nonebot-plugin-clock-0.8.3.tar.gz
+[2023-04-13 05:45:49] INFO root fetch - processPackages [nonebot-plugin-clock]: executing diffoscope
+[2023-04-13 05:45:49] INFO root fetch - processPackages [nonebot-plugin-clock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-clock-0.8.2.tar.gz tmp/nonebot-plugin-clock-0.8.3.tar.gz --markdown 20230413/n/nonebot-plugin-clock/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-13 05:45:49] INFO root fetch - processPackages [odoo12-addon-contract]: Downloading https://files.pythonhosted.org/packages/94/c9/db9f13c330dae0ef75be18fdec071e772985482824292dfa397dd5fa7b72/odoo12_addon_contract-12.0.8.6.1.99.dev5-py3-none-any.whl
+[2023-04-13 05:45:49] INFO root fetch - processPackages [odoo12-addon-contract]: executing diffoscope
+[2023-04-13 05:45:49] INFO root fetch - processPackages [odoo12-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_contract-12.0.8.6.1.99.dev4-py3-none-any.whl.zip tmp/odoo12_addon_contract-12.0.8.6.1.99.dev5-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-contract/12.0.8.6.1.99.dev4-12.0.8.6.1.99.dev5/diff.md --exclude *.pyd
+[2023-04-13 05:45:50] INFO root fetch - processPackages [inhandtest]: Start processing: odoo13-addon-contract
+[2023-04-13 05:45:50] INFO root fetch - main [MainThread]: End processing [inhandtest]: success
+[2023-04-13 05:45:50] INFO root fetch - processPackages [odoo13-addon-contract]: New version: [13.0.2.9.1.dev1] Old Version: [13.0.2.9.0]
+[2023-04-13 05:45:50] INFO root fetch - processPackages [nonebot-plugin-clock]: Start processing: scikit-build-core
+[2023-04-13 05:45:50] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-clock]: success
+[2023-04-13 05:45:50] INFO root fetch - processPackages [scikit-build-core]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-13 05:45:50] INFO root fetch - processPackages [gqt]: Start processing: flow360
+[2023-04-13 05:45:50] INFO root fetch - main [MainThread]: End processing [gqt]: success
+[2023-04-13 05:45:50] INFO root fetch - processPackages [flow360]: New version: [0.2.0b2] Old Version: [0.2.0b1]
+[2023-04-13 05:45:50] INFO root fetch - processPackages [scikit-build-core]: Downloading https://files.pythonhosted.org/packages/de/8b/f3fac8135afa0929845f06ae9a0bbe53180928be561f662bf52ccd58f053/scikit_build_core-0.2.2.tar.gz
+[2023-04-13 05:45:50] INFO root fetch - processPackages [flow360]: Downloading https://files.pythonhosted.org/packages/1a/13/9228a6b8012c53d23a5c29ab12a92cc1fd065a13727488ad4786394acfb4/flow360-0.2.0b2.tar.gz
+[2023-04-13 05:45:50] INFO root fetch - processPackages [odoo13-addon-contract]: executing diffoscope
+[2023-04-13 05:45:50] INFO root fetch - processPackages [odoo13-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_contract-13.0.2.9.0-py3-none-any.whl.zip tmp/odoo13_addon_contract-13.0.2.9.1.dev1-py3-none-any.whl.zip --markdown 20230413/o/odoo13-addon-contract/13.0.2.9.0-13.0.2.9.1.dev1/diff.md --exclude *.pyd
+[2023-04-13 05:45:50] INFO root fetch - processPackages [flow360]: executing diffoscope
+[2023-04-13 05:45:50] INFO root fetch - processPackages [flow360]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flow360-0.2.0b1.tar.gz tmp/flow360-0.2.0b2.tar.gz --markdown 20230413/f/flow360/0.2.0b1-0.2.0b2/diff.md --exclude *.pyd
+[2023-04-13 05:45:50] INFO root fetch - processPackages [scikit-build-core]: Downloading https://files.pythonhosted.org/packages/b5/68/2286037f3d9ec48b6158440bb749052b6858093fc03fad92005ba366ab6b/scikit_build_core-0.3.0.tar.gz
+[2023-04-13 05:45:50] INFO root fetch - processPackages [scikit-build-core]: executing diffoscope
+[2023-04-13 05:45:50] INFO root fetch - processPackages [scikit-build-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit_build_core-0.2.2.tar.gz tmp/scikit_build_core-0.3.0.tar.gz --markdown 20230413/s/scikit-build-core/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-13 05:45:51] INFO root fetch - processPackages [odoo12-addon-contract]: Start processing: odoo-addon-contract
+[2023-04-13 05:45:51] INFO root fetch - main [MainThread]: End processing [odoo12-addon-contract]: success
+[2023-04-13 05:45:51] INFO root fetch - processPackages [odoo-addon-contract]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-13 05:45:52] INFO root fetch - processPackages [odoo-addon-contract]: executing diffoscope
+[2023-04-13 05:45:52] INFO root fetch - processPackages [odoo-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_contract-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_contract-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-contract/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-13 05:45:52] INFO root fetch - processPackages [flow360]: Start processing: SCdataframeFormatter
+[2023-04-13 05:45:52] INFO root fetch - main [MainThread]: End processing [flow360]: success
+[2023-04-13 05:45:52] WARNING root fetch - processPackages [SCdataframeFormatter]: Skipping, unable to determine old version
+[2023-04-13 05:45:52] INFO root fetch - processPackages [SCdataframeFormatter]: Start processing: odoo14-addon-contract
+[2023-04-13 05:45:52] INFO root fetch - main [MainThread]: End processing [SCdataframeFormatter] error
+[2023-04-13 05:45:52] INFO root fetch - processPackages [odoo14-addon-contract]: New version: [14.0.2.9.5.dev1] Old Version: [14.0.2.9.4.dev6]
+[2023-04-13 05:45:52] INFO root fetch - processPackages [odoo14-addon-contract]: Downloading https://files.pythonhosted.org/packages/dc/cc/b9f045c6fd2779ca9368a74c955322f94cc77fc73a15b6132a90f1945a42/odoo14_addon_contract-14.0.2.9.5.dev1-py3-none-any.whl
+[2023-04-13 05:45:52] INFO root fetch - processPackages [odoo14-addon-contract]: executing diffoscope
+[2023-04-13 05:45:52] INFO root fetch - processPackages [odoo14-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_contract-14.0.2.9.4.dev6-py3-none-any.whl.zip tmp/odoo14_addon_contract-14.0.2.9.5.dev1-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-contract/14.0.2.9.4.dev6-14.0.2.9.5.dev1/diff.md --exclude *.pyd
+[2023-04-13 05:45:53] INFO root fetch - processPackages [scikit-build-core]: Start processing: odoo14-addons-oca-contract
+[2023-04-13 05:45:53] INFO root fetch - main [MainThread]: End processing [scikit-build-core]: success
+[2023-04-13 05:45:53] INFO root fetch - processPackages [odoo14-addons-oca-contract]: New version: [14.0.20230412.0] Old Version: [14.0.20221230.0]
+[2023-04-13 05:45:53] INFO root fetch - processPackages [odoo14-addons-oca-contract]: Downloading https://files.pythonhosted.org/packages/3a/7a/6ec445bad3fa020e0dc2fb268b8d5b9aabb05ce7b91c9273678fb292259a/odoo14_addons_oca_contract-14.0.20221230.0-py3-none-any.whl
+[2023-04-13 05:45:53] INFO root fetch - processPackages [odoo14-addons-oca-contract]: Downloading https://files.pythonhosted.org/packages/e3/b2/18cfbaa10ecb0a650ad8ce946c1c26feb00dc8a3f3fdaad61e6e8bf88396/odoo14_addons_oca_contract-14.0.20230412.0-py3-none-any.whl
+[2023-04-13 05:45:53] INFO root fetch - processPackages [odoo14-addons-oca-contract]: executing diffoscope
+[2023-04-13 05:45:53] INFO root fetch - processPackages [odoo14-addons-oca-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_contract-14.0.20221230.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_contract-14.0.20230412.0-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addons-oca-contract/14.0.20221230.0-14.0.20230412.0/diff.md --exclude *.pyd
+[2023-04-13 05:45:54] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-contract]: success
+[2023-04-13 05:45:55] INFO root fetch - main [MainThread]: End processing [odoo14-addon-contract]: success
+[2023-04-13 05:45:55] INFO root fetch - main [MainThread]: End processing [odoo13-addon-contract]: success
+[2023-04-13 05:45:56] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 05:45:58] INFO root fetch - main [MainThread]: End processing [odoo-addon-contract]: success
+[2023-04-13 05:45:58] INFO root fetch - main [MainThread]: Store serial: [17686576]
