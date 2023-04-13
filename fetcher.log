@@ -17820,3 +17820,127 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 15:18:57] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
 [2023-04-13 15:19:05] INFO root fetch - main [MainThread]: End processing [pyqint]: success
 [2023-04-13 15:19:05] INFO root fetch - main [MainThread]: Store serial: [17692867]
+[2023-04-13 15:24:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17692867]
+[2023-04-13 15:24:17] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-13 15:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyams-chat-ws
+[2023-04-13 15:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altvmasterlist
+[2023-04-13 15:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fbgemm-gpu-nightly
+[2023-04-13 15:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: diambra
+[2023-04-13 15:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rqalpha
+[2023-04-13 15:24:18] INFO root fetch - processPackages [rqalpha]: New version: [4.9.2] Old Version: [4.9.1]
+[2023-04-13 15:24:18] INFO root fetch - processPackages [pyams-chat-ws]: New version: [1.1.7] Old Version: [1.1.5]
+[2023-04-13 15:24:18] INFO root fetch - processPackages [diambra]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 15:24:18] INFO root fetch - processPackages [altvmasterlist]: New version: [2.4.3] Old Version: [2.4.2]
+[2023-04-13 15:24:18] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-13 15:24:18] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/91/d7/37b19c2c14c34663f10ad284c315d7cdad71cbf7995d5e3bd737507ac655/fbgemm_gpu_nightly-2023.4.8-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-13 15:24:18] INFO root fetch - processPackages [rqalpha]: Downloading https://files.pythonhosted.org/packages/08/7b/0c4711b9d326484bd50420d94875c4b4966bd3a9577a79fea69c5872a75e/rqalpha-4.9.1.tar.gz
+[2023-04-13 15:24:18] INFO root fetch - processPackages [pyams-chat-ws]: Downloading https://files.pythonhosted.org/packages/6a/b8/609df909e8b3c7f7b56deae9351fd0579f85f55ed479e69139adaa5b1cd4/pyams_chat_ws-1.1.5.tar.gz
+[2023-04-13 15:24:18] INFO root fetch - processPackages [altvmasterlist]: Downloading https://files.pythonhosted.org/packages/90/e0/fb74ddf6c00eb89914288501cb3b2c58e86fe5a1acf351a5f7e7a20665b8/altvmasterlist-2.4.2.tar.gz
+[2023-04-13 15:24:18] INFO root fetch - processPackages [diambra]: Downloading https://files.pythonhosted.org/packages/fc/26/431ae9f7ba1db20f119b715a454ed935ffec2f60f713b374413de18c27a5/diambra-0.0.8-py3-none-win_amd64.whl
+[2023-04-13 15:24:18] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 205605176>=10485760
+[2023-04-13 15:24:18] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Start processing: odoo14-addon-fieldservice
+[2023-04-13 15:24:18] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-04-13 15:24:18] INFO root fetch - processPackages [odoo14-addon-fieldservice]: New version: [14.0.1.9.0] Old Version: [14.0.1.8.1.dev2]
+[2023-04-13 15:24:18] INFO root fetch - processPackages [odoo14-addon-fieldservice]: executing diffoscope
+[2023-04-13 15:24:18] INFO root fetch - processPackages [odoo14-addon-fieldservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_fieldservice-14.0.1.8.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_fieldservice-14.0.1.9.0-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-fieldservice/14.0.1.8.1.dev2-14.0.1.9.0/diff.md --exclude *.pyd
+[2023-04-13 15:24:18] INFO root fetch - processPackages [altvmasterlist]: Downloading https://files.pythonhosted.org/packages/1d/84/724914b30736090863a90647b1915ec1067e23d165f947d73369503ef3de/altvmasterlist-2.4.3.tar.gz
+[2023-04-13 15:24:18] INFO root fetch - processPackages [pyams-chat-ws]: Downloading https://files.pythonhosted.org/packages/4c/17/8ffa6f6a62f78c4e90927ab83b18a73d4d7585d8a7699c2e42e75033c354/pyams_chat_ws-1.1.7.tar.gz
+[2023-04-13 15:24:18] INFO root fetch - processPackages [rqalpha]: Downloading https://files.pythonhosted.org/packages/70/d4/697d98a6f89381c99ecd9c564458ee5774c736863548df2d9ee55cad5ba4/rqalpha-4.9.2.tar.gz
+[2023-04-13 15:24:18] INFO root fetch - processPackages [altvmasterlist]: executing diffoscope
+[2023-04-13 15:24:18] INFO root fetch - processPackages [altvmasterlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altvmasterlist-2.4.2.tar.gz tmp/altvmasterlist-2.4.3.tar.gz --markdown 20230413/a/altvmasterlist/2.4.2-2.4.3/diff.md --exclude *.pyd
+[2023-04-13 15:24:18] INFO root fetch - processPackages [pyams-chat-ws]: executing diffoscope
+[2023-04-13 15:24:18] INFO root fetch - processPackages [pyams-chat-ws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_chat_ws-1.1.5.tar.gz tmp/pyams_chat_ws-1.1.7.tar.gz --markdown 20230413/p/pyams-chat-ws/1.1.5-1.1.7/diff.md --exclude *.pyd
+[2023-04-13 15:24:19] INFO root fetch - processPackages [rqalpha]: executing diffoscope
+[2023-04-13 15:24:19] INFO root fetch - processPackages [rqalpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rqalpha-4.9.1.tar.gz tmp/rqalpha-4.9.2.tar.gz --markdown 20230413/r/rqalpha/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2023-04-13 15:24:19] INFO root fetch - processPackages [pyams-chat-ws]: Start processing: idun-guardian-client
+[2023-04-13 15:24:19] INFO root fetch - main [MainThread]: End processing [pyams-chat-ws]: success
+[2023-04-13 15:24:19] INFO root fetch - processPackages [idun-guardian-client]: New version: [1.1b9] Old Version: [1.1b4]
+[2023-04-13 15:24:20] INFO root fetch - processPackages [altvmasterlist]: Start processing: onnx2kerastl
+[2023-04-13 15:24:20] INFO root fetch - main [MainThread]: End processing [altvmasterlist]: success
+[2023-04-13 15:24:20] INFO root fetch - processPackages [idun-guardian-client]: executing diffoscope
+[2023-04-13 15:24:20] INFO root fetch - processPackages [idun-guardian-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idun_guardian_client-1.1b4.tar.gz tmp/idun_guardian_client-1.1b9.tar.gz --markdown 20230413/i/idun-guardian-client/1.1b4-1.1b9/diff.md --exclude *.pyd
+[2023-04-13 15:24:20] INFO root fetch - processPackages [onnx2kerastl]: New version: [0.0.82.dev8] Old Version: [0.0.82.dev7]
+[2023-04-13 15:24:20] INFO root fetch - processPackages [odoo14-addon-fieldservice]: Start processing: returnn
+[2023-04-13 15:24:20] INFO root fetch - main [MainThread]: End processing [odoo14-addon-fieldservice]: success
+[2023-04-13 15:24:20] INFO root fetch - processPackages [returnn]: New version: [1.20230413.93323] Old Version: [1.20230413.151021]
+[2023-04-13 15:24:20] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/9f/b5/3e3efbe9fe955267fe6902363bad1353e1c092dd449c43a988f475743ca2/onnx2kerastl-0.0.82.dev8.tar.gz
+[2023-04-13 15:24:20] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/26/a9/db529779be38cbea9d64d9e5b1c7c0bf5bed96a2893897275c4c8ea7383d/returnn-1.20230413.151021.tar.gz
+[2023-04-13 15:24:20] INFO root fetch - processPackages [onnx2kerastl]: executing diffoscope
+[2023-04-13 15:24:20] INFO root fetch - processPackages [onnx2kerastl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2kerastl-0.0.82.dev7.tar.gz tmp/onnx2kerastl-0.0.82.dev8.tar.gz --markdown 20230413/o/onnx2kerastl/0.0.82.dev7-0.0.82.dev8/diff.md --exclude *.pyd
+[2023-04-13 15:24:20] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-13 15:24:20] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230413.151021.tar.gz tmp/returnn-1.20230413.93323.tar.gz --markdown 20230413/r/returnn/1.20230413.151021-1.20230413.93323/diff.md --exclude *.pyd
+[2023-04-13 15:24:21] INFO root fetch - processPackages [rqalpha]: Start processing: fastestimator-nightly
+[2023-04-13 15:24:21] INFO root fetch - main [MainThread]: End processing [rqalpha]: success
+[2023-04-13 15:24:21] INFO root fetch - processPackages [fastestimator-nightly]: New version: [1.5.0.dev202304121323] Old Version: [1.5.0.dev202304111323]
+[2023-04-13 15:24:21] INFO root fetch - processPackages [idun-guardian-client]: Start processing: OpenFisca-France
+[2023-04-13 15:24:21] INFO root fetch - main [MainThread]: End processing [idun-guardian-client]: success
+[2023-04-13 15:24:21] INFO root fetch - processPackages [OpenFisca-France]: New version: [99.0.1] Old Version: [99.0.0]
+[2023-04-13 15:24:21] INFO root fetch - processPackages [fastestimator-nightly]: Downloading https://files.pythonhosted.org/packages/2f/b2/45a35fc5a46e8f3f1cf7fa479a488b1b2b05063df589088a3febd6f34f7f/fastestimator-nightly-1.5.0.dev202304121323.tar.gz
+[2023-04-13 15:24:21] INFO root fetch - processPackages [OpenFisca-France]: Downloading https://files.pythonhosted.org/packages/70/8b/f7e6ae929e6bc09831757bdb5cdb964099c9af3419db607df1bdfebfe6fd/OpenFisca_France-99.0.0-py3-none-any.whl
+[2023-04-13 15:24:21] INFO root fetch - processPackages [diambra]: Downloading https://files.pythonhosted.org/packages/d6/fb/cbc8d3d1f7406d425beebb7761bf8e6e10e96bdc2ecc0d2459899d5d1948/diambra-0.0.9-py3-none-win_amd64.whl
+[2023-04-13 15:24:21] INFO root fetch - processPackages [fastestimator-nightly]: executing diffoscope
+[2023-04-13 15:24:21] INFO root fetch - processPackages [fastestimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastestimator-nightly-1.5.0.dev202304111323.tar.gz tmp/fastestimator-nightly-1.5.0.dev202304121323.tar.gz --markdown 20230413/f/fastestimator-nightly/1.5.0.dev202304111323-1.5.0.dev202304121323/diff.md --exclude *.pyd
+[2023-04-13 15:24:22] INFO root fetch - processPackages [OpenFisca-France]: Downloading https://files.pythonhosted.org/packages/b5/c6/01bc5d57d2ec6bf602cdc2aacf3444fa5f25fbb7d9e9a5bdda07728b537d/OpenFisca_France-99.0.1-py3-none-any.whl
+[2023-04-13 15:24:22] INFO root fetch - processPackages [OpenFisca-France]: executing diffoscope
+[2023-04-13 15:24:22] INFO root fetch - processPackages [OpenFisca-France]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenFisca_France-99.0.0-py3-none-any.whl.zip tmp/OpenFisca_France-99.0.1-py3-none-any.whl.zip --markdown 20230413/O/OpenFisca-France/99.0.0-99.0.1/diff.md --exclude *.pyd
+[2023-04-13 15:24:24] INFO root fetch - processPackages [diambra]: executing diffoscope
+[2023-04-13 15:24:24] INFO root fetch - processPackages [diambra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diambra-0.0.8-py3-none-win_amd64.whl.zip tmp/diambra-0.0.9-py3-none-win_amd64.whl.zip --markdown 20230413/d/diambra/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 15:24:25] INFO root fetch - processPackages [returnn]: Start processing: pyveb
+[2023-04-13 15:24:25] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-13 15:24:25] INFO root fetch - processPackages [pyveb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-13 15:24:25] INFO root fetch - processPackages [onnx2kerastl]: Start processing: admath1
+[2023-04-13 15:24:25] INFO root fetch - main [MainThread]: End processing [onnx2kerastl]: success
+[2023-04-13 15:24:25] WARNING root fetch - processPackages [admath1]: Skipping, unable to determine old version
+[2023-04-13 15:24:25] INFO root fetch - processPackages [admath1]: Start processing: gcp-pilot
+[2023-04-13 15:24:25] INFO root fetch - main [MainThread]: End processing [admath1] error
+[2023-04-13 15:24:25] INFO root fetch - processPackages [gcp-pilot]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-13 15:24:25] INFO root fetch - processPackages [pyveb]: Downloading https://files.pythonhosted.org/packages/31/53/d0dee2a1c9519b1039d766d51f473ea566de2d0c1eae2a596c6c33b32fd0/pyveb-0.2.8.tar.gz
+[2023-04-13 15:24:25] INFO root fetch - processPackages [gcp-pilot]: Downloading https://files.pythonhosted.org/packages/78/4c/904d9bfad08e100e7292aa65ba02bb2970a1847c9b70f40c2e5b5f7c0394/gcp_pilot-1.8.0.tar.gz
+[2023-04-13 15:24:25] INFO root fetch - processPackages [pyveb]: Downloading https://files.pythonhosted.org/packages/dc/17/d67a53eaaf71aba7ee0c68ae51fd4338d20d6979b5cf8e8c74c5c886429e/pyveb-0.2.9.tar.gz
+[2023-04-13 15:24:25] INFO root fetch - processPackages [pyveb]: executing diffoscope
+[2023-04-13 15:24:25] INFO root fetch - processPackages [pyveb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyveb-0.2.8.tar.gz tmp/pyveb-0.2.9.tar.gz --markdown 20230413/p/pyveb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-13 15:24:25] INFO root fetch - processPackages [gcp-pilot]: Downloading https://files.pythonhosted.org/packages/77/21/e21af36c6a9ae3ffd798bb349a5af13504c2c3ec3e5361bdfcd34b9fa888/gcp_pilot-1.9.0.tar.gz
+[2023-04-13 15:24:26] INFO root fetch - processPackages [gcp-pilot]: executing diffoscope
+[2023-04-13 15:24:26] INFO root fetch - processPackages [gcp-pilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcp_pilot-1.8.0.tar.gz tmp/gcp_pilot-1.9.0.tar.gz --markdown 20230413/g/gcp-pilot/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-13 15:24:26] INFO root fetch - processPackages [pyveb]: Start processing: sklearn-quantile
+[2023-04-13 15:24:26] INFO root fetch - main [MainThread]: End processing [pyveb]: success
+[2023-04-13 15:24:26] INFO root fetch - processPackages [sklearn-quantile]: New version: [0.0.3] Old Version: [0.0.21]
+[2023-04-13 15:24:27] INFO root fetch - processPackages [sklearn-quantile]: Downloading https://files.pythonhosted.org/packages/52/55/47ec9442a1bb289bc66b7c8405726ce567bc6afe03a827af86b3d395dcde/sklearn_quantile-0.0.21.tar.gz
+[2023-04-13 15:24:27] INFO root fetch - processPackages [sklearn-quantile]: executing diffoscope
+[2023-04-13 15:24:27] INFO root fetch - processPackages [sklearn-quantile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearn_quantile-0.0.21.tar.gz tmp/sklearn_quantile-0.0.3.tar.gz --markdown 20230413/s/sklearn-quantile/0.0.21-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 15:24:27] INFO root fetch - processPackages [gcp-pilot]: Start processing: dlt
+[2023-04-13 15:24:27] INFO root fetch - main [MainThread]: End processing [gcp-pilot]: success
+[2023-04-13 15:24:27] INFO root fetch - processPackages [dlt]: New version: [0.2.5a1] Old Version: [0.2.4]
+[2023-04-13 15:24:27] INFO root fetch - processPackages [dlt]: Downloading https://files.pythonhosted.org/packages/a9/a2/94b63172e3c07b0b68ba58967c1b38a40d2aef1b69b7f130e901dd02f374/dlt-0.2.5a1.tar.gz
+[2023-04-13 15:24:27] INFO root fetch - processPackages [dlt]: executing diffoscope
+[2023-04-13 15:24:27] INFO root fetch - processPackages [dlt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlt-0.2.4.tar.gz tmp/dlt-0.2.5a1.tar.gz --markdown 20230413/d/dlt/0.2.4-0.2.5a1/diff.md --exclude *.pyd
+[2023-04-13 15:24:28] INFO root fetch - processPackages [sklearn-quantile]: Start processing: ansys-dpf-core
+[2023-04-13 15:24:28] INFO root fetch - main [MainThread]: End processing [sklearn-quantile]: success
+[2023-04-13 15:24:28] INFO root fetch - processPackages [ansys-dpf-core]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-13 15:24:28] INFO root fetch - processPackages [ansys-dpf-core]: Downloading https://files.pythonhosted.org/packages/23/d1/55dbf29cc12cd30b4700502be0c69a49147c5d1ff88f3b5a863cf8576a63/ansys-dpf-core-0.8.0.tar.gz
+[2023-04-13 15:24:28] INFO root fetch - processPackages [fastestimator-nightly]: Start processing: gym-trading-env
+[2023-04-13 15:24:28] INFO root fetch - main [MainThread]: End processing [fastestimator-nightly]: success
+[2023-04-13 15:24:29] INFO root fetch - processPackages [gym-trading-env]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 15:24:29] WARNING root fetch - processPackages [ansys-dpf-core]: Skipping package: exceeds size limit 18249140>=10485760
+[2023-04-13 15:24:29] INFO root fetch - processPackages [ansys-dpf-core]: Start processing: peerplays
+[2023-04-13 15:24:29] INFO root fetch - main [MainThread]: End processing [ansys-dpf-core] error
+[2023-04-13 15:24:29] INFO root fetch - processPackages [dlt]: Start processing: oarepo-model-builder
+[2023-04-13 15:24:29] INFO root fetch - main [MainThread]: End processing [dlt]: success
+[2023-04-13 15:24:29] INFO root fetch - processPackages [peerplays]: New version: [0.5.3] Old Version: [0.5.0]
+[2023-04-13 15:24:29] INFO root fetch - processPackages [oarepo-model-builder]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-04-13 15:24:29] INFO root fetch - processPackages [peerplays]: Downloading https://files.pythonhosted.org/packages/de/54/d934c420abfaeff9c578d0af4a32642dff697656af89a258ee90d05a3726/peerplays-0.5.0.tar.gz
+[2023-04-13 15:24:29] INFO root fetch - processPackages [gym-trading-env]: Downloading https://files.pythonhosted.org/packages/95/93/501e110f47d45960ce867dd8dce92c2553b045461a23dbc052f8edb07062/gym-trading-env-0.1.9.tar.gz
+[2023-04-13 15:24:29] INFO root fetch - processPackages [peerplays]: Downloading https://files.pythonhosted.org/packages/a6/ac/b6a755d4c853859a1aaa105b73b00a3ad41886dd1fbbef213a1b0469a4d2/peerplays-0.5.3.tar.gz
+[2023-04-13 15:24:29] INFO root fetch - processPackages [oarepo-model-builder]: executing diffoscope
+[2023-04-13 15:24:29] INFO root fetch - processPackages [oarepo-model-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-3.2.8.tar.gz tmp/oarepo-model-builder-3.2.9.tar.gz --markdown 20230413/o/oarepo-model-builder/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-04-13 15:24:29] INFO root fetch - processPackages [gym-trading-env]: executing diffoscope
+[2023-04-13 15:24:29] INFO root fetch - processPackages [gym-trading-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym-trading-env-0.1.8.tar.gz tmp/gym-trading-env-0.1.9.tar.gz --markdown 20230413/g/gym-trading-env/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 15:24:29] INFO root fetch - processPackages [peerplays]: executing diffoscope
+[2023-04-13 15:24:29] INFO root fetch - processPackages [peerplays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peerplays-0.5.0.tar.gz tmp/peerplays-0.5.3.tar.gz --markdown 20230413/p/peerplays/0.5.0-0.5.3/diff.md --exclude *.pyd
+[2023-04-13 15:24:30] INFO root fetch - main [MainThread]: End processing [gym-trading-env]: success
+[2023-04-13 15:24:31] INFO root fetch - main [MainThread]: End processing [peerplays]: success
+[2023-04-13 15:24:31] INFO root fetch - main [MainThread]: End processing [oarepo-model-builder]: success
+[2023-04-13 15:25:38] INFO root fetch - main [MainThread]: End processing [OpenFisca-France]: success
+[2023-04-13 15:27:24] ERROR root fetch - processPackages [diambra]: Timeout during execution of pkgdiff
+[2023-04-13 15:27:24] INFO root fetch - main [MainThread]: End processing [diambra] error
+[2023-04-13 15:27:24] INFO root fetch - main [MainThread]: Store serial: [17692940]
