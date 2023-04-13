@@ -6591,3 +6591,91 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:04:11] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-term-extension]: success
 [2023-04-13 05:04:11] INFO root fetch - main [MainThread]: End processing [jina-hubble-sdk]: success
 [2023-04-13 05:04:11] INFO root fetch - main [MainThread]: Store serial: [17686252]
+[2023-04-13 05:09:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686252]
+[2023-04-13 05:09:18] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-13 05:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datastructureslibharrishasnain
+[2023-04-13 05:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: occe-api
+[2023-04-13 05:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: resource-lister
+[2023-04-13 05:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: damuffin
+[2023-04-13 05:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pqq
+[2023-04-13 05:09:18] WARNING root fetch - processPackages [pqq]: Skipping, unable to determine old version
+[2023-04-13 05:09:18] INFO root fetch - processPackages [damuffin]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-04-13 05:09:18] WARNING root fetch - processPackages [datastructureslibharrishasnain]: Skipping, unable to determine old version
+[2023-04-13 05:09:18] INFO root fetch - processPackages [pqq]: Start processing: odoo8-addon-account-banking-mandate
+[2023-04-13 05:09:18] INFO root fetch - processPackages [datastructureslibharrishasnain]: Start processing: odoo9-addon-account-payment-mode
+[2023-04-13 05:09:18] INFO root fetch - processPackages [resource-lister]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-13 05:09:18] INFO root fetch - processPackages [occe-api]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 05:09:18] INFO root fetch - main [MainThread]: End processing [pqq] error
+[2023-04-13 05:09:18] INFO root fetch - main [MainThread]: End processing [datastructureslibharrishasnain] error
+[2023-04-13 05:09:18] INFO root fetch - processPackages [odoo8-addon-account-banking-mandate]: New version: [8.0.0.2.1.99.dev4] Old Version: [8.0.0.2.1.99.dev3]
+[2023-04-13 05:09:18] INFO root fetch - processPackages [odoo9-addon-account-payment-mode]: New version: [9.0.1.0.1.99.dev8] Old Version: [9.0.1.0.1.99.dev7]
+[2023-04-13 05:09:19] INFO root fetch - processPackages [occe-api]: Downloading https://files.pythonhosted.org/packages/28/af/82ec98926c126fe3141c03bb2c8dfe60f4637f4f661050db7c0fb2740743/occe_api-1.0.0.tar.gz
+[2023-04-13 05:09:19] INFO root fetch - processPackages [resource-lister]: Downloading https://files.pythonhosted.org/packages/b3/d1/eb5274d739fc59d2ca39488a257f347a4eaf6b83d92b0eea50d483d5548c/resource-lister-1.0.0.tar.gz
+[2023-04-13 05:09:19] INFO root fetch - processPackages [damuffin]: Downloading https://files.pythonhosted.org/packages/4f/72/a16c5e8297e894e6b6d37db0084699dc07155782ce130527e6f208d72cb2/damuffin-1.6.0-py3-none-any.whl
+[2023-04-13 05:09:19] INFO root fetch - processPackages [odoo9-addon-account-payment-mode]: Downloading https://files.pythonhosted.org/packages/41/83/6609e5bdfe680ff225027708b7af9631ac0b28bb045699665c07522cbfe7/odoo9_addon_account_payment_mode-9.0.1.0.1.99.dev7-py2-none-any.whl
+[2023-04-13 05:09:19] INFO root fetch - processPackages [odoo8-addon-account-banking-mandate]: Downloading https://files.pythonhosted.org/packages/ba/0b/42cff76ceb2a9ce3328396a62a7fc29430741b55f7a4e50427e0538c11db/odoo8_addon_account_banking_mandate-8.0.0.2.1.99.dev4-py2-none-any.whl
+[2023-04-13 05:09:19] INFO root fetch - processPackages [resource-lister]: Downloading https://files.pythonhosted.org/packages/9c/fb/0ed82d10b1b6cd82d79136aa6b2fcfa7fd5acfda508e1f0e9ded4305095c/resource-lister-1.1.0.tar.gz
+[2023-04-13 05:09:19] INFO root fetch - processPackages [damuffin]: Downloading https://files.pythonhosted.org/packages/73/b3/ec436250de9421ad585c758a961604ce36774b824d45452cee7d68991e4e/damuffin-1.6.1-py3-none-any.whl
+[2023-04-13 05:09:19] INFO root fetch - processPackages [occe-api]: Downloading https://files.pythonhosted.org/packages/54/af/b6b0599bdc93f83dc39acfe38afcfe335c8106ca9f472b05a9904171ba89/occe_api-1.0.1.tar.gz
+[2023-04-13 05:09:19] INFO root fetch - processPackages [resource-lister]: executing diffoscope
+[2023-04-13 05:09:19] INFO root fetch - processPackages [resource-lister]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resource-lister-1.0.0.tar.gz tmp/resource-lister-1.1.0.tar.gz --markdown 20230413/r/resource-lister/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 05:09:19] INFO root fetch - processPackages [odoo8-addon-account-banking-mandate]: executing diffoscope
+[2023-04-13 05:09:19] INFO root fetch - processPackages [odoo8-addon-account-banking-mandate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_account_banking_mandate-8.0.0.2.1.99.dev3-py2-none-any.whl.zip tmp/odoo8_addon_account_banking_mandate-8.0.0.2.1.99.dev4-py2-none-any.whl.zip --markdown 20230413/o/odoo8-addon-account-banking-mandate/8.0.0.2.1.99.dev3-8.0.0.2.1.99.dev4/diff.md --exclude *.pyd
+[2023-04-13 05:09:19] INFO root fetch - processPackages [damuffin]: executing diffoscope
+[2023-04-13 05:09:19] INFO root fetch - processPackages [damuffin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/damuffin-1.6.0-py3-none-any.whl.zip tmp/damuffin-1.6.1-py3-none-any.whl.zip --markdown 20230413/d/damuffin/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-04-13 05:09:19] INFO root fetch - processPackages [odoo9-addon-account-payment-mode]: Downloading https://files.pythonhosted.org/packages/ab/a7/b249f8c2ba4d16fd46bb852759ff4204827a422e61330a0b1630b02c834b/odoo9_addon_account_payment_mode-9.0.1.0.1.99.dev8-py2-none-any.whl
+[2023-04-13 05:09:19] INFO root fetch - processPackages [occe-api]: executing diffoscope
+[2023-04-13 05:09:19] INFO root fetch - processPackages [occe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/occe_api-1.0.0.tar.gz tmp/occe_api-1.0.1.tar.gz --markdown 20230413/o/occe-api/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 05:09:19] INFO root fetch - processPackages [odoo9-addon-account-payment-mode]: executing diffoscope
+[2023-04-13 05:09:19] INFO root fetch - processPackages [odoo9-addon-account-payment-mode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_account_payment_mode-9.0.1.0.1.99.dev7-py2-none-any.whl.zip tmp/odoo9_addon_account_payment_mode-9.0.1.0.1.99.dev8-py2-none-any.whl.zip --markdown 20230413/o/odoo9-addon-account-payment-mode/9.0.1.0.1.99.dev7-9.0.1.0.1.99.dev8/diff.md --exclude *.pyd
+[2023-04-13 05:09:20] INFO root fetch - processPackages [occe-api]: Start processing: slackflylog
+[2023-04-13 05:09:20] INFO root fetch - main [MainThread]: End processing [occe-api]: success
+[2023-04-13 05:09:20] INFO root fetch - processPackages [slackflylog]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-13 05:09:20] INFO root fetch - processPackages [damuffin]: Start processing: odoo10-addon-account-banking-mandate
+[2023-04-13 05:09:20] INFO root fetch - main [MainThread]: End processing [damuffin]: success
+[2023-04-13 05:09:20] INFO root fetch - processPackages [odoo10-addon-account-banking-mandate]: New version: [10.0.2.1.0.99.dev2] Old Version: [10.0.2.1.0.99.dev1]
+[2023-04-13 05:09:20] INFO root fetch - processPackages [slackflylog]: Downloading https://files.pythonhosted.org/packages/2f/a8/cb340289cd2c162f5e936ee73d88209267bd1d1bf98c69b02d6e653de2f7/slackflylog-0.0.8.tar.gz
+[2023-04-13 05:09:20] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-13 05:09:20] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-0.0.7.tar.gz tmp/slackflylog-0.0.8.tar.gz --markdown 20230413/s/slackflylog/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-13 05:09:20] INFO root fetch - processPackages [resource-lister]: Start processing: odoo11-addon-account-payment-mode
+[2023-04-13 05:09:20] INFO root fetch - main [MainThread]: End processing [resource-lister]: success
+[2023-04-13 05:09:20] INFO root fetch - processPackages [odoo10-addon-account-banking-mandate]: Downloading https://files.pythonhosted.org/packages/7d/6d/64877fde99c86fbe9192f86e35918ee2163e39b71aed5354c8bd0e00fea2/odoo10_addon_account_banking_mandate-10.0.2.1.0.99.dev1-py2-none-any.whl
+[2023-04-13 05:09:20] INFO root fetch - processPackages [odoo11-addon-account-payment-mode]: New version: [11.0.1.0.1.99.dev9] Old Version: [11.0.1.0.1.99.dev8]
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo11-addon-account-payment-mode]: Downloading https://files.pythonhosted.org/packages/39/f2/91c342bcb9e3422f6bc3df9217935c0317d726b9336c640d5517a536852f/odoo11_addon_account_payment_mode-11.0.1.0.1.99.dev8-py2.py3-none-any.whl
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo8-addon-account-banking-mandate]: Start processing: odoo10-addon-account-payment-mode
+[2023-04-13 05:09:21] INFO root fetch - main [MainThread]: End processing [odoo8-addon-account-banking-mandate]: success
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo10-addon-account-payment-mode]: New version: [10.0.1.0.2.99.dev8] Old Version: [10.0.1.0.2.99.dev7]
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo9-addon-account-payment-mode]: Start processing: odoo13-addon-account-payment-mode
+[2023-04-13 05:09:21] INFO root fetch - main [MainThread]: End processing [odoo9-addon-account-payment-mode]: success
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo13-addon-account-payment-mode]: New version: [13.0.1.2.2.dev2] Old Version: [13.0.1.2.2.dev1]
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo10-addon-account-payment-mode]: Downloading https://files.pythonhosted.org/packages/01/4d/c78e54e069865cc85e6d5d528bbd2e23f3ed041c1deca815945f08f6c48f/odoo10_addon_account_payment_mode-10.0.1.0.2.99.dev7-py2-none-any.whl
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo13-addon-account-payment-mode]: Downloading https://files.pythonhosted.org/packages/32/b6/cd58eb7124e423cb75d7de7290015e2f8b1a50476302dccf3cfb9e595faa/odoo13_addon_account_payment_mode-13.0.1.2.2.dev1-py3-none-any.whl
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo11-addon-account-payment-mode]: Downloading https://files.pythonhosted.org/packages/6a/3b/8925c5f51d5eb5e8bb628d42c9e91673da160bbf993f1bb51ef52485caad/odoo11_addon_account_payment_mode-11.0.1.0.1.99.dev9-py2.py3-none-any.whl
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo10-addon-account-payment-mode]: Downloading https://files.pythonhosted.org/packages/9a/a2/63c3372024b4bb69cfc395737bd17d469262b0b2c1bab4af3242328053d4/odoo10_addon_account_payment_mode-10.0.1.0.2.99.dev8-py2-none-any.whl
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo10-addon-account-banking-mandate]: Downloading https://files.pythonhosted.org/packages/62/dc/fd5a1ec341b6026596e4ef82612734b5022403ca444908b4dca260b3a006/odoo10_addon_account_banking_mandate-10.0.2.1.0.99.dev2-py2-none-any.whl
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo13-addon-account-payment-mode]: Downloading https://files.pythonhosted.org/packages/3c/c2/390daf34dcdcd4f6ba003ed72f2df46814b4274c17ec1045cad869540d2b/odoo13_addon_account_payment_mode-13.0.1.2.2.dev2-py3-none-any.whl
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo10-addon-account-banking-mandate]: executing diffoscope
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo10-addon-account-banking-mandate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_account_banking_mandate-10.0.2.1.0.99.dev1-py2-none-any.whl.zip tmp/odoo10_addon_account_banking_mandate-10.0.2.1.0.99.dev2-py2-none-any.whl.zip --markdown 20230413/o/odoo10-addon-account-banking-mandate/10.0.2.1.0.99.dev1-10.0.2.1.0.99.dev2/diff.md --exclude *.pyd
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo10-addon-account-payment-mode]: executing diffoscope
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo10-addon-account-payment-mode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_account_payment_mode-10.0.1.0.2.99.dev7-py2-none-any.whl.zip tmp/odoo10_addon_account_payment_mode-10.0.1.0.2.99.dev8-py2-none-any.whl.zip --markdown 20230413/o/odoo10-addon-account-payment-mode/10.0.1.0.2.99.dev7-10.0.1.0.2.99.dev8/diff.md --exclude *.pyd
+[2023-04-13 05:09:21] INFO root fetch - processPackages [slackflylog]: Start processing: GANDLF
+[2023-04-13 05:09:21] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo13-addon-account-payment-mode]: executing diffoscope
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo13-addon-account-payment-mode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_account_payment_mode-13.0.1.2.2.dev1-py3-none-any.whl.zip tmp/odoo13_addon_account_payment_mode-13.0.1.2.2.dev2-py3-none-any.whl.zip --markdown 20230413/o/odoo13-addon-account-payment-mode/13.0.1.2.2.dev1-13.0.1.2.2.dev2/diff.md --exclude *.pyd
+[2023-04-13 05:09:21] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230413] Old Version: [0.0.16.dev20230412]
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo11-addon-account-payment-mode]: executing diffoscope
+[2023-04-13 05:09:21] INFO root fetch - processPackages [odoo11-addon-account-payment-mode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_account_payment_mode-11.0.1.0.1.99.dev8-py2.py3-none-any.whl.zip tmp/odoo11_addon_account_payment_mode-11.0.1.0.1.99.dev9-py2.py3-none-any.whl.zip --markdown 20230413/o/odoo11-addon-account-payment-mode/11.0.1.0.1.99.dev8-11.0.1.0.1.99.dev9/diff.md --exclude *.pyd
+[2023-04-13 05:09:22] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/02/01/d35041a492546689e737bd232b9616e1d863e10244a5188450d4354ebd31/GANDLF-0.0.16.dev20230413.tar.gz
+[2023-04-13 05:09:22] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-04-13 05:09:22] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230412.tar.gz tmp/GANDLF-0.0.16.dev20230413.tar.gz --markdown 20230413/G/GANDLF/0.0.16.dev20230412-0.0.16.dev20230413/diff.md --exclude *.pyd
+[2023-04-13 05:09:22] INFO root fetch - processPackages [odoo10-addon-account-payment-mode]: Start processing: dpsa4fl-bindings
+[2023-04-13 05:09:22] INFO root fetch - main [MainThread]: End processing [odoo10-addon-account-payment-mode]: success
+[2023-04-13 05:09:23] INFO root fetch - processPackages [dpsa4fl-bindings]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 05:09:23] INFO root fetch - main [MainThread]: End processing [odoo11-addon-account-payment-mode]: success
+[2023-04-13 05:09:23] INFO root fetch - main [MainThread]: End processing [odoo10-addon-account-banking-mandate]: success
+[2023-04-13 05:09:23] INFO root fetch - main [MainThread]: End processing [odoo13-addon-account-payment-mode]: success
+[2023-04-13 05:09:23] INFO root fetch - processPackages [dpsa4fl-bindings]: executing diffoscope
+[2023-04-13 05:09:23] INFO root fetch - processPackages [dpsa4fl-bindings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpsa4fl_bindings-0.1.8.tar.gz tmp/dpsa4fl_bindings-0.1.9.tar.gz --markdown 20230413/d/dpsa4fl-bindings/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 05:09:24] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-04-13 05:09:24] INFO root fetch - main [MainThread]: End processing [dpsa4fl-bindings]: success
+[2023-04-13 05:09:24] INFO root fetch - main [MainThread]: Store serial: [17686297]
