@@ -16155,3 +16155,110 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 14:09:12] INFO root fetch - main [MainThread]: End processing [wis-s3api]: success
 [2023-04-13 14:09:29] INFO root fetch - main [MainThread]: End processing [dss-python]: success
 [2023-04-13 14:09:29] INFO root fetch - main [MainThread]: Store serial: [17691888]
+[2023-04-13 14:14:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17691888]
+[2023-04-13 14:14:44] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-13 14:14:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arikaim-service-server
+[2023-04-13 14:14:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: civics-cdf-validator
+[2023-04-13 14:14:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-dllib
+[2023-04-13 14:14:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-orca
+[2023-04-13 14:14:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-friesian
+[2023-04-13 14:14:44] INFO root fetch - processPackages [arikaim-service-server]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-13 14:14:44] INFO root fetch - processPackages [bigdl-dllib]: New version: [2.3.0b20230413] Old Version: [2.3.0b20230412]
+[2023-04-13 14:14:44] INFO root fetch - processPackages [civics-cdf-validator]: New version: [1.9.dev1] Old Version: [1.9]
+[2023-04-13 14:14:44] INFO root fetch - processPackages [bigdl-orca]: New version: [2.3.0b20230413] Old Version: [2.3.0b20230412]
+[2023-04-13 14:14:44] INFO root fetch - processPackages [bigdl-friesian]: New version: [2.3.0b20230413] Old Version: [2.3.0b20230412]
+[2023-04-13 14:14:44] INFO root fetch - processPackages [arikaim-service-server]: Downloading https://files.pythonhosted.org/packages/e2/3e/a7d4993a9640a020ca631a1942351d9bdb3b08e999b6cf20a0c91800d817/arikaim%20service%20server-0.5.1.tar.gz
+[2023-04-13 14:14:44] INFO root fetch - processPackages [civics-cdf-validator]: Downloading https://files.pythonhosted.org/packages/9c/33/4d75823e3c52ecc93964f231d752b79135d74aa9bcca07720045645bfe91/civics_cdf_validator-1.9.tar.gz
+[2023-04-13 14:14:44] INFO root fetch - processPackages [bigdl-dllib]: Downloading https://files.pythonhosted.org/packages/79/68/57c99792d8d420c05edeb0b83c62b155e7d5c880b5ac14743bad774ddbfe/bigdl-dllib-2.3.0b20230412.tar.gz
+[2023-04-13 14:14:44] INFO root fetch - processPackages [bigdl-orca]: Downloading https://files.pythonhosted.org/packages/a1/60/0afa0b91409637923ae65eb22656c115da4cf20c4f8985eeacbff2864c2a/bigdl_orca-2.3.0b20230412-py3-none-manylinux1_x86_64.whl
+[2023-04-13 14:14:45] WARNING root fetch - processPackages [bigdl-orca]: Skipping package: exceeds size limit 20371412>=10485760
+[2023-04-13 14:14:45] WARNING root fetch - processPackages [bigdl-dllib]: Skipping package: exceeds size limit 53559806>=10485760
+[2023-04-13 14:14:45] INFO root fetch - processPackages [bigdl-orca]: Start processing: bigdl
+[2023-04-13 14:14:45] INFO root fetch - processPackages [bigdl-dllib]: Start processing: django-hell-auth
+[2023-04-13 14:14:45] INFO root fetch - main [MainThread]: End processing [bigdl-orca] error
+[2023-04-13 14:14:45] INFO root fetch - main [MainThread]: End processing [bigdl-dllib] error
+[2023-04-13 14:14:45] WARNING root fetch - processPackages [django-hell-auth]: Skipping, unable to determine old version
+[2023-04-13 14:14:45] INFO root fetch - processPackages [django-hell-auth]: Start processing: returnn
+[2023-04-13 14:14:45] INFO root fetch - main [MainThread]: End processing [django-hell-auth] error
+[2023-04-13 14:14:45] INFO root fetch - processPackages [bigdl-friesian]: Downloading https://files.pythonhosted.org/packages/56/67/4f21b90fd351a6d97934ab80001f1070e53a5caa2c317a374f923ad05816/bigdl_friesian-2.3.0b20230413-py3-none-manylinux1_x86_64.whl
+[2023-04-13 14:14:45] INFO root fetch - processPackages [bigdl]: New version: [2.3.0b20230413] Old Version: [2.3.0b20230412]
+[2023-04-13 14:14:45] INFO root fetch - processPackages [returnn]: New version: [1.20230413.93323] Old Version: [1.20230413.135919]
+[2023-04-13 14:14:45] INFO root fetch - processPackages [arikaim-service-server]: Downloading https://files.pythonhosted.org/packages/ff/ff/a0272eff7cbb18df862a31095deb9d03f62e2ad17b24f4a3e0cea491b0cc/arikaim_service_server-0.5.2-py3-none-any.whl
+[2023-04-13 14:14:45] INFO root fetch - processPackages [civics-cdf-validator]: Downloading https://files.pythonhosted.org/packages/49/52/f20d05b43acd0ba782bdb28e82a60591d9ca3edb1c39da7ec86f030521ac/civics_cdf_validator-1.9.dev1.tar.gz
+[2023-04-13 14:14:45] INFO root fetch - processPackages [bigdl-friesian]: executing diffoscope
+[2023-04-13 14:14:45] INFO root fetch - processPackages [bigdl-friesian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian-2.3.0b20230412-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian-2.3.0b20230413-py3-none-manylinux1_x86_64.whl.zip --markdown 20230413/b/bigdl-friesian/2.3.0b20230412-2.3.0b20230413/diff.md --exclude *.pyd
+[2023-04-13 14:14:45] INFO root fetch - processPackages [arikaim-service-server]: executing diffoscope
+[2023-04-13 14:14:45] INFO root fetch - processPackages [arikaim-service-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arikaim service server-0.5.1.tar.gz tmp/arikaim_service_server-0.5.2-py3-none-any.whl.zip --markdown 20230413/a/arikaim-service-server/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-13 14:14:45] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/f3/62/abd68a56db844e3139d3afab77583626247b0f42febe5f4509f27a0900bc/returnn-1.20230413.135919.tar.gz
+[2023-04-13 14:14:45] INFO root fetch - processPackages [civics-cdf-validator]: executing diffoscope
+[2023-04-13 14:14:45] INFO root fetch - processPackages [civics-cdf-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/civics_cdf_validator-1.9.tar.gz tmp/civics_cdf_validator-1.9.dev1.tar.gz --markdown 20230413/c/civics-cdf-validator/1.9-1.9.dev1/diff.md --exclude *.pyd
+[2023-04-13 14:14:45] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-13 14:14:45] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230413.135919.tar.gz tmp/returnn-1.20230413.93323.tar.gz --markdown 20230413/r/returnn/1.20230413.135919-1.20230413.93323/diff.md --exclude *.pyd
+[2023-04-13 14:14:45] INFO root fetch - processPackages [bigdl]: Downloading https://files.pythonhosted.org/packages/bc/90/034efb60361b5484e7168ed5e6ce03be12dae587fe4630c93d72c59630f6/bigdl-2.3.0b20230413-py3-none-manylinux1_x86_64.whl
+[2023-04-13 14:14:45] INFO root fetch - processPackages [bigdl]: executing diffoscope
+[2023-04-13 14:14:45] INFO root fetch - processPackages [bigdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl-2.3.0b20230412-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl-2.3.0b20230413-py3-none-manylinux1_x86_64.whl.zip --markdown 20230413/b/bigdl/2.3.0b20230412-2.3.0b20230413/diff.md --exclude *.pyd
+[2023-04-13 14:14:46] INFO root fetch - processPackages [arikaim-service-server]: Start processing: jinjamator
+[2023-04-13 14:14:46] INFO root fetch - main [MainThread]: End processing [arikaim-service-server]: success
+[2023-04-13 14:14:46] INFO root fetch - processPackages [jinjamator]: New version: [0.9.9] Old Version: [0.9.86]
+[2023-04-13 14:14:46] INFO root fetch - processPackages [civics-cdf-validator]: Start processing: test-query-tool
+[2023-04-13 14:14:46] INFO root fetch - main [MainThread]: End processing [civics-cdf-validator]: success
+[2023-04-13 14:14:46] INFO root fetch - processPackages [test-query-tool]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-13 14:14:46] INFO root fetch - processPackages [jinjamator]: Downloading https://files.pythonhosted.org/packages/27/4d/3293d0f46b3160d43ec363eec30b538c8fff5aa3a83e9de7b95221923148/jinjamator-0.9.86-py3-none-any.whl
+[2023-04-13 14:14:46] WARNING root fetch - processPackages [jinjamator]: Skipping package: exceeds size limit 10808040>=10485760
+[2023-04-13 14:14:46] INFO root fetch - processPackages [jinjamator]: Start processing: fuse-client
+[2023-04-13 14:14:46] INFO root fetch - main [MainThread]: End processing [jinjamator] error
+[2023-04-13 14:14:46] INFO root fetch - processPackages [fuse-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 14:14:46] INFO root fetch - processPackages [bigdl]: Start processing: strkit-rust-ext
+[2023-04-13 14:14:46] INFO root fetch - main [MainThread]: End processing [bigdl]: success
+[2023-04-13 14:14:46] INFO root fetch - processPackages [strkit-rust-ext]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-13 14:14:46] INFO root fetch - processPackages [test-query-tool]: Downloading https://files.pythonhosted.org/packages/87/33/7c105b813fba9600e674e84dc94e1106baf03c8c3e6ae35cfbc220a295f1/test_query_tool-0.3.3.tar.gz
+[2023-04-13 14:14:46] INFO root fetch - processPackages [test-query-tool]: executing diffoscope
+[2023-04-13 14:14:46] INFO root fetch - processPackages [test-query-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_query_tool-0.3.2.tar.gz tmp/test_query_tool-0.3.3.tar.gz --markdown 20230413/t/test-query-tool/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-13 14:14:46] INFO root fetch - processPackages [strkit-rust-ext]: Downloading https://files.pythonhosted.org/packages/25/22/4e94579f4978ae0a2faca4d9faeac658cdd869d843754883e9679dd66501/strkit_rust_ext-0.3.0.tar.gz
+[2023-04-13 14:14:46] INFO root fetch - processPackages [bigdl-friesian]: Start processing: doc2python
+[2023-04-13 14:14:46] INFO root fetch - main [MainThread]: End processing [bigdl-friesian]: success
+[2023-04-13 14:14:46] INFO root fetch - processPackages [strkit-rust-ext]: executing diffoscope
+[2023-04-13 14:14:46] INFO root fetch - processPackages [strkit-rust-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strkit_rust_ext-0.2.1.tar.gz tmp/strkit_rust_ext-0.3.0.tar.gz --markdown 20230413/s/strkit-rust-ext/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-13 14:14:46] INFO root fetch - processPackages [doc2python]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 14:14:46] INFO root fetch - processPackages [fuse-client]: executing diffoscope
+[2023-04-13 14:14:46] INFO root fetch - processPackages [fuse-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuse-client-1.0.8.tar.gz tmp/fuse-client-1.0.9.tar.gz --markdown 20230413/f/fuse-client/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 14:14:47] INFO root fetch - processPackages [doc2python]: Downloading https://files.pythonhosted.org/packages/c9/78/f001dab51bd7852c924ad58a631678f8d611f657900abf7d74abedb5bb0e/doc2python-0.0.1.tar.gz
+[2023-04-13 14:14:47] INFO root fetch - processPackages [doc2python]: Downloading https://files.pythonhosted.org/packages/8c/28/b8dcf5f92330db408c819fb612a74f8a5a06ce1d20806b0a41b6adca49e3/doc2python-0.0.2.tar.gz
+[2023-04-13 14:14:47] INFO root fetch - processPackages [doc2python]: executing diffoscope
+[2023-04-13 14:14:47] INFO root fetch - processPackages [doc2python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doc2python-0.0.1.tar.gz tmp/doc2python-0.0.2.tar.gz --markdown 20230413/d/doc2python/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 14:14:47] INFO root fetch - processPackages [test-query-tool]: Start processing: idun-guardian-client
+[2023-04-13 14:14:47] INFO root fetch - main [MainThread]: End processing [test-query-tool]: success
+[2023-04-13 14:14:47] INFO root fetch - processPackages [idun-guardian-client]: New version: [1.1b9] Old Version: [1.1b4]
+[2023-04-13 14:14:47] INFO root fetch - processPackages [strkit-rust-ext]: Start processing: clinicadl
+[2023-04-13 14:14:47] INFO root fetch - main [MainThread]: End processing [strkit-rust-ext]: success
+[2023-04-13 14:14:47] INFO root fetch - processPackages [clinicadl]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-13 14:14:48] INFO root fetch - processPackages [idun-guardian-client]: executing diffoscope
+[2023-04-13 14:14:48] INFO root fetch - processPackages [idun-guardian-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idun_guardian_client-1.1b4.tar.gz tmp/idun_guardian_client-1.1b9.tar.gz --markdown 20230413/i/idun-guardian-client/1.1b4-1.1b9/diff.md --exclude *.pyd
+[2023-04-13 14:14:48] INFO root fetch - processPackages [clinicadl]: Downloading https://files.pythonhosted.org/packages/51/97/1679bacdff85e248aaf2f20152ad7971cd67bd72c5fcec59805c7637fe09/clinicadl-1.2.0.tar.gz
+[2023-04-13 14:14:48] INFO root fetch - processPackages [doc2python]: Start processing: blockapi
+[2023-04-13 14:14:48] INFO root fetch - main [MainThread]: End processing [doc2python]: success
+[2023-04-13 14:14:48] INFO root fetch - processPackages [blockapi]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-13 14:14:48] INFO root fetch - processPackages [clinicadl]: Downloading https://files.pythonhosted.org/packages/0d/ac/6443b32c6f123433694c6df41358fa121abcb597e57630258412ed238ed7/clinicadl-1.3.0.tar.gz
+[2023-04-13 14:14:48] INFO root fetch - processPackages [clinicadl]: executing diffoscope
+[2023-04-13 14:14:48] INFO root fetch - processPackages [clinicadl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clinicadl-1.2.0.tar.gz tmp/clinicadl-1.3.0.tar.gz --markdown 20230413/c/clinicadl/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-13 14:14:48] INFO root fetch - processPackages [blockapi]: Downloading https://files.pythonhosted.org/packages/31/4d/7d461a226992bb823af9a205b83532fd5cf942306b4ad4f220a2817a8ee4/blockapi-0.8.1.tar.gz
+[2023-04-13 14:14:49] INFO root fetch - processPackages [idun-guardian-client]: Start processing: invenio-app-rdm
+[2023-04-13 14:14:49] INFO root fetch - main [MainThread]: End processing [idun-guardian-client]: success
+[2023-04-13 14:14:49] INFO root fetch - processPackages [invenio-app-rdm]: New version: [9.1.6] Old Version: [9.1.5]
+[2023-04-13 14:14:49] INFO root fetch - processPackages [invenio-app-rdm]: executing diffoscope
+[2023-04-13 14:14:49] INFO root fetch - processPackages [invenio-app-rdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-app-rdm-9.1.5.tar.gz tmp/invenio-app-rdm-9.1.6.tar.gz --markdown 20230413/i/invenio-app-rdm/9.1.5-9.1.6/diff.md --exclude *.pyd
+[2023-04-13 14:14:49] INFO root fetch - processPackages [blockapi]: Downloading https://files.pythonhosted.org/packages/6a/ed/17b1b9e53b4a0bb6d3d31ae17aeaa73238a3bc01d6b208f6b4fb0812d638/blockapi-0.9.0.tar.gz
+[2023-04-13 14:14:49] INFO root fetch - processPackages [blockapi]: executing diffoscope
+[2023-04-13 14:14:49] INFO root fetch - processPackages [blockapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockapi-0.8.1.tar.gz tmp/blockapi-0.9.0.tar.gz --markdown 20230413/b/blockapi/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 14:14:49] INFO root fetch - processPackages [returnn]: Start processing: vsui-client
+[2023-04-13 14:14:49] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-13 14:14:49] INFO root fetch - processPackages [vsui-client]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-13 14:14:49] INFO root fetch - processPackages [vsui-client]: Downloading https://files.pythonhosted.org/packages/ba/3b/10bb606c70163f2d9aca11ecd9593019999ddda491f6bd969c4cb4005dc5/vsui_client-1.1.0.tar.gz
+[2023-04-13 14:14:49] INFO root fetch - processPackages [vsui-client]: executing diffoscope
+[2023-04-13 14:14:49] INFO root fetch - processPackages [vsui-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsui_client-1.0.0.tar.gz tmp/vsui_client-1.1.0.tar.gz --markdown 20230413/v/vsui-client/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 14:14:50] INFO root fetch - main [MainThread]: End processing [clinicadl]: success
+[2023-04-13 14:14:50] INFO root fetch - main [MainThread]: End processing [fuse-client]: success
+[2023-04-13 14:14:51] INFO root fetch - main [MainThread]: End processing [vsui-client]: success
+[2023-04-13 14:14:51] INFO root fetch - main [MainThread]: End processing [blockapi]: success
+[2023-04-13 14:14:51] INFO root fetch - main [MainThread]: End processing [invenio-app-rdm]: success
+[2023-04-13 14:14:51] INFO root fetch - main [MainThread]: Store serial: [17691988]
