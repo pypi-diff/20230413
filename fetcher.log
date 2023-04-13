@@ -11289,3 +11289,147 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 10:33:59] INFO root fetch - main [MainThread]: End processing [teleapp]: success
 [2023-04-13 10:33:59] INFO root fetch - main [MainThread]: End processing [playmolecule]: success
 [2023-04-13 10:33:59] INFO root fetch - main [MainThread]: Store serial: [17689187]
+[2023-04-13 10:39:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689187]
+[2023-04-13 10:39:07] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-13 10:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloud-toolkit-aws
+[2023-04-13 10:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dotenv-cli
+[2023-04-13 10:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-estimator-nightly
+[2023-04-13 10:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shopee-xr-test-pypi-3
+[2023-04-13 10:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cis-checks-2023
+[2023-04-13 10:39:07] INFO root fetch - processPackages [cloud-toolkit-aws]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-13 10:39:07] INFO root fetch - processPackages [cis-checks-2023]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-04-13 10:39:07] INFO root fetch - processPackages [dotenv-cli]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-13 10:39:07] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-04-13 10:39:07] WARNING root fetch - processPackages [shopee-xr-test-pypi-3]: Skipping, unable to determine old version
+[2023-04-13 10:39:07] INFO root fetch - processPackages [shopee-xr-test-pypi-3]: Start processing: safe-ds-examples
+[2023-04-13 10:39:07] INFO root fetch - main [MainThread]: End processing [shopee-xr-test-pypi-3] error
+[2023-04-13 10:39:07] INFO root fetch - processPackages [safe-ds-examples]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 10:39:07] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-04-13 10:39:07] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230413/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-04-13 10:39:07] INFO root fetch - processPackages [cloud-toolkit-aws]: Downloading https://files.pythonhosted.org/packages/57/a8/392b59e687eb600ab03ac8b02a6cc0f2d2b1d9a4773461173d23bc76b443/cloud_toolkit_aws-0.9.0.tar.gz
+[2023-04-13 10:39:07] INFO root fetch - processPackages [cis-checks-2023]: Downloading https://files.pythonhosted.org/packages/52/f3/d532d18a684def36ade05aa3b4eb6f04db628ea42c342867bce9b93be320/cis_checks_2023-2.0.6.tar.gz
+[2023-04-13 10:39:07] INFO root fetch - processPackages [dotenv-cli]: Downloading https://files.pythonhosted.org/packages/2c/aa/64a9102236826cc4ef9bf04effe9c369893ded329310e71ebb0f7100f0b6/dotenv-cli-3.1.0.tar.gz
+[2023-04-13 10:39:07] INFO root fetch - processPackages [safe-ds-examples]: Downloading https://files.pythonhosted.org/packages/c0/f2/e4cb1f76e32d962d1a2e54a697a348d7e0b656d3794a53c05653992b29a6/safe_ds_examples-0.9.0.tar.gz
+[2023-04-13 10:39:07] INFO root fetch - processPackages [cloud-toolkit-aws]: executing diffoscope
+[2023-04-13 10:39:07] INFO root fetch - processPackages [cloud-toolkit-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud_toolkit_aws-0.8.3.tar.gz tmp/cloud_toolkit_aws-0.9.0.tar.gz --markdown 20230413/c/cloud-toolkit-aws/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 10:39:07] INFO root fetch - processPackages [cis-checks-2023]: executing diffoscope
+[2023-04-13 10:39:07] INFO root fetch - processPackages [cis-checks-2023]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cis_checks_2023-2.0.5.tar.gz tmp/cis_checks_2023-2.0.6.tar.gz --markdown 20230413/c/cis-checks-2023/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-04-13 10:39:08] INFO root fetch - processPackages [dotenv-cli]: Downloading https://files.pythonhosted.org/packages/06/2a/4d8197305e673134930f6df571f8b5de1968228d5e207bc67c52639b49cf/dotenv-cli-3.1.1.tar.gz
+[2023-04-13 10:39:08] INFO root fetch - processPackages [dotenv-cli]: executing diffoscope
+[2023-04-13 10:39:08] INFO root fetch - processPackages [dotenv-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dotenv-cli-3.1.0.tar.gz tmp/dotenv-cli-3.1.1.tar.gz --markdown 20230413/d/dotenv-cli/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-13 10:39:08] INFO root fetch - processPackages [safe-ds-examples]: Downloading https://files.pythonhosted.org/packages/d3/87/bf1fd5b20292fe74c4576d78c293e045945de174b8f02c63dcc8fc6dc39e/safe_ds_examples-0.9.1.tar.gz
+[2023-04-13 10:39:08] INFO root fetch - processPackages [safe-ds-examples]: executing diffoscope
+[2023-04-13 10:39:08] INFO root fetch - processPackages [safe-ds-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safe_ds_examples-0.9.0.tar.gz tmp/safe_ds_examples-0.9.1.tar.gz --markdown 20230413/s/safe-ds-examples/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 10:39:09] INFO root fetch - processPackages [cloud-toolkit-aws]: Start processing: iqm-cortex-cli
+[2023-04-13 10:39:09] INFO root fetch - main [MainThread]: End processing [cloud-toolkit-aws]: success
+[2023-04-13 10:39:09] INFO root fetch - processPackages [iqm-cortex-cli]: New version: [3.5] Old Version: [3.4]
+[2023-04-13 10:39:09] INFO root fetch - processPackages [iqm-cortex-cli]: Downloading https://files.pythonhosted.org/packages/3b/e3/a670d611099ab57914ef3ef2e52fc9b20daa48c2462dc314c24f60a1265d/iqm-cortex-cli-3.4.tar.gz
+[2023-04-13 10:39:09] INFO root fetch - processPackages [dotenv-cli]: Start processing: test-pipinstall-whp
+[2023-04-13 10:39:09] INFO root fetch - main [MainThread]: End processing [dotenv-cli]: success
+[2023-04-13 10:39:09] INFO root fetch - processPackages [test-pipinstall-whp]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 10:39:09] INFO root fetch - processPackages [tf-estimator-nightly]: Start processing: xchembku
+[2023-04-13 10:39:09] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-04-13 10:39:09] INFO root fetch - processPackages [xchembku]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-13 10:39:09] INFO root fetch - processPackages [test-pipinstall-whp]: Downloading https://files.pythonhosted.org/packages/0d/b5/ded285702b5c0e1f5f2041a4a740aae9adce61444a0362e9e666d241cd60/test_pipinstall_whp-0.0.2.tar.gz
+[2023-04-13 10:39:09] INFO root fetch - processPackages [iqm-cortex-cli]: Downloading https://files.pythonhosted.org/packages/70/84/33cf09d6260112fd5b8514d6e44b506d9120c570efb066680c875e4e821a/iqm-cortex-cli-3.5.tar.gz
+[2023-04-13 10:39:09] INFO root fetch - processPackages [xchembku]: Downloading https://files.pythonhosted.org/packages/bd/b7/5aa0628abae006e37a62d9a99ae6414f7cf9efcbf49292abff842d0caeaf/xchembku-1.1.0.tar.gz
+[2023-04-13 10:39:09] INFO root fetch - processPackages [safe-ds-examples]: Start processing: django-simple-stats
+[2023-04-13 10:39:09] INFO root fetch - main [MainThread]: End processing [safe-ds-examples]: success
+[2023-04-13 10:39:09] INFO root fetch - processPackages [django-simple-stats]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-13 10:39:09] INFO root fetch - processPackages [iqm-cortex-cli]: executing diffoscope
+[2023-04-13 10:39:09] INFO root fetch - processPackages [iqm-cortex-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iqm-cortex-cli-3.4.tar.gz tmp/iqm-cortex-cli-3.5.tar.gz --markdown 20230413/i/iqm-cortex-cli/3.4-3.5/diff.md --exclude *.pyd
+[2023-04-13 10:39:09] INFO root fetch - processPackages [test-pipinstall-whp]: Downloading https://files.pythonhosted.org/packages/18/4f/d512dab47673a80db4416b9eab444f14ccb9e8e8b839f73e427be89f73a0/test_pipinstall_whp-0.0.3.tar.gz
+[2023-04-13 10:39:09] INFO root fetch - processPackages [xchembku]: executing diffoscope
+[2023-04-13 10:39:09] INFO root fetch - processPackages [xchembku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xchembku-1.0.2.tar.gz tmp/xchembku-1.1.0.tar.gz --markdown 20230413/x/xchembku/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 10:39:09] INFO root fetch - processPackages [django-simple-stats]: Downloading https://files.pythonhosted.org/packages/bc/92/f4436e2b42af75b749060f4dadc9b53969db3ccd192e53074072de7b9b65/django-simple-stats-0.4.0.tar.gz
+[2023-04-13 10:39:09] INFO root fetch - processPackages [test-pipinstall-whp]: executing diffoscope
+[2023-04-13 10:39:09] INFO root fetch - processPackages [test-pipinstall-whp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_pipinstall_whp-0.0.2.tar.gz tmp/test_pipinstall_whp-0.0.3.tar.gz --markdown 20230413/t/test-pipinstall-whp/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 10:39:10] INFO root fetch - processPackages [django-simple-stats]: Downloading https://files.pythonhosted.org/packages/14/d2/4ceef16a0d33e2551bfde5bd669586aa27a3646bb3f4966327f6b1e45dc0/django-simple-stats-0.5.0.tar.gz
+[2023-04-13 10:39:10] INFO root fetch - processPackages [django-simple-stats]: executing diffoscope
+[2023-04-13 10:39:10] INFO root fetch - processPackages [django-simple-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-simple-stats-0.4.0.tar.gz tmp/django-simple-stats-0.5.0.tar.gz --markdown 20230413/d/django-simple-stats/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-13 10:39:10] INFO root fetch - processPackages [cis-checks-2023]: Start processing: few-shot-priming
+[2023-04-13 10:39:10] INFO root fetch - main [MainThread]: End processing [cis-checks-2023]: success
+[2023-04-13 10:39:10] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 10:39:10] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 10:39:10] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 10:39:10] INFO root fetch - processPackages [test-pipinstall-whp]: Start processing: databricks-sdk-python
+[2023-04-13 10:39:10] INFO root fetch - main [MainThread]: End processing [test-pipinstall-whp]: success
+[2023-04-13 10:39:10] INFO root fetch - processPackages [databricks-sdk-python]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 10:39:11] INFO root fetch - processPackages [databricks-sdk-python]: Downloading https://files.pythonhosted.org/packages/54/d8/fa65bbecab315bebdee380394813d31e981841965708cb15c7dc3ff4dfe1/databricks_sdk_python-0.0.2.tar.gz
+[2023-04-13 10:39:11] INFO root fetch - processPackages [iqm-cortex-cli]: Start processing: parse-it
+[2023-04-13 10:39:11] INFO root fetch - main [MainThread]: End processing [iqm-cortex-cli]: success
+[2023-04-13 10:39:11] INFO root fetch - processPackages [parse-it]: New version: [3.8.0] Old Version: [3.7.0]
+[2023-04-13 10:39:11] INFO root fetch - processPackages [databricks-sdk-python]: Downloading https://files.pythonhosted.org/packages/4a/0b/dfc028bb14bb92db901301f4681b4904a45347be436197af5a02c1475461/databricks_sdk_python-0.0.3.tar.gz
+[2023-04-13 10:39:11] INFO root fetch - processPackages [databricks-sdk-python]: executing diffoscope
+[2023-04-13 10:39:11] INFO root fetch - processPackages [databricks-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databricks_sdk_python-0.0.2.tar.gz tmp/databricks_sdk_python-0.0.3.tar.gz --markdown 20230413/d/databricks-sdk-python/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 10:39:11] INFO root fetch - processPackages [xchembku]: Start processing: realnet
+[2023-04-13 10:39:11] INFO root fetch - main [MainThread]: End processing [xchembku]: success
+[2023-04-13 10:39:11] INFO root fetch - processPackages [realnet]: New version: [0.0.9] Old Version: [0.0.85]
+[2023-04-13 10:39:11] INFO root fetch - processPackages [few-shot-priming]: Start processing: poseidon-py
+[2023-04-13 10:39:11] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 10:39:11] INFO root fetch - processPackages [parse-it]: executing diffoscope
+[2023-04-13 10:39:11] INFO root fetch - processPackages [parse-it]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse_it-3.7.0.tar.gz tmp/parse_it-3.8.0.tar.gz --markdown 20230413/p/parse-it/3.7.0-3.8.0/diff.md --exclude *.pyd
+[2023-04-13 10:39:11] INFO root fetch - processPackages [realnet]: Downloading https://files.pythonhosted.org/packages/f8/58/81cecb40fc0fd779ba96b46dc024fba8eb6c1aa51bd491a05e29cbd9d018/realnet-0.0.85.tar.gz
+[2023-04-13 10:39:11] INFO root fetch - processPackages [poseidon-py]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 10:39:11] INFO root fetch - processPackages [django-simple-stats]: Start processing: oc-pyfs
+[2023-04-13 10:39:11] INFO root fetch - main [MainThread]: End processing [django-simple-stats]: success
+[2023-04-13 10:39:11] INFO root fetch - processPackages [realnet]: executing diffoscope
+[2023-04-13 10:39:11] INFO root fetch - processPackages [realnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realnet-0.0.85.tar.gz tmp/realnet-0.0.9.tar.gz --markdown 20230413/r/realnet/0.0.85-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 10:39:11] INFO root fetch - processPackages [oc-pyfs]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-13 10:39:11] INFO root fetch - processPackages [poseidon-py]: Downloading https://files.pythonhosted.org/packages/cf/c1/098ae77cc4679263c9815e8137771ae88b04a93294cd400c4815a2415e64/poseidon_py-0.1.1.tar.gz
+[2023-04-13 10:39:11] INFO root fetch - processPackages [oc-pyfs]: Downloading https://files.pythonhosted.org/packages/0c/e1/a4afc9bc8e0ae670fd625b967b9621d989d477e1369750078a545508ba7a/oc_pyfs-1.0.1-py3-none-any.whl
+[2023-04-13 10:39:12] INFO root fetch - processPackages [poseidon-py]: Downloading https://files.pythonhosted.org/packages/30/98/82f126bc2f90eb6ead32b49a3861d35ac7f6ee58234bd61920e0d9123c48/poseidon_py-0.1.2.tar.gz
+[2023-04-13 10:39:12] INFO root fetch - processPackages [poseidon-py]: executing diffoscope
+[2023-04-13 10:39:12] INFO root fetch - processPackages [poseidon-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poseidon_py-0.1.1.tar.gz tmp/poseidon_py-0.1.2.tar.gz --markdown 20230413/p/poseidon-py/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 10:39:12] INFO root fetch - processPackages [oc-pyfs]: Downloading https://files.pythonhosted.org/packages/5b/db/a99ebd952a3fc214453cedf13fd20fae69060fd014b0ada170f79c38986a/oc_pyfs-1.0.2-py3-none-any.whl
+[2023-04-13 10:39:12] INFO root fetch - processPackages [oc-pyfs]: executing diffoscope
+[2023-04-13 10:39:12] INFO root fetch - processPackages [oc-pyfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oc_pyfs-1.0.1-py3-none-any.whl.zip tmp/oc_pyfs-1.0.2-py3-none-any.whl.zip --markdown 20230413/o/oc-pyfs/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-13 10:39:12] INFO root fetch - processPackages [databricks-sdk-python]: Start processing: arkindex-cli
+[2023-04-13 10:39:12] INFO root fetch - main [MainThread]: End processing [databricks-sdk-python]: success
+[2023-04-13 10:39:12] INFO root fetch - processPackages [arkindex-cli]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-13 10:39:12] INFO root fetch - processPackages [parse-it]: Start processing: odoo14-addon-account-statement-import-txt-xlsx
+[2023-04-13 10:39:12] INFO root fetch - main [MainThread]: End processing [parse-it]: success
+[2023-04-13 10:39:12] INFO root fetch - processPackages [odoo14-addon-account-statement-import-txt-xlsx]: New version: [14.0.3.0.1.dev2] Old Version: [14.0.3.0.1.dev1]
+[2023-04-13 10:39:12] INFO root fetch - processPackages [arkindex-cli]: Downloading https://files.pythonhosted.org/packages/26/27/01b4fa376d5cc4746774d66185740fb3805f256f04b70f592b3df30f6dfd/arkindex-cli-0.2.4.tar.gz
+[2023-04-13 10:39:12] INFO root fetch - processPackages [realnet]: Start processing: odoo-addon-report-xlsx
+[2023-04-13 10:39:12] INFO root fetch - main [MainThread]: End processing [realnet]: success
+[2023-04-13 10:39:12] INFO root fetch - processPackages [odoo14-addon-account-statement-import-txt-xlsx]: Downloading https://files.pythonhosted.org/packages/82/d4/823de1226f1b8726ccb7d4e060f574c05e8e65cf7c5f05854962b28a0c5c/odoo14_addon_account_statement_import_txt_xlsx-14.0.3.0.1.dev1-py3-none-any.whl
+[2023-04-13 10:39:12] INFO root fetch - processPackages [odoo-addon-report-xlsx]: New version: [16.0.1.0.2] Old Version: [16.0.1.0.1.1]
+[2023-04-13 10:39:13] INFO root fetch - processPackages [arkindex-cli]: Downloading https://files.pythonhosted.org/packages/55/10/4359e8f22671ccf1ff87fb7195e0350df6eff208c2f481e4d2d5d30250a1/arkindex-cli-0.2.5.tar.gz
+[2023-04-13 10:39:13] INFO root fetch - processPackages [oc-pyfs]: Start processing: anyhedge
+[2023-04-13 10:39:13] INFO root fetch - main [MainThread]: End processing [oc-pyfs]: success
+[2023-04-13 10:39:13] INFO root fetch - processPackages [arkindex-cli]: executing diffoscope
+[2023-04-13 10:39:13] INFO root fetch - processPackages [arkindex-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkindex-cli-0.2.4.tar.gz tmp/arkindex-cli-0.2.5.tar.gz --markdown 20230413/a/arkindex-cli/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-13 10:39:13] INFO root fetch - processPackages [anyhedge]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-13 10:39:13] INFO root fetch - processPackages [odoo-addon-report-xlsx]: Downloading https://files.pythonhosted.org/packages/1b/9b/22103f93b442d8203c43a718e2decee243e7c9cca8ccf0816ee7a4cb9ec6/odoo_addon_report_xlsx-16.0.1.0.1.1-py3-none-any.whl
+[2023-04-13 10:39:13] INFO root fetch - processPackages [poseidon-py]: Start processing: xj-enroll
+[2023-04-13 10:39:13] INFO root fetch - main [MainThread]: End processing [poseidon-py]: success
+[2023-04-13 10:39:13] INFO root fetch - processPackages [xj-enroll]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-04-13 10:39:13] INFO root fetch - processPackages [anyhedge]: Downloading https://files.pythonhosted.org/packages/7b/42/9fda0286a998c9f3defd0229ce0a7d2eee2835ff442587d561c0aeb461d1/anyhedge-0.3.7.tar.gz
+[2023-04-13 10:39:13] INFO root fetch - processPackages [anyhedge]: executing diffoscope
+[2023-04-13 10:39:13] INFO root fetch - processPackages [anyhedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyhedge-0.3.6.tar.gz tmp/anyhedge-0.3.7.tar.gz --markdown 20230413/a/anyhedge/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-13 10:39:13] INFO root fetch - processPackages [odoo14-addon-account-statement-import-txt-xlsx]: Downloading https://files.pythonhosted.org/packages/0e/e3/a8d0de8ce65f0f0ad651b30d2670151ca434093a866327d2c1a35a442e3e/odoo14_addon_account_statement_import_txt_xlsx-14.0.3.0.1.dev2-py3-none-any.whl
+[2023-04-13 10:39:13] INFO root fetch - processPackages [odoo-addon-report-xlsx]: Downloading https://files.pythonhosted.org/packages/ed/f8/cf8840fec97fd5f49029385d35eecf086dc787580dbbed49a6ee39fbca9c/odoo_addon_report_xlsx-16.0.1.0.2-py3-none-any.whl
+[2023-04-13 10:39:13] INFO root fetch - processPackages [odoo-addon-report-xlsx]: executing diffoscope
+[2023-04-13 10:39:13] INFO root fetch - processPackages [odoo-addon-report-xlsx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_report_xlsx-16.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_report_xlsx-16.0.1.0.2-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-report-xlsx/16.0.1.0.1.1-16.0.1.0.2/diff.md --exclude *.pyd
+[2023-04-13 10:39:13] INFO root fetch - processPackages [odoo14-addon-account-statement-import-txt-xlsx]: executing diffoscope
+[2023-04-13 10:39:13] INFO root fetch - processPackages [odoo14-addon-account-statement-import-txt-xlsx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_statement_import_txt_xlsx-14.0.3.0.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_account_statement_import_txt_xlsx-14.0.3.0.1.dev2-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-account-statement-import-txt-xlsx/14.0.3.0.1.dev1-14.0.3.0.1.dev2/diff.md --exclude *.pyd
+[2023-04-13 10:39:13] INFO root fetch - processPackages [xj-enroll]: executing diffoscope
+[2023-04-13 10:39:13] INFO root fetch - processPackages [xj-enroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_enroll-1.0.98.tar.gz tmp/xj_enroll-1.0.99.tar.gz --markdown 20230413/x/xj-enroll/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-04-13 10:39:14] INFO root fetch - processPackages [anyhedge]: Start processing: sirms
+[2023-04-13 10:39:14] INFO root fetch - main [MainThread]: End processing [anyhedge]: success
+[2023-04-13 10:39:14] INFO root fetch - processPackages [sirms]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-13 10:39:14] INFO root fetch - processPackages [odoo-addon-report-xlsx]: Start processing: yourtools
+[2023-04-13 10:39:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-report-xlsx]: success
+[2023-04-13 10:39:14] INFO root fetch - processPackages [yourtools]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-13 10:39:14] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-13 10:39:14] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.3.6.tar.gz tmp/yourtools-0.3.7.tar.gz --markdown 20230413/y/yourtools/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-13 10:39:14] INFO root fetch - processPackages [sirms]: Downloading https://files.pythonhosted.org/packages/1e/49/4a585eb5308968105816bd6f5d6aff8dba4c5b434d63affe8e00e4d1bab8/sirms-1.2.3.tar.gz
+[2023-04-13 10:39:14] INFO root fetch - processPackages [sirms]: executing diffoscope
+[2023-04-13 10:39:14] INFO root fetch - processPackages [sirms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sirms-1.2.2.tar.gz tmp/sirms-1.2.3.tar.gz --markdown 20230413/s/sirms/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-13 10:39:14] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-statement-import-txt-xlsx]: success
+[2023-04-13 10:39:15] INFO root fetch - main [MainThread]: End processing [xj-enroll]: success
+[2023-04-13 10:39:15] INFO root fetch - main [MainThread]: End processing [arkindex-cli]: success
+[2023-04-13 10:39:15] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-13 10:39:15] INFO root fetch - main [MainThread]: End processing [sirms]: success
+[2023-04-13 10:39:15] INFO root fetch - main [MainThread]: Store serial: [17689270]
