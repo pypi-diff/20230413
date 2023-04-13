@@ -12485,3 +12485,145 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 11:32:06] INFO root fetch - main [MainThread]: End processing [bmcs-ibvpy]: success
 [2023-04-13 11:32:09] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-04-13 11:32:09] INFO root fetch - main [MainThread]: Store serial: [17689879]
+[2023-04-13 11:37:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689879]
+[2023-04-13 11:37:16] INFO root fetch - main [MainThread]: Found 26 changed packages
+[2023-04-13 11:37:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datamodelsFrontier
+[2023-04-13 11:37:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipywebgl
+[2023-04-13 11:37:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bimmm
+[2023-04-13 11:37:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vmngclient
+[2023-04-13 11:37:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: few-shot-priming
+[2023-04-13 11:37:17] WARNING root fetch - processPackages [datamodelsFrontier]: Skipping, unable to determine old version
+[2023-04-13 11:37:17] INFO root fetch - processPackages [datamodelsFrontier]: Start processing: dama
+[2023-04-13 11:37:17] INFO root fetch - main [MainThread]: End processing [datamodelsFrontier] error
+[2023-04-13 11:37:17] INFO root fetch - processPackages [bimmm]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 11:37:17] INFO root fetch - processPackages [ipywebgl]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-13 11:37:17] INFO root fetch - processPackages [dama]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-13 11:37:17] INFO root fetch - processPackages [vmngclient]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-13 11:37:17] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:37:17] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:37:17] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:37:17] INFO root fetch - processPackages [vmngclient]: Downloading https://files.pythonhosted.org/packages/7f/fc/794fd33cf9fc0940818b6f5c66253351361d5e96f6652cc0d26399729da3/vmngclient-0.8.1.tar.gz
+[2023-04-13 11:37:17] INFO root fetch - processPackages [dama]: Downloading https://files.pythonhosted.org/packages/dc/c1/30bcadb17ae006a9a2bdd19cbc2714c76fdd1e6eef7a19b42ecf4736f058/dama-0.4.6.tar.gz
+[2023-04-13 11:37:17] INFO root fetch - processPackages [bimmm]: Downloading https://files.pythonhosted.org/packages/df/7a/dad8b3f9e1574966f297f7c81c6d7d3a7c3f28a427afbadd8e86f4861085/bimmm-0.0.3.tar.gz
+[2023-04-13 11:37:17] INFO root fetch - processPackages [bimmm]: executing diffoscope
+[2023-04-13 11:37:17] INFO root fetch - processPackages [bimmm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bimmm-0.0.2.tar.gz tmp/bimmm-0.0.3.tar.gz --markdown 20230413/b/bimmm/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 11:37:17] INFO root fetch - processPackages [ipywebgl]: Downloading https://files.pythonhosted.org/packages/a3/cc/0c8cdd1aab9213e50b7594db0c98483d39787dae470fa4a3f8f98126cba1/ipywebgl-0.3.0.tar.gz
+[2023-04-13 11:37:17] INFO root fetch - processPackages [vmngclient]: Downloading https://files.pythonhosted.org/packages/79/67/42d3c14464d3351f60c7c0c348f30e9287e1fb93a0c1149f94eb64177d20/vmngclient-0.8.2.tar.gz
+[2023-04-13 11:37:17] INFO root fetch - processPackages [vmngclient]: executing diffoscope
+[2023-04-13 11:37:17] INFO root fetch - processPackages [vmngclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmngclient-0.8.1.tar.gz tmp/vmngclient-0.8.2.tar.gz --markdown 20230413/v/vmngclient/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-13 11:37:17] INFO root fetch - processPackages [ipywebgl]: executing diffoscope
+[2023-04-13 11:37:17] INFO root fetch - processPackages [ipywebgl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipywebgl-0.2.2.tar.gz tmp/ipywebgl-0.3.0.tar.gz --markdown 20230413/i/ipywebgl/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-13 11:37:17] INFO root fetch - processPackages [dama]: Downloading https://files.pythonhosted.org/packages/ad/55/0e116554c4dbd8dc2f86b8159e332d398351fc9f6e18737f341a66a88b90/dama-0.4.7.tar.gz
+[2023-04-13 11:37:17] INFO root fetch - processPackages [dama]: executing diffoscope
+[2023-04-13 11:37:17] INFO root fetch - processPackages [dama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dama-0.4.6.tar.gz tmp/dama-0.4.7.tar.gz --markdown 20230413/d/dama/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-13 11:37:18] INFO root fetch - processPackages [few-shot-priming]: Start processing: mkits
+[2023-04-13 11:37:18] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:37:18] INFO root fetch - processPackages [mkits]: New version: [0.86] Old Version: [0.85]
+[2023-04-13 11:37:18] INFO root fetch - processPackages [bimmm]: Start processing: few-shot-priming
+[2023-04-13 11:37:18] INFO root fetch - main [MainThread]: End processing [bimmm]: success
+[2023-04-13 11:37:18] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:37:18] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:37:18] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:37:18] INFO root fetch - processPackages [mkits]: Downloading https://files.pythonhosted.org/packages/8c/c1/fe23c8bd0e1ee4b5d643fa5af119c00d253dc8d7c78d67acf2b2eaeaa449/mkits-0.85-py3-none-any.whl
+[2023-04-13 11:37:18] INFO root fetch - processPackages [dama]: Start processing: wonder-sdk
+[2023-04-13 11:37:18] INFO root fetch - main [MainThread]: End processing [dama]: success
+[2023-04-13 11:37:18] INFO root fetch - processPackages [wonder-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 11:37:18] INFO root fetch - processPackages [wonder-sdk]: executing diffoscope
+[2023-04-13 11:37:18] INFO root fetch - processPackages [wonder-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wonder-sdk-0.1.8.tar.gz tmp/wonder-sdk-0.1.9.tar.gz --markdown 20230413/w/wonder-sdk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 11:37:18] INFO root fetch - processPackages [mkits]: Downloading https://files.pythonhosted.org/packages/af/58/0e66e26e2e12f66528ee0d66aa9e6800885d1f8e898255a40174183f621a/mkits-0.86-py3-none-any.whl
+[2023-04-13 11:37:18] INFO root fetch - processPackages [mkits]: executing diffoscope
+[2023-04-13 11:37:18] INFO root fetch - processPackages [mkits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkits-0.85-py3-none-any.whl.zip tmp/mkits-0.86-py3-none-any.whl.zip --markdown 20230413/m/mkits/0.85-0.86/diff.md --exclude *.pyd
+[2023-04-13 11:37:19] INFO root fetch - processPackages [vmngclient]: Start processing: home-assistant-frontend
+[2023-04-13 11:37:19] INFO root fetch - main [MainThread]: End processing [vmngclient]: success
+[2023-04-13 11:37:19] INFO root fetch - processPackages [home-assistant-frontend]: New version: [20230411.1] Old Version: [20230411.0]
+[2023-04-13 11:37:19] INFO root fetch - processPackages [home-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/17/08/b7fa343913f55f7b8df3fbdedc7bc8c1bdb1533ff4fb2496604863d608bc/home_assistant_frontend-20230411.0-py3-none-any.whl
+[2023-04-13 11:37:19] WARNING root fetch - processPackages [home-assistant-frontend]: Skipping package: exceeds size limit 49277068>=10485760
+[2023-04-13 11:37:19] INFO root fetch - processPackages [home-assistant-frontend]: Start processing: metldata
+[2023-04-13 11:37:19] INFO root fetch - main [MainThread]: End processing [home-assistant-frontend] error
+[2023-04-13 11:37:19] WARNING root fetch - processPackages [metldata]: Skipping, unable to determine old version
+[2023-04-13 11:37:19] INFO root fetch - processPackages [metldata]: Start processing: triqler
+[2023-04-13 11:37:19] INFO root fetch - main [MainThread]: End processing [metldata] error
+[2023-04-13 11:37:19] INFO root fetch - processPackages [triqler]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-13 11:37:19] INFO root fetch - processPackages [triqler]: Downloading https://files.pythonhosted.org/packages/e5/da/08f6e46fe1f2b75de9471b50e2520f242850302e18e80e18e68400a322f3/triqler-0.7.1-py3-none-any.whl
+[2023-04-13 11:37:19] INFO root fetch - processPackages [few-shot-priming]: Start processing: etlstat
+[2023-04-13 11:37:19] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:37:19] INFO root fetch - processPackages [etlstat]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-13 11:37:19] INFO root fetch - processPackages [triqler]: executing diffoscope
+[2023-04-13 11:37:19] INFO root fetch - processPackages [triqler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triqler-0.7.0-py3-none-any.whl.zip tmp/triqler-0.7.1-py3-none-any.whl.zip --markdown 20230413/t/triqler/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-13 11:37:19] INFO root fetch - processPackages [etlstat]: Downloading https://files.pythonhosted.org/packages/07/b8/41c2963d331ae9d089199637e3f1ac95c915ec88cae7cebdbf53535eea93/etlstat-0.9.3.tar.gz
+[2023-04-13 11:37:19] INFO root fetch - processPackages [etlstat]: executing diffoscope
+[2023-04-13 11:37:19] INFO root fetch - processPackages [etlstat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etlstat-0.9.2.tar.gz tmp/etlstat-0.9.3.tar.gz --markdown 20230413/e/etlstat/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-13 11:37:19] INFO root fetch - processPackages [wonder-sdk]: Start processing: few-shot-priming
+[2023-04-13 11:37:19] INFO root fetch - main [MainThread]: End processing [wonder-sdk]: success
+[2023-04-13 11:37:19] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:37:19] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:37:19] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:37:20] INFO root fetch - processPackages [mkits]: Start processing: pozalabs-compose
+[2023-04-13 11:37:20] INFO root fetch - main [MainThread]: End processing [mkits]: success
+[2023-04-13 11:37:20] INFO root fetch - processPackages [pozalabs-compose]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 11:37:20] INFO root fetch - processPackages [pozalabs-compose]: executing diffoscope
+[2023-04-13 11:37:20] INFO root fetch - processPackages [pozalabs-compose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pozalabs-compose-0.9.0.tar.gz tmp/pozalabs-compose-0.9.1.tar.gz --markdown 20230413/p/pozalabs-compose/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 11:37:20] INFO root fetch - processPackages [triqler]: Start processing: isqmap
+[2023-04-13 11:37:20] INFO root fetch - main [MainThread]: End processing [triqler]: success
+[2023-04-13 11:37:20] WARNING root fetch - processPackages [isqmap]: Skipping, unable to determine old version
+[2023-04-13 11:37:20] INFO root fetch - processPackages [isqmap]: Start processing: quintus
+[2023-04-13 11:37:20] INFO root fetch - main [MainThread]: End processing [isqmap] error
+[2023-04-13 11:37:20] WARNING root fetch - processPackages [quintus]: Skipping, unable to determine old version
+[2023-04-13 11:37:20] INFO root fetch - processPackages [quintus]: Start processing: cqepyutils
+[2023-04-13 11:37:20] INFO root fetch - main [MainThread]: End processing [quintus] error
+[2023-04-13 11:37:20] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 11:37:20] INFO root fetch - processPackages [few-shot-priming]: Start processing: taichu-serve
+[2023-04-13 11:37:20] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:37:20] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-13 11:37:20] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230413/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 11:37:20] INFO root fetch - processPackages [taichu-serve]: New version: [2.0.0] Old Version: [1.0.11]
+[2023-04-13 11:37:21] INFO root fetch - processPackages [taichu-serve]: Downloading https://files.pythonhosted.org/packages/1c/60/9c18c3dc47de2cf0f092207373d49ec5c5c469f28535c11bd4ec43e984ca/taichu-serve-2.0.0.tar.gz
+[2023-04-13 11:37:21] INFO root fetch - processPackages [taichu-serve]: executing diffoscope
+[2023-04-13 11:37:21] INFO root fetch - processPackages [taichu-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taichu-serve-1.0.11.tar.gz tmp/taichu-serve-2.0.0.tar.gz --markdown 20230413/t/taichu-serve/1.0.11-2.0.0/diff.md --exclude *.pyd
+[2023-04-13 11:37:21] INFO root fetch - processPackages [ipywebgl]: Start processing: hops
+[2023-04-13 11:37:21] INFO root fetch - main [MainThread]: End processing [ipywebgl]: success
+[2023-04-13 11:37:21] INFO root fetch - processPackages [hops]: New version: [3.2.0.0] Old Version: [3.1.0.0]
+[2023-04-13 11:37:21] INFO root fetch - processPackages [hops]: Downloading https://files.pythonhosted.org/packages/3e/a0/469e0b0e5b965d316743a20892ca950b72e1d89b925873b946cab9d28c6b/hops-3.1.0.0.tar.gz
+[2023-04-13 11:37:21] INFO root fetch - processPackages [pozalabs-compose]: Start processing: few-shot-priming
+[2023-04-13 11:37:21] INFO root fetch - main [MainThread]: End processing [pozalabs-compose]: success
+[2023-04-13 11:37:21] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:37:21] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:37:21] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:37:21] INFO root fetch - processPackages [etlstat]: Start processing: griffon
+[2023-04-13 11:37:21] INFO root fetch - main [MainThread]: End processing [etlstat]: success
+[2023-04-13 11:37:21] INFO root fetch - processPackages [hops]: Downloading https://files.pythonhosted.org/packages/a5/a3/b7db2fae427b776b35026b2811dca39dd5fdba871bc066b04d7d8c309322/hops-3.2.0.0.tar.gz
+[2023-04-13 11:37:21] INFO root fetch - processPackages [hops]: executing diffoscope
+[2023-04-13 11:37:21] INFO root fetch - processPackages [hops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hops-3.1.0.0.tar.gz tmp/hops-3.2.0.0.tar.gz --markdown 20230413/h/hops/3.1.0.0-3.2.0.0/diff.md --exclude *.pyd
+[2023-04-13 11:37:22] INFO root fetch - processPackages [griffon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 11:37:22] INFO root fetch - processPackages [cqepyutils]: Start processing: utilfunction
+[2023-04-13 11:37:22] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-13 11:37:22] INFO root fetch - processPackages [utilfunction]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-13 11:37:22] INFO root fetch - processPackages [utilfunction]: Downloading https://files.pythonhosted.org/packages/84/90/29bd3014f066174e89b8fee342995009a5b3b290e8d6a2b1599a2b7b11e5/utilfunction-0.1.2.tar.gz
+[2023-04-13 11:37:22] INFO root fetch - processPackages [griffon]: executing diffoscope
+[2023-04-13 11:37:22] INFO root fetch - processPackages [griffon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffon-0.1.8.tar.gz tmp/griffon-0.1.9.tar.gz --markdown 20230413/g/griffon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 11:37:22] INFO root fetch - processPackages [utilfunction]: Downloading https://files.pythonhosted.org/packages/ff/91/c694f368f745c529df7412fe859d9ff5ea195bf624718a5e009b12881172/utilfunction-0.1.3.tar.gz
+[2023-04-13 11:37:22] INFO root fetch - processPackages [utilfunction]: executing diffoscope
+[2023-04-13 11:37:22] INFO root fetch - processPackages [utilfunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilfunction-0.1.2.tar.gz tmp/utilfunction-0.1.3.tar.gz --markdown 20230413/u/utilfunction/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-13 11:37:22] INFO root fetch - processPackages [taichu-serve]: Start processing: ccs-fit
+[2023-04-13 11:37:22] INFO root fetch - main [MainThread]: End processing [taichu-serve]: success
+[2023-04-13 11:37:22] INFO root fetch - processPackages [ccs-fit]: New version: [0.21.1] Old Version: [0.21.0]
+[2023-04-13 11:37:23] INFO root fetch - processPackages [few-shot-priming]: Start processing: lnschema_core
+[2023-04-13 11:37:23] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:37:23] INFO root fetch - processPackages [ccs-fit]: Downloading https://files.pythonhosted.org/packages/fe/44/b15db6088ff5d1b1b3e49a93a9896639a55181fb4a6e717a7d61deaea387/ccs_fit-0.21.0.tar.gz
+[2023-04-13 11:37:23] INFO root fetch - processPackages [lnschema_core]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-13 11:37:23] INFO root fetch - processPackages [lnschema_core]: executing diffoscope
+[2023-04-13 11:37:23] INFO root fetch - processPackages [lnschema_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_core-0.8.1.tar.gz tmp/lnschema_core-0.9.0.tar.gz --markdown 20230413/l/lnschema_core/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 11:37:23] INFO root fetch - processPackages [hops]: Start processing: paneltime
+[2023-04-13 11:37:23] INFO root fetch - main [MainThread]: End processing [hops]: success
+[2023-04-13 11:37:23] INFO root fetch - processPackages [paneltime]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-13 11:37:23] INFO root fetch - processPackages [ccs-fit]: Downloading https://files.pythonhosted.org/packages/e4/8d/8d2f400d3a9d1e2a96bf1d815e19f0b904959463ddde0494fb91ca0f59e7/ccs_fit-0.21.1.tar.gz
+[2023-04-13 11:37:23] INFO root fetch - processPackages [paneltime]: executing diffoscope
+[2023-04-13 11:37:23] INFO root fetch - processPackages [paneltime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paneltime-1.2.8-py3-none-any.whl.zip tmp/paneltime-1.2.9.tar.gz --markdown 20230413/p/paneltime/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-13 11:37:23] INFO root fetch - processPackages [ccs-fit]: executing diffoscope
+[2023-04-13 11:37:23] INFO root fetch - processPackages [ccs-fit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccs_fit-0.21.0.tar.gz tmp/ccs_fit-0.21.1.tar.gz --markdown 20230413/c/ccs-fit/0.21.0-0.21.1/diff.md --exclude *.pyd
+[2023-04-13 11:37:23] INFO root fetch - main [MainThread]: End processing [griffon]: success
+[2023-04-13 11:37:23] INFO root fetch - main [MainThread]: End processing [utilfunction]: success
+[2023-04-13 11:37:24] INFO root fetch - main [MainThread]: End processing [paneltime]: success
+[2023-04-13 11:37:24] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
+[2023-04-13 11:37:24] INFO root fetch - main [MainThread]: End processing [ccs-fit]: success
+[2023-04-13 11:37:24] INFO root fetch - main [MainThread]: Store serial: [17689960]
