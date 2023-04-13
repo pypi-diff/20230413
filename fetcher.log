@@ -17733,3 +17733,90 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 15:13:00] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2023-04-13 15:13:34] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-13 15:13:34] INFO root fetch - main [MainThread]: Store serial: [17692821]
+[2023-04-13 15:18:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17692821]
+[2023-04-13 15:18:42] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-13 15:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbt-coves
+[2023-04-13 15:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nucliadb-contributor-assets
+[2023-04-13 15:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ontoloviz
+[2023-04-13 15:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-apl
+[2023-04-13 15:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytonconnect
+[2023-04-13 15:18:42] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post706] Old Version: [1.0.0.post705]
+[2023-04-13 15:18:42] WARNING root fetch - processPackages [pytonconnect]: Skipping, unable to determine old version
+[2023-04-13 15:18:42] INFO root fetch - processPackages [pytonconnect]: Start processing: pyinflux3
+[2023-04-13 15:18:42] INFO root fetch - main [MainThread]: End processing [pytonconnect] error
+[2023-04-13 15:18:42] INFO root fetch - processPackages [ontoloviz]: New version: [1.5.8] Old Version: [1.5.7]
+[2023-04-13 15:18:42] INFO root fetch - processPackages [dbt-coves]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-04-13 15:18:42] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.711] Old Version: [0.0.710]
+[2023-04-13 15:18:42] INFO root fetch - processPackages [pyinflux3]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-13 15:18:42] INFO root fetch - processPackages [dbt-coves]: Downloading https://files.pythonhosted.org/packages/a9/5c/d33fa340a6313a99745362800b1e1b1043ef744c68e4c37283f192ba72f8/dbt_coves-1.4.3.tar.gz
+[2023-04-13 15:18:42] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/52/80/f4e2a6a613d15933b0fbab5983eefc9448347b943ac727dd08876a91d7d3/nbdev-apl-0.0.711.tar.gz
+[2023-04-13 15:18:42] INFO root fetch - processPackages [ontoloviz]: Downloading https://files.pythonhosted.org/packages/06/be/fc14ae1269b85da4b3f5c4796d6ede842e594d5631bc844fa31dcce151ab/ontoloviz-1.5.7.tar.gz
+[2023-04-13 15:18:43] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/b7/9f/997362162998dbf7c9a403436c4756d6a2f1299d13120aee4aff714fed22/nucliadb_contributor_assets-1.0.0.post706-py3-none-any.whl
+[2023-04-13 15:18:43] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/32/f7/a203d2696f0d997a7005e4ebdf0e8335e5f4891afd42045b1b51e9af04e8/pyinflux3-0.7.2.tar.gz
+[2023-04-13 15:18:43] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-13 15:18:43] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.710.tar.gz tmp/nbdev-apl-0.0.711.tar.gz --markdown 20230413/n/nbdev-apl/0.0.710-0.0.711/diff.md --exclude *.pyd
+[2023-04-13 15:18:43] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-13 15:18:43] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.7.1.tar.gz tmp/pyinflux3-0.7.2.tar.gz --markdown 20230413/p/pyinflux3/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-13 15:18:43] INFO root fetch - processPackages [dbt-coves]: Downloading https://files.pythonhosted.org/packages/37/f9/b4a85bd4542d195f7b8d0f62c7a04647a42d042a24f8cd2c7d4b35c7c9d1/dbt_coves-1.4.4.tar.gz
+[2023-04-13 15:18:43] INFO root fetch - processPackages [ontoloviz]: Downloading https://files.pythonhosted.org/packages/8c/48/ece4cfee3e638a6c71d1a48a8cbcc6e55f3fa88d2c1a796aac9c5c941cbe/ontoloviz-1.5.8.tar.gz
+[2023-04-13 15:18:43] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-04-13 15:18:43] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post705-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post706-py3-none-any.whl.zip --markdown 20230413/n/nucliadb-contributor-assets/1.0.0.post705-1.0.0.post706/diff.md --exclude *.pyd
+[2023-04-13 15:18:43] INFO root fetch - processPackages [dbt-coves]: executing diffoscope
+[2023-04-13 15:18:43] INFO root fetch - processPackages [dbt-coves]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_coves-1.4.3.tar.gz tmp/dbt_coves-1.4.4.tar.gz --markdown 20230413/d/dbt-coves/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-04-13 15:18:43] INFO root fetch - processPackages [ontoloviz]: executing diffoscope
+[2023-04-13 15:18:43] INFO root fetch - processPackages [ontoloviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ontoloviz-1.5.7.tar.gz tmp/ontoloviz-1.5.8.tar.gz --markdown 20230413/o/ontoloviz/1.5.7-1.5.8/diff.md --exclude *.pyd
+[2023-04-13 15:18:44] INFO root fetch - processPackages [nbdev-apl]: Start processing: rpa-cooperativa
+[2023-04-13 15:18:44] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-04-13 15:18:44] INFO root fetch - processPackages [rpa-cooperativa]: New version: [1.0.42] Old Version: [1.0.41]
+[2023-04-13 15:18:44] INFO root fetch - processPackages [pyinflux3]: Start processing: datagen-tech
+[2023-04-13 15:18:44] INFO root fetch - main [MainThread]: End processing [pyinflux3]: success
+[2023-04-13 15:18:44] INFO root fetch - processPackages [datagen-tech]: New version: [1.9.0rc2] Old Version: [1.9.0rc1]
+[2023-04-13 15:18:44] INFO root fetch - processPackages [datagen-tech]: executing diffoscope
+[2023-04-13 15:18:44] INFO root fetch - processPackages [datagen-tech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_tech-1.9.0rc1.tar.gz tmp/datagen_tech-1.9.0rc2.tar.gz --markdown 20230413/d/datagen-tech/1.9.0rc1-1.9.0rc2/diff.md --exclude *.pyd
+[2023-04-13 15:18:44] INFO root fetch - processPackages [rpa-cooperativa]: Downloading https://files.pythonhosted.org/packages/b0/b6/43142a0a91c7f82f808362f6a7fc98e248ffe762192ce7a49eed90cb6ec7/rpa_cooperativa-1.0.42.tar.gz
+[2023-04-13 15:18:44] INFO root fetch - processPackages [ontoloviz]: Start processing: pyqint
+[2023-04-13 15:18:44] INFO root fetch - main [MainThread]: End processing [ontoloviz]: success
+[2023-04-13 15:18:44] INFO root fetch - processPackages [pyqint]: New version: [0.9.5.2] Old Version: [0.9.4.1]
+[2023-04-13 15:18:44] INFO root fetch - processPackages [dbt-coves]: Start processing: psat-server-web
+[2023-04-13 15:18:44] INFO root fetch - main [MainThread]: End processing [dbt-coves]: success
+[2023-04-13 15:18:44] INFO root fetch - processPackages [rpa-cooperativa]: executing diffoscope
+[2023-04-13 15:18:44] INFO root fetch - processPackages [rpa-cooperativa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpa_cooperativa-1.0.41.tar.gz tmp/rpa_cooperativa-1.0.42.tar.gz --markdown 20230413/r/rpa-cooperativa/1.0.41-1.0.42/diff.md --exclude *.pyd
+[2023-04-13 15:18:44] INFO root fetch - processPackages [psat-server-web]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 15:18:44] INFO root fetch - processPackages [pyqint]: Downloading https://files.pythonhosted.org/packages/cb/bf/e6cae3d425106e96b3a0f37ec9b9ec69cbd8b69fb32eb95334ace8eaef0b/pyqint-0.9.4.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+[2023-04-13 15:18:45] INFO root fetch - processPackages [psat-server-web]: Downloading https://files.pythonhosted.org/packages/c7/17/91674103821a8dc391617e527b0a429da881f74f6982936b2f639c4cf46a/psat-server-web-0.0.8.tar.gz
+[2023-04-13 15:18:45] INFO root fetch - processPackages [pyqint]: Downloading https://files.pythonhosted.org/packages/04/41/9800c002e0a01e1c6bda4ed8fabfe5587d5e72f4897a33cfbd44828c04a6/pyqint-0.9.5.2-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+[2023-04-13 15:18:45] INFO root fetch - processPackages [pyqint]: executing diffoscope
+[2023-04-13 15:18:45] INFO root fetch - processPackages [pyqint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqint-0.9.4.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip tmp/pyqint-0.9.5.2-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip --markdown 20230413/p/pyqint/0.9.4.1-0.9.5.2/diff.md --exclude *.pyd
+[2023-04-13 15:18:45] INFO root fetch - processPackages [rpa-cooperativa]: Start processing: odoo14-addon-connector-search-engine
+[2023-04-13 15:18:45] INFO root fetch - main [MainThread]: End processing [rpa-cooperativa]: success
+[2023-04-13 15:18:45] INFO root fetch - processPackages [odoo14-addon-connector-search-engine]: New version: [14.0.2.8.1] Old Version: [14.0.2.8.0]
+[2023-04-13 15:18:46] INFO root fetch - processPackages [odoo14-addon-connector-search-engine]: Downloading https://files.pythonhosted.org/packages/ed/6f/2de97fcda2399c9380883f9cec805800a9f04b3d4faf9842c3571d09d733/odoo14_addon_connector_search_engine-14.0.2.8.0-py3-none-any.whl
+[2023-04-13 15:18:46] INFO root fetch - processPackages [odoo14-addon-connector-search-engine]: Downloading https://files.pythonhosted.org/packages/bc/8e/f8c6a65e736b0b2828538c3a5ac4849636533ae1bbebdf69efbddf635afe/odoo14_addon_connector_search_engine-14.0.2.8.1-py3-none-any.whl
+[2023-04-13 15:18:46] INFO root fetch - processPackages [odoo14-addon-connector-search-engine]: executing diffoscope
+[2023-04-13 15:18:46] INFO root fetch - processPackages [odoo14-addon-connector-search-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_connector_search_engine-14.0.2.8.0-py3-none-any.whl.zip tmp/odoo14_addon_connector_search_engine-14.0.2.8.1-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-connector-search-engine/14.0.2.8.0-14.0.2.8.1/diff.md --exclude *.pyd
+[2023-04-13 15:18:47] INFO root fetch - processPackages [psat-server-web]: Downloading https://files.pythonhosted.org/packages/3e/39/fc934a3040fb914cb15ec70c80991de2048b03219b44e3ed0ac4eab4ee4a/psat-server-web-0.0.9.tar.gz
+[2023-04-13 15:18:47] INFO root fetch - processPackages [odoo14-addon-connector-search-engine]: Start processing: krrsnkapi
+[2023-04-13 15:18:47] INFO root fetch - main [MainThread]: End processing [odoo14-addon-connector-search-engine]: success
+[2023-04-13 15:18:47] INFO root fetch - processPackages [krrsnkapi]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-13 15:18:48] INFO root fetch - processPackages [krrsnkapi]: Downloading https://files.pythonhosted.org/packages/ff/ca/b7101c39892bd317d60c965cad898721a7cc0c3fa92798223b27c2786a5c/krrsnkapi-0.1.tar.gz
+[2023-04-13 15:18:48] INFO root fetch - processPackages [krrsnkapi]: Downloading https://files.pythonhosted.org/packages/60/ad/f88f8b3e294cc93ba199f5fbeb626166aecbc90c315ff07932bbca070e11/krrsnkapi-0.1.1.tar.gz
+[2023-04-13 15:18:48] INFO root fetch - processPackages [krrsnkapi]: executing diffoscope
+[2023-04-13 15:18:48] INFO root fetch - processPackages [krrsnkapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krrsnkapi-0.1.tar.gz tmp/krrsnkapi-0.1.1.tar.gz --markdown 20230413/k/krrsnkapi/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 15:18:48] INFO root fetch - processPackages [datagen-tech]: Start processing: pyriksprot-tagger
+[2023-04-13 15:18:48] INFO root fetch - main [MainThread]: End processing [datagen-tech]: success
+[2023-04-13 15:18:48] INFO root fetch - processPackages [pyriksprot-tagger]: New version: [2023.4.1] Old Version: [2023.3.1]
+[2023-04-13 15:18:48] INFO root fetch - processPackages [psat-server-web]: executing diffoscope
+[2023-04-13 15:18:48] INFO root fetch - processPackages [psat-server-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psat-server-web-0.0.8.tar.gz tmp/psat-server-web-0.0.9.tar.gz --markdown 20230413/p/psat-server-web/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 15:18:49] INFO root fetch - processPackages [pyriksprot-tagger]: Downloading https://files.pythonhosted.org/packages/2e/c8/13b92f1f576271d5cd3e61e5c365742f0b4f11d1e27fae08bf2ddc0cac68/pyriksprot_tagger-2023.3.1.tar.gz
+[2023-04-13 15:18:49] INFO root fetch - processPackages [pyriksprot-tagger]: Downloading https://files.pythonhosted.org/packages/c5/20/3cff277e282fba23fa88e1e6dad9f2076089980669ef463ae513edc2d7c4/pyriksprot_tagger-2023.4.1.tar.gz
+[2023-04-13 15:18:49] INFO root fetch - processPackages [pyriksprot-tagger]: executing diffoscope
+[2023-04-13 15:18:49] INFO root fetch - processPackages [pyriksprot-tagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyriksprot_tagger-2023.3.1.tar.gz tmp/pyriksprot_tagger-2023.4.1.tar.gz --markdown 20230413/p/pyriksprot-tagger/2023.3.1-2023.4.1/diff.md --exclude *.pyd
+[2023-04-13 15:18:49] INFO root fetch - processPackages [krrsnkapi]: Start processing: airflow-provider-fastetl
+[2023-04-13 15:18:49] INFO root fetch - main [MainThread]: End processing [krrsnkapi]: success
+[2023-04-13 15:18:49] WARNING root fetch - processPackages [airflow-provider-fastetl]: Skipping, unable to determine old version
+[2023-04-13 15:18:49] INFO root fetch - main [MainThread]: End processing [airflow-provider-fastetl] error
+[2023-04-13 15:18:50] INFO root fetch - main [MainThread]: End processing [pyriksprot-tagger]: success
+[2023-04-13 15:18:53] INFO root fetch - main [MainThread]: End processing [psat-server-web]: success
+[2023-04-13 15:18:57] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-04-13 15:19:05] INFO root fetch - main [MainThread]: End processing [pyqint]: success
+[2023-04-13 15:19:05] INFO root fetch - main [MainThread]: Store serial: [17692867]
