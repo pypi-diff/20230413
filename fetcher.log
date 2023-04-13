@@ -6333,3 +6333,73 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:38:13] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-cutoff-base]: success
 [2023-04-13 04:38:14] INFO root fetch - main [MainThread]: End processing [geeup]: success
 [2023-04-13 04:38:14] INFO root fetch - main [MainThread]: Store serial: [17686109]
+[2023-04-13 04:43:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686109]
+[2023-04-13 04:43:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-13 04:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-augmentation-GASPLN
+[2023-04-13 04:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: contact-energy-nz
+[2023-04-13 04:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slack-sdk
+[2023-04-13 04:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo9-addon-account-chart-update
+[2023-04-13 04:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo8-addon-account-chart-update
+[2023-04-13 04:43:21] INFO root fetch - processPackages [data-augmentation-GASPLN]: New version: [0.2.0] Old Version: [0.1.7]
+[2023-04-13 04:43:21] INFO root fetch - processPackages [contact-energy-nz]: New version: [0.1.4684953769] Old Version: [0.1.4684335331]
+[2023-04-13 04:43:21] INFO root fetch - processPackages [odoo8-addon-account-chart-update]: New version: [8.0.1.2.0.99.dev47] Old Version: [8.0.1.2.0.99.dev46]
+[2023-04-13 04:43:21] INFO root fetch - processPackages [odoo9-addon-account-chart-update]: New version: [9.0.1.0.1.99.dev2] Old Version: [9.0.1.0.1.99.dev1]
+[2023-04-13 04:43:21] INFO root fetch - processPackages [slack-sdk]: New version: [3.9.1] Old Version: [3.9.0rc2]
+[2023-04-13 04:43:21] INFO root fetch - processPackages [odoo9-addon-account-chart-update]: Downloading https://files.pythonhosted.org/packages/07/ca/eddd0540684bcaf47a21182145e0da292154e28da9217929d535259fb31b/odoo9_addon_account_chart_update-9.0.1.0.1.99.dev1-py2-none-any.whl
+[2023-04-13 04:43:21] INFO root fetch - processPackages [odoo8-addon-account-chart-update]: Downloading https://files.pythonhosted.org/packages/56/6e/d6aa111e1382f6fe758c61ff78773c2aa10d25ef73dac6a3257f68d31006/odoo8_addon_account_chart_update-8.0.1.2.0.99.dev46-py2-none-any.whl
+[2023-04-13 04:43:21] INFO root fetch - processPackages [slack-sdk]: Downloading https://files.pythonhosted.org/packages/b2/95/92a6753eb7bc136617a5856cf2f9991bcb68bcd76c3a75a837da43c673d2/slack_sdk-3.9.0rc2.tar.gz
+[2023-04-13 04:43:21] INFO root fetch - processPackages [contact-energy-nz]: Downloading https://files.pythonhosted.org/packages/26/79/e476364da0662b610815d53815e058bc16a3ee6f339f31c1cb4e7120488d/contact-energy-nz-0.1.4684335331.tar.gz
+[2023-04-13 04:43:21] INFO root fetch - processPackages [data-augmentation-GASPLN]: Downloading https://files.pythonhosted.org/packages/37/bf/72a796e80224dd04101e597b721ae5f3b54988f132da2473d3b3bd90ed02/data_augmentation_GASPLN-0.2.0.tar.gz
+[2023-04-13 04:43:21] INFO root fetch - processPackages [data-augmentation-GASPLN]: executing diffoscope
+[2023-04-13 04:43:21] INFO root fetch - processPackages [data-augmentation-GASPLN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_augmentation_GASPLN-0.1.7.tar.gz tmp/data_augmentation_GASPLN-0.2.0.tar.gz --markdown 20230413/d/data-augmentation-GASPLN/0.1.7-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 04:43:21] INFO root fetch - processPackages [contact-energy-nz]: Downloading https://files.pythonhosted.org/packages/cf/f3/7f6e2fdf2636843dc6505d1f164e990bd8473563e2094d6391d5db99e35f/contact-energy-nz-0.1.4684953769.tar.gz
+[2023-04-13 04:43:21] INFO root fetch - processPackages [odoo8-addon-account-chart-update]: Downloading https://files.pythonhosted.org/packages/88/48/7cbf44c9072a92d709eb49d939bb6a197cd2071c25b08ee7017a7c8b7d20/odoo8_addon_account_chart_update-8.0.1.2.0.99.dev47-py2-none-any.whl
+[2023-04-13 04:43:21] INFO root fetch - processPackages [odoo9-addon-account-chart-update]: Downloading https://files.pythonhosted.org/packages/a7/96/b3736eb16020a8a2018fcc401908cc7e73f4693280fe8258129e84428435/odoo9_addon_account_chart_update-9.0.1.0.1.99.dev2-py2-none-any.whl
+[2023-04-13 04:43:21] INFO root fetch - processPackages [contact-energy-nz]: executing diffoscope
+[2023-04-13 04:43:21] INFO root fetch - processPackages [contact-energy-nz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-energy-nz-0.1.4684335331.tar.gz tmp/contact-energy-nz-0.1.4684953769.tar.gz --markdown 20230413/c/contact-energy-nz/0.1.4684335331-0.1.4684953769/diff.md --exclude *.pyd
+[2023-04-13 04:43:22] INFO root fetch - processPackages [odoo8-addon-account-chart-update]: executing diffoscope
+[2023-04-13 04:43:22] INFO root fetch - processPackages [odoo8-addon-account-chart-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_account_chart_update-8.0.1.2.0.99.dev46-py2-none-any.whl.zip tmp/odoo8_addon_account_chart_update-8.0.1.2.0.99.dev47-py2-none-any.whl.zip --markdown 20230413/o/odoo8-addon-account-chart-update/8.0.1.2.0.99.dev46-8.0.1.2.0.99.dev47/diff.md --exclude *.pyd
+[2023-04-13 04:43:22] INFO root fetch - processPackages [odoo9-addon-account-chart-update]: executing diffoscope
+[2023-04-13 04:43:22] INFO root fetch - processPackages [odoo9-addon-account-chart-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_account_chart_update-9.0.1.0.1.99.dev1-py2-none-any.whl.zip tmp/odoo9_addon_account_chart_update-9.0.1.0.1.99.dev2-py2-none-any.whl.zip --markdown 20230413/o/odoo9-addon-account-chart-update/9.0.1.0.1.99.dev1-9.0.1.0.1.99.dev2/diff.md --exclude *.pyd
+[2023-04-13 04:43:22] INFO root fetch - processPackages [slack-sdk]: Downloading https://files.pythonhosted.org/packages/24/4f/b1c5ef4ca6f619212e56739d0c97e0fdcf30c342c890f3f80bbe3fbde3a7/slack_sdk-3.9.1.tar.gz
+[2023-04-13 04:43:22] INFO root fetch - processPackages [slack-sdk]: executing diffoscope
+[2023-04-13 04:43:22] INFO root fetch - processPackages [slack-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slack_sdk-3.9.0rc2.tar.gz tmp/slack_sdk-3.9.1.tar.gz --markdown 20230413/s/slack-sdk/3.9.0rc2-3.9.1/diff.md --exclude *.pyd
+[2023-04-13 04:43:23] INFO root fetch - processPackages [contact-energy-nz]: Start processing: numba-aot-compiler
+[2023-04-13 04:43:23] INFO root fetch - main [MainThread]: End processing [contact-energy-nz]: success
+[2023-04-13 04:43:23] INFO root fetch - processPackages [numba-aot-compiler]: New version: [0.12] Old Version: [0.11]
+[2023-04-13 04:43:23] INFO root fetch - processPackages [numba-aot-compiler]: Downloading https://files.pythonhosted.org/packages/d8/fc/b4e6f7fd7c3389991e45886f394ab56863ec07981d9916203cdb32dd72f2/numba_aot_compiler-0.11.tar.gz
+[2023-04-13 04:43:23] INFO root fetch - processPackages [data-augmentation-GASPLN]: Start processing: data-ecosystem-services
+[2023-04-13 04:43:23] INFO root fetch - main [MainThread]: End processing [data-augmentation-GASPLN]: success
+[2023-04-13 04:43:23] INFO root fetch - processPackages [data-ecosystem-services]: New version: [202304.0.9] Old Version: [202304.0.8]
+[2023-04-13 04:43:23] INFO root fetch - processPackages [data-ecosystem-services]: executing diffoscope
+[2023-04-13 04:43:23] INFO root fetch - processPackages [data-ecosystem-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_ecosystem_services-202304.0.8.tar.gz tmp/data_ecosystem_services-202304.0.9.tar.gz --markdown 20230413/d/data-ecosystem-services/202304.0.8-202304.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:43:23] INFO root fetch - processPackages [numba-aot-compiler]: Downloading https://files.pythonhosted.org/packages/db/a0/6216f0120182bf06f0cd609684e3ce518157cda393d6b15f4add982a505b/numba_aot_compiler-0.12.tar.gz
+[2023-04-13 04:43:23] INFO root fetch - processPackages [numba-aot-compiler]: executing diffoscope
+[2023-04-13 04:43:23] INFO root fetch - processPackages [numba-aot-compiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numba_aot_compiler-0.11.tar.gz tmp/numba_aot_compiler-0.12.tar.gz --markdown 20230413/n/numba-aot-compiler/0.11-0.12/diff.md --exclude *.pyd
+[2023-04-13 04:43:23] INFO root fetch - processPackages [odoo8-addon-account-chart-update]: Start processing: numba-aot-compiler
+[2023-04-13 04:43:23] INFO root fetch - main [MainThread]: End processing [odoo8-addon-account-chart-update]: success
+[2023-04-13 04:43:23] INFO root fetch - processPackages [numba-aot-compiler]: New version: [0.12] Old Version: [0.11]
+[2023-04-13 04:43:23] INFO root fetch - processPackages [numba-aot-compiler]: executing diffoscope
+[2023-04-13 04:43:23] INFO root fetch - processPackages [numba-aot-compiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numba_aot_compiler-0.11.tar.gz tmp/numba_aot_compiler-0.12.tar.gz --markdown 20230413/n/numba-aot-compiler/0.11-0.12/diff.md --exclude *.pyd
+[2023-04-13 04:43:23] INFO root fetch - processPackages [odoo9-addon-account-chart-update]: Start processing: hitrustai-lab
+[2023-04-13 04:43:23] INFO root fetch - main [MainThread]: End processing [odoo9-addon-account-chart-update]: success
+[2023-04-13 04:43:23] INFO root fetch - processPackages [hitrustai-lab]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 04:43:23] INFO root fetch - processPackages [hitrustai-lab]: executing diffoscope
+[2023-04-13 04:43:23] INFO root fetch - processPackages [hitrustai-lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitrustai_lab-1.0.8.tar.gz tmp/hitrustai_lab-1.0.9.tar.gz --markdown 20230413/h/hitrustai-lab/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:43:24] INFO root fetch - processPackages [slack-sdk]: Start processing: odoo12-addon-account-chart-update
+[2023-04-13 04:43:24] INFO root fetch - main [MainThread]: End processing [slack-sdk]: success
+[2023-04-13 04:43:24] INFO root fetch - processPackages [odoo12-addon-account-chart-update]: New version: [12.0.1.0.3.99.dev7] Old Version: [12.0.1.0.3.99.dev6]
+[2023-04-13 04:43:24] INFO root fetch - processPackages [numba-aot-compiler]: Start processing: xj-role
+[2023-04-13 04:43:24] INFO root fetch - main [MainThread]: End processing [numba-aot-compiler]: success
+[2023-04-13 04:43:24] INFO root fetch - processPackages [xj-role]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 04:43:24] INFO root fetch - main [MainThread]: End processing [data-ecosystem-services]: success
+[2023-04-13 04:43:24] INFO root fetch - processPackages [xj-role]: executing diffoscope
+[2023-04-13 04:43:24] INFO root fetch - processPackages [xj-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_role-1.0.8.tar.gz tmp/xj_role-1.0.9.tar.gz --markdown 20230413/x/xj-role/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:43:24] INFO root fetch - main [MainThread]: End processing [numba-aot-compiler]: success
+[2023-04-13 04:43:25] INFO root fetch - processPackages [odoo12-addon-account-chart-update]: Downloading https://files.pythonhosted.org/packages/24/0a/c81eab5fe4839a47d85c1c783da4d6a91c55e2011ea57e1ee2b2e956708a/odoo12_addon_account_chart_update-12.0.1.0.3.99.dev7-py3-none-any.whl
+[2023-04-13 04:43:25] INFO root fetch - processPackages [odoo12-addon-account-chart-update]: executing diffoscope
+[2023-04-13 04:43:25] INFO root fetch - processPackages [odoo12-addon-account-chart-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_account_chart_update-12.0.1.0.3.99.dev6-py3-none-any.whl.zip tmp/odoo12_addon_account_chart_update-12.0.1.0.3.99.dev7-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-account-chart-update/12.0.1.0.3.99.dev6-12.0.1.0.3.99.dev7/diff.md --exclude *.pyd
+[2023-04-13 04:43:25] INFO root fetch - main [MainThread]: End processing [hitrustai-lab]: success
+[2023-04-13 04:43:26] INFO root fetch - main [MainThread]: End processing [xj-role]: success
+[2023-04-13 04:43:26] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-chart-update]: success
+[2023-04-13 04:43:26] INFO root fetch - main [MainThread]: Store serial: [17686139]
