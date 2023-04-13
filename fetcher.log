@@ -18243,3 +18243,137 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 15:44:26] INFO root fetch - main [MainThread]: End processing [ds-caselaw-marklogic-api-client]: success
 [2023-04-13 15:44:26] INFO root fetch - main [MainThread]: End processing [appcenter]: success
 [2023-04-13 15:44:26] INFO root fetch - main [MainThread]: Store serial: [17693117]
+[2023-04-13 15:49:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17693117]
+[2023-04-13 15:49:34] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-04-13 15:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyams-zfiles
+[2023-04-13 15:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hcpdiff
+[2023-04-13 15:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hawc-client
+[2023-04-13 15:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: koyo
+[2023-04-13 15:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rozklad-ontu-parser-MakisuKurisu
+[2023-04-13 15:49:34] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: New version: [0.0.3.3] Old Version: [0.0.3.2]
+[2023-04-13 15:49:34] WARNING root fetch - processPackages [koyo]: Skipping, unable to determine old version
+[2023-04-13 15:49:34] INFO root fetch - processPackages [koyo]: Start processing: polywrap-msgpack
+[2023-04-13 15:49:34] INFO root fetch - processPackages [hawc-client]: New version: [2023.2] Old Version: [2023.1]
+[2023-04-13 15:49:34] INFO root fetch - main [MainThread]: End processing [koyo] error
+[2023-04-13 15:49:34] INFO root fetch - processPackages [hcpdiff]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-13 15:49:34] INFO root fetch - processPackages [pyams-zfiles]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-04-13 15:49:34] INFO root fetch - processPackages [polywrap-msgpack]: New version: [0.1.0a9] Old Version: [0.1.0a8]
+[2023-04-13 15:49:34] INFO root fetch - processPackages [polywrap-msgpack]: executing diffoscope
+[2023-04-13 15:49:34] INFO root fetch - processPackages [polywrap-msgpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_msgpack-0.1.0a8.tar.gz tmp/polywrap_msgpack-0.1.0a9.tar.gz --markdown 20230413/p/polywrap-msgpack/0.1.0a8-0.1.0a9/diff.md --exclude *.pyd
+[2023-04-13 15:49:34] INFO root fetch - processPackages [hawc-client]: Downloading https://files.pythonhosted.org/packages/fb/f1/663de432f46c0cf5d00e90e63acb09979088fd6f5cbbafb5b76d30daa9a3/hawc_client-2023.1-py3-none-any.whl
+[2023-04-13 15:49:34] INFO root fetch - processPackages [pyams-zfiles]: Downloading https://files.pythonhosted.org/packages/ea/50/5244c922aad51a8a0759ed16a7e19dd68307a9e34e4f152eb900b8e212b3/pyams_zfiles-1.4.3.tar.gz
+[2023-04-13 15:49:35] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/d7/ff/d52a6acf5af0d418d81999aa06d253495e0b271e59a2a06d7c531cb8edb4/hcpdiff-0.1.6.tar.gz
+[2023-04-13 15:49:35] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: Downloading https://files.pythonhosted.org/packages/ff/da/68a8ed2a932e36a1816c90fe05b4bb3483d411ce6acafd6a76cbadd4a243/rozklad_ontu_parser_makisukurisu-0.0.3.3.tar.gz
+[2023-04-13 15:49:35] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: executing diffoscope
+[2023-04-13 15:49:35] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rozklad_ontu_parser_makisukurisu-0.0.3.2.tar.gz tmp/rozklad_ontu_parser_makisukurisu-0.0.3.3.tar.gz --markdown 20230413/r/rozklad-ontu-parser-MakisuKurisu/0.0.3.2-0.0.3.3/diff.md --exclude *.pyd
+[2023-04-13 15:49:35] INFO root fetch - processPackages [hcpdiff]: executing diffoscope
+[2023-04-13 15:49:35] INFO root fetch - processPackages [hcpdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcpdiff-0.1.5.tar.gz tmp/hcpdiff-0.1.6.tar.gz --markdown 20230413/h/hcpdiff/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-13 15:49:35] INFO root fetch - processPackages [hawc-client]: Downloading https://files.pythonhosted.org/packages/58/52/5835ae01cb4d02de9ff45c275a5079d05288fde7f75de8ade13737c590cd/hawc_client-2023.2-py3-none-any.whl
+[2023-04-13 15:49:35] INFO root fetch - processPackages [pyams-zfiles]: Downloading https://files.pythonhosted.org/packages/b0/07/24f53d895f8580a413422dbf1afac204eb0246fee63a022dbb78b1762b7c/pyams_zfiles-1.4.4.tar.gz
+[2023-04-13 15:49:35] INFO root fetch - processPackages [hawc-client]: executing diffoscope
+[2023-04-13 15:49:35] INFO root fetch - processPackages [hawc-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hawc_client-2023.1-py3-none-any.whl.zip tmp/hawc_client-2023.2-py3-none-any.whl.zip --markdown 20230413/h/hawc-client/2023.1-2023.2/diff.md --exclude *.pyd
+[2023-04-13 15:49:35] INFO root fetch - processPackages [pyams-zfiles]: executing diffoscope
+[2023-04-13 15:49:35] INFO root fetch - processPackages [pyams-zfiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_zfiles-1.4.3.tar.gz tmp/pyams_zfiles-1.4.4.tar.gz --markdown 20230413/p/pyams-zfiles/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-04-13 15:49:36] INFO root fetch - processPackages [polywrap-msgpack]: Start processing: nomoji
+[2023-04-13 15:49:36] INFO root fetch - main [MainThread]: End processing [polywrap-msgpack]: success
+[2023-04-13 15:49:36] INFO root fetch - processPackages [nomoji]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-13 15:49:36] INFO root fetch - processPackages [nomoji]: Downloading https://files.pythonhosted.org/packages/b7/79/d234e5924405b9aa10c18d035103f6171b1f6189d631dc7ba55b7337aae7/nomoji-0.0.0.tar.gz
+[2023-04-13 15:49:36] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: Start processing: pysui-gadgets
+[2023-04-13 15:49:36] INFO root fetch - main [MainThread]: End processing [rozklad-ontu-parser-MakisuKurisu]: success
+[2023-04-13 15:49:36] INFO root fetch - processPackages [pysui-gadgets]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 15:49:36] INFO root fetch - processPackages [hawc-client]: Start processing: nomoji
+[2023-04-13 15:49:36] INFO root fetch - main [MainThread]: End processing [hawc-client]: success
+[2023-04-13 15:49:36] INFO root fetch - processPackages [pysui-gadgets]: Downloading https://files.pythonhosted.org/packages/8e/98/8a89414c4cde982da52eca42b13e500e9c8275d0df4771f431e696ed8367/pysui_gadgets-0.0.8-py3-none-any.whl
+[2023-04-13 15:49:36] INFO root fetch - processPackages [nomoji]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-13 15:49:36] INFO root fetch - processPackages [nomoji]: Downloading https://files.pythonhosted.org/packages/46/da/2519bd44a6acf2ff1ba5d447d937b271b5e9a3f516d3efa90f79b3e77ae5/nomoji-0.0.1.tar.gz
+[2023-04-13 15:49:36] INFO root fetch - processPackages [nomoji]: executing diffoscope
+[2023-04-13 15:49:36] INFO root fetch - processPackages [nomoji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomoji-0.0.0.tar.gz tmp/nomoji-0.0.1.tar.gz --markdown 20230413/n/nomoji/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-13 15:49:36] INFO root fetch - processPackages [nomoji]: executing diffoscope
+[2023-04-13 15:49:36] INFO root fetch - processPackages [nomoji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomoji-0.0.0.tar.gz tmp/nomoji-0.0.1.tar.gz --markdown 20230413/n/nomoji/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-13 15:49:36] INFO root fetch - processPackages [hcpdiff]: Start processing: pyvalhalla
+[2023-04-13 15:49:36] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
+[2023-04-13 15:49:36] INFO root fetch - processPackages [pyvalhalla]: New version: [3.1.0] Old Version: [3.0.4]
+[2023-04-13 15:49:36] INFO root fetch - processPackages [pysui-gadgets]: Downloading https://files.pythonhosted.org/packages/53/39/3b6e7023f6f0d43b5fac6d392bbe993addd25eb094a61106a206a117aa85/pysui_gadgets-0.0.9-py3-none-any.whl
+[2023-04-13 15:49:36] INFO root fetch - processPackages [pysui-gadgets]: executing diffoscope
+[2023-04-13 15:49:36] INFO root fetch - processPackages [pysui-gadgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysui_gadgets-0.0.8-py3-none-any.whl.zip tmp/pysui_gadgets-0.0.9-py3-none-any.whl.zip --markdown 20230413/p/pysui-gadgets/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 15:49:36] INFO root fetch - processPackages [pyvalhalla]: Downloading https://files.pythonhosted.org/packages/86/5e/805d18462bef051099051f5b14b8d842d3e4ed0b367f9862f1a819025b13/pyvalhalla-3.1.0-cp39-cp39-win_amd64.whl
+[2023-04-13 15:49:36] INFO root fetch - processPackages [pyvalhalla]: executing diffoscope
+[2023-04-13 15:49:36] INFO root fetch - processPackages [pyvalhalla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvalhalla-3.0.4-cp39-cp39-win_amd64.whl.zip tmp/pyvalhalla-3.1.0-cp39-cp39-win_amd64.whl.zip --markdown 20230413/p/pyvalhalla/3.0.4-3.1.0/diff.md --exclude *.pyd
+[2023-04-13 15:49:37] INFO root fetch - processPackages [pyams-zfiles]: Start processing: python-on-whales
+[2023-04-13 15:49:37] INFO root fetch - main [MainThread]: End processing [pyams-zfiles]: success
+[2023-04-13 15:49:37] INFO root fetch - processPackages [python-on-whales]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 15:49:37] INFO root fetch - processPackages [python-on-whales]: Downloading https://files.pythonhosted.org/packages/0c/de/d0175a21add24a0aa116a24f4ad4a78b8304f3f520b6637d75dfbeccaf3c/python-on-whales-0.9.0.tar.gz
+[2023-04-13 15:49:37] INFO root fetch - processPackages [nomoji]: Start processing: vsui-client
+[2023-04-13 15:49:37] INFO root fetch - main [MainThread]: End processing [nomoji]: success
+[2023-04-13 15:49:37] INFO root fetch - processPackages [vsui-client]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-13 15:49:37] INFO root fetch - processPackages [nomoji]: Start processing: polywrap-manifest
+[2023-04-13 15:49:37] INFO root fetch - main [MainThread]: End processing [nomoji]: success
+[2023-04-13 15:49:37] INFO root fetch - processPackages [polywrap-manifest]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-13 15:49:37] INFO root fetch - processPackages [vsui-client]: Downloading https://files.pythonhosted.org/packages/81/08/530b2db97d04af1f079de1bfb8def43e1c92c75efca7a1a969a80482bcf2/vsui_client-1.1.2.tar.gz
+[2023-04-13 15:49:37] INFO root fetch - processPackages [polywrap-manifest]: executing diffoscope
+[2023-04-13 15:49:37] INFO root fetch - processPackages [polywrap-manifest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_manifest-0.1.0a7.tar.gz tmp/polywrap_manifest-0.1.0a8.tar.gz --markdown 20230413/p/polywrap-manifest/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-13 15:49:37] INFO root fetch - processPackages [vsui-client]: executing diffoscope
+[2023-04-13 15:49:37] INFO root fetch - processPackages [vsui-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsui_client-1.1.1.tar.gz tmp/vsui_client-1.1.2.tar.gz --markdown 20230413/v/vsui-client/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-13 15:49:37] INFO root fetch - processPackages [python-on-whales]: Downloading https://files.pythonhosted.org/packages/b9/5b/0086caaf50bcfe2ed377d292d379aa4c7b4cb19fda4fa69159452c73dccb/python-on-whales-0.9.1.tar.gz
+[2023-04-13 15:49:38] INFO root fetch - processPackages [pysui-gadgets]: Start processing: connect-extension-runner
+[2023-04-13 15:49:38] INFO root fetch - main [MainThread]: End processing [pysui-gadgets]: success
+[2023-04-13 15:49:38] INFO root fetch - processPackages [connect-extension-runner]: New version: [27.9] Old Version: [27.8]
+[2023-04-13 15:49:38] INFO root fetch - processPackages [connect-extension-runner]: Downloading https://files.pythonhosted.org/packages/b7/ed/a02e4a8a747cd41940435e62d52fce3167d11224d2567d65c03cdfa3f4ba/connect_extension_runner-27.8.tar.gz
+[2023-04-13 15:49:38] INFO root fetch - processPackages [python-on-whales]: executing diffoscope
+[2023-04-13 15:49:38] INFO root fetch - processPackages [python-on-whales]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-on-whales-0.9.0.tar.gz tmp/python-on-whales-0.9.1.tar.gz --markdown 20230413/p/python-on-whales/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 15:49:38] INFO root fetch - processPackages [connect-extension-runner]: Downloading https://files.pythonhosted.org/packages/47/aa/2906e55e3f6e3d95b8c7007f7182c704a35f6fb92baffad108611f34ecfa/connect_extension_runner-27.9.tar.gz
+[2023-04-13 15:49:38] INFO root fetch - processPackages [vsui-client]: Start processing: polywrap-core
+[2023-04-13 15:49:38] INFO root fetch - main [MainThread]: End processing [vsui-client]: success
+[2023-04-13 15:49:38] INFO root fetch - processPackages [polywrap-core]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-13 15:49:38] INFO root fetch - processPackages [polywrap-manifest]: Start processing: hdn-research-environment
+[2023-04-13 15:49:38] INFO root fetch - main [MainThread]: End processing [polywrap-manifest]: success
+[2023-04-13 15:49:38] INFO root fetch - processPackages [hdn-research-environment]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-13 15:49:38] INFO root fetch - processPackages [connect-extension-runner]: executing diffoscope
+[2023-04-13 15:49:38] INFO root fetch - processPackages [connect-extension-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connect_extension_runner-27.8.tar.gz tmp/connect_extension_runner-27.9.tar.gz --markdown 20230413/c/connect-extension-runner/27.8-27.9/diff.md --exclude *.pyd
+[2023-04-13 15:49:38] INFO root fetch - processPackages [polywrap-core]: executing diffoscope
+[2023-04-13 15:49:38] INFO root fetch - processPackages [polywrap-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_core-0.1.0a7.tar.gz tmp/polywrap_core-0.1.0a8.tar.gz --markdown 20230413/p/polywrap-core/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-13 15:49:39] INFO root fetch - processPackages [hdn-research-environment]: Downloading https://files.pythonhosted.org/packages/0e/f7/fd2936e5434502d1cf453ecfd80c87370b378914861f1540340ac6f44909/hdn-research-environment-1.5.2.tar.gz
+[2023-04-13 15:49:39] INFO root fetch - processPackages [hdn-research-environment]: executing diffoscope
+[2023-04-13 15:49:39] INFO root fetch - processPackages [hdn-research-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdn-research-environment-1.5.1.tar.gz tmp/hdn-research-environment-1.5.2.tar.gz --markdown 20230413/h/hdn-research-environment/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-13 15:49:39] INFO root fetch - processPackages [polywrap-core]: Start processing: sphinx-social
+[2023-04-13 15:49:39] INFO root fetch - main [MainThread]: End processing [polywrap-core]: success
+[2023-04-13 15:49:39] WARNING root fetch - processPackages [sphinx-social]: Skipping, unable to determine old version
+[2023-04-13 15:49:39] INFO root fetch - processPackages [sphinx-social]: Start processing: jupyterlab-optumi
+[2023-04-13 15:49:39] INFO root fetch - main [MainThread]: End processing [sphinx-social] error
+[2023-04-13 15:49:40] INFO root fetch - processPackages [jupyterlab-optumi]: New version: [3.9.9] Old Version: [3.9.8]
+[2023-04-13 15:49:40] INFO root fetch - processPackages [connect-extension-runner]: Start processing: optumi-api
+[2023-04-13 15:49:40] INFO root fetch - main [MainThread]: End processing [connect-extension-runner]: success
+[2023-04-13 15:49:40] INFO root fetch - processPackages [optumi-api]: New version: [3.15.5] Old Version: [3.15.4]
+[2023-04-13 15:49:40] INFO root fetch - processPackages [python-on-whales]: Start processing: optumi-core
+[2023-04-13 15:49:40] INFO root fetch - main [MainThread]: End processing [python-on-whales]: success
+[2023-04-13 15:49:40] INFO root fetch - processPackages [optumi-core]: New version: [3.15.4] Old Version: [3.15.3]
+[2023-04-13 15:49:40] INFO root fetch - processPackages [jupyterlab-optumi]: Downloading https://files.pythonhosted.org/packages/a7/8e/6085051d3edca1b7c81c1f3d4d29c79a216a8ea2dd87ead0913ef5c0cc68/jupyterlab-optumi-3.9.8.tar.gz
+[2023-04-13 15:49:40] INFO root fetch - processPackages [optumi-api]: Downloading https://files.pythonhosted.org/packages/0e/a7/c61a173be9a99b845932abcf074d0ccc1d855d92cb069bed756375073a6c/optumi-api-3.15.4.tar.gz
+[2023-04-13 15:49:40] INFO root fetch - processPackages [optumi-core]: Downloading https://files.pythonhosted.org/packages/f4/4b/ac6caea895e73487a8bf33378048deea54451dca634fc8260455a9febdcb/optumi-core-3.15.3.tar.gz
+[2023-04-13 15:49:40] INFO root fetch - processPackages [hdn-research-environment]: Start processing: polywrap-plugin
+[2023-04-13 15:49:40] INFO root fetch - main [MainThread]: End processing [hdn-research-environment]: success
+[2023-04-13 15:49:40] INFO root fetch - processPackages [polywrap-plugin]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-13 15:49:40] INFO root fetch - processPackages [polywrap-plugin]: executing diffoscope
+[2023-04-13 15:49:40] INFO root fetch - processPackages [polywrap-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_plugin-0.1.0a6.tar.gz tmp/polywrap_plugin-0.1.0a7.tar.gz --markdown 20230413/p/polywrap-plugin/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 15:49:40] INFO root fetch - processPackages [optumi-api]: Downloading https://files.pythonhosted.org/packages/86/ba/4645e9f1cacccba24ab572af5f4b5449e1e8100c181760723b755aed6b6c/optumi-api-3.15.5.tar.gz
+[2023-04-13 15:49:40] INFO root fetch - processPackages [optumi-core]: Downloading https://files.pythonhosted.org/packages/b2/31/ce1a8b539455dde9954efd377a40bdbbb71b58811d7f3b962e983b33ec06/optumi-core-3.15.4.tar.gz
+[2023-04-13 15:49:40] INFO root fetch - processPackages [optumi-api]: executing diffoscope
+[2023-04-13 15:49:40] INFO root fetch - processPackages [optumi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optumi-api-3.15.4.tar.gz tmp/optumi-api-3.15.5.tar.gz --markdown 20230413/o/optumi-api/3.15.4-3.15.5/diff.md --exclude *.pyd
+[2023-04-13 15:49:40] INFO root fetch - processPackages [optumi-core]: executing diffoscope
+[2023-04-13 15:49:40] INFO root fetch - processPackages [optumi-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optumi-core-3.15.3.tar.gz tmp/optumi-core-3.15.4.tar.gz --markdown 20230413/o/optumi-core/3.15.3-3.15.4/diff.md --exclude *.pyd
+[2023-04-13 15:49:41] INFO root fetch - processPackages [pyvalhalla]: Start processing: django-baton
+[2023-04-13 15:49:41] INFO root fetch - main [MainThread]: End processing [pyvalhalla]: success
+[2023-04-13 15:49:41] INFO root fetch - processPackages [django-baton]: New version: [2.7.0] Old Version: [2.6.2]
+[2023-04-13 15:49:41] INFO root fetch - processPackages [django-baton]: Downloading https://files.pythonhosted.org/packages/db/a4/57035b43b08d83d47dcd5d27c1c43c0281c4f8980144637708db17508c13/django-baton-2.6.2.tar.gz
+[2023-04-13 15:49:41] INFO root fetch - main [MainThread]: End processing [polywrap-plugin]: success
+[2023-04-13 15:49:41] INFO root fetch - main [MainThread]: End processing [optumi-core]: success
+[2023-04-13 15:49:41] INFO root fetch - processPackages [django-baton]: Downloading https://files.pythonhosted.org/packages/08/a3/594c35c7ab7d3ae38437c85e253a78d42557cd27a58d97928a8575df74c7/django-baton-2.7.0.tar.gz
+[2023-04-13 15:49:41] INFO root fetch - main [MainThread]: End processing [optumi-api]: success
+[2023-04-13 15:49:42] INFO root fetch - processPackages [django-baton]: executing diffoscope
+[2023-04-13 15:49:42] INFO root fetch - processPackages [django-baton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-baton-2.6.2.tar.gz tmp/django-baton-2.7.0.tar.gz --markdown 20230413/d/django-baton/2.6.2-2.7.0/diff.md --exclude *.pyd
+[2023-04-13 15:49:42] INFO root fetch - processPackages [jupyterlab-optumi]: Downloading https://files.pythonhosted.org/packages/97/75/ce93a28e75bfb407dedc53ae5f247a368eb93179c14c16bca8a11218f211/jupyterlab-optumi-3.9.9.tar.gz
+[2023-04-13 15:49:44] INFO root fetch - processPackages [jupyterlab-optumi]: executing diffoscope
+[2023-04-13 15:49:44] INFO root fetch - processPackages [jupyterlab-optumi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab-optumi-3.9.8.tar.gz tmp/jupyterlab-optumi-3.9.9.tar.gz --markdown 20230413/j/jupyterlab-optumi/3.9.8-3.9.9/diff.md --exclude *.pyd
+[2023-04-13 15:49:47] INFO root fetch - main [MainThread]: End processing [django-baton]: success
+[2023-04-13 15:49:55] INFO root fetch - main [MainThread]: End processing [jupyterlab-optumi]: success
+[2023-04-13 15:49:55] INFO root fetch - main [MainThread]: Store serial: [17693201]
