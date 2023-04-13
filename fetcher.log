@@ -22371,3 +22371,172 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 18:37:03] ERROR root fetch - processPackages [kiwi]: Timeout during execution of pkgdiff
 [2023-04-13 18:37:03] INFO root fetch - main [MainThread]: End processing [kiwi] error
 [2023-04-13 18:37:03] INFO root fetch - main [MainThread]: Store serial: [17695487]
+[2023-04-13 18:42:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17695487]
+[2023-04-13 18:42:11] INFO root fetch - main [MainThread]: Found 29 changed packages
+[2023-04-13 18:42:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qrules
+[2023-04-13 18:42:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: satcfdi
+[2023-04-13 18:42:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyzm
+[2023-04-13 18:42:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polywrap-msgpack
+[2023-04-13 18:42:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hume
+[2023-04-13 18:42:11] INFO root fetch - processPackages [hume]: New version: [0.3.20b0] Old Version: [0.3.1b0]
+[2023-04-13 18:42:11] INFO root fetch - processPackages [polywrap-msgpack]: New version: [0.1.0a9] Old Version: [0.1.0a8]
+[2023-04-13 18:42:11] INFO root fetch - processPackages [satcfdi]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-04-13 18:42:11] INFO root fetch - processPackages [pyzm]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 18:42:11] INFO root fetch - processPackages [qrules]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-13 18:42:11] INFO root fetch - processPackages [hume]: Downloading https://files.pythonhosted.org/packages/cb/5e/b422f0b3ab6a4aa5a350d3c7430422feb8893bb241e71f50fb5c506198e3/hume-0.3.1b0.tar.gz
+[2023-04-13 18:42:11] INFO root fetch - processPackages [pyzm]: Downloading https://files.pythonhosted.org/packages/c9/cf/8fe1b1d982e001cec539de30c2b05cd43b20dc8c7d915faf90b699e50a72/pyzm-0.3.8.tar.gz
+[2023-04-13 18:42:11] INFO root fetch - processPackages [qrules]: Downloading https://files.pythonhosted.org/packages/a1/e8/c5cb4cc5cc038d9dcffd7a746caa31dc32b9b31aa216ad4d94681aae3c46/qrules-0.9.7.tar.gz
+[2023-04-13 18:42:11] INFO root fetch - processPackages [polywrap-msgpack]: executing diffoscope
+[2023-04-13 18:42:11] INFO root fetch - processPackages [polywrap-msgpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_msgpack-0.1.0a8.tar.gz tmp/polywrap_msgpack-0.1.0a9.tar.gz --markdown 20230413/p/polywrap-msgpack/0.1.0a8-0.1.0a9/diff.md --exclude *.pyd
+[2023-04-13 18:42:11] INFO root fetch - processPackages [satcfdi]: executing diffoscope
+[2023-04-13 18:42:11] INFO root fetch - processPackages [satcfdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satcfdi-4.0.8.tar.gz tmp/satcfdi-4.0.9.tar.gz --markdown 20230413/s/satcfdi/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-04-13 18:42:12] INFO root fetch - processPackages [qrules]: Downloading https://files.pythonhosted.org/packages/d3/cc/98cc8d130f60b192577a5de0471646b4bd49a777780a8a9a8197160eb9d3/qrules-0.9.8.tar.gz
+[2023-04-13 18:42:12] INFO root fetch - processPackages [hume]: Downloading https://files.pythonhosted.org/packages/6d/3b/8ab4d6aa0a12dc9009d813a9ed9f857b246abaf7817534690614896e060e/hume-0.3.20b0.tar.gz
+[2023-04-13 18:42:12] INFO root fetch - processPackages [pyzm]: Downloading https://files.pythonhosted.org/packages/77/7a/88fa3e9fb3142e7b8ef9948fd3d23dd8298ad40acde30ff22de2afbacb1e/pyzm-0.3.9.tar.gz
+[2023-04-13 18:42:12] INFO root fetch - processPackages [hume]: executing diffoscope
+[2023-04-13 18:42:12] INFO root fetch - processPackages [hume]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hume-0.3.1b0.tar.gz tmp/hume-0.3.20b0.tar.gz --markdown 20230413/h/hume/0.3.1b0-0.3.20b0/diff.md --exclude *.pyd
+[2023-04-13 18:42:12] INFO root fetch - processPackages [pyzm]: executing diffoscope
+[2023-04-13 18:42:12] INFO root fetch - processPackages [pyzm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzm-0.3.8.tar.gz tmp/pyzm-0.3.9.tar.gz --markdown 20230413/p/pyzm/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 18:42:12] INFO root fetch - processPackages [qrules]: executing diffoscope
+[2023-04-13 18:42:12] INFO root fetch - processPackages [qrules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qrules-0.9.7.tar.gz tmp/qrules-0.9.8.tar.gz --markdown 20230413/q/qrules/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-13 18:42:12] INFO root fetch - processPackages [polywrap-msgpack]: Start processing: InvokeAI
+[2023-04-13 18:42:12] INFO root fetch - main [MainThread]: End processing [polywrap-msgpack]: success
+[2023-04-13 18:42:12] INFO root fetch - processPackages [InvokeAI]: New version: [2.3.4rc1] Old Version: [2.3.4a0]
+[2023-04-13 18:42:13] INFO root fetch - processPackages [hume]: Start processing: cvprac
+[2023-04-13 18:42:13] INFO root fetch - main [MainThread]: End processing [hume]: success
+[2023-04-13 18:42:13] INFO root fetch - processPackages [cvprac]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-13 18:42:13] INFO root fetch - processPackages [InvokeAI]: executing diffoscope
+[2023-04-13 18:42:13] INFO root fetch - processPackages [InvokeAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/InvokeAI-2.3.4a0.tar.gz tmp/InvokeAI-2.3.4rc1.tar.gz --markdown 20230413/I/InvokeAI/2.3.4a0-2.3.4rc1/diff.md --exclude *.pyd
+[2023-04-13 18:42:13] INFO root fetch - processPackages [cvprac]: Downloading https://files.pythonhosted.org/packages/21/c6/1338ce6934b6db92d7f32e8f5a8f08db8cf660db0f409d46a40688751376/cvprac-1.3.0.tar.gz
+[2023-04-13 18:42:13] INFO root fetch - processPackages [pyzm]: Start processing: video2frames
+[2023-04-13 18:42:13] INFO root fetch - main [MainThread]: End processing [pyzm]: success
+[2023-04-13 18:42:13] INFO root fetch - processPackages [video2frames]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 18:42:13] INFO root fetch - processPackages [cvprac]: Downloading https://files.pythonhosted.org/packages/66/5e/bbee5e493ec07ddbc038c69c18dad7b6c7c4003d871537af74395161428c/cvprac-1.3.1.tar.gz
+[2023-04-13 18:42:13] INFO root fetch - processPackages [video2frames]: Downloading https://files.pythonhosted.org/packages/03/81/92f1177110bda5e5167034cb5c03d2898c31eda683b094334e3c26585d5b/video2frames-0.0.1.tar.gz
+[2023-04-13 18:42:14] INFO root fetch - processPackages [video2frames]: Downloading https://files.pythonhosted.org/packages/3e/41/3e3c526233d24054cdebd2e4dda2cfe39a6f1a53fbe143eb16dca9b05bd8/video2frames-0.0.2.tar.gz
+[2023-04-13 18:42:14] INFO root fetch - processPackages [video2frames]: executing diffoscope
+[2023-04-13 18:42:14] INFO root fetch - processPackages [video2frames]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/video2frames-0.0.1.tar.gz tmp/video2frames-0.0.2.tar.gz --markdown 20230413/v/video2frames/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 18:42:14] INFO root fetch - processPackages [cvprac]: executing diffoscope
+[2023-04-13 18:42:14] INFO root fetch - processPackages [cvprac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvprac-1.3.0.tar.gz tmp/cvprac-1.3.1.tar.gz --markdown 20230413/c/cvprac/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-13 18:42:15] INFO root fetch - processPackages [qrules]: Start processing: catchexception
+[2023-04-13 18:42:15] INFO root fetch - main [MainThread]: End processing [qrules]: success
+[2023-04-13 18:42:15] WARNING root fetch - processPackages [catchexception]: Skipping, unable to determine old version
+[2023-04-13 18:42:15] INFO root fetch - processPackages [catchexception]: Start processing: polywrap-manifest
+[2023-04-13 18:42:15] INFO root fetch - main [MainThread]: End processing [catchexception] error
+[2023-04-13 18:42:15] INFO root fetch - processPackages [polywrap-manifest]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-13 18:42:15] INFO root fetch - processPackages [polywrap-manifest]: executing diffoscope
+[2023-04-13 18:42:15] INFO root fetch - processPackages [polywrap-manifest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_manifest-0.1.0a7.tar.gz tmp/polywrap_manifest-0.1.0a8.tar.gz --markdown 20230413/p/polywrap-manifest/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-13 18:42:15] INFO root fetch - processPackages [video2frames]: Start processing: probability-calculator
+[2023-04-13 18:42:15] INFO root fetch - main [MainThread]: End processing [video2frames]: success
+[2023-04-13 18:42:15] INFO root fetch - processPackages [probability-calculator]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-13 18:42:15] INFO root fetch - processPackages [InvokeAI]: Start processing: polywrap-core
+[2023-04-13 18:42:15] INFO root fetch - main [MainThread]: End processing [InvokeAI]: success
+[2023-04-13 18:42:15] INFO root fetch - processPackages [polywrap-core]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-13 18:42:15] INFO root fetch - processPackages [polywrap-core]: executing diffoscope
+[2023-04-13 18:42:15] INFO root fetch - processPackages [polywrap-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_core-0.1.0a7.tar.gz tmp/polywrap_core-0.1.0a8.tar.gz --markdown 20230413/p/polywrap-core/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-13 18:42:15] INFO root fetch - processPackages [probability-calculator]: Downloading https://files.pythonhosted.org/packages/86/cf/e1b07959fbc3c8689f7bae0672749bd2cc0bd3bc6936fad2239e160c7640/probability_calculator-0.2.0.tar.gz
+[2023-04-13 18:42:15] INFO root fetch - processPackages [probability-calculator]: executing diffoscope
+[2023-04-13 18:42:15] INFO root fetch - processPackages [probability-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/probability_calculator-0.1.0.tar.gz tmp/probability_calculator-0.2.0.tar.gz --markdown 20230413/p/probability-calculator/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 18:42:16] INFO root fetch - processPackages [polywrap-manifest]: Start processing: reverse-geocode-bd
+[2023-04-13 18:42:16] INFO root fetch - main [MainThread]: End processing [polywrap-manifest]: success
+[2023-04-13 18:42:16] INFO root fetch - processPackages [reverse-geocode-bd]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-13 18:42:16] INFO root fetch - processPackages [reverse-geocode-bd]: Downloading https://files.pythonhosted.org/packages/46/a0/c24ec9d16e3c1b798dcbecb85a13bf0a12d2824dc53e3c4b60a2c8b88425/reverse-geocode-bd-1.0.6.tar.gz
+[2023-04-13 18:42:16] INFO root fetch - processPackages [cvprac]: Start processing: planetmapper
+[2023-04-13 18:42:16] INFO root fetch - main [MainThread]: End processing [cvprac]: success
+[2023-04-13 18:42:16] INFO root fetch - processPackages [planetmapper]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-04-13 18:42:16] INFO root fetch - processPackages [planetmapper]: Downloading https://files.pythonhosted.org/packages/f1/c0/14cc5c0101c793b572b49995948e1c54c662f2c7d6813fc84025a776a5fa/planetmapper-1.6.0.tar.gz
+[2023-04-13 18:42:16] INFO root fetch - processPackages [polywrap-core]: Start processing: polywrap-plugin
+[2023-04-13 18:42:16] INFO root fetch - main [MainThread]: End processing [polywrap-core]: success
+[2023-04-13 18:42:16] INFO root fetch - processPackages [polywrap-plugin]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-13 18:42:16] INFO root fetch - processPackages [reverse-geocode-bd]: Downloading https://files.pythonhosted.org/packages/a0/06/cc20b82a1fb18bae52deb98b3218cc4ae6d945e1d994b130f81b4bb92fbe/reverse-geocode-bd-1.0.7.tar.gz
+[2023-04-13 18:42:16] INFO root fetch - processPackages [polywrap-plugin]: executing diffoscope
+[2023-04-13 18:42:16] INFO root fetch - processPackages [polywrap-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_plugin-0.1.0a6.tar.gz tmp/polywrap_plugin-0.1.0a7.tar.gz --markdown 20230413/p/polywrap-plugin/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 18:42:16] INFO root fetch - processPackages [probability-calculator]: Start processing: griptape-core
+[2023-04-13 18:42:16] INFO root fetch - main [MainThread]: End processing [probability-calculator]: success
+[2023-04-13 18:42:17] INFO root fetch - processPackages [griptape-core]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-13 18:42:17] INFO root fetch - processPackages [planetmapper]: Downloading https://files.pythonhosted.org/packages/48/d7/92a5c45cb8dc29a0d365f95cece7c2a221962aca3f2fa9cfdd915ed4db61/planetmapper-1.6.1.tar.gz
+[2023-04-13 18:42:17] INFO root fetch - processPackages [reverse-geocode-bd]: executing diffoscope
+[2023-04-13 18:42:17] INFO root fetch - processPackages [reverse-geocode-bd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reverse-geocode-bd-1.0.6.tar.gz tmp/reverse-geocode-bd-1.0.7.tar.gz --markdown 20230413/r/reverse-geocode-bd/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-13 18:42:17] INFO root fetch - processPackages [planetmapper]: executing diffoscope
+[2023-04-13 18:42:17] INFO root fetch - processPackages [planetmapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetmapper-1.6.0.tar.gz tmp/planetmapper-1.6.1.tar.gz --markdown 20230413/p/planetmapper/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-04-13 18:42:17] INFO root fetch - processPackages [griptape-core]: Downloading https://files.pythonhosted.org/packages/ae/b6/307f29cbec61694e3925f312c5474c6f899c4d0c8013520149f8e266207d/griptape_core-0.6.0.tar.gz
+[2023-04-13 18:42:17] INFO root fetch - processPackages [griptape-core]: executing diffoscope
+[2023-04-13 18:42:17] INFO root fetch - processPackages [griptape-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape_core-0.5.0.tar.gz tmp/griptape_core-0.6.0.tar.gz --markdown 20230413/g/griptape-core/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-13 18:42:17] INFO root fetch - processPackages [satcfdi]: Start processing: bdating-common
+[2023-04-13 18:42:17] INFO root fetch - main [MainThread]: End processing [satcfdi]: success
+[2023-04-13 18:42:17] INFO root fetch - processPackages [bdating-common]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 18:42:18] INFO root fetch - processPackages [polywrap-plugin]: Start processing: dhel
+[2023-04-13 18:42:18] INFO root fetch - main [MainThread]: End processing [polywrap-plugin]: success
+[2023-04-13 18:42:18] INFO root fetch - processPackages [bdating-common]: executing diffoscope
+[2023-04-13 18:42:18] INFO root fetch - processPackages [bdating-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdating-common-0.9.8.tar.gz tmp/bdating-common-0.9.9.tar.gz --markdown 20230413/b/bdating-common/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 18:42:18] INFO root fetch - processPackages [dhel]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-13 18:42:18] INFO root fetch - processPackages [dhel]: Downloading https://files.pythonhosted.org/packages/14/5b/f5ba45201eb289c4c91d1af6acc2175a2e64c7f04d971229ba2ad5b50054/dhel-0.0.0.tar.gz
+[2023-04-13 18:42:18] INFO root fetch - processPackages [dhel]: Downloading https://files.pythonhosted.org/packages/3e/70/03306fced2fe9f0f14477b068e378a4fb329688112fea792deab673b0b93/dhel-0.0.1.tar.gz
+[2023-04-13 18:42:18] INFO root fetch - processPackages [griptape-core]: Start processing: nbox
+[2023-04-13 18:42:18] INFO root fetch - main [MainThread]: End processing [griptape-core]: success
+[2023-04-13 18:42:18] INFO root fetch - processPackages [nbox]: New version: [0.9.9rc0] Old Version: [0.9.9]
+[2023-04-13 18:42:18] INFO root fetch - processPackages [nbox]: executing diffoscope
+[2023-04-13 18:42:18] INFO root fetch - processPackages [nbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbox-0.9.9.tar.gz tmp/nbox-0.9.9rc0.tar.gz --markdown 20230413/n/nbox/0.9.9-0.9.9rc0/diff.md --exclude *.pyd
+[2023-04-13 18:42:18] INFO root fetch - processPackages [reverse-geocode-bd]: Start processing: rocm-docs-core
+[2023-04-13 18:42:18] INFO root fetch - main [MainThread]: End processing [reverse-geocode-bd]: success
+[2023-04-13 18:42:18] INFO root fetch - processPackages [dhel]: executing diffoscope
+[2023-04-13 18:42:18] INFO root fetch - processPackages [dhel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dhel-0.0.0.tar.gz tmp/dhel-0.0.1.tar.gz --markdown 20230413/d/dhel/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-13 18:42:18] INFO root fetch - processPackages [rocm-docs-core]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-13 18:42:18] INFO root fetch - processPackages [planetmapper]: Start processing: typos
+[2023-04-13 18:42:18] INFO root fetch - main [MainThread]: End processing [planetmapper]: success
+[2023-04-13 18:42:18] INFO root fetch - processPackages [typos]: New version: [1.14.6] Old Version: [1.14.5]
+[2023-04-13 18:42:19] INFO root fetch - processPackages [rocm-docs-core]: Downloading https://files.pythonhosted.org/packages/fa/7d/237439daf1f5389387f4fae3295ed945ac2cbd93f9f7cb21bbbb6cd80e4e/rocm-docs-core-0.2.2.tar.gz
+[2023-04-13 18:42:19] INFO root fetch - processPackages [typos]: Downloading https://files.pythonhosted.org/packages/a8/6f/f55ae518008ee04ef77bed2604d7e10207cdd6c8a9512a2c200a70b72154/typos-1.14.5.tar.gz
+[2023-04-13 18:42:19] INFO root fetch - processPackages [bdating-common]: Start processing: django-json-model-field
+[2023-04-13 18:42:19] INFO root fetch - main [MainThread]: End processing [bdating-common]: success
+[2023-04-13 18:42:19] INFO root fetch - processPackages [django-json-model-field]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2023-04-13 18:42:19] INFO root fetch - processPackages [typos]: Downloading https://files.pythonhosted.org/packages/b0/2c/175f955f6f07f45e805abc6b4aa7b16acd25e0ce8e30f893dc0f0ccc487d/typos-1.14.6.tar.gz
+[2023-04-13 18:42:19] INFO root fetch - processPackages [rocm-docs-core]: executing diffoscope
+[2023-04-13 18:42:19] INFO root fetch - processPackages [rocm-docs-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocm-docs-core-0.2.1.tar.gz tmp/rocm-docs-core-0.2.2.tar.gz --markdown 20230413/r/rocm-docs-core/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-13 18:42:19] INFO root fetch - processPackages [django-json-model-field]: Downloading https://files.pythonhosted.org/packages/3f/70/51dd8a0c504e9ce20cc594781b4eae11e58e3010265ec2946bbb87eafbb2/django_json_model_field-0.0.1rc8.tar.gz
+[2023-04-13 18:42:19] INFO root fetch - processPackages [django-json-model-field]: Downloading https://files.pythonhosted.org/packages/40/e7/a7e3b581d821d600b54557427b42f83e24e99dd61bd2018ff89b456128e9/django_json_model_field-0.0.1rc9.tar.gz
+[2023-04-13 18:42:19] INFO root fetch - processPackages [typos]: executing diffoscope
+[2023-04-13 18:42:19] INFO root fetch - processPackages [typos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typos-1.14.5.tar.gz tmp/typos-1.14.6.tar.gz --markdown 20230413/t/typos/1.14.5-1.14.6/diff.md --exclude *.pyd
+[2023-04-13 18:42:19] INFO root fetch - processPackages [django-json-model-field]: executing diffoscope
+[2023-04-13 18:42:19] INFO root fetch - processPackages [django-json-model-field]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_json_model_field-0.0.1rc8.tar.gz tmp/django_json_model_field-0.0.1rc9.tar.gz --markdown 20230413/d/django-json-model-field/0.0.1rc8-0.0.1rc9/diff.md --exclude *.pyd
+[2023-04-13 18:42:19] INFO root fetch - processPackages [dhel]: Start processing: polywrap-wasm
+[2023-04-13 18:42:19] INFO root fetch - main [MainThread]: End processing [dhel]: success
+[2023-04-13 18:42:19] INFO root fetch - processPackages [polywrap-wasm]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-13 18:42:20] INFO root fetch - processPackages [polywrap-wasm]: executing diffoscope
+[2023-04-13 18:42:20] INFO root fetch - processPackages [polywrap-wasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_wasm-0.1.0a6.tar.gz tmp/polywrap_wasm-0.1.0a7.tar.gz --markdown 20230413/p/polywrap-wasm/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 18:42:20] INFO root fetch - processPackages [nbox]: Start processing: nbox
+[2023-04-13 18:42:20] INFO root fetch - main [MainThread]: End processing [nbox]: success
+[2023-04-13 18:42:20] INFO root fetch - processPackages [nbox]: New version: [0.9.9rc0] Old Version: [0.9.9]
+[2023-04-13 18:42:20] INFO root fetch - processPackages [nbox]: executing diffoscope
+[2023-04-13 18:42:20] INFO root fetch - processPackages [nbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbox-0.9.9.tar.gz tmp/nbox-0.9.9rc0.tar.gz --markdown 20230413/n/nbox/0.9.9-0.9.9rc0/diff.md --exclude *.pyd
+[2023-04-13 18:42:21] INFO root fetch - processPackages [django-json-model-field]: Start processing: ayeaye
+[2023-04-13 18:42:21] INFO root fetch - main [MainThread]: End processing [django-json-model-field]: success
+[2023-04-13 18:42:21] INFO root fetch - processPackages [ayeaye]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 18:42:21] INFO root fetch - processPackages [polywrap-wasm]: Start processing: vehicle-lang
+[2023-04-13 18:42:21] INFO root fetch - main [MainThread]: End processing [polywrap-wasm]: success
+[2023-04-13 18:42:21] INFO root fetch - processPackages [vehicle-lang]: New version: [0.2.0a4] Old Version: [0.2.0a1]
+[2023-04-13 18:42:21] INFO root fetch - processPackages [rocm-docs-core]: Start processing: ga4gh.vrs
+[2023-04-13 18:42:21] INFO root fetch - main [MainThread]: End processing [rocm-docs-core]: success
+[2023-04-13 18:42:21] INFO root fetch - processPackages [ga4gh.vrs]: New version: [0.9.0.dev0] Old Version: [0.8a0]
+[2023-04-13 18:42:21] INFO root fetch - processPackages [vehicle-lang]: Downloading https://files.pythonhosted.org/packages/43/93/b0f9cf9e5688e4d25f763f244d8439974788c01f23576fc4f430f2af4b3e/vehicle_lang-0.2.0a1-cp39-cp39-win_amd64.whl
+[2023-04-13 18:42:21] INFO root fetch - processPackages [ga4gh.vrs]: Downloading https://files.pythonhosted.org/packages/1b/b0/03860b80207d39a6fa3d120fe28c49d6918e7dce62911be505a0ea2c3fbe/ga4gh.vrs-0.8a0.tar.gz
+[2023-04-13 18:42:21] INFO root fetch - processPackages [ayeaye]: executing diffoscope
+[2023-04-13 18:42:21] INFO root fetch - processPackages [ayeaye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ayeaye-0.0.8.tar.gz tmp/ayeaye-0.0.9.tar.gz --markdown 20230413/a/ayeaye/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 18:42:21] INFO root fetch - processPackages [typos]: Start processing: polywrap-uri-resolvers
+[2023-04-13 18:42:21] INFO root fetch - main [MainThread]: End processing [typos]: success
+[2023-04-13 18:42:21] WARNING root fetch - processPackages [vehicle-lang]: Skipping package: exceeds size limit 12373706>=10485760
+[2023-04-13 18:42:21] INFO root fetch - processPackages [vehicle-lang]: Start processing: bilby
+[2023-04-13 18:42:21] INFO root fetch - main [MainThread]: End processing [vehicle-lang] error
+[2023-04-13 18:42:21] INFO root fetch - processPackages [polywrap-uri-resolvers]: New version: [0.1.0a7] Old Version: [0.1.0a4]
+[2023-04-13 18:42:21] INFO root fetch - processPackages [bilby]: New version: [2.1.0] Old Version: [2.0.2]
+[2023-04-13 18:42:21] INFO root fetch - processPackages [polywrap-uri-resolvers]: executing diffoscope
+[2023-04-13 18:42:21] INFO root fetch - processPackages [polywrap-uri-resolvers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_uri_resolvers-0.1.0a4.tar.gz tmp/polywrap_uri_resolvers-0.1.0a7-py3-none-any.whl.zip --markdown 20230413/p/polywrap-uri-resolvers/0.1.0a4-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 18:42:22] INFO root fetch - processPackages [bilby]: Downloading https://files.pythonhosted.org/packages/8b/d1/b4caba63f080f002c3062560d619edc46ef5cd131acdcfc76ede67e011ed/bilby-2.0.2.tar.gz
+[2023-04-13 18:42:22] WARNING root fetch - processPackages [ga4gh.vrs]: Skipping package: exceeds size limit 17060020>=10485760
+[2023-04-13 18:42:22] INFO root fetch - main [MainThread]: End processing [ga4gh.vrs] error
+[2023-04-13 18:42:22] WARNING root fetch - processPackages [bilby]: Skipping package: exceeds size limit 11457363>=10485760
+[2023-04-13 18:42:22] INFO root fetch - main [MainThread]: End processing [bilby] error
+[2023-04-13 18:42:22] INFO root fetch - main [MainThread]: End processing [nbox]: success
+[2023-04-13 18:42:22] INFO root fetch - main [MainThread]: End processing [ayeaye]: success
+[2023-04-13 18:42:22] INFO root fetch - main [MainThread]: End processing [polywrap-uri-resolvers]: success
+[2023-04-13 18:42:22] INFO root fetch - main [MainThread]: Store serial: [17695595]
