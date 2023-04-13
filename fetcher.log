@@ -6947,3 +6947,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:30:12] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
 [2023-04-13 05:30:13] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
 [2023-04-13 05:30:13] INFO root fetch - main [MainThread]: Store serial: [17686482]
+[2023-04-13 05:35:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686482]
+[2023-04-13 05:35:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 05:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cqepyutils
+[2023-04-13 05:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycachera
+[2023-04-13 05:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-coreplus
+[2023-04-13 05:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Deepurify
+[2023-04-13 05:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cvxportfolio
+[2023-04-13 05:35:20] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 05:35:20] INFO root fetch - processPackages [Deepurify]: New version: [1.1.0.3] Old Version: [1.1.0.2]
+[2023-04-13 05:35:20] INFO root fetch - processPackages [pycachera]: New version: [4.0.0] Old Version: [3.0.2]
+[2023-04-13 05:35:20] INFO root fetch - processPackages [cvxportfolio]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 05:35:20] INFO root fetch - processPackages [django-coreplus]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-13 05:35:20] INFO root fetch - processPackages [Deepurify]: Downloading https://files.pythonhosted.org/packages/f5/40/35f84c564a1f828a8f7c4c005ebe2590b126e38ecb27c374b906ae721074/Deepurify-1.1.0.2-py3-none-any.whl
+[2023-04-13 05:35:20] INFO root fetch - processPackages [django-coreplus]: Downloading https://files.pythonhosted.org/packages/a8/37/93e372203635c6139baacd0b4dcff7457f167e1778f6614b0f478b433ba6/django-coreplus-0.3.4.tar.gz
+[2023-04-13 05:35:20] INFO root fetch - processPackages [pycachera]: Downloading https://files.pythonhosted.org/packages/76/51/ae7c18eeafe535a91d1bc32b1a915921de40ef4df9c713847cf0fec5cf7e/pycachera-4.0.0.tar.gz
+[2023-04-13 05:35:21] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-13 05:35:21] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230413/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 05:35:21] INFO root fetch - processPackages [cvxportfolio]: Downloading https://files.pythonhosted.org/packages/4e/30/42bafb4c3279aad904b91527b4d474292a491fcbf3a5c3f92444ef77ffca/cvxportfolio-0.1.1.tar.gz
+[2023-04-13 05:35:21] INFO root fetch - processPackages [pycachera]: executing diffoscope
+[2023-04-13 05:35:21] INFO root fetch - processPackages [pycachera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycachera-3.0.2.tar.gz tmp/pycachera-4.0.0.tar.gz --markdown 20230413/p/pycachera/3.0.2-4.0.0/diff.md --exclude *.pyd
+[2023-04-13 05:35:21] INFO root fetch - processPackages [django-coreplus]: Downloading https://files.pythonhosted.org/packages/63/dc/8505460308df3c8740d9c6969f4f75132052837e7b2b3bb634e5a30a72e1/django-coreplus-0.3.5.tar.gz
+[2023-04-13 05:35:21] INFO root fetch - processPackages [Deepurify]: Downloading https://files.pythonhosted.org/packages/2e/68/54c87c0fe2ed5a22740a6ea35e02994eebe857f4b66aa6b0e27ff23050cc/Deepurify-1.1.0.3.tar.gz
+[2023-04-13 05:35:21] INFO root fetch - processPackages [cvxportfolio]: executing diffoscope
+[2023-04-13 05:35:21] INFO root fetch - processPackages [cvxportfolio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxportfolio-0.1.0.tar.gz tmp/cvxportfolio-0.1.1.tar.gz --markdown 20230413/c/cvxportfolio/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 05:35:21] INFO root fetch - processPackages [django-coreplus]: executing diffoscope
+[2023-04-13 05:35:21] INFO root fetch - processPackages [django-coreplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-coreplus-0.3.4.tar.gz tmp/django-coreplus-0.3.5.tar.gz --markdown 20230413/d/django-coreplus/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-13 05:35:21] INFO root fetch - processPackages [Deepurify]: executing diffoscope
+[2023-04-13 05:35:21] INFO root fetch - processPackages [Deepurify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Deepurify-1.1.0.2-py3-none-any.whl.zip tmp/Deepurify-1.1.0.3.tar.gz --markdown 20230413/D/Deepurify/1.1.0.2-1.1.0.3/diff.md --exclude *.pyd
+[2023-04-13 05:35:22] INFO root fetch - processPackages [cqepyutils]: Start processing: data-ecosystem-services
+[2023-04-13 05:35:22] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-13 05:35:22] INFO root fetch - processPackages [data-ecosystem-services]: New version: [202304.0.9] Old Version: [202304.0.8]
+[2023-04-13 05:35:22] INFO root fetch - processPackages [data-ecosystem-services]: executing diffoscope
+[2023-04-13 05:35:22] INFO root fetch - processPackages [data-ecosystem-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_ecosystem_services-202304.0.8.tar.gz tmp/data_ecosystem_services-202304.0.9.tar.gz --markdown 20230413/d/data-ecosystem-services/202304.0.8-202304.0.9/diff.md --exclude *.pyd
+[2023-04-13 05:35:22] INFO root fetch - processPackages [pycachera]: Start processing: PyDesmos
+[2023-04-13 05:35:22] INFO root fetch - main [MainThread]: End processing [pycachera]: success
+[2023-04-13 05:35:22] WARNING root fetch - processPackages [PyDesmos]: Skipping, unable to determine old version
+[2023-04-13 05:35:22] INFO root fetch - processPackages [PyDesmos]: Start processing: dknovautils
+[2023-04-13 05:35:22] INFO root fetch - main [MainThread]: End processing [PyDesmos] error
+[2023-04-13 05:35:22] INFO root fetch - processPackages [dknovautils]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 05:35:22] INFO root fetch - processPackages [dknovautils]: executing diffoscope
+[2023-04-13 05:35:22] INFO root fetch - processPackages [dknovautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dknovautils-0.0.2.tar.gz tmp/dknovautils-0.0.3.tar.gz --markdown 20230413/d/dknovautils/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 05:35:22] INFO root fetch - processPackages [cvxportfolio]: Start processing: py3dchart
+[2023-04-13 05:35:22] INFO root fetch - main [MainThread]: End processing [cvxportfolio]: success
+[2023-04-13 05:35:22] INFO root fetch - processPackages [py3dchart]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 05:35:22] INFO root fetch - main [MainThread]: End processing [Deepurify]: success
+[2023-04-13 05:35:22] INFO root fetch - processPackages [py3dchart]: Downloading https://files.pythonhosted.org/packages/98/3c/2fa2b4464145bfc04d624b6da3be58c2af1d70e83f274222cb7d3c071cdb/py3dchart-0.1.0.tar.gz
+[2023-04-13 05:35:23] INFO root fetch - processPackages [py3dchart]: Downloading https://files.pythonhosted.org/packages/72/fc/2cced72ee4d5fd4432c3142c46d03910ef21e81a07d46a93b8eed11cb347/py3dchart-0.1.1.tar.gz
+[2023-04-13 05:35:23] INFO root fetch - processPackages [py3dchart]: executing diffoscope
+[2023-04-13 05:35:23] INFO root fetch - processPackages [py3dchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3dchart-0.1.0.tar.gz tmp/py3dchart-0.1.1.tar.gz --markdown 20230413/p/py3dchart/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 05:35:23] INFO root fetch - main [MainThread]: End processing [data-ecosystem-services]: success
+[2023-04-13 05:35:23] INFO root fetch - main [MainThread]: End processing [dknovautils]: success
+[2023-04-13 05:35:24] INFO root fetch - main [MainThread]: End processing [py3dchart]: success
+[2023-04-13 05:35:26] INFO root fetch - main [MainThread]: End processing [django-coreplus]: success
+[2023-04-13 05:35:26] INFO root fetch - main [MainThread]: Store serial: [17686516]
