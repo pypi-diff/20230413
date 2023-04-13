@@ -5446,3 +5446,89 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 03:22:49] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-snow-device-management]: success
 [2023-04-13 03:23:30] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-04-13 03:23:30] INFO root fetch - main [MainThread]: Store serial: [17685241]
+[2023-04-13 03:28:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17685241]
+[2023-04-13 03:28:40] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-13 03:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hat-drivers
+[2023-04-13 03:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cqepyutils
+[2023-04-13 03:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tencentcloud-sdk-python-intl-en
+[2023-04-13 03:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xj-role
+[2023-04-13 03:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sefazetllib
+[2023-04-13 03:28:41] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 03:28:41] INFO root fetch - processPackages [sefazetllib]: New version: [0.1.22] Old Version: [0.1.21]
+[2023-04-13 03:28:41] INFO root fetch - processPackages [xj-role]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 03:28:41] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: New version: [3.0.99] Old Version: [3.0.98]
+[2023-04-13 03:28:41] INFO root fetch - processPackages [hat-drivers]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-13 03:28:41] INFO root fetch - processPackages [xj-role]: executing diffoscope
+[2023-04-13 03:28:41] INFO root fetch - processPackages [xj-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_role-1.0.8.tar.gz tmp/xj_role-1.0.9.tar.gz --markdown 20230413/x/xj-role/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 03:28:41] INFO root fetch - processPackages [sefazetllib]: Downloading https://files.pythonhosted.org/packages/2b/9f/56c6acb53ea7b5a00bbf0c60cde282a6c8c2ee1c4895dd545657493aa809/sefazetllib-0.1.22.tar.gz
+[2023-04-13 03:28:41] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-13 03:28:41] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230413/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 03:28:41] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: executing diffoscope
+[2023-04-13 03:28:41] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-intl-en-3.0.98.tar.gz tmp/tencentcloud-sdk-python-intl-en-3.0.99.tar.gz --markdown 20230413/t/tencentcloud-sdk-python-intl-en/3.0.98-3.0.99/diff.md --exclude *.pyd
+[2023-04-13 03:28:41] INFO root fetch - processPackages [hat-drivers]: executing diffoscope
+[2023-04-13 03:28:41] INFO root fetch - processPackages [hat-drivers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_drivers-0.6.8-cp38.cp39.cp310-none-any.whl.zip tmp/hat_drivers-0.6.9-cp38.cp39.cp310-none-any.whl.zip --markdown 20230413/h/hat-drivers/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-13 03:28:41] INFO root fetch - processPackages [sefazetllib]: executing diffoscope
+[2023-04-13 03:28:41] INFO root fetch - processPackages [sefazetllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sefazetllib-0.1.21.tar.gz tmp/sefazetllib-0.1.22.tar.gz --markdown 20230413/s/sefazetllib/0.1.21-0.1.22/diff.md --exclude *.pyd
+[2023-04-13 03:28:42] INFO root fetch - processPackages [cqepyutils]: Start processing: poisson-glm
+[2023-04-13 03:28:42] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-13 03:28:42] INFO root fetch - processPackages [poisson-glm]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 03:28:42] INFO root fetch - processPackages [poisson-glm]: executing diffoscope
+[2023-04-13 03:28:42] INFO root fetch - processPackages [poisson-glm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poisson-glm-0.0.1.tar.gz tmp/poisson-glm-0.0.2.tar.gz --markdown 20230413/p/poisson-glm/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 03:28:42] INFO root fetch - processPackages [xj-role]: Start processing: ai-transform
+[2023-04-13 03:28:42] INFO root fetch - main [MainThread]: End processing [xj-role]: success
+[2023-04-13 03:28:42] INFO root fetch - processPackages [ai-transform]: New version: [0.30.5] Old Version: [0.30.4]
+[2023-04-13 03:28:42] INFO root fetch - processPackages [sefazetllib]: Start processing: markata
+[2023-04-13 03:28:42] INFO root fetch - main [MainThread]: End processing [sefazetllib]: success
+[2023-04-13 03:28:42] INFO root fetch - processPackages [markata]: New version: [0.7.0.dev4] Old Version: [0.7.0.dev3]
+[2023-04-13 03:28:43] INFO root fetch - processPackages [ai-transform]: Downloading https://files.pythonhosted.org/packages/f8/d8/a19c3947f9926b7072777a634d4baedcf54c9c87bd5bd1348ec1ce86bbfb/ai_transform-0.30.5.tar.gz
+[2023-04-13 03:28:43] INFO root fetch - processPackages [markata]: executing diffoscope
+[2023-04-13 03:28:43] INFO root fetch - processPackages [markata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markata-0.7.0.dev3.tar.gz tmp/markata-0.7.0.dev4.tar.gz --markdown 20230413/m/markata/0.7.0.dev3-0.7.0.dev4/diff.md --exclude *.pyd
+[2023-04-13 03:28:43] INFO root fetch - processPackages [hat-drivers]: Start processing: DXR
+[2023-04-13 03:28:43] INFO root fetch - main [MainThread]: End processing [hat-drivers]: success
+[2023-04-13 03:28:43] INFO root fetch - processPackages [ai-transform]: executing diffoscope
+[2023-04-13 03:28:43] INFO root fetch - processPackages [ai-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_transform-0.30.4.tar.gz tmp/ai_transform-0.30.5.tar.gz --markdown 20230413/a/ai-transform/0.30.4-0.30.5/diff.md --exclude *.pyd
+[2023-04-13 03:28:43] INFO root fetch - processPackages [DXR]: New version: [1.6.7] Old Version: [1.6.6]
+[2023-04-13 03:28:43] INFO root fetch - processPackages [DXR]: Downloading https://files.pythonhosted.org/packages/a9/37/c5b21f7e46b1addd59b2463861acabe43377e4ebcd30acffc12127132117/DXR-1.6.6.tar.gz
+[2023-04-13 03:28:43] INFO root fetch - processPackages [poisson-glm]: Start processing: sarp-utils
+[2023-04-13 03:28:43] INFO root fetch - main [MainThread]: End processing [poisson-glm]: success
+[2023-04-13 03:28:43] INFO root fetch - processPackages [sarp-utils]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-13 03:28:43] INFO root fetch - processPackages [sarp-utils]: Downloading https://files.pythonhosted.org/packages/d4/c4/f19e860c64cdd7ddc658baa6a298055e5e4fcccdc1247c6d66dcaf14f5a5/sarp_utils-1.2.8.tar.gz
+[2023-04-13 03:28:44] INFO root fetch - processPackages [DXR]: Downloading https://files.pythonhosted.org/packages/3d/ec/a3d2ade1e7cda3ad02ce24c4585e01a1a343e3a5680efa9caab7382317f8/DXR-1.6.7.tar.gz
+[2023-04-13 03:28:44] INFO root fetch - processPackages [DXR]: executing diffoscope
+[2023-04-13 03:28:44] INFO root fetch - processPackages [DXR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DXR-1.6.6.tar.gz tmp/DXR-1.6.7.tar.gz --markdown 20230413/D/DXR/1.6.6-1.6.7/diff.md --exclude *.pyd
+[2023-04-13 03:28:44] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: Start processing: cqepyutils
+[2023-04-13 03:28:44] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-intl-en]: success
+[2023-04-13 03:28:44] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 03:28:44] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-13 03:28:44] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230413/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 03:28:44] INFO root fetch - processPackages [sarp-utils]: Downloading https://files.pythonhosted.org/packages/25/f9/6c0bd142d3807a054aaacb22dbe1ac1ab9d12b3d5834a045519893663aa4/sarp_utils-1.2.9.tar.gz
+[2023-04-13 03:28:44] INFO root fetch - processPackages [markata]: Start processing: cdk-lambda-layer-zip
+[2023-04-13 03:28:44] INFO root fetch - main [MainThread]: End processing [markata]: success
+[2023-04-13 03:28:44] INFO root fetch - processPackages [cdk-lambda-layer-zip]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-13 03:28:44] INFO root fetch - processPackages [cdk-lambda-layer-zip]: executing diffoscope
+[2023-04-13 03:28:44] INFO root fetch - processPackages [cdk-lambda-layer-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-zip-2.0.98.tar.gz tmp/cdk-lambda-layer-zip-2.0.99.tar.gz --markdown 20230413/c/cdk-lambda-layer-zip/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-13 03:28:44] INFO root fetch - processPackages [ai-transform]: Start processing: lucupy
+[2023-04-13 03:28:44] INFO root fetch - main [MainThread]: End processing [ai-transform]: success
+[2023-04-13 03:28:44] INFO root fetch - processPackages [sarp-utils]: executing diffoscope
+[2023-04-13 03:28:44] INFO root fetch - processPackages [sarp-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarp_utils-1.2.8.tar.gz tmp/sarp_utils-1.2.9.tar.gz --markdown 20230413/s/sarp-utils/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-13 03:28:44] INFO root fetch - processPackages [lucupy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 03:28:45] INFO root fetch - processPackages [lucupy]: executing diffoscope
+[2023-04-13 03:28:45] INFO root fetch - processPackages [lucupy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lucupy-0.1.8.tar.gz tmp/lucupy-0.1.9.tar.gz --markdown 20230413/l/lucupy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 03:28:45] INFO root fetch - processPackages [cqepyutils]: Start processing: attackcti
+[2023-04-13 03:28:45] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-13 03:28:45] INFO root fetch - processPackages [attackcti]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 03:28:45] INFO root fetch - processPackages [attackcti]: Downloading https://files.pythonhosted.org/packages/82/f7/773f9cfaa115563fbda69b2efb666243576ac2d55e05ed25ca125c23d9db/attackcti-0.3.8.tar.gz
+[2023-04-13 03:28:45] INFO root fetch - processPackages [sarp-utils]: Start processing: nbdev-stdlib
+[2023-04-13 03:28:45] INFO root fetch - main [MainThread]: End processing [sarp-utils]: success
+[2023-04-13 03:28:45] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-13 03:28:46] INFO root fetch - processPackages [attackcti]: Downloading https://files.pythonhosted.org/packages/52/dc/47012eadef146526a435ee96920772049d88996a3ddda68c0a559b238ddb/attackcti-0.3.9.tar.gz
+[2023-04-13 03:28:46] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-13 03:28:46] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230413/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 03:28:46] INFO root fetch - processPackages [attackcti]: executing diffoscope
+[2023-04-13 03:28:46] INFO root fetch - processPackages [attackcti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attackcti-0.3.8.tar.gz tmp/attackcti-0.3.9.tar.gz --markdown 20230413/a/attackcti/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 03:28:46] INFO root fetch - main [MainThread]: End processing [DXR]: success
+[2023-04-13 03:28:46] INFO root fetch - main [MainThread]: End processing [lucupy]: success
+[2023-04-13 03:28:46] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-zip]: success
+[2023-04-13 03:28:47] INFO root fetch - main [MainThread]: End processing [attackcti]: success
+[2023-04-13 03:28:47] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-04-13 03:28:47] INFO root fetch - main [MainThread]: Store serial: [17685593]
