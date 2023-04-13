@@ -13576,3 +13576,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 12:32:46] INFO root fetch - main [MainThread]: End processing [danling]: success
 [2023-04-13 12:32:47] INFO root fetch - main [MainThread]: End processing [scikit-misc]: success
 [2023-04-13 12:32:47] INFO root fetch - main [MainThread]: Store serial: [17690643]
+[2023-04-13 12:37:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690643]
+[2023-04-13 12:37:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 12:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyGuardPoint
+[2023-04-13 12:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mikro
+[2023-04-13 12:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: utbot-executor
+[2023-04-13 12:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SQLAlchemy-Utils
+[2023-04-13 12:37:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: macrometa-source-snowflake
+[2023-04-13 12:37:55] INFO root fetch - processPackages [pyGuardPoint]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-13 12:37:55] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 12:37:55] INFO root fetch - processPackages [mikro]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 12:37:55] INFO root fetch - processPackages [utbot-executor]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-04-13 12:37:55] INFO root fetch - processPackages [SQLAlchemy-Utils]: New version: [0.9.1] Old Version: [0.9]
+[2023-04-13 12:37:55] INFO root fetch - processPackages [mikro]: executing diffoscope
+[2023-04-13 12:37:55] INFO root fetch - processPackages [mikro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mikro-0.3.8.tar.gz tmp/mikro-0.3.9.tar.gz --markdown 20230413/m/mikro/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 12:37:55] INFO root fetch - processPackages [pyGuardPoint]: Downloading https://files.pythonhosted.org/packages/fa/19/a873b5d3cba1d9b07d43e54ad7903829ad6e2da69a9be1219beff5c069f9/pyGuardPoint-0.7.3.tar.gz
+[2023-04-13 12:37:55] INFO root fetch - processPackages [SQLAlchemy-Utils]: Downloading https://files.pythonhosted.org/packages/39/f5/81e8cf47f2adb5b0936ec9e30b1614fbfac145a15203ae4c173efbe933e9/SQLAlchemy-Utils-0.9.tar.gz
+[2023-04-13 12:37:55] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-04-13 12:37:55] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230413/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 12:37:55] INFO root fetch - processPackages [utbot-executor]: Downloading https://files.pythonhosted.org/packages/1d/68/f0054ec78bc1888c4335506649e2fa0af93de2d4537544dcf2c62cb5661e/utbot_executor-1.5.5.tar.gz
+[2023-04-13 12:37:55] INFO root fetch - processPackages [utbot-executor]: executing diffoscope
+[2023-04-13 12:37:55] INFO root fetch - processPackages [utbot-executor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utbot_executor-1.5.4.tar.gz tmp/utbot_executor-1.5.5.tar.gz --markdown 20230413/u/utbot-executor/1.5.4-1.5.5/diff.md --exclude *.pyd
+[2023-04-13 12:37:55] INFO root fetch - processPackages [SQLAlchemy-Utils]: Downloading https://files.pythonhosted.org/packages/45/0f/8b96a95888d437a44cc7f11adc713f459bc7d54a59b313597985ac13c2bd/SQLAlchemy-Utils-0.9.1.tar.gz
+[2023-04-13 12:37:55] INFO root fetch - processPackages [pyGuardPoint]: Downloading https://files.pythonhosted.org/packages/5e/5a/2fc8569ebdc7dc7b706f0ee536e2da55e249e113165d38a1b59f9223577d/pyGuardPoint-0.7.4.tar.gz
+[2023-04-13 12:37:55] INFO root fetch - processPackages [SQLAlchemy-Utils]: executing diffoscope
+[2023-04-13 12:37:55] INFO root fetch - processPackages [SQLAlchemy-Utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SQLAlchemy-Utils-0.9.tar.gz tmp/SQLAlchemy-Utils-0.9.1.tar.gz --markdown 20230413/S/SQLAlchemy-Utils/0.9-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 12:37:55] INFO root fetch - processPackages [pyGuardPoint]: executing diffoscope
+[2023-04-13 12:37:55] INFO root fetch - processPackages [pyGuardPoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGuardPoint-0.7.3.tar.gz tmp/pyGuardPoint-0.7.4.tar.gz --markdown 20230413/p/pyGuardPoint/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-13 12:37:56] INFO root fetch - processPackages [macrometa-source-snowflake]: Start processing: arkitekt
+[2023-04-13 12:37:56] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-04-13 12:37:56] INFO root fetch - processPackages [arkitekt]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-13 12:37:56] INFO root fetch - processPackages [arkitekt]: executing diffoscope
+[2023-04-13 12:37:56] INFO root fetch - processPackages [arkitekt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkitekt-0.4.8.tar.gz tmp/arkitekt-0.4.9.tar.gz --markdown 20230413/a/arkitekt/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-13 12:37:56] INFO root fetch - processPackages [utbot-executor]: Start processing: c2cciutils
+[2023-04-13 12:37:56] INFO root fetch - main [MainThread]: End processing [utbot-executor]: success
+[2023-04-13 12:37:56] INFO root fetch - processPackages [SQLAlchemy-Utils]: Start processing: loxprox
+[2023-04-13 12:37:56] INFO root fetch - main [MainThread]: End processing [SQLAlchemy-Utils]: success
+[2023-04-13 12:37:56] INFO root fetch - processPackages [c2cciutils]: New version: [1.6.0.dev8] Old Version: [1.6.0.dev77]
+[2023-04-13 12:37:56] INFO root fetch - processPackages [pyGuardPoint]: Start processing: vsui-client
+[2023-04-13 12:37:56] INFO root fetch - main [MainThread]: End processing [pyGuardPoint]: success
+[2023-04-13 12:37:56] WARNING root fetch - processPackages [loxprox]: Skipping, unable to determine old version
+[2023-04-13 12:37:56] INFO root fetch - main [MainThread]: End processing [loxprox] error
+[2023-04-13 12:37:57] INFO root fetch - processPackages [vsui-client]: New version: [1.0.0] Old Version: [0.2.1]
+[2023-04-13 12:37:57] INFO root fetch - processPackages [c2cciutils]: Downloading https://files.pythonhosted.org/packages/f7/a4/0ad8431c43d3a8e11d0c57f170bb1ec22bc32a088e28db8f866d2526af3f/c2cciutils-1.6.0.dev77.tar.gz
+[2023-04-13 12:37:57] INFO root fetch - main [MainThread]: End processing [mikro]: success
+[2023-04-13 12:37:57] INFO root fetch - processPackages [vsui-client]: Downloading https://files.pythonhosted.org/packages/d2/a5/9ed73193881138518a5c85ccaff64ba3d9ca59e7524f1f3985e0f77b84f3/vsui_client-0.2.1.tar.gz
+[2023-04-13 12:37:57] INFO root fetch - processPackages [vsui-client]: Downloading https://files.pythonhosted.org/packages/8f/08/44d8b8f253bafbd6196d75c654bf759fd94944769671b3ea53bf49694f2d/vsui_client-1.0.0.tar.gz
+[2023-04-13 12:37:57] INFO root fetch - processPackages [vsui-client]: executing diffoscope
+[2023-04-13 12:37:57] INFO root fetch - processPackages [vsui-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsui_client-0.2.1.tar.gz tmp/vsui_client-1.0.0.tar.gz --markdown 20230413/v/vsui-client/0.2.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-13 12:37:57] INFO root fetch - main [MainThread]: End processing [arkitekt]: success
+[2023-04-13 12:37:57] INFO root fetch - processPackages [c2cciutils]: Downloading https://files.pythonhosted.org/packages/85/ac/438a8d47b9773c665dfa7ed618436075e474a44520762bf53561424ea021/c2cciutils-1.6.0.dev8.tar.gz
+[2023-04-13 12:37:57] WARNING root fetch - processPackages [c2cciutils]: Skipping package: exceeds size limit 12821161>=10485760
+[2023-04-13 12:37:57] INFO root fetch - main [MainThread]: End processing [c2cciutils] error
+[2023-04-13 12:37:58] INFO root fetch - main [MainThread]: End processing [vsui-client]: success
+[2023-04-13 12:37:58] INFO root fetch - main [MainThread]: Store serial: [17690686]
