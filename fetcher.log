@@ -7890,3 +7890,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 06:49:20] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-l10n-brazil]: success
 [2023-04-13 06:49:33] INFO root fetch - main [MainThread]: End processing [streamlit-chat-animated]: success
 [2023-04-13 06:49:33] INFO root fetch - main [MainThread]: Store serial: [17687070]
+[2023-04-13 06:54:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687070]
+[2023-04-13 06:54:40] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-13 06:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: katalytic-files
+[2023-04-13 06:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloudlanguagetools
+[2023-04-13 06:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: volsite-postgres-common
+[2023-04-13 06:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: legal-documents-cn
+[2023-04-13 06:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gggifcheck
+[2023-04-13 06:54:40] INFO root fetch - processPackages [legal-documents-cn]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-13 06:54:40] INFO root fetch - processPackages [katalytic-files]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 06:54:40] INFO root fetch - processPackages [cloudlanguagetools]: New version: [5.2] Old Version: [5.1]
+[2023-04-13 06:54:40] INFO root fetch - processPackages [volsite-postgres-common]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 06:54:40] WARNING root fetch - processPackages [gggifcheck]: Skipping, unable to determine old version
+[2023-04-13 06:54:40] INFO root fetch - processPackages [gggifcheck]: Start processing: realnet
+[2023-04-13 06:54:40] INFO root fetch - main [MainThread]: End processing [gggifcheck] error
+[2023-04-13 06:54:40] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-13 06:54:40] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.3.8.tar.gz tmp/katalytic-files-0.3.9.tar.gz --markdown 20230413/k/katalytic-files/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 06:54:40] INFO root fetch - processPackages [realnet]: New version: [0.0.9] Old Version: [0.0.83]
+[2023-04-13 06:54:40] INFO root fetch - processPackages [volsite-postgres-common]: Downloading https://files.pythonhosted.org/packages/a9/48/ece41cdd1f36d5b821f07299b965387a375ef3ddd0556318e57ad9018c7c/volsite_postgres_common-0.1.8.tar.gz
+[2023-04-13 06:54:40] INFO root fetch - processPackages [legal-documents-cn]: Downloading https://files.pythonhosted.org/packages/40/a3/f4faf5d30b8023cefb4f8e6effbb69ad57365aad8278a12d15d5c0e135d0/legal_documents_cn-0.0.7.tar.gz
+[2023-04-13 06:54:40] INFO root fetch - processPackages [cloudlanguagetools]: Downloading https://files.pythonhosted.org/packages/35/8b/e1d6960602073967c7227f7ff927e7150ea2fad0ec0eb5d1a4eb5bdafd8c/cloudlanguagetools-5.1.tar.gz
+[2023-04-13 06:54:40] INFO root fetch - processPackages [realnet]: executing diffoscope
+[2023-04-13 06:54:40] INFO root fetch - processPackages [realnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realnet-0.0.83.tar.gz tmp/realnet-0.0.9.tar.gz --markdown 20230413/r/realnet/0.0.83-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 06:54:41] INFO root fetch - processPackages [cloudlanguagetools]: Downloading https://files.pythonhosted.org/packages/8d/a9/cba9fdc09e12abbd754804dcf6bf5356c7c0adde80d6d607b1e9aa9228bf/cloudlanguagetools-5.2.tar.gz
+[2023-04-13 06:54:41] INFO root fetch - processPackages [cloudlanguagetools]: executing diffoscope
+[2023-04-13 06:54:41] INFO root fetch - processPackages [cloudlanguagetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudlanguagetools-5.1.tar.gz tmp/cloudlanguagetools-5.2.tar.gz --markdown 20230413/c/cloudlanguagetools/5.1-5.2/diff.md --exclude *.pyd
+[2023-04-13 06:54:41] INFO root fetch - processPackages [legal-documents-cn]: Downloading https://files.pythonhosted.org/packages/1b/db/4d359b00c2b8d5df6a4d5cbd10a46868613b822e5f9307203a983d3010df/legal_documents_cn-0.0.8.tar.gz
+[2023-04-13 06:54:41] INFO root fetch - processPackages [volsite-postgres-common]: Downloading https://files.pythonhosted.org/packages/ff/03/668bfd84cd84ef92e37f65f495239d8be55d05abd92dc4bd35f340822fce/volsite_postgres_common-0.1.9.tar.gz
+[2023-04-13 06:54:41] INFO root fetch - processPackages [legal-documents-cn]: executing diffoscope
+[2023-04-13 06:54:41] INFO root fetch - processPackages [legal-documents-cn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legal_documents_cn-0.0.7.tar.gz tmp/legal_documents_cn-0.0.8.tar.gz --markdown 20230413/l/legal-documents-cn/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-13 06:54:41] INFO root fetch - processPackages [volsite-postgres-common]: executing diffoscope
+[2023-04-13 06:54:41] INFO root fetch - processPackages [volsite-postgres-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volsite_postgres_common-0.1.8.tar.gz tmp/volsite_postgres_common-0.1.9.tar.gz --markdown 20230413/v/volsite-postgres-common/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 06:54:41] INFO root fetch - processPackages [katalytic-files]: Start processing: happydomain
+[2023-04-13 06:54:41] INFO root fetch - main [MainThread]: End processing [katalytic-files]: success
+[2023-04-13 06:54:41] INFO root fetch - processPackages [happydomain]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-13 06:54:41] INFO root fetch - processPackages [happydomain]: executing diffoscope
+[2023-04-13 06:54:41] INFO root fetch - processPackages [happydomain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/happydomain-0.0.3.tar.gz tmp/happydomain-0.0.4.tar.gz --markdown 20230413/h/happydomain/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-13 06:54:42] INFO root fetch - main [MainThread]: End processing [realnet]: success
+[2023-04-13 06:54:42] INFO root fetch - main [MainThread]: End processing [cloudlanguagetools]: success
+[2023-04-13 06:54:42] INFO root fetch - main [MainThread]: End processing [volsite-postgres-common]: success
+[2023-04-13 06:54:43] INFO root fetch - main [MainThread]: End processing [happydomain]: success
+[2023-04-13 06:54:43] INFO root fetch - main [MainThread]: End processing [legal-documents-cn]: success
+[2023-04-13 06:54:43] INFO root fetch - main [MainThread]: Store serial: [17687101]
