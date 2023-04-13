@@ -5759,3 +5759,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 03:44:58] INFO root fetch - main [MainThread]: End processing [alibabacloud-eventbridge20200401]: success
 [2023-04-13 03:45:02] INFO root fetch - main [MainThread]: End processing [featureform]: success
 [2023-04-13 03:45:02] INFO root fetch - main [MainThread]: Store serial: [17685749]
+[2023-04-13 03:50:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17685749]
+[2023-04-13 03:50:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 03:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: featureform
+[2023-04-13 03:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multiPrime
+[2023-04-13 03:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bdating-common
+[2023-04-13 03:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thetadata
+[2023-04-13 03:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mb-pytorch
+[2023-04-13 03:50:09] INFO root fetch - processPackages [bdating-common]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 03:50:09] INFO root fetch - processPackages [featureform]: New version: [1.7.3rc4] Old Version: [1.7.3rc3]
+[2023-04-13 03:50:09] INFO root fetch - processPackages [multiPrime]: New version: [2.3.8] Old Version: [2.3.7]
+[2023-04-13 03:50:09] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304130150] Old Version: [1.0.202304120859]
+[2023-04-13 03:50:09] INFO root fetch - processPackages [thetadata]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 03:50:09] INFO root fetch - processPackages [bdating-common]: executing diffoscope
+[2023-04-13 03:50:09] INFO root fetch - processPackages [bdating-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdating-common-0.9.8.tar.gz tmp/bdating-common-0.9.9.tar.gz --markdown 20230413/b/bdating-common/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 03:50:09] INFO root fetch - processPackages [featureform]: Downloading https://files.pythonhosted.org/packages/f1/e9/51bb02d700160ac2e0f592de34b487fcdf5d9df5892e8ecd45c59193808c/featureform-1.7.3rc3.tar.gz
+[2023-04-13 03:50:09] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/24/22/939e36d3ef18a26a4d55f5f7c04347aa7aa9f3d52d44a3454d1cb2273c70/mb_pytorch-1.0.202304130150-py3-none-any.whl
+[2023-04-13 03:50:09] INFO root fetch - processPackages [multiPrime]: Downloading https://files.pythonhosted.org/packages/89/bc/835723f7b21bc8c44818151f6836b337b20d88c2dc7589eb40db5190cc87/multiPrime-2.3.8.tar.gz
+[2023-04-13 03:50:09] INFO root fetch - processPackages [thetadata]: Downloading https://files.pythonhosted.org/packages/79/7e/4f786611b61e2fc0af1c22a6298b1110cfa667f2970df7f9f1b7319d9da8/thetadata-0.9.0.tar.gz
+[2023-04-13 03:50:09] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-13 03:50:09] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304120859-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304130150-py3-none-any.whl.zip --markdown 20230413/m/mb-pytorch/1.0.202304120859-1.0.202304130150/diff.md --exclude *.pyd
+[2023-04-13 03:50:09] INFO root fetch - processPackages [multiPrime]: executing diffoscope
+[2023-04-13 03:50:09] INFO root fetch - processPackages [multiPrime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiPrime-2.3.7.tar.gz tmp/multiPrime-2.3.8.tar.gz --markdown 20230413/m/multiPrime/2.3.7-2.3.8/diff.md --exclude *.pyd
+[2023-04-13 03:50:09] INFO root fetch - processPackages [thetadata]: Downloading https://files.pythonhosted.org/packages/2a/67/cad0119baba8d0d8ad90a0de1677a09b0a934eb746d80a374be891c50bb0/thetadata-0.9.1.tar.gz
+[2023-04-13 03:50:09] INFO root fetch - processPackages [featureform]: Downloading https://files.pythonhosted.org/packages/cc/2b/fba2419cb52f61ef893b18e08e1b453337fe8f5a93ff2a9e27be3829374f/featureform-1.7.3rc4.tar.gz
+[2023-04-13 03:50:10] INFO root fetch - processPackages [thetadata]: executing diffoscope
+[2023-04-13 03:50:10] INFO root fetch - processPackages [thetadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thetadata-0.9.0.tar.gz tmp/thetadata-0.9.1.tar.gz --markdown 20230413/t/thetadata/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 03:50:10] INFO root fetch - processPackages [featureform]: executing diffoscope
+[2023-04-13 03:50:10] INFO root fetch - processPackages [featureform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featureform-1.7.3rc3.tar.gz tmp/featureform-1.7.3rc4.tar.gz --markdown 20230413/f/featureform/1.7.3rc3-1.7.3rc4/diff.md --exclude *.pyd
+[2023-04-13 03:50:10] INFO root fetch - processPackages [mb-pytorch]: Start processing: twitter-api-client
+[2023-04-13 03:50:10] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-13 03:50:10] INFO root fetch - processPackages [twitter-api-client]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-13 03:50:10] INFO root fetch - processPackages [multiPrime]: Start processing: NEMO-billing
+[2023-04-13 03:50:10] INFO root fetch - main [MainThread]: End processing [multiPrime]: success
+[2023-04-13 03:50:10] INFO root fetch - processPackages [NEMO-billing]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-13 03:50:11] INFO root fetch - processPackages [bdating-common]: Start processing: featureform
+[2023-04-13 03:50:11] INFO root fetch - main [MainThread]: End processing [bdating-common]: success
+[2023-04-13 03:50:11] INFO root fetch - processPackages [featureform]: New version: [1.7.3rc4] Old Version: [1.7.3rc3]
+[2023-04-13 03:50:11] INFO root fetch - processPackages [featureform]: executing diffoscope
+[2023-04-13 03:50:11] INFO root fetch - processPackages [featureform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featureform-1.7.3rc3.tar.gz tmp/featureform-1.7.3rc4.tar.gz --markdown 20230413/f/featureform/1.7.3rc3-1.7.3rc4/diff.md --exclude *.pyd
+[2023-04-13 03:50:11] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/5d/b0/3241fb5a0610e5d6848efbf439635769ea5e851b0a9e16bb25a670ab85e7/twitter-api-client-0.6.1.tar.gz
+[2023-04-13 03:50:11] INFO root fetch - processPackages [thetadata]: Start processing: azure-storage-blob
+[2023-04-13 03:50:11] INFO root fetch - main [MainThread]: End processing [thetadata]: success
+[2023-04-13 03:50:11] INFO root fetch - processPackages [NEMO-billing]: Downloading https://files.pythonhosted.org/packages/32/41/63b8142ac70e2cb96abc946aab3af28a7e2f1656a5eaed5a875232a524bd/NEMO_billing-2.0.1-py3-none-any.whl
+[2023-04-13 03:50:11] INFO root fetch - processPackages [azure-storage-blob]: New version: [2.1.0] Old Version: [2.0.1]
+[2023-04-13 03:50:11] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-13 03:50:11] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.6.0.tar.gz tmp/twitter-api-client-0.6.1.tar.gz --markdown 20230413/t/twitter-api-client/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-13 03:50:11] INFO root fetch - processPackages [azure-storage-blob]: Downloading https://files.pythonhosted.org/packages/c5/34/d8f27776120042fec155c906020747981035a243fc3496798c89d0bd0df7/azure-storage-blob-2.0.1.tar.gz
+[2023-04-13 03:50:11] INFO root fetch - processPackages [NEMO-billing]: executing diffoscope
+[2023-04-13 03:50:11] INFO root fetch - processPackages [NEMO-billing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_billing-2.0.0-py3-none-any.whl.zip tmp/NEMO_billing-2.0.1-py3-none-any.whl.zip --markdown 20230413/N/NEMO-billing/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-13 03:50:11] INFO root fetch - processPackages [azure-storage-blob]: Downloading https://files.pythonhosted.org/packages/0e/76/bd6eadc0f2b481bcfb43c37caacf77372401fc013c1431861561b794e06a/azure-storage-blob-2.1.0.tar.gz
+[2023-04-13 03:50:11] INFO root fetch - processPackages [azure-storage-blob]: executing diffoscope
+[2023-04-13 03:50:11] INFO root fetch - processPackages [azure-storage-blob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-storage-blob-2.0.1.tar.gz tmp/azure-storage-blob-2.1.0.tar.gz --markdown 20230413/a/azure-storage-blob/2.0.1-2.1.0/diff.md --exclude *.pyd
+[2023-04-13 03:50:12] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-04-13 03:50:13] INFO root fetch - main [MainThread]: End processing [NEMO-billing]: success
+[2023-04-13 03:50:13] INFO root fetch - main [MainThread]: End processing [azure-storage-blob]: success
+[2023-04-13 03:50:14] INFO root fetch - main [MainThread]: End processing [featureform]: success
+[2023-04-13 03:50:16] INFO root fetch - main [MainThread]: End processing [featureform]: success
+[2023-04-13 03:50:16] INFO root fetch - main [MainThread]: Store serial: [17685773]
