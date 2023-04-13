@@ -13332,3 +13332,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 12:16:07] INFO root fetch - main [MainThread]: End processing [neutron-lib]: success
 [2023-04-13 12:16:18] INFO root fetch - main [MainThread]: End processing [manila]: success
 [2023-04-13 12:16:18] INFO root fetch - main [MainThread]: Store serial: [17690470]
+[2023-04-13 12:21:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690470]
+[2023-04-13 12:21:26] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-13 12:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cbig-network-correspondence
+[2023-04-13 12:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vnpy-binance-pro
+[2023-04-13 12:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swh.web
+[2023-04-13 12:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ftd2xx
+[2023-04-13 12:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pm4edu
+[2023-04-13 12:21:26] WARNING root fetch - processPackages [vnpy-binance-pro]: Skipping, unable to determine old version
+[2023-04-13 12:21:26] INFO root fetch - processPackages [vnpy-binance-pro]: Start processing: python-manilaclient
+[2023-04-13 12:21:26] INFO root fetch - main [MainThread]: End processing [vnpy-binance-pro] error
+[2023-04-13 12:21:26] INFO root fetch - processPackages [cbig-network-correspondence]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 12:21:26] WARNING root fetch - processPackages [pm4edu]: Skipping, unable to determine old version
+[2023-04-13 12:21:26] INFO root fetch - processPackages [pm4edu]: Start processing: dissect.target
+[2023-04-13 12:21:26] INFO root fetch - main [MainThread]: End processing [pm4edu] error
+[2023-04-13 12:21:26] INFO root fetch - processPackages [ftd2xx]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-13 12:21:26] INFO root fetch - processPackages [python-manilaclient]: New version: [4.4.0] Old Version: [4.3.0]
+[2023-04-13 12:21:26] INFO root fetch - processPackages [swh.web]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-13 12:21:26] INFO root fetch - processPackages [dissect.target]: New version: [3.9.dev9] Old Version: [3.9.dev8]
+[2023-04-13 12:21:26] INFO root fetch - processPackages [swh.web]: Downloading https://files.pythonhosted.org/packages/66/15/6bc04af12a23337bb393e57e21ffba928a503bf0e3a5106bea151682da0d/swh.web-0.2.8.tar.gz
+[2023-04-13 12:21:26] INFO root fetch - processPackages [dissect.target]: Downloading https://files.pythonhosted.org/packages/b1/a4/24f9ce2eb6a1913b82598a01b68b634c9fe5535a9484bff3d7d56a0ae929/dissect.target-3.9.dev8.tar.gz
+[2023-04-13 12:21:26] INFO root fetch - processPackages [python-manilaclient]: executing diffoscope
+[2023-04-13 12:21:26] INFO root fetch - processPackages [python-manilaclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-manilaclient-4.3.0.tar.gz tmp/python-manilaclient-4.4.0.tar.gz --markdown 20230413/p/python-manilaclient/4.3.0-4.4.0/diff.md --exclude *.pyd
+[2023-04-13 12:21:26] WARNING root fetch - processPackages [swh.web]: Skipping package: exceeds size limit 13132382>=10485760
+[2023-04-13 12:21:26] INFO root fetch - processPackages [swh.web]: Start processing: pytac
+[2023-04-13 12:21:26] INFO root fetch - main [MainThread]: End processing [swh.web] error
+[2023-04-13 12:21:26] WARNING root fetch - processPackages [dissect.target]: Skipping package: exceeds size limit 63555307>=10485760
+[2023-04-13 12:21:26] INFO root fetch - processPackages [dissect.target]: Start processing: python-project-structure
+[2023-04-13 12:21:26] INFO root fetch - main [MainThread]: End processing [dissect.target] error
+[2023-04-13 12:21:26] INFO root fetch - processPackages [pytac]: New version: [0.6.0b1] Old Version: [0.6.0]
+[2023-04-13 12:21:26] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.9b7] Old Version: [0.8.9b0]
+[2023-04-13 12:21:26] INFO root fetch - processPackages [ftd2xx]: Downloading https://files.pythonhosted.org/packages/9c/4a/1dd58f85f4f148cf06f34f8ffb22c62c058dc63630e97cfd6eefec3860c2/ftd2xx-1.3.1.tar.gz
+[2023-04-13 12:21:26] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-13 12:21:26] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.9b0.tar.gz tmp/python-project-structure-0.8.9b7.tar.gz --markdown 20230413/p/python-project-structure/0.8.9b0-0.8.9b7/diff.md --exclude *.pyd
+[2023-04-13 12:21:26] INFO root fetch - processPackages [cbig-network-correspondence]: Downloading https://files.pythonhosted.org/packages/69/0f/b56c7a7a71645bdac2866cb95e23b330fb79a40ac60bf04ecb8e6b733d19/cbig_network_correspondence-0.0.5.tar.gz
+[2023-04-13 12:21:26] INFO root fetch - processPackages [pytac]: Downloading https://files.pythonhosted.org/packages/aa/22/03a4a8ee792bb37a1e0f39046abc19516fcc8184a20ca8e03b812af39239/pytac-0.6.0.tar.gz
+[2023-04-13 12:21:26] INFO root fetch - processPackages [ftd2xx]: Downloading https://files.pythonhosted.org/packages/ac/54/1638173135724b5d913c17e297930de2bd961a0e768680cb15ea3e745e90/ftd2xx-1.3.2.tar.gz
+[2023-04-13 12:21:26] INFO root fetch - processPackages [cbig-network-correspondence]: executing diffoscope
+[2023-04-13 12:21:26] INFO root fetch - processPackages [cbig-network-correspondence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbig_network_correspondence-0.0.4.tar.gz tmp/cbig_network_correspondence-0.0.5.tar.gz --markdown 20230413/c/cbig-network-correspondence/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 12:21:26] INFO root fetch - processPackages [pytac]: executing diffoscope
+[2023-04-13 12:21:26] INFO root fetch - processPackages [pytac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytac-0.6.0.tar.gz tmp/pytac-0.6.0b1.tar.gz --markdown 20230413/p/pytac/0.6.0-0.6.0b1/diff.md --exclude *.pyd
+[2023-04-13 12:21:27] INFO root fetch - processPackages [ftd2xx]: executing diffoscope
+[2023-04-13 12:21:27] INFO root fetch - processPackages [ftd2xx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ftd2xx-1.3.1.tar.gz tmp/ftd2xx-1.3.2.tar.gz --markdown 20230413/f/ftd2xx/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-13 12:21:27] INFO root fetch - processPackages [cbig-network-correspondence]: Start processing: gm
+[2023-04-13 12:21:27] INFO root fetch - main [MainThread]: End processing [cbig-network-correspondence]: success
+[2023-04-13 12:21:27] INFO root fetch - processPackages [gm]: New version: [3.0.153] Old Version: [3.0.152]
+[2023-04-13 12:21:28] INFO root fetch - processPackages [ftd2xx]: Start processing: manila
+[2023-04-13 12:21:28] INFO root fetch - main [MainThread]: End processing [ftd2xx]: success
+[2023-04-13 12:21:28] INFO root fetch - processPackages [manila]: New version: [9.1.5] Old Version: [9.1.4]
+[2023-04-13 12:21:28] INFO root fetch - processPackages [gm]: Downloading https://files.pythonhosted.org/packages/40/5a/7175bb8854ef59063f3c24921bb1945c94d95d9c7b4ca24cdccfc96da739/gm-3.0.153-cp39-cp39-win_amd64.whl
+[2023-04-13 12:21:28] INFO root fetch - main [MainThread]: End processing [python-project-structure]: success
+[2023-04-13 12:21:28] INFO root fetch - processPackages [manila]: executing diffoscope
+[2023-04-13 12:21:28] INFO root fetch - processPackages [manila]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manila-9.1.4.tar.gz tmp/manila-9.1.5.tar.gz --markdown 20230413/m/manila/9.1.4-9.1.5/diff.md --exclude *.pyd
+[2023-04-13 12:21:28] INFO root fetch - processPackages [gm]: executing diffoscope
+[2023-04-13 12:21:28] INFO root fetch - processPackages [gm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gm-3.0.152-cp39-cp39-win_amd64.whl.zip tmp/gm-3.0.153-cp39-cp39-win_amd64.whl.zip --markdown 20230413/g/gm/3.0.152-3.0.153/diff.md --exclude *.pyd
+[2023-04-13 12:21:29] INFO root fetch - main [MainThread]: End processing [pytac]: success
+[2023-04-13 12:21:29] INFO root fetch - main [MainThread]: End processing [python-manilaclient]: success
+[2023-04-13 12:21:30] INFO root fetch - main [MainThread]: End processing [gm]: success
+[2023-04-13 12:21:56] INFO root fetch - main [MainThread]: End processing [manila]: success
+[2023-04-13 12:21:56] INFO root fetch - main [MainThread]: Store serial: [17690535]
