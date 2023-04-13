@@ -21627,3 +21627,98 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 17:50:17] INFO root fetch - main [MainThread]: End processing [att-mlops]: success
 [2023-04-13 17:50:18] INFO root fetch - main [MainThread]: End processing [motu-profiler]: success
 [2023-04-13 17:50:18] INFO root fetch - main [MainThread]: Store serial: [17695001]
+[2023-04-13 17:55:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17695001]
+[2023-04-13 17:55:25] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-13 17:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hcai-nova-server-nightly
+[2023-04-13 17:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yutto
+[2023-04-13 17:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: google-cloud-aiplatform
+[2023-04-13 17:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imscript
+[2023-04-13 17:55:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airbyte-protocol-models
+[2023-04-13 17:55:25] WARNING root fetch - processPackages [imscript]: Skipping, unable to determine old version
+[2023-04-13 17:55:25] INFO root fetch - processPackages [imscript]: Start processing: powerplayer
+[2023-04-13 17:55:25] INFO root fetch - main [MainThread]: End processing [imscript] error
+[2023-04-13 17:55:25] INFO root fetch - processPackages [airbyte-protocol-models]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 17:55:25] INFO root fetch - processPackages [google-cloud-aiplatform]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-13 17:55:25] INFO root fetch - processPackages [yutto]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2023-04-13 17:55:25] INFO root fetch - processPackages [powerplayer]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 17:55:26] INFO root fetch - processPackages [hcai-nova-server-nightly]: New version: [0.1.3.dev202304131554] Old Version: [0.1.3.dev202304121233]
+[2023-04-13 17:55:26] INFO root fetch - processPackages [airbyte-protocol-models]: executing diffoscope
+[2023-04-13 17:55:26] INFO root fetch - processPackages [airbyte-protocol-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte_protocol_models-1.0.0.tar.gz tmp/airbyte_protocol_models-1.0.1.tar.gz --markdown 20230413/a/airbyte-protocol-models/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 17:55:26] INFO root fetch - processPackages [google-cloud-aiplatform]: Downloading https://files.pythonhosted.org/packages/87/ed/ff22ee773fb07107589eec61c3659904016820ba5aed048a68bf3eba44a9/google-cloud-aiplatform-1.8.1.tar.gz
+[2023-04-13 17:55:26] INFO root fetch - processPackages [yutto]: Downloading https://files.pythonhosted.org/packages/d4/82/afc8ceecddf536999aae2b829c18ee41e41e7f2ca51c51e1f0435f005ea2/yutto-2.0.0b8.tar.gz
+[2023-04-13 17:55:26] INFO root fetch - processPackages [powerplayer]: Downloading https://files.pythonhosted.org/packages/1a/07/12adee8f61d74afe658571926b8ab7f01ee0b8c0256540b17caecbba913a/powerplayer-0.2.0.tar.gz
+[2023-04-13 17:55:26] INFO root fetch - processPackages [hcai-nova-server-nightly]: Downloading https://files.pythonhosted.org/packages/72/31/938815e9c4a5b545b9e562686a2a34f76af2f167cf3f09c3eeb7a613f548/hcai-nova-server-nightly-0.1.3.dev202304131554.tar.gz
+[2023-04-13 17:55:26] INFO root fetch - processPackages [powerplayer]: Downloading https://files.pythonhosted.org/packages/1b/41/e982764a4b954478e771ef2eea699c31a9e3f35cf3f29aeaecf65395ca5a/powerplayer-0.2.1.tar.gz
+[2023-04-13 17:55:26] INFO root fetch - processPackages [hcai-nova-server-nightly]: executing diffoscope
+[2023-04-13 17:55:26] INFO root fetch - processPackages [hcai-nova-server-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcai-nova-server-nightly-0.1.3.dev202304121233.tar.gz tmp/hcai-nova-server-nightly-0.1.3.dev202304131554.tar.gz --markdown 20230413/h/hcai-nova-server-nightly/0.1.3.dev202304121233-0.1.3.dev202304131554/diff.md --exclude *.pyd
+[2023-04-13 17:55:26] INFO root fetch - processPackages [powerplayer]: executing diffoscope
+[2023-04-13 17:55:26] INFO root fetch - processPackages [powerplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/powerplayer-0.2.0.tar.gz tmp/powerplayer-0.2.1.tar.gz --markdown 20230413/p/powerplayer/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 17:55:26] INFO root fetch - processPackages [yutto]: Downloading https://files.pythonhosted.org/packages/cf/2d/5f85c6e137c3e526cd1fd5e829320295112a8a5dde8e96c21333e0666f73/yutto-2.0.0b9.tar.gz
+[2023-04-13 17:55:26] INFO root fetch - processPackages [google-cloud-aiplatform]: Downloading https://files.pythonhosted.org/packages/4d/c4/93fac91a85d9ee19de83e183b5b8980a3fe9e3a193e1a27c3574c7899c9c/google-cloud-aiplatform-1.9.0.tar.gz
+[2023-04-13 17:55:27] INFO root fetch - processPackages [yutto]: executing diffoscope
+[2023-04-13 17:55:27] INFO root fetch - processPackages [yutto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yutto-2.0.0b8.tar.gz tmp/yutto-2.0.0b9.tar.gz --markdown 20230413/y/yutto/2.0.0b8-2.0.0b9/diff.md --exclude *.pyd
+[2023-04-13 17:55:27] INFO root fetch - processPackages [airbyte-protocol-models]: Start processing: odoo-addon-partner-time-to-pay
+[2023-04-13 17:55:27] INFO root fetch - main [MainThread]: End processing [airbyte-protocol-models]: success
+[2023-04-13 17:55:27] INFO root fetch - processPackages [odoo-addon-partner-time-to-pay]: New version: [15.0.1.2.0] Old Version: [15.0.1.1.0]
+[2023-04-13 17:55:27] INFO root fetch - processPackages [odoo-addon-partner-time-to-pay]: Downloading https://files.pythonhosted.org/packages/57/09/cb9e0daef29a8afaaf4d0012ad17fc3c5fd5245306d745316095163d078b/odoo_addon_partner_time_to_pay-15.0.1.1.0-py3-none-any.whl
+[2023-04-13 17:55:27] INFO root fetch - processPackages [odoo-addon-partner-time-to-pay]: Downloading https://files.pythonhosted.org/packages/48/76/89c8366f3864f03eeb70b2b9230f5027bc9d1758035770bf2b42504378d8/odoo_addon_partner_time_to_pay-15.0.1.2.0-py3-none-any.whl
+[2023-04-13 17:55:27] INFO root fetch - processPackages [google-cloud-aiplatform]: executing diffoscope
+[2023-04-13 17:55:27] INFO root fetch - processPackages [google-cloud-aiplatform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-aiplatform-1.8.1.tar.gz tmp/google-cloud-aiplatform-1.9.0.tar.gz --markdown 20230413/g/google-cloud-aiplatform/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-13 17:55:27] INFO root fetch - processPackages [hcai-nova-server-nightly]: Start processing: hcai-datasets-nightly
+[2023-04-13 17:55:27] INFO root fetch - main [MainThread]: End processing [hcai-nova-server-nightly]: success
+[2023-04-13 17:55:27] INFO root fetch - processPackages [odoo-addon-partner-time-to-pay]: executing diffoscope
+[2023-04-13 17:55:27] INFO root fetch - processPackages [odoo-addon-partner-time-to-pay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_time_to_pay-15.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_partner_time_to_pay-15.0.1.2.0-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-partner-time-to-pay/15.0.1.1.0-15.0.1.2.0/diff.md --exclude *.pyd
+[2023-04-13 17:55:27] INFO root fetch - processPackages [hcai-datasets-nightly]: New version: [0.1.7.dev202304131555] Old Version: [0.1.7.dev202304041046]
+[2023-04-13 17:55:28] INFO root fetch - processPackages [hcai-datasets-nightly]: Downloading https://files.pythonhosted.org/packages/5a/a2/6be12d1c99efdb9c61ae7687e064b02853df87bf3d0af86d831ea681c36e/hcai-datasets-nightly-0.1.7.dev202304041046.tar.gz
+[2023-04-13 17:55:28] INFO root fetch - processPackages [hcai-datasets-nightly]: Downloading https://files.pythonhosted.org/packages/bd/5d/19b60a4f7c75e89a60beb98296bfc6d83c4c2d8153a82dab46c350c9f1af/hcai-datasets-nightly-0.1.7.dev202304131555.tar.gz
+[2023-04-13 17:55:28] INFO root fetch - processPackages [yutto]: Start processing: hyper-shell
+[2023-04-13 17:55:28] INFO root fetch - main [MainThread]: End processing [yutto]: success
+[2023-04-13 17:55:28] INFO root fetch - processPackages [hyper-shell]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-04-13 17:55:28] INFO root fetch - processPackages [hyper-shell]: Downloading https://files.pythonhosted.org/packages/07/18/8fabd0cb13e555cb5cc70b840a48c982e3267f5cf8ead390dd0f170acd48/hyper-shell-2.2.0.tar.gz
+[2023-04-13 17:55:28] INFO root fetch - processPackages [hcai-datasets-nightly]: executing diffoscope
+[2023-04-13 17:55:28] INFO root fetch - processPackages [hcai-datasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcai-datasets-nightly-0.1.7.dev202304041046.tar.gz tmp/hcai-datasets-nightly-0.1.7.dev202304131555.tar.gz --markdown 20230413/h/hcai-datasets-nightly/0.1.7.dev202304041046-0.1.7.dev202304131555/diff.md --exclude *.pyd
+[2023-04-13 17:55:29] INFO root fetch - processPackages [odoo-addon-partner-time-to-pay]: Start processing: nonebot-plugin-l4d2-server
+[2023-04-13 17:55:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-time-to-pay]: success
+[2023-04-13 17:55:29] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-13 17:55:29] INFO root fetch - processPackages [hyper-shell]: Downloading https://files.pythonhosted.org/packages/c4/a7/47440f73802fcf090550d23a79387facbe54e1b1e5f5b284cd5f5dc5bd70/hyper-shell-2.3.0.tar.gz
+[2023-04-13 17:55:29] INFO root fetch - processPackages [hyper-shell]: executing diffoscope
+[2023-04-13 17:55:29] INFO root fetch - processPackages [hyper-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyper-shell-2.2.0.tar.gz tmp/hyper-shell-2.3.0.tar.gz --markdown 20230413/h/hyper-shell/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-04-13 17:55:29] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: Downloading https://files.pythonhosted.org/packages/36/d3/367839d605c9ff6b373f8da84dcb1513f8509545f9ef03bd166f2509eedd/nonebot_plugin_l4d2_server-0.4.7.tar.gz
+[2023-04-13 17:55:29] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: executing diffoscope
+[2023-04-13 17:55:29] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_l4d2_server-0.4.6.tar.gz tmp/nonebot_plugin_l4d2_server-0.4.7.tar.gz --markdown 20230413/n/nonebot-plugin-l4d2-server/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-13 17:55:30] INFO root fetch - processPackages [hyper-shell]: Start processing: aa-discord-announcements
+[2023-04-13 17:55:30] INFO root fetch - main [MainThread]: End processing [hyper-shell]: success
+[2023-04-13 17:55:30] INFO root fetch - processPackages [aa-discord-announcements]: New version: [1.0.0] Old Version: [0.0.2]
+[2023-04-13 17:55:31] INFO root fetch - processPackages [aa-discord-announcements]: Downloading https://files.pythonhosted.org/packages/79/99/e51cdbdfacfabc141e9ce38279da158b6a3aefdd24539c333316af822cad/aa_discord_announcements-0.0.2.tar.gz
+[2023-04-13 17:55:31] INFO root fetch - processPackages [powerplayer]: Start processing: bovine
+[2023-04-13 17:55:31] INFO root fetch - main [MainThread]: End processing [powerplayer]: success
+[2023-04-13 17:55:31] INFO root fetch - processPackages [bovine]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-13 17:55:31] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: Start processing: jrpyprogramming
+[2023-04-13 17:55:31] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-l4d2-server]: success
+[2023-04-13 17:55:31] INFO root fetch - processPackages [jrpyprogramming]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 17:55:31] INFO root fetch - processPackages [aa-discord-announcements]: Downloading https://files.pythonhosted.org/packages/f6/ec/889b9b8f4f1772e4900ad1c475a394985926e3a917733ca16cd1893ac662/aa_discord_announcements-1.0.0.tar.gz
+[2023-04-13 17:55:31] INFO root fetch - processPackages [jrpyprogramming]: Downloading https://files.pythonhosted.org/packages/b2/3b/088d9871d8e4c7da15b8edba9058bac08745c145a0962b49d2c0cc97ba12/jrpyprogramming-0.1.8.tar.gz
+[2023-04-13 17:55:31] INFO root fetch - processPackages [bovine]: Downloading https://files.pythonhosted.org/packages/15/87/bf4b2a33e8fb7f120a22240367b0d4467026c11484bfe2b90d78e66d741e/bovine-0.1.0.tar.gz
+[2023-04-13 17:55:31] INFO root fetch - processPackages [aa-discord-announcements]: executing diffoscope
+[2023-04-13 17:55:31] INFO root fetch - processPackages [aa-discord-announcements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_discord_announcements-0.0.2.tar.gz tmp/aa_discord_announcements-1.0.0.tar.gz --markdown 20230413/a/aa-discord-announcements/0.0.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-13 17:55:31] INFO root fetch - processPackages [bovine]: executing diffoscope
+[2023-04-13 17:55:31] INFO root fetch - processPackages [bovine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine-0.0.9.tar.gz tmp/bovine-0.1.0.tar.gz --markdown 20230413/b/bovine/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-13 17:55:32] INFO root fetch - processPackages [hcai-datasets-nightly]: Start processing: gptchangelog
+[2023-04-13 17:55:32] INFO root fetch - main [MainThread]: End processing [hcai-datasets-nightly]: success
+[2023-04-13 17:55:32] WARNING root fetch - processPackages [gptchangelog]: Skipping, unable to determine old version
+[2023-04-13 17:55:32] INFO root fetch - processPackages [gptchangelog]: Start processing: pydeflate
+[2023-04-13 17:55:32] INFO root fetch - main [MainThread]: End processing [gptchangelog] error
+[2023-04-13 17:55:32] INFO root fetch - processPackages [jrpyprogramming]: Downloading https://files.pythonhosted.org/packages/f0/95/577eec0bec823307e91a5966965a55db60eb1b101121d80e09b5a9f47057/jrpyprogramming-0.1.9.tar.gz
+[2023-04-13 17:55:32] INFO root fetch - processPackages [pydeflate]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-04-13 17:55:32] INFO root fetch - processPackages [pydeflate]: Downloading https://files.pythonhosted.org/packages/f0/21/88a30f32091c2a4d25d2428b729dbda6af46fb1b2f2f802590eccf3e6467/pydeflate-1.3.4.tar.gz
+[2023-04-13 17:55:32] INFO root fetch - processPackages [pydeflate]: Downloading https://files.pythonhosted.org/packages/aa/90/180f7665ec2880b0c62c705f4360de7521d474d4e1a707124a48bb7405f7/pydeflate-1.3.5.tar.gz
+[2023-04-13 17:55:32] INFO root fetch - main [MainThread]: End processing [aa-discord-announcements]: success
+[2023-04-13 17:55:32] INFO root fetch - processPackages [jrpyprogramming]: executing diffoscope
+[2023-04-13 17:55:32] INFO root fetch - processPackages [jrpyprogramming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jrpyprogramming-0.1.8.tar.gz tmp/jrpyprogramming-0.1.9.tar.gz --markdown 20230413/j/jrpyprogramming/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 17:55:32] INFO root fetch - processPackages [pydeflate]: executing diffoscope
+[2023-04-13 17:55:32] INFO root fetch - processPackages [pydeflate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydeflate-1.3.4.tar.gz tmp/pydeflate-1.3.5.tar.gz --markdown 20230413/p/pydeflate/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-04-13 17:55:32] INFO root fetch - main [MainThread]: End processing [bovine]: success
+[2023-04-13 17:55:33] INFO root fetch - main [MainThread]: End processing [jrpyprogramming]: success
+[2023-04-13 17:55:34] INFO root fetch - main [MainThread]: End processing [pydeflate]: success
+[2023-04-13 17:55:36] INFO root fetch - main [MainThread]: End processing [google-cloud-aiplatform]: success
+[2023-04-13 17:55:36] INFO root fetch - main [MainThread]: Store serial: [17695058]
