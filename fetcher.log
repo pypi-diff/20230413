@@ -10638,3 +10638,125 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 10:01:23] INFO root fetch - main [MainThread]: End processing [lusid-drive-sdk-preview]: success
 [2023-04-13 10:01:23] INFO root fetch - main [MainThread]: End processing [dbsqlclone]: success
 [2023-04-13 10:01:23] INFO root fetch - main [MainThread]: Store serial: [17688708]
+[2023-04-13 10:06:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17688708]
+[2023-04-13 10:06:31] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-13 10:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cbig-network-correspondence
+[2023-04-13 10:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pcl-pangu
+[2023-04-13 10:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-stock-logistics-workflow
+[2023-04-13 10:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitlint-core
+[2023-04-13 10:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: transformers-gradients
+[2023-04-13 10:06:31] INFO root fetch - processPackages [cbig-network-correspondence]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 10:06:31] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: New version: [16.0.20230412.0] Old Version: [16.0.20230330.0]
+[2023-04-13 10:06:31] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 10:06:31] INFO root fetch - processPackages [gitlint-core]: New version: [0.20.0.dev9] Old Version: [0.20.0.dev8]
+[2023-04-13 10:06:31] INFO root fetch - processPackages [transformers-gradients]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-13 10:06:31] INFO root fetch - processPackages [cbig-network-correspondence]: Downloading https://files.pythonhosted.org/packages/ec/2f/0af259fe3e53d07d9e9f07e8760b2530fb4b727782dfd157e4c0af02af0d/cbig_network_correspondence-0.0.3.tar.gz
+[2023-04-13 10:06:31] INFO root fetch - processPackages [transformers-gradients]: Downloading https://files.pythonhosted.org/packages/de/de/3e81dab169697bc0e608c60675445f0b86c0dc18272d92ec478579623468/transformers_gradients-0.0.2.tar.gz
+[2023-04-13 10:06:31] INFO root fetch - processPackages [cbig-network-correspondence]: executing diffoscope
+[2023-04-13 10:06:31] INFO root fetch - processPackages [cbig-network-correspondence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbig_network_correspondence-0.0.2.tar.gz tmp/cbig_network_correspondence-0.0.3.tar.gz --markdown 20230413/c/cbig-network-correspondence/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 10:06:31] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: Downloading https://files.pythonhosted.org/packages/c0/c8/1541a6ceb2d1e3ba340d055d5c2990013fc21a763bd8b2f489527357161f/odoo_addons_oca_stock_logistics_workflow-16.0.20230330.0-py3-none-any.whl
+[2023-04-13 10:06:31] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 10:06:31] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 10:06:31] INFO root fetch - processPackages [gitlint-core]: executing diffoscope
+[2023-04-13 10:06:31] INFO root fetch - processPackages [gitlint-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlint_core-0.20.0.dev8.tar.gz tmp/gitlint_core-0.20.0.dev9.tar.gz --markdown 20230413/g/gitlint-core/0.20.0.dev8-0.20.0.dev9/diff.md --exclude *.pyd
+[2023-04-13 10:06:32] INFO root fetch - processPackages [transformers-gradients]: Downloading https://files.pythonhosted.org/packages/51/f1/9218a6ec6b9cb5a3b7c4fa1dbe30d374f6fed38dd71fc6ffd3b0ea3d8b2f/transformers_gradients-0.0.4.tar.gz
+[2023-04-13 10:06:32] INFO root fetch - processPackages [transformers-gradients]: executing diffoscope
+[2023-04-13 10:06:32] INFO root fetch - processPackages [transformers-gradients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformers_gradients-0.0.2.tar.gz tmp/transformers_gradients-0.0.4.tar.gz --markdown 20230413/t/transformers-gradients/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-13 10:06:32] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: Downloading https://files.pythonhosted.org/packages/02/c3/5b970bb9e902172f2844d29dbcd7a98997ca3407de9731dd1e149210dda8/odoo_addons_oca_stock_logistics_workflow-16.0.20230412.0-py3-none-any.whl
+[2023-04-13 10:06:32] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: executing diffoscope
+[2023-04-13 10:06:32] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_workflow-16.0.20230330.0-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_workflow-16.0.20230412.0-py3-none-any.whl.zip --markdown 20230413/o/odoo-addons-oca-stock-logistics-workflow/16.0.20230330.0-16.0.20230412.0/diff.md --exclude *.pyd
+[2023-04-13 10:06:33] INFO root fetch - processPackages [cbig-network-correspondence]: Start processing: gitlint
+[2023-04-13 10:06:33] INFO root fetch - main [MainThread]: End processing [cbig-network-correspondence]: success
+[2023-04-13 10:06:33] INFO root fetch - processPackages [gitlint]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-13 10:06:33] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-workflow]: Start processing: pyglove
+[2023-04-13 10:06:33] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-workflow]: success
+[2023-04-13 10:06:33] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230413] Old Version: [0.3.1.dev20230412]
+[2023-04-13 10:06:33] INFO root fetch - processPackages [gitlint]: executing diffoscope
+[2023-04-13 10:06:33] INFO root fetch - processPackages [gitlint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlint-0.8.2.tar.gz tmp/gitlint-0.9.0.tar.gz --markdown 20230413/g/gitlint/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 10:06:33] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/9c/8e/19d3ef0fec47ff7a79edb8c19c35ab935aac6ab626232db693bbdbfe611d/pyglove-0.3.1.dev20230413.tar.gz
+[2023-04-13 10:06:33] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-04-13 10:06:33] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230412.tar.gz tmp/pyglove-0.3.1.dev20230413.tar.gz --markdown 20230413/p/pyglove/0.3.1.dev20230412-0.3.1.dev20230413/diff.md --exclude *.pyd
+[2023-04-13 10:06:33] INFO root fetch - processPackages [gitlint-core]: Start processing: lupin-grognard
+[2023-04-13 10:06:33] INFO root fetch - main [MainThread]: End processing [gitlint-core]: success
+[2023-04-13 10:06:33] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0.dev9] Old Version: [1.9.0.dev8]
+[2023-04-13 10:06:33] INFO root fetch - processPackages [transformers-gradients]: Start processing: dhel
+[2023-04-13 10:06:33] INFO root fetch - main [MainThread]: End processing [transformers-gradients]: success
+[2023-04-13 10:06:33] WARNING root fetch - processPackages [dhel]: Skipping, unable to determine old version
+[2023-04-13 10:06:33] INFO root fetch - processPackages [dhel]: Start processing: cdktf
+[2023-04-13 10:06:33] INFO root fetch - main [MainThread]: End processing [dhel] error
+[2023-04-13 10:06:33] INFO root fetch - processPackages [cdktf]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-13 10:06:33] INFO root fetch - processPackages [lupin-grognard]: Downloading https://files.pythonhosted.org/packages/1d/f6/8900ca9b0f0ab31b3a6f4d912ef1d09e130fa476b669a2aede8285f31566/lupin-grognard-1.9.0.dev8.tar.gz
+[2023-04-13 10:06:33] INFO root fetch - processPackages [cdktf]: executing diffoscope
+[2023-04-13 10:06:33] INFO root fetch - processPackages [cdktf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-0.9.3.tar.gz tmp/cdktf-0.9.4.tar.gz --markdown 20230413/c/cdktf/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-13 10:06:34] INFO root fetch - processPackages [lupin-grognard]: Downloading https://files.pythonhosted.org/packages/d2/34/7bb7abcbc22c700f5b97c0de1fd75389e3a3ff3e9f73dfc06b833d65dc48/lupin-grognard-1.9.0.dev9.tar.gz
+[2023-04-13 10:06:34] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-04-13 10:06:34] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.9.0.dev8.tar.gz tmp/lupin-grognard-1.9.0.dev9.tar.gz --markdown 20230413/l/lupin-grognard/1.9.0.dev8-1.9.0.dev9/diff.md --exclude *.pyd
+[2023-04-13 10:06:34] INFO root fetch - processPackages [gitlint]: Start processing: odoo13-addon-hr-timesheet-sheet
+[2023-04-13 10:06:34] INFO root fetch - main [MainThread]: End processing [gitlint]: success
+[2023-04-13 10:06:34] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-sheet]: New version: [13.0.1.2.1.dev8] Old Version: [13.0.1.2.1.dev7]
+[2023-04-13 10:06:34] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-sheet]: Downloading https://files.pythonhosted.org/packages/d7/2b/49382e7139054d20b816ff4de45333bdc43005a010a664456d2fdb723459/odoo13_addon_hr_timesheet_sheet-13.0.1.2.1.dev8-py3-none-any.whl
+[2023-04-13 10:06:34] INFO root fetch - processPackages [cdktf]: Start processing: odoo12-addon-hr-timesheet-sheet
+[2023-04-13 10:06:34] INFO root fetch - main [MainThread]: End processing [cdktf]: success
+[2023-04-13 10:06:35] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet]: New version: [12.0.3.7.6.99.dev9] Old Version: [12.0.3.7.6.99.dev8]
+[2023-04-13 10:06:35] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-sheet]: executing diffoscope
+[2023-04-13 10:06:35] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-sheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_hr_timesheet_sheet-13.0.1.2.1.dev7-py3-none-any.whl.zip tmp/odoo13_addon_hr_timesheet_sheet-13.0.1.2.1.dev8-py3-none-any.whl.zip --markdown 20230413/o/odoo13-addon-hr-timesheet-sheet/13.0.1.2.1.dev7-13.0.1.2.1.dev8/diff.md --exclude *.pyd
+[2023-04-13 10:06:35] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet]: Downloading https://files.pythonhosted.org/packages/c5/95/d7ac4d0bb78705709049b242708f10445917dee221ab1d2dba91d5f69c84/odoo12_addon_hr_timesheet_sheet-12.0.3.7.6.99.dev9-py3-none-any.whl
+[2023-04-13 10:06:35] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet]: executing diffoscope
+[2023-04-13 10:06:35] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_hr_timesheet_sheet-12.0.3.7.6.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_hr_timesheet_sheet-12.0.3.7.6.99.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-hr-timesheet-sheet/12.0.3.7.6.99.dev8-12.0.3.7.6.99.dev9/diff.md --exclude *.pyd
+[2023-04-13 10:06:35] INFO root fetch - processPackages [lupin-grognard]: Start processing: odoo13-addon-hr-timesheet-role
+[2023-04-13 10:06:35] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-04-13 10:06:35] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-role]: New version: [13.0.1.0.1.dev5] Old Version: [13.0.1.0.1.dev4]
+[2023-04-13 10:06:35] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-role]: Downloading https://files.pythonhosted.org/packages/ee/eb/5d20c589f64c87dcb16de5d957b0207e882f8f854ef1949d037b19f1acf4/odoo13_addon_hr_timesheet_role-13.0.1.0.1.dev4-py3-none-any.whl
+[2023-04-13 10:06:35] INFO root fetch - processPackages [pyglove]: Start processing: odoo12-addon-hr-timesheet-sheet-role
+[2023-04-13 10:06:35] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-04-13 10:06:35] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet-role]: New version: [12.0.2.2.1.99.dev4] Old Version: [12.0.2.2.1.99.dev3]
+[2023-04-13 10:06:35] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-role]: Downloading https://files.pythonhosted.org/packages/05/78/697c911470b7d73a40fbc24d72e42707ac95960489cfbfaedc858cbc75d4/odoo13_addon_hr_timesheet_role-13.0.1.0.1.dev5-py3-none-any.whl
+[2023-04-13 10:06:36] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-role]: executing diffoscope
+[2023-04-13 10:06:36] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_hr_timesheet_role-13.0.1.0.1.dev4-py3-none-any.whl.zip tmp/odoo13_addon_hr_timesheet_role-13.0.1.0.1.dev5-py3-none-any.whl.zip --markdown 20230413/o/odoo13-addon-hr-timesheet-role/13.0.1.0.1.dev4-13.0.1.0.1.dev5/diff.md --exclude *.pyd
+[2023-04-13 10:06:36] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet-role]: Downloading https://files.pythonhosted.org/packages/a7/35/9ce89085953f7a9035252f8ffa0c170aa28640a9fc912799b5a6c63f434c/odoo12_addon_hr_timesheet_sheet_role-12.0.2.2.1.99.dev4-py3-none-any.whl
+[2023-04-13 10:06:36] INFO root fetch - processPackages [pcl-pangu]: Start processing: aloso
+[2023-04-13 10:06:36] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 10:06:36] INFO root fetch - processPackages [aloso]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 10:06:36] INFO root fetch - processPackages [aloso]: executing diffoscope
+[2023-04-13 10:06:36] INFO root fetch - processPackages [aloso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aloso-0.0.8-py3-none-any.whl.zip tmp/aloso-0.0.9-py3-none-any.whl.zip --markdown 20230413/a/aloso/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 10:06:36] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet-role]: executing diffoscope
+[2023-04-13 10:06:36] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_hr_timesheet_sheet_role-12.0.2.2.1.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_hr_timesheet_sheet_role-12.0.2.2.1.99.dev4-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-hr-timesheet-sheet-role/12.0.2.2.1.99.dev3-12.0.2.2.1.99.dev4/diff.md --exclude *.pyd
+[2023-04-13 10:06:36] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-sheet]: Start processing: odoo12-addon-hr-timesheet-role
+[2023-04-13 10:06:36] INFO root fetch - main [MainThread]: End processing [odoo13-addon-hr-timesheet-sheet]: success
+[2023-04-13 10:06:36] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-role]: New version: [12.0.2.0.1.99.dev3] Old Version: [12.0.2.0.1.99.dev2]
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-role]: Downloading https://files.pythonhosted.org/packages/e0/31/9db42ccc681afab74aef0d84bf3540b61626959d2f03b835d1f6a47ded34/odoo12_addon_hr_timesheet_role-12.0.2.0.1.99.dev2-py3-none-any.whl
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet]: Start processing: odoo14-addon-hr-timesheet-sheet
+[2023-04-13 10:06:37] INFO root fetch - main [MainThread]: End processing [odoo12-addon-hr-timesheet-sheet]: success
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo14-addon-hr-timesheet-sheet]: New version: [14.0.1.2.1.dev9] Old Version: [14.0.1.2.1.dev8]
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo14-addon-hr-timesheet-sheet]: executing diffoscope
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo14-addon-hr-timesheet-sheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_hr_timesheet_sheet-14.0.1.2.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_hr_timesheet_sheet-14.0.1.2.1.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-hr-timesheet-sheet/14.0.1.2.1.dev8-14.0.1.2.1.dev9/diff.md --exclude *.pyd
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo13-addon-hr-timesheet-role]: Start processing: langgenius
+[2023-04-13 10:06:37] INFO root fetch - main [MainThread]: End processing [odoo13-addon-hr-timesheet-role]: success
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-role]: Downloading https://files.pythonhosted.org/packages/e7/0c/4bde67d2e6ec62e795151edc4e8987f6a44ae54fb5c1085c5b269a952297/odoo12_addon_hr_timesheet_role-12.0.2.0.1.99.dev3-py3-none-any.whl
+[2023-04-13 10:06:37] WARNING root fetch - processPackages [langgenius]: Skipping, unable to determine old version
+[2023-04-13 10:06:37] INFO root fetch - processPackages [langgenius]: Start processing: akshare
+[2023-04-13 10:06:37] INFO root fetch - main [MainThread]: End processing [langgenius] error
+[2023-04-13 10:06:37] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-role]: executing diffoscope
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_hr_timesheet_role-12.0.2.0.1.99.dev2-py3-none-any.whl.zip tmp/odoo12_addon_hr_timesheet_role-12.0.2.0.1.99.dev3-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-hr-timesheet-role/12.0.2.0.1.99.dev2-12.0.2.0.1.99.dev3/diff.md --exclude *.pyd
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet-role]: Start processing: odoo-addon-hr-timesheet-sheet
+[2023-04-13 10:06:37] INFO root fetch - main [MainThread]: End processing [odoo12-addon-hr-timesheet-sheet-role]: success
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: New version: [15.0.1.1.0.8] Old Version: [15.0.1.1.0.7]
+[2023-04-13 10:06:37] INFO root fetch - processPackages [aloso]: Start processing: web3-py-checksum
+[2023-04-13 10:06:37] INFO root fetch - main [MainThread]: End processing [aloso]: success
+[2023-04-13 10:06:37] INFO root fetch - processPackages [web3-py-checksum]: New version: [1.1] Old Version: [1.0]
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: Downloading https://files.pythonhosted.org/packages/b6/f2/d4afc9059b216fe57f1a0e45ffc56035e07a9bcc82a896c5c88ecbe2e748/odoo_addon_hr_timesheet_sheet-15.0.1.1.0.8-py3-none-any.whl
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: executing diffoscope
+[2023-04-13 10:06:37] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_hr_timesheet_sheet-15.0.1.1.0.7-py3-none-any.whl.zip tmp/odoo_addon_hr_timesheet_sheet-15.0.1.1.0.8-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-hr-timesheet-sheet/15.0.1.1.0.7-15.0.1.1.0.8/diff.md --exclude *.pyd
+[2023-04-13 10:06:37] INFO root fetch - processPackages [web3-py-checksum]: Downloading https://files.pythonhosted.org/packages/ba/a5/9dff5b97ecedb921147c8e3e10e52a8ba41a8a56510672151d648214d9d9/web3_py_checksum-1.0.tar.gz
+[2023-04-13 10:06:38] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-04-13 10:06:38] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230413/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-13 10:06:38] INFO root fetch - processPackages [web3-py-checksum]: Downloading https://files.pythonhosted.org/packages/d6/9a/492a38782d92862a8cf053170ce9a97ce28739126b05f9acdf2bf682be09/web3_py_checksum-1.1.tar.gz
+[2023-04-13 10:06:38] INFO root fetch - processPackages [web3-py-checksum]: executing diffoscope
+[2023-04-13 10:06:38] INFO root fetch - processPackages [web3-py-checksum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web3_py_checksum-1.0.tar.gz tmp/web3_py_checksum-1.1.tar.gz --markdown 20230413/w/web3-py-checksum/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-13 10:06:38] INFO root fetch - main [MainThread]: End processing [odoo12-addon-hr-timesheet-role]: success
+[2023-04-13 10:06:39] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hr-timesheet-sheet]: success
+[2023-04-13 10:06:39] INFO root fetch - main [MainThread]: End processing [web3-py-checksum]: success
+[2023-04-13 10:06:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-timesheet-sheet]: success
+[2023-04-13 10:06:41] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-04-13 10:06:41] INFO root fetch - main [MainThread]: Store serial: [17688773]
