@@ -21799,3 +21799,97 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 18:00:51] INFO root fetch - main [MainThread]: End processing [returnn]: success
 [2023-04-13 18:00:53] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2023-04-13 18:00:53] INFO root fetch - main [MainThread]: Store serial: [17695113]
+[2023-04-13 18:05:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17695113]
+[2023-04-13 18:06:01] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-13 18:06:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notification-service-nightly
+[2023-04-13 18:06:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ai-flow-nightly
+[2023-04-13 18:06:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rocm-docs-core
+[2023-04-13 18:06:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polywrap-manifest
+[2023-04-13 18:06:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stripe
+[2023-04-13 18:06:01] INFO root fetch - processPackages [stripe]: New version: [5.5.0b2] Old Version: [5.5.0b1]
+[2023-04-13 18:06:01] INFO root fetch - processPackages [rocm-docs-core]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 18:06:01] INFO root fetch - processPackages [polywrap-manifest]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-13 18:06:01] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-13 18:06:01] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-13 18:06:01] INFO root fetch - processPackages [polywrap-manifest]: executing diffoscope
+[2023-04-13 18:06:01] INFO root fetch - processPackages [polywrap-manifest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_manifest-0.1.0a7.tar.gz tmp/polywrap_manifest-0.1.0a8.tar.gz --markdown 20230413/p/polywrap-manifest/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-13 18:06:01] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-04-13 18:06:01] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.4.8.tar.gz tmp/notification_service_nightly-2023.4.9.tar.gz --markdown 20230413/n/notification-service-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-13 18:06:01] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-04-13 18:06:01] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.4.8.tar.gz tmp/ai_flow_nightly-2023.4.9.tar.gz --markdown 20230413/a/ai-flow-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-13 18:06:01] INFO root fetch - processPackages [rocm-docs-core]: Downloading https://files.pythonhosted.org/packages/d1/b4/ca4fc752b02e0e7ceec497845834bbe4d8f0d8e0e0c116af357705ef260e/rocm-docs-core-0.2.0.tar.gz
+[2023-04-13 18:06:01] INFO root fetch - processPackages [stripe]: Downloading https://files.pythonhosted.org/packages/fa/6e/d2b4393258049534013e33e23287f2a2c1710575ef173c1a30159ef5bdfd/stripe-5.5.0b1.tar.gz
+[2023-04-13 18:06:01] INFO root fetch - processPackages [stripe]: Downloading https://files.pythonhosted.org/packages/86/bc/bdf44641e8b7829940d492ad162ea757875150eccc793bdb2122e0e48ea1/stripe-5.5.0b2.tar.gz
+[2023-04-13 18:06:01] INFO root fetch - processPackages [rocm-docs-core]: Downloading https://files.pythonhosted.org/packages/dd/2a/26320700c50c62af7b6c792d446caefbdd7af7e45a26e3a839271642644c/rocm-docs-core-0.2.1.tar.gz
+[2023-04-13 18:06:01] INFO root fetch - processPackages [stripe]: executing diffoscope
+[2023-04-13 18:06:01] INFO root fetch - processPackages [stripe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stripe-5.5.0b1.tar.gz tmp/stripe-5.5.0b2.tar.gz --markdown 20230413/s/stripe/5.5.0b1-5.5.0b2/diff.md --exclude *.pyd
+[2023-04-13 18:06:02] INFO root fetch - processPackages [rocm-docs-core]: executing diffoscope
+[2023-04-13 18:06:02] INFO root fetch - processPackages [rocm-docs-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocm-docs-core-0.2.0.tar.gz tmp/rocm-docs-core-0.2.1.tar.gz --markdown 20230413/r/rocm-docs-core/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 18:06:02] INFO root fetch - processPackages [polywrap-manifest]: Start processing: polywrap-core
+[2023-04-13 18:06:02] INFO root fetch - main [MainThread]: End processing [polywrap-manifest]: success
+[2023-04-13 18:06:02] INFO root fetch - processPackages [polywrap-core]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-13 18:06:02] INFO root fetch - processPackages [polywrap-core]: executing diffoscope
+[2023-04-13 18:06:02] INFO root fetch - processPackages [polywrap-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_core-0.1.0a7.tar.gz tmp/polywrap_core-0.1.0a8.tar.gz --markdown 20230413/p/polywrap-core/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-13 18:06:02] INFO root fetch - processPackages [notification-service-nightly]: Start processing: vpf-730
+[2023-04-13 18:06:02] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-04-13 18:06:02] INFO root fetch - processPackages [vpf-730]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 18:06:02] INFO root fetch - processPackages [vpf-730]: Downloading https://files.pythonhosted.org/packages/53/51/2846da6190d796d3a513d8d1ab78f801a0b7ebd6eb59ea516d57366c6325/vpf_730-0.8.0.tar.gz
+[2023-04-13 18:06:03] INFO root fetch - processPackages [vpf-730]: Downloading https://files.pythonhosted.org/packages/61/0b/cedd376e2b9a20a687dd0e1d37bf90e87db90578e38842af09f8b0f4342a/vpf_730-0.9.0.tar.gz
+[2023-04-13 18:06:03] INFO root fetch - processPackages [vpf-730]: executing diffoscope
+[2023-04-13 18:06:03] INFO root fetch - processPackages [vpf-730]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vpf_730-0.8.0.tar.gz tmp/vpf_730-0.9.0.tar.gz --markdown 20230413/v/vpf-730/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 18:06:03] INFO root fetch - processPackages [polywrap-core]: Start processing: command-fight-game-learning
+[2023-04-13 18:06:03] INFO root fetch - main [MainThread]: End processing [polywrap-core]: success
+[2023-04-13 18:06:03] WARNING root fetch - processPackages [command-fight-game-learning]: Skipping, unable to determine old version
+[2023-04-13 18:06:03] INFO root fetch - processPackages [command-fight-game-learning]: Start processing: polywrap-plugin
+[2023-04-13 18:06:03] INFO root fetch - main [MainThread]: End processing [command-fight-game-learning] error
+[2023-04-13 18:06:03] INFO root fetch - processPackages [polywrap-plugin]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-13 18:06:03] INFO root fetch - processPackages [polywrap-plugin]: executing diffoscope
+[2023-04-13 18:06:03] INFO root fetch - processPackages [polywrap-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_plugin-0.1.0a6.tar.gz tmp/polywrap_plugin-0.1.0a7.tar.gz --markdown 20230413/p/polywrap-plugin/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 18:06:03] INFO root fetch - processPackages [rocm-docs-core]: Start processing: pulumi-azure
+[2023-04-13 18:06:03] INFO root fetch - main [MainThread]: End processing [rocm-docs-core]: success
+[2023-04-13 18:06:03] INFO root fetch - processPackages [pulumi-azure]: New version: [5.9.0a1654522381] Old Version: [5.9.0a1654274095]
+[2023-04-13 18:06:03] INFO root fetch - processPackages [pulumi-azure]: executing diffoscope
+[2023-04-13 18:06:03] INFO root fetch - processPackages [pulumi-azure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_azure-5.9.0a1654274095.tar.gz tmp/pulumi_azure-5.9.0a1654522381.tar.gz --markdown 20230413/p/pulumi-azure/5.9.0a1654274095-5.9.0a1654522381/diff.md --exclude *.pyd
+[2023-04-13 18:06:04] INFO root fetch - processPackages [polywrap-plugin]: Start processing: rmmbr
+[2023-04-13 18:06:04] INFO root fetch - main [MainThread]: End processing [polywrap-plugin]: success
+[2023-04-13 18:06:04] WARNING root fetch - processPackages [rmmbr]: Skipping, unable to determine old version
+[2023-04-13 18:06:04] INFO root fetch - processPackages [rmmbr]: Start processing: dkist-spectral-lines
+[2023-04-13 18:06:04] INFO root fetch - main [MainThread]: End processing [rmmbr] error
+[2023-04-13 18:06:04] INFO root fetch - processPackages [dkist-spectral-lines]: New version: [1.0.0rc6] Old Version: [1.0.0rc5]
+[2023-04-13 18:06:04] INFO root fetch - processPackages [stripe]: Start processing: djackal
+[2023-04-13 18:06:04] INFO root fetch - main [MainThread]: End processing [stripe]: success
+[2023-04-13 18:06:04] INFO root fetch - processPackages [djackal]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-13 18:06:04] INFO root fetch - processPackages [vpf-730]: Start processing: polywrap-wasm
+[2023-04-13 18:06:04] INFO root fetch - main [MainThread]: End processing [vpf-730]: success
+[2023-04-13 18:06:04] INFO root fetch - processPackages [polywrap-wasm]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-13 18:06:04] INFO root fetch - processPackages [dkist-spectral-lines]: Downloading https://files.pythonhosted.org/packages/14/be/02dba0727ad0c60b12790c960a8b78a6d5e2085f7d919e753586e2a3026f/dkist-spectral-lines-1.0.0rc6.tar.gz
+[2023-04-13 18:06:05] INFO root fetch - processPackages [djackal]: Downloading https://files.pythonhosted.org/packages/89/3e/70afb9c28a58de55d807f63ec95fce2b634794125b6c1f0e137f7c4417b9/djackal-0.5.4.tar.gz
+[2023-04-13 18:06:05] INFO root fetch - processPackages [polywrap-wasm]: executing diffoscope
+[2023-04-13 18:06:05] INFO root fetch - processPackages [polywrap-wasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_wasm-0.1.0a6.tar.gz tmp/polywrap_wasm-0.1.0a7.tar.gz --markdown 20230413/p/polywrap-wasm/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 18:06:05] INFO root fetch - processPackages [dkist-spectral-lines]: executing diffoscope
+[2023-04-13 18:06:05] INFO root fetch - processPackages [dkist-spectral-lines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-spectral-lines-1.0.0rc5.tar.gz tmp/dkist-spectral-lines-1.0.0rc6.tar.gz --markdown 20230413/d/dkist-spectral-lines/1.0.0rc5-1.0.0rc6/diff.md --exclude *.pyd
+[2023-04-13 18:06:05] INFO root fetch - processPackages [djackal]: executing diffoscope
+[2023-04-13 18:06:05] INFO root fetch - processPackages [djackal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djackal-0.5.3.tar.gz tmp/djackal-0.5.4.tar.gz --markdown 20230413/d/djackal/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-13 18:06:06] INFO root fetch - processPackages [polywrap-wasm]: Start processing: django-sentry-secure-source-map
+[2023-04-13 18:06:06] INFO root fetch - main [MainThread]: End processing [polywrap-wasm]: success
+[2023-04-13 18:06:06] WARNING root fetch - processPackages [django-sentry-secure-source-map]: Skipping, unable to determine old version
+[2023-04-13 18:06:06] INFO root fetch - processPackages [django-sentry-secure-source-map]: Start processing: cf-changelog
+[2023-04-13 18:06:06] INFO root fetch - main [MainThread]: End processing [django-sentry-secure-source-map] error
+[2023-04-13 18:06:06] INFO root fetch - processPackages [cf-changelog]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-13 18:06:06] INFO root fetch - processPackages [dkist-spectral-lines]: Start processing: veetility
+[2023-04-13 18:06:06] INFO root fetch - main [MainThread]: End processing [dkist-spectral-lines]: success
+[2023-04-13 18:06:06] INFO root fetch - processPackages [veetility]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 18:06:06] INFO root fetch - processPackages [veetility]: executing diffoscope
+[2023-04-13 18:06:06] INFO root fetch - processPackages [veetility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veetility-0.1.8.tar.gz tmp/veetility-0.1.9.tar.gz --markdown 20230413/v/veetility/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 18:06:06] INFO root fetch - processPackages [djackal]: Start processing: obhavouzbek
+[2023-04-13 18:06:06] INFO root fetch - main [MainThread]: End processing [djackal]: success
+[2023-04-13 18:06:06] INFO root fetch - processPackages [cf-changelog]: Downloading https://files.pythonhosted.org/packages/27/62/b2287a3e0a0b4c126d48cb7c423f4e4f68a0e9b457a20929871f881efa81/cf_changelog-1.0.4.tar.gz
+[2023-04-13 18:06:06] WARNING root fetch - processPackages [obhavouzbek]: Skipping, unable to determine old version
+[2023-04-13 18:06:06] INFO root fetch - main [MainThread]: End processing [obhavouzbek] error
+[2023-04-13 18:06:06] INFO root fetch - processPackages [cf-changelog]: executing diffoscope
+[2023-04-13 18:06:06] INFO root fetch - processPackages [cf-changelog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf_changelog-1.0.3.tar.gz tmp/cf_changelog-1.0.4.tar.gz --markdown 20230413/c/cf-changelog/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-13 18:06:07] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-04-13 18:06:07] INFO root fetch - main [MainThread]: End processing [veetility]: success
+[2023-04-13 18:06:07] INFO root fetch - main [MainThread]: End processing [cf-changelog]: success
+[2023-04-13 18:06:29] INFO root fetch - main [MainThread]: End processing [pulumi-azure]: success
+[2023-04-13 18:06:29] INFO root fetch - main [MainThread]: Store serial: [17695197]
