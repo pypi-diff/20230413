@@ -7001,3 +7001,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:35:24] INFO root fetch - main [MainThread]: End processing [py3dchart]: success
 [2023-04-13 05:35:26] INFO root fetch - main [MainThread]: End processing [django-coreplus]: success
 [2023-04-13 05:35:26] INFO root fetch - main [MainThread]: Store serial: [17686516]
+[2023-04-13 05:40:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686516]
+[2023-04-13 05:40:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-azure-native
+[2023-04-13 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ccdt
+[2023-04-13 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DataframeFormatterSC
+[2023-04-13 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pinyin-jyutping
+[2023-04-13 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pinyin-jyutping
+[2023-04-13 05:40:34] INFO root fetch - processPackages [ccdt]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 05:40:34] WARNING root fetch - processPackages [DataframeFormatterSC]: Skipping, unable to determine old version
+[2023-04-13 05:40:34] INFO root fetch - processPackages [DataframeFormatterSC]: Start processing: pyProcessAutom
+[2023-04-13 05:40:34] INFO root fetch - main [MainThread]: End processing [DataframeFormatterSC] error
+[2023-04-13 05:40:34] INFO root fetch - processPackages [pinyin-jyutping]: New version: [0.7] Old Version: [0.6]
+[2023-04-13 05:40:34] INFO root fetch - processPackages [pinyin-jyutping]: New version: [0.7] Old Version: [0.6]
+[2023-04-13 05:40:34] WARNING root fetch - processPackages [pyProcessAutom]: Skipping, unable to determine old version
+[2023-04-13 05:40:34] INFO root fetch - processPackages [pyProcessAutom]: Start processing: PyDesmos
+[2023-04-13 05:40:34] INFO root fetch - main [MainThread]: End processing [pyProcessAutom] error
+[2023-04-13 05:40:35] INFO root fetch - processPackages [pulumi-azure-native]: New version: [1.99.3a1681354021] Old Version: [1.99.3a1681340258]
+[2023-04-13 05:40:35] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2023-04-13 05:40:35] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-1.0.8.tar.gz tmp/ccdt-1.0.9.tar.gz --markdown 20230413/c/ccdt/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 05:40:35] INFO root fetch - processPackages [PyDesmos]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 05:40:35] INFO root fetch - processPackages [pinyin-jyutping]: Downloading https://files.pythonhosted.org/packages/00/4f/ebca43627549cb898a1c1eaae88566f054783fbe805fca8827c76edaac08/pinyin_jyutping-0.6.tar.gz
+[2023-04-13 05:40:35] INFO root fetch - processPackages [pinyin-jyutping]: Downloading https://files.pythonhosted.org/packages/00/4f/ebca43627549cb898a1c1eaae88566f054783fbe805fca8827c76edaac08/pinyin_jyutping-0.6.tar.gz
+[2023-04-13 05:40:35] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/cc/32/dad81c0a16954d74bd678cc71a000e0c73eaf3c397a95171f96a0178c315/pulumi_azure_native-1.99.3a1681340258.tar.gz
+[2023-04-13 05:40:35] INFO root fetch - processPackages [PyDesmos]: Downloading https://files.pythonhosted.org/packages/37/a5/db5f0fb3779db40ade09a33398b5f2fe53c7f25aeb97e9cafa5470a47f38/PyDesmos-0.0.1.tar.gz
+[2023-04-13 05:40:35] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 62790030>=10485760
+[2023-04-13 05:40:35] INFO root fetch - processPackages [pulumi-azure-native]: Start processing: slack-bolt
+[2023-04-13 05:40:35] INFO root fetch - main [MainThread]: End processing [pulumi-azure-native] error
+[2023-04-13 05:40:35] INFO root fetch - processPackages [slack-bolt]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-04-13 05:40:35] INFO root fetch - processPackages [slack-bolt]: Downloading https://files.pythonhosted.org/packages/09/84/486f78411aa2eb29e731ec16b160a5bc9b78a12476d72efff538f25be181/slack_bolt-1.9.3.tar.gz
+[2023-04-13 05:40:35] INFO root fetch - processPackages [PyDesmos]: Downloading https://files.pythonhosted.org/packages/11/1c/5bc6927f8be16b7c3054f664b2a5191a7e44e6ec1301249b94183c7a0ec4/PyDesmos-0.0.2.tar.gz
+[2023-04-13 05:40:35] INFO root fetch - processPackages [PyDesmos]: executing diffoscope
+[2023-04-13 05:40:35] INFO root fetch - processPackages [PyDesmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDesmos-0.0.1.tar.gz tmp/PyDesmos-0.0.2.tar.gz --markdown 20230413/P/PyDesmos/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 05:40:36] INFO root fetch - processPackages [slack-bolt]: Downloading https://files.pythonhosted.org/packages/be/30/733b072c5d30f511881b630aa3837abebdfbbd28b5274f3b9748b6162a88/slack_bolt-1.9.4.tar.gz
+[2023-04-13 05:40:36] INFO root fetch - processPackages [pinyin-jyutping]: Downloading https://files.pythonhosted.org/packages/67/00/f2ff1d7aef8a208b287bbc53ee16b12300f4290f0c26ae64ffffa9d73dab/pinyin_jyutping-0.7.tar.gz
+[2023-04-13 05:40:36] INFO root fetch - processPackages [pinyin-jyutping]: Downloading https://files.pythonhosted.org/packages/67/00/f2ff1d7aef8a208b287bbc53ee16b12300f4290f0c26ae64ffffa9d73dab/pinyin_jyutping-0.7.tar.gz
+[2023-04-13 05:40:36] INFO root fetch - processPackages [ccdt]: Start processing: nonebot-plugin-clock
+[2023-04-13 05:40:36] INFO root fetch - main [MainThread]: End processing [ccdt]: success
+[2023-04-13 05:40:36] INFO root fetch - processPackages [nonebot-plugin-clock]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-13 05:40:36] INFO root fetch - processPackages [nonebot-plugin-clock]: executing diffoscope
+[2023-04-13 05:40:36] INFO root fetch - processPackages [nonebot-plugin-clock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-clock-0.8.1.tar.gz tmp/nonebot-plugin-clock-0.8.2.tar.gz --markdown 20230413/n/nonebot-plugin-clock/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-13 05:40:36] INFO root fetch - main [MainThread]: End processing [PyDesmos]: success
+[2023-04-13 05:40:37] INFO root fetch - processPackages [slack-bolt]: executing diffoscope
+[2023-04-13 05:40:37] INFO root fetch - processPackages [slack-bolt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slack_bolt-1.9.3.tar.gz tmp/slack_bolt-1.9.4.tar.gz --markdown 20230413/s/slack-bolt/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-04-13 05:40:37] INFO root fetch - processPackages [pinyin-jyutping]: executing diffoscope
+[2023-04-13 05:40:37] INFO root fetch - processPackages [pinyin-jyutping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinyin_jyutping-0.6.tar.gz tmp/pinyin_jyutping-0.7.tar.gz --markdown 20230413/p/pinyin-jyutping/0.6-0.7/diff.md --exclude *.pyd
+[2023-04-13 05:40:37] INFO root fetch - processPackages [pinyin-jyutping]: executing diffoscope
+[2023-04-13 05:40:37] INFO root fetch - processPackages [pinyin-jyutping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinyin_jyutping-0.6.tar.gz tmp/pinyin_jyutping-0.7.tar.gz --markdown 20230413/p/pinyin-jyutping/0.6-0.7/diff.md --exclude *.pyd
+[2023-04-13 05:40:37] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-clock]: success
+[2023-04-13 05:40:38] INFO root fetch - main [MainThread]: End processing [slack-bolt]: success
+[2023-04-13 05:40:40] INFO root fetch - main [MainThread]: End processing [pinyin-jyutping]: success
+[2023-04-13 05:40:40] INFO root fetch - main [MainThread]: End processing [pinyin-jyutping]: success
+[2023-04-13 05:40:40] INFO root fetch - main [MainThread]: Store serial: [17686543]
