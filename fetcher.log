@@ -8110,3 +8110,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 07:13:14] INFO root fetch - main [MainThread]: End processing [ppdiffusers]: success
 [2023-04-13 07:13:15] INFO root fetch - main [MainThread]: End processing [leqi-algorithm-mic-sdk]: success
 [2023-04-13 07:13:15] INFO root fetch - main [MainThread]: Store serial: [17687196]
+[2023-04-13 07:18:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687196]
+[2023-04-13 07:18:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-13 07:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leqi-algorithm-mic-sdk
+[2023-04-13 07:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tflite-model-maker-nightly
+[2023-04-13 07:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sisaptools
+[2023-04-13 07:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: image-liveness
+[2023-04-13 07:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: escodegen
+[2023-04-13 07:18:22] ERROR root fetch - processPackages [image-liveness]: Unable to get metadata: No such project 'image-liveness'
+[2023-04-13 07:18:22] INFO root fetch - processPackages [image-liveness]: Start processing: odoo8-addon-l10n-es-aeat-sii
+[2023-04-13 07:18:22] INFO root fetch - main [MainThread]: End processing [image-liveness] error
+[2023-04-13 07:18:22] INFO root fetch - processPackages [leqi-algorithm-mic-sdk]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-04-13 07:18:22] INFO root fetch - processPackages [escodegen]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 07:18:22] INFO root fetch - processPackages [sisaptools]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-13 07:18:22] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202304130517] Old Version: [0.4.3.dev202304120506]
+[2023-04-13 07:18:22] INFO root fetch - processPackages [odoo8-addon-l10n-es-aeat-sii]: New version: [8.0.2.9.1.99.dev1] Old Version: [8.0.2.9.1]
+[2023-04-13 07:18:22] INFO root fetch - processPackages [leqi-algorithm-mic-sdk]: executing diffoscope
+[2023-04-13 07:18:22] INFO root fetch - processPackages [leqi-algorithm-mic-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leqi-algorithm-mic-sdk-1.9.3.tar.gz tmp/leqi-algorithm-mic-sdk-1.9.4.tar.gz --markdown 20230413/l/leqi-algorithm-mic-sdk/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-04-13 07:18:22] INFO root fetch - processPackages [escodegen]: Downloading https://files.pythonhosted.org/packages/90/92/a9a8f10fc7e845b088d8f0ead3dc32e757de787bf5dd0de5a25a513cda6f/escodegen-1.0.8-py3-none-any.whl
+[2023-04-13 07:18:22] INFO root fetch - processPackages [sisaptools]: Downloading https://files.pythonhosted.org/packages/96/02/9b4bfd32347388e1847764a78c7a71ec5021f029c567f97a40ad392fbada/sisaptools-1.9.8.tar.gz
+[2023-04-13 07:18:22] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/ae/e6/d59460fb4e4e262dd29f42c6546790592bdb28f237568bfc6cf3a0fb1914/tflite-model-maker-nightly-0.4.3.dev202304120506.tar.gz
+[2023-04-13 07:18:23] INFO root fetch - processPackages [odoo8-addon-l10n-es-aeat-sii]: Downloading https://files.pythonhosted.org/packages/ab/a9/bd627124ea5a6325c4e0e076a69b5e41403dc0fa012ec0a8d96627a523f1/odoo8_addon_l10n_es_aeat_sii-8.0.2.9.1-py2-none-any.whl
+[2023-04-13 07:18:23] INFO root fetch - processPackages [escodegen]: Downloading https://files.pythonhosted.org/packages/cf/87/48d8fc3be00df87c353b4867b40fd92ad29d6971abd0a69ae9c3975d7f42/escodegen-1.0.9-py3-none-any.whl
+[2023-04-13 07:18:23] INFO root fetch - processPackages [odoo8-addon-l10n-es-aeat-sii]: Downloading https://files.pythonhosted.org/packages/33/50/93d3bf05bfdc32737cc433b38d3b6c5c538840cffb563ee106de9b6ddf93/odoo8_addon_l10n_es_aeat_sii-8.0.2.9.1.99.dev1-py2-none-any.whl
+[2023-04-13 07:18:23] INFO root fetch - processPackages [sisaptools]: Downloading https://files.pythonhosted.org/packages/fa/b7/9ed03e2a5a0fab512a4b6a72bcb2957691b047981b21811a85b006208ce0/sisaptools-1.9.9.tar.gz
+[2023-04-13 07:18:23] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/d4/80/83d3db4a48a247cf5ed67beacf9c68c7f222b1f473d12b158161d44764ea/tflite-model-maker-nightly-0.4.3.dev202304130517.tar.gz
+[2023-04-13 07:18:23] INFO root fetch - processPackages [escodegen]: executing diffoscope
+[2023-04-13 07:18:23] INFO root fetch - processPackages [escodegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/escodegen-1.0.8-py3-none-any.whl.zip tmp/escodegen-1.0.9-py3-none-any.whl.zip --markdown 20230413/e/escodegen/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 07:18:23] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-04-13 07:18:23] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202304120506.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202304130517.tar.gz --markdown 20230413/t/tflite-model-maker-nightly/0.4.3.dev202304120506-0.4.3.dev202304130517/diff.md --exclude *.pyd
+[2023-04-13 07:18:23] INFO root fetch - processPackages [odoo8-addon-l10n-es-aeat-sii]: executing diffoscope
+[2023-04-13 07:18:23] INFO root fetch - processPackages [odoo8-addon-l10n-es-aeat-sii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_l10n_es_aeat_sii-8.0.2.9.1-py2-none-any.whl.zip tmp/odoo8_addon_l10n_es_aeat_sii-8.0.2.9.1.99.dev1-py2-none-any.whl.zip --markdown 20230413/o/odoo8-addon-l10n-es-aeat-sii/8.0.2.9.1-8.0.2.9.1.99.dev1/diff.md --exclude *.pyd
+[2023-04-13 07:18:24] INFO root fetch - processPackages [sisaptools]: executing diffoscope
+[2023-04-13 07:18:24] INFO root fetch - processPackages [sisaptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sisaptools-1.9.8.tar.gz tmp/sisaptools-1.9.9.tar.gz --markdown 20230413/s/sisaptools/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-13 07:18:24] INFO root fetch - main [MainThread]: End processing [leqi-algorithm-mic-sdk]: success
+[2023-04-13 07:18:24] INFO root fetch - main [MainThread]: End processing [escodegen]: success
+[2023-04-13 07:18:25] INFO root fetch - main [MainThread]: End processing [sisaptools]: success
+[2023-04-13 07:18:25] INFO root fetch - main [MainThread]: End processing [odoo8-addon-l10n-es-aeat-sii]: success
+[2023-04-13 07:18:26] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-04-13 07:18:26] INFO root fetch - main [MainThread]: Store serial: [17687222]
