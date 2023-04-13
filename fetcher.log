@@ -6553,3 +6553,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:59:01] INFO root fetch - processPackages [lorettOrbital]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lorettOrbital-0.0.4.tar.gz tmp/lorettOrbital-1.0.13042023.tar.gz --markdown 20230413/l/lorettOrbital/0.0.4-1.0.13042023/diff.md --exclude *.pyd
 [2023-04-13 04:59:02] INFO root fetch - main [MainThread]: End processing [lorettOrbital]: success
 [2023-04-13 04:59:02] INFO root fetch - main [MainThread]: Store serial: [17686227]
+[2023-04-13 05:04:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686227]
+[2023-04-13 05:04:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-13 05:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jina-hubble-sdk
+[2023-04-13 05:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DataframeFormatter
+[2023-04-13 05:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-payment-term-extension
+[2023-04-13 05:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-due-list
+[2023-04-13 05:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: IOTELLME
+[2023-04-13 05:04:09] INFO root fetch - processPackages [odoo-addon-account-payment-term-extension]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2023-04-13 05:04:09] INFO root fetch - processPackages [odoo-addon-account-due-list]: New version: [16.0.1.0.2.4] Old Version: [16.0.1.0.2.3]
+[2023-04-13 05:04:09] WARNING root fetch - processPackages [DataframeFormatter]: Skipping, unable to determine old version
+[2023-04-13 05:04:09] INFO root fetch - processPackages [DataframeFormatter]: Start processing: logkk
+[2023-04-13 05:04:09] INFO root fetch - main [MainThread]: End processing [DataframeFormatter] error
+[2023-04-13 05:04:09] WARNING root fetch - processPackages [IOTELLME]: Skipping, unable to determine old version
+[2023-04-13 05:04:09] INFO root fetch - processPackages [IOTELLME]: Start processing: locate-pixelcolor-numba
+[2023-04-13 05:04:09] INFO root fetch - main [MainThread]: End processing [IOTELLME] error
+[2023-04-13 05:04:09] INFO root fetch - processPackages [jina-hubble-sdk]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-13 05:04:09] INFO root fetch - processPackages [logkk]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-13 05:04:09] WARNING root fetch - processPackages [locate-pixelcolor-numba]: Skipping, unable to determine old version
+[2023-04-13 05:04:09] INFO root fetch - main [MainThread]: End processing [locate-pixelcolor-numba] error
+[2023-04-13 05:04:09] INFO root fetch - processPackages [odoo-addon-account-payment-term-extension]: Downloading https://files.pythonhosted.org/packages/77/22/7f7f7a7b1b036fa6ba07928efabb450a01453c3af090fa23e7eb64d5f9da/odoo_addon_account_payment_term_extension-16.0.1.0.0.6-py3-none-any.whl
+[2023-04-13 05:04:09] INFO root fetch - processPackages [jina-hubble-sdk]: Downloading https://files.pythonhosted.org/packages/e3/a7/c61c78fd5351be996cb9d68fc531438da4f16c50a45e2955e798723cbd96/jina-hubble-sdk-0.9.1.tar.gz
+[2023-04-13 05:04:09] INFO root fetch - processPackages [logkk]: Downloading https://files.pythonhosted.org/packages/a7/74/5cdfbfa665af929e2fd140efddffaabe25a4bf2c374f95b1a53565bd9fbe/logkk-0.4.0.tar.gz
+[2023-04-13 05:04:09] INFO root fetch - processPackages [odoo-addon-account-due-list]: Downloading https://files.pythonhosted.org/packages/dd/f9/21a45a2da6b2f04157648a0430cc3dd8784cc30895e113957651aaccb6d2/odoo_addon_account_due_list-16.0.1.0.2.4-py3-none-any.whl
+[2023-04-13 05:04:10] INFO root fetch - processPackages [logkk]: Downloading https://files.pythonhosted.org/packages/47/15/dcdbdc0be88e397a7c2ab7c8d8b46295f4faad90e6824c53d267166fd8f5/logkk-0.5.0.tar.gz
+[2023-04-13 05:04:10] INFO root fetch - processPackages [odoo-addon-account-due-list]: executing diffoscope
+[2023-04-13 05:04:10] INFO root fetch - processPackages [odoo-addon-account-due-list]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_due_list-16.0.1.0.2.3-py3-none-any.whl.zip tmp/odoo_addon_account_due_list-16.0.1.0.2.4-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-account-due-list/16.0.1.0.2.3-16.0.1.0.2.4/diff.md --exclude *.pyd
+[2023-04-13 05:04:10] INFO root fetch - processPackages [odoo-addon-account-payment-term-extension]: executing diffoscope
+[2023-04-13 05:04:10] INFO root fetch - processPackages [odoo-addon-account-payment-term-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_term_extension-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_account_payment_term_extension-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-account-payment-term-extension/16.0.1.0.0.5-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-04-13 05:04:10] INFO root fetch - processPackages [logkk]: executing diffoscope
+[2023-04-13 05:04:10] INFO root fetch - processPackages [logkk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logkk-0.4.0.tar.gz tmp/logkk-0.5.0.tar.gz --markdown 20230413/l/logkk/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-13 05:04:10] INFO root fetch - processPackages [jina-hubble-sdk]: Downloading https://files.pythonhosted.org/packages/2d/5c/9a19759f26c21b0c73694870d6b9004301a67dbd09829567443e810542c5/jina-hubble-sdk-0.9.2.tar.gz
+[2023-04-13 05:04:10] INFO root fetch - processPackages [jina-hubble-sdk]: executing diffoscope
+[2023-04-13 05:04:10] INFO root fetch - processPackages [jina-hubble-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jina-hubble-sdk-0.9.1.tar.gz tmp/jina-hubble-sdk-0.9.2.tar.gz --markdown 20230413/j/jina-hubble-sdk/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-13 05:04:11] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-due-list]: success
+[2023-04-13 05:04:11] INFO root fetch - main [MainThread]: End processing [logkk]: success
+[2023-04-13 05:04:11] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-term-extension]: success
+[2023-04-13 05:04:11] INFO root fetch - main [MainThread]: End processing [jina-hubble-sdk]: success
+[2023-04-13 05:04:11] INFO root fetch - main [MainThread]: Store serial: [17686252]
