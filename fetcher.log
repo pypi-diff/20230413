@@ -7167,3 +7167,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:51:08] INFO root fetch - processPackages [jupyter-scatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter-scatter-0.8.0.tar.gz tmp/jupyter-scatter-0.9.0.tar.gz --markdown 20230413/j/jupyter-scatter/0.8.0-0.9.0/diff.md --exclude *.pyd
 [2023-04-13 05:51:23] INFO root fetch - main [MainThread]: End processing [jupyter-scatter]: success
 [2023-04-13 05:51:23] INFO root fetch - main [MainThread]: Store serial: [17686604]
+[2023-04-13 05:56:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686604]
+[2023-04-13 05:56:30] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-13 05:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scaffoldPandas
+[2023-04-13 05:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: je-load-density
+[2023-04-13 05:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dioptra
+[2023-04-13 05:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-privacy
+[2023-04-13 05:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: johnnydep
+[2023-04-13 05:56:30] INFO root fetch - processPackages [scaffoldPandas]: New version: [0.17] Old Version: [0.15]
+[2023-04-13 05:56:30] INFO root fetch - processPackages [dioptra]: New version: [1.0.8] Old Version: [1.0.7rc3]
+[2023-04-13 05:56:30] INFO root fetch - processPackages [odoo14-addon-privacy]: New version: [14.0.1.0.1.dev9] Old Version: [14.0.1.0.1.dev8]
+[2023-04-13 05:56:30] INFO root fetch - processPackages [je-load-density]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 05:56:30] INFO root fetch - processPackages [johnnydep]: New version: [1.9] Old Version: [1.8]
+[2023-04-13 05:56:30] INFO root fetch - processPackages [scaffoldPandas]: Downloading https://files.pythonhosted.org/packages/d0/5b/32c65f2be4f18682b8b164e97322511d0e14040c9d335c6b28f2dda7d2a3/scaffoldpandas-0.15.tar.gz
+[2023-04-13 05:56:30] INFO root fetch - processPackages [odoo14-addon-privacy]: Downloading https://files.pythonhosted.org/packages/24/4f/cc1bc68e1cfc5da739d6d98ae5b746695ea20a61bd2dbbc113a96d152739/odoo14_addon_privacy-14.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-13 05:56:30] INFO root fetch - processPackages [johnnydep]: Downloading https://files.pythonhosted.org/packages/10/fd/4020817535b39a383373793f922889f1c8d7ba089cfa2a54e4505ec7372d/johnnydep-1.8-py2.py3-none-any.whl
+[2023-04-13 05:56:30] INFO root fetch - processPackages [dioptra]: Downloading https://files.pythonhosted.org/packages/ab/60/913fc9ae205127c7e494d4e2b58559a5dfc6a68e5236ff413c3c5d465993/dioptra-1.0.8.tar.gz
+[2023-04-13 05:56:30] INFO root fetch - processPackages [dioptra]: executing diffoscope
+[2023-04-13 05:56:30] INFO root fetch - processPackages [dioptra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dioptra-1.0.7rc3.tar.gz tmp/dioptra-1.0.8.tar.gz --markdown 20230413/d/dioptra/1.0.7rc3-1.0.8/diff.md --exclude *.pyd
+[2023-04-13 05:56:31] INFO root fetch - processPackages [odoo14-addon-privacy]: Downloading https://files.pythonhosted.org/packages/05/82/d67d4f8c740c20980546c6168b535e894eae6a3c8ad46c74fa662291815a/odoo14_addon_privacy-14.0.1.0.1.dev9-py3-none-any.whl
+[2023-04-13 05:56:31] INFO root fetch - processPackages [je-load-density]: executing diffoscope
+[2023-04-13 05:56:31] INFO root fetch - processPackages [je-load-density]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_load_density-0.0.8.tar.gz tmp/je_load_density-0.0.9.tar.gz --markdown 20230413/j/je-load-density/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 05:56:31] INFO root fetch - processPackages [scaffoldPandas]: Downloading https://files.pythonhosted.org/packages/d3/79/c7c152cbb2b94f8a84f5f9d26dcfb4fca97df57fe17dd374dacb5ae383bb/scaffoldPandas-0.17.tar.gz
+[2023-04-13 05:56:31] INFO root fetch - processPackages [scaffoldPandas]: executing diffoscope
+[2023-04-13 05:56:31] INFO root fetch - processPackages [scaffoldPandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaffoldpandas-0.15.tar.gz tmp/scaffoldPandas-0.17.tar.gz --markdown 20230413/s/scaffoldPandas/0.15-0.17/diff.md --exclude *.pyd
+[2023-04-13 05:56:31] INFO root fetch - processPackages [odoo14-addon-privacy]: executing diffoscope
+[2023-04-13 05:56:31] INFO root fetch - processPackages [odoo14-addon-privacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_privacy-14.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_privacy-14.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-privacy/14.0.1.0.1.dev8-14.0.1.0.1.dev9/diff.md --exclude *.pyd
+[2023-04-13 05:56:31] INFO root fetch - processPackages [johnnydep]: Downloading https://files.pythonhosted.org/packages/12/2a/bb3fd0b51b29bd625c9e9d718238d89f748bd4ff65656a37f639e03e37a1/johnnydep-1.9.tar.gz
+[2023-04-13 05:56:31] INFO root fetch - processPackages [johnnydep]: executing diffoscope
+[2023-04-13 05:56:31] INFO root fetch - processPackages [johnnydep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnnydep-1.8-py2.py3-none-any.whl.zip tmp/johnnydep-1.9.tar.gz --markdown 20230413/j/johnnydep/1.8-1.9/diff.md --exclude *.pyd
+[2023-04-13 05:56:32] INFO root fetch - processPackages [je-load-density]: Start processing: dpsa4fl-bindings
+[2023-04-13 05:56:32] INFO root fetch - main [MainThread]: End processing [je-load-density]: success
+[2023-04-13 05:56:32] INFO root fetch - processPackages [dpsa4fl-bindings]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 05:56:32] INFO root fetch - processPackages [scaffoldPandas]: Start processing: nextpcg
+[2023-04-13 05:56:32] INFO root fetch - main [MainThread]: End processing [scaffoldPandas]: success
+[2023-04-13 05:56:32] INFO root fetch - processPackages [nextpcg]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-13 05:56:32] INFO root fetch - processPackages [odoo14-addon-privacy]: Start processing: ddd-interface
+[2023-04-13 05:56:32] INFO root fetch - main [MainThread]: End processing [odoo14-addon-privacy]: success
+[2023-04-13 05:56:32] INFO root fetch - processPackages [ddd-interface]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 05:56:32] INFO root fetch - main [MainThread]: End processing [dioptra]: success
+[2023-04-13 05:56:32] INFO root fetch - processPackages [ddd-interface]: executing diffoscope
+[2023-04-13 05:56:32] INFO root fetch - processPackages [ddd-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddd-interface-0.0.8.tar.gz tmp/ddd-interface-0.0.9.tar.gz --markdown 20230413/d/ddd-interface/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 05:56:32] INFO root fetch - main [MainThread]: End processing [johnnydep]: success
+[2023-04-13 05:56:32] INFO root fetch - processPackages [dpsa4fl-bindings]: executing diffoscope
+[2023-04-13 05:56:32] INFO root fetch - processPackages [dpsa4fl-bindings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpsa4fl_bindings-0.1.8.tar.gz tmp/dpsa4fl_bindings-0.1.9.tar.gz --markdown 20230413/d/dpsa4fl-bindings/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 05:56:32] INFO root fetch - processPackages [nextpcg]: Downloading https://files.pythonhosted.org/packages/ed/f2/0d14e82ced3f9c41c7b24846b4eece5f179a7698c0b043c0fe14bf788a16/nextpcg-0.5.0.tar.gz
+[2023-04-13 05:56:32] INFO root fetch - processPackages [nextpcg]: executing diffoscope
+[2023-04-13 05:56:32] INFO root fetch - processPackages [nextpcg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextpcg-0.4.0.tar.gz tmp/nextpcg-0.5.0.tar.gz --markdown 20230413/n/nextpcg/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-13 05:56:33] INFO root fetch - main [MainThread]: End processing [ddd-interface]: success
+[2023-04-13 05:56:33] INFO root fetch - main [MainThread]: End processing [dpsa4fl-bindings]: success
+[2023-04-13 05:56:33] INFO root fetch - main [MainThread]: End processing [nextpcg]: success
+[2023-04-13 05:56:33] INFO root fetch - main [MainThread]: Store serial: [17686641]
