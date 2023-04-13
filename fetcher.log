@@ -11075,3 +11075,101 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 10:23:04] INFO root fetch - main [MainThread]: End processing [PaperCrawlerUtil]: success
 [2023-04-13 10:23:05] INFO root fetch - main [MainThread]: End processing [lmql]: success
 [2023-04-13 10:23:05] INFO root fetch - main [MainThread]: Store serial: [17689082]
+[2023-04-13 10:28:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689082]
+[2023-04-13 10:28:13] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-13 10:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: udata-front
+[2023-04-13 10:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: navicat-marc
+[2023-04-13 10:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: playmolecule
+[2023-04-13 10:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torf-cli
+[2023-04-13 10:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: test-pipinstall-whp
+[2023-04-13 10:28:13] INFO root fetch - processPackages [torf-cli]: New version: [5.0.0] Old Version: [4.0.4]
+[2023-04-13 10:28:13] INFO root fetch - processPackages [navicat-marc]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 10:28:13] INFO root fetch - processPackages [playmolecule]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-04-13 10:28:13] WARNING root fetch - processPackages [test-pipinstall-whp]: Skipping, unable to determine old version
+[2023-04-13 10:28:13] INFO root fetch - processPackages [test-pipinstall-whp]: Start processing: auto-vicuna
+[2023-04-13 10:28:13] INFO root fetch - main [MainThread]: End processing [test-pipinstall-whp] error
+[2023-04-13 10:28:13] INFO root fetch - processPackages [udata-front]: New version: [3.2.2.dev9835] Old Version: [3.2.2.dev9777]
+[2023-04-13 10:28:13] INFO root fetch - processPackages [auto-vicuna]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 10:28:13] INFO root fetch - processPackages [torf-cli]: Downloading https://files.pythonhosted.org/packages/d5/62/f7efc47a3a5f2c989fc05b1c2c0b5b8737a2486933ee6f799effa373751e/torf-cli-4.0.4.tar.gz
+[2023-04-13 10:28:13] INFO root fetch - processPackages [navicat-marc]: Downloading https://files.pythonhosted.org/packages/be/95/5e88246650751059a11eed0c92f92a575aa920e339c0b0da41fcb057e534/navicat_marc-0.1.8.tar.gz
+[2023-04-13 10:28:13] INFO root fetch - processPackages [udata-front]: Downloading https://files.pythonhosted.org/packages/88/a9/452ffad9fd7c995db632c607e873e1f0d248fe1337b02d15b2f81ecd66d9/udata_front-3.2.2.dev9777-py2.py3-none-any.whl
+[2023-04-13 10:28:13] INFO root fetch - processPackages [auto-vicuna]: Downloading https://files.pythonhosted.org/packages/87/22/e986461fc8e045493bdf70d666b05e3de467e9faa1a580166fac539d0f38/auto_vicuna-0.2.0.tar.gz
+[2023-04-13 10:28:13] INFO root fetch - processPackages [playmolecule]: Downloading https://files.pythonhosted.org/packages/ab/7e/93485024918b0d72c6b29919132fe0fc5749900ccfa3100a4630555f5ae9/playmolecule-1.6.5.tar.gz
+[2023-04-13 10:28:13] INFO root fetch - processPackages [playmolecule]: executing diffoscope
+[2023-04-13 10:28:13] INFO root fetch - processPackages [playmolecule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playmolecule-1.6.4.tar.gz tmp/playmolecule-1.6.5.tar.gz --markdown 20230413/p/playmolecule/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-04-13 10:28:13] INFO root fetch - processPackages [auto-vicuna]: Downloading https://files.pythonhosted.org/packages/e4/fb/4c230f2630e5f27662fe19cd4964f75e562aa164838a605b66b5f3852133/auto_vicuna-0.2.1.tar.gz
+[2023-04-13 10:28:13] INFO root fetch - processPackages [auto-vicuna]: executing diffoscope
+[2023-04-13 10:28:13] INFO root fetch - processPackages [auto-vicuna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_vicuna-0.2.0.tar.gz tmp/auto_vicuna-0.2.1.tar.gz --markdown 20230413/a/auto-vicuna/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 10:28:14] INFO root fetch - processPackages [navicat-marc]: Downloading https://files.pythonhosted.org/packages/38/1a/daa709df4b3548bae07cb810f61ce402edcc1076bf00cd6c14ec2cd1b2cf/navicat_marc-0.1.9.tar.gz
+[2023-04-13 10:28:14] INFO root fetch - processPackages [torf-cli]: Downloading https://files.pythonhosted.org/packages/d0/e6/373c8d1ace09b7bf912fca56a147d807b05c05f244221b5e9a1445c31c48/torf-cli-5.0.0.tar.gz
+[2023-04-13 10:28:14] INFO root fetch - processPackages [torf-cli]: executing diffoscope
+[2023-04-13 10:28:14] INFO root fetch - processPackages [torf-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torf-cli-4.0.4.tar.gz tmp/torf-cli-5.0.0.tar.gz --markdown 20230413/t/torf-cli/4.0.4-5.0.0/diff.md --exclude *.pyd
+[2023-04-13 10:28:14] INFO root fetch - processPackages [navicat-marc]: executing diffoscope
+[2023-04-13 10:28:14] INFO root fetch - processPackages [navicat-marc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/navicat_marc-0.1.8.tar.gz tmp/navicat_marc-0.1.9.tar.gz --markdown 20230413/n/navicat-marc/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 10:28:14] INFO root fetch - processPackages [playmolecule]: Start processing: mofikhatun530-checksum
+[2023-04-13 10:28:14] INFO root fetch - main [MainThread]: End processing [playmolecule]: success
+[2023-04-13 10:28:14] WARNING root fetch - processPackages [mofikhatun530-checksum]: Skipping, unable to determine old version
+[2023-04-13 10:28:14] INFO root fetch - processPackages [mofikhatun530-checksum]: Start processing: upgini
+[2023-04-13 10:28:14] INFO root fetch - main [MainThread]: End processing [mofikhatun530-checksum] error
+[2023-04-13 10:28:15] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-04-13 10:28:15] INFO root fetch - processPackages [udata-front]: Downloading https://files.pythonhosted.org/packages/c3/ae/547e0ff9026117ae49e8ee81a982eefc288ed0fa34ffc15b0234566f0996/udata_front-3.2.2.dev9835-py2.py3-none-any.whl
+[2023-04-13 10:28:15] INFO root fetch - processPackages [auto-vicuna]: Start processing: bridgecrew
+[2023-04-13 10:28:15] INFO root fetch - main [MainThread]: End processing [auto-vicuna]: success
+[2023-04-13 10:28:15] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2023-04-13 10:28:15] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20230413/u/upgini/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-04-13 10:28:15] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-13 10:28:15] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-13 10:28:15] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230413/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-13 10:28:15] INFO root fetch - processPackages [torf-cli]: Start processing: padiff
+[2023-04-13 10:28:15] INFO root fetch - main [MainThread]: End processing [torf-cli]: success
+[2023-04-13 10:28:15] INFO root fetch - processPackages [padiff]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-13 10:28:15] INFO root fetch - processPackages [navicat-marc]: Start processing: toui
+[2023-04-13 10:28:15] INFO root fetch - main [MainThread]: End processing [navicat-marc]: success
+[2023-04-13 10:28:15] INFO root fetch - processPackages [padiff]: Downloading https://files.pythonhosted.org/packages/b1/8c/843f39c7d6122cd30d953660ec09913afdafbc5b719d5f83d8b9a570e6f6/padiff-0.1.0-py3-none-any.whl
+[2023-04-13 10:28:15] INFO root fetch - processPackages [toui]: New version: [1.0.4b0] Old Version: [1.0.3b0]
+[2023-04-13 10:28:15] INFO root fetch - processPackages [toui]: Downloading https://files.pythonhosted.org/packages/81/97/1ed34dbd69cd3868d98ed63fdc90cfff44f08e5e1f3f82feffe88470373f/toui-1.0.4b0.tar.gz
+[2023-04-13 10:28:15] INFO root fetch - processPackages [padiff]: Downloading https://files.pythonhosted.org/packages/cd/98/a8758ef351ee3f3bf5d69bff1123dbdf17d82b70e58f6207e49055f21855/padiff-0.2.0-py3-none-any.whl
+[2023-04-13 10:28:15] INFO root fetch - processPackages [padiff]: executing diffoscope
+[2023-04-13 10:28:15] INFO root fetch - processPackages [padiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/padiff-0.1.0-py3-none-any.whl.zip tmp/padiff-0.2.0-py3-none-any.whl.zip --markdown 20230413/p/padiff/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 10:28:15] INFO root fetch - processPackages [toui]: executing diffoscope
+[2023-04-13 10:28:15] INFO root fetch - processPackages [toui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toui-1.0.3b0.tar.gz tmp/toui-1.0.4b0.tar.gz --markdown 20230413/t/toui/1.0.3b0-1.0.4b0/diff.md --exclude *.pyd
+[2023-04-13 10:28:16] INFO root fetch - processPackages [udata-front]: executing diffoscope
+[2023-04-13 10:28:16] INFO root fetch - processPackages [udata-front]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/udata_front-3.2.2.dev9777-py2.py3-none-any.whl.zip tmp/udata_front-3.2.2.dev9835-py2.py3-none-any.whl.zip --markdown 20230413/u/udata-front/3.2.2.dev9777-3.2.2.dev9835/diff.md --exclude *.pyd
+[2023-04-13 10:28:16] INFO root fetch - processPackages [bridgecrew]: Start processing: comwares
+[2023-04-13 10:28:16] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-13 10:28:16] INFO root fetch - processPackages [comwares]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 10:28:16] INFO root fetch - processPackages [comwares]: Downloading https://files.pythonhosted.org/packages/df/e4/2a4326720e8cb77d14d03baa90d97ebff984a483b5bf822281b1a81b2e29/comwares-0.1.0.tar.gz
+[2023-04-13 10:28:16] INFO root fetch - processPackages [upgini]: Start processing: vclog
+[2023-04-13 10:28:16] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2023-04-13 10:28:16] INFO root fetch - processPackages [vclog]: New version: [1.0.0] Old Version: [0.1.2]
+[2023-04-13 10:28:16] INFO root fetch - processPackages [comwares]: Downloading https://files.pythonhosted.org/packages/66/73/b203acae58f1f1a95e7285de883828f532878865bbc975b37b191e9fa1e3/comwares-0.1.1.tar.gz
+[2023-04-13 10:28:16] INFO root fetch - processPackages [comwares]: executing diffoscope
+[2023-04-13 10:28:16] INFO root fetch - processPackages [comwares]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comwares-0.1.0.tar.gz tmp/comwares-0.1.1.tar.gz --markdown 20230413/c/comwares/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 10:28:16] INFO root fetch - processPackages [vclog]: Downloading https://files.pythonhosted.org/packages/25/c8/bf096bbd2cdc6541fab0ff962bc7e6b7d93e3219bf329d548848dac62fad/vclog-0.1.2.tar.gz
+[2023-04-13 10:28:17] INFO root fetch - processPackages [vclog]: Downloading https://files.pythonhosted.org/packages/37/9d/04efb34e961891fa5e5d79e249d9d242bf34b59cd493b764c053d028ee40/vclog-1.0.0.tar.gz
+[2023-04-13 10:28:17] INFO root fetch - processPackages [vclog]: executing diffoscope
+[2023-04-13 10:28:17] INFO root fetch - processPackages [vclog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vclog-0.1.2.tar.gz tmp/vclog-1.0.0.tar.gz --markdown 20230413/v/vclog/0.1.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-13 10:28:17] INFO root fetch - processPackages [padiff]: Start processing: openai-api-call
+[2023-04-13 10:28:17] INFO root fetch - main [MainThread]: End processing [padiff]: success
+[2023-04-13 10:28:17] INFO root fetch - processPackages [openai-api-call]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-13 10:28:17] INFO root fetch - processPackages [toui]: Start processing: auto-vicuna
+[2023-04-13 10:28:17] INFO root fetch - main [MainThread]: End processing [toui]: success
+[2023-04-13 10:28:17] INFO root fetch - processPackages [auto-vicuna]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 10:28:17] INFO root fetch - processPackages [auto-vicuna]: executing diffoscope
+[2023-04-13 10:28:17] INFO root fetch - processPackages [auto-vicuna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_vicuna-0.2.0.tar.gz tmp/auto_vicuna-0.2.1.tar.gz --markdown 20230413/a/auto-vicuna/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 10:28:17] INFO root fetch - processPackages [openai-api-call]: Downloading https://files.pythonhosted.org/packages/52/f2/36ca9e8c85709e5a6a2c4c04060cb3101666ce3f84d559925e0796c1106f/openai_api_call-0.3.6.tar.gz
+[2023-04-13 10:28:17] INFO root fetch - processPackages [openai-api-call]: Downloading https://files.pythonhosted.org/packages/1a/4d/de0366ff549b1d64ea6f6050e0ae56d16a99e9b9fe83d23122fc230e7742/openai_api_call-0.3.7.tar.gz
+[2023-04-13 10:28:17] INFO root fetch - processPackages [openai-api-call]: executing diffoscope
+[2023-04-13 10:28:17] INFO root fetch - processPackages [openai-api-call]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_api_call-0.3.6.tar.gz tmp/openai_api_call-0.3.7.tar.gz --markdown 20230413/o/openai-api-call/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-13 10:28:17] INFO root fetch - processPackages [comwares]: Start processing: pontos
+[2023-04-13 10:28:17] INFO root fetch - main [MainThread]: End processing [comwares]: success
+[2023-04-13 10:28:17] INFO root fetch - processPackages [pontos]: New version: [23.4.3] Old Version: [23.4.2]
+[2023-04-13 10:28:18] INFO root fetch - processPackages [pontos]: Downloading https://files.pythonhosted.org/packages/c7/b6/06fc427f2ac22d212ed9cb5fd29510b8e168c7b813f98c5783a6be31af53/pontos-23.4.3.tar.gz
+[2023-04-13 10:28:18] INFO root fetch - processPackages [pontos]: executing diffoscope
+[2023-04-13 10:28:18] INFO root fetch - processPackages [pontos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pontos-23.4.2.tar.gz tmp/pontos-23.4.3.tar.gz --markdown 20230413/p/pontos/23.4.2-23.4.3/diff.md --exclude *.pyd
+[2023-04-13 10:28:18] INFO root fetch - main [MainThread]: End processing [vclog]: success
+[2023-04-13 10:28:18] INFO root fetch - main [MainThread]: End processing [auto-vicuna]: success
+[2023-04-13 10:28:18] INFO root fetch - main [MainThread]: End processing [openai-api-call]: success
+[2023-04-13 10:28:21] INFO root fetch - main [MainThread]: End processing [pontos]: success
+[2023-04-13 10:28:43] INFO root fetch - main [MainThread]: End processing [udata-front]: success
+[2023-04-13 10:28:43] INFO root fetch - main [MainThread]: Store serial: [17689133]
