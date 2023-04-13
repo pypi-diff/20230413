@@ -12627,3 +12627,155 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 11:37:24] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
 [2023-04-13 11:37:24] INFO root fetch - main [MainThread]: End processing [ccs-fit]: success
 [2023-04-13 11:37:24] INFO root fetch - main [MainThread]: Store serial: [17689960]
+[2023-04-13 11:42:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689960]
+[2023-04-13 11:42:32] INFO root fetch - main [MainThread]: Found 26 changed packages
+[2023-04-13 11:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-priming
+[2023-04-13 11:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-priming
+[2023-04-13 11:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: novu
+[2023-04-13 11:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ml-management
+[2023-04-13 11:42:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openctp-ctp-651
+[2023-04-13 11:42:32] INFO root fetch - processPackages [novu]: New version: [1.2.0] Old Version: [1.1.1a1]
+[2023-04-13 11:42:32] INFO root fetch - processPackages [ml-management]: New version: [0.0.29] Old Version: [0.0.28]
+[2023-04-13 11:42:32] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:42:32] WARNING root fetch - processPackages [openctp-ctp-651]: Skipping, unable to determine old version
+[2023-04-13 11:42:32] INFO root fetch - processPackages [openctp-ctp-651]: Start processing: alibabacloud-cloudapi20160714-py2
+[2023-04-13 11:42:32] INFO root fetch - main [MainThread]: End processing [openctp-ctp-651] error
+[2023-04-13 11:42:32] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:42:32] INFO root fetch - processPackages [alibabacloud-cloudapi20160714-py2]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-04-13 11:42:32] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:42:32] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:42:32] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:42:32] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:42:32] INFO root fetch - processPackages [ml-management]: Downloading https://files.pythonhosted.org/packages/5e/e8/696fc9641971c891de5ac4204ff670bde4a3dcc215f648798ef80ad82164/ml-management-0.0.28.tar.gz
+[2023-04-13 11:42:32] INFO root fetch - processPackages [novu]: Downloading https://files.pythonhosted.org/packages/fc/87/adacaeb58dc9366a69bac913ae4986bc65888111915e448f64e1263eac7c/novu-1.1.1a1.tar.gz
+[2023-04-13 11:42:32] INFO root fetch - processPackages [alibabacloud-cloudapi20160714-py2]: Downloading https://files.pythonhosted.org/packages/09/10/55275f079671f2324e93cbf499ece4017fd5a779a3ebe3d0d81d6780e4d4/alibabacloud_cloudapi20160714_py2-2.2.8.tar.gz
+[2023-04-13 11:42:32] INFO root fetch - processPackages [ml-management]: Downloading https://files.pythonhosted.org/packages/c5/72/5f98272861a34a7350783ae2aaddbe6e0c57d99c123b05bf8bc840e787d6/ml-management-0.0.29.tar.gz
+[2023-04-13 11:42:32] INFO root fetch - processPackages [novu]: Downloading https://files.pythonhosted.org/packages/94/4c/d38cd733a5556f3ffc4c5a7ae8bac75c42dc0943910bd305aed8122582f2/novu-1.2.0.tar.gz
+[2023-04-13 11:42:32] INFO root fetch - processPackages [alibabacloud-cloudapi20160714-py2]: Downloading https://files.pythonhosted.org/packages/6c/01/9e15281f8c8ce41ba2c4b056f5647f40adc70f2672aa530585533a56b66f/alibabacloud_cloudapi20160714_py2-2.2.9.tar.gz
+[2023-04-13 11:42:33] INFO root fetch - processPackages [ml-management]: executing diffoscope
+[2023-04-13 11:42:33] INFO root fetch - processPackages [ml-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-management-0.0.28.tar.gz tmp/ml-management-0.0.29.tar.gz --markdown 20230413/m/ml-management/0.0.28-0.0.29/diff.md --exclude *.pyd
+[2023-04-13 11:42:33] INFO root fetch - processPackages [novu]: executing diffoscope
+[2023-04-13 11:42:33] INFO root fetch - processPackages [novu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novu-1.1.1a1.tar.gz tmp/novu-1.2.0.tar.gz --markdown 20230413/n/novu/1.1.1a1-1.2.0/diff.md --exclude *.pyd
+[2023-04-13 11:42:33] INFO root fetch - processPackages [alibabacloud-cloudapi20160714-py2]: executing diffoscope
+[2023-04-13 11:42:33] INFO root fetch - processPackages [alibabacloud-cloudapi20160714-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_cloudapi20160714_py2-2.2.8.tar.gz tmp/alibabacloud_cloudapi20160714_py2-2.2.9.tar.gz --markdown 20230413/a/alibabacloud-cloudapi20160714-py2/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-04-13 11:42:33] INFO root fetch - processPackages [few-shot-priming]: Start processing: conformine
+[2023-04-13 11:42:33] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:42:33] INFO root fetch - processPackages [conformine]: New version: [0.0.1b12] Old Version: [0.0.1b11]
+[2023-04-13 11:42:33] INFO root fetch - processPackages [few-shot-priming]: Start processing: doc-ufcn
+[2023-04-13 11:42:33] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:42:33] INFO root fetch - processPackages [doc-ufcn]: New version: [0.1.9rc3] Old Version: [0.1.9rc2]
+[2023-04-13 11:42:33] INFO root fetch - processPackages [conformine]: Downloading https://files.pythonhosted.org/packages/9e/7f/5936e60650d86673d2f8c200c854326491c60677e4c14a72bd5d178c9649/conformine-0.0.1b12.tar.gz
+[2023-04-13 11:42:33] INFO root fetch - processPackages [doc-ufcn]: Downloading https://files.pythonhosted.org/packages/ed/6d/2c229ffabff6b432c2d8464be3fdbb6ef9e9a5a32770a7c430d705a5dca3/doc-ufcn-0.1.9rc2.tar.gz
+[2023-04-13 11:42:34] INFO root fetch - processPackages [ml-management]: Start processing: openfl-x
+[2023-04-13 11:42:34] INFO root fetch - main [MainThread]: End processing [ml-management]: success
+[2023-04-13 11:42:34] ERROR root fetch - processPackages [openfl-x]: Unable to get metadata: No such project 'openfl-x'
+[2023-04-13 11:42:34] INFO root fetch - processPackages [openfl-x]: Start processing: alibabacloud-cloudapi20160714
+[2023-04-13 11:42:34] INFO root fetch - main [MainThread]: End processing [openfl-x] error
+[2023-04-13 11:42:34] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-04-13 11:42:34] INFO root fetch - processPackages [conformine]: executing diffoscope
+[2023-04-13 11:42:34] INFO root fetch - processPackages [conformine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conformine-0.0.1b11.tar.gz tmp/conformine-0.0.1b12.tar.gz --markdown 20230413/c/conformine/0.0.1b11-0.0.1b12/diff.md --exclude *.pyd
+[2023-04-13 11:42:34] INFO root fetch - processPackages [doc-ufcn]: Downloading https://files.pythonhosted.org/packages/a1/c8/ad021dc7193b60df4a2c79366c30110719f714e5d7db362c8aea6d8bcb01/doc-ufcn-0.1.9rc3.tar.gz
+[2023-04-13 11:42:34] INFO root fetch - processPackages [novu]: Start processing: t2iapi
+[2023-04-13 11:42:34] INFO root fetch - main [MainThread]: End processing [novu]: success
+[2023-04-13 11:42:34] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: Downloading https://files.pythonhosted.org/packages/8d/4c/9bb9ff925f9039df8ff05f5b4c5108fca5c78674d90499a83f7429ee52b5/alibabacloud_cloudapi20160714-2.2.8.tar.gz
+[2023-04-13 11:42:34] INFO root fetch - processPackages [t2iapi]: New version: [3.0.0.dev129] Old Version: [3.0.0.dev127]
+[2023-04-13 11:42:34] INFO root fetch - processPackages [doc-ufcn]: executing diffoscope
+[2023-04-13 11:42:34] INFO root fetch - processPackages [doc-ufcn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doc-ufcn-0.1.9rc2.tar.gz tmp/doc-ufcn-0.1.9rc3.tar.gz --markdown 20230413/d/doc-ufcn/0.1.9rc2-0.1.9rc3/diff.md --exclude *.pyd
+[2023-04-13 11:42:34] INFO root fetch - processPackages [t2iapi]: Downloading https://files.pythonhosted.org/packages/63/e6/8dadcca4cb27b407e7cbb51bab6bd34e64ea2ed8e1d495154df93b437310/t2iapi-3.0.0.dev129.tar.gz
+[2023-04-13 11:42:34] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: Downloading https://files.pythonhosted.org/packages/7e/f4/72d4aa78c2eafed3b97cb3e8771ff32caef4c97ccda291b6c03af9e3be4f/alibabacloud_cloudapi20160714-2.2.9.tar.gz
+[2023-04-13 11:42:34] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: executing diffoscope
+[2023-04-13 11:42:34] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_cloudapi20160714-2.2.8.tar.gz tmp/alibabacloud_cloudapi20160714-2.2.9.tar.gz --markdown 20230413/a/alibabacloud-cloudapi20160714/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-04-13 11:42:34] INFO root fetch - processPackages [t2iapi]: executing diffoscope
+[2023-04-13 11:42:34] INFO root fetch - processPackages [t2iapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2iapi-3.0.0.dev127.tar.gz tmp/t2iapi-3.0.0.dev129.tar.gz --markdown 20230413/t/t2iapi/3.0.0.dev127-3.0.0.dev129/diff.md --exclude *.pyd
+[2023-04-13 11:42:35] INFO root fetch - processPackages [conformine]: Start processing: kcli
+[2023-04-13 11:42:35] INFO root fetch - main [MainThread]: End processing [conformine]: success
+[2023-04-13 11:42:35] INFO root fetch - processPackages [kcli]: New version: [99.0.202304130943] Old Version: [99.0.202304130929]
+[2023-04-13 11:42:35] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/6b/45/1426fcc6e5b3ad14c656badd5f17663067e0df1363a9c17c38ed6bab48bd/kcli-99.0.202304130943-py3-none-any.whl
+[2023-04-13 11:42:35] INFO root fetch - processPackages [alibabacloud-cloudapi20160714-py2]: Start processing: supervisely
+[2023-04-13 11:42:35] INFO root fetch - main [MainThread]: End processing [alibabacloud-cloudapi20160714-py2]: success
+[2023-04-13 11:42:35] INFO root fetch - processPackages [supervisely]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-04-13 11:42:35] INFO root fetch - processPackages [doc-ufcn]: Start processing: lamindb
+[2023-04-13 11:42:35] INFO root fetch - main [MainThread]: End processing [doc-ufcn]: success
+[2023-04-13 11:42:35] INFO root fetch - processPackages [lamindb]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-04-13 11:42:35] INFO root fetch - processPackages [supervisely]: executing diffoscope
+[2023-04-13 11:42:35] INFO root fetch - processPackages [supervisely]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervisely-6.9.1.tar.gz tmp/supervisely-6.9.2.tar.gz --markdown 20230413/s/supervisely/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-04-13 11:42:35] INFO root fetch - processPackages [t2iapi]: Start processing: few-shot-priming
+[2023-04-13 11:42:35] INFO root fetch - main [MainThread]: End processing [t2iapi]: success
+[2023-04-13 11:42:35] INFO root fetch - processPackages [lamindb]: executing diffoscope
+[2023-04-13 11:42:35] INFO root fetch - processPackages [lamindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb-0.9.4.tar.gz tmp/lamindb-0.9.6.tar.gz --markdown 20230413/l/lamindb/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-04-13 11:42:35] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:42:36] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:42:36] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:42:36] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-13 11:42:36] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304130929-py3-none-any.whl.zip tmp/kcli-99.0.202304130943-py3-none-any.whl.zip --markdown 20230413/k/kcli/99.0.202304130929-99.0.202304130943/diff.md --exclude *.pyd
+[2023-04-13 11:42:36] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: Start processing: simunetcore
+[2023-04-13 11:42:36] INFO root fetch - main [MainThread]: End processing [alibabacloud-cloudapi20160714]: success
+[2023-04-13 11:42:36] INFO root fetch - processPackages [simunetcore]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 11:42:36] INFO root fetch - processPackages [simunetcore]: Downloading https://files.pythonhosted.org/packages/ff/e6/657ec45a53b4d04a354e94a0ed6de6c60f7f646126fbda6502fac50f26fa/simunetcore-0.0.8.tar.gz
+[2023-04-13 11:42:37] INFO root fetch - processPackages [few-shot-priming]: Start processing: tala
+[2023-04-13 11:42:37] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:42:37] INFO root fetch - processPackages [tala]: New version: [9.0.0] Old Version: [8.0.0]
+[2023-04-13 11:42:37] INFO root fetch - processPackages [simunetcore]: Downloading https://files.pythonhosted.org/packages/21/bb/f3d3a71f78235c26853a2a4ffb450406a28fd1199ea60e49550ce13bb41b/simunetcore-0.0.9.tar.gz
+[2023-04-13 11:42:37] INFO root fetch - processPackages [tala]: executing diffoscope
+[2023-04-13 11:42:37] INFO root fetch - processPackages [tala]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tala-8.0.0-py3-none-any.whl.zip tmp/tala-9.0.0-py3-none-any.whl.zip --markdown 20230413/t/tala/8.0.0-9.0.0/diff.md --exclude *.pyd
+[2023-04-13 11:42:37] INFO root fetch - processPackages [simunetcore]: executing diffoscope
+[2023-04-13 11:42:37] INFO root fetch - processPackages [simunetcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simunetcore-0.0.8.tar.gz tmp/simunetcore-0.0.9.tar.gz --markdown 20230413/s/simunetcore/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 11:42:37] INFO root fetch - processPackages [lamindb]: Start processing: certora-cli-alpha-master
+[2023-04-13 11:42:37] INFO root fetch - main [MainThread]: End processing [lamindb]: success
+[2023-04-13 11:42:37] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230413.9.5.948824] Old Version: [20230413.9.44.47373]
+[2023-04-13 11:42:37] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/ec/ba/c10afbdd268f315990bcbecf2e5c813f86b5f3ad19369e727b950ae35fad/certora-cli-alpha-master-20230413.9.44.47373.tar.gz
+[2023-04-13 11:42:37] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38004849>=10485760
+[2023-04-13 11:42:37] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: outlierchat
+[2023-04-13 11:42:37] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-13 11:42:37] INFO root fetch - processPackages [outlierchat]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 11:42:37] INFO root fetch - processPackages [outlierchat]: Downloading https://files.pythonhosted.org/packages/fe/52/bdd0a26d15d5b3ab53e306918fb3376921227c8ccf530b20a0c0341ef3f9/outlierchat-0.0.8.tar.gz
+[2023-04-13 11:42:38] INFO root fetch - processPackages [supervisely]: Start processing: openctp-ctp-661
+[2023-04-13 11:42:38] INFO root fetch - main [MainThread]: End processing [supervisely]: success
+[2023-04-13 11:42:38] WARNING root fetch - processPackages [openctp-ctp-661]: Skipping, unable to determine old version
+[2023-04-13 11:42:38] INFO root fetch - processPackages [openctp-ctp-661]: Start processing: pygmtsar
+[2023-04-13 11:42:38] INFO root fetch - main [MainThread]: End processing [openctp-ctp-661] error
+[2023-04-13 11:42:38] INFO root fetch - processPackages [pygmtsar]: New version: [2023.4.12] Old Version: [2023.4.1]
+[2023-04-13 11:42:38] INFO root fetch - processPackages [simunetcore]: Start processing: few-shot-priming
+[2023-04-13 11:42:38] INFO root fetch - main [MainThread]: End processing [simunetcore]: success
+[2023-04-13 11:42:38] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:42:38] INFO root fetch - processPackages [outlierchat]: Downloading https://files.pythonhosted.org/packages/72/16/218021a0311d7818e5053e809de08ce7c9144226ea92dd8d099a798e1f1e/outlierchat-0.0.9.tar.gz
+[2023-04-13 11:42:38] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:42:38] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:42:38] INFO root fetch - processPackages [pygmtsar]: Downloading https://files.pythonhosted.org/packages/b0/59/3366df25743974f5264c1c0714dc4cd995861ed8b43e9edd68c63ed4f25d/pygmtsar-2023.4.1.tar.gz
+[2023-04-13 11:42:38] INFO root fetch - processPackages [outlierchat]: executing diffoscope
+[2023-04-13 11:42:38] INFO root fetch - processPackages [outlierchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outlierchat-0.0.8.tar.gz tmp/outlierchat-0.0.9.tar.gz --markdown 20230413/o/outlierchat/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 11:42:38] INFO root fetch - processPackages [pygmtsar]: Downloading https://files.pythonhosted.org/packages/35/8a/470974c3b1d9c5d8f7bca4385bc577128305987cb198ea50f541c1fe2f3d/pygmtsar-2023.4.12.tar.gz
+[2023-04-13 11:42:38] INFO root fetch - processPackages [pygmtsar]: executing diffoscope
+[2023-04-13 11:42:38] INFO root fetch - processPackages [pygmtsar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmtsar-2023.4.1.tar.gz tmp/pygmtsar-2023.4.12.tar.gz --markdown 20230413/p/pygmtsar/2023.4.1-2023.4.12/diff.md --exclude *.pyd
+[2023-04-13 11:42:39] INFO root fetch - processPackages [few-shot-priming]: Start processing: pymilvus
+[2023-04-13 11:42:39] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:42:39] INFO root fetch - processPackages [pymilvus]: New version: [2.3.0b1] Old Version: [2.2.6]
+[2023-04-13 11:42:39] INFO root fetch - processPackages [pymilvus]: Downloading https://files.pythonhosted.org/packages/86/98/96a20f6e30a987a5616c5e0edf529b59abe835fcc4a19f6632684218e362/pymilvus-2.2.6.tar.gz
+[2023-04-13 11:42:39] INFO root fetch - processPackages [tala]: Start processing: fake-bge-module-latest
+[2023-04-13 11:42:39] INFO root fetch - main [MainThread]: End processing [tala]: success
+[2023-04-13 11:42:39] INFO root fetch - processPackages [fake-bge-module-latest]: New version: [20230413] Old Version: [20230412]
+[2023-04-13 11:42:40] INFO root fetch - processPackages [pymilvus]: executing diffoscope
+[2023-04-13 11:42:40] INFO root fetch - processPackages [pymilvus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymilvus-2.2.6.tar.gz tmp/pymilvus-2.3.0b1.tar.gz --markdown 20230413/p/pymilvus/2.2.6-2.3.0b1/diff.md --exclude *.pyd
+[2023-04-13 11:42:40] INFO root fetch - processPackages [fake-bge-module-latest]: Downloading https://files.pythonhosted.org/packages/1c/cd/9915762312a699c79e19676d16201dd21dc0a682e859fb2674407409e4c4/fake-bge-module-latest-20230413.tar.gz
+[2023-04-13 11:42:40] INFO root fetch - processPackages [outlierchat]: Start processing: pyxtension
+[2023-04-13 11:42:40] INFO root fetch - main [MainThread]: End processing [outlierchat]: success
+[2023-04-13 11:42:40] INFO root fetch - processPackages [pyxtension]: New version: [1.15.0] Old Version: [1.14.5]
+[2023-04-13 11:42:40] INFO root fetch - processPackages [fake-bge-module-latest]: executing diffoscope
+[2023-04-13 11:42:40] INFO root fetch - processPackages [fake-bge-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bge-module-latest-20230412.tar.gz tmp/fake-bge-module-latest-20230413.tar.gz --markdown 20230413/f/fake-bge-module-latest/20230412-20230413/diff.md --exclude *.pyd
+[2023-04-13 11:42:40] INFO root fetch - processPackages [pyxtension]: Downloading https://files.pythonhosted.org/packages/85/36/248f30d5eab5442647df75d6d842662aefc4b58384e88da2111d294ae9a2/pyxtension-1.14.5-py3-none-any.whl
+[2023-04-13 11:42:40] INFO root fetch - processPackages [pygmtsar]: Start processing: sihodictapi
+[2023-04-13 11:42:40] INFO root fetch - main [MainThread]: End processing [pygmtsar]: success
+[2023-04-13 11:42:40] INFO root fetch - processPackages [sihodictapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 11:42:40] INFO root fetch - processPackages [pyxtension]: Downloading https://files.pythonhosted.org/packages/3f/57/395bd0d97179b39cd14ee5b44c5aae77ced557173337577087644552af55/pyxtension-1.15.0-py3-none-any.whl
+[2023-04-13 11:42:40] INFO root fetch - processPackages [sihodictapi]: Downloading https://files.pythonhosted.org/packages/b6/70/a76ff5a81e295acf12591355b3263f5fab4c64d8f87a8550be0d6c42d413/sihodictapi-0.1.8.tar.gz
+[2023-04-13 11:42:40] INFO root fetch - processPackages [pyxtension]: executing diffoscope
+[2023-04-13 11:42:40] INFO root fetch - processPackages [pyxtension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxtension-1.14.5-py3-none-any.whl.zip tmp/pyxtension-1.15.0-py3-none-any.whl.zip --markdown 20230413/p/pyxtension/1.14.5-1.15.0/diff.md --exclude *.pyd
+[2023-04-13 11:42:41] INFO root fetch - processPackages [sihodictapi]: Downloading https://files.pythonhosted.org/packages/c8/07/eadc9b1d3ecc878fac9e729046069fc406d963f54f6ac87702197bfd2093/sihodictapi-0.1.9.tar.gz
+[2023-04-13 11:42:41] INFO root fetch - processPackages [sihodictapi]: executing diffoscope
+[2023-04-13 11:42:41] INFO root fetch - processPackages [sihodictapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sihodictapi-0.1.8.tar.gz tmp/sihodictapi-0.1.9.tar.gz --markdown 20230413/s/sihodictapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 11:42:41] INFO root fetch - main [MainThread]: End processing [pyxtension]: success
+[2023-04-13 11:42:42] INFO root fetch - main [MainThread]: End processing [pymilvus]: success
+[2023-04-13 11:42:42] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-13 11:42:42] INFO root fetch - main [MainThread]: End processing [sihodictapi]: success
+[2023-04-13 11:42:47] INFO root fetch - main [MainThread]: End processing [fake-bge-module-latest]: success
+[2023-04-13 11:42:47] INFO root fetch - main [MainThread]: Store serial: [17690064]
