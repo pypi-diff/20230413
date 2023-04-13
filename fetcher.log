@@ -15815,3 +15815,134 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 13:52:37] INFO root fetch - main [MainThread]: End processing [amsterdam-schema-tools]: success
 [2023-04-13 13:52:38] INFO root fetch - main [MainThread]: End processing [icalendar]: success
 [2023-04-13 13:52:38] INFO root fetch - main [MainThread]: Store serial: [17691670]
+[2023-04-13 13:57:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17691670]
+[2023-04-13 13:57:45] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-13 13:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drakaina
+[2023-04-13 13:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: so-vits-svc-fork
+[2023-04-13 13:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-project-structure
+[2023-04-13 13:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: msaBase
+[2023-04-13 13:57:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hordelib
+[2023-04-13 13:57:45] INFO root fetch - processPackages [drakaina]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-13 13:57:45] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.9b7] Old Version: [0.8.9b0]
+[2023-04-13 13:57:45] INFO root fetch - processPackages [msaBase]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 13:57:45] INFO root fetch - processPackages [hordelib]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-13 13:57:45] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.3.1] Old Version: [3.3.0]
+[2023-04-13 13:57:45] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-13 13:57:45] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.9b0.tar.gz tmp/python-project-structure-0.8.9b7.tar.gz --markdown 20230413/p/python-project-structure/0.8.9b0-0.8.9b7/diff.md --exclude *.pyd
+[2023-04-13 13:57:45] INFO root fetch - processPackages [msaBase]: executing diffoscope
+[2023-04-13 13:57:45] INFO root fetch - processPackages [msaBase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msaBase-0.0.8.tar.gz tmp/msaBase-0.0.9.tar.gz --markdown 20230413/m/msaBase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 13:57:45] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/35/47/1ae90b2c4aba1764c2a4e7bee4425efe7a8fd99b4cdc6261ea782208a98f/hordelib-0.8.1.tar.gz
+[2023-04-13 13:57:45] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/88/fd/832e515dfb219176a78fcec41d32004f2680bd27a5d5ba609eb9b5b29e44/so_vits_svc_fork-3.3.1.tar.gz
+[2023-04-13 13:57:45] INFO root fetch - processPackages [drakaina]: executing diffoscope
+[2023-04-13 13:57:45] INFO root fetch - processPackages [drakaina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drakaina-0.6.8.tar.gz tmp/drakaina-0.6.9.tar.gz --markdown 20230413/d/drakaina/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-13 13:57:45] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-13 13:57:45] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.3.0.tar.gz tmp/so_vits_svc_fork-3.3.1.tar.gz --markdown 20230413/s/so-vits-svc-fork/3.3.0-3.3.1/diff.md --exclude *.pyd
+[2023-04-13 13:57:46] INFO root fetch - processPackages [msaBase]: Start processing: OpenGeode-IO
+[2023-04-13 13:57:46] INFO root fetch - main [MainThread]: End processing [msaBase]: success
+[2023-04-13 13:57:46] INFO root fetch - processPackages [OpenGeode-IO]: New version: [6.0.0] Old Version: [5.9.0]
+[2023-04-13 13:57:47] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-13 13:57:47] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.8.0.tar.gz tmp/hordelib-0.8.1.tar.gz --markdown 20230413/h/hordelib/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-13 13:57:47] INFO root fetch - processPackages [drakaina]: Start processing: RuSocSci
+[2023-04-13 13:57:47] INFO root fetch - main [MainThread]: End processing [drakaina]: success
+[2023-04-13 13:57:47] INFO root fetch - processPackages [RuSocSci]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-13 13:57:47] INFO root fetch - processPackages [OpenGeode-IO]: Downloading https://files.pythonhosted.org/packages/62/93/da7d488465526447d750c50f22e7f51f0ff5f24f1c26ac6ccfc622829cbc/OpenGeode_IO-5.9.0-cp38-cp38-win_amd64.whl
+[2023-04-13 13:57:47] INFO root fetch - processPackages [so-vits-svc-fork]: Start processing: krrsnkapi
+[2023-04-13 13:57:47] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-13 13:57:47] INFO root fetch - processPackages [krrsnkapi]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 13:57:47] INFO root fetch - processPackages [krrsnkapi]: Downloading https://files.pythonhosted.org/packages/9e/e3/806b41cae53ec61fa063077fca8e717058e28ff02827695cf95571692ac9/krrsnkapi-1.0.0.tar.gz
+[2023-04-13 13:57:47] INFO root fetch - processPackages [RuSocSci]: Downloading https://files.pythonhosted.org/packages/9d/24/c815db128d6b6ad5286dc9db308dc7d69fda93d53c5e23b70678767b0649/RuSocSci-0.9.2-py2.py3-none-any.whl
+[2023-04-13 13:57:47] INFO root fetch - processPackages [RuSocSci]: executing diffoscope
+[2023-04-13 13:57:47] INFO root fetch - processPackages [RuSocSci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RuSocSci-0.9.1-py2.py3-none-any.whl.zip tmp/RuSocSci-0.9.2-py2.py3-none-any.whl.zip --markdown 20230413/R/RuSocSci/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-13 13:57:47] INFO root fetch - processPackages [python-project-structure]: Start processing: fastdatetime
+[2023-04-13 13:57:47] INFO root fetch - main [MainThread]: End processing [python-project-structure]: success
+[2023-04-13 13:57:47] INFO root fetch - processPackages [krrsnkapi]: Downloading https://files.pythonhosted.org/packages/58/06/4378ce9d39c9258513814dc4d53e79aabe278107da7fb322cb5fa5d732f2/krrsnkapi-1.0.1.tar.gz
+[2023-04-13 13:57:47] INFO root fetch - processPackages [fastdatetime]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-13 13:57:47] INFO root fetch - processPackages [krrsnkapi]: executing diffoscope
+[2023-04-13 13:57:47] INFO root fetch - processPackages [krrsnkapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krrsnkapi-1.0.0.tar.gz tmp/krrsnkapi-1.0.1.tar.gz --markdown 20230413/k/krrsnkapi/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 13:57:47] INFO root fetch - processPackages [OpenGeode-IO]: Downloading https://files.pythonhosted.org/packages/e4/0d/37ef8dfe6004f6f9f62c1b5392a0f4990ae002755fb344e00c3b7fd6cd92/OpenGeode_IO-6.0.0-cp39-cp39-win_amd64.whl
+[2023-04-13 13:57:47] INFO root fetch - processPackages [fastdatetime]: Downloading https://files.pythonhosted.org/packages/96/ab/c03ad34ec45ff0f5f08a56868dff2c1dcb36113cb24784db728a5c2a3c99/fastdatetime-0.3.1.tar.gz
+[2023-04-13 13:57:48] INFO root fetch - processPackages [OpenGeode-IO]: executing diffoscope
+[2023-04-13 13:57:48] INFO root fetch - processPackages [OpenGeode-IO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_IO-5.9.0-cp38-cp38-win_amd64.whl.zip tmp/OpenGeode_IO-6.0.0-cp39-cp39-win_amd64.whl.zip --markdown 20230413/O/OpenGeode-IO/5.9.0-6.0.0/diff.md --exclude *.pyd
+[2023-04-13 13:57:48] INFO root fetch - processPackages [fastdatetime]: Downloading https://files.pythonhosted.org/packages/be/bd/ab14c439a7065b96b2cad98b9ae5d33b08fceb63de8236a71c36a51aaa15/fastdatetime-0.3.2.tar.gz
+[2023-04-13 13:57:48] INFO root fetch - processPackages [fastdatetime]: executing diffoscope
+[2023-04-13 13:57:48] INFO root fetch - processPackages [fastdatetime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastdatetime-0.3.1.tar.gz tmp/fastdatetime-0.3.2.tar.gz --markdown 20230413/f/fastdatetime/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-13 13:57:48] INFO root fetch - processPackages [RuSocSci]: Start processing: odoo14-addon-l10n-ro-stock-account
+[2023-04-13 13:57:48] INFO root fetch - main [MainThread]: End processing [RuSocSci]: success
+[2023-04-13 13:57:48] INFO root fetch - processPackages [odoo14-addon-l10n-ro-stock-account]: New version: [14.0.8.9.0] Old Version: [14.0.8.8.0]
+[2023-04-13 13:57:48] INFO root fetch - processPackages [krrsnkapi]: Start processing: odoo14-addon-l10n-ro-account-edi-ubl
+[2023-04-13 13:57:48] INFO root fetch - main [MainThread]: End processing [krrsnkapi]: success
+[2023-04-13 13:57:48] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: New version: [14.0.1.9.1.dev1] Old Version: [14.0.1.9.0]
+[2023-04-13 13:57:48] INFO root fetch - processPackages [odoo14-addon-l10n-ro-stock-account]: Downloading https://files.pythonhosted.org/packages/0f/5d/d918bf77c81d780e04aaa723a0d6bab36ff9c1a8391c699159e60b57fed7/odoo14_addon_l10n_ro_stock_account-14.0.8.8.0-py3-none-any.whl
+[2023-04-13 13:57:48] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/dd/8a/fcf024c906f4ffcf1fdb4729121cb2b7e33f19b685e7b423f9e0a32e9300/odoo14_addon_l10n_ro_account_edi_ubl-14.0.1.9.0-py3-none-any.whl
+[2023-04-13 13:57:49] INFO root fetch - processPackages [fastdatetime]: Start processing: pcb-parser
+[2023-04-13 13:57:49] INFO root fetch - main [MainThread]: End processing [fastdatetime]: success
+[2023-04-13 13:57:49] INFO root fetch - processPackages [pcb-parser]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-13 13:57:49] INFO root fetch - processPackages [odoo14-addon-l10n-ro-stock-account]: Downloading https://files.pythonhosted.org/packages/d9/f6/d390d7dd65ffcd4da3cac5c58908ec5c165437c5ec74857d9717dbb5b740/odoo14_addon_l10n_ro_stock_account-14.0.8.9.0-py3-none-any.whl
+[2023-04-13 13:57:49] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/99/b8/7133f1ae688e9819904a9b2000a8378d671a5230dfd06bcf15deba0db595/odoo14_addon_l10n_ro_account_edi_ubl-14.0.1.9.1.dev1-py3-none-any.whl
+[2023-04-13 13:57:49] INFO root fetch - processPackages [pcb-parser]: Downloading https://files.pythonhosted.org/packages/a2/fe/67f33dfdb9e8bcd1d7b447c3c33c28c18cd7ddaa0ed429de1ae2070aa37b/pcb-parser-0.0.6.tar.gz
+[2023-04-13 13:57:49] INFO root fetch - processPackages [odoo14-addon-l10n-ro-stock-account]: executing diffoscope
+[2023-04-13 13:57:49] INFO root fetch - processPackages [odoo14-addon-l10n-ro-stock-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_ro_stock_account-14.0.8.8.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_ro_stock_account-14.0.8.9.0-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-l10n-ro-stock-account/14.0.8.8.0-14.0.8.9.0/diff.md --exclude *.pyd
+[2023-04-13 13:57:49] INFO root fetch - processPackages [pcb-parser]: executing diffoscope
+[2023-04-13 13:57:49] INFO root fetch - processPackages [pcb-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcb-parser-0.0.5.tar.gz tmp/pcb-parser-0.0.6.tar.gz --markdown 20230413/p/pcb-parser/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-13 13:57:49] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: executing diffoscope
+[2023-04-13 13:57:49] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_ro_account_edi_ubl-14.0.1.9.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_ro_account_edi_ubl-14.0.1.9.1.dev1-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-l10n-ro-account-edi-ubl/14.0.1.9.0-14.0.1.9.1.dev1/diff.md --exclude *.pyd
+[2023-04-13 13:57:50] INFO root fetch - processPackages [pcb-parser]: Start processing: bigdl-nano
+[2023-04-13 13:57:50] INFO root fetch - main [MainThread]: End processing [pcb-parser]: success
+[2023-04-13 13:57:50] INFO root fetch - processPackages [bigdl-nano]: New version: [2.3.0b20230413] Old Version: [2.3.0b20230412]
+[2023-04-13 13:57:50] INFO root fetch - processPackages [bigdl-nano]: Downloading https://files.pythonhosted.org/packages/73/8f/126f2b2d83d6ec82d2d5875ac8ec3e994ec384330d2ab9624e66ac224fda/bigdl_nano-2.3.0b20230413-py3-none-win_amd64.whl
+[2023-04-13 13:57:50] INFO root fetch - processPackages [odoo14-addon-l10n-ro-stock-account]: Start processing: bigdl-chronos
+[2023-04-13 13:57:50] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-ro-stock-account]: success
+[2023-04-13 13:57:50] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.3.0b20230413] Old Version: [2.3.0b20230412]
+[2023-04-13 13:57:51] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: Start processing: bigdl-serving
+[2023-04-13 13:57:51] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-ro-account-edi-ubl]: success
+[2023-04-13 13:57:51] INFO root fetch - processPackages [bigdl-serving]: New version: [2.3.0b20230413] Old Version: [2.3.0b20230412]
+[2023-04-13 13:57:51] INFO root fetch - processPackages [bigdl-chronos]: Downloading https://files.pythonhosted.org/packages/91/c0/55916f9d5128fbea4caac11a6f6ed11fcc2e8f0da2f4779d022de30237c4/bigdl_chronos-2.3.0b20230413-py3-none-win_amd64.whl
+[2023-04-13 13:57:51] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-04-13 13:57:51] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.3.0b20230412-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.3.0b20230413-py3-none-win_amd64.whl.zip --markdown 20230413/b/bigdl-nano/2.3.0b20230412-2.3.0b20230413/diff.md --exclude *.pyd
+[2023-04-13 13:57:51] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-04-13 13:57:51] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.3.0b20230412-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.3.0b20230413-py3-none-win_amd64.whl.zip --markdown 20230413/b/bigdl-chronos/2.3.0b20230412-2.3.0b20230413/diff.md --exclude *.pyd
+[2023-04-13 13:57:51] INFO root fetch - processPackages [bigdl-serving]: Downloading https://files.pythonhosted.org/packages/45/28/c9e18fb0da97940b5d2c5f24badf525d093c366ee4ce61ea54b420e7836c/bigdl_serving-2.3.0b20230413-py2.py3-none-any.whl
+[2023-04-13 13:57:51] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-04-13 13:57:51] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.3.0b20230412-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.3.0b20230413-py2.py3-none-any.whl.zip --markdown 20230413/b/bigdl-serving/2.3.0b20230412-2.3.0b20230413/diff.md --exclude *.pyd
+[2023-04-13 13:57:52] INFO root fetch - processPackages [bigdl-serving]: Start processing: bacalhau-sdk
+[2023-04-13 13:57:52] INFO root fetch - main [MainThread]: End processing [bigdl-serving]: success
+[2023-04-13 13:57:52] INFO root fetch - processPackages [bacalhau-sdk]: New version: [0.3.26] Old Version: [0.3.25]
+[2023-04-13 13:57:52] INFO root fetch - processPackages [bacalhau-sdk]: Downloading https://files.pythonhosted.org/packages/ed/e9/66e71331afddd1bbe21448b3e450a45d6bb768c7e3108040795596540406/bacalhau_sdk-0.3.25.tar.gz
+[2023-04-13 13:57:52] INFO root fetch - processPackages [bacalhau-sdk]: Downloading https://files.pythonhosted.org/packages/3a/6b/a3613a9a5e19fecc13f0fef2352fb4f329582edc919c80385285c914438e/bacalhau_sdk-0.3.26.tar.gz
+[2023-04-13 13:57:52] INFO root fetch - processPackages [bacalhau-sdk]: executing diffoscope
+[2023-04-13 13:57:52] INFO root fetch - processPackages [bacalhau-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacalhau_sdk-0.3.25.tar.gz tmp/bacalhau_sdk-0.3.26.tar.gz --markdown 20230413/b/bacalhau-sdk/0.3.25-0.3.26/diff.md --exclude *.pyd
+[2023-04-13 13:57:53] INFO root fetch - processPackages [bigdl-chronos]: Start processing: py-yettagam
+[2023-04-13 13:57:53] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
+[2023-04-13 13:57:53] INFO root fetch - processPackages [py-yettagam]: New version: [0.0.2.9] Old Version: [0.0.2.8]
+[2023-04-13 13:57:53] INFO root fetch - processPackages [py-yettagam]: executing diffoscope
+[2023-04-13 13:57:53] INFO root fetch - processPackages [py-yettagam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_yettagam-0.0.2.8.tar.gz tmp/py_yettagam-0.0.2.9.tar.gz --markdown 20230413/p/py-yettagam/0.0.2.8-0.0.2.9/diff.md --exclude *.pyd
+[2023-04-13 13:57:53] INFO root fetch - processPackages [bigdl-nano]: Start processing: checkov
+[2023-04-13 13:57:53] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
+[2023-04-13 13:57:53] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-13 13:57:53] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-13 13:57:53] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230413/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-13 13:57:54] INFO root fetch - processPackages [bacalhau-sdk]: Start processing: datamodelsFrontier
+[2023-04-13 13:57:54] INFO root fetch - main [MainThread]: End processing [bacalhau-sdk]: success
+[2023-04-13 13:57:54] INFO root fetch - processPackages [datamodelsFrontier]: New version: [1.0] Old Version: [0.2]
+[2023-04-13 13:57:54] INFO root fetch - processPackages [datamodelsFrontier]: executing diffoscope
+[2023-04-13 13:57:54] INFO root fetch - processPackages [datamodelsFrontier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamodelsFrontier-0.2.tar.gz tmp/datamodelsFrontier-1.0.tar.gz --markdown 20230413/d/datamodelsFrontier/0.2-1.0/diff.md --exclude *.pyd
+[2023-04-13 13:57:54] INFO root fetch - processPackages [py-yettagam]: Start processing: odoo-addon-l10n-ro-stock-account
+[2023-04-13 13:57:54] INFO root fetch - main [MainThread]: End processing [py-yettagam]: success
+[2023-04-13 13:57:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: New version: [15.0.3.9.0] Old Version: [15.0.3.8.0]
+[2023-04-13 13:57:55] INFO root fetch - processPackages [datamodelsFrontier]: Start processing: odoo-addon-l10n-ro-account-edi-ubl
+[2023-04-13 13:57:55] INFO root fetch - main [MainThread]: End processing [datamodelsFrontier]: success
+[2023-04-13 13:57:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: Downloading https://files.pythonhosted.org/packages/50/1a/e1689fa2ec5576e94fe59be16272d36306568b1d1e23ebb64ed96561df7a/odoo_addon_l10n_ro_stock_account-15.0.3.8.0-py3-none-any.whl
+[2023-04-13 13:57:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: New version: [15.0.1.9.1] Old Version: [15.0.1.9.0.4]
+[2023-04-13 13:57:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/0e/8d/ba2c2ee0aba1617b23e65831e81a2d1c8663a20033b0709f632e4b36f78a/odoo_addon_l10n_ro_account_edi_ubl-15.0.1.9.0.4-py3-none-any.whl
+[2023-04-13 13:57:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: Downloading https://files.pythonhosted.org/packages/52/81/9b06640d0b302bfe89a6dd01fbdfbad8abfa574a8eb992098394e4a89fb0/odoo_addon_l10n_ro_stock_account-15.0.3.9.0-py3-none-any.whl
+[2023-04-13 13:57:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/be/bf/c9bb110ba793964e8a10dad91b1db4e8fd40e65c451dd7813887a439632b/odoo_addon_l10n_ro_account_edi_ubl-15.0.1.9.1-py3-none-any.whl
+[2023-04-13 13:57:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: executing diffoscope
+[2023-04-13 13:57:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_stock_account-15.0.3.8.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_stock_account-15.0.3.9.0-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-l10n-ro-stock-account/15.0.3.8.0-15.0.3.9.0/diff.md --exclude *.pyd
+[2023-04-13 13:57:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: executing diffoscope
+[2023-04-13 13:57:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_account_edi_ubl-15.0.1.9.0.4-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_account_edi_ubl-15.0.1.9.1-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-l10n-ro-account-edi-ubl/15.0.1.9.0.4-15.0.1.9.1/diff.md --exclude *.pyd
+[2023-04-13 13:57:56] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-04-13 13:57:56] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock-account]: success
+[2023-04-13 13:57:57] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-account-edi-ubl]: success
+[2023-04-13 13:57:59] INFO root fetch - main [MainThread]: End processing [OpenGeode-IO]: success
+[2023-04-13 13:58:33] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-13 13:58:33] INFO root fetch - main [MainThread]: Store serial: [17691763]
