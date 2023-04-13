@@ -8742,3 +8742,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 08:12:34] INFO root fetch - main [MainThread]: End processing [interval-tools]: success
 [2023-04-13 08:12:41] INFO root fetch - main [MainThread]: End processing [pystokes]: success
 [2023-04-13 08:12:41] INFO root fetch - main [MainThread]: Store serial: [17687516]
+[2023-04-13 08:17:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687516]
+[2023-04-13 08:17:50] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 08:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-operating-unit
+[2023-04-13 08:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-operating-unit
+[2023-04-13 08:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: test-data-visualization
+[2023-04-13 08:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OpenGeode-core
+[2023-04-13 08:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: r3l3453
+[2023-04-13 08:17:50] INFO root fetch - processPackages [r3l3453]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 08:17:50] INFO root fetch - processPackages [test-data-visualization]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 08:17:50] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: New version: [16.0.20230412.0] Old Version: [15.0.20230411.0]
+[2023-04-13 08:17:50] INFO root fetch - processPackages [odoo-addon-operating-unit]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-13 08:17:50] INFO root fetch - processPackages [OpenGeode-core]: New version: [9.10.4] Old Version: [13.4.9]
+[2023-04-13 08:17:50] INFO root fetch - processPackages [test-data-visualization]: Downloading https://files.pythonhosted.org/packages/7f/5d/9fec9b315b5fd15f005c2c8faec1ae48371f8303ad40568ddb827084efc9/test_data_visualization-0.0.1.tar.gz
+[2023-04-13 08:17:50] INFO root fetch - processPackages [odoo-addon-operating-unit]: Downloading https://files.pythonhosted.org/packages/99/79/14c06d300112ae237684146d68b4a4837e72a74884630e0b93c89421f808/odoo_addon_operating_unit-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-13 08:17:50] INFO root fetch - processPackages [r3l3453]: executing diffoscope
+[2023-04-13 08:17:50] INFO root fetch - processPackages [r3l3453]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/r3l3453-0.9.0.tar.gz tmp/r3l3453-0.9.1.tar.gz --markdown 20230413/r/r3l3453/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 08:17:50] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: Downloading https://files.pythonhosted.org/packages/d4/75/4e6dc4e4229eaf1ceb3f94112e231d1c76033caea05029f5da522ce01af1/odoo_addons_oca_operating_unit-16.0.20230412.0-py3-none-any.whl
+[2023-04-13 08:17:50] INFO root fetch - processPackages [OpenGeode-core]: executing diffoscope
+[2023-04-13 08:17:50] INFO root fetch - processPackages [OpenGeode-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_core-13.4.9-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_core-9.10.4-cp39-cp39-win_amd64.whl.zip --markdown 20230413/O/OpenGeode-core/13.4.9-9.10.4/diff.md --exclude *.pyd
+[2023-04-13 08:17:50] INFO root fetch - processPackages [odoo-addon-operating-unit]: executing diffoscope
+[2023-04-13 08:17:50] INFO root fetch - processPackages [odoo-addon-operating-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_operating_unit-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_operating_unit-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-operating-unit/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-13 08:17:50] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: executing diffoscope
+[2023-04-13 08:17:50] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_operating_unit-15.0.20230411.0-py3-none-any.whl.zip tmp/odoo_addons_oca_operating_unit-16.0.20230412.0-py3-none-any.whl.zip --markdown 20230413/o/odoo-addons-oca-operating-unit/15.0.20230411.0-16.0.20230412.0/diff.md --exclude *.pyd
+[2023-04-13 08:17:50] INFO root fetch - processPackages [test-data-visualization]: Downloading https://files.pythonhosted.org/packages/5b/ae/cad95e56428692e6cc10f10618f444489d111bd21d3685b70c839a11f92d/test_data_visualization-0.0.2.tar.gz
+[2023-04-13 08:17:50] INFO root fetch - processPackages [test-data-visualization]: executing diffoscope
+[2023-04-13 08:17:50] INFO root fetch - processPackages [test-data-visualization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_data_visualization-0.0.1.tar.gz tmp/test_data_visualization-0.0.2.tar.gz --markdown 20230413/t/test-data-visualization/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 08:17:51] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: Start processing: pretext
+[2023-04-13 08:17:51] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-operating-unit]: success
+[2023-04-13 08:17:51] INFO root fetch - processPackages [pretext]: New version: [1.5.3.dev20230413] Old Version: [1.5.3.dev20230412]
+[2023-04-13 08:17:51] INFO root fetch - processPackages [r3l3453]: Start processing: sunyata
+[2023-04-13 08:17:51] INFO root fetch - main [MainThread]: End processing [r3l3453]: success
+[2023-04-13 08:17:51] INFO root fetch - processPackages [sunyata]: New version: [0.0.34] Old Version: [0.0.33]
+[2023-04-13 08:17:51] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/ef/38/8af5f0d10a0e71436449c970a13cdffa897c5f10daa8936b949176c0aab2/pretext-1.5.3.dev20230413.tar.gz
+[2023-04-13 08:17:52] INFO root fetch - processPackages [odoo-addon-operating-unit]: Start processing: odoo12-addon-partner-contact-department
+[2023-04-13 08:17:52] INFO root fetch - main [MainThread]: End processing [odoo-addon-operating-unit]: success
+[2023-04-13 08:17:52] INFO root fetch - processPackages [odoo12-addon-partner-contact-department]: New version: [12.0.1.0.0.99.dev9] Old Version: [12.0.1.0.0.99.dev8]
+[2023-04-13 08:17:52] INFO root fetch - processPackages [sunyata]: Downloading https://files.pythonhosted.org/packages/f0/fc/8cb488ba6f3feea9f3a3fd6451d16f9b7821f25d45678aedac944ce226f0/sunyata-0.0.34.tar.gz
+[2023-04-13 08:17:52] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-04-13 08:17:52] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.3.dev20230412.tar.gz tmp/pretext-1.5.3.dev20230413.tar.gz --markdown 20230413/p/pretext/1.5.3.dev20230412-1.5.3.dev20230413/diff.md --exclude *.pyd
+[2023-04-13 08:17:52] INFO root fetch - processPackages [sunyata]: executing diffoscope
+[2023-04-13 08:17:52] INFO root fetch - processPackages [sunyata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunyata-0.0.33.tar.gz tmp/sunyata-0.0.34.tar.gz --markdown 20230413/s/sunyata/0.0.33-0.0.34/diff.md --exclude *.pyd
+[2023-04-13 08:17:52] INFO root fetch - processPackages [test-data-visualization]: Start processing: r3l3453
+[2023-04-13 08:17:52] INFO root fetch - main [MainThread]: End processing [test-data-visualization]: success
+[2023-04-13 08:17:52] INFO root fetch - processPackages [r3l3453]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 08:17:52] INFO root fetch - processPackages [r3l3453]: executing diffoscope
+[2023-04-13 08:17:52] INFO root fetch - processPackages [r3l3453]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/r3l3453-0.9.0.tar.gz tmp/r3l3453-0.9.1.tar.gz --markdown 20230413/r/r3l3453/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 08:17:52] INFO root fetch - processPackages [odoo12-addon-partner-contact-department]: executing diffoscope
+[2023-04-13 08:17:52] INFO root fetch - processPackages [odoo12-addon-partner-contact-department]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_partner_contact_department-12.0.1.0.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_partner_contact_department-12.0.1.0.0.99.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-partner-contact-department/12.0.1.0.0.99.dev8-12.0.1.0.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-13 08:17:53] INFO root fetch - main [MainThread]: End processing [sunyata]: success
+[2023-04-13 08:17:53] INFO root fetch - main [MainThread]: End processing [r3l3453]: success
+[2023-04-13 08:17:53] INFO root fetch - main [MainThread]: End processing [odoo12-addon-partner-contact-department]: success
+[2023-04-13 08:17:56] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-04-13 08:18:47] INFO root fetch - main [MainThread]: End processing [OpenGeode-core]: success
+[2023-04-13 08:18:47] INFO root fetch - main [MainThread]: Store serial: [17687540]
