@@ -10441,3 +10441,120 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 09:50:51] INFO root fetch - main [MainThread]: End processing [pysura]: success
 [2023-04-13 09:50:52] INFO root fetch - main [MainThread]: End processing [tools-hjh]: success
 [2023-04-13 09:50:52] INFO root fetch - main [MainThread]: Store serial: [17688614]
+[2023-04-13 09:55:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17688614]
+[2023-04-13 09:55:59] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-13 09:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: common-test
+[2023-04-13 09:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: selcol
+[2023-04-13 09:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paketmutfak
+[2023-04-13 09:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo13-addon-stock-cycle-count
+[2023-04-13 09:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo12-addon-stock-request
+[2023-04-13 09:55:59] INFO root fetch - processPackages [paketmutfak]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-13 09:55:59] INFO root fetch - processPackages [selcol]: New version: [0.0.4.1] Old Version: [0.0.4]
+[2023-04-13 09:55:59] INFO root fetch - processPackages [odoo12-addon-stock-request]: New version: [12.0.1.5.0.99.dev9] Old Version: [12.0.1.5.0.99.dev8]
+[2023-04-13 09:55:59] INFO root fetch - processPackages [odoo13-addon-stock-cycle-count]: New version: [13.0.1.2.2.dev9] Old Version: [13.0.1.2.2.dev8]
+[2023-04-13 09:55:59] INFO root fetch - processPackages [common-test]: New version: [9.9.0] Old Version: [9.8.0]
+[2023-04-13 09:55:59] INFO root fetch - processPackages [odoo12-addon-stock-request]: executing diffoscope
+[2023-04-13 09:55:59] INFO root fetch - processPackages [odoo12-addon-stock-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_stock_request-12.0.1.5.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_stock_request-12.0.1.5.0.99.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-stock-request/12.0.1.5.0.99.dev8-12.0.1.5.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-13 09:55:59] INFO root fetch - processPackages [odoo13-addon-stock-cycle-count]: executing diffoscope
+[2023-04-13 09:55:59] INFO root fetch - processPackages [odoo13-addon-stock-cycle-count]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_stock_cycle_count-13.0.1.2.2.dev8-py3-none-any.whl.zip tmp/odoo13_addon_stock_cycle_count-13.0.1.2.2.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo13-addon-stock-cycle-count/13.0.1.2.2.dev8-13.0.1.2.2.dev9/diff.md --exclude *.pyd
+[2023-04-13 09:55:59] INFO root fetch - processPackages [paketmutfak]: Downloading https://files.pythonhosted.org/packages/3c/54/6b8e1f2bcd64b51f198fb4d576dff4ede65f19ce0eee4e038611f1377b37/paketmutfak-1.1.8.tar.gz
+[2023-04-13 09:56:00] INFO root fetch - processPackages [selcol]: Downloading https://files.pythonhosted.org/packages/b1/e3/f770f80ef5544dbe6411d2a0b734247ea67f627addff28b52516afd79e0f/selcol-0.0.4.1.tar.gz
+[2023-04-13 09:56:00] INFO root fetch - processPackages [common-test]: executing diffoscope
+[2023-04-13 09:56:00] INFO root fetch - processPackages [common-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/common-test-9.8.0.tar.gz tmp/common-test-9.9.0.tar.gz --markdown 20230413/c/common-test/9.8.0-9.9.0/diff.md --exclude *.pyd
+[2023-04-13 09:56:00] INFO root fetch - processPackages [selcol]: executing diffoscope
+[2023-04-13 09:56:00] INFO root fetch - processPackages [selcol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selcol-0.0.4.tar.gz tmp/selcol-0.0.4.1.tar.gz --markdown 20230413/s/selcol/0.0.4-0.0.4.1/diff.md --exclude *.pyd
+[2023-04-13 09:56:00] INFO root fetch - processPackages [paketmutfak]: Downloading https://files.pythonhosted.org/packages/b5/5d/4f1e341bd37a1410d14789bfe426e84aabdd7d7deba0f310c37444f8e0cb/paketmutfak-1.1.9.tar.gz
+[2023-04-13 09:56:00] INFO root fetch - processPackages [paketmutfak]: executing diffoscope
+[2023-04-13 09:56:00] INFO root fetch - processPackages [paketmutfak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paketmutfak-1.1.8.tar.gz tmp/paketmutfak-1.1.9.tar.gz --markdown 20230413/p/paketmutfak/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-13 09:56:01] INFO root fetch - processPackages [common-test]: Start processing: spectrochempy
+[2023-04-13 09:56:01] INFO root fetch - main [MainThread]: End processing [common-test]: success
+[2023-04-13 09:56:01] INFO root fetch - processPackages [spectrochempy]: New version: [0.6.0] Old Version: [0.5.5]
+[2023-04-13 09:56:01] INFO root fetch - processPackages [odoo12-addon-stock-request]: Start processing: djangoldp-needle
+[2023-04-13 09:56:01] INFO root fetch - main [MainThread]: End processing [odoo12-addon-stock-request]: success
+[2023-04-13 09:56:01] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 09:56:01] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-13 09:56:01] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230413/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 09:56:01] INFO root fetch - processPackages [spectrochempy]: Downloading https://files.pythonhosted.org/packages/19/4a/7134ea2b70979ff9cff4a4aa396c42007a256a21ec311b565583366136d9/spectrochempy-0.5.5.tar.gz
+[2023-04-13 09:56:01] INFO root fetch - processPackages [odoo13-addon-stock-cycle-count]: Start processing: test-pipinstall-whp
+[2023-04-13 09:56:01] INFO root fetch - main [MainThread]: End processing [odoo13-addon-stock-cycle-count]: success
+[2023-04-13 09:56:01] WARNING root fetch - processPackages [test-pipinstall-whp]: Skipping, unable to determine old version
+[2023-04-13 09:56:01] INFO root fetch - processPackages [test-pipinstall-whp]: Start processing: simple-sharepoint
+[2023-04-13 09:56:01] INFO root fetch - main [MainThread]: End processing [test-pipinstall-whp] error
+[2023-04-13 09:56:01] INFO root fetch - processPackages [simple-sharepoint]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 09:56:01] INFO root fetch - processPackages [paketmutfak]: Start processing: jina
+[2023-04-13 09:56:01] INFO root fetch - main [MainThread]: End processing [paketmutfak]: success
+[2023-04-13 09:56:01] INFO root fetch - processPackages [jina]: New version: [3.9.3.dev9] Old Version: [3.9.3.dev8]
+[2023-04-13 09:56:01] INFO root fetch - processPackages [jina]: executing diffoscope
+[2023-04-13 09:56:01] INFO root fetch - processPackages [jina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jina-3.9.3.dev8.tar.gz tmp/jina-3.9.3.dev9.tar.gz --markdown 20230413/j/jina/3.9.3.dev8-3.9.3.dev9/diff.md --exclude *.pyd
+[2023-04-13 09:56:01] INFO root fetch - processPackages [simple-sharepoint]: Downloading https://files.pythonhosted.org/packages/d5/cf/e63ce38ea3af092626f44d433378822599db290d3791e9a98f0cd692869f/simple-sharepoint-0.0.1.tar.gz
+[2023-04-13 09:56:01] INFO root fetch - processPackages [simple-sharepoint]: Downloading https://files.pythonhosted.org/packages/1d/03/ac3f7746cc943412f3059bcc89f32b18f08830a3f44022df1acb49eb8f2d/simple_sharepoint-0.0.2-py3-none-any.whl
+[2023-04-13 09:56:02] INFO root fetch - processPackages [spectrochempy]: Downloading https://files.pythonhosted.org/packages/ea/73/e9f6896d1f0834bb72f5b9c7b6b0392a8fd7ed8b884612f2e1acb5734749/spectrochempy-0.6.0.tar.gz
+[2023-04-13 09:56:02] INFO root fetch - processPackages [simple-sharepoint]: executing diffoscope
+[2023-04-13 09:56:02] INFO root fetch - processPackages [simple-sharepoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-sharepoint-0.0.1.tar.gz tmp/simple_sharepoint-0.0.2-py3-none-any.whl.zip --markdown 20230413/s/simple-sharepoint/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 09:56:02] INFO root fetch - processPackages [selcol]: Start processing: jit-env
+[2023-04-13 09:56:02] INFO root fetch - main [MainThread]: End processing [selcol]: success
+[2023-04-13 09:56:02] INFO root fetch - processPackages [spectrochempy]: executing diffoscope
+[2023-04-13 09:56:02] INFO root fetch - processPackages [spectrochempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectrochempy-0.5.5.tar.gz tmp/spectrochempy-0.6.0.tar.gz --markdown 20230413/s/spectrochempy/0.5.5-0.6.0/diff.md --exclude *.pyd
+[2023-04-13 09:56:02] INFO root fetch - processPackages [jit-env]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 09:56:02] INFO root fetch - processPackages [jit-env]: Downloading https://files.pythonhosted.org/packages/a1/65/9fbedb91d1ad85995f604baf7ed1e5f68d44823338cb381d89192791ce51/jit_env-0.1.1.tar.gz
+[2023-04-13 09:56:02] INFO root fetch - processPackages [jit-env]: executing diffoscope
+[2023-04-13 09:56:02] INFO root fetch - processPackages [jit-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jit_env-0.1.0.tar.gz tmp/jit_env-0.1.1.tar.gz --markdown 20230413/j/jit-env/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 09:56:02] INFO root fetch - processPackages [djangoldp-needle]: Start processing: nonebot-plugin-clock
+[2023-04-13 09:56:02] INFO root fetch - main [MainThread]: End processing [djangoldp-needle]: success
+[2023-04-13 09:56:02] INFO root fetch - processPackages [nonebot-plugin-clock]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-13 09:56:03] INFO root fetch - processPackages [nonebot-plugin-clock]: Downloading https://files.pythonhosted.org/packages/d8/33/2ddd6853bd4ace6fd91c0bc94a8a56685498e414b74cf84957a78375036e/nonebot-plugin-clock-0.8.5.tar.gz
+[2023-04-13 09:56:03] INFO root fetch - processPackages [simple-sharepoint]: Start processing: libgpiod
+[2023-04-13 09:56:03] INFO root fetch - main [MainThread]: End processing [simple-sharepoint]: success
+[2023-04-13 09:56:03] INFO root fetch - processPackages [libgpiod]: New version: [2.0.1rc2] Old Version: [2.0.1rc1]
+[2023-04-13 09:56:03] INFO root fetch - processPackages [nonebot-plugin-clock]: executing diffoscope
+[2023-04-13 09:56:03] INFO root fetch - processPackages [nonebot-plugin-clock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-clock-0.8.4.tar.gz tmp/nonebot-plugin-clock-0.8.5.tar.gz --markdown 20230413/n/nonebot-plugin-clock/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-13 09:56:03] INFO root fetch - processPackages [libgpiod]: executing diffoscope
+[2023-04-13 09:56:03] INFO root fetch - processPackages [libgpiod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libgpiod-2.0.1rc1.tar.gz tmp/libgpiod-2.0.1rc2.tar.gz --markdown 20230413/l/libgpiod/2.0.1rc1-2.0.1rc2/diff.md --exclude *.pyd
+[2023-04-13 09:56:03] INFO root fetch - processPackages [jit-env]: Start processing: odoo14-addon-stock-cycle-count
+[2023-04-13 09:56:03] INFO root fetch - main [MainThread]: End processing [jit-env]: success
+[2023-04-13 09:56:03] INFO root fetch - processPackages [odoo14-addon-stock-cycle-count]: New version: [14.0.1.4.3.dev8] Old Version: [14.0.1.4.3.dev7]
+[2023-04-13 09:56:03] INFO root fetch - processPackages [odoo14-addon-stock-cycle-count]: executing diffoscope
+[2023-04-13 09:56:03] INFO root fetch - processPackages [odoo14-addon-stock-cycle-count]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_cycle_count-14.0.1.4.3.dev7-py3-none-any.whl.zip tmp/odoo14_addon_stock_cycle_count-14.0.1.4.3.dev8-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-stock-cycle-count/14.0.1.4.3.dev7-14.0.1.4.3.dev8/diff.md --exclude *.pyd
+[2023-04-13 09:56:04] INFO root fetch - processPackages [nonebot-plugin-clock]: Start processing: so-vits-svc-fork
+[2023-04-13 09:56:04] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-clock]: success
+[2023-04-13 09:56:04] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.2.0] Old Version: [3.1.9]
+[2023-04-13 09:56:04] INFO root fetch - processPackages [libgpiod]: Start processing: xia-api-flask
+[2023-04-13 09:56:04] INFO root fetch - main [MainThread]: End processing [libgpiod]: success
+[2023-04-13 09:56:04] INFO root fetch - processPackages [xia-api-flask]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 09:56:04] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/a9/bb/b2d6cf87e15aa24cb01506fa4a26ce671266563e0e123eb14c1f546276c3/so_vits_svc_fork-3.2.0.tar.gz
+[2023-04-13 09:56:04] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-13 09:56:04] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.1.9.tar.gz tmp/so_vits_svc_fork-3.2.0.tar.gz --markdown 20230413/s/so-vits-svc-fork/3.1.9-3.2.0/diff.md --exclude *.pyd
+[2023-04-13 09:56:04] INFO root fetch - processPackages [xia-api-flask]: Downloading https://files.pythonhosted.org/packages/9d/d9/825e5c7d8ea7c0f94f297deac72a0abf5c4cc7b41d2328d2b2a26e844913/xia_api_flask-0.1.7-cp39-none-win_amd64.whl
+[2023-04-13 09:56:04] INFO root fetch - processPackages [xia-api-flask]: Downloading https://files.pythonhosted.org/packages/db/b9/b17aedc360a9347d8a4cbaf621bc90de9ec1b30934439b84abecfd86db67/xia_api_flask-0.1.8-cp39-none-win_amd64.whl
+[2023-04-13 09:56:05] INFO root fetch - processPackages [xia-api-flask]: executing diffoscope
+[2023-04-13 09:56:05] INFO root fetch - processPackages [xia-api-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_api_flask-0.1.7-cp39-none-win_amd64.whl.zip tmp/xia_api_flask-0.1.8-cp39-none-win_amd64.whl.zip --markdown 20230413/x/xia-api-flask/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 09:56:05] INFO root fetch - processPackages [odoo14-addon-stock-cycle-count]: Start processing: intelliw
+[2023-04-13 09:56:05] INFO root fetch - main [MainThread]: End processing [odoo14-addon-stock-cycle-count]: success
+[2023-04-13 09:56:05] INFO root fetch - processPackages [intelliw]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-13 09:56:05] INFO root fetch - processPackages [jina]: Start processing: tinybird-cli
+[2023-04-13 09:56:05] INFO root fetch - main [MainThread]: End processing [jina]: success
+[2023-04-13 09:56:05] INFO root fetch - processPackages [tinybird-cli]: New version: [1.0.0b99] Old Version: [1.0.0b98]
+[2023-04-13 09:56:05] INFO root fetch - processPackages [tinybird-cli]: executing diffoscope
+[2023-04-13 09:56:05] INFO root fetch - processPackages [tinybird-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinybird-cli-1.0.0b98.tar.gz tmp/tinybird-cli-1.0.0b99.tar.gz --markdown 20230413/t/tinybird-cli/1.0.0b98-1.0.0b99/diff.md --exclude *.pyd
+[2023-04-13 09:56:05] INFO root fetch - processPackages [so-vits-svc-fork]: Start processing: odoo-addons-oca-stock-logistics-warehouse
+[2023-04-13 09:56:05] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-13 09:56:05] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: New version: [16.0.20230412.0] Old Version: [16.0.20230404.1]
+[2023-04-13 09:56:05] INFO root fetch - processPackages [intelliw]: executing diffoscope
+[2023-04-13 09:56:05] INFO root fetch - processPackages [intelliw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intelliw-1.2.8-py3-none-any.whl.zip tmp/intelliw-1.2.9-py3-none-any.whl.zip --markdown 20230413/i/intelliw/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-13 09:56:05] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Downloading https://files.pythonhosted.org/packages/a2/db/d1d865eeaf705077bb673a494dbae3c1880d55b6708db9b6a346ceb894d8/odoo_addons_oca_stock_logistics_warehouse-16.0.20230404.1-py3-none-any.whl
+[2023-04-13 09:56:06] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Downloading https://files.pythonhosted.org/packages/cd/c4/e390ec6eb4c112741255a47c00f81a1b9809eecb5b5249536e3be982a3e2/odoo_addons_oca_stock_logistics_warehouse-16.0.20230412.0-py3-none-any.whl
+[2023-04-13 09:56:06] INFO root fetch - processPackages [xia-api-flask]: Start processing: libMecapack
+[2023-04-13 09:56:06] INFO root fetch - main [MainThread]: End processing [xia-api-flask]: success
+[2023-04-13 09:56:06] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: executing diffoscope
+[2023-04-13 09:56:06] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20230404.1-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20230412.0-py3-none-any.whl.zip --markdown 20230413/o/odoo-addons-oca-stock-logistics-warehouse/16.0.20230404.1-16.0.20230412.0/diff.md --exclude *.pyd
+[2023-04-13 09:56:06] INFO root fetch - processPackages [libMecapack]: New version: [1.1.0] Old Version: [1.0.7]
+[2023-04-13 09:56:06] INFO root fetch - processPackages [libMecapack]: Downloading https://files.pythonhosted.org/packages/12/91/256c4397a78f6db986f4b427b848f4a38268f06c137852be3b039b759802/libMecapack-1.0.7.tar.gz
+[2023-04-13 09:56:06] INFO root fetch - processPackages [libMecapack]: Downloading https://files.pythonhosted.org/packages/44/d4/164659cde20ed933b02738d4c763d0f53cf68e96c91269177ea851074660/libMecapack-1.1.0.tar.gz
+[2023-04-13 09:56:06] INFO root fetch - main [MainThread]: End processing [tinybird-cli]: success
+[2023-04-13 09:56:06] INFO root fetch - processPackages [libMecapack]: executing diffoscope
+[2023-04-13 09:56:06] INFO root fetch - processPackages [libMecapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libMecapack-1.0.7.tar.gz tmp/libMecapack-1.1.0.tar.gz --markdown 20230413/l/libMecapack/1.0.7-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 09:56:07] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-warehouse]: success
+[2023-04-13 09:56:07] INFO root fetch - main [MainThread]: End processing [intelliw]: success
+[2023-04-13 09:56:07] INFO root fetch - main [MainThread]: End processing [libMecapack]: success
+[2023-04-13 09:56:08] INFO root fetch - main [MainThread]: End processing [spectrochempy]: success
+[2023-04-13 09:56:08] INFO root fetch - main [MainThread]: Store serial: [17688666]
