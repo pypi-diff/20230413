@@ -18377,3 +18377,133 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 15:49:47] INFO root fetch - main [MainThread]: End processing [django-baton]: success
 [2023-04-13 15:49:55] INFO root fetch - main [MainThread]: End processing [jupyterlab-optumi]: success
 [2023-04-13 15:49:55] INFO root fetch - main [MainThread]: Store serial: [17693201]
+[2023-04-13 15:55:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17693201]
+[2023-04-13 15:55:05] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-04-13 15:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-baton
+[2023-04-13 15:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: saeonobspy
+[2023-04-13 15:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: numba-stats
+[2023-04-13 15:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prelude-sdk
+[2023-04-13 15:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: polywrap-wasm
+[2023-04-13 15:55:05] INFO root fetch - processPackages [polywrap-wasm]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-13 15:55:05] INFO root fetch - processPackages [django-baton]: New version: [2.7.0] Old Version: [2.6.2]
+[2023-04-13 15:55:05] INFO root fetch - processPackages [prelude-sdk]: New version: [0.9.97] Old Version: [0.9.96]
+[2023-04-13 15:55:05] INFO root fetch - processPackages [saeonobspy]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-13 15:55:05] INFO root fetch - processPackages [numba-stats]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-13 15:55:05] INFO root fetch - processPackages [polywrap-wasm]: executing diffoscope
+[2023-04-13 15:55:05] INFO root fetch - processPackages [polywrap-wasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_wasm-0.1.0a6.tar.gz tmp/polywrap_wasm-0.1.0a7.tar.gz --markdown 20230413/p/polywrap-wasm/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 15:55:05] INFO root fetch - processPackages [django-baton]: executing diffoscope
+[2023-04-13 15:55:05] INFO root fetch - processPackages [django-baton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-baton-2.6.2.tar.gz tmp/django-baton-2.7.0.tar.gz --markdown 20230413/d/django-baton/2.6.2-2.7.0/diff.md --exclude *.pyd
+[2023-04-13 15:55:05] INFO root fetch - processPackages [saeonobspy]: Downloading https://files.pythonhosted.org/packages/27/cc/d702e4041870325512769b285d10bf20bd88b9edd7ca9d5dfa18a74afa15/saeonobspy-0.1.0.tar.gz
+[2023-04-13 15:55:05] INFO root fetch - processPackages [numba-stats]: Downloading https://files.pythonhosted.org/packages/53/54/d5d5d4cdff5fb2e291e7ddeb9b23ea2cbc94e9676f7cabba657d9d740208/numba-stats-1.1.0.tar.gz
+[2023-04-13 15:55:06] INFO root fetch - processPackages [prelude-sdk]: Downloading https://files.pythonhosted.org/packages/33/b5/f668e206ca13c2e4a3533e29b6a6db4058f39a11ce74ebd226ac8dd95494/prelude-sdk-0.9.97.tar.gz
+[2023-04-13 15:55:06] INFO root fetch - processPackages [prelude-sdk]: executing diffoscope
+[2023-04-13 15:55:06] INFO root fetch - processPackages [prelude-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prelude-sdk-0.9.96.tar.gz tmp/prelude-sdk-0.9.97.tar.gz --markdown 20230413/p/prelude-sdk/0.9.96-0.9.97/diff.md --exclude *.pyd
+[2023-04-13 15:55:06] INFO root fetch - processPackages [numba-stats]: Downloading https://files.pythonhosted.org/packages/58/f3/68d9fac0374598b8a136739d1e61ed038548f83926236b37021dd60d89e5/numba-stats-1.1.1.tar.gz
+[2023-04-13 15:55:06] INFO root fetch - processPackages [saeonobspy]: Downloading https://files.pythonhosted.org/packages/fd/e2/2f1d24fc34a75ae91d9a756d0772885cde0491d18d67d3d821e8f2efa822/saeonobspy-0.2.0.tar.gz
+[2023-04-13 15:55:06] INFO root fetch - processPackages [saeonobspy]: executing diffoscope
+[2023-04-13 15:55:06] INFO root fetch - processPackages [saeonobspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saeonobspy-0.1.0.tar.gz tmp/saeonobspy-0.2.0.tar.gz --markdown 20230413/s/saeonobspy/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 15:55:06] INFO root fetch - processPackages [numba-stats]: executing diffoscope
+[2023-04-13 15:55:06] INFO root fetch - processPackages [numba-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numba-stats-1.1.0.tar.gz tmp/numba-stats-1.1.1.tar.gz --markdown 20230413/n/numba-stats/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-13 15:55:06] INFO root fetch - processPackages [polywrap-wasm]: Start processing: cdktf
+[2023-04-13 15:55:06] INFO root fetch - main [MainThread]: End processing [polywrap-wasm]: success
+[2023-04-13 15:55:06] INFO root fetch - processPackages [cdktf]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-13 15:55:07] INFO root fetch - processPackages [cdktf]: executing diffoscope
+[2023-04-13 15:55:07] INFO root fetch - processPackages [cdktf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-0.9.3.tar.gz tmp/cdktf-0.9.4.tar.gz --markdown 20230413/c/cdktf/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-13 15:55:07] INFO root fetch - processPackages [prelude-sdk]: Start processing: prelude-cli
+[2023-04-13 15:55:07] INFO root fetch - main [MainThread]: End processing [prelude-sdk]: success
+[2023-04-13 15:55:07] INFO root fetch - processPackages [prelude-cli]: New version: [0.9.97] Old Version: [0.9.96]
+[2023-04-13 15:55:07] INFO root fetch - processPackages [saeonobspy]: Start processing: lambda-layer-version-cleaner
+[2023-04-13 15:55:07] INFO root fetch - main [MainThread]: End processing [saeonobspy]: success
+[2023-04-13 15:55:07] INFO root fetch - processPackages [lambda-layer-version-cleaner]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-13 15:55:07] INFO root fetch - processPackages [prelude-cli]: Downloading https://files.pythonhosted.org/packages/39/44/7e05266665fa254114e6b15f8345fc5e8bf1b6e4e815589d58e91e9af058/prelude-cli-0.9.97.tar.gz
+[2023-04-13 15:55:07] INFO root fetch - processPackages [prelude-cli]: executing diffoscope
+[2023-04-13 15:55:07] INFO root fetch - processPackages [prelude-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prelude-cli-0.9.96.tar.gz tmp/prelude-cli-0.9.97.tar.gz --markdown 20230413/p/prelude-cli/0.9.96-0.9.97/diff.md --exclude *.pyd
+[2023-04-13 15:55:07] INFO root fetch - processPackages [lambda-layer-version-cleaner]: Downloading https://files.pythonhosted.org/packages/4e/a0/ff8d1831650e24b5a8e6c410f23ccb9a64777929ed77e25eed8bb4f042f7/lambda-layer-version-cleaner-0.0.7.tar.gz
+[2023-04-13 15:55:08] INFO root fetch - processPackages [lambda-layer-version-cleaner]: Downloading https://files.pythonhosted.org/packages/b0/4a/528e264be64554c7d3a9728b4e3ea0082581d65dd17b3498f6df5730ed1b/lambda-layer-version-cleaner-0.0.8.tar.gz
+[2023-04-13 15:55:08] INFO root fetch - processPackages [cdktf]: Start processing: pytemperatureconverter
+[2023-04-13 15:55:08] INFO root fetch - main [MainThread]: End processing [cdktf]: success
+[2023-04-13 15:55:08] WARNING root fetch - processPackages [pytemperatureconverter]: Skipping, unable to determine old version
+[2023-04-13 15:55:08] INFO root fetch - processPackages [pytemperatureconverter]: Start processing: google-cloud-bigquery-data-exchange
+[2023-04-13 15:55:08] INFO root fetch - main [MainThread]: End processing [pytemperatureconverter] error
+[2023-04-13 15:55:08] INFO root fetch - processPackages [google-cloud-bigquery-data-exchange]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-13 15:55:08] INFO root fetch - processPackages [lambda-layer-version-cleaner]: executing diffoscope
+[2023-04-13 15:55:08] INFO root fetch - processPackages [lambda-layer-version-cleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambda-layer-version-cleaner-0.0.7.tar.gz tmp/lambda-layer-version-cleaner-0.0.8.tar.gz --markdown 20230413/l/lambda-layer-version-cleaner/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-13 15:55:08] INFO root fetch - processPackages [google-cloud-bigquery-data-exchange]: Downloading https://files.pythonhosted.org/packages/cd/d8/403be2c619c171423f2a075c8d776d8ea440353b2274aa16bb14cd0903f6/google-cloud-bigquery-data-exchange-0.5.2.tar.gz
+[2023-04-13 15:55:08] INFO root fetch - processPackages [numba-stats]: Start processing: koyo
+[2023-04-13 15:55:08] INFO root fetch - main [MainThread]: End processing [numba-stats]: success
+[2023-04-13 15:55:08] INFO root fetch - processPackages [koyo]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-13 15:55:08] INFO root fetch - processPackages [google-cloud-bigquery-data-exchange]: Downloading https://files.pythonhosted.org/packages/8b/8d/69feda79ff19f4c72f075aa54803ab713ac0522d625c4b32f5de4d599819/google-cloud-bigquery-data-exchange-0.5.3.tar.gz
+[2023-04-13 15:55:08] INFO root fetch - processPackages [koyo]: Downloading https://files.pythonhosted.org/packages/51/93/cf62a68bb8bbb06a6af0d7229f7219448e6108ca25abcbcfdd7f708014ac/koyo-0.2.1.tar.gz
+[2023-04-13 15:55:08] INFO root fetch - processPackages [google-cloud-bigquery-data-exchange]: executing diffoscope
+[2023-04-13 15:55:08] INFO root fetch - processPackages [google-cloud-bigquery-data-exchange]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-bigquery-data-exchange-0.5.2.tar.gz tmp/google-cloud-bigquery-data-exchange-0.5.3.tar.gz --markdown 20230413/g/google-cloud-bigquery-data-exchange/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-13 15:55:08] INFO root fetch - processPackages [koyo]: Downloading https://files.pythonhosted.org/packages/1e/eb/bd4cfcafb220d8a4da70b9a28e8d0b70208db326604850d180aa1cb04987/koyo-0.2.2.tar.gz
+[2023-04-13 15:55:08] INFO root fetch - processPackages [prelude-cli]: Start processing: polywrap-uri-resolvers
+[2023-04-13 15:55:08] INFO root fetch - main [MainThread]: End processing [prelude-cli]: success
+[2023-04-13 15:55:08] INFO root fetch - processPackages [polywrap-uri-resolvers]: New version: [0.1.0a7] Old Version: [0.1.0a4]
+[2023-04-13 15:55:08] INFO root fetch - processPackages [koyo]: executing diffoscope
+[2023-04-13 15:55:08] INFO root fetch - processPackages [koyo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/koyo-0.2.1.tar.gz tmp/koyo-0.2.2.tar.gz --markdown 20230413/k/koyo/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-13 15:55:09] INFO root fetch - processPackages [polywrap-uri-resolvers]: executing diffoscope
+[2023-04-13 15:55:09] INFO root fetch - processPackages [polywrap-uri-resolvers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_uri_resolvers-0.1.0a4.tar.gz tmp/polywrap_uri_resolvers-0.1.0a7-py3-none-any.whl.zip --markdown 20230413/p/polywrap-uri-resolvers/0.1.0a4-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 15:55:09] INFO root fetch - processPackages [lambda-layer-version-cleaner]: Start processing: nomoji
+[2023-04-13 15:55:09] INFO root fetch - main [MainThread]: End processing [lambda-layer-version-cleaner]: success
+[2023-04-13 15:55:09] INFO root fetch - processPackages [nomoji]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 15:55:09] INFO root fetch - processPackages [nomoji]: Downloading https://files.pythonhosted.org/packages/28/7e/b5c23e3f641e1bad8873341d1a6d4cf36e78d2b2231b06d462262d8fafd9/nomoji-0.0.2.tar.gz
+[2023-04-13 15:55:09] INFO root fetch - processPackages [nomoji]: executing diffoscope
+[2023-04-13 15:55:09] INFO root fetch - processPackages [nomoji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomoji-0.0.1.tar.gz tmp/nomoji-0.0.2.tar.gz --markdown 20230413/n/nomoji/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 15:55:09] INFO root fetch - processPackages [google-cloud-bigquery-data-exchange]: Start processing: cg
+[2023-04-13 15:55:09] INFO root fetch - main [MainThread]: End processing [google-cloud-bigquery-data-exchange]: success
+[2023-04-13 15:55:09] INFO root fetch - processPackages [cg]: New version: [27.2.9] Old Version: [27.2.8]
+[2023-04-13 15:55:10] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-04-13 15:55:10] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-27.2.8.tar.gz tmp/cg-27.2.9.tar.gz --markdown 20230413/c/cg/27.2.8-27.2.9/diff.md --exclude *.pyd
+[2023-04-13 15:55:10] INFO root fetch - processPackages [polywrap-uri-resolvers]: Start processing: polywrap-client
+[2023-04-13 15:55:10] INFO root fetch - main [MainThread]: End processing [polywrap-uri-resolvers]: success
+[2023-04-13 15:55:10] INFO root fetch - processPackages [polywrap-client]: New version: [0.1.0a4] Old Version: [0.1.0a3]
+[2023-04-13 15:55:10] INFO root fetch - processPackages [koyo]: Start processing: datateer-cli
+[2023-04-13 15:55:10] INFO root fetch - main [MainThread]: End processing [koyo]: success
+[2023-04-13 15:55:10] INFO root fetch - processPackages [datateer-cli]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 15:55:10] INFO root fetch - processPackages [polywrap-client]: executing diffoscope
+[2023-04-13 15:55:10] INFO root fetch - processPackages [polywrap-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_client-0.1.0a3.tar.gz tmp/polywrap_client-0.1.0a4.tar.gz --markdown 20230413/p/polywrap-client/0.1.0a3-0.1.0a4/diff.md --exclude *.pyd
+[2023-04-13 15:55:10] INFO root fetch - processPackages [datateer-cli]: Downloading https://files.pythonhosted.org/packages/54/62/d8e1a9e274a4fbc5a2ebcbe1d421bd2756e3f4be648595a948b2d7080f4f/datateer-cli-0.9.0.tar.gz
+[2023-04-13 15:55:10] INFO root fetch - processPackages [nomoji]: Start processing: polywrap-client-config-builder
+[2023-04-13 15:55:10] INFO root fetch - main [MainThread]: End processing [nomoji]: success
+[2023-04-13 15:55:10] INFO root fetch - processPackages [polywrap-client-config-builder]: New version: [0.1.0a20] Old Version: [0.1.0a19]
+[2023-04-13 15:55:10] INFO root fetch - processPackages [polywrap-client-config-builder]: Downloading https://files.pythonhosted.org/packages/8b/bd/cca5e2adae6e1bceed99c68fed9f93c1da7084bac34f56d87ef8045e06f0/polywrap_client_config_builder-0.1.0a20.tar.gz
+[2023-04-13 15:55:10] INFO root fetch - processPackages [polywrap-client-config-builder]: executing diffoscope
+[2023-04-13 15:55:10] INFO root fetch - processPackages [polywrap-client-config-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_client_config_builder-0.1.0a19.tar.gz tmp/polywrap_client_config_builder-0.1.0a20.tar.gz --markdown 20230413/p/polywrap-client-config-builder/0.1.0a19-0.1.0a20/diff.md --exclude *.pyd
+[2023-04-13 15:55:11] INFO root fetch - processPackages [datateer-cli]: Downloading https://files.pythonhosted.org/packages/35/26/c1f079de100a614d146811264b5f317ab5c1a2f9ab99b728ef03e615bd1a/datateer-cli-0.9.1.tar.gz
+[2023-04-13 15:55:11] INFO root fetch - processPackages [datateer-cli]: executing diffoscope
+[2023-04-13 15:55:11] INFO root fetch - processPackages [datateer-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datateer-cli-0.9.0.tar.gz tmp/datateer-cli-0.9.1.tar.gz --markdown 20230413/d/datateer-cli/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 15:55:11] INFO root fetch - processPackages [polywrap-client]: Start processing: homeassistant
+[2023-04-13 15:55:11] INFO root fetch - main [MainThread]: End processing [polywrap-client]: success
+[2023-04-13 15:55:11] INFO root fetch - processPackages [homeassistant]: New version: [2023.4.4] Old Version: [2023.4.3]
+[2023-04-13 15:55:11] INFO root fetch - processPackages [homeassistant]: Downloading https://files.pythonhosted.org/packages/a3/8f/112061829003083e4a35990cb25c60a0bdbcf506245616fdd55b1b25cc13/homeassistant-2023.4.3.tar.gz
+[2023-04-13 15:55:11] WARNING root fetch - processPackages [homeassistant]: Skipping package: exceeds size limit 12896970>=10485760
+[2023-04-13 15:55:11] INFO root fetch - processPackages [homeassistant]: Start processing: pyspark
+[2023-04-13 15:55:11] INFO root fetch - main [MainThread]: End processing [homeassistant] error
+[2023-04-13 15:55:11] INFO root fetch - processPackages [pyspark]: New version: [3.3.2] Old Version: [3.3.1]
+[2023-04-13 15:55:11] INFO root fetch - processPackages [pyspark]: Downloading https://files.pythonhosted.org/packages/d1/48/cc321e742a93320c681b3c7a9fd405d518c6326c89da3d67e35b9868e941/pyspark-3.3.1.tar.gz
+[2023-04-13 15:55:11] WARNING root fetch - processPackages [pyspark]: Skipping package: exceeds size limit 281393542>=10485760
+[2023-04-13 15:55:11] INFO root fetch - processPackages [pyspark]: Start processing: ChatGPTWeb
+[2023-04-13 15:55:11] INFO root fetch - main [MainThread]: End processing [pyspark] error
+[2023-04-13 15:55:11] INFO root fetch - processPackages [ChatGPTWeb]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-13 15:55:11] INFO root fetch - processPackages [ChatGPTWeb]: Downloading https://files.pythonhosted.org/packages/8a/cd/f3f431947b16a08df46eb16fa09b069fec6b19543e98239012a755841f99/ChatGPTWeb-0.0.7.tar.gz
+[2023-04-13 15:55:12] INFO root fetch - processPackages [polywrap-client-config-builder]: Start processing: pcb-parser
+[2023-04-13 15:55:12] INFO root fetch - main [MainThread]: End processing [polywrap-client-config-builder]: success
+[2023-04-13 15:55:12] INFO root fetch - processPackages [pcb-parser]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-13 15:55:12] INFO root fetch - processPackages [ChatGPTWeb]: executing diffoscope
+[2023-04-13 15:55:12] INFO root fetch - processPackages [ChatGPTWeb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatGPTWeb-0.0.6.tar.gz tmp/ChatGPTWeb-0.0.7.tar.gz --markdown 20230413/C/ChatGPTWeb/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-13 15:55:12] INFO root fetch - processPackages [datateer-cli]: Start processing: robocorp-logging
+[2023-04-13 15:55:12] INFO root fetch - main [MainThread]: End processing [datateer-cli]: success
+[2023-04-13 15:55:12] INFO root fetch - processPackages [pcb-parser]: Downloading https://files.pythonhosted.org/packages/38/77/45f14145e5d95fb0f176430a2c3d3b67194d326845df0e711b4fd71a423e/pcb-parser-0.0.8.tar.gz
+[2023-04-13 15:55:12] INFO root fetch - processPackages [robocorp-logging]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-13 15:55:12] INFO root fetch - processPackages [pcb-parser]: executing diffoscope
+[2023-04-13 15:55:12] INFO root fetch - processPackages [pcb-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcb-parser-0.0.7.tar.gz tmp/pcb-parser-0.0.8.tar.gz --markdown 20230413/p/pcb-parser/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-13 15:55:12] INFO root fetch - processPackages [robocorp-logging]: Downloading https://files.pythonhosted.org/packages/03/f4/db9cecaa020863d41725eab50d12ef086e7ef13df9432ab86fa150e2b95b/robocorp_logging-0.0.6.tar.gz
+[2023-04-13 15:55:12] INFO root fetch - processPackages [robocorp-logging]: executing diffoscope
+[2023-04-13 15:55:12] INFO root fetch - processPackages [robocorp-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robocorp_logging-0.0.5.tar.gz tmp/robocorp_logging-0.0.6.tar.gz --markdown 20230413/r/robocorp-logging/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-13 15:55:13] INFO root fetch - main [MainThread]: End processing [ChatGPTWeb]: success
+[2023-04-13 15:55:13] INFO root fetch - main [MainThread]: End processing [django-baton]: success
+[2023-04-13 15:55:13] INFO root fetch - main [MainThread]: End processing [pcb-parser]: success
+[2023-04-13 15:55:14] INFO root fetch - main [MainThread]: End processing [robocorp-logging]: success
+[2023-04-13 15:55:20] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-04-13 15:55:20] INFO root fetch - main [MainThread]: Store serial: [17693265]
