@@ -12242,3 +12242,103 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 11:21:27] INFO root fetch - main [MainThread]: End processing [coretex]: success
 [2023-04-13 11:21:28] INFO root fetch - main [MainThread]: End processing [deezer-python]: success
 [2023-04-13 11:21:28] INFO root fetch - main [MainThread]: Store serial: [17689750]
+[2023-04-13 11:26:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689750]
+[2023-04-13 11:26:35] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-13 11:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lsst-ctrl-mpexec
+[2023-04-13 11:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: puploader
+[2023-04-13 11:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydataanalysis
+[2023-04-13 11:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: harborapi
+[2023-04-13 11:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lsst-pipe-base
+[2023-04-13 11:26:35] INFO root fetch - processPackages [lsst-ctrl-mpexec]: New version: [26.0.0a20230500] Old Version: [26.0.0a20230400]
+[2023-04-13 11:26:35] WARNING root fetch - processPackages [puploader]: Skipping, unable to determine old version
+[2023-04-13 11:26:35] INFO root fetch - processPackages [puploader]: Start processing: simple-sharepoint
+[2023-04-13 11:26:35] INFO root fetch - main [MainThread]: End processing [puploader] error
+[2023-04-13 11:26:35] INFO root fetch - processPackages [pydataanalysis]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-13 11:26:35] INFO root fetch - processPackages [harborapi]: New version: [0.9.0] Old Version: [0.8.6]
+[2023-04-13 11:26:35] INFO root fetch - processPackages [lsst-pipe-base]: New version: [26.0.0a20230500] Old Version: [26.0.0a20230400]
+[2023-04-13 11:26:35] INFO root fetch - processPackages [simple-sharepoint]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-13 11:26:35] INFO root fetch - processPackages [lsst-ctrl-mpexec]: Downloading https://files.pythonhosted.org/packages/7d/95/1fd49d0ac8149861738d465629d14648e00335b6f27b60edea825d22869f/lsst-ctrl-mpexec-26.0.0a20230400.tar.gz
+[2023-04-13 11:26:35] INFO root fetch - processPackages [lsst-pipe-base]: Downloading https://files.pythonhosted.org/packages/4a/2a/d7e53c7284052c1d3edb447a5c44734c2eb2276c39ac6857f02d9a0e77d3/lsst-pipe-base-26.0.0a20230400.tar.gz
+[2023-04-13 11:26:35] INFO root fetch - processPackages [simple-sharepoint]: Downloading https://files.pythonhosted.org/packages/ab/01/e2f014ef2a0f78890f7c68f94326978c43588314ea51ee1c8ac7db8f53cd/simple_sharepoint-0.0.4-py3-none-any.whl
+[2023-04-13 11:26:36] INFO root fetch - processPackages [pydataanalysis]: Downloading https://files.pythonhosted.org/packages/78/b9/214967a4e772d55442a0bbdbca2d43c4e63d3de1e1d47be58713abd1d597/pydataanalysis-0.0.4.tar.gz
+[2023-04-13 11:26:36] INFO root fetch - processPackages [simple-sharepoint]: executing diffoscope
+[2023-04-13 11:26:36] INFO root fetch - processPackages [simple-sharepoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_sharepoint-0.0.3-py3-none-any.whl.zip tmp/simple_sharepoint-0.0.4-py3-none-any.whl.zip --markdown 20230413/s/simple-sharepoint/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-13 11:26:36] INFO root fetch - processPackages [harborapi]: executing diffoscope
+[2023-04-13 11:26:36] INFO root fetch - processPackages [harborapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harborapi-0.8.6.tar.gz tmp/harborapi-0.9.0.tar.gz --markdown 20230413/h/harborapi/0.8.6-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 11:26:36] INFO root fetch - processPackages [lsst-ctrl-mpexec]: Downloading https://files.pythonhosted.org/packages/61/b7/81e5f821fadf907a5b8aba51baef7441e1a4b2d1899448ea4c15512f8b33/lsst-ctrl-mpexec-26.0.0a20230500.tar.gz
+[2023-04-13 11:26:36] INFO root fetch - processPackages [lsst-pipe-base]: Downloading https://files.pythonhosted.org/packages/43/b8/e01f76a3da14b328fd43a97c36653216b676c2f3b0fd8c71e30d4ff1132e/lsst-pipe-base-26.0.0a20230500.tar.gz
+[2023-04-13 11:26:36] INFO root fetch - processPackages [pydataanalysis]: executing diffoscope
+[2023-04-13 11:26:36] INFO root fetch - processPackages [pydataanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydataanalysis-0.0.3.tar.gz tmp/pydataanalysis-0.0.4.tar.gz --markdown 20230413/p/pydataanalysis/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-13 11:26:36] INFO root fetch - processPackages [lsst-ctrl-mpexec]: executing diffoscope
+[2023-04-13 11:26:36] INFO root fetch - processPackages [lsst-ctrl-mpexec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsst-ctrl-mpexec-26.0.0a20230400.tar.gz tmp/lsst-ctrl-mpexec-26.0.0a20230500.tar.gz --markdown 20230413/l/lsst-ctrl-mpexec/26.0.0a20230400-26.0.0a20230500/diff.md --exclude *.pyd
+[2023-04-13 11:26:36] INFO root fetch - processPackages [lsst-pipe-base]: executing diffoscope
+[2023-04-13 11:26:36] INFO root fetch - processPackages [lsst-pipe-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsst-pipe-base-26.0.0a20230400.tar.gz tmp/lsst-pipe-base-26.0.0a20230500.tar.gz --markdown 20230413/l/lsst-pipe-base/26.0.0a20230400-26.0.0a20230500/diff.md --exclude *.pyd
+[2023-04-13 11:26:37] INFO root fetch - processPackages [simple-sharepoint]: Start processing: robot_descriptions
+[2023-04-13 11:26:37] INFO root fetch - main [MainThread]: End processing [simple-sharepoint]: success
+[2023-04-13 11:26:37] INFO root fetch - processPackages [robot_descriptions]: New version: [1.5.0] Old Version: [1.4.1]
+[2023-04-13 11:26:37] INFO root fetch - processPackages [robot_descriptions]: Downloading https://files.pythonhosted.org/packages/e3/ce/f536e3d01d16cd62499945b89927920ada36209f4e61b42f87b602a1594e/robot_descriptions-1.4.1.tar.gz
+[2023-04-13 11:26:37] INFO root fetch - processPackages [pydataanalysis]: Start processing: ifd-python
+[2023-04-13 11:26:37] INFO root fetch - main [MainThread]: End processing [pydataanalysis]: success
+[2023-04-13 11:26:37] INFO root fetch - processPackages [ifd-python]: New version: [7.2] Old Version: [7.1]
+[2023-04-13 11:26:37] INFO root fetch - processPackages [robot_descriptions]: Downloading https://files.pythonhosted.org/packages/47/de/5fa47a654cfe2236b5882be51e603ae70ca4e75baf2ec27758d69ad7cd2b/robot_descriptions-1.5.0.tar.gz
+[2023-04-13 11:26:37] INFO root fetch - processPackages [lsst-ctrl-mpexec]: Start processing: teklia-line-image-extractor
+[2023-04-13 11:26:37] INFO root fetch - main [MainThread]: End processing [lsst-ctrl-mpexec]: success
+[2023-04-13 11:26:37] INFO root fetch - processPackages [teklia-line-image-extractor]: New version: [0.2.8rc2] Old Version: [0.2.8rc1]
+[2023-04-13 11:26:37] INFO root fetch - processPackages [robot_descriptions]: executing diffoscope
+[2023-04-13 11:26:37] INFO root fetch - processPackages [robot_descriptions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robot_descriptions-1.4.1.tar.gz tmp/robot_descriptions-1.5.0.tar.gz --markdown 20230413/r/robot_descriptions/1.4.1-1.5.0/diff.md --exclude *.pyd
+[2023-04-13 11:26:37] INFO root fetch - processPackages [lsst-pipe-base]: Start processing: tfa-python-sdk
+[2023-04-13 11:26:37] INFO root fetch - main [MainThread]: End processing [lsst-pipe-base]: success
+[2023-04-13 11:26:37] INFO root fetch - processPackages [tfa-python-sdk]: New version: [2.6.1] Old Version: [2.6.0]
+[2023-04-13 11:26:37] INFO root fetch - processPackages [teklia-line-image-extractor]: Downloading https://files.pythonhosted.org/packages/b7/db/4bbe0bad318bb7141443783e671b31d64ff3d39d6aef149be7742f3a47bd/teklia-line-image-extractor-0.2.8rc1.tar.gz
+[2023-04-13 11:26:37] INFO root fetch - processPackages [ifd-python]: Downloading https://files.pythonhosted.org/packages/f9/34/13823d2febb67df15161afd59faefd34110d9fdaab1cb4383a0615d97805/ifd_python-7.2.tar.gz
+[2023-04-13 11:26:38] INFO root fetch - processPackages [ifd-python]: executing diffoscope
+[2023-04-13 11:26:38] INFO root fetch - processPackages [ifd-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifd_python-7.1.tar.gz tmp/ifd_python-7.2.tar.gz --markdown 20230413/i/ifd-python/7.1-7.2/diff.md --exclude *.pyd
+[2023-04-13 11:26:38] INFO root fetch - processPackages [teklia-line-image-extractor]: Downloading https://files.pythonhosted.org/packages/91/52/963255c41cb430cec68356c21396ae9d9668198aa3932cd73e94cb167702/teklia-line-image-extractor-0.2.8rc2.tar.gz
+[2023-04-13 11:26:38] INFO root fetch - processPackages [tfa-python-sdk]: Downloading https://files.pythonhosted.org/packages/be/9b/0cd1d0d59a9bfa8dcb874290816e89d23b2adc03a77f54dcd587005e8823/tfa-python-sdk-2.6.1.tar.gz
+[2023-04-13 11:26:38] INFO root fetch - processPackages [teklia-line-image-extractor]: executing diffoscope
+[2023-04-13 11:26:38] INFO root fetch - processPackages [teklia-line-image-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teklia-line-image-extractor-0.2.8rc1.tar.gz tmp/teklia-line-image-extractor-0.2.8rc2.tar.gz --markdown 20230413/t/teklia-line-image-extractor/0.2.8rc1-0.2.8rc2/diff.md --exclude *.pyd
+[2023-04-13 11:26:38] INFO root fetch - processPackages [tfa-python-sdk]: executing diffoscope
+[2023-04-13 11:26:38] INFO root fetch - processPackages [tfa-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfa-python-sdk-2.6.0.tar.gz tmp/tfa-python-sdk-2.6.1.tar.gz --markdown 20230413/t/tfa-python-sdk/2.6.0-2.6.1/diff.md --exclude *.pyd
+[2023-04-13 11:26:39] INFO root fetch - processPackages [ifd-python]: Start processing: flake8-comprehensions
+[2023-04-13 11:26:39] INFO root fetch - main [MainThread]: End processing [ifd-python]: success
+[2023-04-13 11:26:39] INFO root fetch - processPackages [flake8-comprehensions]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-04-13 11:26:39] INFO root fetch - processPackages [teklia-line-image-extractor]: Start processing: swh.deposit
+[2023-04-13 11:26:39] INFO root fetch - main [MainThread]: End processing [teklia-line-image-extractor]: success
+[2023-04-13 11:26:39] INFO root fetch - processPackages [flake8-comprehensions]: Downloading https://files.pythonhosted.org/packages/8c/56/ba0c2878c2b64237afd978b4f176bcb9d671419d9b71ece454f0117fb943/flake8-comprehensions-3.8.0.tar.gz
+[2023-04-13 11:26:39] INFO root fetch - processPackages [swh.deposit]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-13 11:26:39] INFO root fetch - processPackages [tfa-python-sdk]: Start processing: slackflylog
+[2023-04-13 11:26:39] INFO root fetch - main [MainThread]: End processing [tfa-python-sdk]: success
+[2023-04-13 11:26:39] INFO root fetch - processPackages [slackflylog]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-13 11:26:39] INFO root fetch - processPackages [robot_descriptions]: Start processing: pyjpt
+[2023-04-13 11:26:39] INFO root fetch - main [MainThread]: End processing [robot_descriptions]: success
+[2023-04-13 11:26:39] INFO root fetch - processPackages [slackflylog]: Downloading https://files.pythonhosted.org/packages/9c/d7/81cdaab74f2e7643131f25414ca6016a1f7bd9e2ba1b12e6957b3a170c53/slackflylog-3.0.5.tar.gz
+[2023-04-13 11:26:39] INFO root fetch - processPackages [swh.deposit]: Downloading https://files.pythonhosted.org/packages/27/a8/9bb53b11b50b8631e63c3aaa9901bf9b934450e7bdfb4840ad779084a913/swh.deposit-1.2.0.tar.gz
+[2023-04-13 11:26:39] WARNING root fetch - processPackages [pyjpt]: Skipping, unable to determine old version
+[2023-04-13 11:26:39] INFO root fetch - processPackages [pyjpt]: Start processing: bmcs-utils
+[2023-04-13 11:26:39] INFO root fetch - main [MainThread]: End processing [pyjpt] error
+[2023-04-13 11:26:39] INFO root fetch - processPackages [bmcs-utils]: New version: [0.0.9a0] Old Version: [0.0.8a0]
+[2023-04-13 11:26:39] INFO root fetch - processPackages [flake8-comprehensions]: Downloading https://files.pythonhosted.org/packages/f5/c7/f746544837b6351b3bdc0193b8c145b55e338d7b88bbb331aed93cbd151a/flake8-comprehensions-3.9.0.tar.gz
+[2023-04-13 11:26:39] INFO root fetch - processPackages [bmcs-utils]: executing diffoscope
+[2023-04-13 11:26:39] INFO root fetch - processPackages [bmcs-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmcs_utils-0.0.8a0.tar.gz tmp/bmcs_utils-0.0.9a0.tar.gz --markdown 20230413/b/bmcs-utils/0.0.8a0-0.0.9a0/diff.md --exclude *.pyd
+[2023-04-13 11:26:39] INFO root fetch - processPackages [harborapi]: Start processing: openctp-ctp-6319
+[2023-04-13 11:26:39] INFO root fetch - main [MainThread]: End processing [harborapi]: success
+[2023-04-13 11:26:39] WARNING root fetch - processPackages [openctp-ctp-6319]: Skipping, unable to determine old version
+[2023-04-13 11:26:39] INFO root fetch - processPackages [openctp-ctp-6319]: Start processing: kcli
+[2023-04-13 11:26:39] INFO root fetch - main [MainThread]: End processing [openctp-ctp-6319] error
+[2023-04-13 11:26:39] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-13 11:26:39] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-3.0.4.tar.gz tmp/slackflylog-3.0.5.tar.gz --markdown 20230413/s/slackflylog/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-13 11:26:39] INFO root fetch - processPackages [kcli]: New version: [99.0.202304130929] Old Version: [99.0.202304130813]
+[2023-04-13 11:26:39] INFO root fetch - processPackages [flake8-comprehensions]: executing diffoscope
+[2023-04-13 11:26:39] INFO root fetch - processPackages [flake8-comprehensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8-comprehensions-3.8.0.tar.gz tmp/flake8-comprehensions-3.9.0.tar.gz --markdown 20230413/f/flake8-comprehensions/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-04-13 11:26:39] INFO root fetch - processPackages [swh.deposit]: Downloading https://files.pythonhosted.org/packages/a3/79/ca19a52e4479827e2fee8ee72d58bee07cb9a78df5e93e06b0f8b0cd384a/swh.deposit-1.2.1.tar.gz
+[2023-04-13 11:26:40] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/27/a8/a9fff73c70ae77ff4080b9f486aeaa484d8a7bf750423b264574b2c4b80d/kcli-99.0.202304130929-py3-none-any.whl
+[2023-04-13 11:26:40] INFO root fetch - processPackages [swh.deposit]: executing diffoscope
+[2023-04-13 11:26:40] INFO root fetch - processPackages [swh.deposit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swh.deposit-1.2.0.tar.gz tmp/swh.deposit-1.2.1.tar.gz --markdown 20230413/s/swh.deposit/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-13 11:26:40] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-13 11:26:40] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304130813-py3-none-any.whl.zip tmp/kcli-99.0.202304130929-py3-none-any.whl.zip --markdown 20230413/k/kcli/99.0.202304130813-99.0.202304130929/diff.md --exclude *.pyd
+[2023-04-13 11:26:40] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-13 11:26:40] INFO root fetch - main [MainThread]: End processing [bmcs-utils]: success
+[2023-04-13 11:26:40] INFO root fetch - main [MainThread]: End processing [flake8-comprehensions]: success
+[2023-04-13 11:26:43] INFO root fetch - main [MainThread]: End processing [swh.deposit]: success
+[2023-04-13 11:26:49] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-13 11:26:49] INFO root fetch - main [MainThread]: Store serial: [17689813]
