@@ -8958,3 +8958,73 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 08:29:27] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
 [2023-04-13 08:29:27] INFO root fetch - main [MainThread]: End processing [TerraSegmentation]: success
 [2023-04-13 08:29:27] INFO root fetch - main [MainThread]: Store serial: [17687668]
+[2023-04-13 08:34:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687668]
+[2023-04-13 08:34:34] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-13 08:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-product-assortment-description
+[2023-04-13 08:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lazylinop
+[2023-04-13 08:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-base-product-mass-addition
+[2023-04-13 08:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PureCloudPlatformClientV2
+[2023-04-13 08:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: profyle
+[2023-04-13 08:34:34] INFO root fetch - processPackages [odoo-addon-base-product-mass-addition]: New version: [15.0.1.0.0.5] Old Version: [15.0.1.0.0.3]
+[2023-04-13 08:34:34] INFO root fetch - processPackages [lazylinop]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 08:34:34] INFO root fetch - processPackages [odoo14-addon-product-assortment-description]: New version: [14.0.1.0.2.dev9] Old Version: [14.0.1.0.2.dev8]
+[2023-04-13 08:34:34] INFO root fetch - processPackages [profyle]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 08:34:34] INFO root fetch - processPackages [PureCloudPlatformClientV2]: New version: [99.0.0] Old Version: [98.0.0]
+[2023-04-13 08:34:35] INFO root fetch - processPackages [odoo-addon-base-product-mass-addition]: Downloading https://files.pythonhosted.org/packages/d2/80/c9d35eb06460c263e7f20d454fbd804bd1c1cd580bf15bdf9c4e57053546/odoo_addon_base_product_mass_addition-15.0.1.0.0.3-py3-none-any.whl
+[2023-04-13 08:34:35] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Downloading https://files.pythonhosted.org/packages/2c/c0/91800d23710423ae3701d533f2eb887685821d04a61d8ce88b3ef04e973d/PureCloudPlatformClientV2-98.0.0.tar.gz
+[2023-04-13 08:34:35] INFO root fetch - processPackages [odoo-addon-base-product-mass-addition]: Downloading https://files.pythonhosted.org/packages/fb/a5/27b3e99ae9fe2510ec6e3d599c5174c5881e51e69fb26ae21372ecb59d1b/odoo_addon_base_product_mass_addition-15.0.1.0.0.5-py3-none-any.whl
+[2023-04-13 08:34:35] INFO root fetch - processPackages [odoo14-addon-product-assortment-description]: executing diffoscope
+[2023-04-13 08:34:35] INFO root fetch - processPackages [odoo14-addon-product-assortment-description]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_product_assortment_description-14.0.1.0.2.dev8-py3-none-any.whl.zip tmp/odoo14_addon_product_assortment_description-14.0.1.0.2.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-product-assortment-description/14.0.1.0.2.dev8-14.0.1.0.2.dev9/diff.md --exclude *.pyd
+[2023-04-13 08:34:35] INFO root fetch - processPackages [lazylinop]: executing diffoscope
+[2023-04-13 08:34:35] INFO root fetch - processPackages [lazylinop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazylinop-1.0.8-py3-none-any.whl.zip tmp/lazylinop-1.0.9-py3-none-any.whl.zip --markdown 20230413/l/lazylinop/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 08:34:35] INFO root fetch - processPackages [odoo-addon-base-product-mass-addition]: executing diffoscope
+[2023-04-13 08:34:35] INFO root fetch - processPackages [odoo-addon-base-product-mass-addition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_product_mass_addition-15.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_base_product_mass_addition-15.0.1.0.0.5-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-base-product-mass-addition/15.0.1.0.0.3-15.0.1.0.0.5/diff.md --exclude *.pyd
+[2023-04-13 08:34:35] INFO root fetch - processPackages [profyle]: executing diffoscope
+[2023-04-13 08:34:35] INFO root fetch - processPackages [profyle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profyle-0.0.8.tar.gz tmp/profyle-0.0.9.tar.gz --markdown 20230413/p/profyle/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 08:34:35] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Downloading https://files.pythonhosted.org/packages/27/4a/c79d7db4d3031ed827ca4794d7791097c946dd8a6a0ae49a7fb27c9473d8/PureCloudPlatformClientV2-99.0.0.tar.gz
+[2023-04-13 08:34:36] INFO root fetch - processPackages [PureCloudPlatformClientV2]: executing diffoscope
+[2023-04-13 08:34:36] INFO root fetch - processPackages [PureCloudPlatformClientV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PureCloudPlatformClientV2-98.0.0.tar.gz tmp/PureCloudPlatformClientV2-99.0.0.tar.gz --markdown 20230413/P/PureCloudPlatformClientV2/98.0.0-99.0.0/diff.md --exclude *.pyd
+[2023-04-13 08:34:36] INFO root fetch - processPackages [lazylinop]: Start processing: pcl-pangu
+[2023-04-13 08:34:36] INFO root fetch - main [MainThread]: End processing [lazylinop]: success
+[2023-04-13 08:34:36] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 08:34:36] INFO root fetch - processPackages [odoo14-addon-product-assortment-description]: Start processing: cis-checks-2023
+[2023-04-13 08:34:36] INFO root fetch - main [MainThread]: End processing [odoo14-addon-product-assortment-description]: success
+[2023-04-13 08:34:36] INFO root fetch - processPackages [cis-checks-2023]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-13 08:34:36] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 08:34:36] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 08:34:36] INFO root fetch - processPackages [cis-checks-2023]: Downloading https://files.pythonhosted.org/packages/34/fe/5de583eb7e30afdfe09784aba8c6485df27c2a940706a9a091b2c7e4adad/cis_checks_2023-2.0.5.tar.gz
+[2023-04-13 08:34:36] INFO root fetch - processPackages [profyle]: Start processing: axterdb
+[2023-04-13 08:34:36] INFO root fetch - main [MainThread]: End processing [profyle]: success
+[2023-04-13 08:34:36] INFO root fetch - processPackages [axterdb]: New version: [1.3] Old Version: [1.2.3]
+[2023-04-13 08:34:36] INFO root fetch - processPackages [cis-checks-2023]: executing diffoscope
+[2023-04-13 08:34:36] INFO root fetch - processPackages [cis-checks-2023]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cis_checks_2023-2.0.4.tar.gz tmp/cis_checks_2023-2.0.5.tar.gz --markdown 20230413/c/cis-checks-2023/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-13 08:34:36] INFO root fetch - processPackages [odoo-addon-base-product-mass-addition]: Start processing: chibi
+[2023-04-13 08:34:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-product-mass-addition]: success
+[2023-04-13 08:34:36] INFO root fetch - processPackages [chibi]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-13 08:34:36] INFO root fetch - processPackages [axterdb]: Downloading https://files.pythonhosted.org/packages/a7/12/f59c382d416c90575b2bb94d38ced51888621c44bd92dbd088bb9652c5a7/axterdb-1.3.tar.gz
+[2023-04-13 08:34:36] INFO root fetch - processPackages [axterdb]: executing diffoscope
+[2023-04-13 08:34:36] INFO root fetch - processPackages [axterdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/axterdb-1.2.3.tar.gz tmp/axterdb-1.3.tar.gz --markdown 20230413/a/axterdb/1.2.3-1.3/diff.md --exclude *.pyd
+[2023-04-13 08:34:36] INFO root fetch - processPackages [chibi]: Downloading https://files.pythonhosted.org/packages/e8/95/54239cab911ba8afa0e5e1d13ed0252e52e6d9e34695e681bd2da4eeb717/chibi-0.8.2.tar.gz
+[2023-04-13 08:34:37] INFO root fetch - processPackages [chibi]: Downloading https://files.pythonhosted.org/packages/50/33/a5d153fd435003c737473792981901eb976d8b4efb92659af563b69b1e47/chibi-0.9.0.tar.gz
+[2023-04-13 08:34:37] INFO root fetch - processPackages [cis-checks-2023]: Start processing: nglui
+[2023-04-13 08:34:37] INFO root fetch - main [MainThread]: End processing [cis-checks-2023]: success
+[2023-04-13 08:34:37] INFO root fetch - processPackages [nglui]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-04-13 08:34:37] INFO root fetch - processPackages [chibi]: executing diffoscope
+[2023-04-13 08:34:37] INFO root fetch - processPackages [chibi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chibi-0.8.2.tar.gz tmp/chibi-0.9.0.tar.gz --markdown 20230413/c/chibi/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 08:34:38] INFO root fetch - processPackages [nglui]: Downloading https://files.pythonhosted.org/packages/46/20/43f98596161a40d958b69e2da65a399dfc24cbe523b925da3b6c0b931da9/nglui-2.8.1.tar.gz
+[2023-04-13 08:34:38] INFO root fetch - processPackages [axterdb]: Start processing: datedays
+[2023-04-13 08:34:38] INFO root fetch - main [MainThread]: End processing [axterdb]: success
+[2023-04-13 08:34:38] INFO root fetch - processPackages [datedays]: New version: [2.2.3] Old Version: [2.2.1]
+[2023-04-13 08:34:38] INFO root fetch - processPackages [nglui]: Downloading https://files.pythonhosted.org/packages/07/74/c06ebea991b36bd7b20eab2c7fa39467670c748feffc81060df607ab3fb4/nglui-2.9.0.tar.gz
+[2023-04-13 08:34:38] INFO root fetch - processPackages [datedays]: Downloading https://files.pythonhosted.org/packages/ee/16/2a10223aad94125e3f859676aa3c1ac7bff4d41ddd590809a17047713029/datedays-2.2.1.tar.gz
+[2023-04-13 08:34:38] INFO root fetch - processPackages [datedays]: Downloading https://files.pythonhosted.org/packages/80/75/8c966031edc54de7f5825c424f67477af77a2af9e3ed17703198e4ee480c/datedays-2.2.3.tar.gz
+[2023-04-13 08:34:38] INFO root fetch - processPackages [datedays]: executing diffoscope
+[2023-04-13 08:34:38] INFO root fetch - processPackages [datedays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datedays-2.2.1.tar.gz tmp/datedays-2.2.3.tar.gz --markdown 20230413/d/datedays/2.2.1-2.2.3/diff.md --exclude *.pyd
+[2023-04-13 08:34:38] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 08:34:38] INFO root fetch - processPackages [nglui]: executing diffoscope
+[2023-04-13 08:34:38] INFO root fetch - processPackages [nglui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nglui-2.8.1.tar.gz tmp/nglui-2.9.0.tar.gz --markdown 20230413/n/nglui/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-04-13 08:34:39] INFO root fetch - main [MainThread]: End processing [datedays]: success
+[2023-04-13 08:34:39] INFO root fetch - main [MainThread]: End processing [chibi]: success
+[2023-04-13 08:34:40] INFO root fetch - main [MainThread]: End processing [nglui]: success
+[2023-04-13 08:35:24] INFO root fetch - main [MainThread]: End processing [PureCloudPlatformClientV2]: success
+[2023-04-13 08:35:24] INFO root fetch - main [MainThread]: Store serial: [17687701]
