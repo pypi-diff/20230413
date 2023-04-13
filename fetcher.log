@@ -18712,3 +18712,108 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 16:00:56] INFO root fetch - main [MainThread]: End processing [wmagent]: success
 [2023-04-13 16:01:18] INFO root fetch - main [MainThread]: End processing [wmcore]: success
 [2023-04-13 16:01:18] INFO root fetch - main [MainThread]: Store serial: [17693361]
+[2023-04-13 16:06:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17693361]
+[2023-04-13 16:06:28] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-13 16:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi-async-sqlalchemy
+[2023-04-13 16:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: collective.ckeditor
+[2023-04-13 16:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oakvar
+[2023-04-13 16:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dr-buster
+[2023-04-13 16:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rucio-consistency
+[2023-04-13 16:06:28] INFO root fetch - processPackages [fastapi-async-sqlalchemy]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-04-13 16:06:28] INFO root fetch - processPackages [collective.ckeditor]: New version: [5.0.0b1] Old Version: [5.0.0a5]
+[2023-04-13 16:06:28] INFO root fetch - processPackages [dr-buster]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-13 16:06:28] INFO root fetch - processPackages [rucio-consistency]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-13 16:06:28] INFO root fetch - processPackages [oakvar]: New version: [2.9.9] Old Version: [2.9.7]
+[2023-04-13 16:06:28] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-04-13 16:06:28] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.7.tar.gz tmp/oakvar-2.9.9.tar.gz --markdown 20230413/o/oakvar/2.9.7-2.9.9/diff.md --exclude *.pyd
+[2023-04-13 16:06:28] INFO root fetch - processPackages [fastapi-async-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/70/b9/8d6a63564d88780305081daeee335a50d40bd3dde6e9793a36e5026682a1/fastapi-async-sqlalchemy-0.3.9.tar.gz
+[2023-04-13 16:06:28] INFO root fetch - processPackages [rucio-consistency]: Downloading https://files.pythonhosted.org/packages/55/a8/9e07c064c9a4ca19d25309810bba7ff2c4c930c83c6c45457535bd5b22ff/rucio-consistency-1.0.2.tar.gz
+[2023-04-13 16:06:28] INFO root fetch - processPackages [dr-buster]: Downloading https://files.pythonhosted.org/packages/0e/a5/ce23fb3ba16b8ee21cb28b0164c12e7433dcde3e669ae594c4db5f9013af/dr-buster-1.0.6.tar.gz
+[2023-04-13 16:06:28] INFO root fetch - processPackages [collective.ckeditor]: Downloading https://files.pythonhosted.org/packages/d8/68/1e9e3bc80b33bc3ce9c06ce5f3b0953d2b78e3ac1736054378f799856155/collective.ckeditor-5.0.0b1.tar.gz
+[2023-04-13 16:06:28] INFO root fetch - processPackages [rucio-consistency]: executing diffoscope
+[2023-04-13 16:06:28] INFO root fetch - processPackages [rucio-consistency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rucio-consistency-1.0.1.tar.gz tmp/rucio-consistency-1.0.2.tar.gz --markdown 20230413/r/rucio-consistency/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-13 16:06:28] INFO root fetch - processPackages [fastapi-async-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/28/09/199274fefc7a40f1e73fd3c50a935141dec8b7718a53dd67e5333dca0672/fastapi-async-sqlalchemy-0.4.0.tar.gz
+[2023-04-13 16:06:28] INFO root fetch - processPackages [dr-buster]: Downloading https://files.pythonhosted.org/packages/f9/0f/9dd992d5d677af453a531e7df764d4c0e987bb54cbff89c4160f9e054e6c/dr-buster-1.0.7.tar.gz
+[2023-04-13 16:06:28] INFO root fetch - processPackages [fastapi-async-sqlalchemy]: executing diffoscope
+[2023-04-13 16:06:28] INFO root fetch - processPackages [fastapi-async-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-async-sqlalchemy-0.3.9.tar.gz tmp/fastapi-async-sqlalchemy-0.4.0.tar.gz --markdown 20230413/f/fastapi-async-sqlalchemy/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-04-13 16:06:28] INFO root fetch - processPackages [dr-buster]: executing diffoscope
+[2023-04-13 16:06:28] INFO root fetch - processPackages [dr-buster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dr-buster-1.0.6.tar.gz tmp/dr-buster-1.0.7.tar.gz --markdown 20230413/d/dr-buster/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-13 16:06:29] INFO root fetch - processPackages [collective.ckeditor]: executing diffoscope
+[2023-04-13 16:06:29] INFO root fetch - processPackages [collective.ckeditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/collective.ckeditor-5.0.0a5.tar.gz tmp/collective.ckeditor-5.0.0b1.tar.gz --markdown 20230413/c/collective.ckeditor/5.0.0a5-5.0.0b1/diff.md --exclude *.pyd
+[2023-04-13 16:06:29] INFO root fetch - processPackages [rucio-consistency]: Start processing: batdetect2
+[2023-04-13 16:06:29] INFO root fetch - main [MainThread]: End processing [rucio-consistency]: success
+[2023-04-13 16:06:29] WARNING root fetch - processPackages [batdetect2]: Skipping, unable to determine old version
+[2023-04-13 16:06:29] INFO root fetch - processPackages [batdetect2]: Start processing: jianglab
+[2023-04-13 16:06:29] INFO root fetch - main [MainThread]: End processing [batdetect2] error
+[2023-04-13 16:06:29] INFO root fetch - processPackages [jianglab]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-13 16:06:29] INFO root fetch - processPackages [jianglab]: Downloading https://files.pythonhosted.org/packages/52/27/caed6c945126db212be29624b8d38a69d3c1a9210757a66aefa50ba0818a/jianglab-0.1.4.tar.gz
+[2023-04-13 16:06:29] INFO root fetch - processPackages [fastapi-async-sqlalchemy]: Start processing: cnvrgv2
+[2023-04-13 16:06:29] INFO root fetch - main [MainThread]: End processing [fastapi-async-sqlalchemy]: success
+[2023-04-13 16:06:29] INFO root fetch - processPackages [cnvrgv2]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 16:06:29] INFO root fetch - processPackages [dr-buster]: Start processing: aac-metrics
+[2023-04-13 16:06:29] INFO root fetch - main [MainThread]: End processing [dr-buster]: success
+[2023-04-13 16:06:29] INFO root fetch - processPackages [aac-metrics]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-13 16:06:29] INFO root fetch - processPackages [jianglab]: executing diffoscope
+[2023-04-13 16:06:29] INFO root fetch - processPackages [jianglab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jianglab-0.1.3.tar.gz tmp/jianglab-0.1.4.tar.gz --markdown 20230413/j/jianglab/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-13 16:06:30] INFO root fetch - processPackages [cnvrgv2]: Downloading https://files.pythonhosted.org/packages/43/fb/f63773c2a608f95bcd4a1397dc5632cf2872158cdca26fa735e9915b152a/cnvrgv2-1.0.8.tar.gz
+[2023-04-13 16:06:30] INFO root fetch - processPackages [aac-metrics]: Downloading https://files.pythonhosted.org/packages/34/78/9e1cd5886d43249581781ee580fbc789153c946ec0b59fe0e51f5396a2d1/aac-metrics-0.3.0.tar.gz
+[2023-04-13 16:06:30] INFO root fetch - processPackages [aac-metrics]: Downloading https://files.pythonhosted.org/packages/e6/ad/24f7097cfb3889aa267ee1147567c6993d6f3b8b11a9bfa50fc4b317ca0c/aac-metrics-0.4.0.tar.gz
+[2023-04-13 16:06:30] INFO root fetch - processPackages [cnvrgv2]: Downloading https://files.pythonhosted.org/packages/3e/d4/3802681a11d24c3a3d0577e032604d1a49eebac43c819e31ff87d7d2d575/cnvrgv2-1.0.9.tar.gz
+[2023-04-13 16:06:30] INFO root fetch - processPackages [aac-metrics]: executing diffoscope
+[2023-04-13 16:06:30] INFO root fetch - processPackages [aac-metrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aac-metrics-0.3.0.tar.gz tmp/aac-metrics-0.4.0.tar.gz --markdown 20230413/a/aac-metrics/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-13 16:06:30] INFO root fetch - processPackages [cnvrgv2]: executing diffoscope
+[2023-04-13 16:06:30] INFO root fetch - processPackages [cnvrgv2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnvrgv2-1.0.8.tar.gz tmp/cnvrgv2-1.0.9.tar.gz --markdown 20230413/c/cnvrgv2/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 16:06:30] INFO root fetch - processPackages [jianglab]: Start processing: wc-django-geo-db
+[2023-04-13 16:06:30] INFO root fetch - main [MainThread]: End processing [jianglab]: success
+[2023-04-13 16:06:30] INFO root fetch - processPackages [wc-django-geo-db]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 16:06:31] INFO root fetch - processPackages [wc-django-geo-db]: executing diffoscope
+[2023-04-13 16:06:31] INFO root fetch - processPackages [wc-django-geo-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wc-django-geo-db-0.1.8.tar.gz tmp/wc-django-geo-db-0.1.9.tar.gz --markdown 20230413/w/wc-django-geo-db/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 16:06:32] INFO root fetch - processPackages [aac-metrics]: Start processing: confguard
+[2023-04-13 16:06:32] INFO root fetch - main [MainThread]: End processing [aac-metrics]: success
+[2023-04-13 16:06:32] INFO root fetch - processPackages [confguard]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-13 16:06:32] INFO root fetch - processPackages [confguard]: Downloading https://files.pythonhosted.org/packages/ed/4a/1cb2aba588ed236e66dc53ac033e9c824e5740639159b60fd5c9fd3ea5d0/confguard-1.1.4.tar.gz
+[2023-04-13 16:06:32] INFO root fetch - processPackages [cnvrgv2]: Start processing: typedb-protocol
+[2023-04-13 16:06:32] INFO root fetch - main [MainThread]: End processing [cnvrgv2]: success
+[2023-04-13 16:06:32] INFO root fetch - processPackages [typedb-protocol]: New version: [2.9.0] Old Version: [2.6.1]
+[2023-04-13 16:06:32] INFO root fetch - processPackages [confguard]: executing diffoscope
+[2023-04-13 16:06:32] INFO root fetch - processPackages [confguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/confguard-1.1.3.tar.gz tmp/confguard-1.1.4.tar.gz --markdown 20230413/c/confguard/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-13 16:06:32] INFO root fetch - processPackages [wc-django-geo-db]: Start processing: aiogram-ext
+[2023-04-13 16:06:32] INFO root fetch - main [MainThread]: End processing [wc-django-geo-db]: success
+[2023-04-13 16:06:32] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-13 16:06:32] INFO root fetch - processPackages [typedb-protocol]: Downloading https://files.pythonhosted.org/packages/1c/9f/bb5060ec834f6532d5e73549c923c3f43f383b9924e9b3b7db97716a5c71/typedb-protocol-2.6.1.tar.gz
+[2023-04-13 16:06:32] INFO root fetch - processPackages [aiogram-ext]: Downloading https://files.pythonhosted.org/packages/99/7b/b19fcb736f18d9c8277988b88088cd2b6db748ef2b616a1e40b10e49194c/aiogram-ext-0.0.8.tar.gz
+[2023-04-13 16:06:32] INFO root fetch - processPackages [typedb-protocol]: Downloading https://files.pythonhosted.org/packages/fc/60/d96a0948d7cf86bfff529e7f1784f2ebfc43f6dc2ee1fee9802554511944/typedb-protocol-2.9.0.tar.gz
+[2023-04-13 16:06:33] INFO root fetch - processPackages [typedb-protocol]: executing diffoscope
+[2023-04-13 16:06:33] INFO root fetch - processPackages [typedb-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typedb-protocol-2.6.1.tar.gz tmp/typedb-protocol-2.9.0.tar.gz --markdown 20230413/t/typedb-protocol/2.6.1-2.9.0/diff.md --exclude *.pyd
+[2023-04-13 16:06:33] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-13 16:06:33] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.0.7.tar.gz tmp/aiogram-ext-0.0.8.tar.gz --markdown 20230413/a/aiogram-ext/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-13 16:06:33] INFO root fetch - processPackages [oakvar]: Start processing: sdkit
+[2023-04-13 16:06:33] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-04-13 16:06:33] INFO root fetch - processPackages [sdkit]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 16:06:33] INFO root fetch - processPackages [sdkit]: executing diffoscope
+[2023-04-13 16:06:33] INFO root fetch - processPackages [sdkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkit-1.0.8.tar.gz tmp/sdkit-1.0.9.tar.gz --markdown 20230413/s/sdkit/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 16:06:34] INFO root fetch - processPackages [confguard]: Start processing: finetuner-stubs
+[2023-04-13 16:06:34] INFO root fetch - main [MainThread]: End processing [confguard]: success
+[2023-04-13 16:06:34] INFO root fetch - processPackages [finetuner-stubs]: New version: [0.9.3] Old Version: [0.13.2]
+[2023-04-13 16:06:34] INFO root fetch - processPackages [aiogram-ext]: Start processing: finetuner-commons
+[2023-04-13 16:06:34] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-13 16:06:34] INFO root fetch - processPackages [finetuner-stubs]: Downloading https://files.pythonhosted.org/packages/52/82/d4af9818be37c6bc2951a703b5287b8d8690d3d6b5737fedc532970d48fe/finetuner_stubs-0.13.2-py3-none-any.whl
+[2023-04-13 16:06:34] INFO root fetch - processPackages [finetuner-commons]: New version: [0.9.3] Old Version: [0.13.2]
+[2023-04-13 16:06:34] INFO root fetch - processPackages [typedb-protocol]: Start processing: locust-je-test-pep621
+[2023-04-13 16:06:34] INFO root fetch - main [MainThread]: End processing [typedb-protocol]: success
+[2023-04-13 16:06:34] INFO root fetch - processPackages [locust-je-test-pep621]: New version: [2.15.2.dev8] Old Version: [0.0.0]
+[2023-04-13 16:06:34] INFO root fetch - processPackages [finetuner-commons]: Downloading https://files.pythonhosted.org/packages/95/44/ce2e51431967d0a2209a620627255b062983b1f8418cb7c3e29ccd93c596/finetuner_commons-0.13.2-py3-none-any.whl
+[2023-04-13 16:06:34] INFO root fetch - processPackages [finetuner-stubs]: executing diffoscope
+[2023-04-13 16:06:34] INFO root fetch - processPackages [finetuner-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finetuner_stubs-0.13.2-py3-none-any.whl.zip tmp/finetuner-stubs-0.9.3.tar.gz --markdown 20230413/f/finetuner-stubs/0.13.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-13 16:06:34] INFO root fetch - processPackages [locust-je-test-pep621]: Downloading https://files.pythonhosted.org/packages/17/b2/f32b34bf66cbd7103cd748e94000f169bdcf5ddbbf5f86b9759ee4112885/locust_je_test_pep621-0.0.0.tar.gz
+[2023-04-13 16:06:34] INFO root fetch - processPackages [finetuner-commons]: executing diffoscope
+[2023-04-13 16:06:34] INFO root fetch - processPackages [finetuner-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finetuner_commons-0.13.2-py3-none-any.whl.zip tmp/finetuner-commons-0.9.3.tar.gz --markdown 20230413/f/finetuner-commons/0.13.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-13 16:06:34] INFO root fetch - processPackages [locust-je-test-pep621]: Downloading https://files.pythonhosted.org/packages/d7/b8/5bbe255babb081af89695ad34c28f06761f4602c729a1c4165cad8c48968/locust_je_test_pep621-2.15.2.dev8.tar.gz
+[2023-04-13 16:06:35] INFO root fetch - main [MainThread]: End processing [sdkit]: success
+[2023-04-13 16:06:35] INFO root fetch - processPackages [locust-je-test-pep621]: executing diffoscope
+[2023-04-13 16:06:35] INFO root fetch - processPackages [locust-je-test-pep621]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust_je_test_pep621-0.0.0.tar.gz tmp/locust_je_test_pep621-2.15.2.dev8.tar.gz --markdown 20230413/l/locust-je-test-pep621/0.0.0-2.15.2.dev8/diff.md --exclude *.pyd
+[2023-04-13 16:06:35] INFO root fetch - main [MainThread]: End processing [finetuner-stubs]: success
+[2023-04-13 16:06:35] INFO root fetch - main [MainThread]: End processing [finetuner-commons]: success
+[2023-04-13 16:06:37] INFO root fetch - main [MainThread]: End processing [locust-je-test-pep621]: success
+[2023-04-13 16:07:30] INFO root fetch - main [MainThread]: End processing [collective.ckeditor]: success
+[2023-04-13 16:07:30] INFO root fetch - main [MainThread]: Store serial: [17693411]
