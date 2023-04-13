@@ -11547,3 +11547,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 10:44:30] INFO root fetch - main [MainThread]: End processing [py-redis-utils]: success
 [2023-04-13 10:44:41] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-04-13 10:44:41] INFO root fetch - main [MainThread]: Store serial: [17689327]
+[2023-04-13 10:49:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689327]
+[2023-04-13 10:49:48] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-13 10:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: test-pipinstall-whp
+[2023-04-13 10:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yourtools
+[2023-04-13 10:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: columnflow
+[2023-04-13 10:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: os2mo-data-import
+[2023-04-13 10:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: browserstack-sdk
+[2023-04-13 10:49:48] INFO root fetch - processPackages [test-pipinstall-whp]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-04-13 10:49:48] INFO root fetch - processPackages [browserstack-sdk]: New version: [1.7.0] Old Version: [1.6.0]
+[2023-04-13 10:49:48] INFO root fetch - processPackages [columnflow]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 10:49:48] INFO root fetch - processPackages [yourtools]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-04-13 10:49:48] INFO root fetch - processPackages [os2mo-data-import]: New version: [5.3.2] Old Version: [5.3.1]
+[2023-04-13 10:49:48] INFO root fetch - processPackages [columnflow]: Downloading https://files.pythonhosted.org/packages/6a/6e/b12df3d7566dc43cb97a9aaf8760be3cce2090a2dccf8900358c5531bde0/columnflow-0.2.0.tar.gz
+[2023-04-13 10:49:48] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/dd/30/dd79a377af593d33c74a615d084ea2269369f34edfb7712bcbbb02c24f6d/yourtools-0.4.0.tar.gz
+[2023-04-13 10:49:48] INFO root fetch - processPackages [browserstack-sdk]: Downloading https://files.pythonhosted.org/packages/23/02/6375645daf7993b7394376114c9ad69d36b9176262f7993bb14fd0c1f1d1/browserstack_sdk-1.6.0.tar.gz
+[2023-04-13 10:49:48] INFO root fetch - processPackages [os2mo-data-import]: Downloading https://files.pythonhosted.org/packages/ed/57/a6c31b5ae65bec0b5f4063e73c6a73c7c6c4f7897d55baf34923364d0a9a/os2mo_data_import-5.3.2.tar.gz
+[2023-04-13 10:49:49] INFO root fetch - processPackages [test-pipinstall-whp]: Downloading https://files.pythonhosted.org/packages/0e/0b/5fc0ead262d7f4a50dfe56c422d1f89e7df47c68041173b3d932110c8b03/test_pipinstall_whp-0.1.0.tar.gz
+[2023-04-13 10:49:49] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-13 10:49:49] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.3.9.tar.gz tmp/yourtools-0.4.0.tar.gz --markdown 20230413/y/yourtools/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-04-13 10:49:49] INFO root fetch - processPackages [os2mo-data-import]: executing diffoscope
+[2023-04-13 10:49:49] INFO root fetch - processPackages [os2mo-data-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os2mo_data_import-5.3.1.tar.gz tmp/os2mo_data_import-5.3.2.tar.gz --markdown 20230413/o/os2mo-data-import/5.3.1-5.3.2/diff.md --exclude *.pyd
+[2023-04-13 10:49:49] INFO root fetch - processPackages [browserstack-sdk]: Downloading https://files.pythonhosted.org/packages/02/1f/d500d643e1c7a0e772d7e796062f80493821a579c3e58d8f9e2e752a229b/browserstack_sdk-1.7.0.tar.gz
+[2023-04-13 10:49:49] INFO root fetch - processPackages [columnflow]: Downloading https://files.pythonhosted.org/packages/72/f5/52218c77b45fef8bab32eeac36935d4277d39f5beebb3592049efd8610c2/columnflow-0.2.1.tar.gz
+[2023-04-13 10:49:49] INFO root fetch - processPackages [test-pipinstall-whp]: executing diffoscope
+[2023-04-13 10:49:49] INFO root fetch - processPackages [test-pipinstall-whp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_pipinstall_whp-0.0.3.tar.gz tmp/test_pipinstall_whp-0.1.0.tar.gz --markdown 20230413/t/test-pipinstall-whp/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-04-13 10:49:49] INFO root fetch - processPackages [browserstack-sdk]: executing diffoscope
+[2023-04-13 10:49:49] INFO root fetch - processPackages [browserstack-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browserstack_sdk-1.6.0.tar.gz tmp/browserstack_sdk-1.7.0.tar.gz --markdown 20230413/b/browserstack-sdk/1.6.0-1.7.0/diff.md --exclude *.pyd
+[2023-04-13 10:49:49] INFO root fetch - processPackages [columnflow]: executing diffoscope
+[2023-04-13 10:49:49] INFO root fetch - processPackages [columnflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/columnflow-0.2.0.tar.gz tmp/columnflow-0.2.1.tar.gz --markdown 20230413/c/columnflow/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 10:49:50] INFO root fetch - processPackages [yourtools]: Start processing: odoo-addon-stock-move-change-source-location
+[2023-04-13 10:49:50] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-13 10:49:50] WARNING root fetch - processPackages [odoo-addon-stock-move-change-source-location]: Skipping, unable to determine old version
+[2023-04-13 10:49:50] INFO root fetch - processPackages [odoo-addon-stock-move-change-source-location]: Start processing: gameSooyey
+[2023-04-13 10:49:50] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-move-change-source-location] error
+[2023-04-13 10:49:50] INFO root fetch - processPackages [gameSooyey]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-04-13 10:49:50] INFO root fetch - processPackages [test-pipinstall-whp]: Start processing: chellow
+[2023-04-13 10:49:50] INFO root fetch - main [MainThread]: End processing [test-pipinstall-whp]: success
+[2023-04-13 10:49:50] INFO root fetch - processPackages [chellow]: New version: [2827] Old Version: [2826]
+[2023-04-13 10:49:50] INFO root fetch - main [MainThread]: End processing [os2mo-data-import]: success
+[2023-04-13 10:49:50] INFO root fetch - processPackages [gameSooyey]: Downloading https://files.pythonhosted.org/packages/26/dc/4bba2f8933502fa0285bc63c68af5b48488e0ae44af50bdc46c61402ec65/gameSooyey-0.0.1-py3-none-any.whl
+[2023-04-13 10:49:50] INFO root fetch - processPackages [chellow]: Downloading https://files.pythonhosted.org/packages/53/7f/0c0b4c6862d01d54d05680973dafeac8063cadbc1558cc789060e11e064a/chellow-2826.tar.gz
+[2023-04-13 10:49:50] INFO root fetch - processPackages [gameSooyey]: Downloading https://files.pythonhosted.org/packages/1a/71/cb7537eb8abffcb63a30b1955f260df2d442cbd60d4bb24920f5e115fd75/gameSooyey-0.0.3-py3-none-any.whl
+[2023-04-13 10:49:50] INFO root fetch - processPackages [gameSooyey]: executing diffoscope
+[2023-04-13 10:49:50] INFO root fetch - processPackages [gameSooyey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gameSooyey-0.0.1-py3-none-any.whl.zip tmp/gameSooyey-0.0.3-py3-none-any.whl.zip --markdown 20230413/g/gameSooyey/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 10:49:51] INFO root fetch - processPackages [chellow]: Downloading https://files.pythonhosted.org/packages/bc/64/ec72bd83957d5f6ad5cfc5f2b156b41dad4c98bee657040bbb6b98ac80b6/chellow-2827.tar.gz
+[2023-04-13 10:49:51] INFO root fetch - main [MainThread]: End processing [columnflow]: success
+[2023-04-13 10:49:51] INFO root fetch - processPackages [chellow]: executing diffoscope
+[2023-04-13 10:49:51] INFO root fetch - processPackages [chellow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chellow-2826.tar.gz tmp/chellow-2827.tar.gz --markdown 20230413/c/chellow/2826-2827/diff.md --exclude *.pyd
+[2023-04-13 10:49:51] INFO root fetch - main [MainThread]: End processing [gameSooyey]: success
+[2023-04-13 10:49:55] INFO root fetch - main [MainThread]: End processing [browserstack-sdk]: success
+[2023-04-13 10:49:56] INFO root fetch - main [MainThread]: End processing [chellow]: success
+[2023-04-13 10:49:56] INFO root fetch - main [MainThread]: Store serial: [17689351]
