@@ -17343,3 +17343,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 14:57:05] INFO root fetch - main [MainThread]: End processing [pyghmi]: success
 [2023-04-13 14:57:06] INFO root fetch - main [MainThread]: End processing [mlpro-mpps]: success
 [2023-04-13 14:57:06] INFO root fetch - main [MainThread]: Store serial: [17692605]
+[2023-04-13 15:02:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17692605]
+[2023-04-13 15:02:14] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-13 15:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlpro-mpps
+[2023-04-13 15:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-priming
+[2023-04-13 15:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sklearn
+[2023-04-13 15:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ctadata
+[2023-04-13 15:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: few-shot-priming
+[2023-04-13 15:02:14] INFO root fetch - processPackages [mlpro-mpps]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-13 15:02:14] INFO root fetch - processPackages [sklearn]: New version: [0.0.post4] Old Version: [0.0.post2]
+[2023-04-13 15:02:14] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 15:02:14] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 15:02:14] INFO root fetch - processPackages [ctadata]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-13 15:02:14] INFO root fetch - processPackages [mlpro-mpps]: executing diffoscope
+[2023-04-13 15:02:14] INFO root fetch - processPackages [mlpro-mpps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpro_mpps-1.0.1.tar.gz tmp/mlpro_mpps-1.1.0.tar.gz --markdown 20230413/m/mlpro-mpps/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 15:02:14] INFO root fetch - processPackages [sklearn]: Downloading https://files.pythonhosted.org/packages/c7/42/6496b55f00df3202030e56f43737bc8b3b8dbc79dc6db7e5944e1583a31e/sklearn-0.0.post2.tar.gz
+[2023-04-13 15:02:14] INFO root fetch - processPackages [ctadata]: Downloading https://files.pythonhosted.org/packages/c5/ef/9c30dab8bc1baef0d60c6621da9e3db244ffdbde997602a6ff394c4a5405/ctadata-0.2.2.tar.gz
+[2023-04-13 15:02:14] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 15:02:14] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 15:02:14] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 15:02:14] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 15:02:14] INFO root fetch - processPackages [sklearn]: Downloading https://files.pythonhosted.org/packages/99/b2/165110013aa66fae6fc13918ad0e9de4801e5f1691d371bf8b63328037e6/sklearn-0.0.post4.tar.gz
+[2023-04-13 15:02:14] INFO root fetch - processPackages [sklearn]: executing diffoscope
+[2023-04-13 15:02:14] INFO root fetch - processPackages [sklearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearn-0.0.post2.tar.gz tmp/sklearn-0.0.post4.tar.gz --markdown 20230413/s/sklearn/0.0.post2-0.0.post4/diff.md --exclude *.pyd
+[2023-04-13 15:02:14] INFO root fetch - processPackages [ctadata]: executing diffoscope
+[2023-04-13 15:02:14] INFO root fetch - processPackages [ctadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctadata-0.2.1.tar.gz tmp/ctadata-0.2.2.tar.gz --markdown 20230413/c/ctadata/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-13 15:02:15] INFO root fetch - processPackages [few-shot-priming]: Start processing: pyams-chat
+[2023-04-13 15:02:15] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 15:02:15] INFO root fetch - processPackages [pyams-chat]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-13 15:02:15] INFO root fetch - processPackages [mlpro-mpps]: Start processing: dask-geomodeling
+[2023-04-13 15:02:15] INFO root fetch - main [MainThread]: End processing [mlpro-mpps]: success
+[2023-04-13 15:02:15] INFO root fetch - processPackages [dask-geomodeling]: New version: [2.4.0] Old Version: [2.3.9]
+[2023-04-13 15:02:15] INFO root fetch - processPackages [sklearn]: Start processing: grav-toolbox
+[2023-04-13 15:02:15] INFO root fetch - main [MainThread]: End processing [sklearn]: success
+[2023-04-13 15:02:15] INFO root fetch - processPackages [grav-toolbox]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 15:02:15] INFO root fetch - processPackages [ctadata]: Start processing: phylotreelib
+[2023-04-13 15:02:15] INFO root fetch - main [MainThread]: End processing [ctadata]: success
+[2023-04-13 15:02:15] INFO root fetch - processPackages [pyams-chat]: Downloading https://files.pythonhosted.org/packages/9a/85/636061a7c5942363cada18363a5b7d9cf317592736b3296292d24e2c8d9b/pyams_chat-1.1.8.tar.gz
+[2023-04-13 15:02:15] INFO root fetch - processPackages [phylotreelib]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-13 15:02:15] INFO root fetch - processPackages [dask-geomodeling]: Downloading https://files.pythonhosted.org/packages/b0/0b/c5a92c4c96c88d5bb632173564b80f74aff0ecca042ccd7411a69801baf3/dask-geomodeling-2.3.9.tar.gz
+[2023-04-13 15:02:16] INFO root fetch - processPackages [grav-toolbox]: Downloading https://files.pythonhosted.org/packages/06/16/d40ae76bcf5699565dd15be3e6d4b4bb197caafbf6b32fc5c4531d8441a1/grav-toolbox-0.1.7.tar.gz
+[2023-04-13 15:02:16] INFO root fetch - processPackages [phylotreelib]: Downloading https://files.pythonhosted.org/packages/cb/fb/4129474e203eb7ff7a6c9f42fad45c6afbf7415569c6e2ec1fcba40d0357/phylotreelib-1.9.0.tar.gz
+[2023-04-13 15:02:16] INFO root fetch - processPackages [pyams-chat]: Downloading https://files.pythonhosted.org/packages/fc/57/b90927277e32ae29c580e815cf7f09d4c10e2f2e80125b5471d44778e0cd/pyams_chat-1.1.9.tar.gz
+[2023-04-13 15:02:16] INFO root fetch - processPackages [pyams-chat]: executing diffoscope
+[2023-04-13 15:02:16] INFO root fetch - processPackages [pyams-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_chat-1.1.8.tar.gz tmp/pyams_chat-1.1.9.tar.gz --markdown 20230413/p/pyams-chat/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-13 15:02:16] INFO root fetch - processPackages [dask-geomodeling]: Downloading https://files.pythonhosted.org/packages/af/90/69df71393cf40706e13e5e6c7de72e7225b48d849909453be305018fee0d/dask-geomodeling-2.4.0.tar.gz
+[2023-04-13 15:02:16] INFO root fetch - processPackages [grav-toolbox]: Downloading https://files.pythonhosted.org/packages/c8/dd/d04d13573dd12917b3682717144206f434f49fdf80cc5c608eced6ab413f/grav-toolbox-0.1.8.tar.gz
+[2023-04-13 15:02:16] INFO root fetch - processPackages [dask-geomodeling]: executing diffoscope
+[2023-04-13 15:02:16] INFO root fetch - processPackages [dask-geomodeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-geomodeling-2.3.9.tar.gz tmp/dask-geomodeling-2.4.0.tar.gz --markdown 20230413/d/dask-geomodeling/2.3.9-2.4.0/diff.md --exclude *.pyd
+[2023-04-13 15:02:16] INFO root fetch - processPackages [grav-toolbox]: executing diffoscope
+[2023-04-13 15:02:16] INFO root fetch - processPackages [grav-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grav-toolbox-0.1.7.tar.gz tmp/grav-toolbox-0.1.8.tar.gz --markdown 20230413/g/grav-toolbox/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 15:02:16] INFO root fetch - processPackages [phylotreelib]: Downloading https://files.pythonhosted.org/packages/0b/9c/4b0689963cdbd3666b5a42d32decedfd9833c728f364b00bea9f7b6a98f3/phylotreelib-1.9.1.tar.gz
+[2023-04-13 15:02:16] INFO root fetch - processPackages [few-shot-priming]: Start processing: nonebot-plugin-osuverify
+[2023-04-13 15:02:16] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 15:02:16] WARNING root fetch - processPackages [nonebot-plugin-osuverify]: Skipping, unable to determine old version
+[2023-04-13 15:02:16] INFO root fetch - processPackages [nonebot-plugin-osuverify]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-04-13 15:02:16] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-osuverify] error
+[2023-04-13 15:02:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-13 15:02:16] INFO root fetch - processPackages [phylotreelib]: executing diffoscope
+[2023-04-13 15:02:16] INFO root fetch - processPackages [phylotreelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phylotreelib-1.9.0.tar.gz tmp/phylotreelib-1.9.1.tar.gz --markdown 20230413/p/phylotreelib/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-13 15:02:17] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-04-13 15:02:17] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.4.8-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.4.9-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230413/f/fbgemm-gpu-nightly-cpu/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-13 15:02:17] INFO root fetch - processPackages [pyams-chat]: Start processing: sefazetllib
+[2023-04-13 15:02:17] INFO root fetch - main [MainThread]: End processing [pyams-chat]: success
+[2023-04-13 15:02:17] INFO root fetch - processPackages [sefazetllib]: New version: [0.1.24] Old Version: [0.1.23]
+[2023-04-13 15:02:17] INFO root fetch - processPackages [sefazetllib]: Downloading https://files.pythonhosted.org/packages/55/aa/35a981a5c61b6f457de9e46a47fa2997ef96cd7b8f960e3b8c06496ecb19/sefazetllib-0.1.24.tar.gz
+[2023-04-13 15:02:17] INFO root fetch - processPackages [sefazetllib]: executing diffoscope
+[2023-04-13 15:02:17] INFO root fetch - processPackages [sefazetllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sefazetllib-0.1.23.tar.gz tmp/sefazetllib-0.1.24.tar.gz --markdown 20230413/s/sefazetllib/0.1.23-0.1.24/diff.md --exclude *.pyd
+[2023-04-13 15:02:18] INFO root fetch - main [MainThread]: End processing [grav-toolbox]: success
+[2023-04-13 15:02:18] INFO root fetch - main [MainThread]: End processing [phylotreelib]: success
+[2023-04-13 15:02:18] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-04-13 15:02:18] INFO root fetch - main [MainThread]: End processing [dask-geomodeling]: success
+[2023-04-13 15:02:19] INFO root fetch - main [MainThread]: End processing [sefazetllib]: success
+[2023-04-13 15:02:19] INFO root fetch - main [MainThread]: Store serial: [17692647]
