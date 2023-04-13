@@ -7835,3 +7835,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 06:43:58] INFO root fetch - main [MainThread]: End processing [py3dchart]: success
 [2023-04-13 06:44:08] INFO root fetch - main [MainThread]: End processing [cirq-core]: success
 [2023-04-13 06:44:08] INFO root fetch - main [MainThread]: Store serial: [17687041]
+[2023-04-13 06:49:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687041]
+[2023-04-13 06:49:15] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 06:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: m-abc-anhnt
+[2023-04-13 06:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysdot
+[2023-04-13 06:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-chat-animated
+[2023-04-13 06:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: suger
+[2023-04-13 06:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: osmosis
+[2023-04-13 06:49:15] INFO root fetch - processPackages [suger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 06:49:15] INFO root fetch - processPackages [streamlit-chat-animated]: New version: [0.0.2.8] Old Version: [0.0.2.7]
+[2023-04-13 06:49:16] INFO root fetch - processPackages [osmosis]: New version: [0.7.4] Old Version: [0.7.2]
+[2023-04-13 06:49:16] INFO root fetch - processPackages [m-abc-anhnt]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-13 06:49:16] INFO root fetch - processPackages [pysdot]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-13 06:49:16] INFO root fetch - processPackages [suger]: Downloading https://files.pythonhosted.org/packages/19/2c/fa589a758595552141b73ff9e627ee3a500141de3a8279cfe3c9af44692f/suger-0.0.9.tar.gz
+[2023-04-13 06:49:16] INFO root fetch - processPackages [osmosis]: Downloading https://files.pythonhosted.org/packages/21/92/c71ef5b16b6ac65cd1ee79943b9d7646153a3fa0f2d4713d4a01da7983ba/osmosis-0.7.2.tar.gz
+[2023-04-13 06:49:16] INFO root fetch - processPackages [pysdot]: Downloading https://files.pythonhosted.org/packages/8a/e7/2865fad8f91c1aeee85c473907d04b00daeecd21c3e7e86884e8dfed107b/pysdot-0.2.5.tar.gz
+[2023-04-13 06:49:16] INFO root fetch - processPackages [m-abc-anhnt]: Downloading https://files.pythonhosted.org/packages/7f/e8/1e2254718d3fa7193249c224ecb176ea2aedeedb5f594d2e7aa251c80c27/m-abc-anhnt-1.0.2.tar.gz
+[2023-04-13 06:49:16] INFO root fetch - processPackages [streamlit-chat-animated]: Downloading https://files.pythonhosted.org/packages/f7/a3/c414418d821627920e8869e7f2c72f773dd11ef397f3bac9afc8f0f68b4e/streamlit-chat-animated-0.0.2.8.tar.gz
+[2023-04-13 06:49:16] INFO root fetch - processPackages [suger]: executing diffoscope
+[2023-04-13 06:49:16] INFO root fetch - processPackages [suger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/suger-0.0.8.tar.gz tmp/suger-0.0.9.tar.gz --markdown 20230413/s/suger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 06:49:16] INFO root fetch - processPackages [m-abc-anhnt]: executing diffoscope
+[2023-04-13 06:49:16] INFO root fetch - processPackages [m-abc-anhnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m-abc-anhnt-1.0.1.tar.gz tmp/m-abc-anhnt-1.0.2.tar.gz --markdown 20230413/m/m-abc-anhnt/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-13 06:49:16] INFO root fetch - processPackages [osmosis]: Downloading https://files.pythonhosted.org/packages/57/07/d36748a2c1a6eb20ed3960d01a7932048adc0196deb98a3ee588d05dfa72/osmosis-0.7.4.tar.gz
+[2023-04-13 06:49:16] INFO root fetch - processPackages [pysdot]: Downloading https://files.pythonhosted.org/packages/3f/9d/66ba79007ee2f3e9bfca6b30dcf0a6b86b9eaa7c24de5f739cf8ff262329/pysdot-0.2.6.tar.gz
+[2023-04-13 06:49:16] INFO root fetch - processPackages [streamlit-chat-animated]: executing diffoscope
+[2023-04-13 06:49:16] INFO root fetch - processPackages [streamlit-chat-animated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chat-animated-0.0.2.7.tar.gz tmp/streamlit-chat-animated-0.0.2.8.tar.gz --markdown 20230413/s/streamlit-chat-animated/0.0.2.7-0.0.2.8/diff.md --exclude *.pyd
+[2023-04-13 06:49:16] WARNING root fetch - processPackages [osmosis]: Skipping package: exceeds size limit 33893527>=10485760
+[2023-04-13 06:49:16] INFO root fetch - processPackages [osmosis]: Start processing: tinygpt
+[2023-04-13 06:49:16] INFO root fetch - main [MainThread]: End processing [osmosis] error
+[2023-04-13 06:49:16] WARNING root fetch - processPackages [tinygpt]: Skipping, unable to determine old version
+[2023-04-13 06:49:16] INFO root fetch - processPackages [tinygpt]: Start processing: ktch
+[2023-04-13 06:49:16] INFO root fetch - main [MainThread]: End processing [tinygpt] error
+[2023-04-13 06:49:16] INFO root fetch - processPackages [ktch]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 06:49:16] INFO root fetch - processPackages [pysdot]: executing diffoscope
+[2023-04-13 06:49:16] INFO root fetch - processPackages [pysdot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysdot-0.2.5.tar.gz tmp/pysdot-0.2.6.tar.gz --markdown 20230413/p/pysdot/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-13 06:49:16] INFO root fetch - processPackages [ktch]: Downloading https://files.pythonhosted.org/packages/75/09/67a7847190574e0e976c07cd3728a2b6fef473c4e98e438ad92c2c56c16f/ktch-0.1.2.tar.gz
+[2023-04-13 06:49:17] INFO root fetch - processPackages [ktch]: executing diffoscope
+[2023-04-13 06:49:17] INFO root fetch - processPackages [ktch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ktch-0.1.1.tar.gz tmp/ktch-0.1.2.tar.gz --markdown 20230413/k/ktch/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 06:49:17] INFO root fetch - processPackages [suger]: Start processing: odoo14-addon-l10n-br-account
+[2023-04-13 06:49:17] INFO root fetch - main [MainThread]: End processing [suger]: success
+[2023-04-13 06:49:17] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: New version: [14.0.5.6.2] Old Version: [14.0.5.6.1]
+[2023-04-13 06:49:17] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: executing diffoscope
+[2023-04-13 06:49:17] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_account-14.0.5.6.1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_account-14.0.5.6.2-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-l10n-br-account/14.0.5.6.1-14.0.5.6.2/diff.md --exclude *.pyd
+[2023-04-13 06:49:17] INFO root fetch - processPackages [m-abc-anhnt]: Start processing: odoo14-addons-oca-l10n-brazil
+[2023-04-13 06:49:17] INFO root fetch - main [MainThread]: End processing [m-abc-anhnt]: success
+[2023-04-13 06:49:17] INFO root fetch - main [MainThread]: End processing [pysdot]: success
+[2023-04-13 06:49:17] INFO root fetch - processPackages [odoo14-addons-oca-l10n-brazil]: New version: [14.0.20230412.0] Old Version: [14.0.20230228.0]
+[2023-04-13 06:49:18] INFO root fetch - processPackages [odoo14-addons-oca-l10n-brazil]: Downloading https://files.pythonhosted.org/packages/89/13/9698b2e0904317b95fb68895913a81ad2d11070b69a02dede49f46f62cb8/odoo14_addons_oca_l10n_brazil-14.0.20230228.0-py3-none-any.whl
+[2023-04-13 06:49:18] INFO root fetch - processPackages [odoo14-addons-oca-l10n-brazil]: Downloading https://files.pythonhosted.org/packages/6e/bf/d7cf099681da5cdf76a4c3ad09d3efdcf964c0ddaeeed58e71691a5d7d2a/odoo14_addons_oca_l10n_brazil-14.0.20230412.0-py3-none-any.whl
+[2023-04-13 06:49:19] INFO root fetch - processPackages [odoo14-addons-oca-l10n-brazil]: executing diffoscope
+[2023-04-13 06:49:19] INFO root fetch - processPackages [odoo14-addons-oca-l10n-brazil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_l10n_brazil-14.0.20230228.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_l10n_brazil-14.0.20230412.0-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addons-oca-l10n-brazil/14.0.20230228.0-14.0.20230412.0/diff.md --exclude *.pyd
+[2023-04-13 06:49:19] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account]: success
+[2023-04-13 06:49:19] INFO root fetch - main [MainThread]: End processing [ktch]: success
+[2023-04-13 06:49:20] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-l10n-brazil]: success
+[2023-04-13 06:49:33] INFO root fetch - main [MainThread]: End processing [streamlit-chat-animated]: success
+[2023-04-13 06:49:33] INFO root fetch - main [MainThread]: Store serial: [17687070]
