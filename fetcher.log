@@ -13493,3 +13493,86 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 12:27:17] INFO root fetch - main [MainThread]: End processing [dovado-rtl]: success
 [2023-04-13 12:27:33] INFO root fetch - main [MainThread]: End processing [manila]: success
 [2023-04-13 12:27:33] INFO root fetch - main [MainThread]: Store serial: [17690593]
+[2023-04-13 12:32:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690593]
+[2023-04-13 12:32:41] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-13 12:32:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-shopinvader-customer-validate
+[2023-04-13 12:32:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yourtools
+[2023-04-13 12:32:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langchain-utils
+[2023-04-13 12:32:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: terra-ai-datasets
+[2023-04-13 12:32:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-shopinvader-customer-multi-user
+[2023-04-13 12:32:41] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-validate]: New version: [14.0.1.3.0] Old Version: [14.0.1.2.3]
+[2023-04-13 12:32:41] INFO root fetch - processPackages [terra-ai-datasets]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-13 12:32:41] INFO root fetch - processPackages [yourtools]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-13 12:32:41] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-multi-user]: New version: [14.0.1.5.0] Old Version: [14.0.1.4.0]
+[2023-04-13 12:32:41] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 12:32:41] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-13 12:32:41] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.4.3.tar.gz tmp/yourtools-0.4.4.tar.gz --markdown 20230413/y/yourtools/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-13 12:32:41] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-13 12:32:41] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.8.tar.gz tmp/langchain_utils-0.3.9.tar.gz --markdown 20230413/l/langchain-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 12:32:41] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-validate]: Downloading https://files.pythonhosted.org/packages/17/1f/c2cd1e5ea7a9d3c55ede8f960f05c0b8db67339fd3f507c9feb81f75166f/odoo14_addon_shopinvader_customer_validate-14.0.1.2.3-py3-none-any.whl
+[2023-04-13 12:32:41] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-multi-user]: Downloading https://files.pythonhosted.org/packages/f6/cb/5ddf528b49160c270b958a09ae3488dd4fa16f9720e6d572d85e836a2ee9/odoo14_addon_shopinvader_customer_multi_user-14.0.1.4.0-py3-none-any.whl
+[2023-04-13 12:32:41] INFO root fetch - processPackages [terra-ai-datasets]: Downloading https://files.pythonhosted.org/packages/44/d5/fb4a88fec829bb947f82e4ecd7c6d89e3440472ef1f94d16e54fab24bd10/terra_ai_datasets-1.1.3.tar.gz
+[2023-04-13 12:32:41] INFO root fetch - processPackages [terra-ai-datasets]: executing diffoscope
+[2023-04-13 12:32:41] INFO root fetch - processPackages [terra-ai-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terra_ai_datasets-1.1.2.tar.gz tmp/terra_ai_datasets-1.1.3.tar.gz --markdown 20230413/t/terra-ai-datasets/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-13 12:32:41] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-multi-user]: Downloading https://files.pythonhosted.org/packages/ff/c1/8c6c93fe417acd699d42e70843fe2b624d2be6bc657565a82546aeb47802/odoo14_addon_shopinvader_customer_multi_user-14.0.1.5.0-py3-none-any.whl
+[2023-04-13 12:32:41] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-validate]: Downloading https://files.pythonhosted.org/packages/9d/12/7702043e0692fd4adb0214777613abe2ea236bb7aedc5aa9164eab53d354/odoo14_addon_shopinvader_customer_validate-14.0.1.3.0-py3-none-any.whl
+[2023-04-13 12:32:41] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-multi-user]: executing diffoscope
+[2023-04-13 12:32:41] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-multi-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shopinvader_customer_multi_user-14.0.1.4.0-py3-none-any.whl.zip tmp/odoo14_addon_shopinvader_customer_multi_user-14.0.1.5.0-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-shopinvader-customer-multi-user/14.0.1.4.0-14.0.1.5.0/diff.md --exclude *.pyd
+[2023-04-13 12:32:41] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-validate]: executing diffoscope
+[2023-04-13 12:32:41] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-validate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shopinvader_customer_validate-14.0.1.2.3-py3-none-any.whl.zip tmp/odoo14_addon_shopinvader_customer_validate-14.0.1.3.0-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-shopinvader-customer-validate/14.0.1.2.3-14.0.1.3.0/diff.md --exclude *.pyd
+[2023-04-13 12:32:42] INFO root fetch - processPackages [yourtools]: Start processing: odoo14-addon-shopinvader
+[2023-04-13 12:32:42] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-13 12:32:42] INFO root fetch - processPackages [odoo14-addon-shopinvader]: New version: [14.0.5.9.3] Old Version: [14.0.5.9.2]
+[2023-04-13 12:32:42] INFO root fetch - processPackages [langchain-utils]: Start processing: danling
+[2023-04-13 12:32:42] INFO root fetch - main [MainThread]: End processing [langchain-utils]: success
+[2023-04-13 12:32:42] INFO root fetch - processPackages [danling]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 12:32:42] INFO root fetch - processPackages [odoo14-addon-shopinvader]: executing diffoscope
+[2023-04-13 12:32:42] INFO root fetch - processPackages [odoo14-addon-shopinvader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shopinvader-14.0.5.9.2-py3-none-any.whl.zip tmp/odoo14_addon_shopinvader-14.0.5.9.3-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-shopinvader/14.0.5.9.2-14.0.5.9.3/diff.md --exclude *.pyd
+[2023-04-13 12:32:42] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-multi-user]: Start processing: tegracli
+[2023-04-13 12:32:42] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopinvader-customer-multi-user]: success
+[2023-04-13 12:32:43] INFO root fetch - processPackages [tegracli]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-13 12:32:43] INFO root fetch - processPackages [terra-ai-datasets]: Start processing: isqmap
+[2023-04-13 12:32:43] INFO root fetch - main [MainThread]: End processing [terra-ai-datasets]: success
+[2023-04-13 12:32:43] WARNING root fetch - processPackages [isqmap]: Skipping, unable to determine old version
+[2023-04-13 12:32:43] INFO root fetch - processPackages [isqmap]: Start processing: dbt-dry-run
+[2023-04-13 12:32:43] INFO root fetch - main [MainThread]: End processing [isqmap] error
+[2023-04-13 12:32:43] INFO root fetch - processPackages [dbt-dry-run]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-04-13 12:32:43] INFO root fetch - processPackages [danling]: Downloading https://files.pythonhosted.org/packages/98/1b/36975a331e28643474f22e964b0f90dd87e32003a5065377d0bfc49337fe/danling-0.2.1.tar.gz
+[2023-04-13 12:32:43] INFO root fetch - processPackages [tegracli]: Downloading https://files.pythonhosted.org/packages/09/82/6183a6f31684f2d92a930437eaca03b000bef0a5ed9d8f8c7974144b9bdc/tegracli-0.2.2.tar.gz
+[2023-04-13 12:32:43] INFO root fetch - processPackages [odoo14-addon-shopinvader-customer-validate]: Start processing: xj-role
+[2023-04-13 12:32:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopinvader-customer-validate]: success
+[2023-04-13 12:32:43] INFO root fetch - processPackages [xj-role]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 12:32:43] INFO root fetch - processPackages [dbt-dry-run]: Downloading https://files.pythonhosted.org/packages/8b/6c/e5bdae6d7050bed141f18aae671afe7a9b17c4f5486b138599fc0b9a976a/dbt_dry_run-0.6.5.tar.gz
+[2023-04-13 12:32:43] INFO root fetch - processPackages [xj-role]: executing diffoscope
+[2023-04-13 12:32:43] INFO root fetch - processPackages [xj-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_role-1.0.8.tar.gz tmp/xj_role-1.0.9.tar.gz --markdown 20230413/x/xj-role/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 12:32:43] INFO root fetch - processPackages [tegracli]: executing diffoscope
+[2023-04-13 12:32:43] INFO root fetch - processPackages [tegracli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tegracli-0.2.1.tar.gz tmp/tegracli-0.2.2.tar.gz --markdown 20230413/t/tegracli/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-13 12:32:43] INFO root fetch - processPackages [dbt-dry-run]: Downloading https://files.pythonhosted.org/packages/68/f6/a5d48f6b85f4387b7f4349553eab9241cbce090eb05bb2a8b89ab6ebf867/dbt_dry_run-0.6.6.tar.gz
+[2023-04-13 12:32:43] INFO root fetch - processPackages [dbt-dry-run]: executing diffoscope
+[2023-04-13 12:32:43] INFO root fetch - processPackages [dbt-dry-run]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_dry_run-0.6.5.tar.gz tmp/dbt_dry_run-0.6.6.tar.gz --markdown 20230413/d/dbt-dry-run/0.6.5-0.6.6/diff.md --exclude *.pyd
+[2023-04-13 12:32:44] INFO root fetch - processPackages [tegracli]: Start processing: mrchef
+[2023-04-13 12:32:44] INFO root fetch - main [MainThread]: End processing [tegracli]: success
+[2023-04-13 12:32:44] INFO root fetch - processPackages [mrchef]: New version: [0.4.0] Old Version: [0.2.3]
+[2023-04-13 12:32:44] INFO root fetch - processPackages [xj-role]: Start processing: mikro
+[2023-04-13 12:32:44] INFO root fetch - main [MainThread]: End processing [xj-role]: success
+[2023-04-13 12:32:44] INFO root fetch - processPackages [mikro]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 12:32:44] INFO root fetch - processPackages [odoo14-addon-shopinvader]: Start processing: scikit-misc
+[2023-04-13 12:32:44] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopinvader]: success
+[2023-04-13 12:32:44] INFO root fetch - processPackages [danling]: executing diffoscope
+[2023-04-13 12:32:44] INFO root fetch - processPackages [danling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danling-0.2.0.tar.gz tmp/danling-0.2.1.tar.gz --markdown 20230413/d/danling/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 12:32:44] INFO root fetch - processPackages [scikit-misc]: New version: [0.2.0rc4] Old Version: [0.2.0]
+[2023-04-13 12:32:44] INFO root fetch - processPackages [mrchef]: Downloading https://files.pythonhosted.org/packages/01/2a/cddb6b31572ab7c06e679ac486531e4777d430f8217e638ffec9bb7803a2/mrchef-0.2.3.tar.gz
+[2023-04-13 12:32:44] INFO root fetch - processPackages [mikro]: executing diffoscope
+[2023-04-13 12:32:44] INFO root fetch - processPackages [mikro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mikro-0.3.8.tar.gz tmp/mikro-0.3.9.tar.gz --markdown 20230413/m/mikro/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 12:32:44] INFO root fetch - processPackages [scikit-misc]: Downloading https://files.pythonhosted.org/packages/f3/2b/4c903e072ae280ee315a460f002613d90f26711b50b756c9a33fea575347/scikit_misc-0.2.0-cp39-cp39-macosx_12_0_arm64.whl
+[2023-04-13 12:32:44] INFO root fetch - processPackages [mrchef]: Downloading https://files.pythonhosted.org/packages/20/98/51cfadb00c4e3b5e6e79962999b2fb8ffbfc36032f2149a413689a77cc0c/mrchef-0.4.0.tar.gz
+[2023-04-13 12:32:44] INFO root fetch - main [MainThread]: End processing [dbt-dry-run]: success
+[2023-04-13 12:32:44] INFO root fetch - processPackages [mrchef]: executing diffoscope
+[2023-04-13 12:32:44] INFO root fetch - processPackages [mrchef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrchef-0.2.3.tar.gz tmp/mrchef-0.4.0.tar.gz --markdown 20230413/m/mrchef/0.2.3-0.4.0/diff.md --exclude *.pyd
+[2023-04-13 12:32:45] INFO root fetch - main [MainThread]: End processing [mikro]: success
+[2023-04-13 12:32:45] INFO root fetch - processPackages [scikit-misc]: executing diffoscope
+[2023-04-13 12:32:45] INFO root fetch - processPackages [scikit-misc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit_misc-0.2.0-cp39-cp39-macosx_12_0_arm64.whl.zip tmp/scikit_misc-0.2.0rc4-cp39-cp39-macosx_12_0_arm64.whl.zip --markdown 20230413/s/scikit-misc/0.2.0-0.2.0rc4/diff.md --exclude *.pyd
+[2023-04-13 12:32:45] INFO root fetch - main [MainThread]: End processing [mrchef]: success
+[2023-04-13 12:32:46] INFO root fetch - main [MainThread]: End processing [danling]: success
+[2023-04-13 12:32:47] INFO root fetch - main [MainThread]: End processing [scikit-misc]: success
+[2023-04-13 12:32:47] INFO root fetch - main [MainThread]: Store serial: [17690643]
