@@ -7971,3 +7971,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 06:59:53] INFO root fetch - main [MainThread]: End processing [django-outbox-menu]: success
 [2023-04-13 06:59:56] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-04-13 06:59:56] INFO root fetch - main [MainThread]: Store serial: [17687123]
+[2023-04-13 07:04:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687123]
+[2023-04-13 07:05:03] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 07:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: boolean-expression
+[2023-04-13 07:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dpsa4fl-bindings
+[2023-04-13 07:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapid-pe
+[2023-04-13 07:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycachera
+[2023-04-13 07:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multi-model-server
+[2023-04-13 07:05:03] INFO root fetch - processPackages [rapid-pe]: New version: [0.0.7.dev20230413] Old Version: [0.0.7.dev20230412]
+[2023-04-13 07:05:03] INFO root fetch - processPackages [dpsa4fl-bindings]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 07:05:03] INFO root fetch - processPackages [boolean-expression]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 07:05:03] INFO root fetch - processPackages [pycachera]: New version: [4.5.1] Old Version: [4.5.0]
+[2023-04-13 07:05:03] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230413] Old Version: [1.1.8b20230412]
+[2023-04-13 07:05:03] INFO root fetch - processPackages [boolean-expression]: Downloading https://files.pythonhosted.org/packages/a6/64/d3532b55db464f01271c58111e209e5545ec3d535fb2c4527089463d5100/boolean_expression-0.1.0.tar.gz
+[2023-04-13 07:05:03] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/99/39/d4a96f486e74b36e4c7edba9c2d83fbbe5e3323894c63dd93f4cf3dadadd/rapid_pe-0.0.7.dev20230413.tar.gz
+[2023-04-13 07:05:03] INFO root fetch - processPackages [pycachera]: Downloading https://files.pythonhosted.org/packages/3c/19/dd80801d407514bdb7e3022ed2a65207fa7cc0cfdfb1470389f0ff3b63ba/pycachera-4.5.1.tar.gz
+[2023-04-13 07:05:03] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/fd/a5/1f17652488042fb86854faa0fdf3392097a7a3fecaba81b8e91ff76ed681/multi_model_server-1.1.8b20230413-py2.py3-none-any.whl
+[2023-04-13 07:05:04] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-04-13 07:05:04] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.0.7.dev20230412.tar.gz tmp/rapid_pe-0.0.7.dev20230413.tar.gz --markdown 20230413/r/rapid-pe/0.0.7.dev20230412-0.0.7.dev20230413/diff.md --exclude *.pyd
+[2023-04-13 07:05:04] INFO root fetch - processPackages [dpsa4fl-bindings]: executing diffoscope
+[2023-04-13 07:05:04] INFO root fetch - processPackages [dpsa4fl-bindings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpsa4fl_bindings-0.1.8.tar.gz tmp/dpsa4fl_bindings-0.1.9.tar.gz --markdown 20230413/d/dpsa4fl-bindings/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 07:05:04] INFO root fetch - processPackages [pycachera]: executing diffoscope
+[2023-04-13 07:05:04] INFO root fetch - processPackages [pycachera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycachera-4.5.0.tar.gz tmp/pycachera-4.5.1.tar.gz --markdown 20230413/p/pycachera/4.5.0-4.5.1/diff.md --exclude *.pyd
+[2023-04-13 07:05:04] INFO root fetch - processPackages [boolean-expression]: Downloading https://files.pythonhosted.org/packages/da/95/64bdce5b78ffd2fc24efc120d50f025f3f57d01f2c8be1a6dabe870b12c1/boolean_expression-0.1.1.tar.gz
+[2023-04-13 07:05:04] INFO root fetch - processPackages [boolean-expression]: executing diffoscope
+[2023-04-13 07:05:04] INFO root fetch - processPackages [boolean-expression]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boolean_expression-0.1.0.tar.gz tmp/boolean_expression-0.1.1.tar.gz --markdown 20230413/b/boolean-expression/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 07:05:04] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-04-13 07:05:04] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230412-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230413-py2.py3-none-any.whl.zip --markdown 20230413/m/multi-model-server/1.1.8b20230412-1.1.8b20230413/diff.md --exclude *.pyd
+[2023-04-13 07:05:05] INFO root fetch - processPackages [pycachera]: Start processing: suger
+[2023-04-13 07:05:05] INFO root fetch - main [MainThread]: End processing [pycachera]: success
+[2023-04-13 07:05:05] INFO root fetch - processPackages [suger]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-13 07:05:05] INFO root fetch - processPackages [rapid-pe]: Start processing: pipda
+[2023-04-13 07:05:05] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-04-13 07:05:05] INFO root fetch - processPackages [pipda]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-13 07:05:05] INFO root fetch - processPackages [dpsa4fl-bindings]: Start processing: systemq
+[2023-04-13 07:05:05] INFO root fetch - main [MainThread]: End processing [dpsa4fl-bindings]: success
+[2023-04-13 07:05:05] WARNING root fetch - processPackages [systemq]: Skipping, unable to determine old version
+[2023-04-13 07:05:05] INFO root fetch - processPackages [systemq]: Start processing: cellmap
+[2023-04-13 07:05:05] INFO root fetch - main [MainThread]: End processing [systemq] error
+[2023-04-13 07:05:05] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304120902] Old Version: [1.0.1.dev202304120839]
+[2023-04-13 07:05:05] INFO root fetch - processPackages [suger]: Downloading https://files.pythonhosted.org/packages/84/48/d115b655e2a11a057f7bed286906174794849957983ed147af3c777dffd4/suger-0.1.0.tar.gz
+[2023-04-13 07:05:05] INFO root fetch - processPackages [pipda]: Downloading https://files.pythonhosted.org/packages/22/2c/9425ef4cc0d5ab740d64036b3e39c01ceb5758f010c17cf00dff181f5a74/pipda-0.8.2.tar.gz
+[2023-04-13 07:05:05] INFO root fetch - processPackages [suger]: executing diffoscope
+[2023-04-13 07:05:05] INFO root fetch - processPackages [suger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/suger-0.0.9.tar.gz tmp/suger-0.1.0.tar.gz --markdown 20230413/s/suger/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-13 07:05:05] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-13 07:05:05] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304120839-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304120902-py3-none-any.whl.zip --markdown 20230413/c/cellmap/1.0.1.dev202304120839-1.0.1.dev202304120902/diff.md --exclude *.pyd
+[2023-04-13 07:05:05] INFO root fetch - main [MainThread]: End processing [boolean-expression]: success
+[2023-04-13 07:05:05] INFO root fetch - processPackages [pipda]: Downloading https://files.pythonhosted.org/packages/71/74/4338e4425804dcec8a4889c6f6abfd75f2c709335b98dab5d86e497d0606/pipda-0.9.0.tar.gz
+[2023-04-13 07:05:06] INFO root fetch - processPackages [pipda]: executing diffoscope
+[2023-04-13 07:05:06] INFO root fetch - processPackages [pipda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipda-0.8.2.tar.gz tmp/pipda-0.9.0.tar.gz --markdown 20230413/p/pipda/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 07:05:06] INFO root fetch - main [MainThread]: End processing [suger]: success
+[2023-04-13 07:05:07] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-13 07:05:07] INFO root fetch - main [MainThread]: End processing [pipda]: success
+[2023-04-13 07:08:01] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-04-13 07:08:01] INFO root fetch - main [MainThread]: Store serial: [17687156]
