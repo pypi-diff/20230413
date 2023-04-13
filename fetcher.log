@@ -8025,3 +8025,88 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 07:05:07] INFO root fetch - main [MainThread]: End processing [pipda]: success
 [2023-04-13 07:08:01] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-04-13 07:08:01] INFO root fetch - main [MainThread]: Store serial: [17687156]
+[2023-04-13 07:13:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687156]
+[2023-04-13 07:13:08] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-13 07:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cellmap
+[2023-04-13 07:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-assets-management
+[2023-04-13 07:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: msaBase
+[2023-04-13 07:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-homeassistant-custom-component
+[2023-04-13 07:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pshmodule
+[2023-04-13 07:13:09] INFO root fetch - processPackages [odoo12-addon-assets-management]: New version: [12.0.1.0.0.99.dev8] Old Version: [12.0.1.0.0.99.dev7]
+[2023-04-13 07:13:09] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304130509] Old Version: [1.0.1.dev202304130508]
+[2023-04-13 07:13:09] INFO root fetch - processPackages [pshmodule]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 07:13:09] INFO root fetch - processPackages [msaBase]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 07:13:09] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 07:13:09] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/f1/a6/e8d018b464fdb2a61d6d3979c8dcd83921de64ce77db3e9519d557064243/cellmap-1.0.1.dev202304130508-py3-none-any.whl
+[2023-04-13 07:13:09] INFO root fetch - processPackages [pshmodule]: Downloading https://files.pythonhosted.org/packages/58/e2/bf589f8251e870f52a529b7f45f85fa746e46e821ea755d6cdaf99d1a4b3/pshmodule-0.1.8.tar.gz
+[2023-04-13 07:13:09] INFO root fetch - processPackages [msaBase]: Downloading https://files.pythonhosted.org/packages/76/9a/a27e686785e6b54482d58445355935f687e11cd0a044f803310195bbc129/msaBase-0.0.8.tar.gz
+[2023-04-13 07:13:09] INFO root fetch - processPackages [odoo12-addon-assets-management]: executing diffoscope
+[2023-04-13 07:13:09] INFO root fetch - processPackages [odoo12-addon-assets-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_assets_management-12.0.1.0.0.99.dev7-py3-none-any.whl.zip tmp/odoo12_addon_assets_management-12.0.1.0.0.99.dev8-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-assets-management/12.0.1.0.0.99.dev7-12.0.1.0.0.99.dev8/diff.md --exclude *.pyd
+[2023-04-13 07:13:09] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: executing diffoscope
+[2023-04-13 07:13:09] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz --markdown 20230413/p/pytest-homeassistant-custom-component/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 07:13:09] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/fd/78/76e898a8b336ab3e7272f41f0b62223e4321bdf02d875fee11550b321849/cellmap-1.0.1.dev202304130509-py3-none-any.whl
+[2023-04-13 07:13:09] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-13 07:13:09] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304130508-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304130509-py3-none-any.whl.zip --markdown 20230413/c/cellmap/1.0.1.dev202304130508-1.0.1.dev202304130509/diff.md --exclude *.pyd
+[2023-04-13 07:13:09] INFO root fetch - processPackages [pshmodule]: Downloading https://files.pythonhosted.org/packages/36/8b/7f68225253fe588e1fb0da27ab4b3f3fdf9219fe041c5e96aa12aad1cfd0/pshmodule-0.1.9.tar.gz
+[2023-04-13 07:13:09] INFO root fetch - processPackages [msaBase]: Downloading https://files.pythonhosted.org/packages/fd/c7/eaf57b5462f098d2e330245249477745d1619240fbb8ea59ece12e03eeff/msaBase-0.0.9.tar.gz
+[2023-04-13 07:13:09] INFO root fetch - processPackages [pshmodule]: executing diffoscope
+[2023-04-13 07:13:09] INFO root fetch - processPackages [pshmodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pshmodule-0.1.8.tar.gz tmp/pshmodule-0.1.9.tar.gz --markdown 20230413/p/pshmodule/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 07:13:10] INFO root fetch - processPackages [msaBase]: executing diffoscope
+[2023-04-13 07:13:10] INFO root fetch - processPackages [msaBase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msaBase-0.0.8.tar.gz tmp/msaBase-0.0.9.tar.gz --markdown 20230413/m/msaBase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 07:13:10] INFO root fetch - processPackages [cellmap]: Start processing: odoo14-addon-assets-management
+[2023-04-13 07:13:10] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-13 07:13:10] INFO root fetch - processPackages [odoo14-addon-assets-management]: New version: [14.0.1.0.5.dev9] Old Version: [14.0.1.0.5.dev6]
+[2023-04-13 07:13:10] INFO root fetch - processPackages [pshmodule]: Start processing: odoo12-addon-l10n-it-delivery-note
+[2023-04-13 07:13:10] INFO root fetch - main [MainThread]: End processing [pshmodule]: success
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo12-addon-l10n-it-delivery-note]: New version: [12.0.1.2.1.99.dev5] Old Version: [12.0.1.2.1.99.dev4]
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo12-addon-assets-management]: Start processing: odoo14-addon-l10n-it-delivery-note
+[2023-04-13 07:13:11] INFO root fetch - main [MainThread]: End processing [odoo12-addon-assets-management]: success
+[2023-04-13 07:13:11] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Start processing: cosys
+[2023-04-13 07:13:11] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo14-addon-l10n-it-delivery-note]: New version: [14.0.1.1.2.dev4] Old Version: [14.0.1.1.2.dev3]
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo14-addon-assets-management]: executing diffoscope
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo14-addon-assets-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_assets_management-14.0.1.0.5.dev6-py3-none-any.whl.zip tmp/odoo14_addon_assets_management-14.0.1.0.5.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-assets-management/14.0.1.0.5.dev6-14.0.1.0.5.dev9/diff.md --exclude *.pyd
+[2023-04-13 07:13:11] ERROR root fetch - processPackages [cosys]: Unable to get metadata: No such project 'cosys'
+[2023-04-13 07:13:11] INFO root fetch - processPackages [cosys]: Start processing: image-liveness
+[2023-04-13 07:13:11] INFO root fetch - main [MainThread]: End processing [cosys] error
+[2023-04-13 07:13:11] INFO root fetch - processPackages [msaBase]: Start processing: odoo-addon-l10n-it-delivery-note
+[2023-04-13 07:13:11] INFO root fetch - main [MainThread]: End processing [msaBase]: success
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo12-addon-l10n-it-delivery-note]: Downloading https://files.pythonhosted.org/packages/46/a3/96a2bfb322d5f2df175da88b303adcfe3ab701171ab188a25c0eb50862e3/odoo12_addon_l10n_it_delivery_note-12.0.1.2.1.99.dev5-py3-none-any.whl
+[2023-04-13 07:13:11] ERROR root fetch - processPackages [image-liveness]: Unable to get metadata: No such project 'image-liveness'
+[2023-04-13 07:13:11] INFO root fetch - processPackages [image-liveness]: Start processing: ppdiffusers
+[2023-04-13 07:13:11] INFO root fetch - main [MainThread]: End processing [image-liveness] error
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo-addon-l10n-it-delivery-note]: New version: [16.0.1.0.1.5] Old Version: [16.0.1.0.1.4]
+[2023-04-13 07:13:11] INFO root fetch - processPackages [ppdiffusers]: New version: [0.9.0] Old Version: [0.6.3]
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo14-addon-l10n-it-delivery-note]: Downloading https://files.pythonhosted.org/packages/98/c2/b6a1cb78f9655906fa13962229003f8bd9287adfb4865b74b04fe75ec228/odoo14_addon_l10n_it_delivery_note-14.0.1.1.2.dev4-py3-none-any.whl
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo12-addon-l10n-it-delivery-note]: executing diffoscope
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo12-addon-l10n-it-delivery-note]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_l10n_it_delivery_note-12.0.1.2.1.99.dev4-py3-none-any.whl.zip tmp/odoo12_addon_l10n_it_delivery_note-12.0.1.2.1.99.dev5-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-l10n-it-delivery-note/12.0.1.2.1.99.dev4-12.0.1.2.1.99.dev5/diff.md --exclude *.pyd
+[2023-04-13 07:13:11] INFO root fetch - processPackages [ppdiffusers]: Downloading https://files.pythonhosted.org/packages/71/1d/6b25170dbecf412e2e2e0650ef168d6c81954496108ef6d2c30360603c25/ppdiffusers-0.6.3.tar.gz
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo14-addon-l10n-it-delivery-note]: executing diffoscope
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo14-addon-l10n-it-delivery-note]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_it_delivery_note-14.0.1.1.2.dev3-py3-none-any.whl.zip tmp/odoo14_addon_l10n_it_delivery_note-14.0.1.1.2.dev4-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-l10n-it-delivery-note/14.0.1.1.2.dev3-14.0.1.1.2.dev4/diff.md --exclude *.pyd
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo-addon-l10n-it-delivery-note]: Downloading https://files.pythonhosted.org/packages/c9/27/9ab30a696bda64075b31e871425d166d4cf9229fcbaaadec68fa3394a5f2/odoo_addon_l10n_it_delivery_note-16.0.1.0.1.5-py3-none-any.whl
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo-addon-l10n-it-delivery-note]: executing diffoscope
+[2023-04-13 07:13:11] INFO root fetch - processPackages [odoo-addon-l10n-it-delivery-note]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_it_delivery_note-16.0.1.0.1.4-py3-none-any.whl.zip tmp/odoo_addon_l10n_it_delivery_note-16.0.1.0.1.5-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-l10n-it-delivery-note/16.0.1.0.1.4-16.0.1.0.1.5/diff.md --exclude *.pyd
+[2023-04-13 07:13:11] INFO root fetch - processPackages [ppdiffusers]: Downloading https://files.pythonhosted.org/packages/dd/96/f09614c5bb3ef8092106dfe73c05c10496a65c1ebafa420e8c5b58edb426/ppdiffusers-0.9.0.tar.gz
+[2023-04-13 07:13:12] INFO root fetch - processPackages [ppdiffusers]: executing diffoscope
+[2023-04-13 07:13:12] INFO root fetch - processPackages [ppdiffusers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ppdiffusers-0.6.3.tar.gz tmp/ppdiffusers-0.9.0.tar.gz --markdown 20230413/p/ppdiffusers/0.6.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 07:13:12] INFO root fetch - processPackages [odoo14-addon-assets-management]: Start processing: libsnew
+[2023-04-13 07:13:12] INFO root fetch - main [MainThread]: End processing [odoo14-addon-assets-management]: success
+[2023-04-13 07:13:12] WARNING root fetch - processPackages [libsnew]: Skipping, unable to determine old version
+[2023-04-13 07:13:12] INFO root fetch - processPackages [libsnew]: Start processing: rapidpe-rift-pipe
+[2023-04-13 07:13:12] INFO root fetch - main [MainThread]: End processing [libsnew] error
+[2023-04-13 07:13:12] INFO root fetch - processPackages [odoo12-addon-l10n-it-delivery-note]: Start processing: leqi-algorithm-mic-sdk
+[2023-04-13 07:13:12] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-it-delivery-note]: success
+[2023-04-13 07:13:12] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.0.9.dev20230323] Old Version: [0.0.9.dev20230322]
+[2023-04-13 07:13:13] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-04-13 07:13:13] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.0.9.dev20230322.tar.gz tmp/rapidpe_rift_pipe-0.0.9.dev20230323.tar.gz --markdown 20230413/r/rapidpe-rift-pipe/0.0.9.dev20230322-0.0.9.dev20230323/diff.md --exclude *.pyd
+[2023-04-13 07:13:13] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-it-delivery-note]: success
+[2023-04-13 07:13:13] INFO root fetch - processPackages [leqi-algorithm-mic-sdk]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-04-13 07:13:13] INFO root fetch - processPackages [leqi-algorithm-mic-sdk]: Downloading https://files.pythonhosted.org/packages/0f/46/17c850430657f84b3e39909b2ed97d5235d1c3a849cea70bde7fe72785ab/leqi-algorithm-mic-sdk-1.9.3.tar.gz
+[2023-04-13 07:13:13] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-delivery-note]: success
+[2023-04-13 07:13:13] INFO root fetch - processPackages [leqi-algorithm-mic-sdk]: Downloading https://files.pythonhosted.org/packages/a7/b0/88958e9f07e5e92014f5016897e4a727bf30718767ec3e9eb1e13d8fdf92/leqi-algorithm-mic-sdk-1.9.4.tar.gz
+[2023-04-13 07:13:13] INFO root fetch - processPackages [leqi-algorithm-mic-sdk]: executing diffoscope
+[2023-04-13 07:13:13] INFO root fetch - processPackages [leqi-algorithm-mic-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leqi-algorithm-mic-sdk-1.9.3.tar.gz tmp/leqi-algorithm-mic-sdk-1.9.4.tar.gz --markdown 20230413/l/leqi-algorithm-mic-sdk/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-04-13 07:13:14] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2023-04-13 07:13:14] INFO root fetch - main [MainThread]: End processing [ppdiffusers]: success
+[2023-04-13 07:13:15] INFO root fetch - main [MainThread]: End processing [leqi-algorithm-mic-sdk]: success
+[2023-04-13 07:13:15] INFO root fetch - main [MainThread]: Store serial: [17687196]
