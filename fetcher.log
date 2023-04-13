@@ -22878,3 +22878,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 18:55:46] INFO root fetch - main [MainThread]: End processing [openplayground]: success
 [2023-04-13 18:55:49] INFO root fetch - main [MainThread]: End processing [geonomics]: success
 [2023-04-13 18:55:49] INFO root fetch - main [MainThread]: Store serial: [17695786]
+[2023-04-13 19:00:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17695786]
+[2023-04-13 19:00:57] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-13 19:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-dragonfly
+[2023-04-13 19:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qrules
+[2023-04-13 19:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wds-client
+[2023-04-13 19:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mfglib
+[2023-04-13 19:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bemserver-api-client
+[2023-04-13 19:00:57] INFO root fetch - processPackages [bemserver-api-client]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 19:00:57] INFO root fetch - processPackages [mfglib]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 19:00:57] INFO root fetch - processPackages [qrules]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-13 19:00:57] INFO root fetch - processPackages [wds-client]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-13 19:00:57] INFO root fetch - processPackages [bemserver-api-client]: Downloading https://files.pythonhosted.org/packages/0e/99/0eb7441cfa9134156d82b72d4eb03d5b10dd22aa7482410b5dc4aebf05f9/bemserver-api-client-0.8.0.tar.gz
+[2023-04-13 19:00:57] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-13 19:00:57] INFO root fetch - processPackages [mfglib]: Downloading https://files.pythonhosted.org/packages/e1/34/7df1aaf282bf73811b3497292702ce95d436b8613d53e02b325c3010ff50/mfglib-0.1.0.tar.gz
+[2023-04-13 19:00:57] INFO root fetch - processPackages [qrules]: executing diffoscope
+[2023-04-13 19:00:57] INFO root fetch - processPackages [qrules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qrules-0.9.7.tar.gz tmp/qrules-0.9.8.tar.gz --markdown 20230413/q/qrules/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-13 19:00:57] INFO root fetch - processPackages [wds-client]: executing diffoscope
+[2023-04-13 19:00:57] INFO root fetch - processPackages [wds-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wds-client-0.2.7.tar.gz tmp/wds-client-0.2.8.tar.gz --markdown 20230413/w/wds-client/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-13 19:00:57] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2023-04-13 19:00:57] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20230413/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-13 19:00:57] INFO root fetch - processPackages [mfglib]: Downloading https://files.pythonhosted.org/packages/cd/ff/e21d59d7a9b3a8e533dfe4c52b2b1df04cbb62ea0883d476b994a6019ba8/mfglib-0.1.1.tar.gz
+[2023-04-13 19:00:57] INFO root fetch - processPackages [bemserver-api-client]: Downloading https://files.pythonhosted.org/packages/2f/c8/91a5eda66cf4fda540caaceb9c6396f2bd073d5f4051b35f1c2689988108/bemserver-api-client-0.9.0.tar.gz
+[2023-04-13 19:00:57] INFO root fetch - processPackages [mfglib]: executing diffoscope
+[2023-04-13 19:00:57] INFO root fetch - processPackages [mfglib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mfglib-0.1.0.tar.gz tmp/mfglib-0.1.1.tar.gz --markdown 20230413/m/mfglib/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 19:00:58] INFO root fetch - processPackages [bemserver-api-client]: executing diffoscope
+[2023-04-13 19:00:58] INFO root fetch - processPackages [bemserver-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bemserver-api-client-0.8.0.tar.gz tmp/bemserver-api-client-0.9.0.tar.gz --markdown 20230413/b/bemserver-api-client/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 19:00:58] INFO root fetch - processPackages [lbt-dragonfly]: Start processing: sleepyask
+[2023-04-13 19:00:58] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2023-04-13 19:00:58] INFO root fetch - processPackages [sleepyask]: New version: [4.5.0] Old Version: [4.4.0]
+[2023-04-13 19:00:59] INFO root fetch - processPackages [mfglib]: Start processing: TraffiX
+[2023-04-13 19:00:59] INFO root fetch - main [MainThread]: End processing [mfglib]: success
+[2023-04-13 19:00:59] INFO root fetch - processPackages [TraffiX]: New version: [0.1.3a0] Old Version: [0.1.2a0]
+[2023-04-13 19:00:59] INFO root fetch - processPackages [sleepyask]: Downloading https://files.pythonhosted.org/packages/ed/f5/35dd5eae7e60eca0b5c1f3bc7ce515ff9913661629c21bdd2671431ad295/sleepyask-4.5.0.tar.gz
+[2023-04-13 19:00:59] INFO root fetch - processPackages [bemserver-api-client]: Start processing: Jlab
+[2023-04-13 19:00:59] INFO root fetch - main [MainThread]: End processing [bemserver-api-client]: success
+[2023-04-13 19:00:59] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-13 19:00:59] INFO root fetch - processPackages [TraffiX]: Downloading https://files.pythonhosted.org/packages/8b/c6/3adac698869a0a98dc173cd48bbb501bcac3fdce8d2609cb20551b8a7d07/TraffiX-0.1.3a0.tar.gz
+[2023-04-13 19:00:59] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-04-13 19:00:59] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230413/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-13 19:00:59] INFO root fetch - processPackages [sleepyask]: executing diffoscope
+[2023-04-13 19:00:59] INFO root fetch - processPackages [sleepyask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleepyask-4.4.0.tar.gz tmp/sleepyask-4.5.0.tar.gz --markdown 20230413/s/sleepyask/4.4.0-4.5.0/diff.md --exclude *.pyd
+[2023-04-13 19:00:59] INFO root fetch - processPackages [TraffiX]: executing diffoscope
+[2023-04-13 19:00:59] INFO root fetch - processPackages [TraffiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TraffiX-0.1.2a0.tar.gz tmp/TraffiX-0.1.3a0.tar.gz --markdown 20230413/T/TraffiX/0.1.2a0-0.1.3a0/diff.md --exclude *.pyd
+[2023-04-13 19:00:59] INFO root fetch - processPackages [wds-client]: Start processing: webssh-embedded
+[2023-04-13 19:00:59] INFO root fetch - main [MainThread]: End processing [wds-client]: success
+[2023-04-13 19:00:59] INFO root fetch - processPackages [webssh-embedded]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-13 19:01:00] INFO root fetch - processPackages [webssh-embedded]: Downloading https://files.pythonhosted.org/packages/27/20/dd0bfe401288e0c9c5edc0274164bb27686fd8ace0613de73d447230d920/webssh_embedded-1.0.2.tar.gz
+[2023-04-13 19:01:00] INFO root fetch - processPackages [webssh-embedded]: executing diffoscope
+[2023-04-13 19:01:00] INFO root fetch - processPackages [webssh-embedded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webssh_embedded-1.0.1.tar.gz tmp/webssh_embedded-1.0.2.tar.gz --markdown 20230413/w/webssh-embedded/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-13 19:01:00] INFO root fetch - processPackages [sleepyask]: Start processing: inductiva
+[2023-04-13 19:01:00] INFO root fetch - main [MainThread]: End processing [sleepyask]: success
+[2023-04-13 19:01:00] INFO root fetch - processPackages [inductiva]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-13 19:01:00] INFO root fetch - processPackages [Jlab]: Start processing: Shiphelm
+[2023-04-13 19:01:00] INFO root fetch - main [MainThread]: End processing [Jlab]: success
+[2023-04-13 19:01:00] INFO root fetch - processPackages [Shiphelm]: New version: [0.7.3] Old Version: [0.7.2b0]
+[2023-04-13 19:01:00] INFO root fetch - processPackages [TraffiX]: Start processing: wis-s3api
+[2023-04-13 19:01:00] INFO root fetch - main [MainThread]: End processing [TraffiX]: success
+[2023-04-13 19:01:00] INFO root fetch - processPackages [wis-s3api]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 19:01:00] INFO root fetch - processPackages [wis-s3api]: executing diffoscope
+[2023-04-13 19:01:00] INFO root fetch - processPackages [wis-s3api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wis-s3api-0.0.8.tar.gz tmp/wis-s3api-0.0.9.tar.gz --markdown 20230413/w/wis-s3api/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 19:01:00] INFO root fetch - processPackages [Shiphelm]: Downloading https://files.pythonhosted.org/packages/3a/9c/54c01d277a3bb62f6f11fa719f8c919ca019f9755d5419746ee33d2badf1/Shiphelm-0.7.2b0.tar.gz
+[2023-04-13 19:01:00] INFO root fetch - processPackages [inductiva]: Downloading https://files.pythonhosted.org/packages/2f/5f/6b604d50120d6b00c51cfd1be5eb9f233cbd31786ebb9ab73f2f76dd70e5/inductiva-0.0.7.tar.gz
+[2023-04-13 19:01:01] INFO root fetch - processPackages [inductiva]: executing diffoscope
+[2023-04-13 19:01:01] INFO root fetch - processPackages [inductiva]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inductiva-0.0.6.tar.gz tmp/inductiva-0.0.7.tar.gz --markdown 20230413/i/inductiva/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-13 19:01:01] INFO root fetch - processPackages [Shiphelm]: Downloading https://files.pythonhosted.org/packages/69/2d/268e6a3967f6fe894fb06c7861a3d88f13c54153c8320482fd601ef37cc4/Shiphelm-0.7.3.tar.gz
+[2023-04-13 19:01:01] INFO root fetch - processPackages [Shiphelm]: executing diffoscope
+[2023-04-13 19:01:01] INFO root fetch - processPackages [Shiphelm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shiphelm-0.7.2b0.tar.gz tmp/Shiphelm-0.7.3.tar.gz --markdown 20230413/S/Shiphelm/0.7.2b0-0.7.3/diff.md --exclude *.pyd
+[2023-04-13 19:01:01] INFO root fetch - processPackages [webssh-embedded]: Start processing: BOsHaNiC
+[2023-04-13 19:01:01] INFO root fetch - main [MainThread]: End processing [webssh-embedded]: success
+[2023-04-13 19:01:01] INFO root fetch - processPackages [BOsHaNiC]: New version: [1.2] Old Version: [1.1]
+[2023-04-13 19:01:01] INFO root fetch - processPackages [BOsHaNiC]: executing diffoscope
+[2023-04-13 19:01:01] INFO root fetch - processPackages [BOsHaNiC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BOsHaNiC-1.1-py3-none-any.whl.zip tmp/BOsHaNiC-1.2-py3-none-any.whl.zip --markdown 20230413/B/BOsHaNiC/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-13 19:01:01] INFO root fetch - main [MainThread]: End processing [wis-s3api]: success
+[2023-04-13 19:01:02] INFO root fetch - main [MainThread]: End processing [qrules]: success
+[2023-04-13 19:01:02] INFO root fetch - main [MainThread]: End processing [Shiphelm]: success
+[2023-04-13 19:01:02] INFO root fetch - main [MainThread]: End processing [BOsHaNiC]: success
+[2023-04-13 19:01:02] INFO root fetch - main [MainThread]: End processing [inductiva]: success
+[2023-04-13 19:01:02] INFO root fetch - main [MainThread]: Store serial: [17695830]
