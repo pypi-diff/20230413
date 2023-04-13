@@ -9451,3 +9451,92 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 08:46:09] INFO root fetch - processPackages [datar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datar-0.9.0.tar.gz tmp/datar-0.9.1.tar.gz --markdown 20230413/d/datar/0.9.0-0.9.1/diff.md --exclude *.pyd
 [2023-04-13 08:46:11] INFO root fetch - main [MainThread]: End processing [datar]: success
 [2023-04-13 08:46:11] INFO root fetch - main [MainThread]: Store serial: [17687888]
+[2023-04-13 08:51:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687888]
+[2023-04-13 08:51:19] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-13 08:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-sdgpt
+[2023-04-13 08:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-chartjs-manager
+[2023-04-13 08:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pcl-pangu
+[2023-04-13 08:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plyfile
+[2023-04-13 08:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-purchase-quick
+[2023-04-13 08:51:19] INFO root fetch - processPackages [odoo-addon-purchase-quick]: New version: [15.0.1.0.0.4] Old Version: [15.0.1.0.0.2]
+[2023-04-13 08:51:19] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 08:51:19] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 08:51:19] INFO root fetch - processPackages [plyfile]: New version: [0.9] Old Version: [0.8.1]
+[2023-04-13 08:51:19] INFO root fetch - processPackages [flask-chartjs-manager]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 08:51:19] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 08:51:19] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 08:51:19] INFO root fetch - processPackages [odoo-addon-purchase-quick]: Downloading https://files.pythonhosted.org/packages/ba/fd/7869e11d8ef11153ed3398381c4f3ef715537623b85ea41ad2f03764df76/odoo_addon_purchase_quick-15.0.1.0.0.2-py3-none-any.whl
+[2023-04-13 08:51:19] INFO root fetch - processPackages [flask-chartjs-manager]: Downloading https://files.pythonhosted.org/packages/d8/d9/ba994b60f918f86319d2d1b6fc7654f57bb5d7a8b24323281b7a0e684082/flask_chartjs_manager-0.1.8.tar.gz
+[2023-04-13 08:51:19] INFO root fetch - processPackages [plyfile]: Downloading https://files.pythonhosted.org/packages/be/28/be72d973cafba1e96c8d97c6fcdf838e798757f2606a03689d5454e83b91/plyfile-0.8.1.tar.gz
+[2023-04-13 08:51:19] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: Downloading https://files.pythonhosted.org/packages/22/8b/9177f17a1eca7445fecf980f79e523961767a78fa2b62ee5d626a5e1bc56/nonebot_plugin_sdgpt-0.2.1.tar.gz
+[2023-04-13 08:51:19] INFO root fetch - processPackages [plyfile]: Downloading https://files.pythonhosted.org/packages/d4/87/3bab18765bce32798a4936cd95ba3a42e7e42113219a1ce0c2eb17e6cb7f/plyfile-0.9.tar.gz
+[2023-04-13 08:51:20] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: executing diffoscope
+[2023-04-13 08:51:20] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sdgpt-0.2.0.tar.gz tmp/nonebot_plugin_sdgpt-0.2.1.tar.gz --markdown 20230413/n/nonebot-plugin-sdgpt/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 08:51:20] INFO root fetch - processPackages [flask-chartjs-manager]: Downloading https://files.pythonhosted.org/packages/0d/33/1fe08e7a923828a31f54e76cb15e01e58b88f868e1ba58d69c6f4e6ba116/flask_chartjs_manager-0.1.9.tar.gz
+[2023-04-13 08:51:20] INFO root fetch - processPackages [odoo-addon-purchase-quick]: Downloading https://files.pythonhosted.org/packages/f6/a2/15dba62b45afc87ccca306e6ba55b72d2ee0575f6856fb7c8014160e67a6/odoo_addon_purchase_quick-15.0.1.0.0.4-py3-none-any.whl
+[2023-04-13 08:51:20] INFO root fetch - processPackages [plyfile]: executing diffoscope
+[2023-04-13 08:51:20] INFO root fetch - processPackages [plyfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plyfile-0.8.1.tar.gz tmp/plyfile-0.9.tar.gz --markdown 20230413/p/plyfile/0.8.1-0.9/diff.md --exclude *.pyd
+[2023-04-13 08:51:20] INFO root fetch - processPackages [flask-chartjs-manager]: executing diffoscope
+[2023-04-13 08:51:20] INFO root fetch - processPackages [flask-chartjs-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_chartjs_manager-0.1.8.tar.gz tmp/flask_chartjs_manager-0.1.9.tar.gz --markdown 20230413/f/flask-chartjs-manager/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 08:51:20] INFO root fetch - processPackages [odoo-addon-purchase-quick]: executing diffoscope
+[2023-04-13 08:51:20] INFO root fetch - processPackages [odoo-addon-purchase-quick]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_purchase_quick-15.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_purchase_quick-15.0.1.0.0.4-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-purchase-quick/15.0.1.0.0.2-15.0.1.0.0.4/diff.md --exclude *.pyd
+[2023-04-13 08:51:21] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: Start processing: slackflylog
+[2023-04-13 08:51:21] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sdgpt]: success
+[2023-04-13 08:51:21] INFO root fetch - processPackages [slackflylog]: New version: [3.0.3] Old Version: [1.0.4]
+[2023-04-13 08:51:21] INFO root fetch - processPackages [slackflylog]: Downloading https://files.pythonhosted.org/packages/79/7b/72de7160809b38070c338bc8c60267d9d2fc011265cec09166ca5de5bf49/slackflylog-1.0.4.tar.gz
+[2023-04-13 08:51:21] INFO root fetch - processPackages [plyfile]: Start processing: slink-api
+[2023-04-13 08:51:21] INFO root fetch - main [MainThread]: End processing [plyfile]: success
+[2023-04-13 08:51:21] INFO root fetch - processPackages [slink-api]: New version: [0.1.6] Old Version: [0.1.4]
+[2023-04-13 08:51:21] INFO root fetch - processPackages [flask-chartjs-manager]: Start processing: vnpy-okex-pro
+[2023-04-13 08:51:21] INFO root fetch - main [MainThread]: End processing [flask-chartjs-manager]: success
+[2023-04-13 08:51:21] INFO root fetch - processPackages [vnpy-okex-pro]: New version: [2023.4.14.2] Old Version: [2023.4.14.1]
+[2023-04-13 08:51:21] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-13 08:51:21] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-1.0.4.tar.gz tmp/slackflylog-3.0.3.tar.gz --markdown 20230413/s/slackflylog/1.0.4-3.0.3/diff.md --exclude *.pyd
+[2023-04-13 08:51:21] INFO root fetch - processPackages [slink-api]: Downloading https://files.pythonhosted.org/packages/cc/47/1cd1fdc40e07a0b2120484c03b16fe56d9f0305b13e2ac9c6500f8917a3d/slink_api-0.1.4.tar.gz
+[2023-04-13 08:51:21] INFO root fetch - processPackages [vnpy-okex-pro]: Downloading https://files.pythonhosted.org/packages/e4/98/3fd702087bb5b72dbd1b11f580a4b0d7579a05b6ddffd8be99335fedc5a8/vnpy-okex-pro-2023.4.14.1.tar.gz
+[2023-04-13 08:51:21] INFO root fetch - processPackages [odoo-addon-purchase-quick]: Start processing: pyProcessAutom
+[2023-04-13 08:51:21] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-quick]: success
+[2023-04-13 08:51:21] INFO root fetch - processPackages [pyProcessAutom]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-04-13 08:51:21] INFO root fetch - processPackages [slink-api]: Downloading https://files.pythonhosted.org/packages/2f/f1/98519b8ecef00d647be46e836c9e1de26d89a1a1782a52b76d48fe2000ef/slink_api-0.1.6.tar.gz
+[2023-04-13 08:51:21] INFO root fetch - processPackages [vnpy-okex-pro]: Downloading https://files.pythonhosted.org/packages/89/62/ca86c6464f5628783a9d86a1c4b7b99d22478620a3f4de1cc4a6e49c0bc5/vnpy-okex-pro-2023.4.14.2.tar.gz
+[2023-04-13 08:51:21] INFO root fetch - processPackages [pyProcessAutom]: Downloading https://files.pythonhosted.org/packages/1d/2b/0b138077f99c8fdded5715c0a95c695fc1cf6fe62b63de77e9bb9c8a8e54/pyProcessAutom-1.4.2.tar.gz
+[2023-04-13 08:51:22] INFO root fetch - processPackages [slink-api]: executing diffoscope
+[2023-04-13 08:51:22] INFO root fetch - processPackages [slink-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slink_api-0.1.4.tar.gz tmp/slink_api-0.1.6.tar.gz --markdown 20230413/s/slink-api/0.1.4-0.1.6/diff.md --exclude *.pyd
+[2023-04-13 08:51:22] INFO root fetch - processPackages [vnpy-okex-pro]: executing diffoscope
+[2023-04-13 08:51:22] INFO root fetch - processPackages [vnpy-okex-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy-okex-pro-2023.4.14.1.tar.gz tmp/vnpy-okex-pro-2023.4.14.2.tar.gz --markdown 20230413/v/vnpy-okex-pro/2023.4.14.1-2023.4.14.2/diff.md --exclude *.pyd
+[2023-04-13 08:51:22] INFO root fetch - processPackages [pyProcessAutom]: Downloading https://files.pythonhosted.org/packages/93/a7/2bf1ad3f8a8fc843be8a9585b2a41cf0e4a02af82bcd3b8e75d1d8fdc6e8/pyProcessAutom-1.4.3.tar.gz
+[2023-04-13 08:51:22] INFO root fetch - processPackages [pyProcessAutom]: executing diffoscope
+[2023-04-13 08:51:22] INFO root fetch - processPackages [pyProcessAutom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyProcessAutom-1.4.2.tar.gz tmp/pyProcessAutom-1.4.3.tar.gz --markdown 20230413/p/pyProcessAutom/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-04-13 08:51:22] INFO root fetch - processPackages [slackflylog]: Start processing: finolog-sdk
+[2023-04-13 08:51:22] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-13 08:51:22] INFO root fetch - processPackages [finolog-sdk]: New version: [1.0.6.5] Old Version: [1.0.6.4]
+[2023-04-13 08:51:22] INFO root fetch - processPackages [finolog-sdk]: Downloading https://files.pythonhosted.org/packages/bb/52/13f4188a4cc133f061a86b1c24b62db7266d6acd9b1ea8f241682b5c2bc9/finolog-sdk-1.0.6.4.tar.gz
+[2023-04-13 08:51:22] INFO root fetch - processPackages [finolog-sdk]: Downloading https://files.pythonhosted.org/packages/d0/42/8fa4b37b72731c2417a802e3b5759e876fd102bbad64adede7685a35aa18/finolog-sdk-1.0.6.5.tar.gz
+[2023-04-13 08:51:23] INFO root fetch - processPackages [slink-api]: Start processing: pygoogalytics
+[2023-04-13 08:51:23] INFO root fetch - main [MainThread]: End processing [slink-api]: success
+[2023-04-13 08:51:23] INFO root fetch - processPackages [pygoogalytics]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-13 08:51:23] INFO root fetch - processPackages [finolog-sdk]: executing diffoscope
+[2023-04-13 08:51:23] INFO root fetch - processPackages [finolog-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finolog-sdk-1.0.6.4.tar.gz tmp/finolog-sdk-1.0.6.5.tar.gz --markdown 20230413/f/finolog-sdk/1.0.6.4-1.0.6.5/diff.md --exclude *.pyd
+[2023-04-13 08:51:23] INFO root fetch - processPackages [vnpy-okex-pro]: Start processing: experimaestro-ir
+[2023-04-13 08:51:23] INFO root fetch - main [MainThread]: End processing [vnpy-okex-pro]: success
+[2023-04-13 08:51:23] INFO root fetch - processPackages [experimaestro-ir]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-13 08:51:23] INFO root fetch - processPackages [pyProcessAutom]: Start processing: countess
+[2023-04-13 08:51:23] INFO root fetch - main [MainThread]: End processing [pyProcessAutom]: success
+[2023-04-13 08:51:23] INFO root fetch - processPackages [experimaestro-ir]: Downloading https://files.pythonhosted.org/packages/47/c5/1d0ebcb4810dbff5b105ef4059b54c7336d10e6fb9d7007893fbe97533fb/experimaestro-ir-0.6.1.zip
+[2023-04-13 08:51:23] INFO root fetch - processPackages [pygoogalytics]: Downloading https://files.pythonhosted.org/packages/5e/4b/c898da5989762f31794674ebb785c53acbb5b92c1af03bb6480da30bf66f/pygoogalytics-0.2.7.tar.gz
+[2023-04-13 08:51:23] INFO root fetch - processPackages [countess]: New version: [0.0.22] Old Version: [0.0.21]
+[2023-04-13 08:51:23] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 08:51:23] INFO root fetch - processPackages [pygoogalytics]: executing diffoscope
+[2023-04-13 08:51:23] INFO root fetch - processPackages [pygoogalytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygoogalytics-0.2.6.tar.gz tmp/pygoogalytics-0.2.7.tar.gz --markdown 20230413/p/pygoogalytics/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-13 08:51:23] INFO root fetch - processPackages [experimaestro-ir]: Downloading https://files.pythonhosted.org/packages/7f/08/f95df7563651d1e73a927c15936782df57bdc8e4c714ebe5858dd1e170f4/experimaestro-ir-0.6.2.zip
+[2023-04-13 08:51:23] INFO root fetch - processPackages [countess]: Downloading https://files.pythonhosted.org/packages/bd/fd/839a23577392cd01f9b69e074ccc13e2895d8c697441473e568950db449d/countess-0.0.21.tar.gz
+[2023-04-13 08:51:23] INFO root fetch - processPackages [experimaestro-ir]: executing diffoscope
+[2023-04-13 08:51:23] INFO root fetch - processPackages [experimaestro-ir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experimaestro-ir-0.6.1.zip tmp/experimaestro-ir-0.6.2.zip --markdown 20230413/e/experimaestro-ir/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-13 08:51:24] INFO root fetch - processPackages [countess]: Downloading https://files.pythonhosted.org/packages/85/ef/58c1d4c6a2feb38308fa89b9f10d0941f9c7bf2ffc55ad6d7e64f85057aa/countess-0.0.22.tar.gz
+[2023-04-13 08:51:24] INFO root fetch - main [MainThread]: End processing [finolog-sdk]: success
+[2023-04-13 08:51:24] INFO root fetch - processPackages [countess]: executing diffoscope
+[2023-04-13 08:51:24] INFO root fetch - processPackages [countess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/countess-0.0.21.tar.gz tmp/countess-0.0.22.tar.gz --markdown 20230413/c/countess/0.0.21-0.0.22/diff.md --exclude *.pyd
+[2023-04-13 08:51:24] INFO root fetch - main [MainThread]: End processing [pygoogalytics]: success
+[2023-04-13 08:51:25] INFO root fetch - main [MainThread]: End processing [countess]: success
+[2023-04-13 08:51:25] INFO root fetch - main [MainThread]: End processing [experimaestro-ir]: success
+[2023-04-13 08:51:25] INFO root fetch - main [MainThread]: Store serial: [17687938]
