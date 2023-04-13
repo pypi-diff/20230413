@@ -7608,3 +7608,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 06:28:16] INFO root fetch - main [MainThread]: End processing [hdx-python-country]: success
 [2023-04-13 06:28:17] INFO root fetch - main [MainThread]: End processing [leeger]: success
 [2023-04-13 06:28:17] INFO root fetch - main [MainThread]: Store serial: [17686890]
+[2023-04-13 06:33:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686890]
+[2023-04-13 06:33:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-13 06:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dioptra
+[2023-04-13 06:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-casdoor
+[2023-04-13 06:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: text2mapdata
+[2023-04-13 06:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-hr-personal-equipment-request
+[2023-04-13 06:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: baqis
+[2023-04-13 06:33:25] INFO root fetch - processPackages [dioptra]: New version: [1.0.9rc1] Old Version: [1.0.8]
+[2023-04-13 06:33:25] INFO root fetch - processPackages [odoo14-addon-hr-personal-equipment-request]: New version: [14.0.1.0.1.dev8] Old Version: [14.0.1.0.1.dev22]
+[2023-04-13 06:33:25] INFO root fetch - processPackages [fastapi-casdoor]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-13 06:33:25] WARNING root fetch - processPackages [baqis]: Skipping, unable to determine old version
+[2023-04-13 06:33:25] INFO root fetch - processPackages [text2mapdata]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 06:33:25] INFO root fetch - processPackages [baqis]: Start processing: pcl-pangu
+[2023-04-13 06:33:25] INFO root fetch - main [MainThread]: End processing [baqis] error
+[2023-04-13 06:33:25] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 06:33:25] INFO root fetch - processPackages [odoo14-addon-hr-personal-equipment-request]: Downloading https://files.pythonhosted.org/packages/b6/4f/c9d2bfbeac8e56b5070d937039e85bb20072f10e9d6e15cbd2f6f1668d78/odoo14_addon_hr_personal_equipment_request-14.0.1.0.1.dev22-py3-none-any.whl
+[2023-04-13 06:33:25] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/7c/e9/374e287a35f6f21090c5e7acf857d0104a1d62ba211744396de8021fd8ab/fastapi_casdoor-0.1.6-py3.8.egg
+[2023-04-13 06:33:25] INFO root fetch - processPackages [text2mapdata]: Downloading https://files.pythonhosted.org/packages/2d/73/b729cf0f01d52c12b3868d01a93005ad2ff412c2442c4e204f8a20bd4e18/text2mapdata-0.1.0.tar.gz
+[2023-04-13 06:33:25] INFO root fetch - processPackages [dioptra]: Downloading https://files.pythonhosted.org/packages/1d/13/3cad3e0ce2f9da6fbc18ec087b89268ea80c892aec346ce49e078f3189ef/dioptra-1.0.9rc1.tar.gz
+[2023-04-13 06:33:25] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 06:33:25] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 06:33:25] INFO root fetch - processPackages [fastapi-casdoor]: executing diffoscope
+[2023-04-13 06:33:25] INFO root fetch - processPackages [fastapi-casdoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_casdoor-0.1.5-py3.8.egg tmp/fastapi_casdoor-0.1.6-py3.8.egg --markdown 20230413/f/fastapi-casdoor/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-13 06:33:25] INFO root fetch - processPackages [dioptra]: executing diffoscope
+[2023-04-13 06:33:25] INFO root fetch - processPackages [dioptra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dioptra-1.0.8.tar.gz tmp/dioptra-1.0.9rc1.tar.gz --markdown 20230413/d/dioptra/1.0.8-1.0.9rc1/diff.md --exclude *.pyd
+[2023-04-13 06:33:25] INFO root fetch - processPackages [text2mapdata]: Downloading https://files.pythonhosted.org/packages/1e/2a/669769ca859b3c0e8eb710fa8dbd2000bc5778b498d2baedca006ac7e20a/text2mapdata-0.1.1.tar.gz
+[2023-04-13 06:33:25] INFO root fetch - processPackages [odoo14-addon-hr-personal-equipment-request]: Downloading https://files.pythonhosted.org/packages/08/07/24019f4a49494ee7ce13af6b2e74ad1a8f024dc6fd01f430d5cb22183fea/odoo14_addon_hr_personal_equipment_request-14.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-13 06:33:25] INFO root fetch - processPackages [odoo14-addon-hr-personal-equipment-request]: executing diffoscope
+[2023-04-13 06:33:25] INFO root fetch - processPackages [odoo14-addon-hr-personal-equipment-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_hr_personal_equipment_request-14.0.1.0.1.dev22-py3-none-any.whl.zip tmp/odoo14_addon_hr_personal_equipment_request-14.0.1.0.1.dev8-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-hr-personal-equipment-request/14.0.1.0.1.dev22-14.0.1.0.1.dev8/diff.md --exclude *.pyd
+[2023-04-13 06:33:25] INFO root fetch - processPackages [text2mapdata]: executing diffoscope
+[2023-04-13 06:33:25] INFO root fetch - processPackages [text2mapdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2mapdata-0.1.0.tar.gz tmp/text2mapdata-0.1.1.tar.gz --markdown 20230413/t/text2mapdata/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 06:33:26] INFO root fetch - processPackages [fastapi-casdoor]: Start processing: keras-tuner
+[2023-04-13 06:33:26] INFO root fetch - main [MainThread]: End processing [fastapi-casdoor]: success
+[2023-04-13 06:33:26] INFO root fetch - processPackages [keras-tuner]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-04-13 06:33:26] INFO root fetch - processPackages [keras-tuner]: Downloading https://files.pythonhosted.org/packages/5e/62/e7a7f6b9cde1245e4a02d59c1d07b64e5a41e0fb425a31f0d8549299362d/keras-tuner-1.3.4.tar.gz
+[2023-04-13 06:33:26] INFO root fetch - main [MainThread]: End processing [dioptra]: success
+[2023-04-13 06:33:26] INFO root fetch - main [MainThread]: End processing [text2mapdata]: success
+[2023-04-13 06:33:26] INFO root fetch - processPackages [keras-tuner]: Downloading https://files.pythonhosted.org/packages/67/7b/8bc85eef3a5701a55a7e2063cb8049f552d40d538ee73ad656a66b1ed1ef/keras-tuner-1.3.5.tar.gz
+[2023-04-13 06:33:27] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hr-personal-equipment-request]: success
+[2023-04-13 06:33:27] INFO root fetch - processPackages [keras-tuner]: executing diffoscope
+[2023-04-13 06:33:27] INFO root fetch - processPackages [keras-tuner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-tuner-1.3.4.tar.gz tmp/keras-tuner-1.3.5.tar.gz --markdown 20230413/k/keras-tuner/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-04-13 06:33:27] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 06:33:28] INFO root fetch - main [MainThread]: End processing [keras-tuner]: success
+[2023-04-13 06:33:28] INFO root fetch - main [MainThread]: Store serial: [17686917]
