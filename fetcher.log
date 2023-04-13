@@ -19262,3 +19262,131 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 16:24:05] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
 [2023-04-13 16:24:06] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
 [2023-04-13 16:24:06] INFO root fetch - main [MainThread]: Store serial: [17693651]
+[2023-04-13 16:29:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17693651]
+[2023-04-13 16:29:15] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-13 16:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wagtailstreamforms
+[2023-04-13 16:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-computedfields
+[2023-04-13 16:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ftrixminer
+[2023-04-13 16:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vectice
+[2023-04-13 16:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiogram-ext
+[2023-04-13 16:29:15] INFO root fetch - processPackages [vectice]: New version: [23.1.7.2] Old Version: [23.1.7.0]
+[2023-04-13 16:29:15] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 16:29:15] INFO root fetch - processPackages [wagtailstreamforms]: New version: [4.0.1] Old Version: [3.9]
+[2023-04-13 16:29:15] INFO root fetch - processPackages [ftrixminer]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-13 16:29:15] INFO root fetch - processPackages [django-computedfields]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-13 16:29:15] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-13 16:29:15] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.0.8.tar.gz tmp/aiogram-ext-0.0.9.tar.gz --markdown 20230413/a/aiogram-ext/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 16:29:15] INFO root fetch - processPackages [vectice]: Downloading https://files.pythonhosted.org/packages/fd/54/fcd29d1cd0b6da3ac3e4575b63970f1a9a99a65aa71d37fd35737b302229/vectice-23.1.7.0.tar.gz
+[2023-04-13 16:29:15] INFO root fetch - processPackages [ftrixminer]: Downloading https://files.pythonhosted.org/packages/4b/03/b2c89b070745ef6c81288680e636739679790fa1e461cdca2637181bc452/ftrixminer-1.0.2.tar.gz
+[2023-04-13 16:29:15] INFO root fetch - processPackages [wagtailstreamforms]: Downloading https://files.pythonhosted.org/packages/4f/f3/92f278ba43ff693a7ab7a8e52b51914ca59ba54709a52009bece04a019b4/wagtailstreamforms-3.9.tar.gz
+[2023-04-13 16:29:15] INFO root fetch - processPackages [django-computedfields]: Downloading https://files.pythonhosted.org/packages/fa/49/990d9765cb2506685cf92348d0db03749833a744032fe23b71e252458d98/django-computedfields-0.2.1.tar.gz
+[2023-04-13 16:29:15] INFO root fetch - processPackages [ftrixminer]: Downloading https://files.pythonhosted.org/packages/18/39/a61816114ba928cd84c16efee94ddb478e5fe110c6c369dad85bec40f7cc/ftrixminer-1.1.0.tar.gz
+[2023-04-13 16:29:15] INFO root fetch - processPackages [vectice]: Downloading https://files.pythonhosted.org/packages/dd/f7/1f05a284bc569bcfe5e80344e1f8eefd17ac46a9a6b491b25713da2bc45c/vectice-23.1.7.2.tar.gz
+[2023-04-13 16:29:15] INFO root fetch - processPackages [ftrixminer]: executing diffoscope
+[2023-04-13 16:29:15] INFO root fetch - processPackages [ftrixminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ftrixminer-1.0.2.tar.gz tmp/ftrixminer-1.1.0.tar.gz --markdown 20230413/f/ftrixminer/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 16:29:15] INFO root fetch - processPackages [vectice]: executing diffoscope
+[2023-04-13 16:29:15] INFO root fetch - processPackages [vectice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectice-23.1.7.0.tar.gz tmp/vectice-23.1.7.2.tar.gz --markdown 20230413/v/vectice/23.1.7.0-23.1.7.2/diff.md --exclude *.pyd
+[2023-04-13 16:29:15] INFO root fetch - processPackages [django-computedfields]: Downloading https://files.pythonhosted.org/packages/7d/76/b89f78a10af5ed89f305881e4eedf720092eaa4dc5443a74c6b9cbcedcba/django-computedfields-0.2.2.tar.gz
+[2023-04-13 16:29:15] INFO root fetch - processPackages [wagtailstreamforms]: Downloading https://files.pythonhosted.org/packages/6d/71/738ff28687bc1a7313b950d0da6b88b44ab3f825a6e47e575b115bf71306/wagtailstreamforms-4.0.1.tar.gz
+[2023-04-13 16:29:15] INFO root fetch - processPackages [django-computedfields]: executing diffoscope
+[2023-04-13 16:29:15] INFO root fetch - processPackages [django-computedfields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-computedfields-0.2.1.tar.gz tmp/django-computedfields-0.2.2.tar.gz --markdown 20230413/d/django-computedfields/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-13 16:29:15] INFO root fetch - processPackages [wagtailstreamforms]: executing diffoscope
+[2023-04-13 16:29:15] INFO root fetch - processPackages [wagtailstreamforms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtailstreamforms-3.9.tar.gz tmp/wagtailstreamforms-4.0.1.tar.gz --markdown 20230413/w/wagtailstreamforms/3.9-4.0.1/diff.md --exclude *.pyd
+[2023-04-13 16:29:16] INFO root fetch - processPackages [aiogram-ext]: Start processing: scippneutron
+[2023-04-13 16:29:16] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-13 16:29:16] INFO root fetch - processPackages [scippneutron]: New version: [23.4.0] Old Version: [23.3.0]
+[2023-04-13 16:29:16] INFO root fetch - processPackages [scippneutron]: Downloading https://files.pythonhosted.org/packages/3e/84/0ebb71392676572d2689d7cd3ea10beda0075bb43fc8dabb33383c5c8db6/scippneutron-23.3.0.tar.gz
+[2023-04-13 16:29:17] INFO root fetch - processPackages [django-computedfields]: Start processing: m3-learning
+[2023-04-13 16:29:17] INFO root fetch - main [MainThread]: End processing [django-computedfields]: success
+[2023-04-13 16:29:17] INFO root fetch - processPackages [m3-learning]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 16:29:17] INFO root fetch - processPackages [scippneutron]: Downloading https://files.pythonhosted.org/packages/d1/4e/230ecc977106adbaa550b819675637dddbc5d49700ae33adb7b3213c9e90/scippneutron-23.4.0.tar.gz
+[2023-04-13 16:29:17] INFO root fetch - processPackages [wagtailstreamforms]: Start processing: crosspredict
+[2023-04-13 16:29:17] INFO root fetch - main [MainThread]: End processing [wagtailstreamforms]: success
+[2023-04-13 16:29:17] INFO root fetch - processPackages [crosspredict]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-04-13 16:29:17] INFO root fetch - processPackages [scippneutron]: executing diffoscope
+[2023-04-13 16:29:17] INFO root fetch - processPackages [scippneutron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scippneutron-23.3.0.tar.gz tmp/scippneutron-23.4.0.tar.gz --markdown 20230413/s/scippneutron/23.3.0-23.4.0/diff.md --exclude *.pyd
+[2023-04-13 16:29:17] INFO root fetch - processPackages [vectice]: Start processing: auterion-cli
+[2023-04-13 16:29:17] INFO root fetch - main [MainThread]: End processing [vectice]: success
+[2023-04-13 16:29:17] INFO root fetch - processPackages [auterion-cli]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-13 16:29:17] INFO root fetch - processPackages [m3-learning]: Downloading https://files.pythonhosted.org/packages/d0/fb/881aea382259418f12422b5ae58f05c6ceb51d9e3bfd97e7b795182fe431/m3_learning-0.0.8.tar.gz
+[2023-04-13 16:29:17] INFO root fetch - processPackages [crosspredict]: Downloading https://files.pythonhosted.org/packages/d2/8b/ab8bead2a95b85876c81ff030587c10cf0890d39f52f88812d4afb6959e2/crosspredict-1.1.6.tar.gz
+[2023-04-13 16:29:17] INFO root fetch - processPackages [auterion-cli]: Downloading https://files.pythonhosted.org/packages/af/8d/bf5c747da30c5a482ecc2fd9e3ce530bc84f9e0de6efdc152d92af5cbe69/auterion-cli-1.0.4.tar.gz
+[2023-04-13 16:29:17] INFO root fetch - processPackages [m3-learning]: Downloading https://files.pythonhosted.org/packages/8b/e0/e6082bd4648fefc1af2812bf7851d781cf83c75db7799edf8105f7e0250d/m3_learning-0.0.9.tar.gz
+[2023-04-13 16:29:17] INFO root fetch - processPackages [auterion-cli]: Downloading https://files.pythonhosted.org/packages/43/1d/9bfdedcfc1ad1e30cc77b6395f4c1da2aa8791088c5caf625344e4842787/auterion-cli-1.0.5.tar.gz
+[2023-04-13 16:29:17] INFO root fetch - processPackages [crosspredict]: Downloading https://files.pythonhosted.org/packages/16/b4/1e85c6d6cd6dde817c0fd15e9066650097c5fed478bce32399bb94c6d752/crosspredict-1.1.7.tar.gz
+[2023-04-13 16:29:17] INFO root fetch - processPackages [auterion-cli]: executing diffoscope
+[2023-04-13 16:29:17] INFO root fetch - processPackages [auterion-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auterion-cli-1.0.4.tar.gz tmp/auterion-cli-1.0.5.tar.gz --markdown 20230413/a/auterion-cli/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-13 16:29:17] INFO root fetch - processPackages [crosspredict]: executing diffoscope
+[2023-04-13 16:29:17] INFO root fetch - processPackages [crosspredict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosspredict-1.1.6.tar.gz tmp/crosspredict-1.1.7.tar.gz --markdown 20230413/c/crosspredict/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-04-13 16:29:17] INFO root fetch - processPackages [m3-learning]: executing diffoscope
+[2023-04-13 16:29:17] INFO root fetch - processPackages [m3-learning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m3_learning-0.0.8.tar.gz tmp/m3_learning-0.0.9.tar.gz --markdown 20230413/m/m3-learning/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 16:29:18] INFO root fetch - processPackages [auterion-cli]: Start processing: batdetect2
+[2023-04-13 16:29:18] INFO root fetch - main [MainThread]: End processing [auterion-cli]: success
+[2023-04-13 16:29:18] INFO root fetch - processPackages [batdetect2]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 16:29:18] INFO root fetch - processPackages [m3-learning]: Start processing: pyilcd
+[2023-04-13 16:29:18] INFO root fetch - main [MainThread]: End processing [m3-learning]: success
+[2023-04-13 16:29:18] INFO root fetch - processPackages [pyilcd]: New version: [5.0.0] Old Version: [4.0.0]
+[2023-04-13 16:29:19] INFO root fetch - processPackages [crosspredict]: Start processing: Codelock
+[2023-04-13 16:29:19] INFO root fetch - main [MainThread]: End processing [crosspredict]: success
+[2023-04-13 16:29:19] INFO root fetch - processPackages [Codelock]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-13 16:29:19] INFO root fetch - processPackages [batdetect2]: Downloading https://files.pythonhosted.org/packages/d6/19/e931c0d0443cf7294b823fd0837deeb8d7437ec9f3c22559207800d77105/batdetect2-1.0.0.tar.gz
+[2023-04-13 16:29:19] INFO root fetch - processPackages [pyilcd]: Downloading https://files.pythonhosted.org/packages/82/0f/f23d3f7703dd93517e58de1e60433c7cbb006932273f8112a0e64ade6532/pyilcd-4.0.0.tar.gz
+[2023-04-13 16:29:19] INFO root fetch - processPackages [Codelock]: Downloading https://files.pythonhosted.org/packages/8e/ea/5beb609cdec9faab64c8e516e7cc13d8067a1cd2ff27a378b2f59d7b53e4/Codelock-2.1.0.tar.gz
+[2023-04-13 16:29:19] INFO root fetch - processPackages [ftrixminer]: Start processing: hagis
+[2023-04-13 16:29:19] INFO root fetch - main [MainThread]: End processing [ftrixminer]: success
+[2023-04-13 16:29:19] INFO root fetch - processPackages [hagis]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 16:29:19] INFO root fetch - processPackages [pyilcd]: Downloading https://files.pythonhosted.org/packages/d5/99/b23a9b2084d13a14939095edf472801392fb5dc7b275d24c4b21186d526f/pyilcd-5.0.0.tar.gz
+[2023-04-13 16:29:19] INFO root fetch - processPackages [Codelock]: Downloading https://files.pythonhosted.org/packages/2d/66/f6c6e2ba5438a15ead5c232776b7f4dc77b9967b69e9c72e9276f887385a/Codelock-2.1.1.tar.gz
+[2023-04-13 16:29:19] INFO root fetch - processPackages [hagis]: Downloading https://files.pythonhosted.org/packages/1a/0c/f576e218cbca74d0c9283edb3e4614b5c34dc0ca4a16677dd77cef3ec2cd/hagis-0.1.2.tar.gz
+[2023-04-13 16:29:19] INFO root fetch - processPackages [pyilcd]: executing diffoscope
+[2023-04-13 16:29:19] INFO root fetch - processPackages [pyilcd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyilcd-4.0.0.tar.gz tmp/pyilcd-5.0.0.tar.gz --markdown 20230413/p/pyilcd/4.0.0-5.0.0/diff.md --exclude *.pyd
+[2023-04-13 16:29:19] INFO root fetch - processPackages [Codelock]: executing diffoscope
+[2023-04-13 16:29:19] INFO root fetch - processPackages [Codelock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Codelock-2.1.0.tar.gz tmp/Codelock-2.1.1.tar.gz --markdown 20230413/C/Codelock/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-13 16:29:19] INFO root fetch - processPackages [hagis]: executing diffoscope
+[2023-04-13 16:29:19] INFO root fetch - processPackages [hagis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagis-0.1.1.tar.gz tmp/hagis-0.1.2.tar.gz --markdown 20230413/h/hagis/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 16:29:20] INFO root fetch - processPackages [batdetect2]: Downloading https://files.pythonhosted.org/packages/30/43/1bb6a463766ed1b78976fe2a4d3feb24864285d2d5f7cc18f606e4a59a52/batdetect2-1.0.1.tar.gz
+[2023-04-13 16:29:20] INFO root fetch - processPackages [batdetect2]: executing diffoscope
+[2023-04-13 16:29:20] INFO root fetch - processPackages [batdetect2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batdetect2-1.0.0.tar.gz tmp/batdetect2-1.0.1.tar.gz --markdown 20230413/b/batdetect2/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 16:29:20] INFO root fetch - processPackages [hagis]: Start processing: pofile
+[2023-04-13 16:29:20] INFO root fetch - main [MainThread]: End processing [hagis]: success
+[2023-04-13 16:29:20] INFO root fetch - processPackages [pofile]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 16:29:20] INFO root fetch - processPackages [Codelock]: Start processing: py3d
+[2023-04-13 16:29:20] INFO root fetch - main [MainThread]: End processing [Codelock]: success
+[2023-04-13 16:29:20] INFO root fetch - processPackages [py3d]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 16:29:21] INFO root fetch - processPackages [pyilcd]: Start processing: batch-pystoi
+[2023-04-13 16:29:21] INFO root fetch - main [MainThread]: End processing [pyilcd]: success
+[2023-04-13 16:29:21] INFO root fetch - processPackages [pofile]: executing diffoscope
+[2023-04-13 16:29:21] INFO root fetch - processPackages [pofile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pofile-0.0.8.tar.gz tmp/pofile-0.0.9.tar.gz --markdown 20230413/p/pofile/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 16:29:21] INFO root fetch - processPackages [py3d]: executing diffoscope
+[2023-04-13 16:29:21] INFO root fetch - processPackages [py3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3d-0.0.8.tar.gz tmp/py3d-0.0.9.tar.gz --markdown 20230413/p/py3d/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 16:29:21] WARNING root fetch - processPackages [batch-pystoi]: Skipping, unable to determine old version
+[2023-04-13 16:29:21] INFO root fetch - processPackages [batch-pystoi]: Start processing: poppt
+[2023-04-13 16:29:21] INFO root fetch - main [MainThread]: End processing [batch-pystoi] error
+[2023-04-13 16:29:21] INFO root fetch - processPackages [poppt]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-13 16:29:21] INFO root fetch - processPackages [poppt]: Downloading https://files.pythonhosted.org/packages/59/b0/e16919cf29680011fc6e9702a451294ed04bc287859903afd9460838d24a/poppt-0.0.7.tar.gz
+[2023-04-13 16:29:21] INFO root fetch - processPackages [scippneutron]: Start processing: nbox
+[2023-04-13 16:29:21] INFO root fetch - main [MainThread]: End processing [scippneutron]: success
+[2023-04-13 16:29:21] INFO root fetch - processPackages [nbox]: New version: [0.9.9rc0] Old Version: [0.9.9]
+[2023-04-13 16:29:21] INFO root fetch - processPackages [poppt]: executing diffoscope
+[2023-04-13 16:29:21] INFO root fetch - processPackages [poppt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poppt-0.0.6.tar.gz tmp/poppt-0.0.7.tar.gz --markdown 20230413/p/poppt/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-13 16:29:21] INFO root fetch - processPackages [nbox]: executing diffoscope
+[2023-04-13 16:29:21] INFO root fetch - processPackages [nbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbox-0.9.9.tar.gz tmp/nbox-0.9.9rc0.tar.gz --markdown 20230413/n/nbox/0.9.9-0.9.9rc0/diff.md --exclude *.pyd
+[2023-04-13 16:29:21] INFO root fetch - processPackages [batdetect2]: Start processing: spirit-extras
+[2023-04-13 16:29:21] INFO root fetch - main [MainThread]: End processing [batdetect2]: success
+[2023-04-13 16:29:21] INFO root fetch - processPackages [spirit-extras]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 16:29:22] INFO root fetch - processPackages [spirit-extras]: Downloading https://files.pythonhosted.org/packages/8d/0b/f1a26ca3d27d71ddd0ce94d5cde4675bec4edcb4133e990956b97af282f9/spirit-extras-0.0.8.tar.gz
+[2023-04-13 16:29:22] INFO root fetch - processPackages [pofile]: Start processing: bayanpy
+[2023-04-13 16:29:22] INFO root fetch - main [MainThread]: End processing [pofile]: success
+[2023-04-13 16:29:22] INFO root fetch - processPackages [bayanpy]: New version: [0.6.1] Old Version: [0.6]
+[2023-04-13 16:29:22] INFO root fetch - processPackages [spirit-extras]: Downloading https://files.pythonhosted.org/packages/73/d7/a8a543d83392b78606898fb7b2b2cd5200b137d3348437ce5890c0c4b8a9/spirit-extras-0.0.9.tar.gz
+[2023-04-13 16:29:22] INFO root fetch - main [MainThread]: End processing [poppt]: success
+[2023-04-13 16:29:22] INFO root fetch - processPackages [bayanpy]: Downloading https://files.pythonhosted.org/packages/c2/df/49ad72f2222680b31e2e03aacc30b1af1961f57413b23a120e0edb677eba/bayanpy-0.6.1.tar.gz
+[2023-04-13 16:29:22] INFO root fetch - processPackages [spirit-extras]: executing diffoscope
+[2023-04-13 16:29:22] INFO root fetch - processPackages [spirit-extras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spirit-extras-0.0.8.tar.gz tmp/spirit-extras-0.0.9.tar.gz --markdown 20230413/s/spirit-extras/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 16:29:23] INFO root fetch - processPackages [bayanpy]: executing diffoscope
+[2023-04-13 16:29:23] INFO root fetch - processPackages [bayanpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bayanpy-0.6.tar.gz tmp/bayanpy-0.6.1.tar.gz --markdown 20230413/b/bayanpy/0.6-0.6.1/diff.md --exclude *.pyd
+[2023-04-13 16:29:23] INFO root fetch - main [MainThread]: End processing [nbox]: success
+[2023-04-13 16:29:24] INFO root fetch - main [MainThread]: End processing [bayanpy]: success
+[2023-04-13 16:29:24] INFO root fetch - main [MainThread]: End processing [spirit-extras]: success
+[2023-04-13 16:29:25] INFO root fetch - main [MainThread]: End processing [py3d]: success
+[2023-04-13 16:29:25] INFO root fetch - main [MainThread]: Store serial: [17693716]
