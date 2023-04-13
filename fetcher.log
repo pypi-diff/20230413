@@ -6913,3 +6913,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:25:01] INFO root fetch - main [MainThread]: End processing [magnum-cluster-api]: success
 [2023-04-13 05:25:02] INFO root fetch - main [MainThread]: End processing [openapi-python-client]: success
 [2023-04-13 05:25:02] INFO root fetch - main [MainThread]: Store serial: [17686460]
+[2023-04-13 05:30:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686460]
+[2023-04-13 05:30:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-13 05:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ogr-tiller
+[2023-04-13 05:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyxllib
+[2023-04-13 05:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dj-sso-client2
+[2023-04-13 05:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mb-pytorch
+[2023-04-13 05:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DataframeFormatting
+[2023-04-13 05:30:10] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304130331] Old Version: [1.0.202304130326]
+[2023-04-13 05:30:10] INFO root fetch - processPackages [dj-sso-client2]: New version: [2.0.0] Old Version: [1.0.1]
+[2023-04-13 05:30:10] WARNING root fetch - processPackages [DataframeFormatting]: Skipping, unable to determine old version
+[2023-04-13 05:30:10] INFO root fetch - processPackages [DataframeFormatting]: Start processing: pcl-pangu
+[2023-04-13 05:30:10] INFO root fetch - processPackages [ogr-tiller]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 05:30:10] INFO root fetch - main [MainThread]: End processing [DataframeFormatting] error
+[2023-04-13 05:30:10] INFO root fetch - processPackages [pyxllib]: New version: [0.3.9] Old Version: [0.3.8.1]
+[2023-04-13 05:30:10] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 05:30:10] INFO root fetch - processPackages [pyxllib]: executing diffoscope
+[2023-04-13 05:30:10] INFO root fetch - processPackages [pyxllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxllib-0.3.8.1.tar.gz tmp/pyxllib-0.3.9.tar.gz --markdown 20230413/p/pyxllib/0.3.8.1-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 05:30:10] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 05:30:10] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 05:30:10] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/70/b2/2e5353ace05c0584a2d0be02eb3f1d7d5c79936cb516bbbf4ef18371370b/mb_pytorch-1.0.202304130331-py3-none-any.whl
+[2023-04-13 05:30:10] INFO root fetch - processPackages [dj-sso-client2]: Downloading https://files.pythonhosted.org/packages/58/70/d5f2ad5e34445e211595bf9cbc4bc838090fffc83d5419b52640e969aaf7/dj_sso_client2-1.0.1-py3-none-any.whl
+[2023-04-13 05:30:10] INFO root fetch - processPackages [ogr-tiller]: executing diffoscope
+[2023-04-13 05:30:10] INFO root fetch - processPackages [ogr-tiller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogr_tiller-0.0.8.tar.gz tmp/ogr_tiller-0.0.9.tar.gz --markdown 20230413/o/ogr-tiller/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 05:30:10] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-13 05:30:10] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304130326-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304130331-py3-none-any.whl.zip --markdown 20230413/m/mb-pytorch/1.0.202304130326-1.0.202304130331/diff.md --exclude *.pyd
+[2023-04-13 05:30:10] INFO root fetch - processPackages [dj-sso-client2]: Downloading https://files.pythonhosted.org/packages/2f/63/ce4ca7077a0ebc10d12e9c5d76bf87e28791b83dbbddc9af2679667ad601/dj-sso-client2-2.0.0.tar.gz
+[2023-04-13 05:30:11] INFO root fetch - processPackages [dj-sso-client2]: executing diffoscope
+[2023-04-13 05:30:11] INFO root fetch - processPackages [dj-sso-client2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_sso_client2-1.0.1-py3-none-any.whl.zip tmp/dj-sso-client2-2.0.0.tar.gz --markdown 20230413/d/dj-sso-client2/1.0.1-2.0.0/diff.md --exclude *.pyd
+[2023-04-13 05:30:11] INFO root fetch - main [MainThread]: End processing [ogr-tiller]: success
+[2023-04-13 05:30:12] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-13 05:30:12] INFO root fetch - main [MainThread]: End processing [dj-sso-client2]: success
+[2023-04-13 05:30:12] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 05:30:13] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
+[2023-04-13 05:30:13] INFO root fetch - main [MainThread]: Store serial: [17686482]
