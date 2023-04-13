@@ -12859,3 +12859,109 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 11:48:06] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
 [2023-04-13 11:48:11] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-04-13 11:48:11] INFO root fetch - main [MainThread]: Store serial: [17690100]
+[2023-04-13 11:53:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690100]
+[2023-04-13 11:53:19] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-13 11:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metnet
+[2023-04-13 11:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openfl-x
+[2023-04-13 11:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbm-agent
+[2023-04-13 11:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jupyterhub-ldapauthenticator-refresh
+[2023-04-13 11:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: test-query-tool
+[2023-04-13 11:53:19] WARNING root fetch - processPackages [openfl-x]: Skipping, unable to determine old version
+[2023-04-13 11:53:19] INFO root fetch - processPackages [openfl-x]: Start processing: few-shot-priming
+[2023-04-13 11:53:19] INFO root fetch - main [MainThread]: End processing [openfl-x] error
+[2023-04-13 11:53:19] WARNING root fetch - processPackages [jupyterhub-ldapauthenticator-refresh]: Skipping, unable to determine old version
+[2023-04-13 11:53:19] INFO root fetch - processPackages [jupyterhub-ldapauthenticator-refresh]: Start processing: pytest-jupyterhub
+[2023-04-13 11:53:19] INFO root fetch - main [MainThread]: End processing [jupyterhub-ldapauthenticator-refresh] error
+[2023-04-13 11:53:19] INFO root fetch - processPackages [metnet]: New version: [4.1.9] Old Version: [4.1.8]
+[2023-04-13 11:53:19] INFO root fetch - processPackages [dbm-agent]: New version: [8.32.8] Old Version: [8.32.6]
+[2023-04-13 11:53:19] INFO root fetch - processPackages [test-query-tool]: New version: [0.2.9] Old Version: [0.2.87]
+[2023-04-13 11:53:19] WARNING root fetch - processPackages [pytest-jupyterhub]: Skipping, unable to determine old version
+[2023-04-13 11:53:19] INFO root fetch - processPackages [pytest-jupyterhub]: Start processing: testprofile
+[2023-04-13 11:53:19] INFO root fetch - main [MainThread]: End processing [pytest-jupyterhub] error
+[2023-04-13 11:53:19] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:53:20] WARNING root fetch - processPackages [testprofile]: Skipping, unable to determine old version
+[2023-04-13 11:53:20] INFO root fetch - processPackages [testprofile]: Start processing: python-pygaze
+[2023-04-13 11:53:20] INFO root fetch - main [MainThread]: End processing [testprofile] error
+[2023-04-13 11:53:20] INFO root fetch - processPackages [python-pygaze]: New version: [0.7.6] Old Version: [0.7.5a5]
+[2023-04-13 11:53:20] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:53:20] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:53:20] INFO root fetch - processPackages [test-query-tool]: Downloading https://files.pythonhosted.org/packages/ff/76/4f0c1921cdfa41c0cab8d8816975d5e4bcc8adf550531c19e7d8a304f93d/test_query_tool-0.2.9.tar.gz
+[2023-04-13 11:53:20] INFO root fetch - processPackages [metnet]: Downloading https://files.pythonhosted.org/packages/ca/a6/91af4c298e8ef7de92c8375ef031b1529bed30a3dbae573ff7eeab5db4b1/metnet-4.1.8.tar.gz
+[2023-04-13 11:53:20] INFO root fetch - processPackages [python-pygaze]: Downloading https://files.pythonhosted.org/packages/47/9f/997082c3ad03604e1db692bb6263ac280ddfb4e1cafae0b51cddfcf6f623/python-pygaze-0.7.5a5.tar.gz
+[2023-04-13 11:53:20] INFO root fetch - processPackages [test-query-tool]: executing diffoscope
+[2023-04-13 11:53:20] INFO root fetch - processPackages [test-query-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_query_tool-0.2.87.tar.gz tmp/test_query_tool-0.2.9.tar.gz --markdown 20230413/t/test-query-tool/0.2.87-0.2.9/diff.md --exclude *.pyd
+[2023-04-13 11:53:20] INFO root fetch - processPackages [dbm-agent]: executing diffoscope
+[2023-04-13 11:53:20] INFO root fetch - processPackages [dbm-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbm-agent-8.32.6.tar.gz tmp/dbm-agent-8.32.8.tar.gz --markdown 20230413/d/dbm-agent/8.32.6-8.32.8/diff.md --exclude *.pyd
+[2023-04-13 11:53:20] INFO root fetch - processPackages [metnet]: Downloading https://files.pythonhosted.org/packages/85/bb/39cd852da81955e2bed9a14872ebc498732d15953d712c69749126d79f9e/metnet-4.1.9.tar.gz
+[2023-04-13 11:53:20] INFO root fetch - processPackages [python-pygaze]: Downloading https://files.pythonhosted.org/packages/b6/8b/44e760f344603ce59b25125a486985b2faddc1d1032a15cd895cd0c0544f/python-pygaze-0.7.6.tar.gz
+[2023-04-13 11:53:20] INFO root fetch - processPackages [metnet]: executing diffoscope
+[2023-04-13 11:53:20] INFO root fetch - processPackages [metnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metnet-4.1.8.tar.gz tmp/metnet-4.1.9.tar.gz --markdown 20230413/m/metnet/4.1.8-4.1.9/diff.md --exclude *.pyd
+[2023-04-13 11:53:20] INFO root fetch - processPackages [python-pygaze]: executing diffoscope
+[2023-04-13 11:53:20] INFO root fetch - processPackages [python-pygaze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-pygaze-0.7.5a5.tar.gz tmp/python-pygaze-0.7.6.tar.gz --markdown 20230413/p/python-pygaze/0.7.5a5-0.7.6/diff.md --exclude *.pyd
+[2023-04-13 11:53:21] INFO root fetch - processPackages [metnet]: Start processing: openctp-ctp-667
+[2023-04-13 11:53:21] INFO root fetch - main [MainThread]: End processing [metnet]: success
+[2023-04-13 11:53:21] WARNING root fetch - processPackages [openctp-ctp-667]: Skipping, unable to determine old version
+[2023-04-13 11:53:21] INFO root fetch - processPackages [openctp-ctp-667]: Start processing: rpgPy
+[2023-04-13 11:53:21] INFO root fetch - main [MainThread]: End processing [openctp-ctp-667] error
+[2023-04-13 11:53:21] INFO root fetch - processPackages [rpgPy]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 11:53:21] INFO root fetch - processPackages [dbm-agent]: Start processing: sev-snp-measure
+[2023-04-13 11:53:21] INFO root fetch - main [MainThread]: End processing [dbm-agent]: success
+[2023-04-13 11:53:21] INFO root fetch - processPackages [sev-snp-measure]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 11:53:22] INFO root fetch - processPackages [rpgPy]: Downloading https://files.pythonhosted.org/packages/f9/9c/9a2ee848c97171d8dca5de669b819fc5470c4195e13d05b476eb407172bb/rpgPy-0.8.0.tar.gz
+[2023-04-13 11:53:22] INFO root fetch - processPackages [few-shot-priming]: Start processing: laboneq
+[2023-04-13 11:53:22] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:53:22] INFO root fetch - processPackages [laboneq]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-04-13 11:53:22] INFO root fetch - processPackages [sev-snp-measure]: Downloading https://files.pythonhosted.org/packages/20/07/ce0202eea796fc6bf0cc6a9486e85e877d04ee727c879035460e520552b9/sev-snp-measure-0.0.5.tar.gz
+[2023-04-13 11:53:22] INFO root fetch - processPackages [sev-snp-measure]: executing diffoscope
+[2023-04-13 11:53:22] INFO root fetch - processPackages [sev-snp-measure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sev-snp-measure-0.0.4.tar.gz tmp/sev-snp-measure-0.0.5.tar.gz --markdown 20230413/s/sev-snp-measure/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 11:53:22] INFO root fetch - processPackages [laboneq]: Downloading https://files.pythonhosted.org/packages/0e/be/73695180cf81ebc8116c0337446830447b6e89ed92b7a8c8e68b14a3ab8b/laboneq-2.3.0-py3-none-any.whl
+[2023-04-13 11:53:22] INFO root fetch - processPackages [rpgPy]: Downloading https://files.pythonhosted.org/packages/95/be/a78072a656626a68d3b17c7dbe27f3b2c55b5bb2692fd18e338eda986c0c/rpgPy-0.9.0.tar.gz
+[2023-04-13 11:53:22] INFO root fetch - processPackages [laboneq]: Downloading https://files.pythonhosted.org/packages/30/c6/2bcf454c51021e8a4bcfa943f4e083223d21c9faa2f807d14d4c5eab82f5/laboneq-2.4.0-py3-none-any.whl
+[2023-04-13 11:53:22] INFO root fetch - processPackages [rpgPy]: executing diffoscope
+[2023-04-13 11:53:22] INFO root fetch - processPackages [rpgPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpgPy-0.8.0.tar.gz tmp/rpgPy-0.9.0.tar.gz --markdown 20230413/r/rpgPy/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 11:53:22] INFO root fetch - processPackages [laboneq]: executing diffoscope
+[2023-04-13 11:53:22] INFO root fetch - processPackages [laboneq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laboneq-2.3.0-py3-none-any.whl.zip tmp/laboneq-2.4.0-py3-none-any.whl.zip --markdown 20230413/l/laboneq/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-04-13 11:53:22] INFO root fetch - processPackages [python-pygaze]: Start processing: openctp-ctp-669
+[2023-04-13 11:53:22] INFO root fetch - main [MainThread]: End processing [python-pygaze]: success
+[2023-04-13 11:53:22] WARNING root fetch - processPackages [openctp-ctp-669]: Skipping, unable to determine old version
+[2023-04-13 11:53:22] INFO root fetch - processPackages [openctp-ctp-669]: Start processing: nua
+[2023-04-13 11:53:22] INFO root fetch - main [MainThread]: End processing [openctp-ctp-669] error
+[2023-04-13 11:53:22] WARNING root fetch - processPackages [nua]: Skipping, unable to determine old version
+[2023-04-13 11:53:22] INFO root fetch - processPackages [nua]: Start processing: pcl-pangu
+[2023-04-13 11:53:22] INFO root fetch - main [MainThread]: End processing [nua] error
+[2023-04-13 11:53:22] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 11:53:22] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 11:53:22] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 11:53:23] INFO root fetch - processPackages [sev-snp-measure]: Start processing: few-shot-priming
+[2023-04-13 11:53:23] INFO root fetch - main [MainThread]: End processing [sev-snp-measure]: success
+[2023-04-13 11:53:23] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 11:53:23] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 11:53:23] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 11:53:24] INFO root fetch - processPackages [rpgPy]: Start processing: django-coreplus
+[2023-04-13 11:53:24] INFO root fetch - main [MainThread]: End processing [rpgPy]: success
+[2023-04-13 11:53:24] INFO root fetch - processPackages [django-coreplus]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-13 11:53:24] INFO root fetch - processPackages [django-coreplus]: Downloading https://files.pythonhosted.org/packages/e2/ed/2ef2b1b7bff02289fe1168e1a472c9d9e4ce4ac529b654d29400810902c1/django-coreplus-0.3.7.tar.gz
+[2023-04-13 11:53:24] INFO root fetch - processPackages [django-coreplus]: executing diffoscope
+[2023-04-13 11:53:24] INFO root fetch - processPackages [django-coreplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-coreplus-0.3.6.tar.gz tmp/django-coreplus-0.3.7.tar.gz --markdown 20230413/d/django-coreplus/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-13 11:53:24] INFO root fetch - processPackages [few-shot-priming]: Start processing: cqepyutils
+[2023-04-13 11:53:24] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 11:53:24] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 11:53:24] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-13 11:53:24] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230413/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 11:53:25] INFO root fetch - processPackages [laboneq]: Start processing: conformine
+[2023-04-13 11:53:25] INFO root fetch - main [MainThread]: End processing [laboneq]: success
+[2023-04-13 11:53:25] INFO root fetch - processPackages [cqepyutils]: Start processing: ansible-lint
+[2023-04-13 11:53:25] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-13 11:53:25] INFO root fetch - processPackages [conformine]: New version: [0.0.1b14] Old Version: [0.0.1b12]
+[2023-04-13 11:53:25] INFO root fetch - processPackages [ansible-lint]: New version: [6.9.1] Old Version: [6.9.0]
+[2023-04-13 11:53:25] INFO root fetch - processPackages [conformine]: Downloading https://files.pythonhosted.org/packages/52/c9/bd9bf6526c2ed8079c01cb994491086fcca49807ed048c78e93b6dada786/conformine-0.0.1b14.tar.gz
+[2023-04-13 11:53:26] INFO root fetch - processPackages [ansible-lint]: executing diffoscope
+[2023-04-13 11:53:26] INFO root fetch - processPackages [ansible-lint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-lint-6.9.0.tar.gz tmp/ansible-lint-6.9.1.tar.gz --markdown 20230413/a/ansible-lint/6.9.0-6.9.1/diff.md --exclude *.pyd
+[2023-04-13 11:53:26] INFO root fetch - processPackages [conformine]: executing diffoscope
+[2023-04-13 11:53:26] INFO root fetch - processPackages [conformine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conformine-0.0.1b12.tar.gz tmp/conformine-0.0.1b14.tar.gz --markdown 20230413/c/conformine/0.0.1b12-0.0.1b14/diff.md --exclude *.pyd
+[2023-04-13 11:53:27] INFO root fetch - main [MainThread]: End processing [django-coreplus]: success
+[2023-04-13 11:53:27] INFO root fetch - main [MainThread]: End processing [conformine]: success
+[2023-04-13 11:53:27] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 11:53:30] INFO root fetch - main [MainThread]: End processing [test-query-tool]: success
+[2023-04-13 11:53:32] INFO root fetch - main [MainThread]: End processing [ansible-lint]: success
+[2023-04-13 11:53:32] INFO root fetch - main [MainThread]: Store serial: [17690198]
