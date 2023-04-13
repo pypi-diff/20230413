@@ -7932,3 +7932,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 06:54:43] INFO root fetch - main [MainThread]: End processing [happydomain]: success
 [2023-04-13 06:54:43] INFO root fetch - main [MainThread]: End processing [legal-documents-cn]: success
 [2023-04-13 06:54:43] INFO root fetch - main [MainThread]: Store serial: [17687101]
+[2023-04-13 06:59:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687101]
+[2023-04-13 06:59:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-13 06:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: happydomain
+[2023-04-13 06:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chalkpy
+[2023-04-13 06:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cowork
+[2023-04-13 06:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: msaDocModels
+[2023-04-13 06:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: faker-marketdata
+[2023-04-13 06:59:50] INFO root fetch - processPackages [happydomain]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 06:59:50] WARNING root fetch - processPackages [cowork]: Skipping, unable to determine old version
+[2023-04-13 06:59:50] INFO root fetch - processPackages [cowork]: Start processing: image-liveness
+[2023-04-13 06:59:50] INFO root fetch - main [MainThread]: End processing [cowork] error
+[2023-04-13 06:59:50] INFO root fetch - processPackages [faker-marketdata]: New version: [0.4] Old Version: [0.3]
+[2023-04-13 06:59:50] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-13 06:59:50] INFO root fetch - processPackages [msaDocModels]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 06:59:50] WARNING root fetch - processPackages [image-liveness]: Skipping, unable to determine old version
+[2023-04-13 06:59:50] INFO root fetch - processPackages [image-liveness]: Start processing: django-outbox-menu
+[2023-04-13 06:59:50] INFO root fetch - main [MainThread]: End processing [image-liveness] error
+[2023-04-13 06:59:50] INFO root fetch - processPackages [django-outbox-menu]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 06:59:51] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-13 06:59:51] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230413/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-13 06:59:51] INFO root fetch - processPackages [faker-marketdata]: Downloading https://files.pythonhosted.org/packages/ee/c9/c8395289004d9f28107affab0397bfa291be3696060774ace2ddbfd91e18/faker_marketdata-0.3.tar.gz
+[2023-04-13 06:59:51] INFO root fetch - processPackages [msaDocModels]: Downloading https://files.pythonhosted.org/packages/56/0f/69d99cbcb8c722bddeac6aebb0479fa8c7243682c1f6daddd489000439dc/msaDocModels-0.0.8.tar.gz
+[2023-04-13 06:59:51] INFO root fetch - processPackages [happydomain]: Downloading https://files.pythonhosted.org/packages/c9/9a/fb68f2cb2e7215fc41595a537868aa3b9e92b75e653718ce1a44e6a9a5be/happydomain-0.0.5.tar.gz
+[2023-04-13 06:59:51] INFO root fetch - processPackages [happydomain]: executing diffoscope
+[2023-04-13 06:59:51] INFO root fetch - processPackages [happydomain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/happydomain-0.0.4.tar.gz tmp/happydomain-0.0.5.tar.gz --markdown 20230413/h/happydomain/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 06:59:51] INFO root fetch - processPackages [faker-marketdata]: Downloading https://files.pythonhosted.org/packages/ed/24/19bff5577b31cce322eacebeb4994803a9ddfa72f76549f6b55dbc0eb85b/faker_marketdata-0.4.tar.gz
+[2023-04-13 06:59:51] INFO root fetch - processPackages [django-outbox-menu]: executing diffoscope
+[2023-04-13 06:59:51] INFO root fetch - processPackages [django-outbox-menu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-outbox-menu-1.0.8.tar.gz tmp/django-outbox-menu-1.0.9.tar.gz --markdown 20230413/d/django-outbox-menu/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 06:59:51] INFO root fetch - processPackages [faker-marketdata]: executing diffoscope
+[2023-04-13 06:59:51] INFO root fetch - processPackages [faker-marketdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faker_marketdata-0.3.tar.gz tmp/faker_marketdata-0.4.tar.gz --markdown 20230413/f/faker-marketdata/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-13 06:59:51] INFO root fetch - processPackages [msaDocModels]: Downloading https://files.pythonhosted.org/packages/2f/da/7c36532a600ac292c1fec4f775200d779a44eb48ddc5249e3c2fc70dbf4d/msaDocModels-0.0.9.tar.gz
+[2023-04-13 06:59:51] INFO root fetch - processPackages [msaDocModels]: executing diffoscope
+[2023-04-13 06:59:51] INFO root fetch - processPackages [msaDocModels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msaDocModels-0.0.8.tar.gz tmp/msaDocModels-0.0.9.tar.gz --markdown 20230413/m/msaDocModels/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 06:59:52] INFO root fetch - main [MainThread]: End processing [happydomain]: success
+[2023-04-13 06:59:52] INFO root fetch - main [MainThread]: End processing [faker-marketdata]: success
+[2023-04-13 06:59:52] INFO root fetch - main [MainThread]: End processing [msaDocModels]: success
+[2023-04-13 06:59:53] INFO root fetch - main [MainThread]: End processing [django-outbox-menu]: success
+[2023-04-13 06:59:56] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-04-13 06:59:56] INFO root fetch - main [MainThread]: Store serial: [17687123]
