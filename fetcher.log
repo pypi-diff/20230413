@@ -17205,3 +17205,141 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 14:51:13] INFO root fetch - main [MainThread]: End processing [pyams-thesaurus]: success
 [2023-04-13 14:51:48] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2023-04-13 14:51:48] INFO root fetch - main [MainThread]: Store serial: [17692528]
+[2023-04-13 14:56:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17692528]
+[2023-04-13 14:56:57] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-13 14:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: motiflets
+[2023-04-13 14:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cbmos
+[2023-04-13 14:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ogr-tiller
+[2023-04-13 14:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nashbanksync
+[2023-04-13 14:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdktf
+[2023-04-13 14:56:57] INFO root fetch - processPackages [nashbanksync]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 14:56:57] INFO root fetch - processPackages [cbmos]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-13 14:56:57] INFO root fetch - processPackages [motiflets]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-13 14:56:57] INFO root fetch - processPackages [ogr-tiller]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 14:56:57] INFO root fetch - processPackages [cdktf]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-13 14:56:57] INFO root fetch - processPackages [nashbanksync]: executing diffoscope
+[2023-04-13 14:56:57] INFO root fetch - processPackages [nashbanksync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nashbanksync-0.1.8.tar.gz tmp/nashbanksync-0.1.9.tar.gz --markdown 20230413/n/nashbanksync/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 14:56:57] INFO root fetch - processPackages [ogr-tiller]: executing diffoscope
+[2023-04-13 14:56:57] INFO root fetch - processPackages [ogr-tiller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogr_tiller-0.0.8.tar.gz tmp/ogr_tiller-0.0.9.tar.gz --markdown 20230413/o/ogr-tiller/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 14:56:57] INFO root fetch - processPackages [cdktf]: executing diffoscope
+[2023-04-13 14:56:57] INFO root fetch - processPackages [cdktf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-0.9.3.tar.gz tmp/cdktf-0.9.4.tar.gz --markdown 20230413/c/cdktf/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-13 14:56:57] INFO root fetch - processPackages [cbmos]: Downloading https://files.pythonhosted.org/packages/c3/ff/5a546e7d46df2c9714c2c15df271ab5e905d9f94102b3485eb907bce2b98/cbmos-0.2.0.tar.gz
+[2023-04-13 14:56:57] INFO root fetch - processPackages [motiflets]: Downloading https://files.pythonhosted.org/packages/69/2b/b539730cbe5e0cb23a3db232b98af9f08396b5728df1a28336dc520700b8/motiflets-0.2.5.tar.gz
+[2023-04-13 14:56:57] WARNING root fetch - processPackages [motiflets]: Skipping package: exceeds size limit 79461558>=10485760
+[2023-04-13 14:56:57] INFO root fetch - processPackages [motiflets]: Start processing: databutton
+[2023-04-13 14:56:57] INFO root fetch - main [MainThread]: End processing [motiflets] error
+[2023-04-13 14:56:57] INFO root fetch - processPackages [databutton]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-13 14:56:57] INFO root fetch - processPackages [databutton]: executing diffoscope
+[2023-04-13 14:56:57] INFO root fetch - processPackages [databutton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databutton-0.9.1.tar.gz tmp/databutton-0.9.2.tar.gz --markdown 20230413/d/databutton/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-13 14:56:57] INFO root fetch - processPackages [cbmos]: Downloading https://files.pythonhosted.org/packages/d0/44/f142df6d284d00c5f2ac78661fab3b994ea34182b881589ec926dd77d2bf/cbmos-0.3.0.tar.gz
+[2023-04-13 14:56:57] INFO root fetch - processPackages [cbmos]: executing diffoscope
+[2023-04-13 14:56:57] INFO root fetch - processPackages [cbmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbmos-0.2.0.tar.gz tmp/cbmos-0.3.0.tar.gz --markdown 20230413/c/cbmos/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-13 14:56:58] INFO root fetch - processPackages [ogr-tiller]: Start processing: greedyFAS
+[2023-04-13 14:56:58] INFO root fetch - main [MainThread]: End processing [ogr-tiller]: success
+[2023-04-13 14:56:58] INFO root fetch - processPackages [greedyFAS]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-13 14:56:58] INFO root fetch - processPackages [cdktf]: Start processing: few-shot-priming
+[2023-04-13 14:56:58] INFO root fetch - main [MainThread]: End processing [cdktf]: success
+[2023-04-13 14:56:58] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 14:56:58] INFO root fetch - processPackages [nashbanksync]: Start processing: pyriksprot
+[2023-04-13 14:56:58] INFO root fetch - main [MainThread]: End processing [nashbanksync]: success
+[2023-04-13 14:56:58] INFO root fetch - processPackages [pyriksprot]: New version: [2023.4.1] Old Version: [2022.5.2]
+[2023-04-13 14:56:58] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 14:56:58] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 14:56:58] INFO root fetch - processPackages [greedyFAS]: Downloading https://files.pythonhosted.org/packages/17/a1/5db526d0aff1735e04ea3cb4cafd2fb9dfac4d36e8e148dba07b29811754/greedyFAS-1.9.0.tar.gz
+[2023-04-13 14:56:58] INFO root fetch - processPackages [databutton]: Start processing: gym-trading-env
+[2023-04-13 14:56:58] INFO root fetch - main [MainThread]: End processing [databutton]: success
+[2023-04-13 14:56:58] INFO root fetch - processPackages [gym-trading-env]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 14:56:59] INFO root fetch - processPackages [pyriksprot]: Downloading https://files.pythonhosted.org/packages/0a/e6/49aad92e70b8636a46a48b43b8059d591eaac023388ad9a3ec9f147535ad/pyriksprot-2023.4.1.tar.gz
+[2023-04-13 14:56:59] INFO root fetch - processPackages [greedyFAS]: Downloading https://files.pythonhosted.org/packages/5e/ef/a255efe3fba413830c37f81917a8f31daf07ba429901b9c69b8ab1d8061c/greedyFAS-1.9.1.tar.gz
+[2023-04-13 14:56:59] INFO root fetch - processPackages [gym-trading-env]: Downloading https://files.pythonhosted.org/packages/c1/0a/7cb644d9c5395556c29fa4916aabe25195a8537244d97183c09ac72e9a82/gym-trading-env-0.1.8.tar.gz
+[2023-04-13 14:56:59] INFO root fetch - processPackages [greedyFAS]: executing diffoscope
+[2023-04-13 14:56:59] INFO root fetch - processPackages [greedyFAS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greedyFAS-1.9.0.tar.gz tmp/greedyFAS-1.9.1.tar.gz --markdown 20230413/g/greedyFAS/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-13 14:56:59] INFO root fetch - processPackages [gym-trading-env]: executing diffoscope
+[2023-04-13 14:56:59] INFO root fetch - processPackages [gym-trading-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym-trading-env-0.1.7.tar.gz tmp/gym-trading-env-0.1.8.tar.gz --markdown 20230413/g/gym-trading-env/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 14:56:59] INFO root fetch - processPackages [pyriksprot]: executing diffoscope
+[2023-04-13 14:56:59] INFO root fetch - processPackages [pyriksprot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyriksprot-2022.5.2.tar.gz tmp/pyriksprot-2023.4.1.tar.gz --markdown 20230413/p/pyriksprot/2022.5.2-2023.4.1/diff.md --exclude *.pyd
+[2023-04-13 14:56:59] INFO root fetch - processPackages [cbmos]: Start processing: aidd-codebase
+[2023-04-13 14:56:59] INFO root fetch - main [MainThread]: End processing [cbmos]: success
+[2023-04-13 14:56:59] INFO root fetch - processPackages [aidd-codebase]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-13 14:56:59] INFO root fetch - processPackages [aidd-codebase]: Downloading https://files.pythonhosted.org/packages/14/02/0c8aef1ad690a116ff9759207d434bf3799e324d076ba0115f1bdf9bd437/aidd-codebase-0.1.9.tar.gz
+[2023-04-13 14:56:59] INFO root fetch - processPackages [few-shot-priming]: Start processing: dxsp
+[2023-04-13 14:56:59] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 14:56:59] INFO root fetch - processPackages [dxsp]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-13 14:56:59] INFO root fetch - processPackages [aidd-codebase]: Downloading https://files.pythonhosted.org/packages/ac/e2/6762d0cc4873ea1e17a116a87720d0e91045dd5f256c6b219a32b79124c7/aidd-codebase-0.2.0.tar.gz
+[2023-04-13 14:56:59] INFO root fetch - processPackages [aidd-codebase]: executing diffoscope
+[2023-04-13 14:56:59] INFO root fetch - processPackages [aidd-codebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aidd-codebase-0.1.9.tar.gz tmp/aidd-codebase-0.2.0.tar.gz --markdown 20230413/a/aidd-codebase/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 14:57:00] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/19/ba/8c0fae5db2ca4f9c4a6cf15b8cd836681129a8f940f5e29cf55117c5c286/dxsp-1.0.6.tar.gz
+[2023-04-13 14:57:00] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-13 14:57:00] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.5.tar.gz tmp/dxsp-1.0.6.tar.gz --markdown 20230413/d/dxsp/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-13 14:57:00] INFO root fetch - processPackages [gym-trading-env]: Start processing: few-shot-priming
+[2023-04-13 14:57:00] INFO root fetch - main [MainThread]: End processing [gym-trading-env]: success
+[2023-04-13 14:57:00] INFO root fetch - processPackages [greedyFAS]: Start processing: blissful-basics
+[2023-04-13 14:57:00] INFO root fetch - main [MainThread]: End processing [greedyFAS]: success
+[2023-04-13 14:57:00] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 14:57:00] INFO root fetch - processPackages [blissful-basics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-13 14:57:00] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 14:57:00] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 14:57:00] INFO root fetch - processPackages [blissful-basics]: Downloading https://files.pythonhosted.org/packages/45/4e/7109be16bec0b30318911f039164a027077b76002e74c0ab5c1861c55716/blissful_basics-0.2.8.tar.gz
+[2023-04-13 14:57:00] INFO root fetch - processPackages [pyriksprot]: Start processing: tokenizer-viz
+[2023-04-13 14:57:00] INFO root fetch - main [MainThread]: End processing [pyriksprot]: success
+[2023-04-13 14:57:00] INFO root fetch - processPackages [tokenizer-viz]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-13 14:57:01] INFO root fetch - processPackages [aidd-codebase]: Start processing: Geode-Numerics
+[2023-04-13 14:57:01] INFO root fetch - main [MainThread]: End processing [aidd-codebase]: success
+[2023-04-13 14:57:01] INFO root fetch - processPackages [Geode-Numerics]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-04-13 14:57:01] INFO root fetch - processPackages [Geode-Numerics]: Downloading https://files.pythonhosted.org/packages/b2/c4/98d201301be149ed492edc2834e8152d494320631dd26069b080e81654e4/Geode_Numerics-2.0.0-cp39-cp39-win_amd64.whl
+[2023-04-13 14:57:01] INFO root fetch - processPackages [tokenizer-viz]: Downloading https://files.pythonhosted.org/packages/e9/bc/5bedb4e42b98de95f7f4cfd08e30d15f23690bf8a2eea9956fd64412470d/tokenizer-viz-0.2.0.tar.gz
+[2023-04-13 14:57:01] INFO root fetch - processPackages [dxsp]: Start processing: novelcraft-sdk
+[2023-04-13 14:57:01] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-13 14:57:01] WARNING root fetch - processPackages [novelcraft-sdk]: Skipping, unable to determine old version
+[2023-04-13 14:57:01] INFO root fetch - processPackages [novelcraft-sdk]: Start processing: few-shot-priming
+[2023-04-13 14:57:01] INFO root fetch - main [MainThread]: End processing [novelcraft-sdk] error
+[2023-04-13 14:57:01] INFO root fetch - processPackages [tokenizer-viz]: executing diffoscope
+[2023-04-13 14:57:01] INFO root fetch - processPackages [tokenizer-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tokenizer-viz-0.1.2.tar.gz tmp/tokenizer-viz-0.2.0.tar.gz --markdown 20230413/t/tokenizer-viz/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 14:57:01] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 14:57:01] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 14:57:01] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 14:57:01] INFO root fetch - processPackages [Geode-Numerics]: Downloading https://files.pythonhosted.org/packages/19/ff/adad6f24961c09a7a91876854ac6f7c66d1102bf1677132374c2c97824b1/Geode_Numerics-3.0.0-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-13 14:57:01] INFO root fetch - processPackages [blissful-basics]: Downloading https://files.pythonhosted.org/packages/fe/eb/35e4230b4cebd5fb9e3e5b82a0c7bb74c35f9aad17836f1e19d6ee045fe2/blissful_basics-0.2.9.tar.gz
+[2023-04-13 14:57:02] INFO root fetch - processPackages [tokenizer-viz]: Start processing: pdfplumber
+[2023-04-13 14:57:02] INFO root fetch - main [MainThread]: End processing [tokenizer-viz]: success
+[2023-04-13 14:57:02] INFO root fetch - processPackages [Geode-Numerics]: executing diffoscope
+[2023-04-13 14:57:02] INFO root fetch - processPackages [Geode-Numerics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Numerics-2.0.0-cp39-cp39-win_amd64.whl.zip tmp/Geode_Numerics-3.0.0-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230413/G/Geode-Numerics/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-13 14:57:02] INFO root fetch - processPackages [pdfplumber]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-13 14:57:02] INFO root fetch - processPackages [few-shot-priming]: Start processing: mpai-cae-arp
+[2023-04-13 14:57:02] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 14:57:02] INFO root fetch - processPackages [mpai-cae-arp]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-13 14:57:02] INFO root fetch - processPackages [few-shot-priming]: Start processing: pyghmi
+[2023-04-13 14:57:02] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 14:57:02] INFO root fetch - processPackages [pyghmi]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-04-13 14:57:02] INFO root fetch - processPackages [pdfplumber]: Downloading https://files.pythonhosted.org/packages/d1/35/b00e619895383ded99b1060c2150587b531abfbd078c11f8b3fa1e620764/pdfplumber-0.9.0.tar.gz
+[2023-04-13 14:57:02] INFO root fetch - processPackages [blissful-basics]: executing diffoscope
+[2023-04-13 14:57:02] INFO root fetch - processPackages [blissful-basics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blissful_basics-0.2.8.tar.gz tmp/blissful_basics-0.2.9.tar.gz --markdown 20230413/b/blissful-basics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-13 14:57:02] INFO root fetch - processPackages [pdfplumber]: executing diffoscope
+[2023-04-13 14:57:02] INFO root fetch - processPackages [pdfplumber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfplumber-0.8.1.tar.gz tmp/pdfplumber-0.9.0.tar.gz --markdown 20230413/p/pdfplumber/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 14:57:02] INFO root fetch - processPackages [mpai-cae-arp]: Downloading https://files.pythonhosted.org/packages/7b/c4/4ff70f1d7d9fa30f2d6e5e0caf9dfa322d09f391af8e628b3f9a9cea33fb/mpai_cae_arp-0.3.1.tar.gz
+[2023-04-13 14:57:02] INFO root fetch - processPackages [pyghmi]: Downloading https://files.pythonhosted.org/packages/27/57/8c58db6a25b2a8556e1954b059ac47716a3aded7cb576f3437065c65d0b5/pyghmi-1.5.8.tar.gz
+[2023-04-13 14:57:02] INFO root fetch - processPackages [mpai-cae-arp]: executing diffoscope
+[2023-04-13 14:57:02] INFO root fetch - processPackages [mpai-cae-arp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpai_cae_arp-0.3.0.tar.gz tmp/mpai_cae_arp-0.3.1.tar.gz --markdown 20230413/m/mpai-cae-arp/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-13 14:57:03] INFO root fetch - processPackages [pyghmi]: Downloading https://files.pythonhosted.org/packages/00/bd/d99fda7faf6d05024fb628222f8adb30581c4a7c646fb0ca79c207665d3d/pyghmi-1.5.9.tar.gz
+[2023-04-13 14:57:03] INFO root fetch - processPackages [Geode-Numerics]: Start processing: lico
+[2023-04-13 14:57:03] INFO root fetch - main [MainThread]: End processing [Geode-Numerics]: success
+[2023-04-13 14:57:03] INFO root fetch - processPackages [lico]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-13 14:57:03] INFO root fetch - processPackages [pyghmi]: executing diffoscope
+[2023-04-13 14:57:03] INFO root fetch - processPackages [pyghmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyghmi-1.5.8.tar.gz tmp/pyghmi-1.5.9.tar.gz --markdown 20230413/p/pyghmi/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-04-13 14:57:03] INFO root fetch - processPackages [lico]: Downloading https://files.pythonhosted.org/packages/79/c5/e8591416a54c8e5033ab56ac03e2ff9a7439606806548f9b05b8d7d668d9/lico-0.1.2.tar.gz
+[2023-04-13 14:57:03] INFO root fetch - processPackages [mpai-cae-arp]: Start processing: mlpro-mpps
+[2023-04-13 14:57:03] INFO root fetch - main [MainThread]: End processing [mpai-cae-arp]: success
+[2023-04-13 14:57:03] INFO root fetch - processPackages [mlpro-mpps]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-13 14:57:03] INFO root fetch - processPackages [lico]: Downloading https://files.pythonhosted.org/packages/ba/f3/cf8d003978b5ecb9f7b07f8064d2ec240faef5245e382e298cba985e6adf/lico-0.1.3.tar.gz
+[2023-04-13 14:57:04] INFO root fetch - processPackages [lico]: executing diffoscope
+[2023-04-13 14:57:04] INFO root fetch - processPackages [lico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lico-0.1.2.tar.gz tmp/lico-0.1.3.tar.gz --markdown 20230413/l/lico/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-13 14:57:04] INFO root fetch - processPackages [mlpro-mpps]: Downloading https://files.pythonhosted.org/packages/5a/08/78f0f7e57640fbfc5d2b467b43e187bfb70dd32d564e580490d04d5c2633/mlpro_mpps-1.0.1.tar.gz
+[2023-04-13 14:57:04] INFO root fetch - main [MainThread]: End processing [pdfplumber]: success
+[2023-04-13 14:57:04] INFO root fetch - processPackages [mlpro-mpps]: Downloading https://files.pythonhosted.org/packages/51/a9/22fac64d88781f01791b58af8080a0261baa32f2a3026282ed5a0329888d/mlpro_mpps-1.1.0.tar.gz
+[2023-04-13 14:57:04] INFO root fetch - processPackages [mlpro-mpps]: executing diffoscope
+[2023-04-13 14:57:04] INFO root fetch - processPackages [mlpro-mpps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpro_mpps-1.0.1.tar.gz tmp/mlpro_mpps-1.1.0.tar.gz --markdown 20230413/m/mlpro-mpps/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 14:57:05] INFO root fetch - main [MainThread]: End processing [blissful-basics]: success
+[2023-04-13 14:57:05] INFO root fetch - main [MainThread]: End processing [lico]: success
+[2023-04-13 14:57:05] INFO root fetch - main [MainThread]: End processing [pyghmi]: success
+[2023-04-13 14:57:06] INFO root fetch - main [MainThread]: End processing [mlpro-mpps]: success
+[2023-04-13 14:57:06] INFO root fetch - main [MainThread]: Store serial: [17692605]
