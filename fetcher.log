@@ -15591,3 +15591,170 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 13:42:13] INFO root fetch - main [MainThread]: End processing [nucliadb-utils]: success
 [2023-04-13 13:42:13] INFO root fetch - main [MainThread]: End processing [nucliadb-sdk]: success
 [2023-04-13 13:42:13] INFO root fetch - main [MainThread]: Store serial: [17691560]
+[2023-04-13 13:47:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17691560]
+[2023-04-13 13:47:20] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-13 13:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gmltools
+[2023-04-13 13:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: krrsnkapi
+[2023-04-13 13:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wzl-udi
+[2023-04-13 13:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-tally
+[2023-04-13 13:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phiflow
+[2023-04-13 13:47:20] INFO root fetch - processPackages [gmltools]: New version: [0.0.52] Old Version: [0.0.51]
+[2023-04-13 13:47:20] WARNING root fetch - processPackages [pytest-tally]: Skipping, unable to determine old version
+[2023-04-13 13:47:20] INFO root fetch - processPackages [pytest-tally]: Start processing: torchx-nightly
+[2023-04-13 13:47:20] INFO root fetch - main [MainThread]: End processing [pytest-tally] error
+[2023-04-13 13:47:20] INFO root fetch - processPackages [wzl-udi]: New version: [8.2.4] Old Version: [8.2.3]
+[2023-04-13 13:47:20] WARNING root fetch - processPackages [krrsnkapi]: Skipping, unable to determine old version
+[2023-04-13 13:47:20] INFO root fetch - processPackages [krrsnkapi]: Start processing: spectacularAI
+[2023-04-13 13:47:20] INFO root fetch - processPackages [phiflow]: New version: [2.3.3] Old Version: [2.3.2]
+[2023-04-13 13:47:20] INFO root fetch - main [MainThread]: End processing [krrsnkapi] error
+[2023-04-13 13:47:20] INFO root fetch - processPackages [spectacularAI]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-13 13:47:20] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-13 13:47:20] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/64/7e/e11c19e9ca9b91231a162eaef70dd4c7a3bb13bfa94571ee10713825260f/gmltools-0.0.52.tar.gz
+[2023-04-13 13:47:20] INFO root fetch - processPackages [wzl-udi]: Downloading https://files.pythonhosted.org/packages/4e/f9/880f80dd65d6ffd70f3e6f272746553333684bcffc5a0c4bfc9db73e360e/wzl-udi-8.2.3.tar.gz
+[2023-04-13 13:47:20] INFO root fetch - processPackages [phiflow]: Downloading https://files.pythonhosted.org/packages/d6/7b/0920b840572cd941103fce81995e0739f9aecc2923ac787b88fa2448e49f/phiflow-2.3.2.tar.gz
+[2023-04-13 13:47:20] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-04-13 13:47:20] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.51.tar.gz tmp/gmltools-0.0.52.tar.gz --markdown 20230413/g/gmltools/0.0.51-0.0.52/diff.md --exclude *.pyd
+[2023-04-13 13:47:20] INFO root fetch - processPackages [spectacularAI]: executing diffoscope
+[2023-04-13 13:47:20] INFO root fetch - processPackages [spectacularAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectacularAI-1.8.0-cp39-cp39-win_amd64.whl.zip tmp/spectacularAI-1.9.0-cp39-cp39-win_amd64.whl.zip --markdown 20230413/s/spectacularAI/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-13 13:47:20] INFO root fetch - processPackages [wzl-udi]: Downloading https://files.pythonhosted.org/packages/42/06/f5575f00ea9094de0275801fbdec82c349a1dd14318b380ef903a03bb005/wzl-udi-8.2.4.tar.gz
+[2023-04-13 13:47:21] INFO root fetch - processPackages [phiflow]: Downloading https://files.pythonhosted.org/packages/2c/51/883950d0b003608cc29318861c0ccf0b3288a9053d9cbad511e6aca7e837/phiflow-2.3.3.tar.gz
+[2023-04-13 13:47:21] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-04-13 13:47:21] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.4.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230413/t/torchx-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-13 13:47:21] INFO root fetch - processPackages [wzl-udi]: executing diffoscope
+[2023-04-13 13:47:21] INFO root fetch - processPackages [wzl-udi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wzl-udi-8.2.3.tar.gz tmp/wzl-udi-8.2.4.tar.gz --markdown 20230413/w/wzl-udi/8.2.3-8.2.4/diff.md --exclude *.pyd
+[2023-04-13 13:47:21] INFO root fetch - processPackages [phiflow]: executing diffoscope
+[2023-04-13 13:47:21] INFO root fetch - processPackages [phiflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phiflow-2.3.2.tar.gz tmp/phiflow-2.3.3.tar.gz --markdown 20230413/p/phiflow/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2023-04-13 13:47:22] INFO root fetch - processPackages [wzl-udi]: Start processing: crepex-pyutil
+[2023-04-13 13:47:22] INFO root fetch - main [MainThread]: End processing [wzl-udi]: success
+[2023-04-13 13:47:22] INFO root fetch - processPackages [crepex-pyutil]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-04-13 13:47:22] ERROR root fetch - processPackages [spectacularAI]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140028013452640)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140028147670528)
+
+[2023-04-13 13:47:22] INFO root fetch - processPackages [spectacularAI]: Start processing: msaDocModels
+[2023-04-13 13:47:22] INFO root fetch - main [MainThread]: End processing [spectacularAI] error
+[2023-04-13 13:47:22] INFO root fetch - processPackages [msaDocModels]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 13:47:22] INFO root fetch - processPackages [msaDocModels]: executing diffoscope
+[2023-04-13 13:47:22] INFO root fetch - processPackages [msaDocModels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msaDocModels-0.0.8.tar.gz tmp/msaDocModels-0.0.9.tar.gz --markdown 20230413/m/msaDocModels/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 13:47:22] INFO root fetch - processPackages [crepex-pyutil]: Downloading https://files.pythonhosted.org/packages/a0/28/2798060fec7bb1ab69bdefb5a2e3a8d04d7c4042314e49948443146ca618/crepex_pyutil-0.1.4.tar.gz
+[2023-04-13 13:47:22] INFO root fetch - processPackages [crepex-pyutil]: Downloading https://files.pythonhosted.org/packages/f3/ef/f004ec728d4339d236b711c21dfc8b54a9fc3006247c2bdca46ac60ee2bd/crepex_pyutil-0.2.0.tar.gz
+[2023-04-13 13:47:22] INFO root fetch - processPackages [torchx-nightly]: Start processing: brugernavn
+[2023-04-13 13:47:22] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-04-13 13:47:22] INFO root fetch - processPackages [crepex-pyutil]: executing diffoscope
+[2023-04-13 13:47:22] INFO root fetch - processPackages [crepex-pyutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crepex_pyutil-0.1.4.tar.gz tmp/crepex_pyutil-0.2.0.tar.gz --markdown 20230413/c/crepex-pyutil/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 13:47:22] INFO root fetch - processPackages [brugernavn]: New version: [0.2.0rc1] Old Version: [0.2.0]
+[2023-04-13 13:47:22] INFO root fetch - processPackages [brugernavn]: Downloading https://files.pythonhosted.org/packages/08/9c/03593b5986c8487987f7a354e6afaa502e7f20092cf3590241636cfdda43/brugernavn-0.2.0.tar.gz
+[2023-04-13 13:47:22] INFO root fetch - processPackages [phiflow]: Start processing: caluma
+[2023-04-13 13:47:22] INFO root fetch - main [MainThread]: End processing [phiflow]: success
+[2023-04-13 13:47:22] INFO root fetch - processPackages [caluma]: New version: [8.0.0b9] Old Version: [8.0.0b8]
+[2023-04-13 13:47:23] INFO root fetch - processPackages [caluma]: Downloading https://files.pythonhosted.org/packages/fd/3b/e5e52163f8af49b36294951eb65e99b8f37b89bd88aceb3147306ffcbc99/caluma-8.0.0b8.tar.gz
+[2023-04-13 13:47:23] INFO root fetch - processPackages [brugernavn]: Downloading https://files.pythonhosted.org/packages/1c/e4/187f2ee9ce15addb8da513bf240d27119401cf2dd498a049081425e8b416/brugernavn-0.2.0rc1.tar.gz
+[2023-04-13 13:47:23] INFO root fetch - processPackages [brugernavn]: executing diffoscope
+[2023-04-13 13:47:23] INFO root fetch - processPackages [brugernavn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brugernavn-0.2.0.tar.gz tmp/brugernavn-0.2.0rc1.tar.gz --markdown 20230413/b/brugernavn/0.2.0-0.2.0rc1/diff.md --exclude *.pyd
+[2023-04-13 13:47:23] INFO root fetch - processPackages [gmltools]: Start processing: sdc11073
+[2023-04-13 13:47:23] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-04-13 13:47:23] INFO root fetch - processPackages [sdc11073]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-13 13:47:23] INFO root fetch - processPackages [caluma]: Downloading https://files.pythonhosted.org/packages/63/1d/5b4b01105a9ff4eedad7871f4fb1b5d942b97fa82c95bf9fb9533c917e1f/caluma-8.0.0b9.tar.gz
+[2023-04-13 13:47:23] INFO root fetch - processPackages [sdc11073]: Downloading https://files.pythonhosted.org/packages/1e/00/d07da9e7945be10e41336f3a0b70cbc96637e78b8590e63263cf0056b486/sdc11073-1.1.8-py3-none-any.whl
+[2023-04-13 13:47:23] INFO root fetch - processPackages [crepex-pyutil]: Start processing: splinepy
+[2023-04-13 13:47:23] INFO root fetch - main [MainThread]: End processing [crepex-pyutil]: success
+[2023-04-13 13:47:23] INFO root fetch - processPackages [caluma]: executing diffoscope
+[2023-04-13 13:47:23] INFO root fetch - processPackages [caluma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caluma-8.0.0b8.tar.gz tmp/caluma-8.0.0b9.tar.gz --markdown 20230413/c/caluma/8.0.0b8-8.0.0b9/diff.md --exclude *.pyd
+[2023-04-13 13:47:23] INFO root fetch - processPackages [splinepy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 13:47:23] INFO root fetch - main [MainThread]: End processing [msaDocModels]: success
+[2023-04-13 13:47:24] INFO root fetch - processPackages [splinepy]: Downloading https://files.pythonhosted.org/packages/bb/f9/449dc1918123e036b143d10967e10c2e9cf37b8ea4d1fc2f55c29b53f70c/splinepy-0.0.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-13 13:47:24] INFO root fetch - processPackages [sdc11073]: Downloading https://files.pythonhosted.org/packages/a3/04/909d69a9e0aa33d48b6cc21951d88eea95467c0d2fa6371850e05ffa1d9c/sdc11073-1.1.9-py3-none-any.whl
+[2023-04-13 13:47:24] INFO root fetch - main [MainThread]: End processing [brugernavn]: success
+[2023-04-13 13:47:24] INFO root fetch - processPackages [sdc11073]: executing diffoscope
+[2023-04-13 13:47:24] INFO root fetch - processPackages [sdc11073]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdc11073-1.1.8-py3-none-any.whl.zip tmp/sdc11073-1.1.9-py3-none-any.whl.zip --markdown 20230413/s/sdc11073/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-13 13:47:24] WARNING root fetch - processPackages [splinepy]: Skipping package: exceeds size limit 12503999>=10485760
+[2023-04-13 13:47:24] INFO root fetch - main [MainThread]: End processing [splinepy] error
+[2023-04-13 13:47:25] INFO root fetch - main [MainThread]: End processing [caluma]: success
+[2023-04-13 13:47:26] INFO root fetch - main [MainThread]: End processing [sdc11073]: success
+[2023-04-13 13:47:26] INFO root fetch - main [MainThread]: Store serial: [17691616]
