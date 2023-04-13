@@ -10558,3 +10558,83 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 09:56:07] INFO root fetch - main [MainThread]: End processing [libMecapack]: success
 [2023-04-13 09:56:08] INFO root fetch - main [MainThread]: End processing [spectrochempy]: success
 [2023-04-13 09:56:08] INFO root fetch - main [MainThread]: Store serial: [17688666]
+[2023-04-13 10:01:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17688666]
+[2023-04-13 10:01:18] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-13 10:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libMecapack
+[2023-04-13 10:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libMecapack_light
+[2023-04-13 10:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kevin-toolbox
+[2023-04-13 10:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kevin-toolbox-dev
+[2023-04-13 10:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo12-addon-stock-return-request
+[2023-04-13 10:01:18] INFO root fetch - processPackages [kevin-toolbox-dev]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-13 10:01:18] INFO root fetch - processPackages [odoo12-addon-stock-return-request]: New version: [12.0.1.0.2.99.dev9] Old Version: [12.0.1.0.2.99.dev8]
+[2023-04-13 10:01:18] INFO root fetch - processPackages [libMecapack_light]: New version: [1.1.0] Old Version: [1.0.7]
+[2023-04-13 10:01:18] INFO root fetch - processPackages [libMecapack]: New version: [1.1.0] Old Version: [1.0.7]
+[2023-04-13 10:01:18] INFO root fetch - processPackages [kevin-toolbox]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-13 10:01:18] INFO root fetch - processPackages [libMecapack]: executing diffoscope
+[2023-04-13 10:01:18] INFO root fetch - processPackages [libMecapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libMecapack-1.0.7.tar.gz tmp/libMecapack-1.1.0.tar.gz --markdown 20230413/l/libMecapack/1.0.7-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 10:01:18] INFO root fetch - processPackages [kevin-toolbox-dev]: Downloading https://files.pythonhosted.org/packages/30/07/41036fbc62f89e65dc941d5de02c1005f294831742fce0de27f1e4b1dbbc/kevin-toolbox-dev-1.0.4.tar.gz
+[2023-04-13 10:01:18] INFO root fetch - processPackages [odoo12-addon-stock-return-request]: Downloading https://files.pythonhosted.org/packages/a0/f8/420749911a392eddb386633f25d0071f927fd5efcdc09fd12fdf39d75836/odoo12_addon_stock_return_request-12.0.1.0.2.99.dev8-py3-none-any.whl
+[2023-04-13 10:01:18] INFO root fetch - processPackages [libMecapack_light]: Downloading https://files.pythonhosted.org/packages/0f/75/8765d6176c23b5c748daf09065bb65b61dd732e4e306c322e05a5aa4b55d/libMecapack_light-1.0.7.tar.gz
+[2023-04-13 10:01:18] INFO root fetch - processPackages [kevin-toolbox]: Downloading https://files.pythonhosted.org/packages/88/ce/2b5ff470a7c55bab27a7c979f283a9086ee819958f4b792f7e9c74207014/kevin-toolbox-1.0.4.tar.gz
+[2023-04-13 10:01:18] INFO root fetch - processPackages [kevin-toolbox]: executing diffoscope
+[2023-04-13 10:01:18] INFO root fetch - processPackages [kevin-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kevin-toolbox-1.0.3.tar.gz tmp/kevin-toolbox-1.0.4.tar.gz --markdown 20230413/k/kevin-toolbox/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-13 10:01:18] INFO root fetch - processPackages [kevin-toolbox-dev]: executing diffoscope
+[2023-04-13 10:01:18] INFO root fetch - processPackages [kevin-toolbox-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kevin-toolbox-dev-1.0.3.tar.gz tmp/kevin-toolbox-dev-1.0.4.tar.gz --markdown 20230413/k/kevin-toolbox-dev/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-13 10:01:19] INFO root fetch - processPackages [libMecapack_light]: Downloading https://files.pythonhosted.org/packages/56/84/310adf44d5858dd7b50f6cfd4c6d15ec992571b01a10cf2b7970c9b9562a/libMecapack_light-1.1.0.tar.gz
+[2023-04-13 10:01:19] INFO root fetch - processPackages [odoo12-addon-stock-return-request]: Downloading https://files.pythonhosted.org/packages/6e/d2/f7113ddf9a3f34ebf18d0ee65a73918ddf0d8b8357678f927a6d48af1a1e/odoo12_addon_stock_return_request-12.0.1.0.2.99.dev9-py3-none-any.whl
+[2023-04-13 10:01:19] INFO root fetch - processPackages [libMecapack_light]: executing diffoscope
+[2023-04-13 10:01:19] INFO root fetch - processPackages [libMecapack_light]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libMecapack_light-1.0.7.tar.gz tmp/libMecapack_light-1.1.0.tar.gz --markdown 20230413/l/libMecapack_light/1.0.7-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 10:01:19] INFO root fetch - processPackages [odoo12-addon-stock-return-request]: executing diffoscope
+[2023-04-13 10:01:19] INFO root fetch - processPackages [odoo12-addon-stock-return-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_stock_return_request-12.0.1.0.2.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_stock_return_request-12.0.1.0.2.99.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-stock-return-request/12.0.1.0.2.99.dev8-12.0.1.0.2.99.dev9/diff.md --exclude *.pyd
+[2023-04-13 10:01:19] INFO root fetch - processPackages [libMecapack]: Start processing: pyspartn
+[2023-04-13 10:01:19] INFO root fetch - main [MainThread]: End processing [libMecapack]: success
+[2023-04-13 10:01:19] INFO root fetch - processPackages [pyspartn]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-13 10:01:20] INFO root fetch - processPackages [pyspartn]: Downloading https://files.pythonhosted.org/packages/15/b7/0313efb143179bfb50e35489b8f9bbf687af952b8281b63cab24da1802f5/pyspartn-0.1.4-py3-none-any.whl
+[2023-04-13 10:01:20] INFO root fetch - processPackages [pyspartn]: Downloading https://files.pythonhosted.org/packages/35/7c/f9c7c5efe65acf1ebf884be795fe26173a2ad7c65055f21674b47411ca8c/pyspartn-0.1.5.tar.gz
+[2023-04-13 10:01:20] INFO root fetch - processPackages [pyspartn]: executing diffoscope
+[2023-04-13 10:01:20] INFO root fetch - processPackages [pyspartn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspartn-0.1.4-py3-none-any.whl.zip tmp/pyspartn-0.1.5.tar.gz --markdown 20230413/p/pyspartn/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-13 10:01:20] INFO root fetch - processPackages [odoo12-addon-stock-return-request]: Start processing: lusid-drive-sdk
+[2023-04-13 10:01:20] INFO root fetch - main [MainThread]: End processing [odoo12-addon-stock-return-request]: success
+[2023-04-13 10:01:20] INFO root fetch - processPackages [lusid-drive-sdk]: New version: [0.1.96] Old Version: [0.1.95]
+[2023-04-13 10:01:20] INFO root fetch - processPackages [libMecapack_light]: Start processing: pyfem
+[2023-04-13 10:01:20] INFO root fetch - main [MainThread]: End processing [libMecapack_light]: success
+[2023-04-13 10:01:20] WARNING root fetch - processPackages [pyfem]: Skipping, unable to determine old version
+[2023-04-13 10:01:20] INFO root fetch - processPackages [pyfem]: Start processing: lusid-drive-sdk-preview
+[2023-04-13 10:01:20] INFO root fetch - main [MainThread]: End processing [pyfem] error
+[2023-04-13 10:01:20] INFO root fetch - processPackages [lusid-drive-sdk-preview]: New version: [0.1.96] Old Version: [0.1.95]
+[2023-04-13 10:01:20] INFO root fetch - processPackages [lusid-drive-sdk]: Downloading https://files.pythonhosted.org/packages/de/c4/d650d6220b8a796e210b789647cfcab1357ab3bd9085ea87d503604999f7/lusid-drive-sdk-0.1.95.tar.gz
+[2023-04-13 10:01:20] INFO root fetch - processPackages [kevin-toolbox]: Start processing: SCAutolib
+[2023-04-13 10:01:20] INFO root fetch - main [MainThread]: End processing [kevin-toolbox]: success
+[2023-04-13 10:01:20] INFO root fetch - processPackages [kevin-toolbox-dev]: Start processing: gameSooyey
+[2023-04-13 10:01:20] INFO root fetch - main [MainThread]: End processing [kevin-toolbox-dev]: success
+[2023-04-13 10:01:20] INFO root fetch - processPackages [lusid-drive-sdk-preview]: Downloading https://files.pythonhosted.org/packages/3c/36/7ba764c059e4db444f6cf2e73cd8a04b8f90fa2ed8bc8e663f775912d783/lusid-drive-sdk-preview-0.1.95.tar.gz
+[2023-04-13 10:01:20] INFO root fetch - processPackages [SCAutolib]: New version: [1.0.17] Old Version: [1.0.16]
+[2023-04-13 10:01:21] WARNING root fetch - processPackages [gameSooyey]: Skipping, unable to determine old version
+[2023-04-13 10:01:21] INFO root fetch - processPackages [gameSooyey]: Start processing: dbsqlclone
+[2023-04-13 10:01:21] INFO root fetch - main [MainThread]: End processing [gameSooyey] error
+[2023-04-13 10:01:21] INFO root fetch - processPackages [lusid-drive-sdk]: Downloading https://files.pythonhosted.org/packages/df/40/34d8137d43f70f7a96037ba54cbbab838b9ae0bc84531d2be22cb7d3a967/lusid-drive-sdk-0.1.96.tar.gz
+[2023-04-13 10:01:21] INFO root fetch - processPackages [SCAutolib]: Downloading https://files.pythonhosted.org/packages/00/fb/36072b862f3e73d3142a0125a9d7aeb2605d609c665aa0cde80c1a1a1b30/SCAutolib-1.0.16.tar.gz
+[2023-04-13 10:01:21] INFO root fetch - processPackages [dbsqlclone]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 10:01:21] INFO root fetch - processPackages [dbsqlclone]: Downloading https://files.pythonhosted.org/packages/5c/3b/25d077adf5009895ff92187030733c4f9d9d67c733a8adf52441ed94deb9/dbsqlclone-0.1.8-py3-none-any.whl
+[2023-04-13 10:01:21] INFO root fetch - processPackages [lusid-drive-sdk]: executing diffoscope
+[2023-04-13 10:01:21] INFO root fetch - processPackages [lusid-drive-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-drive-sdk-0.1.95.tar.gz tmp/lusid-drive-sdk-0.1.96.tar.gz --markdown 20230413/l/lusid-drive-sdk/0.1.95-0.1.96/diff.md --exclude *.pyd
+[2023-04-13 10:01:21] INFO root fetch - processPackages [SCAutolib]: Downloading https://files.pythonhosted.org/packages/bd/8a/84c96fdc823e6a64a9f543b44fb8d74771f4f0b714e4fc4ba9e6f89f869d/SCAutolib-1.0.17.tar.gz
+[2023-04-13 10:01:21] INFO root fetch - processPackages [pyspartn]: Start processing: oneai
+[2023-04-13 10:01:21] INFO root fetch - main [MainThread]: End processing [pyspartn]: success
+[2023-04-13 10:01:21] INFO root fetch - processPackages [SCAutolib]: executing diffoscope
+[2023-04-13 10:01:21] INFO root fetch - processPackages [SCAutolib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SCAutolib-1.0.16.tar.gz tmp/SCAutolib-1.0.17.tar.gz --markdown 20230413/S/SCAutolib/1.0.16-1.0.17/diff.md --exclude *.pyd
+[2023-04-13 10:01:21] INFO root fetch - processPackages [lusid-drive-sdk-preview]: Downloading https://files.pythonhosted.org/packages/61/f8/d24acce70923cfb6b98f767d1ae2f0c298d30f53032363ce65751be8b091/lusid-drive-sdk-preview-0.1.96.tar.gz
+[2023-04-13 10:01:21] INFO root fetch - processPackages [oneai]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 10:01:21] INFO root fetch - processPackages [dbsqlclone]: Downloading https://files.pythonhosted.org/packages/97/66/ab70f5efb866ced4bd1cb01cad991391c38de6937f1f060ec3ab1791a180/dbsqlclone-0.1.9-py3-none-any.whl
+[2023-04-13 10:01:21] INFO root fetch - processPackages [lusid-drive-sdk-preview]: executing diffoscope
+[2023-04-13 10:01:21] INFO root fetch - processPackages [lusid-drive-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-drive-sdk-preview-0.1.95.tar.gz tmp/lusid-drive-sdk-preview-0.1.96.tar.gz --markdown 20230413/l/lusid-drive-sdk-preview/0.1.95-0.1.96/diff.md --exclude *.pyd
+[2023-04-13 10:01:22] INFO root fetch - processPackages [oneai]: executing diffoscope
+[2023-04-13 10:01:22] INFO root fetch - processPackages [oneai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oneai-0.9.8.tar.gz tmp/oneai-0.9.9.tar.gz --markdown 20230413/o/oneai/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 10:01:22] INFO root fetch - processPackages [dbsqlclone]: executing diffoscope
+[2023-04-13 10:01:22] INFO root fetch - processPackages [dbsqlclone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbsqlclone-0.1.8-py3-none-any.whl.zip tmp/dbsqlclone-0.1.9-py3-none-any.whl.zip --markdown 20230413/d/dbsqlclone/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 10:01:22] INFO root fetch - main [MainThread]: End processing [lusid-drive-sdk]: success
+[2023-04-13 10:01:22] INFO root fetch - main [MainThread]: End processing [SCAutolib]: success
+[2023-04-13 10:01:23] INFO root fetch - main [MainThread]: End processing [oneai]: success
+[2023-04-13 10:01:23] INFO root fetch - main [MainThread]: End processing [lusid-drive-sdk-preview]: success
+[2023-04-13 10:01:23] INFO root fetch - main [MainThread]: End processing [dbsqlclone]: success
+[2023-04-13 10:01:23] INFO root fetch - main [MainThread]: Store serial: [17688708]
