@@ -13878,3 +13878,105 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 12:58:51] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2023-04-13 12:58:52] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-04-13 12:58:52] INFO root fetch - main [MainThread]: Store serial: [17690829]
+[2023-04-13 13:03:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690829]
+[2023-04-13 13:04:00] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-13 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oakvar
+[2023-04-13 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EOxServer
+[2023-04-13 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lantools-nsa
+[2023-04-13 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zahner-analysis
+[2023-04-13 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opensesame-core
+[2023-04-13 13:04:00] INFO root fetch - processPackages [oakvar]: New version: [2.9.5] Old Version: [2.9.4]
+[2023-04-13 13:04:00] INFO root fetch - processPackages [opensesame-core]: New version: [4.0.0a5] Old Version: [4.0.0a3]
+[2023-04-13 13:04:00] INFO root fetch - processPackages [EOxServer]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-13 13:04:00] INFO root fetch - processPackages [zahner-analysis]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-13 13:04:00] WARNING root fetch - processPackages [lantools-nsa]: Skipping, unable to determine old version
+[2023-04-13 13:04:00] INFO root fetch - processPackages [lantools-nsa]: Start processing: pyhealthbox3
+[2023-04-13 13:04:00] INFO root fetch - main [MainThread]: End processing [lantools-nsa] error
+[2023-04-13 13:04:00] INFO root fetch - processPackages [opensesame-core]: Downloading https://files.pythonhosted.org/packages/42/3e/bd20b88d0e998c47d4cd4a8f5752d7147d28866434db727f275c00413e40/opensesame_core-4.0.0a3.tar.gz
+[2023-04-13 13:04:00] INFO root fetch - processPackages [pyhealthbox3]: New version: [0.0.17] Old Version: [0.0.16]
+[2023-04-13 13:04:00] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/ca/84/dedee62daa958cb21571ff75241f8a95646525c9d3d49fb2593b90997c2a/oakvar-2.9.5.tar.gz
+[2023-04-13 13:04:00] INFO root fetch - processPackages [EOxServer]: Downloading https://files.pythonhosted.org/packages/29/59/b25f5c662d48423d5234fc70f46df76d0d8ce58f2e6f8c12cfb40e82c8c2/EOxServer-1.2.4.tar.gz
+[2023-04-13 13:04:00] INFO root fetch - processPackages [zahner-analysis]: Downloading https://files.pythonhosted.org/packages/4b/c1/ae3b0eb170c5dff13ead0fb78691a3b315027a6d3783af77e73a4bcb0949/zahner_analysis-1.0.3.tar.gz
+[2023-04-13 13:04:00] WARNING root fetch - processPackages [opensesame-core]: Skipping package: exceeds size limit 18335907>=10485760
+[2023-04-13 13:04:00] INFO root fetch - processPackages [opensesame-core]: Start processing: dknovautils
+[2023-04-13 13:04:00] INFO root fetch - main [MainThread]: End processing [opensesame-core] error
+[2023-04-13 13:04:01] INFO root fetch - processPackages [pyhealthbox3]: Downloading https://files.pythonhosted.org/packages/ba/8f/8e926914aee550c38f8d26b614ecc7d1675f601adca810d34748ee78a434/pyhealthbox3-0.0.16.tar.gz
+[2023-04-13 13:04:01] INFO root fetch - processPackages [dknovautils]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 13:04:01] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-04-13 13:04:01] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.4.tar.gz tmp/oakvar-2.9.5.tar.gz --markdown 20230413/o/oakvar/2.9.4-2.9.5/diff.md --exclude *.pyd
+[2023-04-13 13:04:01] INFO root fetch - processPackages [dknovautils]: executing diffoscope
+[2023-04-13 13:04:01] INFO root fetch - processPackages [dknovautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dknovautils-0.0.2.tar.gz tmp/dknovautils-0.0.3.tar.gz --markdown 20230413/d/dknovautils/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 13:04:01] INFO root fetch - processPackages [pyhealthbox3]: Downloading https://files.pythonhosted.org/packages/6c/c0/251096cce00f2a5a79b0bd9c416e758644e536eb333f7b3120fe27479d9f/pyhealthbox3-0.0.17.tar.gz
+[2023-04-13 13:04:01] INFO root fetch - processPackages [zahner-analysis]: Downloading https://files.pythonhosted.org/packages/29/6e/8b71d044ee5460cd13dc4f47f0ecaaabe67c9fc21ef43f29bef388fc47bb/zahner_analysis-1.0.4.tar.gz
+[2023-04-13 13:04:01] INFO root fetch - processPackages [pyhealthbox3]: executing diffoscope
+[2023-04-13 13:04:01] INFO root fetch - processPackages [pyhealthbox3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhealthbox3-0.0.16.tar.gz tmp/pyhealthbox3-0.0.17.tar.gz --markdown 20230413/p/pyhealthbox3/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2023-04-13 13:04:01] INFO root fetch - processPackages [zahner-analysis]: executing diffoscope
+[2023-04-13 13:04:01] INFO root fetch - processPackages [zahner-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zahner_analysis-1.0.3.tar.gz tmp/zahner_analysis-1.0.4.tar.gz --markdown 20230413/z/zahner-analysis/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-13 13:04:01] INFO root fetch - processPackages [EOxServer]: Downloading https://files.pythonhosted.org/packages/fe/74/8cc1aa04eda8474892985def89aafed34dc8caa3799c2c09401fc6740b67/EOxServer-1.2.5.tar.gz
+[2023-04-13 13:04:01] INFO root fetch - processPackages [EOxServer]: executing diffoscope
+[2023-04-13 13:04:01] INFO root fetch - processPackages [EOxServer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EOxServer-1.2.4.tar.gz tmp/EOxServer-1.2.5.tar.gz --markdown 20230413/E/EOxServer/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-13 13:04:02] INFO root fetch - processPackages [dknovautils]: Start processing: bdpy
+[2023-04-13 13:04:02] INFO root fetch - main [MainThread]: End processing [dknovautils]: success
+[2023-04-13 13:04:02] INFO root fetch - processPackages [bdpy]: New version: [0.19] Old Version: [0.18]
+[2023-04-13 13:04:02] INFO root fetch - processPackages [pyhealthbox3]: Start processing: bmb-martlet-organization-client
+[2023-04-13 13:04:02] INFO root fetch - main [MainThread]: End processing [pyhealthbox3]: success
+[2023-04-13 13:04:02] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-13 13:04:02] INFO root fetch - processPackages [bdpy]: Downloading https://files.pythonhosted.org/packages/36/ca/7276c540bede4b9363084704050a3ae758c6031c43121923227f5cd396c1/bdpy-0.18-py2.py3-none-any.whl
+[2023-04-13 13:04:02] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-04-13 13:04:02] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230413/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-13 13:04:02] INFO root fetch - processPackages [bdpy]: Downloading https://files.pythonhosted.org/packages/73/12/4557ee6f0b25c1a7c01dd076f08019b56a52eec511b72ce6f6b822292e2f/bdpy-0.19-py2.py3-none-any.whl
+[2023-04-13 13:04:02] INFO root fetch - processPackages [zahner-analysis]: Start processing: scPANTHEON
+[2023-04-13 13:04:02] INFO root fetch - main [MainThread]: End processing [zahner-analysis]: success
+[2023-04-13 13:04:02] INFO root fetch - processPackages [scPANTHEON]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-13 13:04:02] INFO root fetch - processPackages [bdpy]: executing diffoscope
+[2023-04-13 13:04:02] INFO root fetch - processPackages [bdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdpy-0.18-py2.py3-none-any.whl.zip tmp/bdpy-0.19-py2.py3-none-any.whl.zip --markdown 20230413/b/bdpy/0.18-0.19/diff.md --exclude *.pyd
+[2023-04-13 13:04:02] INFO root fetch - processPackages [scPANTHEON]: Downloading https://files.pythonhosted.org/packages/d4/d5/450001b95109a2d8ddff6b401a0fff2402e5c93722e4bad86b427c9eee16/scPANTHEON-0.2.3.tar.gz
+[2023-04-13 13:04:03] INFO root fetch - processPackages [scPANTHEON]: Downloading https://files.pythonhosted.org/packages/c5/b3/c6e6566985b4bd56eb441755d5dfc493935e0aab03110ff8ef423fc61634/scPANTHEON-0.2.4.tar.gz
+[2023-04-13 13:04:03] INFO root fetch - processPackages [scPANTHEON]: executing diffoscope
+[2023-04-13 13:04:03] INFO root fetch - processPackages [scPANTHEON]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scPANTHEON-0.2.3.tar.gz tmp/scPANTHEON-0.2.4.tar.gz --markdown 20230413/s/scPANTHEON/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-13 13:04:04] INFO root fetch - processPackages [bdpy]: Start processing: TerraSegmentation
+[2023-04-13 13:04:04] INFO root fetch - main [MainThread]: End processing [bdpy]: success
+[2023-04-13 13:04:04] INFO root fetch - processPackages [TerraSegmentation]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 13:04:04] INFO root fetch - processPackages [scPANTHEON]: Start processing: akira3d
+[2023-04-13 13:04:04] INFO root fetch - main [MainThread]: End processing [scPANTHEON]: success
+[2023-04-13 13:04:04] INFO root fetch - processPackages [akira3d]: New version: [4.8.1.2] Old Version: [4.8.1]
+[2023-04-13 13:04:04] INFO root fetch - processPackages [TerraSegmentation]: Downloading https://files.pythonhosted.org/packages/e7/89/4ecb77503612b9c774e530f0e6508cda879cdc9c9800a50942eef68a7288/TerraSegmentation-0.0.5.tar.gz
+[2023-04-13 13:04:04] INFO root fetch - processPackages [akira3d]: Downloading https://files.pythonhosted.org/packages/f5/69/02c8801152d98765b82d6eeef5057ffe8a6750c2f4a6852393f8e933cec3/akira3d-4.8.1.2.tar.gz
+[2023-04-13 13:04:04] INFO root fetch - processPackages [TerraSegmentation]: executing diffoscope
+[2023-04-13 13:04:04] INFO root fetch - processPackages [TerraSegmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TerraSegmentation-0.0.4.tar.gz tmp/TerraSegmentation-0.0.5.tar.gz --markdown 20230413/T/TerraSegmentation/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 13:04:04] INFO root fetch - processPackages [akira3d]: executing diffoscope
+[2023-04-13 13:04:04] INFO root fetch - processPackages [akira3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akira3d-4.8.1.tar.gz tmp/akira3d-4.8.1.2.tar.gz --markdown 20230413/a/akira3d/4.8.1-4.8.1.2/diff.md --exclude *.pyd
+[2023-04-13 13:04:05] INFO root fetch - processPackages [TerraSegmentation]: Start processing: mt-940
+[2023-04-13 13:04:05] INFO root fetch - main [MainThread]: End processing [TerraSegmentation]: success
+[2023-04-13 13:04:05] INFO root fetch - processPackages [mt-940]: New version: [4.9.0] Old Version: [4.8.1]
+[2023-04-13 13:04:05] INFO root fetch - processPackages [akira3d]: Start processing: opensesame-extension-osweb
+[2023-04-13 13:04:05] INFO root fetch - main [MainThread]: End processing [akira3d]: success
+[2023-04-13 13:04:05] INFO root fetch - processPackages [opensesame-extension-osweb]: New version: [2.0.0.0a8] Old Version: [2.0.0.0a7]
+[2023-04-13 13:04:05] INFO root fetch - processPackages [mt-940]: Downloading https://files.pythonhosted.org/packages/2c/9f/4fe62f7877c931ec9c9c9a486d3e520ca51f2fa771d5e276257052ed65e9/mt-940-4.8.1.tar.gz
+[2023-04-13 13:04:06] INFO root fetch - processPackages [opensesame-extension-osweb]: executing diffoscope
+[2023-04-13 13:04:06] INFO root fetch - processPackages [opensesame-extension-osweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opensesame_extension_osweb-2.0.0.0a7.tar.gz tmp/opensesame_extension_osweb-2.0.0.0a8.tar.gz --markdown 20230413/o/opensesame-extension-osweb/2.0.0.0a7-2.0.0.0a8/diff.md --exclude *.pyd
+[2023-04-13 13:04:06] INFO root fetch - processPackages [mt-940]: Downloading https://files.pythonhosted.org/packages/63/30/7151d326ce7c6ffbb38e0fdd2101d5af2190b74b6d182b171d1d2b9cf281/mt-940-4.9.0.tar.gz
+[2023-04-13 13:04:06] INFO root fetch - processPackages [mt-940]: executing diffoscope
+[2023-04-13 13:04:06] INFO root fetch - processPackages [mt-940]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mt-940-4.8.1.tar.gz tmp/mt-940-4.9.0.tar.gz --markdown 20230413/m/mt-940/4.8.1-4.9.0/diff.md --exclude *.pyd
+[2023-04-13 13:04:06] INFO root fetch - processPackages [bmb-martlet-organization-client]: Start processing: nextcloudtalkbot
+[2023-04-13 13:04:06] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
+[2023-04-13 13:04:06] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 13:04:06] INFO root fetch - processPackages [EOxServer]: Start processing: so-vits-svc-fork
+[2023-04-13 13:04:06] INFO root fetch - main [MainThread]: End processing [EOxServer]: success
+[2023-04-13 13:04:06] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.3.0] Old Version: [3.2.0]
+[2023-04-13 13:04:07] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/78/14/51c78cabdf89efc86156be2c4cb933a44f508245a0f21a7efcf8abf4ca32/so_vits_svc_fork-3.3.0.tar.gz
+[2023-04-13 13:04:07] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-13 13:04:07] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.2.0.tar.gz tmp/so_vits_svc_fork-3.3.0.tar.gz --markdown 20230413/s/so-vits-svc-fork/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2023-04-13 13:04:07] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-13 13:04:07] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.8.tar.gz tmp/nextcloudtalkbot-0.0.9.tar.gz --markdown 20230413/n/nextcloudtalkbot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 13:04:08] INFO root fetch - processPackages [opensesame-extension-osweb]: Start processing: cognite-sdk
+[2023-04-13 13:04:08] INFO root fetch - main [MainThread]: End processing [opensesame-extension-osweb]: success
+[2023-04-13 13:04:08] INFO root fetch - processPackages [cognite-sdk]: New version: [5.9.3] Old Version: [5.9.2]
+[2023-04-13 13:04:08] INFO root fetch - main [MainThread]: End processing [mt-940]: success
+[2023-04-13 13:04:08] INFO root fetch - processPackages [cognite-sdk]: executing diffoscope
+[2023-04-13 13:04:08] INFO root fetch - processPackages [cognite-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_sdk-5.9.2.tar.gz tmp/cognite_sdk-5.9.3.tar.gz --markdown 20230413/c/cognite-sdk/5.9.2-5.9.3/diff.md --exclude *.pyd
+[2023-04-13 13:04:08] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-13 13:04:08] INFO root fetch - main [MainThread]: End processing [nextcloudtalkbot]: success
+[2023-04-13 13:04:09] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-04-13 13:04:09] INFO root fetch - main [MainThread]: End processing [cognite-sdk]: success
+[2023-04-13 13:04:09] INFO root fetch - main [MainThread]: Store serial: [17690878]
