@@ -9587,3 +9587,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 08:56:36] INFO root fetch - main [MainThread]: End processing [paneltime]: success
 [2023-04-13 08:56:36] INFO root fetch - main [MainThread]: End processing [proteinTools]: success
 [2023-04-13 08:56:36] INFO root fetch - main [MainThread]: Store serial: [17687964]
+[2023-04-13 09:01:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687964]
+[2023-04-13 09:01:43] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-13 09:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mop-utils-test
+[2023-04-13 09:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqio-nightly
+[2023-04-13 09:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zoviz
+[2023-04-13 09:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deng
+[2023-04-13 09:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: libsnew
+[2023-04-13 09:01:43] INFO root fetch - processPackages [zoviz]: New version: [0.4.99] Old Version: [0.4.98]
+[2023-04-13 09:01:43] INFO root fetch - processPackages [libsnew]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-13 09:01:43] INFO root fetch - processPackages [mop-utils-test]: New version: [1.8.1] Old Version: [1.8]
+[2023-04-13 09:01:43] INFO root fetch - processPackages [deng]: New version: [2023.4.13.1] Old Version: [2023.3.27.1]
+[2023-04-13 09:01:43] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-04-13 09:01:43] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-04-13 09:01:43] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230413/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-04-13 09:01:43] INFO root fetch - processPackages [zoviz]: Downloading https://files.pythonhosted.org/packages/39/01/118ff39e3e5bc58e05756a517d2b426abe032aa3420d27e3000aaac3b14a/zoviz-0.4.98.tar.gz
+[2023-04-13 09:01:44] INFO root fetch - processPackages [deng]: Downloading https://files.pythonhosted.org/packages/1c/5f/da9c680971f9cae47e9406ce75ad09a06f861f844e007c307a20854736f1/deng-2023.3.27.1.tar.gz
+[2023-04-13 09:01:44] INFO root fetch - processPackages [libsnew]: Downloading https://files.pythonhosted.org/packages/7d/57/aced0424254b2803dd17f5e8c9e982f23c14850e9d4a183f51ae480e8034/libsnew-0.1.3.tar.gz
+[2023-04-13 09:01:44] INFO root fetch - processPackages [mop-utils-test]: Downloading https://files.pythonhosted.org/packages/22/85/4895f4f3574722d13d8bf5bb9261bf898d935c8429b0d270637d25d4ee8d/mop_utils_test-1.8.1.tar.gz
+[2023-04-13 09:01:44] INFO root fetch - processPackages [libsnew]: executing diffoscope
+[2023-04-13 09:01:44] INFO root fetch - processPackages [libsnew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsnew-0.1.2.tar.gz tmp/libsnew-0.1.3.tar.gz --markdown 20230413/l/libsnew/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-13 09:01:44] INFO root fetch - processPackages [deng]: Downloading https://files.pythonhosted.org/packages/dc/94/b1de1fcdfcd8ad96c09ba329a58310f3b14a0dcc6bf8abf226ba02de76c1/deng-2023.4.13.1.tar.gz
+[2023-04-13 09:01:44] INFO root fetch - processPackages [zoviz]: Downloading https://files.pythonhosted.org/packages/4b/9a/dea269ed1403497e3e963b49e4d08cdc0e831c8642e0f505481d42cdc405/zoviz-0.4.99.tar.gz
+[2023-04-13 09:01:44] INFO root fetch - processPackages [mop-utils-test]: executing diffoscope
+[2023-04-13 09:01:44] INFO root fetch - processPackages [mop-utils-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mop_utils_test-1.8.tar.gz tmp/mop_utils_test-1.8.1.tar.gz --markdown 20230413/m/mop-utils-test/1.8-1.8.1/diff.md --exclude *.pyd
+[2023-04-13 09:01:44] INFO root fetch - processPackages [zoviz]: executing diffoscope
+[2023-04-13 09:01:44] INFO root fetch - processPackages [zoviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zoviz-0.4.98.tar.gz tmp/zoviz-0.4.99.tar.gz --markdown 20230413/z/zoviz/0.4.98-0.4.99/diff.md --exclude *.pyd
+[2023-04-13 09:01:44] INFO root fetch - processPackages [deng]: executing diffoscope
+[2023-04-13 09:01:44] INFO root fetch - processPackages [deng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deng-2023.3.27.1.tar.gz tmp/deng-2023.4.13.1.tar.gz --markdown 20230413/d/deng/2023.3.27.1-2023.4.13.1/diff.md --exclude *.pyd
+[2023-04-13 09:01:45] INFO root fetch - processPackages [seqio-nightly]: Start processing: leaguecloser
+[2023-04-13 09:01:45] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-04-13 09:01:45] INFO root fetch - processPackages [leaguecloser]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-13 09:01:45] INFO root fetch - processPackages [mop-utils-test]: Start processing: TerraSegmentation
+[2023-04-13 09:01:45] INFO root fetch - main [MainThread]: End processing [mop-utils-test]: success
+[2023-04-13 09:01:45] INFO root fetch - processPackages [TerraSegmentation]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-13 09:01:45] INFO root fetch - processPackages [zoviz]: Start processing: HawaData
+[2023-04-13 09:01:45] INFO root fetch - main [MainThread]: End processing [zoviz]: success
+[2023-04-13 09:01:45] INFO root fetch - processPackages [HawaData]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-13 09:01:45] INFO root fetch - processPackages [leaguecloser]: Downloading https://files.pythonhosted.org/packages/9e/33/d2fd1e81a0309740dcc54ec16b4d2c8433714b1e233066af6560e53a5f4e/leaguecloser-1.0.4.tar.gz
+[2023-04-13 09:01:45] INFO root fetch - processPackages [TerraSegmentation]: Downloading https://files.pythonhosted.org/packages/75/8d/60d63b78b9d06b9593f3268ad93be391876233da4bcaa6cc3bdbfacbe4e2/TerraSegmentation-0.0.4.tar.gz
+[2023-04-13 09:01:45] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/13/55/14cbea8e3d99e19628df8fa5472515a5d9aed8a141253cfc17d113476b03/HawaData-0.2.9.tar.gz
+[2023-04-13 09:01:45] INFO root fetch - processPackages [deng]: Start processing: odoo12-addon-rma
+[2023-04-13 09:01:45] INFO root fetch - main [MainThread]: End processing [deng]: success
+[2023-04-13 09:01:45] INFO root fetch - processPackages [odoo12-addon-rma]: New version: [12.0.2.6.0.99.dev9] Old Version: [12.0.2.6.0.99.dev8]
+[2023-04-13 09:01:45] INFO root fetch - processPackages [leaguecloser]: executing diffoscope
+[2023-04-13 09:01:45] INFO root fetch - processPackages [leaguecloser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leaguecloser-1.0.3.tar.gz tmp/leaguecloser-1.0.4.tar.gz --markdown 20230413/l/leaguecloser/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-13 09:01:45] INFO root fetch - processPackages [TerraSegmentation]: executing diffoscope
+[2023-04-13 09:01:45] INFO root fetch - processPackages [TerraSegmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TerraSegmentation-0.0.3.tar.gz tmp/TerraSegmentation-0.0.4.tar.gz --markdown 20230413/T/TerraSegmentation/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-13 09:01:45] INFO root fetch - processPackages [libsnew]: Start processing: vibrato
+[2023-04-13 09:01:45] INFO root fetch - main [MainThread]: End processing [libsnew]: success
+[2023-04-13 09:01:45] INFO root fetch - processPackages [vibrato]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-13 09:01:45] INFO root fetch - processPackages [HawaData]: executing diffoscope
+[2023-04-13 09:01:45] INFO root fetch - processPackages [HawaData]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HawaData-0.2.8.tar.gz tmp/HawaData-0.2.9.tar.gz --markdown 20230413/H/HawaData/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-13 09:01:46] INFO root fetch - processPackages [vibrato]: Downloading https://files.pythonhosted.org/packages/c0/fb/adff9e1e94ba7b78c6c56a46f73123a3f92cd09a2216fd9bb51d2b06bce5/vibrato-0.1.1.tar.gz
+[2023-04-13 09:01:46] INFO root fetch - processPackages [odoo12-addon-rma]: executing diffoscope
+[2023-04-13 09:01:46] INFO root fetch - processPackages [odoo12-addon-rma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_rma-12.0.2.6.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_rma-12.0.2.6.0.99.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-rma/12.0.2.6.0.99.dev8-12.0.2.6.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-13 09:01:46] INFO root fetch - processPackages [vibrato]: Downloading https://files.pythonhosted.org/packages/5a/60/0ff17edb5d1cc2f859f502e0ea3038a3d388dd025f8f69785101326f7eac/vibrato-0.2.0-cp38-none-win32.whl
+[2023-04-13 09:01:46] INFO root fetch - processPackages [vibrato]: executing diffoscope
+[2023-04-13 09:01:46] INFO root fetch - processPackages [vibrato]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vibrato-0.1.1.tar.gz tmp/vibrato-0.2.0-cp38-none-win32.whl.zip --markdown 20230413/v/vibrato/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 09:01:46] INFO root fetch - processPackages [TerraSegmentation]: Start processing: ar-ex-sys-worker
+[2023-04-13 09:01:46] INFO root fetch - main [MainThread]: End processing [TerraSegmentation]: success
+[2023-04-13 09:01:46] INFO root fetch - processPackages [ar-ex-sys-worker]: New version: [1.5.7] Old Version: [1.5.62]
+[2023-04-13 09:01:47] INFO root fetch - processPackages [leaguecloser]: Start processing: glyphsamplepackageignore
+[2023-04-13 09:01:47] INFO root fetch - main [MainThread]: End processing [leaguecloser]: success
+[2023-04-13 09:01:47] WARNING root fetch - processPackages [glyphsamplepackageignore]: Skipping, unable to determine old version
+[2023-04-13 09:01:47] INFO root fetch - main [MainThread]: End processing [glyphsamplepackageignore] error
+[2023-04-13 09:01:47] INFO root fetch - main [MainThread]: End processing [HawaData]: success
+[2023-04-13 09:01:47] INFO root fetch - processPackages [ar-ex-sys-worker]: Downloading https://files.pythonhosted.org/packages/64/32/6aa5b222ab313a4973a335a327e9baef5d5e5a27dfa8eb8a7da9416ed21e/ar_ex_sys_worker-1.5.7-py3-none-any.whl
+[2023-04-13 09:01:47] INFO root fetch - processPackages [ar-ex-sys-worker]: executing diffoscope
+[2023-04-13 09:01:47] INFO root fetch - processPackages [ar-ex-sys-worker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ar_ex_sys_worker-1.5.62-py3-none-any.whl.zip tmp/ar_ex_sys_worker-1.5.7-py3-none-any.whl.zip --markdown 20230413/a/ar-ex-sys-worker/1.5.62-1.5.7/diff.md --exclude *.pyd
+[2023-04-13 09:01:47] INFO root fetch - main [MainThread]: End processing [vibrato]: success
+[2023-04-13 09:01:47] INFO root fetch - main [MainThread]: End processing [odoo12-addon-rma]: success
+[2023-04-13 09:01:48] INFO root fetch - main [MainThread]: End processing [ar-ex-sys-worker]: success
+[2023-04-13 09:01:48] INFO root fetch - main [MainThread]: Store serial: [17688018]
