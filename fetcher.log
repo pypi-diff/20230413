@@ -6537,3 +6537,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:53:53] INFO root fetch - main [MainThread]: End processing [pydtk]: success
 [2023-04-13 04:53:53] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
 [2023-04-13 04:53:53] INFO root fetch - main [MainThread]: Store serial: [17686209]
+[2023-04-13 04:58:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686209]
+[2023-04-13 04:59:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-13 04:59:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IOTELLME
+[2023-04-13 04:59:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lorettOrbital
+[2023-04-13 04:59:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vhdx-2-zvol
+[2023-04-13 04:59:00] ERROR root fetch - processPackages [IOTELLME]: Unable to get metadata: No such project 'IOTELLME'
+[2023-04-13 04:59:00] INFO root fetch - main [MainThread]: End processing [IOTELLME] error
+[2023-04-13 04:59:00] INFO root fetch - processPackages [lorettOrbital]: New version: [1.0.13042023] Old Version: [0.0.4]
+[2023-04-13 04:59:00] WARNING root fetch - processPackages [vhdx-2-zvol]: Skipping, unable to determine old version
+[2023-04-13 04:59:00] INFO root fetch - main [MainThread]: End processing [vhdx-2-zvol] error
+[2023-04-13 04:59:00] INFO root fetch - processPackages [lorettOrbital]: Downloading https://files.pythonhosted.org/packages/fd/33/d04fb2e6ddf5147fa282badd3cebcd64836ecfb2600448a1398ce0b6667c/lorettOrbital-0.0.4.tar.gz
+[2023-04-13 04:59:01] INFO root fetch - processPackages [lorettOrbital]: Downloading https://files.pythonhosted.org/packages/be/90/d614ec2e469fe6ad23358e7cc8d7cdc7a6de375e7b0982bd7cb3ba68a756/lorettOrbital-1.0.13042023.tar.gz
+[2023-04-13 04:59:01] INFO root fetch - processPackages [lorettOrbital]: executing diffoscope
+[2023-04-13 04:59:01] INFO root fetch - processPackages [lorettOrbital]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lorettOrbital-0.0.4.tar.gz tmp/lorettOrbital-1.0.13042023.tar.gz --markdown 20230413/l/lorettOrbital/0.0.4-1.0.13042023/diff.md --exclude *.pyd
+[2023-04-13 04:59:02] INFO root fetch - main [MainThread]: End processing [lorettOrbital]: success
+[2023-04-13 04:59:02] INFO root fetch - main [MainThread]: Store serial: [17686227]
