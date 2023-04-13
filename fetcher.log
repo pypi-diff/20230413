@@ -19113,3 +19113,152 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 16:18:10] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
 [2023-04-13 16:18:45] INFO root fetch - main [MainThread]: End processing [riptide-cpp]: success
 [2023-04-13 16:18:45] INFO root fetch - main [MainThread]: Store serial: [17693565]
+[2023-04-13 16:23:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17693565]
+[2023-04-13 16:23:53] INFO root fetch - main [MainThread]: Found 27 changed packages
+[2023-04-13 16:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polywrap-wasm
+[2023-04-13 16:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rubpy
+[2023-04-13 16:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-04-13 16:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aac-metrics
+[2023-04-13 16:23:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyodb
+[2023-04-13 16:23:53] INFO root fetch - processPackages [polywrap-wasm]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-13 16:23:53] INFO root fetch - processPackages [aac-metrics]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-13 16:23:53] WARNING root fetch - processPackages [pyodb]: Skipping, unable to determine old version
+[2023-04-13 16:23:53] INFO root fetch - processPackages [pyodb]: Start processing: polywrap-uri-resolvers
+[2023-04-13 16:23:53] INFO root fetch - main [MainThread]: End processing [pyodb] error
+[2023-04-13 16:23:53] INFO root fetch - processPackages [rubpy]: New version: [5.3.0b0] Old Version: [5.2.2]
+[2023-04-13 16:23:53] INFO root fetch - processPackages [polywrap-uri-resolvers]: New version: [0.1.0a7] Old Version: [0.1.0a4]
+[2023-04-13 16:23:53] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-13 16:23:53] INFO root fetch - processPackages [polywrap-wasm]: executing diffoscope
+[2023-04-13 16:23:53] INFO root fetch - processPackages [polywrap-wasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_wasm-0.1.0a6.tar.gz tmp/polywrap_wasm-0.1.0a7.tar.gz --markdown 20230413/p/polywrap-wasm/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 16:23:53] INFO root fetch - processPackages [rubpy]: Downloading https://files.pythonhosted.org/packages/79/60/da0bf410449e72060926f24a1ab28875478801e87e36216d4123c84bc2ac/rubpy-5.2.2.tar.gz
+[2023-04-13 16:23:53] INFO root fetch - processPackages [polywrap-uri-resolvers]: executing diffoscope
+[2023-04-13 16:23:53] INFO root fetch - processPackages [polywrap-uri-resolvers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_uri_resolvers-0.1.0a4.tar.gz tmp/polywrap_uri_resolvers-0.1.0a7-py3-none-any.whl.zip --markdown 20230413/p/polywrap-uri-resolvers/0.1.0a4-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-13 16:23:53] INFO root fetch - processPackages [aac-metrics]: Downloading https://files.pythonhosted.org/packages/07/c8/30e1e1b091c639c091833f0f21be9f13ff0a6fd5f722a537f2083b78db18/aac-metrics-0.4.1.tar.gz
+[2023-04-13 16:23:53] INFO root fetch - processPackages [aac-metrics]: executing diffoscope
+[2023-04-13 16:23:53] INFO root fetch - processPackages [aac-metrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aac-metrics-0.4.0.tar.gz tmp/aac-metrics-0.4.1.tar.gz --markdown 20230413/a/aac-metrics/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-13 16:23:53] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-13 16:23:53] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230413/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-13 16:23:53] INFO root fetch - processPackages [rubpy]: Downloading https://files.pythonhosted.org/packages/29/d5/92eb31dd60ec01a124d743e6fda7dae236b71c3808f53091e13e3219f45f/rubpy-5.3.0b0.tar.gz
+[2023-04-13 16:23:54] INFO root fetch - processPackages [rubpy]: executing diffoscope
+[2023-04-13 16:23:54] INFO root fetch - processPackages [rubpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rubpy-5.2.2.tar.gz tmp/rubpy-5.3.0b0.tar.gz --markdown 20230413/r/rubpy/5.2.2-5.3.0b0/diff.md --exclude *.pyd
+[2023-04-13 16:23:54] INFO root fetch - processPackages [polywrap-uri-resolvers]: Start processing: py3dchart
+[2023-04-13 16:23:54] INFO root fetch - main [MainThread]: End processing [polywrap-uri-resolvers]: success
+[2023-04-13 16:23:54] INFO root fetch - processPackages [py3dchart]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 16:23:54] INFO root fetch - processPackages [py3dchart]: Downloading https://files.pythonhosted.org/packages/f2/2b/78def93104758f8e884ca2793b6ef564ee034bfbf7224a21a4960f35f927/py3dchart-0.2.1.tar.gz
+[2023-04-13 16:23:54] INFO root fetch - processPackages [py3dchart]: executing diffoscope
+[2023-04-13 16:23:54] INFO root fetch - processPackages [py3dchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3dchart-0.2.0.tar.gz tmp/py3dchart-0.2.1.tar.gz --markdown 20230413/p/py3dchart/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 16:23:54] INFO root fetch - processPackages [polywrap-wasm]: Start processing: spanishconjugator
+[2023-04-13 16:23:54] INFO root fetch - main [MainThread]: End processing [polywrap-wasm]: success
+[2023-04-13 16:23:55] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-13 16:23:55] INFO root fetch - processPackages [rubpy]: Start processing: pyGuardPoint
+[2023-04-13 16:23:55] INFO root fetch - main [MainThread]: End processing [rubpy]: success
+[2023-04-13 16:23:55] INFO root fetch - processPackages [pyGuardPoint]: New version: [0.8.0] Old Version: [0.7.9]
+[2023-04-13 16:23:55] INFO root fetch - processPackages [spanishconjugator]: Start processing: dxpy
+[2023-04-13 16:23:55] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-13 16:23:55] INFO root fetch - processPackages [dxpy]: New version: [v0.83.0] Old Version: [v0.82.1]
+[2023-04-13 16:23:55] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-13 16:23:55] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230413/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-13 16:23:55] INFO root fetch - processPackages [pyGuardPoint]: Downloading https://files.pythonhosted.org/packages/cd/91/54c375cf20dc0dfd2cac7f0d03c947dd647bbd7f420fc7f75c88cf881995/pyGuardPoint-0.8.0.tar.gz
+[2023-04-13 16:23:55] INFO root fetch - processPackages [dxpy]: Downloading https://files.pythonhosted.org/packages/da/c1/174d4396e4ed9e1599913ab138dd60bb0845968c53b606cbb55673ffc3ba/dxpy-v0.82.1.tar.gz
+[2023-04-13 16:23:55] INFO root fetch - processPackages [pyGuardPoint]: executing diffoscope
+[2023-04-13 16:23:55] INFO root fetch - processPackages [pyGuardPoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGuardPoint-0.7.9.tar.gz tmp/pyGuardPoint-0.8.0.tar.gz --markdown 20230413/p/pyGuardPoint/0.7.9-0.8.0/diff.md --exclude *.pyd
+[2023-04-13 16:23:56] INFO root fetch - processPackages [dxpy]: Downloading https://files.pythonhosted.org/packages/27/9d/337f1f9230dda5237debb2fccdfe26003921246cb5bf0c4ab58a9e3e07a5/dxpy-v0.83.0.tar.gz
+[2023-04-13 16:23:56] INFO root fetch - processPackages [py3dchart]: Start processing: polywrap-client
+[2023-04-13 16:23:56] INFO root fetch - main [MainThread]: End processing [py3dchart]: success
+[2023-04-13 16:23:56] INFO root fetch - processPackages [polywrap-client]: New version: [0.1.0a4] Old Version: [0.1.0a3]
+[2023-04-13 16:23:56] INFO root fetch - processPackages [polywrap-client]: executing diffoscope
+[2023-04-13 16:23:56] INFO root fetch - processPackages [polywrap-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_client-0.1.0a3.tar.gz tmp/polywrap_client-0.1.0a4.tar.gz --markdown 20230413/p/polywrap-client/0.1.0a3-0.1.0a4/diff.md --exclude *.pyd
+[2023-04-13 16:23:56] INFO root fetch - processPackages [dxpy]: executing diffoscope
+[2023-04-13 16:23:56] INFO root fetch - processPackages [dxpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxpy-v0.82.1.tar.gz tmp/dxpy-v0.83.0.tar.gz --markdown 20230413/d/dxpy/v0.82.1-v0.83.0/diff.md --exclude *.pyd
+[2023-04-13 16:23:56] INFO root fetch - processPackages [spanishconjugator]: Start processing: CustomGPT
+[2023-04-13 16:23:56] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-13 16:23:56] WARNING root fetch - processPackages [CustomGPT]: Skipping, unable to determine old version
+[2023-04-13 16:23:56] INFO root fetch - processPackages [CustomGPT]: Start processing: sling
+[2023-04-13 16:23:56] INFO root fetch - main [MainThread]: End processing [CustomGPT] error
+[2023-04-13 16:23:56] INFO root fetch - processPackages [sling]: New version: [0.87.81] Old Version: [0.87.77]
+[2023-04-13 16:23:56] INFO root fetch - processPackages [pyGuardPoint]: Start processing: haloop
+[2023-04-13 16:23:56] INFO root fetch - main [MainThread]: End processing [pyGuardPoint]: success
+[2023-04-13 16:23:56] WARNING root fetch - processPackages [haloop]: Skipping, unable to determine old version
+[2023-04-13 16:23:56] INFO root fetch - processPackages [haloop]: Start processing: polywrap-client-config-builder
+[2023-04-13 16:23:56] INFO root fetch - main [MainThread]: End processing [haloop] error
+[2023-04-13 16:23:56] INFO root fetch - processPackages [polywrap-client-config-builder]: New version: [0.1.0a21] Old Version: [0.1.0a20]
+[2023-04-13 16:23:57] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/52/cc/b907459f10f2c1ea8100d2ccee92dbec20c3cd4bebc53ee9377c701c9748/sling-0.87.77.tar.gz
+[2023-04-13 16:23:57] WARNING root fetch - processPackages [sling]: Skipping package: exceeds size limit 99827397>=10485760
+[2023-04-13 16:23:57] INFO root fetch - processPackages [sling]: Start processing: authomize-rest-api-client
+[2023-04-13 16:23:57] INFO root fetch - main [MainThread]: End processing [sling] error
+[2023-04-13 16:23:57] INFO root fetch - processPackages [authomize-rest-api-client]: New version: [3.1.5] Old Version: [3.1.4]
+[2023-04-13 16:23:57] INFO root fetch - processPackages [polywrap-client-config-builder]: Downloading https://files.pythonhosted.org/packages/5d/3b/66e9b7ae1ad219861e59e75ef2e6f1df0a8477826384e543353a56b78825/polywrap_client_config_builder-0.1.0a21.tar.gz
+[2023-04-13 16:23:57] INFO root fetch - processPackages [polywrap-client]: Start processing: ncsdk
+[2023-04-13 16:23:57] INFO root fetch - main [MainThread]: End processing [polywrap-client]: success
+[2023-04-13 16:23:57] WARNING root fetch - processPackages [ncsdk]: Skipping, unable to determine old version
+[2023-04-13 16:23:57] INFO root fetch - processPackages [ncsdk]: Start processing: redflagbpm
+[2023-04-13 16:23:57] INFO root fetch - main [MainThread]: End processing [ncsdk] error
+[2023-04-13 16:23:57] INFO root fetch - processPackages [authomize-rest-api-client]: Downloading https://files.pythonhosted.org/packages/6e/03/7b19d2749e98bf6c97387e979d6dbfff9c98a85594c0831d2dcffebc56f5/authomize-rest-api-client-3.1.4.tar.gz
+[2023-04-13 16:23:57] INFO root fetch - processPackages [polywrap-client-config-builder]: executing diffoscope
+[2023-04-13 16:23:57] INFO root fetch - processPackages [polywrap-client-config-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_client_config_builder-0.1.0a20.tar.gz tmp/polywrap_client_config_builder-0.1.0a21.tar.gz --markdown 20230413/p/polywrap-client-config-builder/0.1.0a20-0.1.0a21/diff.md --exclude *.pyd
+[2023-04-13 16:23:57] INFO root fetch - processPackages [redflagbpm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 16:23:57] INFO root fetch - processPackages [redflagbpm]: Downloading https://files.pythonhosted.org/packages/ef/a9/4fa02461e8dc73cf50208a88de908197582a7b7012666543c33615bfc361/redflagbpm-0.0.8.tar.gz
+[2023-04-13 16:23:57] INFO root fetch - processPackages [authomize-rest-api-client]: Downloading https://files.pythonhosted.org/packages/93/e1/82b08cd4ed286852445470b761c6f7c58cd685ae8797871305c997462c0d/authomize-rest-api-client-3.1.5.tar.gz
+[2023-04-13 16:23:57] INFO root fetch - processPackages [authomize-rest-api-client]: executing diffoscope
+[2023-04-13 16:23:57] INFO root fetch - processPackages [authomize-rest-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authomize-rest-api-client-3.1.4.tar.gz tmp/authomize-rest-api-client-3.1.5.tar.gz --markdown 20230413/a/authomize-rest-api-client/3.1.4-3.1.5/diff.md --exclude *.pyd
+[2023-04-13 16:23:58] INFO root fetch - processPackages [redflagbpm]: Downloading https://files.pythonhosted.org/packages/81/43/fe1a47c77bb0c4ed15c0fa8b18ebd554110360a9357d6f5a9e78192c09c5/redflagbpm-0.0.9.tar.gz
+[2023-04-13 16:23:58] INFO root fetch - processPackages [aac-metrics]: Start processing: cwl-utils
+[2023-04-13 16:23:58] INFO root fetch - main [MainThread]: End processing [aac-metrics]: success
+[2023-04-13 16:23:58] INFO root fetch - processPackages [polywrap-client-config-builder]: Start processing: jianglab
+[2023-04-13 16:23:58] INFO root fetch - main [MainThread]: End processing [polywrap-client-config-builder]: success
+[2023-04-13 16:23:58] INFO root fetch - processPackages [jianglab]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-13 16:23:58] INFO root fetch - processPackages [redflagbpm]: executing diffoscope
+[2023-04-13 16:23:58] INFO root fetch - processPackages [redflagbpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redflagbpm-0.0.8.tar.gz tmp/redflagbpm-0.0.9.tar.gz --markdown 20230413/r/redflagbpm/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 16:23:58] INFO root fetch - processPackages [cwl-utils]: New version: [0.9] Old Version: [0.8]
+[2023-04-13 16:23:58] INFO root fetch - processPackages [jianglab]: executing diffoscope
+[2023-04-13 16:23:58] INFO root fetch - processPackages [jianglab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jianglab-0.1.3.tar.gz tmp/jianglab-0.1.4.tar.gz --markdown 20230413/j/jianglab/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-13 16:23:58] INFO root fetch - processPackages [cwl-utils]: Downloading https://files.pythonhosted.org/packages/d3/68/559c19042fa610b775dcfe7ca7bc224f7d1de637598b7195ca091722772a/cwl-utils-0.8.tar.gz
+[2023-04-13 16:23:58] INFO root fetch - processPackages [dxpy]: Start processing: pydash
+[2023-04-13 16:23:58] INFO root fetch - main [MainThread]: End processing [dxpy]: success
+[2023-04-13 16:23:58] INFO root fetch - processPackages [pydash]: New version: [7.0.1] Old Version: [7.0.0]
+[2023-04-13 16:23:59] INFO root fetch - processPackages [pydash]: Downloading https://files.pythonhosted.org/packages/78/d8/4609c02096704008354a3d7189aa7aa98320be9381b8a9731f763e248967/pydash-7.0.1.tar.gz
+[2023-04-13 16:23:59] INFO root fetch - processPackages [cwl-utils]: Downloading https://files.pythonhosted.org/packages/9a/1f/d99d30c8bc20f664466623599492829bec26e97df95fa688a1bec49b0c50/cwl-utils-0.9.tar.gz
+[2023-04-13 16:23:59] INFO root fetch - processPackages [redflagbpm]: Start processing: spatialcsv
+[2023-04-13 16:23:59] INFO root fetch - main [MainThread]: End processing [redflagbpm]: success
+[2023-04-13 16:23:59] INFO root fetch - processPackages [pydash]: executing diffoscope
+[2023-04-13 16:23:59] INFO root fetch - processPackages [pydash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydash-7.0.0.tar.gz tmp/pydash-7.0.1.tar.gz --markdown 20230413/p/pydash/7.0.0-7.0.1/diff.md --exclude *.pyd
+[2023-04-13 16:23:59] INFO root fetch - processPackages [jianglab]: Start processing: spatialcsv
+[2023-04-13 16:23:59] INFO root fetch - main [MainThread]: End processing [jianglab]: success
+[2023-04-13 16:23:59] INFO root fetch - processPackages [spatialcsv]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-13 16:23:59] INFO root fetch - processPackages [spatialcsv]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-13 16:23:59] INFO root fetch - processPackages [cwl-utils]: executing diffoscope
+[2023-04-13 16:23:59] INFO root fetch - processPackages [cwl-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwl-utils-0.8.tar.gz tmp/cwl-utils-0.9.tar.gz --markdown 20230413/c/cwl-utils/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-13 16:23:59] INFO root fetch - processPackages [spatialcsv]: Downloading https://files.pythonhosted.org/packages/69/e7/bc9c17ee7f17b4cb7edffc7745e07478a0dfa42cb6b68a1734ba38dbad6a/spatialcsv-0.0.6.tar.gz
+[2023-04-13 16:23:59] INFO root fetch - processPackages [spatialcsv]: Downloading https://files.pythonhosted.org/packages/69/e7/bc9c17ee7f17b4cb7edffc7745e07478a0dfa42cb6b68a1734ba38dbad6a/spatialcsv-0.0.6.tar.gz
+[2023-04-13 16:24:00] INFO root fetch - processPackages [authomize-rest-api-client]: Start processing: quantconnect-stubs
+[2023-04-13 16:24:00] INFO root fetch - main [MainThread]: End processing [authomize-rest-api-client]: success
+[2023-04-13 16:24:00] INFO root fetch - processPackages [spatialcsv]: Downloading https://files.pythonhosted.org/packages/42/52/7a9661de465ecdf875cb3dbb06256e41ff4ce61720032d21b44b09ff23f4/spatialcsv-0.0.7.tar.gz
+[2023-04-13 16:24:00] INFO root fetch - processPackages [spatialcsv]: Downloading https://files.pythonhosted.org/packages/42/52/7a9661de465ecdf875cb3dbb06256e41ff4ce61720032d21b44b09ff23f4/spatialcsv-0.0.7.tar.gz
+[2023-04-13 16:24:00] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-13 16:24:00] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-13 16:24:00] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230413/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-13 16:24:00] INFO root fetch - processPackages [spatialcsv]: executing diffoscope
+[2023-04-13 16:24:00] INFO root fetch - processPackages [spatialcsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatialcsv-0.0.6.tar.gz tmp/spatialcsv-0.0.7.tar.gz --markdown 20230413/s/spatialcsv/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-13 16:24:00] INFO root fetch - processPackages [spatialcsv]: executing diffoscope
+[2023-04-13 16:24:00] INFO root fetch - processPackages [spatialcsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatialcsv-0.0.6.tar.gz tmp/spatialcsv-0.0.7.tar.gz --markdown 20230413/s/spatialcsv/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-13 16:24:01] INFO root fetch - processPackages [spatialcsv]: Start processing: bigraph-viz
+[2023-04-13 16:24:01] INFO root fetch - main [MainThread]: End processing [spatialcsv]: success
+[2023-04-13 16:24:01] INFO root fetch - processPackages [spatialcsv]: Start processing: bmb-martlet-organization-client
+[2023-04-13 16:24:01] INFO root fetch - main [MainThread]: End processing [spatialcsv]: success
+[2023-04-13 16:24:01] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-13 16:24:01] INFO root fetch - processPackages [bigraph-viz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 16:24:01] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-04-13 16:24:01] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230413/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-13 16:24:01] INFO root fetch - processPackages [cwl-utils]: Start processing: babelplot
+[2023-04-13 16:24:01] INFO root fetch - main [MainThread]: End processing [cwl-utils]: success
+[2023-04-13 16:24:01] INFO root fetch - processPackages [babelplot]: New version: [2022.9] Old Version: [2022.8]
+[2023-04-13 16:24:01] INFO root fetch - processPackages [bigraph-viz]: executing diffoscope
+[2023-04-13 16:24:01] INFO root fetch - processPackages [bigraph-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigraph-viz-0.0.8.tar.gz tmp/bigraph-viz-0.0.9.tar.gz --markdown 20230413/b/bigraph-viz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 16:24:02] INFO root fetch - processPackages [babelplot]: executing diffoscope
+[2023-04-13 16:24:02] INFO root fetch - processPackages [babelplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/babelplot-2022.8.tar.gz tmp/babelplot-2022.9.tar.gz --markdown 20230413/b/babelplot/2022.8-2022.9/diff.md --exclude *.pyd
+[2023-04-13 16:24:02] INFO root fetch - main [MainThread]: End processing [bigraph-viz]: success
+[2023-04-13 16:24:03] INFO root fetch - main [MainThread]: End processing [babelplot]: success
+[2023-04-13 16:24:03] INFO root fetch - main [MainThread]: End processing [pydash]: success
+[2023-04-13 16:24:05] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
+[2023-04-13 16:24:06] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-04-13 16:24:06] INFO root fetch - main [MainThread]: Store serial: [17693651]
