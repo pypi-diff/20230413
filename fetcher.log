@@ -5896,3 +5896,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 03:55:30] INFO root fetch - main [MainThread]: End processing [ktplotspy]: success
 [2023-04-13 03:55:31] INFO root fetch - main [MainThread]: End processing [zcmds-win32]: success
 [2023-04-13 03:55:31] INFO root fetch - main [MainThread]: Store serial: [17685809]
+[2023-04-13 04:00:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17685809]
+[2023-04-13 04:00:38] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-13 04:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ExpdFtpService
+[2023-04-13 04:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toolchains
+[2023-04-13 04:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pcl-pangu
+[2023-04-13 04:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiocsv
+[2023-04-13 04:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: featureform
+[2023-04-13 04:00:39] INFO root fetch - processPackages [ExpdFtpService]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-13 04:00:39] INFO root fetch - processPackages [toolchains]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 04:00:39] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 04:00:39] INFO root fetch - processPackages [aiocsv]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-13 04:00:39] INFO root fetch - processPackages [featureform]: New version: [1.7.3rc5] Old Version: [1.7.3rc4]
+[2023-04-13 04:00:39] INFO root fetch - processPackages [ExpdFtpService]: Downloading https://files.pythonhosted.org/packages/d7/54/1c5473708a65e303d85f848b176abd778f651626cb1f7b9611e1d13167c9/ExpdFtpService-0.5.0.tar.gz
+[2023-04-13 04:00:39] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 04:00:39] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 04:00:39] INFO root fetch - processPackages [featureform]: Downloading https://files.pythonhosted.org/packages/f9/1b/cb67c9bee4d72954e904af608c0c48fc9d144b3778feb31a30a4ccec9cf9/featureform-1.7.3rc5.tar.gz
+[2023-04-13 04:00:39] INFO root fetch - processPackages [aiocsv]: Downloading https://files.pythonhosted.org/packages/cb/14/f40e0c54caf5eaa3a40310a7a9a6e886598e0bdae1f9c440fd35ec372eca/aiocsv-1.2.3.tar.gz
+[2023-04-13 04:00:39] INFO root fetch - processPackages [toolchains]: executing diffoscope
+[2023-04-13 04:00:39] INFO root fetch - processPackages [toolchains]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolchains-0.0.8-py3-none-any.whl.zip tmp/toolchains-0.0.9-py3-none-any.whl.zip --markdown 20230413/t/toolchains/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:00:39] INFO root fetch - processPackages [aiocsv]: Downloading https://files.pythonhosted.org/packages/81/5d/23f4e651058c2d83edbe75851ceb0295d744d62d531c14e295a1434554eb/aiocsv-1.2.4.tar.gz
+[2023-04-13 04:00:39] INFO root fetch - processPackages [ExpdFtpService]: Downloading https://files.pythonhosted.org/packages/16/d2/540c66b4cea5aba3fcdc0725556bae921fa0f6b26645150b3c7f906990b4/ExpdFtpService-0.6.0.tar.gz
+[2023-04-13 04:00:39] INFO root fetch - processPackages [ExpdFtpService]: executing diffoscope
+[2023-04-13 04:00:39] INFO root fetch - processPackages [ExpdFtpService]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ExpdFtpService-0.5.0.tar.gz tmp/ExpdFtpService-0.6.0.tar.gz --markdown 20230413/E/ExpdFtpService/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-13 04:00:39] INFO root fetch - processPackages [aiocsv]: executing diffoscope
+[2023-04-13 04:00:39] INFO root fetch - processPackages [aiocsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocsv-1.2.3.tar.gz tmp/aiocsv-1.2.4.tar.gz --markdown 20230413/a/aiocsv/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-13 04:00:39] INFO root fetch - processPackages [featureform]: executing diffoscope
+[2023-04-13 04:00:39] INFO root fetch - processPackages [featureform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featureform-1.7.3rc4.tar.gz tmp/featureform-1.7.3rc5.tar.gz --markdown 20230413/f/featureform/1.7.3rc4-1.7.3rc5/diff.md --exclude *.pyd
+[2023-04-13 04:00:40] INFO root fetch - processPackages [ExpdFtpService]: Start processing: je-web-runner
+[2023-04-13 04:00:40] INFO root fetch - main [MainThread]: End processing [ExpdFtpService]: success
+[2023-04-13 04:00:40] INFO root fetch - processPackages [je-web-runner]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 04:00:40] INFO root fetch - processPackages [toolchains]: Start processing: smartnoise-sql
+[2023-04-13 04:00:40] INFO root fetch - main [MainThread]: End processing [toolchains]: success
+[2023-04-13 04:00:40] INFO root fetch - processPackages [smartnoise-sql]: New version: [0.2.9.2] Old Version: [0.2.9.1]
+[2023-04-13 04:00:40] INFO root fetch - processPackages [aiocsv]: Start processing: je-api-testka
+[2023-04-13 04:00:40] INFO root fetch - main [MainThread]: End processing [aiocsv]: success
+[2023-04-13 04:00:40] INFO root fetch - processPackages [je-api-testka]: New version: [0.0.98] Old Version: [0.0.97]
+[2023-04-13 04:00:41] INFO root fetch - processPackages [je-web-runner]: Downloading https://files.pythonhosted.org/packages/98/dc/9b478fd57590174657ab4a34dd1a26e204245a4f2e1a88b6a6c338c1ec39/je_web_runner-0.0.8.tar.gz
+[2023-04-13 04:00:41] INFO root fetch - processPackages [smartnoise-sql]: Downloading https://files.pythonhosted.org/packages/51/c8/caa5f12ad60f986627cab9c558fa1f4df16b054a8d5fa23add71ec7da144/smartnoise-sql-0.2.9.1.tar.gz
+[2023-04-13 04:00:41] INFO root fetch - processPackages [je-api-testka]: Downloading https://files.pythonhosted.org/packages/f7/e6/c330fc323d54dd3e9b667c1def7c307e421c1aef51a2892fe3447ce8f29f/je_api_testka-0.0.97.tar.gz
+[2023-04-13 04:00:41] INFO root fetch - processPackages [je-api-testka]: Downloading https://files.pythonhosted.org/packages/05/d3/6e752e8b6e2b67e21ffcd427ed3bac63c12348adf3a626180bee475ba1fd/je_api_testka-0.0.98.tar.gz
+[2023-04-13 04:00:41] INFO root fetch - processPackages [je-api-testka]: executing diffoscope
+[2023-04-13 04:00:41] INFO root fetch - processPackages [je-api-testka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_api_testka-0.0.97.tar.gz tmp/je_api_testka-0.0.98.tar.gz --markdown 20230413/j/je-api-testka/0.0.97-0.0.98/diff.md --exclude *.pyd
+[2023-04-13 04:00:41] INFO root fetch - processPackages [pcl-pangu]: Start processing: etradebot
+[2023-04-13 04:00:41] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 04:00:41] INFO root fetch - processPackages [etradebot]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 04:00:41] INFO root fetch - processPackages [je-web-runner]: Downloading https://files.pythonhosted.org/packages/a0/6f/4829ef02077ea8ae3e3f1ae6127458670b79505fe73799371e9490b214c2/je_web_runner-0.0.9.tar.gz
+[2023-04-13 04:00:41] INFO root fetch - processPackages [etradebot]: Downloading https://files.pythonhosted.org/packages/f0/28/99e1018e17adcace170404873e10dcc63d4fbffc38a32667ded504b223a9/etradebot-1.0.1.tar.gz
+[2023-04-13 04:00:41] INFO root fetch - processPackages [smartnoise-sql]: Downloading https://files.pythonhosted.org/packages/03/23/c92cf142e8afac07723c18deab5c2fe623dd204ce45907a9f2e98421e0f9/smartnoise-sql-0.2.9.2.tar.gz
+[2023-04-13 04:00:42] INFO root fetch - processPackages [etradebot]: executing diffoscope
+[2023-04-13 04:00:42] INFO root fetch - processPackages [etradebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etradebot-1.0.0.tar.gz tmp/etradebot-1.0.1.tar.gz --markdown 20230413/e/etradebot/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 04:00:42] INFO root fetch - processPackages [je-web-runner]: executing diffoscope
+[2023-04-13 04:00:42] INFO root fetch - processPackages [je-web-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_web_runner-0.0.8.tar.gz tmp/je_web_runner-0.0.9.tar.gz --markdown 20230413/j/je-web-runner/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:00:42] INFO root fetch - processPackages [smartnoise-sql]: executing diffoscope
+[2023-04-13 04:00:42] INFO root fetch - processPackages [smartnoise-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartnoise-sql-0.2.9.1.tar.gz tmp/smartnoise-sql-0.2.9.2.tar.gz --markdown 20230413/s/smartnoise-sql/0.2.9.1-0.2.9.2/diff.md --exclude *.pyd
+[2023-04-13 04:00:42] INFO root fetch - processPackages [je-api-testka]: Start processing: opentelemetry-opencensus-shim
+[2023-04-13 04:00:42] INFO root fetch - main [MainThread]: End processing [je-api-testka]: success
+[2023-04-13 04:00:42] WARNING root fetch - processPackages [opentelemetry-opencensus-shim]: Skipping, unable to determine old version
+[2023-04-13 04:00:42] INFO root fetch - main [MainThread]: End processing [opentelemetry-opencensus-shim] error
+[2023-04-13 04:00:43] INFO root fetch - main [MainThread]: End processing [etradebot]: success
+[2023-04-13 04:00:43] INFO root fetch - main [MainThread]: End processing [featureform]: success
+[2023-04-13 04:00:43] INFO root fetch - main [MainThread]: End processing [je-web-runner]: success
+[2023-04-13 04:00:43] INFO root fetch - main [MainThread]: End processing [smartnoise-sql]: success
+[2023-04-13 04:00:43] INFO root fetch - main [MainThread]: Store serial: [17685837]
