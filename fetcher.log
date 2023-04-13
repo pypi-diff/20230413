@@ -13770,3 +13770,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 12:48:22] INFO root fetch - main [MainThread]: End processing [cognite-sdk]: success
 [2023-04-13 12:48:22] INFO root fetch - main [MainThread]: End processing [orchestra-logger]: success
 [2023-04-13 12:48:22] INFO root fetch - main [MainThread]: Store serial: [17690760]
+[2023-04-13 12:53:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690760]
+[2023-04-13 12:53:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-13 12:53:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: extr
+[2023-04-13 12:53:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yourtools
+[2023-04-13 12:53:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slackflylog
+[2023-04-13 12:53:30] INFO root fetch - processPackages [slackflylog]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-13 12:53:30] INFO root fetch - processPackages [extr]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 12:53:30] INFO root fetch - processPackages [yourtools]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-13 12:53:30] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-13 12:53:30] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-3.0.4.tar.gz tmp/slackflylog-3.0.5.tar.gz --markdown 20230413/s/slackflylog/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-13 12:53:30] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/b4/0c/939f27ec991c27b0cdbeac1f3d70e09a054f5eb682f082d2abfa8da5e680/yourtools-0.4.5.tar.gz
+[2023-04-13 12:53:30] INFO root fetch - processPackages [extr]: Downloading https://files.pythonhosted.org/packages/9e/58/db8b9d40a11735923516a46f173982cbf7eb9a06631360f098dbc0f31265/extr-0.0.5.tar.gz
+[2023-04-13 12:53:31] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-13 12:53:31] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.4.4.tar.gz tmp/yourtools-0.4.5.tar.gz --markdown 20230413/y/yourtools/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-13 12:53:31] INFO root fetch - processPackages [extr]: executing diffoscope
+[2023-04-13 12:53:31] INFO root fetch - processPackages [extr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-0.0.4.tar.gz tmp/extr-0.0.5.tar.gz --markdown 20230413/e/extr/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 12:53:32] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-13 12:53:32] INFO root fetch - main [MainThread]: End processing [extr]: success
+[2023-04-13 12:53:32] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-13 12:53:32] INFO root fetch - main [MainThread]: Store serial: [17690769]
