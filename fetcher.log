@@ -9802,3 +9802,94 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 09:12:13] INFO root fetch - main [MainThread]: End processing [danmakuC]: success
 [2023-04-13 09:12:25] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-04-13 09:12:25] INFO root fetch - main [MainThread]: Store serial: [17688136]
+[2023-04-13 09:17:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17688136]
+[2023-04-13 09:17:33] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-13 09:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-spec
+[2023-04-13 09:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arcimboldo
+[2023-04-13 09:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo12-addon-sale-order-digitized-signature
+[2023-04-13 09:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unicat
+[2023-04-13 09:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: swagger-coverage
+[2023-04-13 09:17:33] INFO root fetch - processPackages [py-spec]: New version: [3.3.0] Old Version: [3.2.0]
+[2023-04-13 09:17:33] INFO root fetch - processPackages [odoo12-addon-sale-order-digitized-signature]: New version: [12.0.1.0.0.99.dev9] Old Version: [12.0.1.0.0.99.dev6]
+[2023-04-13 09:17:33] INFO root fetch - processPackages [arcimboldo]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 09:17:33] INFO root fetch - processPackages [swagger-coverage]: New version: [3.0.0] Old Version: [2.2.9]
+[2023-04-13 09:17:33] INFO root fetch - processPackages [unicat]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 09:17:33] INFO root fetch - processPackages [py-spec]: Downloading https://files.pythonhosted.org/packages/47/dd/c94a25388737657af1737d1476d59533b610d1b29700d1b46cf0ab48d968/py_spec-3.2.0.tar.gz
+[2023-04-13 09:17:33] INFO root fetch - processPackages [odoo12-addon-sale-order-digitized-signature]: Downloading https://files.pythonhosted.org/packages/f5/f5/b097ea21a383b8534f80cdbdb6ac9b841ac93da42810860dc48ce674b516/odoo12_addon_sale_order_digitized_signature-12.0.1.0.0.99.dev6-py3-none-any.whl
+[2023-04-13 09:17:33] INFO root fetch - processPackages [swagger-coverage]: Downloading https://files.pythonhosted.org/packages/48/72/4a8fca03fdc17aae55969c6dc9e32bf9fc09a8e635bbd0bfc8c36e6ff4ac/swagger-coverage-2.2.9.tar.gz
+[2023-04-13 09:17:33] INFO root fetch - processPackages [unicat]: Downloading https://files.pythonhosted.org/packages/00/c4/ac463f2e35f66861b2f3a7612883f7e9d507efa9c79e729689850efa97a1/unicat-0.2.1.tar.gz
+[2023-04-13 09:17:33] INFO root fetch - processPackages [arcimboldo]: executing diffoscope
+[2023-04-13 09:17:33] INFO root fetch - processPackages [arcimboldo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcimboldo-1.0.8-py2.py3-none-any.whl.zip tmp/arcimboldo-1.0.9-py2.py3-none-any.whl.zip --markdown 20230413/a/arcimboldo/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 09:17:33] INFO root fetch - processPackages [py-spec]: Downloading https://files.pythonhosted.org/packages/bc/38/58dbda3ac1cdae06ec9749dd0924ebe6986d80c5d5e3e1a1596c7579a48e/py_spec-3.3.0.tar.gz
+[2023-04-13 09:17:33] INFO root fetch - processPackages [odoo12-addon-sale-order-digitized-signature]: Downloading https://files.pythonhosted.org/packages/cd/cc/19d99ecd2d50ac045ae91b247d58b160ae8bff0307950b150eb5e7e373f9/odoo12_addon_sale_order_digitized_signature-12.0.1.0.0.99.dev9-py3-none-any.whl
+[2023-04-13 09:17:33] WARNING root fetch - processPackages [swagger-coverage]: Skipping package: exceeds size limit 16280962>=10485760
+[2023-04-13 09:17:33] INFO root fetch - processPackages [swagger-coverage]: Start processing: bluepyefe
+[2023-04-13 09:17:33] INFO root fetch - main [MainThread]: End processing [swagger-coverage] error
+[2023-04-13 09:17:33] INFO root fetch - processPackages [bluepyefe]: New version: [2.2.46] Old Version: [2.2.45]
+[2023-04-13 09:17:33] INFO root fetch - processPackages [py-spec]: executing diffoscope
+[2023-04-13 09:17:33] INFO root fetch - processPackages [py-spec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_spec-3.2.0.tar.gz tmp/py_spec-3.3.0.tar.gz --markdown 20230413/p/py-spec/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2023-04-13 09:17:33] INFO root fetch - processPackages [odoo12-addon-sale-order-digitized-signature]: executing diffoscope
+[2023-04-13 09:17:33] INFO root fetch - processPackages [odoo12-addon-sale-order-digitized-signature]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_order_digitized_signature-12.0.1.0.0.99.dev6-py3-none-any.whl.zip tmp/odoo12_addon_sale_order_digitized_signature-12.0.1.0.0.99.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-sale-order-digitized-signature/12.0.1.0.0.99.dev6-12.0.1.0.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-13 09:17:33] INFO root fetch - processPackages [bluepyefe]: Downloading https://files.pythonhosted.org/packages/10/a6/298c948f21a841b1b5ffd725efdda5bdb4de129b2caa267501ec5ff845de/bluepyefe-2.2.45.tar.gz
+[2023-04-13 09:17:34] INFO root fetch - processPackages [bluepyefe]: Downloading https://files.pythonhosted.org/packages/10/d2/f8658ba52ed57d7674a9df6fb848f7f41998bfb485d5b12f06460044823e/bluepyefe-2.2.46.tar.gz
+[2023-04-13 09:17:34] INFO root fetch - processPackages [unicat]: executing diffoscope
+[2023-04-13 09:17:34] INFO root fetch - processPackages [unicat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicat-0.2.0.tar.gz tmp/unicat-0.2.1.tar.gz --markdown 20230413/u/unicat/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 09:17:34] INFO root fetch - processPackages [bluepyefe]: executing diffoscope
+[2023-04-13 09:17:34] INFO root fetch - processPackages [bluepyefe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluepyefe-2.2.45.tar.gz tmp/bluepyefe-2.2.46.tar.gz --markdown 20230413/b/bluepyefe/2.2.45-2.2.46/diff.md --exclude *.pyd
+[2023-04-13 09:17:35] INFO root fetch - processPackages [py-spec]: Start processing: gordo-client
+[2023-04-13 09:17:35] INFO root fetch - main [MainThread]: End processing [py-spec]: success
+[2023-04-13 09:17:35] INFO root fetch - processPackages [gordo-client]: New version: [6.2.0rc0] Old Version: [6.2.0]
+[2023-04-13 09:17:35] INFO root fetch - processPackages [odoo12-addon-sale-order-digitized-signature]: Start processing: spectralradex
+[2023-04-13 09:17:35] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-order-digitized-signature]: success
+[2023-04-13 09:17:35] INFO root fetch - processPackages [spectralradex]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-13 09:17:35] INFO root fetch - processPackages [gordo-client]: Downloading https://files.pythonhosted.org/packages/ac/52/423d5501dc39d6ea097a93a5bb03662d4f016b850df687f8f9f7272b6a3f/gordo_client-6.2.0-py3-none-any.whl
+[2023-04-13 09:17:35] INFO root fetch - processPackages [spectralradex]: Downloading https://files.pythonhosted.org/packages/fe/4d/530e7a44677ce9c27281b9688639fbb0f35fbe07ce6293a023c0590eb176/spectralradex-1.1.4-cp39-cp39-win_amd64.whl
+[2023-04-13 09:17:35] INFO root fetch - processPackages [bluepyefe]: Start processing: liblip
+[2023-04-13 09:17:35] INFO root fetch - main [MainThread]: End processing [bluepyefe]: success
+[2023-04-13 09:17:35] INFO root fetch - processPackages [liblip]: New version: [0.91] Old Version: [0.90]
+[2023-04-13 09:17:35] INFO root fetch - processPackages [gordo-client]: Downloading https://files.pythonhosted.org/packages/87/82/9669b3a4cda20e70eeaf4aa1651a5ebb425150f85244b4846552d39db13c/gordo_client-6.2.0rc0-py3-none-any.whl
+[2023-04-13 09:17:35] INFO root fetch - processPackages [spectralradex]: Downloading https://files.pythonhosted.org/packages/1f/a5/cea197d77d1647414b0651e9f0d71be423ba8c1fdf16fc119ae8339e0df2/spectralradex-1.1.5-cp39-cp39-win_amd64.whl
+[2023-04-13 09:17:35] INFO root fetch - processPackages [liblip]: Downloading https://files.pythonhosted.org/packages/fa/34/51042addc2afc297981ed9a3005ff8229701ce42118cee9830c1d92993bc/liblip-0.90.tar.gz
+[2023-04-13 09:17:35] INFO root fetch - processPackages [gordo-client]: executing diffoscope
+[2023-04-13 09:17:35] INFO root fetch - processPackages [gordo-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gordo_client-6.2.0-py3-none-any.whl.zip tmp/gordo_client-6.2.0rc0-py3-none-any.whl.zip --markdown 20230413/g/gordo-client/6.2.0-6.2.0rc0/diff.md --exclude *.pyd
+[2023-04-13 09:17:36] INFO root fetch - processPackages [spectralradex]: executing diffoscope
+[2023-04-13 09:17:36] INFO root fetch - processPackages [spectralradex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectralradex-1.1.4-cp39-cp39-win_amd64.whl.zip tmp/spectralradex-1.1.5-cp39-cp39-win_amd64.whl.zip --markdown 20230413/s/spectralradex/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-13 09:17:36] INFO root fetch - processPackages [liblip]: Downloading https://files.pythonhosted.org/packages/8f/ca/0634077173a9143c3c528b70fc6a41f7bc3ae716ad06aff2a9371f2db321/liblip-0.91.tar.gz
+[2023-04-13 09:17:36] INFO root fetch - processPackages [liblip]: executing diffoscope
+[2023-04-13 09:17:36] INFO root fetch - processPackages [liblip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liblip-0.90.tar.gz tmp/liblip-0.91.tar.gz --markdown 20230413/l/liblip/0.90-0.91/diff.md --exclude *.pyd
+[2023-04-13 09:17:37] INFO root fetch - processPackages [gordo-client]: Start processing: arkindex-base-worker
+[2023-04-13 09:17:37] INFO root fetch - main [MainThread]: End processing [gordo-client]: success
+[2023-04-13 09:17:37] INFO root fetch - processPackages [arkindex-base-worker]: New version: [0.3.3rc1] Old Version: [0.3.2rc7]
+[2023-04-13 09:17:37] INFO root fetch - processPackages [arkindex-base-worker]: Downloading https://files.pythonhosted.org/packages/ab/c8/6f541f5241964f5f465d598d21d6f3087f297692ef8f52a2a872e4635d93/arkindex-base-worker-0.3.2rc7.tar.gz
+[2023-04-13 09:17:37] INFO root fetch - processPackages [arkindex-base-worker]: Downloading https://files.pythonhosted.org/packages/92/94/4585e397a21c57a18b9e5b7ad9c0c470270f8e349415a27b1b6fa5ceafd9/arkindex-base-worker-0.3.3rc1.tar.gz
+[2023-04-13 09:17:37] INFO root fetch - processPackages [arkindex-base-worker]: executing diffoscope
+[2023-04-13 09:17:37] INFO root fetch - processPackages [arkindex-base-worker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkindex-base-worker-0.3.2rc7.tar.gz tmp/arkindex-base-worker-0.3.3rc1.tar.gz --markdown 20230413/a/arkindex-base-worker/0.3.2rc7-0.3.3rc1/diff.md --exclude *.pyd
+[2023-04-13 09:17:39] INFO root fetch - processPackages [liblip]: Start processing: chunked-uploads-attentive
+[2023-04-13 09:17:39] INFO root fetch - main [MainThread]: End processing [liblip]: success
+[2023-04-13 09:17:39] INFO root fetch - processPackages [chunked-uploads-attentive]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-13 09:17:39] INFO root fetch - processPackages [arcimboldo]: Start processing: Nuitka-winsvc
+[2023-04-13 09:17:39] INFO root fetch - main [MainThread]: End processing [arcimboldo]: success
+[2023-04-13 09:17:39] INFO root fetch - processPackages [Nuitka-winsvc]: New version: [1.5.6] Old Version: [1.5.5]
+[2023-04-13 09:17:39] INFO root fetch - processPackages [Nuitka-winsvc]: Downloading https://files.pythonhosted.org/packages/ba/7a/5b72aa522492064348ca0b2a9eb83a74790f9f8f542dd1e22e2d2fc136a4/Nuitka-winsvc-1.5.5.tar.gz
+[2023-04-13 09:17:39] INFO root fetch - processPackages [chunked-uploads-attentive]: Downloading https://files.pythonhosted.org/packages/9b/c5/91f48c026e165418dd326e264dc75fef5cad50f7cf1f1b0e9f93afa23129/chunked-uploads-attentive-0.0.4.tar.gz
+[2023-04-13 09:17:39] INFO root fetch - processPackages [arkindex-base-worker]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-04-13 09:17:39] INFO root fetch - main [MainThread]: End processing [arkindex-base-worker]: success
+[2023-04-13 09:17:40] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-04-13 09:17:40] INFO root fetch - processPackages [chunked-uploads-attentive]: executing diffoscope
+[2023-04-13 09:17:40] INFO root fetch - processPackages [chunked-uploads-attentive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chunked-uploads-attentive-0.0.3.tar.gz tmp/chunked-uploads-attentive-0.0.4.tar.gz --markdown 20230413/c/chunked-uploads-attentive/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-13 09:17:40] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-04-13 09:17:40] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230413/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 09:17:40] INFO root fetch - processPackages [Nuitka-winsvc]: Downloading https://files.pythonhosted.org/packages/d7/4c/344b17ce54810cc7bd8da52ff2c153d2c64cf9356d270a002feaedb4679e/Nuitka-winsvc-1.5.6.tar.gz
+[2023-04-13 09:17:41] INFO root fetch - processPackages [chunked-uploads-attentive]: Start processing: upgini
+[2023-04-13 09:17:41] INFO root fetch - main [MainThread]: End processing [chunked-uploads-attentive]: success
+[2023-04-13 09:17:41] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-04-13 09:17:41] INFO root fetch - processPackages [Nuitka-winsvc]: executing diffoscope
+[2023-04-13 09:17:41] INFO root fetch - processPackages [Nuitka-winsvc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Nuitka-winsvc-1.5.5.tar.gz tmp/Nuitka-winsvc-1.5.6.tar.gz --markdown 20230413/N/Nuitka-winsvc/1.5.5-1.5.6/diff.md --exclude *.pyd
+[2023-04-13 09:17:41] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2023-04-13 09:17:41] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20230413/u/upgini/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-04-13 09:17:41] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-04-13 09:17:42] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2023-04-13 09:17:44] INFO root fetch - main [MainThread]: End processing [spectralradex]: success
+[2023-04-13 09:18:08] INFO root fetch - main [MainThread]: End processing [Nuitka-winsvc]: success
+[2023-04-13 09:18:23] INFO root fetch - main [MainThread]: End processing [unicat]: success
+[2023-04-13 09:18:23] INFO root fetch - main [MainThread]: Store serial: [17688234]
