@@ -8796,3 +8796,103 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 08:17:56] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-04-13 08:18:47] INFO root fetch - main [MainThread]: End processing [OpenGeode-core]: success
 [2023-04-13 08:18:47] INFO root fetch - main [MainThread]: Store serial: [17687540]
+[2023-04-13 08:24:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687540]
+[2023-04-13 08:24:09] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-13 08:24:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libsnew
+[2023-04-13 08:24:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iranetf
+[2023-04-13 08:24:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: signxml
+[2023-04-13 08:24:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sunyata
+[2023-04-13 08:24:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scrape-google-scholar-py
+[2023-04-13 08:24:09] INFO root fetch - processPackages [sunyata]: New version: [0.0.35] Old Version: [0.0.29]
+[2023-04-13 08:24:09] INFO root fetch - processPackages [iranetf]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-13 08:24:09] INFO root fetch - processPackages [libsnew]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 08:24:09] INFO root fetch - processPackages [scrape-google-scholar-py]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-13 08:24:09] INFO root fetch - processPackages [signxml]: New version: [3.2.0] Old Version: [3.1.1]
+[2023-04-13 08:24:09] INFO root fetch - processPackages [libsnew]: Downloading https://files.pythonhosted.org/packages/2e/c2/adf2a0804ba639fd92bbf6b40ecb8bca7ea4cd50a8e95bcb3f6daaf2816a/libsnew-0.1.1.tar.gz
+[2023-04-13 08:24:09] INFO root fetch - processPackages [iranetf]: Downloading https://files.pythonhosted.org/packages/ec/c4/48d0f1a062e57f50c1e897d606f9ba9ec593e86d527cc06c527b9277a3b5/iranetf-0.8.0.tar.gz
+[2023-04-13 08:24:09] INFO root fetch - processPackages [scrape-google-scholar-py]: Downloading https://files.pythonhosted.org/packages/1f/54/45d32ef46033e6e636a558c85f77be0d45f9c48479c421b2be8225251a4d/scrape-google-scholar-py-0.3.3.tar.gz
+[2023-04-13 08:24:09] INFO root fetch - processPackages [sunyata]: Downloading https://files.pythonhosted.org/packages/05/3c/306eb77ae39b9618573f2f13b80fe75bd839a673dc5079553f17ccd491f8/sunyata-0.0.35.tar.gz
+[2023-04-13 08:24:09] INFO root fetch - processPackages [scrape-google-scholar-py]: executing diffoscope
+[2023-04-13 08:24:09] INFO root fetch - processPackages [scrape-google-scholar-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrape-google-scholar-py-0.3.2.tar.gz tmp/scrape-google-scholar-py-0.3.3.tar.gz --markdown 20230413/s/scrape-google-scholar-py/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-13 08:24:09] INFO root fetch - processPackages [signxml]: Downloading https://files.pythonhosted.org/packages/46/f3/6910019f60efba3d76e42540013cb27203a41eaa9bc2ec9edbb2e0d7623f/signxml-3.2.0.tar.gz
+[2023-04-13 08:24:09] INFO root fetch - processPackages [sunyata]: executing diffoscope
+[2023-04-13 08:24:09] INFO root fetch - processPackages [sunyata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunyata-0.0.29.tar.gz tmp/sunyata-0.0.35.tar.gz --markdown 20230413/s/sunyata/0.0.29-0.0.35/diff.md --exclude *.pyd
+[2023-04-13 08:24:09] INFO root fetch - processPackages [libsnew]: Downloading https://files.pythonhosted.org/packages/28/81/12967496541beca495eb76b8d549e57886e3ace2cbf5c253532180340f85/libsnew-0.1.2.tar.gz
+[2023-04-13 08:24:10] INFO root fetch - processPackages [signxml]: executing diffoscope
+[2023-04-13 08:24:10] INFO root fetch - processPackages [signxml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/signxml-3.1.1.tar.gz tmp/signxml-3.2.0.tar.gz --markdown 20230413/s/signxml/3.1.1-3.2.0/diff.md --exclude *.pyd
+[2023-04-13 08:24:10] INFO root fetch - processPackages [libsnew]: executing diffoscope
+[2023-04-13 08:24:10] INFO root fetch - processPackages [libsnew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsnew-0.1.1.tar.gz tmp/libsnew-0.1.2.tar.gz --markdown 20230413/l/libsnew/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 08:24:10] INFO root fetch - processPackages [iranetf]: Downloading https://files.pythonhosted.org/packages/13/fa/ca27cb7ea77c138ca4142cbb138910ddb5f3f57bb0ace643813d498c9d0d/iranetf-0.8.1.tar.gz
+[2023-04-13 08:24:10] INFO root fetch - processPackages [iranetf]: executing diffoscope
+[2023-04-13 08:24:10] INFO root fetch - processPackages [iranetf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iranetf-0.8.0.tar.gz tmp/iranetf-0.8.1.tar.gz --markdown 20230413/i/iranetf/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-13 08:24:11] INFO root fetch - processPackages [scrape-google-scholar-py]: Start processing: bq-tools-dirupload
+[2023-04-13 08:24:11] INFO root fetch - main [MainThread]: End processing [scrape-google-scholar-py]: success
+[2023-04-13 08:24:11] INFO root fetch - processPackages [bq-tools-dirupload]: New version: [0.8.9.1] Old Version: [0.8.9]
+[2023-04-13 08:24:11] INFO root fetch - processPackages [sunyata]: Start processing: zope.interface
+[2023-04-13 08:24:11] INFO root fetch - main [MainThread]: End processing [sunyata]: success
+[2023-04-13 08:24:11] INFO root fetch - processPackages [zope.interface]: New version: [6.1a2] Old Version: [6.1a1]
+[2023-04-13 08:24:11] INFO root fetch - processPackages [signxml]: Start processing: image-liveness
+[2023-04-13 08:24:11] INFO root fetch - main [MainThread]: End processing [signxml]: success
+[2023-04-13 08:24:11] INFO root fetch - processPackages [image-liveness]: New version: [1.4] Old Version: [1.2]
+[2023-04-13 08:24:11] INFO root fetch - processPackages [iranetf]: Start processing: nsface-python
+[2023-04-13 08:24:11] INFO root fetch - main [MainThread]: End processing [iranetf]: success
+[2023-04-13 08:24:11] INFO root fetch - processPackages [nsface-python]: New version: [1.1.60] Old Version: [1.1.59]
+[2023-04-13 08:24:11] INFO root fetch - processPackages [libsnew]: Start processing: alphamed-federated
+[2023-04-13 08:24:11] INFO root fetch - main [MainThread]: End processing [libsnew]: success
+[2023-04-13 08:24:11] INFO root fetch - processPackages [alphamed-federated]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-13 08:24:11] INFO root fetch - processPackages [zope.interface]: Downloading https://files.pythonhosted.org/packages/9d/13/dea39dc1f5739d7ff487ec9e5d7496685c9694edcf8b0f332036d31b0243/zope.interface-6.1a1.tar.gz
+[2023-04-13 08:24:11] INFO root fetch - processPackages [bq-tools-dirupload]: executing diffoscope
+[2023-04-13 08:24:11] INFO root fetch - processPackages [bq-tools-dirupload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bq_tools_dirupload-0.8.9-py3-none-any.whl.zip tmp/bq_tools_dirupload-0.8.9.1-py3-none-any.whl.zip --markdown 20230413/b/bq-tools-dirupload/0.8.9-0.8.9.1/diff.md --exclude *.pyd
+[2023-04-13 08:24:11] INFO root fetch - processPackages [nsface-python]: Downloading https://files.pythonhosted.org/packages/02/b0/1109cb30abe01db4d526ae28e736d48af45cc3eefb0820bb1d39b63aa7cf/nsface_python-1.1.60-py3-none-any.whl
+[2023-04-13 08:24:11] INFO root fetch - processPackages [image-liveness]: Downloading https://files.pythonhosted.org/packages/e5/a3/35fac95e1f03da08a7b9f91fe9f18d6c46bfeb35b210cc6d90df1562ac3c/image-liveness-1.4.tar.gz
+[2023-04-13 08:24:11] INFO root fetch - processPackages [nsface-python]: executing diffoscope
+[2023-04-13 08:24:11] INFO root fetch - processPackages [nsface-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsface_python-1.1.59-py3-none-any.whl.zip tmp/nsface_python-1.1.60-py3-none-any.whl.zip --markdown 20230413/n/nsface-python/1.1.59-1.1.60/diff.md --exclude *.pyd
+[2023-04-13 08:24:11] INFO root fetch - processPackages [image-liveness]: executing diffoscope
+[2023-04-13 08:24:11] INFO root fetch - processPackages [image-liveness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-liveness-1.2.tar.gz tmp/image-liveness-1.4.tar.gz --markdown 20230413/i/image-liveness/1.2-1.4/diff.md --exclude *.pyd
+[2023-04-13 08:24:11] INFO root fetch - processPackages [alphamed-federated]: Downloading https://files.pythonhosted.org/packages/2f/09/96dd371e033c20e2c62cbccae7d9ef20995bb021f1942ddaea525bd9c69a/alphamed-federated-0.4.4.tar.gz
+[2023-04-13 08:24:11] INFO root fetch - processPackages [zope.interface]: Downloading https://files.pythonhosted.org/packages/1f/ef/cae21b6295cb2960429f463e6e99daf3623a0c4ced7242a809a0c94c9605/zope.interface-6.1a2.tar.gz
+[2023-04-13 08:24:11] INFO root fetch - processPackages [alphamed-federated]: Downloading https://files.pythonhosted.org/packages/a0/f2/b114a5a737cf2582165c324bfebec13233a6e2efa77d25666e84336fe406/alphamed-federated-0.4.5.tar.gz
+[2023-04-13 08:24:11] INFO root fetch - processPackages [zope.interface]: executing diffoscope
+[2023-04-13 08:24:11] INFO root fetch - processPackages [zope.interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zope.interface-6.1a1.tar.gz tmp/zope.interface-6.1a2.tar.gz --markdown 20230413/z/zope.interface/6.1a1-6.1a2/diff.md --exclude *.pyd
+[2023-04-13 08:24:11] INFO root fetch - processPackages [alphamed-federated]: executing diffoscope
+[2023-04-13 08:24:11] INFO root fetch - processPackages [alphamed-federated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphamed-federated-0.4.4.tar.gz tmp/alphamed-federated-0.4.5.tar.gz --markdown 20230413/a/alphamed-federated/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-13 08:24:12] INFO root fetch - processPackages [bq-tools-dirupload]: Start processing: revchatgptauth
+[2023-04-13 08:24:12] INFO root fetch - main [MainThread]: End processing [bq-tools-dirupload]: success
+[2023-04-13 08:24:12] INFO root fetch - processPackages [revchatgptauth]: New version: [2023.4.14] Old Version: [2023.4.13]
+[2023-04-13 08:24:12] INFO root fetch - processPackages [image-liveness]: Start processing: IoddComCheckerGui
+[2023-04-13 08:24:12] INFO root fetch - main [MainThread]: End processing [image-liveness]: success
+[2023-04-13 08:24:12] INFO root fetch - processPackages [IoddComCheckerGui]: New version: [1.6.5.post4] Old Version: [1.6.5.post3]
+[2023-04-13 08:24:12] INFO root fetch - processPackages [revchatgptauth]: Downloading https://files.pythonhosted.org/packages/c9/fb/e1b1777efff081b9ffd00efdd864c1bed660a75ab203f257287723ac9dd3/revchatgptauth-2023.4.13.tar.gz
+[2023-04-13 08:24:13] INFO root fetch - processPackages [IoddComCheckerGui]: Downloading https://files.pythonhosted.org/packages/90/5a/29e1f2665a7eb038165ac60a7bcccf7b62c2952a07ba16fcfc2839208542/ioddcomcheckergui-1.6.5.post4-py3-none-any.whl
+[2023-04-13 08:24:13] INFO root fetch - processPackages [IoddComCheckerGui]: executing diffoscope
+[2023-04-13 08:24:13] INFO root fetch - processPackages [IoddComCheckerGui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ioddcomcheckergui-1.6.5.post3-py3-none-any.whl.zip tmp/ioddcomcheckergui-1.6.5.post4-py3-none-any.whl.zip --markdown 20230413/I/IoddComCheckerGui/1.6.5.post3-1.6.5.post4/diff.md --exclude *.pyd
+[2023-04-13 08:24:13] INFO root fetch - processPackages [revchatgptauth]: Downloading https://files.pythonhosted.org/packages/36/b4/a2abb9d0e2c371565df088a831772ee2fabe61e2ca11877391acdb6861a7/revchatgptauth-2023.4.14.tar.gz
+[2023-04-13 08:24:13] INFO root fetch - processPackages [revchatgptauth]: executing diffoscope
+[2023-04-13 08:24:13] INFO root fetch - processPackages [revchatgptauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revchatgptauth-2023.4.13.tar.gz tmp/revchatgptauth-2023.4.14.tar.gz --markdown 20230413/r/revchatgptauth/2023.4.13-2023.4.14/diff.md --exclude *.pyd
+[2023-04-13 08:24:13] INFO root fetch - processPackages [nsface-python]: Start processing: IoddComChecker
+[2023-04-13 08:24:13] INFO root fetch - main [MainThread]: End processing [nsface-python]: success
+[2023-04-13 08:24:13] INFO root fetch - processPackages [IoddComChecker]: New version: [1.6.5.post4] Old Version: [1.6.5.post3]
+[2023-04-13 08:24:13] INFO root fetch - processPackages [IoddComChecker]: Downloading https://files.pythonhosted.org/packages/49/d0/b3697c02679fccb66c5132562f59034f354e52c787603be88b108f56e971/ioddcomchecker-1.6.5.post4-cp39-cp39-win_amd64.whl
+[2023-04-13 08:24:13] INFO root fetch - processPackages [zope.interface]: Start processing: pytorch-wavelets
+[2023-04-13 08:24:13] INFO root fetch - main [MainThread]: End processing [zope.interface]: success
+[2023-04-13 08:24:13] WARNING root fetch - processPackages [pytorch-wavelets]: Skipping, unable to determine old version
+[2023-04-13 08:24:13] INFO root fetch - processPackages [pytorch-wavelets]: Start processing: proteinTools
+[2023-04-13 08:24:13] INFO root fetch - main [MainThread]: End processing [pytorch-wavelets] error
+[2023-04-13 08:24:13] INFO root fetch - processPackages [proteinTools]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 08:24:13] INFO root fetch - processPackages [IoddComChecker]: executing diffoscope
+[2023-04-13 08:24:13] INFO root fetch - processPackages [IoddComChecker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ioddcomchecker-1.6.5.post3-cp39-cp39-win_amd64.whl.zip tmp/ioddcomchecker-1.6.5.post4-cp39-cp39-win_amd64.whl.zip --markdown 20230413/I/IoddComChecker/1.6.5.post3-1.6.5.post4/diff.md --exclude *.pyd
+[2023-04-13 08:24:13] INFO root fetch - processPackages [proteinTools]: Downloading https://files.pythonhosted.org/packages/c1/88/4fc012564610b298013efa010e67d5c901504d17202d058c41974928e99f/proteinTools-0.1.7.tar.gz
+[2023-04-13 08:24:14] INFO root fetch - processPackages [proteinTools]: Downloading https://files.pythonhosted.org/packages/c2/1d/e818c76dd22c2f588b57b8a3138f400763bb2d48acae401276f8b0a9fe15/proteinTools-0.1.8.tar.gz
+[2023-04-13 08:24:14] INFO root fetch - processPackages [alphamed-federated]: Start processing: libsnew
+[2023-04-13 08:24:14] INFO root fetch - main [MainThread]: End processing [alphamed-federated]: success
+[2023-04-13 08:24:14] INFO root fetch - processPackages [libsnew]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 08:24:14] INFO root fetch - processPackages [proteinTools]: executing diffoscope
+[2023-04-13 08:24:14] INFO root fetch - processPackages [proteinTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proteinTools-0.1.7.tar.gz tmp/proteinTools-0.1.8.tar.gz --markdown 20230413/p/proteinTools/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 08:24:14] INFO root fetch - main [MainThread]: End processing [IoddComCheckerGui]: success
+[2023-04-13 08:24:14] INFO root fetch - processPackages [libsnew]: executing diffoscope
+[2023-04-13 08:24:14] INFO root fetch - processPackages [libsnew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsnew-0.1.1.tar.gz tmp/libsnew-0.1.2.tar.gz --markdown 20230413/l/libsnew/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 08:24:14] INFO root fetch - main [MainThread]: End processing [revchatgptauth]: success
+[2023-04-13 08:24:14] INFO root fetch - main [MainThread]: End processing [IoddComChecker]: success
+[2023-04-13 08:24:15] INFO root fetch - main [MainThread]: End processing [proteinTools]: success
+[2023-04-13 08:24:15] INFO root fetch - main [MainThread]: End processing [libsnew]: success
+[2023-04-13 08:24:15] INFO root fetch - main [MainThread]: Store serial: [17687622]
