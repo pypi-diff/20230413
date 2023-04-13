@@ -7312,3 +7312,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 06:06:56] INFO root fetch - main [MainThread]: End processing [cythereal-magic]: success
 [2023-04-13 06:06:56] INFO root fetch - main [MainThread]: End processing [vstutils]: success
 [2023-04-13 06:06:56] INFO root fetch - main [MainThread]: Store serial: [17686687]
+[2023-04-13 06:11:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686687]
+[2023-04-13 06:12:04] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 06:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: img2gif-jinsol
+[2023-04-13 06:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py3dchart
+[2023-04-13 06:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiolifx
+[2023-04-13 06:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rdhyee-utils
+[2023-04-13 06:12:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-wordle
+[2023-04-13 06:12:04] INFO root fetch - processPackages [aiolifx]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-13 06:12:04] WARNING root fetch - processPackages [img2gif-jinsol]: Skipping, unable to determine old version
+[2023-04-13 06:12:04] INFO root fetch - processPackages [img2gif-jinsol]: Start processing: fastapi-versionizer
+[2023-04-13 06:12:04] INFO root fetch - processPackages [py3dchart]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-13 06:12:04] INFO root fetch - processPackages [rdhyee-utils]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 06:12:04] INFO root fetch - main [MainThread]: End processing [img2gif-jinsol] error
+[2023-04-13 06:12:04] INFO root fetch - processPackages [nonebot-plugin-wordle]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 06:12:04] INFO root fetch - processPackages [fastapi-versionizer]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-13 06:12:04] INFO root fetch - processPackages [aiolifx]: Downloading https://files.pythonhosted.org/packages/12/4e/19d1ea8765e877ef14624f5d14ed0343ddd6d68a6903aef49f057ead97f9/aiolifx-0.8.8.tar.gz
+[2023-04-13 06:12:04] INFO root fetch - processPackages [rdhyee-utils]: Downloading https://files.pythonhosted.org/packages/5e/a4/2f000456c63a2780067aa3869f8c6bfbf0b8e4ebc95a73e5204d49b76889/rdhyee_utils-0.1.7.tar.gz
+[2023-04-13 06:12:04] INFO root fetch - processPackages [nonebot-plugin-wordle]: Downloading https://files.pythonhosted.org/packages/4a/34/ccfc00a1bf6c52bbe9cc4e1a20e5e9634b07e42ee001bab35eac1c8fb2e1/nonebot_plugin_wordle-0.2.0.tar.gz
+[2023-04-13 06:12:04] INFO root fetch - processPackages [py3dchart]: Downloading https://files.pythonhosted.org/packages/b9/8d/1b10f45ec52392faf75cb5fa2effafc21aed092a2d13e56c05af2efef5d5/py3dchart-0.1.4.tar.gz
+[2023-04-13 06:12:04] INFO root fetch - processPackages [fastapi-versionizer]: Downloading https://files.pythonhosted.org/packages/6d/fc/e422f5bb5a81bf84742af5473b12cc2045941c255dc46ebcdb74660a551b/fastapi_versionizer-0.1.3.tar.gz
+[2023-04-13 06:12:04] INFO root fetch - processPackages [py3dchart]: executing diffoscope
+[2023-04-13 06:12:04] INFO root fetch - processPackages [py3dchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3dchart-0.1.3.tar.gz tmp/py3dchart-0.1.4.tar.gz --markdown 20230413/p/py3dchart/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-13 06:12:04] INFO root fetch - processPackages [rdhyee-utils]: Downloading https://files.pythonhosted.org/packages/25/a0/c9886c05642559769493e1085fdf215ceab45168bf2f6ca9a8419a160e6f/rdhyee_utils-0.1.8.tar.gz
+[2023-04-13 06:12:04] INFO root fetch - processPackages [fastapi-versionizer]: Downloading https://files.pythonhosted.org/packages/86/cb/709572ddfd16dbe3ead18a2a255a781704b0300cd0a806c1e50521994f44/fastapi_versionizer-0.1.4.tar.gz
+[2023-04-13 06:12:04] INFO root fetch - processPackages [aiolifx]: Downloading https://files.pythonhosted.org/packages/2f/20/00800ec774732b03c94f07e25165db3bfe8b5c68e07bd1d686e55deebc6c/aiolifx-0.8.9.tar.gz
+[2023-04-13 06:12:04] INFO root fetch - processPackages [aiolifx]: executing diffoscope
+[2023-04-13 06:12:04] INFO root fetch - processPackages [aiolifx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiolifx-0.8.8.tar.gz tmp/aiolifx-0.8.9.tar.gz --markdown 20230413/a/aiolifx/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-13 06:12:04] INFO root fetch - processPackages [rdhyee-utils]: executing diffoscope
+[2023-04-13 06:12:04] INFO root fetch - processPackages [rdhyee-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdhyee_utils-0.1.7.tar.gz tmp/rdhyee_utils-0.1.8.tar.gz --markdown 20230413/r/rdhyee-utils/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 06:12:04] INFO root fetch - processPackages [fastapi-versionizer]: executing diffoscope
+[2023-04-13 06:12:04] INFO root fetch - processPackages [fastapi-versionizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_versionizer-0.1.3.tar.gz tmp/fastapi_versionizer-0.1.4.tar.gz --markdown 20230413/f/fastapi-versionizer/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-13 06:12:05] INFO root fetch - processPackages [nonebot-plugin-wordle]: Downloading https://files.pythonhosted.org/packages/6d/56/245b432a1f71e96c8dde2f1b0727bd7115825083ff6d08a3962daf092964/nonebot_plugin_wordle-0.2.1.tar.gz
+[2023-04-13 06:12:05] INFO root fetch - processPackages [nonebot-plugin-wordle]: executing diffoscope
+[2023-04-13 06:12:05] INFO root fetch - processPackages [nonebot-plugin-wordle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_wordle-0.2.0.tar.gz tmp/nonebot_plugin_wordle-0.2.1.tar.gz --markdown 20230413/n/nonebot-plugin-wordle/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 06:12:05] INFO root fetch - processPackages [py3dchart]: Start processing: jijzeptlab-client
+[2023-04-13 06:12:05] INFO root fetch - main [MainThread]: End processing [py3dchart]: success
+[2023-04-13 06:12:05] WARNING root fetch - processPackages [jijzeptlab-client]: Skipping, unable to determine old version
+[2023-04-13 06:12:05] INFO root fetch - processPackages [jijzeptlab-client]: Start processing: suger
+[2023-04-13 06:12:05] INFO root fetch - main [MainThread]: End processing [jijzeptlab-client] error
+[2023-04-13 06:12:05] INFO root fetch - processPackages [suger]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-13 06:12:05] INFO root fetch - processPackages [rdhyee-utils]: Start processing: project.harpy
+[2023-04-13 06:12:05] INFO root fetch - main [MainThread]: End processing [rdhyee-utils]: success
+[2023-04-13 06:12:06] INFO root fetch - processPackages [suger]: Downloading https://files.pythonhosted.org/packages/ad/39/f2a4f0b1c6dd129b0e05efc02ec8bfbe76e8a5992dc8f4d6e5a59b317ee0/suger-0.0.6.tar.gz
+[2023-04-13 06:12:06] INFO root fetch - main [MainThread]: End processing [aiolifx]: success
+[2023-04-13 06:12:06] WARNING root fetch - processPackages [project.harpy]: Skipping, unable to determine old version
+[2023-04-13 06:12:06] INFO root fetch - main [MainThread]: End processing [project.harpy] error
+[2023-04-13 06:12:06] INFO root fetch - main [MainThread]: End processing [fastapi-versionizer]: success
+[2023-04-13 06:12:06] INFO root fetch - processPackages [suger]: Downloading https://files.pythonhosted.org/packages/dd/6b/4763c948ddab1a87fb4020cc56537d73b484d7a2a5e74634835762229662/suger-0.0.7.tar.gz
+[2023-04-13 06:12:06] INFO root fetch - processPackages [suger]: executing diffoscope
+[2023-04-13 06:12:06] INFO root fetch - processPackages [suger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/suger-0.0.6.tar.gz tmp/suger-0.0.7.tar.gz --markdown 20230413/s/suger/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-13 06:12:07] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-wordle]: success
+[2023-04-13 06:12:07] INFO root fetch - main [MainThread]: End processing [suger]: success
+[2023-04-13 06:12:07] INFO root fetch - main [MainThread]: Store serial: [17686741]
