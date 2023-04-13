@@ -6042,3 +6042,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:11:04] INFO root fetch - main [MainThread]: End processing [jaxrie]: success
 [2023-04-13 04:11:04] INFO root fetch - main [MainThread]: End processing [heizer]: success
 [2023-04-13 04:11:04] INFO root fetch - main [MainThread]: Store serial: [17685885]
+[2023-04-13 04:16:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17685885]
+[2023-04-13 04:16:12] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-13 04:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reata
+[2023-04-13 04:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: occe-api
+[2023-04-13 04:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: azure-storage-file-share
+[2023-04-13 04:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MarkerMAG
+[2023-04-13 04:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gpt-api
+[2023-04-13 04:16:12] INFO root fetch - processPackages [reata]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-13 04:16:12] WARNING root fetch - processPackages [occe-api]: Skipping, unable to determine old version
+[2023-04-13 04:16:12] INFO root fetch - processPackages [occe-api]: Start processing: pymavlog
+[2023-04-13 04:16:12] INFO root fetch - main [MainThread]: End processing [occe-api] error
+[2023-04-13 04:16:12] WARNING root fetch - processPackages [gpt-api]: Skipping, unable to determine old version
+[2023-04-13 04:16:12] INFO root fetch - processPackages [gpt-api]: Start processing: OWSLib
+[2023-04-13 04:16:12] INFO root fetch - main [MainThread]: End processing [gpt-api] error
+[2023-04-13 04:16:12] INFO root fetch - processPackages [MarkerMAG]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-13 04:16:12] INFO root fetch - processPackages [azure-storage-file-share]: New version: [12.9.0b1] Old Version: [12.9.0]
+[2023-04-13 04:16:12] WARNING root fetch - processPackages [pymavlog]: Skipping, unable to determine old version
+[2023-04-13 04:16:12] INFO root fetch - processPackages [pymavlog]: Start processing: piedomains
+[2023-04-13 04:16:12] INFO root fetch - main [MainThread]: End processing [pymavlog] error
+[2023-04-13 04:16:12] INFO root fetch - processPackages [OWSLib]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-13 04:16:12] INFO root fetch - processPackages [piedomains]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 04:16:12] INFO root fetch - processPackages [piedomains]: executing diffoscope
+[2023-04-13 04:16:12] INFO root fetch - processPackages [piedomains]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piedomains-0.0.8.tar.gz tmp/piedomains-0.0.9.tar.gz --markdown 20230413/p/piedomains/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:16:12] INFO root fetch - processPackages [reata]: Downloading https://files.pythonhosted.org/packages/a0/01/0d90ef5c587afe4a56b97f4d6d4d4839eb95b7808ff4b349321865e80fe6/reata-1.0.1.tar.gz
+[2023-04-13 04:16:12] INFO root fetch - processPackages [azure-storage-file-share]: Downloading https://files.pythonhosted.org/packages/f4/37/560549bee633faa71830f5f3f21e47f888d1c02f7a21cd061d359462d55f/azure-storage-file-share-12.9.0.zip
+[2023-04-13 04:16:12] INFO root fetch - processPackages [MarkerMAG]: Downloading https://files.pythonhosted.org/packages/96/e2/2e8d1478fb3b26f4927ea2c6643df810400316ee6e9c9504c745eab43bac/MarkerMAG-1.1.8.tar.gz
+[2023-04-13 04:16:12] INFO root fetch - processPackages [OWSLib]: executing diffoscope
+[2023-04-13 04:16:12] INFO root fetch - processPackages [OWSLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OWSLib-0.9.1.tar.gz tmp/OWSLib-0.9.2.tar.gz --markdown 20230413/O/OWSLib/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-13 04:16:12] INFO root fetch - processPackages [reata]: Downloading https://files.pythonhosted.org/packages/ab/2c/0d5cc6e53d45db8c0386b1459d5755957255af8f4946a1a2742bab6dfe57/reata-1.0.2-py3-none-any.whl
+[2023-04-13 04:16:13] INFO root fetch - processPackages [reata]: executing diffoscope
+[2023-04-13 04:16:13] INFO root fetch - processPackages [reata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reata-1.0.1.tar.gz tmp/reata-1.0.2-py3-none-any.whl.zip --markdown 20230413/r/reata/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-13 04:16:13] INFO root fetch - processPackages [MarkerMAG]: Downloading https://files.pythonhosted.org/packages/91/18/434d807cf4e3ded987b6fc46b9029ff8066ee6ee9c37403238f9deb3b762/MarkerMAG-1.1.9.tar.gz
+[2023-04-13 04:16:13] INFO root fetch - processPackages [azure-storage-file-share]: Downloading https://files.pythonhosted.org/packages/9b/b3/b1bb1c7c42ddb873263513e2432a525617c639f3a269bdea5573c3cda516/azure-storage-file-share-12.9.0b1.zip
+[2023-04-13 04:16:13] INFO root fetch - processPackages [azure-storage-file-share]: executing diffoscope
+[2023-04-13 04:16:13] INFO root fetch - processPackages [azure-storage-file-share]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-storage-file-share-12.9.0.zip tmp/azure-storage-file-share-12.9.0b1.zip --markdown 20230413/a/azure-storage-file-share/12.9.0-12.9.0b1/diff.md --exclude *.pyd
+[2023-04-13 04:16:13] INFO root fetch - processPackages [MarkerMAG]: executing diffoscope
+[2023-04-13 04:16:13] INFO root fetch - processPackages [MarkerMAG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MarkerMAG-1.1.8.tar.gz tmp/MarkerMAG-1.1.9.tar.gz --markdown 20230413/M/MarkerMAG/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-13 04:16:14] INFO root fetch - processPackages [reata]: Start processing: halring
+[2023-04-13 04:16:14] INFO root fetch - main [MainThread]: End processing [reata]: success
+[2023-04-13 04:16:14] INFO root fetch - processPackages [halring]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-13 04:16:14] INFO root fetch - processPackages [OWSLib]: Start processing: arize
+[2023-04-13 04:16:14] INFO root fetch - main [MainThread]: End processing [OWSLib]: success
+[2023-04-13 04:16:14] INFO root fetch - processPackages [arize]: New version: [7.0.0rc6] Old Version: [7.0.0rc5]
+[2023-04-13 04:16:14] INFO root fetch - processPackages [halring]: Downloading https://files.pythonhosted.org/packages/67/d3/5fee234f07b6408765962b705f8be04fa2382f5aa5cb58dffafc127a62d8/halring-2.1.1-py3-none-any.whl
+[2023-04-13 04:16:14] INFO root fetch - main [MainThread]: End processing [piedomains]: success
+[2023-04-13 04:16:14] INFO root fetch - processPackages [arize]: executing diffoscope
+[2023-04-13 04:16:14] INFO root fetch - processPackages [arize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arize-7.0.0rc5.tar.gz tmp/arize-7.0.0rc6.tar.gz --markdown 20230413/a/arize/7.0.0rc5-7.0.0rc6/diff.md --exclude *.pyd
+[2023-04-13 04:16:14] INFO root fetch - processPackages [halring]: Downloading https://files.pythonhosted.org/packages/d2/5f/9afde0d6453de5a2272c6a44e689fa2384fe58e3d59759a17ac050eccc26/halring-2.1.2-py3-none-any.whl
+[2023-04-13 04:16:14] INFO root fetch - processPackages [halring]: executing diffoscope
+[2023-04-13 04:16:14] INFO root fetch - processPackages [halring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/halring-2.1.1-py3-none-any.whl.zip tmp/halring-2.1.2-py3-none-any.whl.zip --markdown 20230413/h/halring/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-13 04:16:15] INFO root fetch - main [MainThread]: End processing [azure-storage-file-share]: success
+[2023-04-13 04:16:15] INFO root fetch - main [MainThread]: End processing [arize]: success
+[2023-04-13 04:16:16] INFO root fetch - main [MainThread]: End processing [halring]: success
+[2023-04-13 04:16:16] INFO root fetch - main [MainThread]: End processing [MarkerMAG]: success
+[2023-04-13 04:16:16] INFO root fetch - main [MainThread]: Store serial: [17685919]
