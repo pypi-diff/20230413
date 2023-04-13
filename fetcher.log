@@ -10089,3 +10089,91 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 09:28:58] INFO root fetch - processPackages [ert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ert-5.0.0b3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/ert-5.0.0b5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230413/e/ert/5.0.0b3-5.0.0b5/diff.md --exclude *.pyd
 [2023-04-13 09:29:12] INFO root fetch - main [MainThread]: End processing [ert]: success
 [2023-04-13 09:29:12] INFO root fetch - main [MainThread]: Store serial: [17688368]
+[2023-04-13 09:34:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17688368]
+[2023-04-13 09:34:21] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-13 09:34:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lalsuite
+[2023-04-13 09:34:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: os2mo-data-import
+[2023-04-13 09:34:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: checkov
+[2023-04-13 09:34:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tqsdk
+[2023-04-13 09:34:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kkpyutil
+[2023-04-13 09:34:22] INFO root fetch - processPackages [os2mo-data-import]: New version: [5.3.1] Old Version: [5.3.0]
+[2023-04-13 09:34:22] INFO root fetch - processPackages [kkpyutil]: New version: [0.99.1] Old Version: [0.99.0]
+[2023-04-13 09:34:22] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-04-13 09:34:22] INFO root fetch - processPackages [tqsdk]: New version: [3.4.0] Old Version: [3.3.0]
+[2023-04-13 09:34:22] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-13 09:34:22] INFO root fetch - processPackages [os2mo-data-import]: Downloading https://files.pythonhosted.org/packages/c7/32/614b577b79bc450b8c6c66806187b009d64d1ea179e7fa0051a4e3941e61/os2mo_data_import-5.3.0.tar.gz
+[2023-04-13 09:34:22] INFO root fetch - processPackages [kkpyutil]: executing diffoscope
+[2023-04-13 09:34:22] INFO root fetch - processPackages [kkpyutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyutil-0.99.0.tar.gz tmp/kkpyutil-0.99.1.tar.gz --markdown 20230413/k/kkpyutil/0.99.0-0.99.1/diff.md --exclude *.pyd
+[2023-04-13 09:34:22] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-13 09:34:22] INFO root fetch - processPackages [tqsdk]: Downloading https://files.pythonhosted.org/packages/56/f7/422cea722db7f87778f0ed961faf60309e2409af14b1436d7c37bab883e9/tqsdk-3.3.0.tar.gz
+[2023-04-13 09:34:22] INFO root fetch - processPackages [os2mo-data-import]: Downloading https://files.pythonhosted.org/packages/bc/69/cbd7bb9d79ba7e17af747670cbf96c9e55a59036817d2f3f537ce224c6cf/os2mo_data_import-5.3.1.tar.gz
+[2023-04-13 09:34:22] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-13 09:34:22] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230413/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-13 09:34:22] INFO root fetch - processPackages [tqsdk]: Downloading https://files.pythonhosted.org/packages/d0/f7/defac9a45b10b43fbaf16e9e8d543986cb864eb1fefa059063c8f9422870/tqsdk-3.4.0.tar.gz
+[2023-04-13 09:34:22] INFO root fetch - processPackages [os2mo-data-import]: executing diffoscope
+[2023-04-13 09:34:22] INFO root fetch - processPackages [os2mo-data-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os2mo_data_import-5.3.0.tar.gz tmp/os2mo_data_import-5.3.1.tar.gz --markdown 20230413/o/os2mo-data-import/5.3.0-5.3.1/diff.md --exclude *.pyd
+[2023-04-13 09:34:22] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-04-13 09:34:22] INFO root fetch - processPackages [lalsuite]: Start processing: peewee-aio
+[2023-04-13 09:34:22] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-04-13 09:34:23] INFO root fetch - processPackages [tqsdk]: executing diffoscope
+[2023-04-13 09:34:23] INFO root fetch - processPackages [tqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tqsdk-3.3.0.tar.gz tmp/tqsdk-3.4.0.tar.gz --markdown 20230413/t/tqsdk/3.3.0-3.4.0/diff.md --exclude *.pyd
+[2023-04-13 09:34:23] INFO root fetch - processPackages [peewee-aio]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-13 09:34:23] INFO root fetch - processPackages [peewee-aio]: Downloading https://files.pythonhosted.org/packages/01/09/8231097d7a0ad9b101bbbd54d3865d96765c8d0a3cf42a53ff4f60e71bd0/peewee_aio-1.5.1.tar.gz
+[2023-04-13 09:34:23] INFO root fetch - processPackages [kkpyutil]: Start processing: pymultilint
+[2023-04-13 09:34:23] INFO root fetch - main [MainThread]: End processing [kkpyutil]: success
+[2023-04-13 09:34:23] INFO root fetch - processPackages [pymultilint]: New version: [1.0.0] Old Version: [0.9.0]
+[2023-04-13 09:34:23] INFO root fetch - processPackages [pymultilint]: executing diffoscope
+[2023-04-13 09:34:23] INFO root fetch - processPackages [pymultilint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymultilint-0.9.0.tar.gz tmp/pymultilint-1.0.0.tar.gz --markdown 20230413/p/pymultilint/0.9.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-13 09:34:23] INFO root fetch - processPackages [peewee-aio]: Downloading https://files.pythonhosted.org/packages/46/4d/df5c3e6363de52cd0680bfabd49b6fbbf67af698e98fb0f58818dd75a936/peewee_aio-1.5.2.tar.gz
+[2023-04-13 09:34:23] INFO root fetch - processPackages [peewee-aio]: executing diffoscope
+[2023-04-13 09:34:23] INFO root fetch - processPackages [peewee-aio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peewee_aio-1.5.1.tar.gz tmp/peewee_aio-1.5.2.tar.gz --markdown 20230413/p/peewee-aio/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-13 09:34:23] INFO root fetch - processPackages [os2mo-data-import]: Start processing: test-mqc-core
+[2023-04-13 09:34:23] INFO root fetch - main [MainThread]: End processing [os2mo-data-import]: success
+[2023-04-13 09:34:23] WARNING root fetch - processPackages [test-mqc-core]: Skipping, unable to determine old version
+[2023-04-13 09:34:23] INFO root fetch - processPackages [test-mqc-core]: Start processing: lucija-package
+[2023-04-13 09:34:23] INFO root fetch - main [MainThread]: End processing [test-mqc-core] error
+[2023-04-13 09:34:24] ERROR root fetch - processPackages [lucija-package]: Unable to get metadata: No such project 'lucija-package'
+[2023-04-13 09:34:24] INFO root fetch - processPackages [lucija-package]: Start processing: web3-py-checksum
+[2023-04-13 09:34:24] INFO root fetch - main [MainThread]: End processing [lucija-package] error
+[2023-04-13 09:34:24] WARNING root fetch - processPackages [web3-py-checksum]: Skipping, unable to determine old version
+[2023-04-13 09:34:24] INFO root fetch - processPackages [web3-py-checksum]: Start processing: deepprofile
+[2023-04-13 09:34:24] INFO root fetch - main [MainThread]: End processing [web3-py-checksum] error
+[2023-04-13 09:34:24] INFO root fetch - processPackages [deepprofile]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-13 09:34:24] INFO root fetch - processPackages [deepprofile]: executing diffoscope
+[2023-04-13 09:34:24] INFO root fetch - processPackages [deepprofile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepprofile-0.0.7.tar.gz tmp/deepprofile-0.0.8.tar.gz --markdown 20230413/d/deepprofile/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-13 09:34:24] INFO root fetch - processPackages [pymultilint]: Start processing: test-mqc-module
+[2023-04-13 09:34:24] INFO root fetch - main [MainThread]: End processing [pymultilint]: success
+[2023-04-13 09:34:24] WARNING root fetch - processPackages [test-mqc-module]: Skipping, unable to determine old version
+[2023-04-13 09:34:24] INFO root fetch - processPackages [test-mqc-module]: Start processing: yourtools
+[2023-04-13 09:34:24] INFO root fetch - main [MainThread]: End processing [test-mqc-module] error
+[2023-04-13 09:34:24] INFO root fetch - processPackages [peewee-aio]: Start processing: sev-snp-measure
+[2023-04-13 09:34:24] INFO root fetch - main [MainThread]: End processing [peewee-aio]: success
+[2023-04-13 09:34:24] INFO root fetch - processPackages [yourtools]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-13 09:34:24] INFO root fetch - processPackages [sev-snp-measure]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-13 09:34:25] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/c2/f1/6dfd3b0404e2519f169b00fb6a80b96051779ed3525e821736f4ef0dd8e2/yourtools-0.3.5.tar.gz
+[2023-04-13 09:34:25] INFO root fetch - processPackages [sev-snp-measure]: Downloading https://files.pythonhosted.org/packages/6d/c2/989fae454199fc45dc1bd75da183f141fb636223d37909d781b2a43490be/sev-snp-measure-0.0.3.tar.gz
+[2023-04-13 09:34:25] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/e0/61/009455d8a246a3219cb8a83d44838c86e07b8f40cec374e27072bd1abdeb/yourtools-0.3.6.tar.gz
+[2023-04-13 09:34:25] INFO root fetch - processPackages [sev-snp-measure]: Downloading https://files.pythonhosted.org/packages/82/1c/389bd4943079b4e332456b37ca3a94a1acc1cdfe56cb0ebd2c6b7df28221/sev-snp-measure-0.0.4.tar.gz
+[2023-04-13 09:34:25] INFO root fetch - processPackages [deepprofile]: Start processing: safe-ds
+[2023-04-13 09:34:25] INFO root fetch - main [MainThread]: End processing [deepprofile]: success
+[2023-04-13 09:34:25] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-13 09:34:25] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.3.5.tar.gz tmp/yourtools-0.3.6.tar.gz --markdown 20230413/y/yourtools/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-13 09:34:25] INFO root fetch - processPackages [safe-ds]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 09:34:25] INFO root fetch - processPackages [sev-snp-measure]: executing diffoscope
+[2023-04-13 09:34:25] INFO root fetch - processPackages [sev-snp-measure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sev-snp-measure-0.0.3.tar.gz tmp/sev-snp-measure-0.0.4.tar.gz --markdown 20230413/s/sev-snp-measure/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-13 09:34:25] INFO root fetch - processPackages [safe-ds]: Downloading https://files.pythonhosted.org/packages/09/f6/a6b32c0bddd70e357b5ee90c9b88c336cc90c5fb454915f0b87e3d58a1b6/safe_ds-0.8.0.tar.gz
+[2023-04-13 09:34:26] INFO root fetch - processPackages [safe-ds]: Downloading https://files.pythonhosted.org/packages/bd/f8/60207d42597a9f68aa486aee74213d0424e53d4bd7cce2a8b050d148f4ed/safe_ds-0.9.0.tar.gz
+[2023-04-13 09:34:26] INFO root fetch - processPackages [safe-ds]: executing diffoscope
+[2023-04-13 09:34:26] INFO root fetch - processPackages [safe-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safe_ds-0.8.0.tar.gz tmp/safe_ds-0.9.0.tar.gz --markdown 20230413/s/safe-ds/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 09:34:26] INFO root fetch - processPackages [yourtools]: Start processing: xia-api
+[2023-04-13 09:34:26] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-13 09:34:26] INFO root fetch - processPackages [xia-api]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 09:34:26] INFO root fetch - main [MainThread]: End processing [sev-snp-measure]: success
+[2023-04-13 09:34:26] INFO root fetch - processPackages [xia-api]: Downloading https://files.pythonhosted.org/packages/03/34/ab780d6d5347efe87e347bee4b874eece57adcc318fee6ee9099cd87cfb6/xia_api-0.1.8-cp39-none-win_amd64.whl
+[2023-04-13 09:34:27] INFO root fetch - processPackages [xia-api]: executing diffoscope
+[2023-04-13 09:34:27] INFO root fetch - processPackages [xia-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_api-0.1.7-cp39-none-win_amd64.whl.zip tmp/xia_api-0.1.8-cp39-none-win_amd64.whl.zip --markdown 20230413/x/xia-api/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 09:34:27] INFO root fetch - main [MainThread]: End processing [tqsdk]: success
+[2023-04-13 09:34:28] INFO root fetch - main [MainThread]: End processing [safe-ds]: success
+[2023-04-13 09:34:28] INFO root fetch - main [MainThread]: End processing [xia-api]: success
+[2023-04-13 09:35:04] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-13 09:35:04] INFO root fetch - main [MainThread]: Store serial: [17688442]
