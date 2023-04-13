@@ -20097,3 +20097,112 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 16:51:16] INFO root fetch - main [MainThread]: End processing [hagis]: success
 [2023-04-13 16:51:18] INFO root fetch - main [MainThread]: End processing [rl-zoo3]: success
 [2023-04-13 16:51:18] INFO root fetch - main [MainThread]: Store serial: [17694020]
+[2023-04-13 16:56:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17694020]
+[2023-04-13 16:56:26] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-13 16:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-invenio
+[2023-04-13 16:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: square-mipalo
+[2023-04-13 16:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: weather-command
+[2023-04-13 16:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: conjure-python-client
+[2023-04-13 16:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ncbi-datasets-pylib
+[2023-04-13 16:56:26] WARNING root fetch - processPackages [square-mipalo]: Skipping, unable to determine old version
+[2023-04-13 16:56:26] INFO root fetch - processPackages [square-mipalo]: Start processing: polywrap-client
+[2023-04-13 16:56:26] INFO root fetch - main [MainThread]: End processing [square-mipalo] error
+[2023-04-13 16:56:26] INFO root fetch - processPackages [conjure-python-client]: New version: [2.7.0] Old Version: [2.6.0]
+[2023-04-13 16:56:26] INFO root fetch - processPackages [weather-command]: New version: [5.2.1] Old Version: [5.2.0]
+[2023-04-13 16:56:26] INFO root fetch - processPackages [pytest-invenio]: New version: [2.1.3] Old Version: [2.1.2]
+[2023-04-13 16:56:26] INFO root fetch - processPackages [ncbi-datasets-pylib]: New version: [9.1.0] Old Version: [9.0.0]
+[2023-04-13 16:56:26] INFO root fetch - processPackages [polywrap-client]: New version: [0.1.0a4] Old Version: [0.1.0a3]
+[2023-04-13 16:56:26] INFO root fetch - processPackages [polywrap-client]: executing diffoscope
+[2023-04-13 16:56:26] INFO root fetch - processPackages [polywrap-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_client-0.1.0a3.tar.gz tmp/polywrap_client-0.1.0a4.tar.gz --markdown 20230413/p/polywrap-client/0.1.0a3-0.1.0a4/diff.md --exclude *.pyd
+[2023-04-13 16:56:26] INFO root fetch - processPackages [conjure-python-client]: Downloading https://files.pythonhosted.org/packages/97/93/d665d9b7757787858c49c6d0e6ea1d9eb78465f8bfca40ee480d50f2dc84/conjure-python-client-2.6.0.tar.gz
+[2023-04-13 16:56:26] INFO root fetch - processPackages [pytest-invenio]: Downloading https://files.pythonhosted.org/packages/02/07/8f6f2733a6fad0deec846af8c4be63f39141022a9a4077509e81039e915a/pytest-invenio-2.1.2.tar.gz
+[2023-04-13 16:56:26] INFO root fetch - processPackages [weather-command]: Downloading https://files.pythonhosted.org/packages/38/94/90b06ba82ee1ad87fb772aaa11fd6f7037f4b22c82e4f8ffe63daccfac43/weather_command-5.2.0.tar.gz
+[2023-04-13 16:56:26] INFO root fetch - processPackages [ncbi-datasets-pylib]: executing diffoscope
+[2023-04-13 16:56:26] INFO root fetch - processPackages [ncbi-datasets-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncbi-datasets-pylib-9.0.0.tar.gz tmp/ncbi-datasets-pylib-9.1.0.tar.gz --markdown 20230413/n/ncbi-datasets-pylib/9.0.0-9.1.0/diff.md --exclude *.pyd
+[2023-04-13 16:56:26] INFO root fetch - processPackages [weather-command]: Downloading https://files.pythonhosted.org/packages/3c/25/79e651868182e7bfc964b952a444012ff610e5460e95c2e93f0577d98b43/weather_command-5.2.1.tar.gz
+[2023-04-13 16:56:27] INFO root fetch - processPackages [conjure-python-client]: Downloading https://files.pythonhosted.org/packages/8d/eb/4f3cf12b69bb5f24f8dc1df428ba67e27ccb8d85b0fed97a9f3677250320/conjure-python-client-2.7.0.tar.gz
+[2023-04-13 16:56:27] INFO root fetch - processPackages [pytest-invenio]: Downloading https://files.pythonhosted.org/packages/f6/81/593831c49cc023b193ba3093549e333ba27809c9b24ee3368390563583f6/pytest-invenio-2.1.3.tar.gz
+[2023-04-13 16:56:27] INFO root fetch - processPackages [conjure-python-client]: executing diffoscope
+[2023-04-13 16:56:27] INFO root fetch - processPackages [conjure-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conjure-python-client-2.6.0.tar.gz tmp/conjure-python-client-2.7.0.tar.gz --markdown 20230413/c/conjure-python-client/2.6.0-2.7.0/diff.md --exclude *.pyd
+[2023-04-13 16:56:27] INFO root fetch - processPackages [weather-command]: executing diffoscope
+[2023-04-13 16:56:27] INFO root fetch - processPackages [weather-command]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weather_command-5.2.0.tar.gz tmp/weather_command-5.2.1.tar.gz --markdown 20230413/w/weather-command/5.2.0-5.2.1/diff.md --exclude *.pyd
+[2023-04-13 16:56:27] INFO root fetch - processPackages [pytest-invenio]: executing diffoscope
+[2023-04-13 16:56:27] INFO root fetch - processPackages [pytest-invenio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-invenio-2.1.2.tar.gz tmp/pytest-invenio-2.1.3.tar.gz --markdown 20230413/p/pytest-invenio/2.1.2-2.1.3/diff.md --exclude *.pyd
+[2023-04-13 16:56:27] INFO root fetch - processPackages [polywrap-client]: Start processing: KLogLib
+[2023-04-13 16:56:27] INFO root fetch - main [MainThread]: End processing [polywrap-client]: success
+[2023-04-13 16:56:27] INFO root fetch - processPackages [KLogLib]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-13 16:56:27] INFO root fetch - processPackages [KLogLib]: Downloading https://files.pythonhosted.org/packages/60/2e/dc51fa66258ae39b94dec212567fca1e5dd1724c4c9574aefa2a0ff00f3f/KLogLib-0.2.0.tar.gz
+[2023-04-13 16:56:28] INFO root fetch - processPackages [KLogLib]: executing diffoscope
+[2023-04-13 16:56:28] INFO root fetch - processPackages [KLogLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KLogLib-0.1.1.tar.gz tmp/KLogLib-0.2.0.tar.gz --markdown 20230413/K/KLogLib/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 16:56:28] INFO root fetch - processPackages [conjure-python-client]: Start processing: ctadata
+[2023-04-13 16:56:28] INFO root fetch - main [MainThread]: End processing [conjure-python-client]: success
+[2023-04-13 16:56:28] INFO root fetch - processPackages [ctadata]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-13 16:56:28] INFO root fetch - processPackages [ncbi-datasets-pylib]: Start processing: polywrap-client-config-builder
+[2023-04-13 16:56:28] INFO root fetch - main [MainThread]: End processing [ncbi-datasets-pylib]: success
+[2023-04-13 16:56:28] INFO root fetch - processPackages [polywrap-client-config-builder]: New version: [0.1.0a22] Old Version: [0.1.0a21]
+[2023-04-13 16:56:28] INFO root fetch - processPackages [weather-command]: Start processing: Fenv
+[2023-04-13 16:56:28] INFO root fetch - main [MainThread]: End processing [weather-command]: success
+[2023-04-13 16:56:28] INFO root fetch - processPackages [Fenv]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 16:56:28] INFO root fetch - processPackages [ctadata]: Downloading https://files.pythonhosted.org/packages/1f/f0/c4597cb369a1ee95e407882a0093fc269d9d268e90bdc48bd88920bff39f/ctadata-0.2.4.tar.gz
+[2023-04-13 16:56:28] INFO root fetch - processPackages [pytest-invenio]: Start processing: sql-face
+[2023-04-13 16:56:28] INFO root fetch - main [MainThread]: End processing [pytest-invenio]: success
+[2023-04-13 16:56:28] INFO root fetch - processPackages [sql-face]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 16:56:28] INFO root fetch - processPackages [polywrap-client-config-builder]: Downloading https://files.pythonhosted.org/packages/e6/7e/06d55f81ed0281c1e210532ec624236c5b51d86033dedd8f799663f856f2/polywrap_client_config_builder-0.1.0a22.tar.gz
+[2023-04-13 16:56:28] INFO root fetch - processPackages [Fenv]: Downloading https://files.pythonhosted.org/packages/43/c6/602a5621dd6bf39775efffd9e3ece354f1fee05cfb00568406bd4302d48d/Fenv-0.0.8.tar.gz
+[2023-04-13 16:56:28] INFO root fetch - processPackages [ctadata]: executing diffoscope
+[2023-04-13 16:56:28] INFO root fetch - processPackages [ctadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctadata-0.2.3.tar.gz tmp/ctadata-0.2.4.tar.gz --markdown 20230413/c/ctadata/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-13 16:56:28] INFO root fetch - processPackages [sql-face]: Downloading https://files.pythonhosted.org/packages/44/27/ae06868c7c58403c38b06e533a4e6d084e9d82192b6b2266d8e6706e2d6f/sql-face-0.1.8.tar.gz
+[2023-04-13 16:56:28] INFO root fetch - processPackages [polywrap-client-config-builder]: executing diffoscope
+[2023-04-13 16:56:28] INFO root fetch - processPackages [polywrap-client-config-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_client_config_builder-0.1.0a21.tar.gz tmp/polywrap_client_config_builder-0.1.0a22.tar.gz --markdown 20230413/p/polywrap-client-config-builder/0.1.0a21-0.1.0a22/diff.md --exclude *.pyd
+[2023-04-13 16:56:29] INFO root fetch - processPackages [KLogLib]: Start processing: vectorlab
+[2023-04-13 16:56:29] INFO root fetch - main [MainThread]: End processing [KLogLib]: success
+[2023-04-13 16:56:29] INFO root fetch - processPackages [Fenv]: Downloading https://files.pythonhosted.org/packages/fa/d1/19faa00d0e8decbd967ffb8f3209322cfe2c091adb781e978f9c8111dc54/Fenv-0.0.9.tar.gz
+[2023-04-13 16:56:29] INFO root fetch - processPackages [vectorlab]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 16:56:29] INFO root fetch - processPackages [sql-face]: Downloading https://files.pythonhosted.org/packages/e1/07/7e2a3cff377a6298ee04111ec538bd27daef5c0f541e58f3a5e25822127a/sql-face-0.1.9.tar.gz
+[2023-04-13 16:56:29] INFO root fetch - processPackages [Fenv]: executing diffoscope
+[2023-04-13 16:56:29] INFO root fetch - processPackages [Fenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fenv-0.0.8.tar.gz tmp/Fenv-0.0.9.tar.gz --markdown 20230413/F/Fenv/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 16:56:29] INFO root fetch - processPackages [vectorlab]: Downloading https://files.pythonhosted.org/packages/a3/12/1fdc3bd502a5a66acdf410f0cd2a5ead5342ad3b0459a14eeace40777a31/vectorlab-1.0.0.tar.gz
+[2023-04-13 16:56:29] INFO root fetch - processPackages [sql-face]: executing diffoscope
+[2023-04-13 16:56:29] INFO root fetch - processPackages [sql-face]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql-face-0.1.8.tar.gz tmp/sql-face-0.1.9.tar.gz --markdown 20230413/s/sql-face/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 16:56:29] INFO root fetch - processPackages [vectorlab]: Downloading https://files.pythonhosted.org/packages/46/f5/b5fc9c7f2474ef1519758b668dcc08b795e684c926fa80e9e1d742da0670/vectorlab-1.0.1.tar.gz
+[2023-04-13 16:56:29] INFO root fetch - processPackages [ctadata]: Start processing: confguard
+[2023-04-13 16:56:29] INFO root fetch - main [MainThread]: End processing [ctadata]: success
+[2023-04-13 16:56:29] INFO root fetch - processPackages [confguard]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-13 16:56:29] INFO root fetch - processPackages [vectorlab]: executing diffoscope
+[2023-04-13 16:56:29] INFO root fetch - processPackages [vectorlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectorlab-1.0.0.tar.gz tmp/vectorlab-1.0.1.tar.gz --markdown 20230413/v/vectorlab/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 16:56:30] INFO root fetch - processPackages [polywrap-client-config-builder]: Start processing: sf-hamilton
+[2023-04-13 16:56:30] INFO root fetch - main [MainThread]: End processing [polywrap-client-config-builder]: success
+[2023-04-13 16:56:30] INFO root fetch - processPackages [confguard]: Downloading https://files.pythonhosted.org/packages/a7/d9/0a20bb7842618624157f0105547f1cca572e388a6f7c61368d8a4be35127/confguard-1.1.5.tar.gz
+[2023-04-13 16:56:30] INFO root fetch - processPackages [sf-hamilton]: New version: [1.9.0rc0] Old Version: [1.9.0]
+[2023-04-13 16:56:30] INFO root fetch - processPackages [confguard]: executing diffoscope
+[2023-04-13 16:56:30] INFO root fetch - processPackages [confguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/confguard-1.1.4.tar.gz tmp/confguard-1.1.5.tar.gz --markdown 20230413/c/confguard/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-13 16:56:30] INFO root fetch - processPackages [sf-hamilton]: executing diffoscope
+[2023-04-13 16:56:30] INFO root fetch - processPackages [sf-hamilton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sf-hamilton-1.9.0.tar.gz tmp/sf-hamilton-1.9.0rc0.tar.gz --markdown 20230413/s/sf-hamilton/1.9.0-1.9.0rc0/diff.md --exclude *.pyd
+[2023-04-13 16:56:30] INFO root fetch - processPackages [Fenv]: Start processing: supy
+[2023-04-13 16:56:30] INFO root fetch - main [MainThread]: End processing [Fenv]: success
+[2023-04-13 16:56:30] INFO root fetch - processPackages [supy]: New version: [2023.4.14.dev0] Old Version: [2023.2.23.dev0]
+[2023-04-13 16:56:30] INFO root fetch - processPackages [sql-face]: Start processing: ninjapie
+[2023-04-13 16:56:30] INFO root fetch - main [MainThread]: End processing [sql-face]: success
+[2023-04-13 16:56:30] INFO root fetch - processPackages [ninjapie]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-13 16:56:30] INFO root fetch - processPackages [supy]: executing diffoscope
+[2023-04-13 16:56:30] INFO root fetch - processPackages [supy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supy-2023.2.23.dev0-cp39-cp39-win_amd64.whl.zip tmp/supy-2023.4.14.dev0-cp39-cp39-win_amd64.whl.zip --markdown 20230413/s/supy/2023.2.23.dev0-2023.4.14.dev0/diff.md --exclude *.pyd
+[2023-04-13 16:56:30] INFO root fetch - processPackages [ninjapie]: Downloading https://files.pythonhosted.org/packages/c6/a1/38bb6b2c89962e07cc245c19d898a269412c796674b85d39a56f8fa76b17/ninjapie-1.2.2.tar.gz
+[2023-04-13 16:56:31] INFO root fetch - processPackages [ninjapie]: executing diffoscope
+[2023-04-13 16:56:31] INFO root fetch - processPackages [ninjapie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ninjapie-1.2.1.tar.gz tmp/ninjapie-1.2.2.tar.gz --markdown 20230413/n/ninjapie/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-13 16:56:31] INFO root fetch - processPackages [confguard]: Start processing: novelcraft-sdk
+[2023-04-13 16:56:31] INFO root fetch - main [MainThread]: End processing [confguard]: success
+[2023-04-13 16:56:31] WARNING root fetch - processPackages [novelcraft-sdk]: Skipping, unable to determine old version
+[2023-04-13 16:56:31] INFO root fetch - processPackages [novelcraft-sdk]: Start processing: Fluxion
+[2023-04-13 16:56:31] INFO root fetch - main [MainThread]: End processing [novelcraft-sdk] error
+[2023-04-13 16:56:31] WARNING root fetch - processPackages [Fluxion]: Skipping, unable to determine old version
+[2023-04-13 16:56:31] INFO root fetch - processPackages [Fluxion]: Start processing: pytket
+[2023-04-13 16:56:31] INFO root fetch - main [MainThread]: End processing [Fluxion] error
+[2023-04-13 16:56:31] INFO root fetch - processPackages [pytket]: New version: [1.9.1rc0] Old Version: [1.9.1]
+[2023-04-13 16:56:31] INFO root fetch - processPackages [pytket]: Downloading https://files.pythonhosted.org/packages/0b/0f/8db0fcfa7fde7115dd5863cd5b1f5533be347fbad99aaa158e2c9fa0a3a5/pytket-1.9.1-cp39-cp39-win_amd64.whl
+[2023-04-13 16:56:32] INFO root fetch - main [MainThread]: End processing [sf-hamilton]: success
+[2023-04-13 16:56:32] INFO root fetch - main [MainThread]: End processing [supy]: success
+[2023-04-13 16:56:32] INFO root fetch - main [MainThread]: End processing [ninjapie]: success
+[2023-04-13 16:56:32] WARNING root fetch - processPackages [pytket]: Skipping package: exceeds size limit 10528667>=10485760
+[2023-04-13 16:56:32] INFO root fetch - main [MainThread]: End processing [pytket] error
+[2023-04-13 16:56:34] INFO root fetch - main [MainThread]: End processing [vectorlab]: success
+[2023-04-13 16:56:34] INFO root fetch - main [MainThread]: Store serial: [17694101]
