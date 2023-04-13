@@ -12060,3 +12060,185 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 11:16:08] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-04-13 11:16:09] INFO root fetch - main [MainThread]: End processing [hbshare]: success
 [2023-04-13 11:16:09] INFO root fetch - main [MainThread]: Store serial: [17689648]
+[2023-04-13 11:21:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689648]
+[2023-04-13 11:21:16] INFO root fetch - main [MainThread]: Found 30 changed packages
+[2023-04-13 11:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hbshare
+[2023-04-13 11:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sphinx_design
+[2023-04-13 11:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sirms
+[2023-04-13 11:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bimmm
+[2023-04-13 11:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: replicPy
+[2023-04-13 11:21:16] INFO root fetch - processPackages [hbshare]: New version: [3.7.9] Old Version: [3.7.8]
+[2023-04-13 11:21:16] INFO root fetch - processPackages [bimmm]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 11:21:16] WARNING root fetch - processPackages [replicPy]: Skipping, unable to determine old version
+[2023-04-13 11:21:16] INFO root fetch - processPackages [replicPy]: Start processing: spanishconjugator
+[2023-04-13 11:21:16] INFO root fetch - main [MainThread]: End processing [replicPy] error
+[2023-04-13 11:21:16] INFO root fetch - processPackages [sirms]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-13 11:21:16] INFO root fetch - processPackages [sphinx_design]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-13 11:21:17] INFO root fetch - processPackages [hbshare]: executing diffoscope
+[2023-04-13 11:21:17] INFO root fetch - processPackages [hbshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbshare-3.7.8.tar.gz tmp/hbshare-3.7.9.tar.gz --markdown 20230413/h/hbshare/3.7.8-3.7.9/diff.md --exclude *.pyd
+[2023-04-13 11:21:17] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-13 11:21:17] INFO root fetch - processPackages [bimmm]: Downloading https://files.pythonhosted.org/packages/bb/7f/a1bc5c47479e6351c97b8f29743534a0a9aaab041b98cda5dc8cf3bb8ddc/bimmm-0.0.1.tar.gz
+[2023-04-13 11:21:17] INFO root fetch - processPackages [sphinx_design]: Downloading https://files.pythonhosted.org/packages/7b/28/0eb39f87239acf377db5f08cf2f2b27d43c3371624a4cca128dfe952aa10/sphinx_design-0.3.0.tar.gz
+[2023-04-13 11:21:17] INFO root fetch - processPackages [sirms]: Downloading https://files.pythonhosted.org/packages/85/2f/1511a002047c4c38bb11b0b4a10e1e81abdb068a930f60823976f3a3a446/sirms-1.2.4.tar.gz
+[2023-04-13 11:21:17] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-13 11:21:17] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230413/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-13 11:21:17] INFO root fetch - processPackages [sirms]: executing diffoscope
+[2023-04-13 11:21:17] INFO root fetch - processPackages [sirms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sirms-1.2.3.tar.gz tmp/sirms-1.2.4.tar.gz --markdown 20230413/s/sirms/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-13 11:21:17] INFO root fetch - processPackages [sphinx_design]: Downloading https://files.pythonhosted.org/packages/c0/e0/600213ff0d25ce81d2649642d548e604db441cc25ab268202fb940c73ef3/sphinx_design-0.4.0.tar.gz
+[2023-04-13 11:21:17] INFO root fetch - processPackages [bimmm]: Downloading https://files.pythonhosted.org/packages/ee/39/7355a46ee91f744c2d3f6d091a6d0287c7e30a65b247a4bd1c795aafc631/bimmm-0.0.2.tar.gz
+[2023-04-13 11:21:17] INFO root fetch - processPackages [bimmm]: executing diffoscope
+[2023-04-13 11:21:17] INFO root fetch - processPackages [bimmm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bimmm-0.0.1.tar.gz tmp/bimmm-0.0.2.tar.gz --markdown 20230413/b/bimmm/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 11:21:17] INFO root fetch - processPackages [sphinx_design]: executing diffoscope
+[2023-04-13 11:21:17] INFO root fetch - processPackages [sphinx_design]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_design-0.3.0.tar.gz tmp/sphinx_design-0.4.0.tar.gz --markdown 20230413/s/sphinx_design/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-13 11:21:18] INFO root fetch - processPackages [spanishconjugator]: Start processing: dapla-statbank-client
+[2023-04-13 11:21:18] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-13 11:21:18] INFO root fetch - processPackages [dapla-statbank-client]: New version: [1.0.2] Old Version: [1.0.0]
+[2023-04-13 11:21:18] INFO root fetch - processPackages [sirms]: Start processing: perpetuo
+[2023-04-13 11:21:18] INFO root fetch - main [MainThread]: End processing [sirms]: success
+[2023-04-13 11:21:18] WARNING root fetch - processPackages [perpetuo]: Skipping, unable to determine old version
+[2023-04-13 11:21:18] INFO root fetch - processPackages [perpetuo]: Start processing: spanishconjugator
+[2023-04-13 11:21:18] INFO root fetch - main [MainThread]: End processing [perpetuo] error
+[2023-04-13 11:21:18] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-13 11:21:18] INFO root fetch - processPackages [dapla-statbank-client]: Downloading https://files.pythonhosted.org/packages/2c/41/79656957467a345fc134113930c696aa58e939b651a1a83d04591e39e0a3/dapla_statbank_client-1.0.0.tar.gz
+[2023-04-13 11:21:18] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-13 11:21:18] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230413/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-13 11:21:18] INFO root fetch - processPackages [bimmm]: Start processing: swh.web
+[2023-04-13 11:21:18] INFO root fetch - main [MainThread]: End processing [bimmm]: success
+[2023-04-13 11:21:18] INFO root fetch - processPackages [dapla-statbank-client]: Downloading https://files.pythonhosted.org/packages/f3/c5/1f6d6d090ab48b6b00ce9ce6a52931d54b3ad3df07d6787abc907ef1f0d8/dapla_statbank_client-1.0.2.tar.gz
+[2023-04-13 11:21:18] INFO root fetch - processPackages [swh.web]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-13 11:21:19] INFO root fetch - processPackages [dapla-statbank-client]: executing diffoscope
+[2023-04-13 11:21:19] INFO root fetch - processPackages [dapla-statbank-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dapla_statbank_client-1.0.0.tar.gz tmp/dapla_statbank_client-1.0.2.tar.gz --markdown 20230413/d/dapla-statbank-client/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2023-04-13 11:21:19] INFO root fetch - processPackages [swh.web]: Downloading https://files.pythonhosted.org/packages/66/15/6bc04af12a23337bb393e57e21ffba928a503bf0e3a5106bea151682da0d/swh.web-0.2.8.tar.gz
+[2023-04-13 11:21:19] WARNING root fetch - processPackages [swh.web]: Skipping package: exceeds size limit 13132382>=10485760
+[2023-04-13 11:21:19] INFO root fetch - processPackages [swh.web]: Start processing: lsst-ctrl-bps-htcondor
+[2023-04-13 11:21:19] INFO root fetch - main [MainThread]: End processing [swh.web] error
+[2023-04-13 11:21:19] INFO root fetch - processPackages [lsst-ctrl-bps-htcondor]: New version: [26.0.0a20230500] Old Version: [26.0.0a20230400]
+[2023-04-13 11:21:19] INFO root fetch - processPackages [spanishconjugator]: Start processing: CosmoTech-SupplyChain
+[2023-04-13 11:21:19] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-13 11:21:19] INFO root fetch - processPackages [CosmoTech-SupplyChain]: New version: [4.1.0] Old Version: [4.0.1]
+[2023-04-13 11:21:19] INFO root fetch - processPackages [sphinx_design]: Start processing: tap-exact
+[2023-04-13 11:21:19] INFO root fetch - main [MainThread]: End processing [sphinx_design]: success
+[2023-04-13 11:21:19] INFO root fetch - processPackages [lsst-ctrl-bps-htcondor]: Downloading https://files.pythonhosted.org/packages/9c/29/1a3392502c8a25f2eb2fabe112e03edaf4de2d8396df282510856200f6a7/lsst-ctrl-bps-htcondor-26.0.0a20230400.tar.gz
+[2023-04-13 11:21:19] INFO root fetch - processPackages [tap-exact]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 11:21:20] INFO root fetch - processPackages [CosmoTech-SupplyChain]: Downloading https://files.pythonhosted.org/packages/9c/cd/15ab1d1346cc1221f956325075bddfb02bbda173905b04b8fe976d7f12ea/CosmoTech-SupplyChain-4.0.1.tar.gz
+[2023-04-13 11:21:20] INFO root fetch - processPackages [tap-exact]: Downloading https://files.pythonhosted.org/packages/35/20/54a72fcc9c54de061f269d67dbd20f112cd21d8b0a6dc0e8bcb63f3d20a9/tap_exact-0.1.1.tar.gz
+[2023-04-13 11:21:20] INFO root fetch - processPackages [dapla-statbank-client]: Start processing: quorum-data-py
+[2023-04-13 11:21:20] INFO root fetch - main [MainThread]: End processing [dapla-statbank-client]: success
+[2023-04-13 11:21:20] INFO root fetch - processPackages [quorum-data-py]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-13 11:21:20] INFO root fetch - processPackages [lsst-ctrl-bps-htcondor]: Downloading https://files.pythonhosted.org/packages/3c/cc/c973405023d7f2d0de5436529223459d8600f71b8be3454b9262b1ac019c/lsst-ctrl-bps-htcondor-26.0.0a20230500.tar.gz
+[2023-04-13 11:21:20] INFO root fetch - processPackages [hbshare]: Start processing: simple-sharepoint
+[2023-04-13 11:21:20] INFO root fetch - main [MainThread]: End processing [hbshare]: success
+[2023-04-13 11:21:20] INFO root fetch - processPackages [simple-sharepoint]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 11:21:20] INFO root fetch - processPackages [tap-exact]: executing diffoscope
+[2023-04-13 11:21:20] INFO root fetch - processPackages [tap-exact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_exact-0.1.0.tar.gz tmp/tap_exact-0.1.1.tar.gz --markdown 20230413/t/tap-exact/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 11:21:20] INFO root fetch - processPackages [lsst-ctrl-bps-htcondor]: executing diffoscope
+[2023-04-13 11:21:20] INFO root fetch - processPackages [lsst-ctrl-bps-htcondor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsst-ctrl-bps-htcondor-26.0.0a20230400.tar.gz tmp/lsst-ctrl-bps-htcondor-26.0.0a20230500.tar.gz --markdown 20230413/l/lsst-ctrl-bps-htcondor/26.0.0a20230400-26.0.0a20230500/diff.md --exclude *.pyd
+[2023-04-13 11:21:20] INFO root fetch - processPackages [CosmoTech-SupplyChain]: Downloading https://files.pythonhosted.org/packages/94/65/b341d0c489f509a7aee7f56ead3987389ebd26f260dc05145fc4140aa332/CosmoTech-SupplyChain-4.1.0.tar.gz
+[2023-04-13 11:21:20] INFO root fetch - processPackages [quorum-data-py]: Downloading https://files.pythonhosted.org/packages/8d/3d/e4ec6437d61bc976fcf42f8a6d3b16cf9af2cf3849e3b50cd712eefc705e/quorum_data_py-1.1.5.tar.gz
+[2023-04-13 11:21:20] INFO root fetch - processPackages [simple-sharepoint]: Downloading https://files.pythonhosted.org/packages/74/7a/e671a5dc356ccbee91a0a999d9eb532deafa819a754b277ac62c1d5e498f/simple_sharepoint-0.0.3-py3-none-any.whl
+[2023-04-13 11:21:20] INFO root fetch - processPackages [CosmoTech-SupplyChain]: executing diffoscope
+[2023-04-13 11:21:20] INFO root fetch - processPackages [CosmoTech-SupplyChain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CosmoTech-SupplyChain-4.0.1.tar.gz tmp/CosmoTech-SupplyChain-4.1.0.tar.gz --markdown 20230413/C/CosmoTech-SupplyChain/4.0.1-4.1.0/diff.md --exclude *.pyd
+[2023-04-13 11:21:20] INFO root fetch - processPackages [quorum-data-py]: Downloading https://files.pythonhosted.org/packages/0a/36/9420d03d001f0404b959ce4ec26b5cd37b9fcde7903e62ee0fdd8733a66b/quorum_data_py-1.1.6.tar.gz
+[2023-04-13 11:21:20] INFO root fetch - processPackages [simple-sharepoint]: executing diffoscope
+[2023-04-13 11:21:20] INFO root fetch - processPackages [simple-sharepoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_sharepoint-0.0.2-py3-none-any.whl.zip tmp/simple_sharepoint-0.0.3-py3-none-any.whl.zip --markdown 20230413/s/simple-sharepoint/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 11:21:20] INFO root fetch - processPackages [quorum-data-py]: executing diffoscope
+[2023-04-13 11:21:20] INFO root fetch - processPackages [quorum-data-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quorum_data_py-1.1.5.tar.gz tmp/quorum_data_py-1.1.6.tar.gz --markdown 20230413/q/quorum-data-py/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-13 11:21:21] INFO root fetch - processPackages [tap-exact]: Start processing: astro-metadata-translator
+[2023-04-13 11:21:21] INFO root fetch - main [MainThread]: End processing [tap-exact]: success
+[2023-04-13 11:21:21] INFO root fetch - processPackages [lsst-ctrl-bps-htcondor]: Start processing: vizelec
+[2023-04-13 11:21:21] INFO root fetch - main [MainThread]: End processing [lsst-ctrl-bps-htcondor]: success
+[2023-04-13 11:21:21] WARNING root fetch - processPackages [vizelec]: Skipping, unable to determine old version
+[2023-04-13 11:21:21] INFO root fetch - processPackages [vizelec]: Start processing: lsst-daf-relation
+[2023-04-13 11:21:21] INFO root fetch - main [MainThread]: End processing [vizelec] error
+[2023-04-13 11:21:21] INFO root fetch - processPackages [astro-metadata-translator]: New version: [26.0.0a20230500] Old Version: [26.0.0a20230400]
+[2023-04-13 11:21:21] INFO root fetch - processPackages [lsst-daf-relation]: New version: [1.0.0a20230500] Old Version: [1.0.0a20230400]
+[2023-04-13 11:21:21] INFO root fetch - processPackages [simple-sharepoint]: Start processing: lsst-ctrl-bps-parsl
+[2023-04-13 11:21:21] INFO root fetch - main [MainThread]: End processing [simple-sharepoint]: success
+[2023-04-13 11:21:21] INFO root fetch - processPackages [astro-metadata-translator]: Downloading https://files.pythonhosted.org/packages/88/0f/ddf4d690ba71629b94ef331c1dcf381615f5fa0220cfb725331d64d70fe9/astro-metadata-translator-26.0.0a20230400.tar.gz
+[2023-04-13 11:21:21] INFO root fetch - processPackages [lsst-daf-relation]: Downloading https://files.pythonhosted.org/packages/cf/ba/39bf44ae9e7557239b4e75ccc2395eff1e08c3015340be39cd798f07fb37/lsst-daf-relation-1.0.0a20230400.tar.gz
+[2023-04-13 11:21:21] INFO root fetch - processPackages [lsst-ctrl-bps-parsl]: New version: [26.0.0a20230500] Old Version: [26.0.0a20230400]
+[2023-04-13 11:21:21] INFO root fetch - processPackages [CosmoTech-SupplyChain]: Start processing: dissect.target
+[2023-04-13 11:21:21] INFO root fetch - main [MainThread]: End processing [CosmoTech-SupplyChain]: success
+[2023-04-13 11:21:21] INFO root fetch - processPackages [quorum-data-py]: Start processing: lsst-utils
+[2023-04-13 11:21:21] INFO root fetch - main [MainThread]: End processing [quorum-data-py]: success
+[2023-04-13 11:21:21] INFO root fetch - processPackages [dissect.target]: New version: [3.9.dev9] Old Version: [3.9.dev8]
+[2023-04-13 11:21:21] INFO root fetch - processPackages [lsst-ctrl-bps-parsl]: Downloading https://files.pythonhosted.org/packages/35/8c/c122879a959643f033a579ff1b13d2b33ec6c21551ffa1629264c6d3561a/lsst-ctrl-bps-parsl-26.0.0a20230400.tar.gz
+[2023-04-13 11:21:21] INFO root fetch - processPackages [astro-metadata-translator]: Downloading https://files.pythonhosted.org/packages/f6/a2/6962018c4d5dc18839328422a99767c526540467659fab3d4282192e3763/astro-metadata-translator-26.0.0a20230500.tar.gz
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-utils]: New version: [26.0.0a20230500] Old Version: [26.0.0a20230400]
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-daf-relation]: Downloading https://files.pythonhosted.org/packages/5e/5f/8e71741c69e90c32fd13e64e116dae04c056109846e98b96beed49ce1d01/lsst-daf-relation-1.0.0a20230500.tar.gz
+[2023-04-13 11:21:22] INFO root fetch - processPackages [astro-metadata-translator]: executing diffoscope
+[2023-04-13 11:21:22] INFO root fetch - processPackages [astro-metadata-translator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astro-metadata-translator-26.0.0a20230400.tar.gz tmp/astro-metadata-translator-26.0.0a20230500.tar.gz --markdown 20230413/a/astro-metadata-translator/26.0.0a20230400-26.0.0a20230500/diff.md --exclude *.pyd
+[2023-04-13 11:21:22] INFO root fetch - processPackages [dissect.target]: Downloading https://files.pythonhosted.org/packages/b1/a4/24f9ce2eb6a1913b82598a01b68b634c9fe5535a9484bff3d7d56a0ae929/dissect.target-3.9.dev8.tar.gz
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-utils]: Downloading https://files.pythonhosted.org/packages/95/d2/5d16674a9fbd9d5c6dd08502fdaf2392373a5ee644f82312b6433f0688b3/lsst-utils-26.0.0a20230400.tar.gz
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-ctrl-bps-parsl]: Downloading https://files.pythonhosted.org/packages/73/d7/e06e478c242de09a2c5605a32a3c6bc7f4a1e1aca5c81495250b2cc49b28/lsst-ctrl-bps-parsl-26.0.0a20230500.tar.gz
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-daf-relation]: executing diffoscope
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-daf-relation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsst-daf-relation-1.0.0a20230400.tar.gz tmp/lsst-daf-relation-1.0.0a20230500.tar.gz --markdown 20230413/l/lsst-daf-relation/1.0.0a20230400-1.0.0a20230500/diff.md --exclude *.pyd
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-ctrl-bps-parsl]: executing diffoscope
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-ctrl-bps-parsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsst-ctrl-bps-parsl-26.0.0a20230400.tar.gz tmp/lsst-ctrl-bps-parsl-26.0.0a20230500.tar.gz --markdown 20230413/l/lsst-ctrl-bps-parsl/26.0.0a20230400-26.0.0a20230500/diff.md --exclude *.pyd
+[2023-04-13 11:21:22] WARNING root fetch - processPackages [dissect.target]: Skipping package: exceeds size limit 63555307>=10485760
+[2023-04-13 11:21:22] INFO root fetch - processPackages [dissect.target]: Start processing: dissect.xfs
+[2023-04-13 11:21:22] INFO root fetch - main [MainThread]: End processing [dissect.target] error
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-utils]: Downloading https://files.pythonhosted.org/packages/72/74/81575ebd50afb9ebc10787897207947703ae9d32205910da14de85cdef05/lsst-utils-26.0.0a20230500.tar.gz
+[2023-04-13 11:21:22] INFO root fetch - processPackages [dissect.xfs]: New version: [3.5.dev4] Old Version: [3.4.dev2]
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-utils]: executing diffoscope
+[2023-04-13 11:21:22] INFO root fetch - processPackages [lsst-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsst-utils-26.0.0a20230400.tar.gz tmp/lsst-utils-26.0.0a20230500.tar.gz --markdown 20230413/l/lsst-utils/26.0.0a20230400-26.0.0a20230500/diff.md --exclude *.pyd
+[2023-04-13 11:21:22] INFO root fetch - processPackages [dissect.xfs]: Downloading https://files.pythonhosted.org/packages/c0/d0/1f7ee7fad182685de688d6b889394d879954d02feba697eed1fa4d4f19d1/dissect.xfs-3.4.dev2.tar.gz
+[2023-04-13 11:21:23] INFO root fetch - processPackages [dissect.xfs]: Downloading https://files.pythonhosted.org/packages/16/3a/74e84ed6d6248d7356c7f28b4559193c5be3bde9fd3eae4fc9d5b268164a/dissect.xfs-3.5.dev4.tar.gz
+[2023-04-13 11:21:23] INFO root fetch - processPackages [dissect.xfs]: executing diffoscope
+[2023-04-13 11:21:23] INFO root fetch - processPackages [dissect.xfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dissect.xfs-3.4.dev2.tar.gz tmp/dissect.xfs-3.5.dev4.tar.gz --markdown 20230413/d/dissect.xfs/3.4.dev2-3.5.dev4/diff.md --exclude *.pyd
+[2023-04-13 11:21:23] INFO root fetch - processPackages [astro-metadata-translator]: Start processing: lsst-resources
+[2023-04-13 11:21:23] INFO root fetch - main [MainThread]: End processing [astro-metadata-translator]: success
+[2023-04-13 11:21:23] INFO root fetch - processPackages [lsst-resources]: New version: [26.0.0a20230500] Old Version: [26.0.0a20230400]
+[2023-04-13 11:21:23] INFO root fetch - processPackages [lsst-ctrl-bps-parsl]: Start processing: acquire
+[2023-04-13 11:21:23] INFO root fetch - main [MainThread]: End processing [lsst-ctrl-bps-parsl]: success
+[2023-04-13 11:21:23] INFO root fetch - processPackages [lsst-resources]: Downloading https://files.pythonhosted.org/packages/52/45/0dcc92ba8f25516fe59b89e0b4b6425fc82775a8f89d22382ac6ff4365d5/lsst-resources-26.0.0a20230400.tar.gz
+[2023-04-13 11:21:23] INFO root fetch - processPackages [acquire]: New version: [3.6.dev5] Old Version: [3.6.dev4]
+[2023-04-13 11:21:23] INFO root fetch - processPackages [lsst-daf-relation]: Start processing: dissect.target
+[2023-04-13 11:21:23] INFO root fetch - main [MainThread]: End processing [lsst-daf-relation]: success
+[2023-04-13 11:21:23] INFO root fetch - processPackages [dissect.target]: New version: [3.9.dev9] Old Version: [3.9.dev8]
+[2023-04-13 11:21:23] INFO root fetch - processPackages [dissect.target]: Downloading https://files.pythonhosted.org/packages/b1/a4/24f9ce2eb6a1913b82598a01b68b634c9fe5535a9484bff3d7d56a0ae929/dissect.target-3.9.dev8.tar.gz
+[2023-04-13 11:21:23] WARNING root fetch - processPackages [dissect.target]: Skipping package: exceeds size limit 63555307>=10485760
+[2023-04-13 11:21:23] INFO root fetch - processPackages [dissect.target]: Start processing: coretex
+[2023-04-13 11:21:23] INFO root fetch - main [MainThread]: End processing [dissect.target] error
+[2023-04-13 11:21:23] INFO root fetch - processPackages [lsst-utils]: Start processing: lsst-ctrl-bps-panda
+[2023-04-13 11:21:23] INFO root fetch - main [MainThread]: End processing [lsst-utils]: success
+[2023-04-13 11:21:23] INFO root fetch - processPackages [coretex]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 11:21:23] INFO root fetch - processPackages [lsst-resources]: Downloading https://files.pythonhosted.org/packages/a1/31/225778e738d8196a59aa0442a433f627643f68797e49472ba8e7b8594e59/lsst-resources-26.0.0a20230500.tar.gz
+[2023-04-13 11:21:23] INFO root fetch - processPackages [acquire]: Downloading https://files.pythonhosted.org/packages/d8/a1/4335569ef42a8f533c3ad13d8a8a50300319899d000249dde616daf8eb88/acquire-3.6.dev5.tar.gz
+[2023-04-13 11:21:23] INFO root fetch - processPackages [lsst-ctrl-bps-panda]: New version: [26.0.0a20230500] Old Version: [26.0.0a20230400]
+[2023-04-13 11:21:24] INFO root fetch - processPackages [lsst-resources]: executing diffoscope
+[2023-04-13 11:21:24] INFO root fetch - processPackages [lsst-resources]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsst-resources-26.0.0a20230400.tar.gz tmp/lsst-resources-26.0.0a20230500.tar.gz --markdown 20230413/l/lsst-resources/26.0.0a20230400-26.0.0a20230500/diff.md --exclude *.pyd
+[2023-04-13 11:21:24] INFO root fetch - processPackages [acquire]: executing diffoscope
+[2023-04-13 11:21:24] INFO root fetch - processPackages [acquire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acquire-3.6.dev4.tar.gz tmp/acquire-3.6.dev5.tar.gz --markdown 20230413/a/acquire/3.6.dev4-3.6.dev5/diff.md --exclude *.pyd
+[2023-04-13 11:21:24] INFO root fetch - processPackages [lsst-ctrl-bps-panda]: Downloading https://files.pythonhosted.org/packages/a0/22/0b893c9cd95d92d19da99d597013f1dd89c378a4a37bd4122e57406ac7c5/lsst-ctrl-bps-panda-26.0.0a20230400.tar.gz
+[2023-04-13 11:21:24] INFO root fetch - processPackages [dissect.xfs]: Start processing: dissect.shellitem
+[2023-04-13 11:21:24] INFO root fetch - main [MainThread]: End processing [dissect.xfs]: success
+[2023-04-13 11:21:24] INFO root fetch - processPackages [coretex]: executing diffoscope
+[2023-04-13 11:21:24] INFO root fetch - processPackages [coretex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coretex-0.0.8.tar.gz tmp/coretex-0.0.9.tar.gz --markdown 20230413/c/coretex/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 11:21:24] INFO root fetch - processPackages [dissect.shellitem]: New version: [3.5.dev2] Old Version: [3.5.dev1]
+[2023-04-13 11:21:24] INFO root fetch - processPackages [lsst-ctrl-bps-panda]: Downloading https://files.pythonhosted.org/packages/68/73/220eb613172bcce921a4d51c76efc50a37bcd1469c86a7fdd5726300f75b/lsst-ctrl-bps-panda-26.0.0a20230500.tar.gz
+[2023-04-13 11:21:24] INFO root fetch - processPackages [dissect.shellitem]: Downloading https://files.pythonhosted.org/packages/7b/e5/2f9290be0648f285b147b0085775cb42eb47934f733b1a36cb822114df02/dissect.shellitem-3.5.dev2.tar.gz
+[2023-04-13 11:21:24] INFO root fetch - processPackages [lsst-ctrl-bps-panda]: executing diffoscope
+[2023-04-13 11:21:24] INFO root fetch - processPackages [lsst-ctrl-bps-panda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsst-ctrl-bps-panda-26.0.0a20230400.tar.gz tmp/lsst-ctrl-bps-panda-26.0.0a20230500.tar.gz --markdown 20230413/l/lsst-ctrl-bps-panda/26.0.0a20230400-26.0.0a20230500/diff.md --exclude *.pyd
+[2023-04-13 11:21:25] INFO root fetch - processPackages [dissect.shellitem]: executing diffoscope
+[2023-04-13 11:21:25] INFO root fetch - processPackages [dissect.shellitem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dissect.shellitem-3.5.dev1.tar.gz tmp/dissect.shellitem-3.5.dev2.tar.gz --markdown 20230413/d/dissect.shellitem/3.5.dev1-3.5.dev2/diff.md --exclude *.pyd
+[2023-04-13 11:21:25] INFO root fetch - processPackages [lsst-resources]: Start processing: lsst-ctrl-bps
+[2023-04-13 11:21:25] INFO root fetch - main [MainThread]: End processing [lsst-resources]: success
+[2023-04-13 11:21:25] INFO root fetch - processPackages [lsst-ctrl-bps]: New version: [26.0.0a20230500] Old Version: [26.0.0a20230400]
+[2023-04-13 11:21:25] INFO root fetch - processPackages [lsst-ctrl-bps]: Downloading https://files.pythonhosted.org/packages/3f/25/dd5788122d831e91f7a5b6df98e8e2d65df587d64b2a7e8e703b9f85d293/lsst-ctrl-bps-26.0.0a20230400.tar.gz
+[2023-04-13 11:21:25] INFO root fetch - processPackages [lsst-ctrl-bps]: Downloading https://files.pythonhosted.org/packages/74/ca/f9dbc4fb6958267f1ee9ce347a76bcb3d1dcb671ceaf427711055ab6c67c/lsst-ctrl-bps-26.0.0a20230500.tar.gz
+[2023-04-13 11:21:25] INFO root fetch - processPackages [lsst-ctrl-bps]: executing diffoscope
+[2023-04-13 11:21:25] INFO root fetch - processPackages [lsst-ctrl-bps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsst-ctrl-bps-26.0.0a20230400.tar.gz tmp/lsst-ctrl-bps-26.0.0a20230500.tar.gz --markdown 20230413/l/lsst-ctrl-bps/26.0.0a20230400-26.0.0a20230500/diff.md --exclude *.pyd
+[2023-04-13 11:21:26] INFO root fetch - processPackages [lsst-ctrl-bps-panda]: Start processing: deezer-python
+[2023-04-13 11:21:26] INFO root fetch - main [MainThread]: End processing [lsst-ctrl-bps-panda]: success
+[2023-04-13 11:21:26] INFO root fetch - main [MainThread]: End processing [dissect.shellitem]: success
+[2023-04-13 11:21:26] INFO root fetch - main [MainThread]: End processing [acquire]: success
+[2023-04-13 11:21:26] INFO root fetch - processPackages [deezer-python]: New version: [5.9.0] Old Version: [5.8.1]
+[2023-04-13 11:21:26] INFO root fetch - processPackages [deezer-python]: Downloading https://files.pythonhosted.org/packages/be/7a/51b1dd10f97d0e9391aadae590ddc417da9850f0c3a25992a443cd4198fc/deezer_python-5.8.1.tar.gz
+[2023-04-13 11:21:26] INFO root fetch - processPackages [deezer-python]: Downloading https://files.pythonhosted.org/packages/32/d0/ee294193b563e383725c7fae270810522233b7e915bd66121d124f608951/deezer_python-5.9.0.tar.gz
+[2023-04-13 11:21:26] INFO root fetch - processPackages [deezer-python]: executing diffoscope
+[2023-04-13 11:21:26] INFO root fetch - processPackages [deezer-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deezer_python-5.8.1.tar.gz tmp/deezer_python-5.9.0.tar.gz --markdown 20230413/d/deezer-python/5.8.1-5.9.0/diff.md --exclude *.pyd
+[2023-04-13 11:21:27] INFO root fetch - main [MainThread]: End processing [lsst-ctrl-bps]: success
+[2023-04-13 11:21:27] INFO root fetch - main [MainThread]: End processing [coretex]: success
+[2023-04-13 11:21:28] INFO root fetch - main [MainThread]: End processing [deezer-python]: success
+[2023-04-13 11:21:28] INFO root fetch - main [MainThread]: Store serial: [17689750]
