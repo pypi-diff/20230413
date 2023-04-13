@@ -7652,3 +7652,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 06:33:27] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
 [2023-04-13 06:33:28] INFO root fetch - main [MainThread]: End processing [keras-tuner]: success
 [2023-04-13 06:33:28] INFO root fetch - main [MainThread]: Store serial: [17686917]
+[2023-04-13 06:38:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686917]
+[2023-04-13 06:38:36] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-13 06:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain-utils
+[2023-04-13 06:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-casdoor
+[2023-04-13 06:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thirdai
+[2023-04-13 06:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: m-abc-anhnt
+[2023-04-13 06:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py3dchart
+[2023-04-13 06:38:36] INFO root fetch - processPackages [fastapi-casdoor]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-13 06:38:36] INFO root fetch - processPackages [py3dchart]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 06:38:36] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 06:38:36] INFO root fetch - processPackages [m-abc-anhnt]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 06:38:36] INFO root fetch - processPackages [thirdai]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-04-13 06:38:36] INFO root fetch - processPackages [m-abc-anhnt]: Downloading https://files.pythonhosted.org/packages/10/da/89eadb378f74ce16f035f540ce955e4f300d2080fa042e72f99912a9cb34/m-abc-anhnt-1.0.0.tar.gz
+[2023-04-13 06:38:36] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/6c/f2/956f4d88a91e61c7754414586a354e08235add0841fde21fd10cb00fff52/fastapi_casdoor-0.1.7-py3.8.egg
+[2023-04-13 06:38:36] INFO root fetch - processPackages [thirdai]: Downloading https://files.pythonhosted.org/packages/bd/46/7cd276cbbc82e5148d4e346e974a8ebc7438fa402fbd72049d59b24e0097/thirdai-0.6.7-cp39-cp39-win_amd64.whl
+[2023-04-13 06:38:36] INFO root fetch - processPackages [fastapi-casdoor]: executing diffoscope
+[2023-04-13 06:38:36] INFO root fetch - processPackages [fastapi-casdoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_casdoor-0.1.6-py3.8.egg tmp/fastapi_casdoor-0.1.7-py3.8.egg --markdown 20230413/f/fastapi-casdoor/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-13 06:38:36] INFO root fetch - processPackages [py3dchart]: Downloading https://files.pythonhosted.org/packages/af/52/2d30b44c19a0021cc05c688a8aa51c88a9e75e34065df69bbf1b7c53d633/py3dchart-0.1.1-py3-none-any.whl
+[2023-04-13 06:38:36] INFO root fetch - processPackages [py3dchart]: executing diffoscope
+[2023-04-13 06:38:36] INFO root fetch - processPackages [py3dchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3dchart-0.1.0.tar.gz tmp/py3dchart-0.1.1-py3-none-any.whl.zip --markdown 20230413/p/py3dchart/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 06:38:36] INFO root fetch - processPackages [thirdai]: executing diffoscope
+[2023-04-13 06:38:36] INFO root fetch - processPackages [thirdai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thirdai-0.6.6-cp39-cp39-win_amd64.whl.zip tmp/thirdai-0.6.7-cp39-cp39-win_amd64.whl.zip --markdown 20230413/t/thirdai/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-04-13 06:38:36] INFO root fetch - processPackages [m-abc-anhnt]: Downloading https://files.pythonhosted.org/packages/44/e1/be0f76838307d681f4e29a023d6da671797d8b53d278b4d9949c17ab710f/m-abc-anhnt-1.0.1.tar.gz
+[2023-04-13 06:38:36] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-13 06:38:36] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.8.tar.gz tmp/langchain_utils-0.3.9.tar.gz --markdown 20230413/l/langchain-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 06:38:36] INFO root fetch - processPackages [m-abc-anhnt]: executing diffoscope
+[2023-04-13 06:38:36] INFO root fetch - processPackages [m-abc-anhnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m-abc-anhnt-1.0.0.tar.gz tmp/m-abc-anhnt-1.0.1.tar.gz --markdown 20230413/m/m-abc-anhnt/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 06:38:37] INFO root fetch - processPackages [py3dchart]: Start processing: kkpyutil
+[2023-04-13 06:38:37] INFO root fetch - main [MainThread]: End processing [py3dchart]: success
+[2023-04-13 06:38:37] INFO root fetch - processPackages [kkpyutil]: New version: [0.99.1] Old Version: [0.99.0]
+[2023-04-13 06:38:37] INFO root fetch - processPackages [fastapi-casdoor]: Start processing: dank-mids
+[2023-04-13 06:38:37] INFO root fetch - main [MainThread]: End processing [fastapi-casdoor]: success
+[2023-04-13 06:38:37] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-04-13 06:38:37] INFO root fetch - processPackages [kkpyutil]: executing diffoscope
+[2023-04-13 06:38:37] INFO root fetch - processPackages [kkpyutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyutil-0.99.0.tar.gz tmp/kkpyutil-0.99.1.tar.gz --markdown 20230413/k/kkpyutil/0.99.0-0.99.1/diff.md --exclude *.pyd
+[2023-04-13 06:38:37] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-04-13 06:38:37] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230413/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-04-13 06:38:38] INFO root fetch - processPackages [langchain-utils]: Start processing: data-ecosystem-services
+[2023-04-13 06:38:38] INFO root fetch - main [MainThread]: End processing [langchain-utils]: success
+[2023-04-13 06:38:38] INFO root fetch - processPackages [data-ecosystem-services]: New version: [202304.0.9] Old Version: [202304.0.8]
+[2023-04-13 06:38:38] INFO root fetch - processPackages [m-abc-anhnt]: Start processing: katalytic-files
+[2023-04-13 06:38:38] INFO root fetch - main [MainThread]: End processing [m-abc-anhnt]: success
+[2023-04-13 06:38:38] INFO root fetch - processPackages [katalytic-files]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 06:38:38] INFO root fetch - processPackages [thirdai]: Start processing: mxcurpy
+[2023-04-13 06:38:38] INFO root fetch - main [MainThread]: End processing [thirdai]: success
+[2023-04-13 06:38:38] INFO root fetch - processPackages [data-ecosystem-services]: executing diffoscope
+[2023-04-13 06:38:38] INFO root fetch - processPackages [data-ecosystem-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_ecosystem_services-202304.0.8.tar.gz tmp/data_ecosystem_services-202304.0.9.tar.gz --markdown 20230413/d/data-ecosystem-services/202304.0.8-202304.0.9/diff.md --exclude *.pyd
+[2023-04-13 06:38:38] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-13 06:38:38] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.3.8.tar.gz tmp/katalytic-files-0.3.9.tar.gz --markdown 20230413/k/katalytic-files/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 06:38:38] INFO root fetch - processPackages [mxcurpy]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-04-13 06:38:38] INFO root fetch - processPackages [mxcurpy]: Downloading https://files.pythonhosted.org/packages/98/2d/1fd3d6db314620833952868a285cb98499f3989af19edc84a9e30cea7062/mxcurpy-0.1.4.tar.gz
+[2023-04-13 06:38:38] INFO root fetch - processPackages [mxcurpy]: Downloading https://files.pythonhosted.org/packages/dd/86/193c1daa7596374e581a8b07175b31a0fe8ed537eb7c3203588c7366485a/mxcurpy-0.2.0.tar.gz
+[2023-04-13 06:38:39] INFO root fetch - processPackages [mxcurpy]: executing diffoscope
+[2023-04-13 06:38:39] INFO root fetch - processPackages [mxcurpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mxcurpy-0.1.4.tar.gz tmp/mxcurpy-0.2.0.tar.gz --markdown 20230413/m/mxcurpy/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 06:38:39] INFO root fetch - processPackages [dank-mids]: Start processing: hdx-python-api
+[2023-04-13 06:38:39] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-04-13 06:38:39] INFO root fetch - processPackages [hdx-python-api]: New version: [6.0.0] Old Version: [5.9.9]
+[2023-04-13 06:38:39] INFO root fetch - processPackages [hdx-python-api]: Downloading https://files.pythonhosted.org/packages/36/0d/6cc8b427c605c24b99c34ec03832eb9a6c79338532f83f63845b7c00de5f/hdx-python-api-5.9.9.tar.gz
+[2023-04-13 06:38:39] INFO root fetch - main [MainThread]: End processing [katalytic-files]: success
+[2023-04-13 06:38:39] INFO root fetch - main [MainThread]: End processing [kkpyutil]: success
+[2023-04-13 06:38:39] INFO root fetch - processPackages [hdx-python-api]: Downloading https://files.pythonhosted.org/packages/cc/94/7f39a26e8c366911062c12eb85bbbb77645ffe87d8c8cf39b9d0433805c5/hdx-python-api-6.0.0.tar.gz
+[2023-04-13 06:38:40] INFO root fetch - processPackages [hdx-python-api]: executing diffoscope
+[2023-04-13 06:38:40] INFO root fetch - processPackages [hdx-python-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdx-python-api-5.9.9.tar.gz tmp/hdx-python-api-6.0.0.tar.gz --markdown 20230413/h/hdx-python-api/5.9.9-6.0.0/diff.md --exclude *.pyd
+[2023-04-13 06:38:40] INFO root fetch - main [MainThread]: End processing [mxcurpy]: success
+[2023-04-13 06:38:40] INFO root fetch - main [MainThread]: End processing [data-ecosystem-services]: success
+[2023-04-13 06:38:42] INFO root fetch - main [MainThread]: End processing [hdx-python-api]: success
+[2023-04-13 06:38:42] INFO root fetch - main [MainThread]: Store serial: [17686998]
