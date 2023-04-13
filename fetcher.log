@@ -11599,3 +11599,79 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 10:49:55] INFO root fetch - main [MainThread]: End processing [browserstack-sdk]: success
 [2023-04-13 10:49:56] INFO root fetch - main [MainThread]: End processing [chellow]: success
 [2023-04-13 10:49:56] INFO root fetch - main [MainThread]: Store serial: [17689351]
+[2023-04-13 10:54:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689351]
+[2023-04-13 10:55:04] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-13 10:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yourtools
+[2023-04-13 10:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sklearn-quantile
+[2023-04-13 10:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PolyRound
+[2023-04-13 10:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docstruct
+[2023-04-13 10:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Geode-Numerics
+[2023-04-13 10:55:04] INFO root fetch - processPackages [yourtools]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-13 10:55:04] INFO root fetch - processPackages [sklearn-quantile]: New version: [0.0.3] Old Version: [0.0.20]
+[2023-04-13 10:55:04] INFO root fetch - processPackages [Geode-Numerics]: New version: [2.0.0] Old Version: [1.16.9]
+[2023-04-13 10:55:04] INFO root fetch - processPackages [PolyRound]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-13 10:55:04] INFO root fetch - processPackages [docstruct]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 10:55:04] INFO root fetch - processPackages [sklearn-quantile]: Downloading https://files.pythonhosted.org/packages/38/e4/459a643b6d981bccbfeb44495fc9afc99fcdaa41b196fa2d7959a3ae5114/sklearn_quantile-0.0.20.tar.gz
+[2023-04-13 10:55:04] INFO root fetch - processPackages [Geode-Numerics]: Downloading https://files.pythonhosted.org/packages/8a/ca/0e3c2a024971fc069b7be268681ac24042016947b52951488ebafcb2a56a/Geode_Numerics-1.16.9-cp39-cp39-win_amd64.whl
+[2023-04-13 10:55:04] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/8b/f3/68ff4689a23511c462ea9781ff075c6cef56c8a007d36a2d5763068c5c60/yourtools-0.4.1.tar.gz
+[2023-04-13 10:55:04] INFO root fetch - processPackages [PolyRound]: Downloading https://files.pythonhosted.org/packages/da/88/a7816f708d6205f03ad2c1b64a8d62ea2b880f827d28a3d0c6d91af5ea75/PolyRound-0.2.7.tar.gz
+[2023-04-13 10:55:05] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-13 10:55:05] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.4.0.tar.gz tmp/yourtools-0.4.1.tar.gz --markdown 20230413/y/yourtools/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-13 10:55:05] INFO root fetch - processPackages [docstruct]: executing diffoscope
+[2023-04-13 10:55:05] INFO root fetch - processPackages [docstruct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docstruct-1.0.8.tar.gz tmp/docstruct-1.0.9.tar.gz --markdown 20230413/d/docstruct/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 10:55:05] INFO root fetch - processPackages [PolyRound]: Downloading https://files.pythonhosted.org/packages/12/fa/021382efa71fb1efce3a1d2967584f0e052a3f44575f461ff1c978058174/PolyRound-0.2.8.tar.gz
+[2023-04-13 10:55:05] INFO root fetch - processPackages [sklearn-quantile]: Downloading https://files.pythonhosted.org/packages/30/5f/70cfaeee2ce7fdbe145f35d3acabffda38091c2394fd3d6af3374e791233/sklearn_quantile-0.0.3.tar.gz
+[2023-04-13 10:55:05] INFO root fetch - processPackages [PolyRound]: executing diffoscope
+[2023-04-13 10:55:05] INFO root fetch - processPackages [PolyRound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PolyRound-0.2.7.tar.gz tmp/PolyRound-0.2.8.tar.gz --markdown 20230413/P/PolyRound/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-13 10:55:05] INFO root fetch - processPackages [sklearn-quantile]: executing diffoscope
+[2023-04-13 10:55:05] INFO root fetch - processPackages [sklearn-quantile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearn_quantile-0.0.20.tar.gz tmp/sklearn_quantile-0.0.3.tar.gz --markdown 20230413/s/sklearn-quantile/0.0.20-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 10:55:05] INFO root fetch - processPackages [Geode-Numerics]: Downloading https://files.pythonhosted.org/packages/d1/9d/8e9fe081d4998a95a63bb5707a67f17b049c13aa5423b95f273fa2f55526/Geode_Numerics-2.0.0-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-13 10:55:06] INFO root fetch - processPackages [yourtools]: Start processing: openctp-ctp-6315
+[2023-04-13 10:55:06] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-13 10:55:06] WARNING root fetch - processPackages [openctp-ctp-6315]: Skipping, unable to determine old version
+[2023-04-13 10:55:06] INFO root fetch - processPackages [openctp-ctp-6315]: Start processing: vizelec
+[2023-04-13 10:55:06] INFO root fetch - main [MainThread]: End processing [openctp-ctp-6315] error
+[2023-04-13 10:55:06] WARNING root fetch - processPackages [vizelec]: Skipping, unable to determine old version
+[2023-04-13 10:55:06] INFO root fetch - processPackages [vizelec]: Start processing: xj-enroll
+[2023-04-13 10:55:06] INFO root fetch - main [MainThread]: End processing [vizelec] error
+[2023-04-13 10:55:06] INFO root fetch - processPackages [xj-enroll]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-04-13 10:55:06] INFO root fetch - processPackages [PolyRound]: Start processing: test-pipinstall-whp
+[2023-04-13 10:55:06] INFO root fetch - main [MainThread]: End processing [PolyRound]: success
+[2023-04-13 10:55:06] INFO root fetch - processPackages [test-pipinstall-whp]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 10:55:06] INFO root fetch - processPackages [xj-enroll]: executing diffoscope
+[2023-04-13 10:55:06] INFO root fetch - processPackages [xj-enroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_enroll-1.0.98.tar.gz tmp/xj_enroll-1.0.99.tar.gz --markdown 20230413/x/xj-enroll/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-04-13 10:55:06] INFO root fetch - processPackages [Geode-Numerics]: executing diffoscope
+[2023-04-13 10:55:06] INFO root fetch - processPackages [Geode-Numerics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Numerics-1.16.9-cp39-cp39-win_amd64.whl.zip tmp/Geode_Numerics-2.0.0-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230413/G/Geode-Numerics/1.16.9-2.0.0/diff.md --exclude *.pyd
+[2023-04-13 10:55:06] INFO root fetch - processPackages [test-pipinstall-whp]: Downloading https://files.pythonhosted.org/packages/04/f9/2127c214a7c52660dee6e7f23edf2a1b76df583d1b9ee6615251a5bd4a2a/test_pipinstall_whp-0.1.1.tar.gz
+[2023-04-13 10:55:06] INFO root fetch - processPackages [docstruct]: Start processing: fate-client
+[2023-04-13 10:55:06] INFO root fetch - main [MainThread]: End processing [docstruct]: success
+[2023-04-13 10:55:06] INFO root fetch - processPackages [fate-client]: New version: [2.0.0a0] Old Version: [1.9.0]
+[2023-04-13 10:55:06] INFO root fetch - processPackages [test-pipinstall-whp]: executing diffoscope
+[2023-04-13 10:55:06] INFO root fetch - processPackages [test-pipinstall-whp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_pipinstall_whp-0.1.0.tar.gz tmp/test_pipinstall_whp-0.1.1.tar.gz --markdown 20230413/t/test-pipinstall-whp/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 10:55:06] INFO root fetch - processPackages [fate-client]: Downloading https://files.pythonhosted.org/packages/6c/14/09345ab16e9f612e8b8aa113ba6d3301ee3d6f859e732f37ef52f56703b8/fate_client-1.9.0.tar.gz
+[2023-04-13 10:55:07] INFO root fetch - processPackages [fate-client]: Downloading https://files.pythonhosted.org/packages/ed/09/684c3fc2322ddf7f8c24efb34a115b20c4737f2bf974179aa03bedd6797a/fate-client-2.0.0a0.tar.gz
+[2023-04-13 10:55:07] INFO root fetch - processPackages [fate-client]: executing diffoscope
+[2023-04-13 10:55:07] INFO root fetch - processPackages [fate-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fate_client-1.9.0.tar.gz tmp/fate-client-2.0.0a0.tar.gz --markdown 20230413/f/fate-client/1.9.0-2.0.0a0/diff.md --exclude *.pyd
+[2023-04-13 10:55:07] INFO root fetch - processPackages [xj-enroll]: Start processing: streamlit-ketcher
+[2023-04-13 10:55:07] INFO root fetch - main [MainThread]: End processing [xj-enroll]: success
+[2023-04-13 10:55:07] WARNING root fetch - processPackages [streamlit-ketcher]: Skipping, unable to determine old version
+[2023-04-13 10:55:07] INFO root fetch - processPackages [streamlit-ketcher]: Start processing: pylife-odbserver
+[2023-04-13 10:55:07] INFO root fetch - main [MainThread]: End processing [streamlit-ketcher] error
+[2023-04-13 10:55:07] INFO root fetch - processPackages [test-pipinstall-whp]: Start processing: pylife-odbclient
+[2023-04-13 10:55:07] INFO root fetch - main [MainThread]: End processing [test-pipinstall-whp]: success
+[2023-04-13 10:55:07] INFO root fetch - processPackages [pylife-odbserver]: New version: [2.0.3rc1] Old Version: [2.0.2rc1]
+[2023-04-13 10:55:07] INFO root fetch - processPackages [pylife-odbclient]: New version: [2.0.3rc1] Old Version: [2.0.2rc1]
+[2023-04-13 10:55:07] INFO root fetch - main [MainThread]: End processing [Geode-Numerics]: success
+[2023-04-13 10:55:07] INFO root fetch - processPackages [pylife-odbserver]: Downloading https://files.pythonhosted.org/packages/d6/d3/d9b0e8111a9bedcd6d592db1531b70f1e32e317b2f030728a5ed86310084/pylife-odbserver-2.0.2rc1.tar.gz
+[2023-04-13 10:55:07] INFO root fetch - processPackages [pylife-odbclient]: Downloading https://files.pythonhosted.org/packages/19/0b/839ba2e479610dafd9fe3ec01c6ba490cf7cb4f372be3292ebaebdd4105e/pylife-odbclient-2.0.2rc1.tar.gz
+[2023-04-13 10:55:08] INFO root fetch - main [MainThread]: End processing [sklearn-quantile]: success
+[2023-04-13 10:55:08] INFO root fetch - processPackages [pylife-odbserver]: Downloading https://files.pythonhosted.org/packages/c1/e7/1502b92d760d7570bfff9f3a7e0e1b157bb4f73ad1ab3205180361d6d1ff/pylife-odbserver-2.0.3rc1.tar.gz
+[2023-04-13 10:55:08] INFO root fetch - processPackages [pylife-odbclient]: Downloading https://files.pythonhosted.org/packages/9f/64/585d393b89843dbf4fd288d1a77dad4a9112f2090e52a424195a17fb5f3b/pylife-odbclient-2.0.3rc1.tar.gz
+[2023-04-13 10:55:08] INFO root fetch - processPackages [pylife-odbserver]: executing diffoscope
+[2023-04-13 10:55:08] INFO root fetch - processPackages [pylife-odbserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylife-odbserver-2.0.2rc1.tar.gz tmp/pylife-odbserver-2.0.3rc1.tar.gz --markdown 20230413/p/pylife-odbserver/2.0.2rc1-2.0.3rc1/diff.md --exclude *.pyd
+[2023-04-13 10:55:08] INFO root fetch - processPackages [pylife-odbclient]: executing diffoscope
+[2023-04-13 10:55:08] INFO root fetch - processPackages [pylife-odbclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylife-odbclient-2.0.2rc1.tar.gz tmp/pylife-odbclient-2.0.3rc1.tar.gz --markdown 20230413/p/pylife-odbclient/2.0.2rc1-2.0.3rc1/diff.md --exclude *.pyd
+[2023-04-13 10:55:08] INFO root fetch - main [MainThread]: End processing [fate-client]: success
+[2023-04-13 10:55:09] INFO root fetch - main [MainThread]: End processing [pylife-odbserver]: success
+[2023-04-13 10:55:09] INFO root fetch - main [MainThread]: End processing [pylife-odbclient]: success
+[2023-04-13 10:55:09] INFO root fetch - main [MainThread]: Store serial: [17689409]
