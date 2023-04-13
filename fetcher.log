@@ -8551,3 +8551,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 07:51:32] INFO root fetch - main [MainThread]: End processing [CheckmarxPythonSDK]: success
 [2023-04-13 07:51:35] INFO root fetch - main [MainThread]: End processing [zepben.evolve]: success
 [2023-04-13 07:51:35] INFO root fetch - main [MainThread]: Store serial: [17687407]
+[2023-04-13 07:56:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687407]
+[2023-04-13 07:56:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 07:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sunyata
+[2023-04-13 07:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pm4pyminimal
+[2023-04-13 07:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: forerunner
+[2023-04-13 07:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scrape-google-scholar-py
+[2023-04-13 07:56:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyranker
+[2023-04-13 07:56:42] INFO root fetch - processPackages [pyranker]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-13 07:56:42] INFO root fetch - processPackages [forerunner]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-13 07:56:42] INFO root fetch - processPackages [scrape-google-scholar-py]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-13 07:56:42] INFO root fetch - processPackages [sunyata]: New version: [0.0.33] Old Version: [0.0.32]
+[2023-04-13 07:56:42] INFO root fetch - processPackages [pm4pyminimal]: New version: [2.7.3] Old Version: [2.7.2]
+[2023-04-13 07:56:42] INFO root fetch - processPackages [pyranker]: Downloading https://files.pythonhosted.org/packages/b0/f5/0a394190d4632963a9d425ab89291dc0f3bb3c06b7fc5dd2da10aece5e75/pyranker-0.1.3-py3-none-any.whl
+[2023-04-13 07:56:42] INFO root fetch - processPackages [forerunner]: Downloading https://files.pythonhosted.org/packages/88/32/508d300b619daa1b40fa3b5a0b7119f49622dce18cc5dced7cc92079da62/forerunner-0.0.5.tar.gz
+[2023-04-13 07:56:42] INFO root fetch - processPackages [sunyata]: Downloading https://files.pythonhosted.org/packages/d4/36/aeb8da493d1add6fbfe19ffc84d6cace253b0f0f37cc332fc94897a7bbdf/sunyata-0.0.32.tar.gz
+[2023-04-13 07:56:42] INFO root fetch - processPackages [pm4pyminimal]: Downloading https://files.pythonhosted.org/packages/39/af/8e0390672c0952082811ff0750ae14b35c7e7572d7aa5c812c8eeca60c21/pm4pyminimal-2.7.2.tar.gz
+[2023-04-13 07:56:42] INFO root fetch - processPackages [scrape-google-scholar-py]: Downloading https://files.pythonhosted.org/packages/b7/ee/00d843528e04294d140ecc0a9dfbf9fc03bece555f056d66d85c06ef09a1/scrape-google-scholar-py-0.3.1.tar.gz
+[2023-04-13 07:56:42] INFO root fetch - processPackages [pyranker]: executing diffoscope
+[2023-04-13 07:56:42] INFO root fetch - processPackages [pyranker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyranker-0.1.2-py3-none-any.whl.zip tmp/pyranker-0.1.3-py3-none-any.whl.zip --markdown 20230413/p/pyranker/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-13 07:56:42] INFO root fetch - processPackages [forerunner]: Downloading https://files.pythonhosted.org/packages/79/9b/325bb7e8f5aa9dc805a1960d3855c6aaa0f3128ec1610ae05be266815fde/forerunner-0.0.6.tar.gz
+[2023-04-13 07:56:42] INFO root fetch - processPackages [sunyata]: Downloading https://files.pythonhosted.org/packages/2e/52/0c23161af1a72fb51cddb4f888e5f83e6ec4040ba0d89d8a6d7e6e7f4677/sunyata-0.0.33.tar.gz
+[2023-04-13 07:56:42] INFO root fetch - processPackages [scrape-google-scholar-py]: Downloading https://files.pythonhosted.org/packages/9f/3a/ec5a37f06bceae8a864a32695723fdb523ef75aa14c8a7a74514c4ccfd46/scrape-google-scholar-py-0.3.2.tar.gz
+[2023-04-13 07:56:43] INFO root fetch - processPackages [pm4pyminimal]: Downloading https://files.pythonhosted.org/packages/0e/a2/d260b16d3da5a0b77dac2dd09e9b713c796dd45ee0fb8a09fe32ab54b3d9/pm4pyminimal-2.7.3-py3-none-any.whl
+[2023-04-13 07:56:43] INFO root fetch - processPackages [scrape-google-scholar-py]: executing diffoscope
+[2023-04-13 07:56:43] INFO root fetch - processPackages [scrape-google-scholar-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrape-google-scholar-py-0.3.1.tar.gz tmp/scrape-google-scholar-py-0.3.2.tar.gz --markdown 20230413/s/scrape-google-scholar-py/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-13 07:56:43] INFO root fetch - processPackages [forerunner]: executing diffoscope
+[2023-04-13 07:56:43] INFO root fetch - processPackages [forerunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forerunner-0.0.5.tar.gz tmp/forerunner-0.0.6.tar.gz --markdown 20230413/f/forerunner/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-13 07:56:43] INFO root fetch - processPackages [sunyata]: executing diffoscope
+[2023-04-13 07:56:43] INFO root fetch - processPackages [sunyata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunyata-0.0.32.tar.gz tmp/sunyata-0.0.33.tar.gz --markdown 20230413/s/sunyata/0.0.32-0.0.33/diff.md --exclude *.pyd
+[2023-04-13 07:56:43] INFO root fetch - processPackages [pm4pyminimal]: executing diffoscope
+[2023-04-13 07:56:43] INFO root fetch - processPackages [pm4pyminimal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pm4pyminimal-2.7.2.tar.gz tmp/pm4pyminimal-2.7.3-py3-none-any.whl.zip --markdown 20230413/p/pm4pyminimal/2.7.2-2.7.3/diff.md --exclude *.pyd
+[2023-04-13 07:56:43] INFO root fetch - processPackages [pyranker]: Start processing: leaguecloser
+[2023-04-13 07:56:43] INFO root fetch - main [MainThread]: End processing [pyranker]: success
+[2023-04-13 07:56:43] INFO root fetch - processPackages [leaguecloser]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 07:56:44] INFO root fetch - processPackages [forerunner]: Start processing: ar-ex-sys-worker
+[2023-04-13 07:56:44] INFO root fetch - main [MainThread]: End processing [forerunner]: success
+[2023-04-13 07:56:44] INFO root fetch - processPackages [leaguecloser]: Downloading https://files.pythonhosted.org/packages/82/21/1ecda9808aa0e9b18a45c35b3de3c460b10eb80d29e4ff5073b91c6fa34b/leaguecloser-1.0.0.tar.gz
+[2023-04-13 07:56:44] INFO root fetch - processPackages [ar-ex-sys-worker]: New version: [1.5.62] Old Version: [1.5.61]
+[2023-04-13 07:56:44] INFO root fetch - processPackages [ar-ex-sys-worker]: Downloading https://files.pythonhosted.org/packages/96/80/e9ac53e74056c25e59cec532925ff5036a855918ba61eebf96f7347ea03d/ar_ex_sys_worker-1.5.61-py3-none-any.whl
+[2023-04-13 07:56:44] INFO root fetch - processPackages [sunyata]: Start processing: image-liveness
+[2023-04-13 07:56:44] INFO root fetch - main [MainThread]: End processing [sunyata]: success
+[2023-04-13 07:56:44] INFO root fetch - processPackages [image-liveness]: New version: [1.2] Old Version: [1.1]
+[2023-04-13 07:56:44] INFO root fetch - processPackages [leaguecloser]: Downloading https://files.pythonhosted.org/packages/64/d6/b0d6b5aa7ad5799ad7af1e0b60ed39e9fc7e3372b0a75d8b5c9a1adcdd99/leaguecloser-1.0.1.tar.gz
+[2023-04-13 07:56:44] INFO root fetch - processPackages [image-liveness]: Downloading https://files.pythonhosted.org/packages/6f/45/2f8d4041236dc7cd87f913335f03944a0996485262d9c72cfc5885239de3/image-liveness-1.2.tar.gz
+[2023-04-13 07:56:44] INFO root fetch - processPackages [ar-ex-sys-worker]: Downloading https://files.pythonhosted.org/packages/8b/7e/c4c9164a92a6b0ec4cb3416d1540abc1b6ced8d628b92d267d1c5b763dcd/ar_ex_sys_worker-1.5.62-py3-none-any.whl
+[2023-04-13 07:56:44] INFO root fetch - processPackages [leaguecloser]: executing diffoscope
+[2023-04-13 07:56:44] INFO root fetch - processPackages [leaguecloser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leaguecloser-1.0.0.tar.gz tmp/leaguecloser-1.0.1.tar.gz --markdown 20230413/l/leaguecloser/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 07:56:44] INFO root fetch - processPackages [scrape-google-scholar-py]: Start processing: merlin-sdk
+[2023-04-13 07:56:44] INFO root fetch - main [MainThread]: End processing [scrape-google-scholar-py]: success
+[2023-04-13 07:56:44] INFO root fetch - processPackages [merlin-sdk]: New version: [0.9.1] Old Version: [0.9.0.dev0]
+[2023-04-13 07:56:44] INFO root fetch - processPackages [image-liveness]: executing diffoscope
+[2023-04-13 07:56:44] INFO root fetch - processPackages [image-liveness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-liveness-1.1.tar.gz tmp/image-liveness-1.2.tar.gz --markdown 20230413/i/image-liveness/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-13 07:56:44] INFO root fetch - processPackages [ar-ex-sys-worker]: executing diffoscope
+[2023-04-13 07:56:44] INFO root fetch - processPackages [ar-ex-sys-worker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ar_ex_sys_worker-1.5.61-py3-none-any.whl.zip tmp/ar_ex_sys_worker-1.5.62-py3-none-any.whl.zip --markdown 20230413/a/ar-ex-sys-worker/1.5.61-1.5.62/diff.md --exclude *.pyd
+[2023-04-13 07:56:44] INFO root fetch - processPackages [merlin-sdk]: Downloading https://files.pythonhosted.org/packages/a6/93/1ec49bc87e9c3783e78f1047b5a8045a37c626115351da0f603c1ae6a894/merlin-sdk-0.9.0.dev0.tar.gz
+[2023-04-13 07:56:45] INFO root fetch - processPackages [merlin-sdk]: Downloading https://files.pythonhosted.org/packages/48/3b/5e6b41bed4feb59823f7fa8ccbf076c977df12a20955a3c783fab418f126/merlin-sdk-0.9.1.tar.gz
+[2023-04-13 07:56:45] INFO root fetch - main [MainThread]: End processing [leaguecloser]: success
+[2023-04-13 07:56:45] INFO root fetch - processPackages [merlin-sdk]: executing diffoscope
+[2023-04-13 07:56:45] INFO root fetch - processPackages [merlin-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/merlin-sdk-0.9.0.dev0.tar.gz tmp/merlin-sdk-0.9.1.tar.gz --markdown 20230413/m/merlin-sdk/0.9.0.dev0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 07:56:45] INFO root fetch - main [MainThread]: End processing [ar-ex-sys-worker]: success
+[2023-04-13 07:56:46] INFO root fetch - main [MainThread]: End processing [image-liveness]: success
+[2023-04-13 07:56:47] INFO root fetch - main [MainThread]: End processing [pm4pyminimal]: success
+[2023-04-13 07:56:47] INFO root fetch - main [MainThread]: End processing [merlin-sdk]: success
+[2023-04-13 07:56:47] INFO root fetch - main [MainThread]: Store serial: [17687429]
