@@ -6097,3 +6097,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:16:16] INFO root fetch - main [MainThread]: End processing [halring]: success
 [2023-04-13 04:16:16] INFO root fetch - main [MainThread]: End processing [MarkerMAG]: success
 [2023-04-13 04:16:16] INFO root fetch - main [MainThread]: Store serial: [17685919]
+[2023-04-13 04:21:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17685919]
+[2023-04-13 04:21:24] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 04:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnxmodel-utils
+[2023-04-13 04:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yhgit
+[2023-04-13 04:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seven-cloudapp-frame
+[2023-04-13 04:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reyapi
+[2023-04-13 04:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: policyengine-us
+[2023-04-13 04:21:24] WARNING root fetch - processPackages [reyapi]: Skipping, unable to determine old version
+[2023-04-13 04:21:24] INFO root fetch - processPackages [reyapi]: Start processing: ats-case
+[2023-04-13 04:21:24] INFO root fetch - main [MainThread]: End processing [reyapi] error
+[2023-04-13 04:21:24] INFO root fetch - processPackages [onnxmodel-utils]: New version: [0.0.7] Old Version: [0.0.5]
+[2023-04-13 04:21:24] INFO root fetch - processPackages [yhgit]: New version: [2.8.9] Old Version: [2.8.8]
+[2023-04-13 04:21:24] INFO root fetch - processPackages [ats-case]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-13 04:21:24] INFO root fetch - processPackages [policyengine-us]: New version: [0.286.0] Old Version: [0.285.1]
+[2023-04-13 04:21:24] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-04-13 04:21:24] INFO root fetch - processPackages [yhgit]: executing diffoscope
+[2023-04-13 04:21:24] INFO root fetch - processPackages [yhgit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yhgit-2.8.8.tar.gz tmp/yhgit-2.8.9.tar.gz --markdown 20230413/y/yhgit/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2023-04-13 04:21:24] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-04-13 04:21:24] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230413/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-04-13 04:21:24] INFO root fetch - processPackages [onnxmodel-utils]: Downloading https://files.pythonhosted.org/packages/7b/4b/2740d4cab41ec11045bf5fa601afdb499bcf3664150d3019d9af4b168b0b/onnxmodel-utils-0.0.5.tar.gz
+[2023-04-13 04:21:24] INFO root fetch - processPackages [ats-case]: Downloading https://files.pythonhosted.org/packages/75/f0/c8335de3b6e57cd27bcc288541b603b51eb8d41b2a82130dbe1c6ac0fea4/ats_case-0.4.3.tar.gz
+[2023-04-13 04:21:24] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/e6/b9/57bdb9fdfba3aa3118dbde3a3b29f0079f0a42587f1dae1e867188fa9b93/policyengine-us-0.286.0.tar.gz
+[2023-04-13 04:21:24] INFO root fetch - processPackages [ats-case]: executing diffoscope
+[2023-04-13 04:21:24] INFO root fetch - processPackages [ats-case]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ats_case-0.4.2.tar.gz tmp/ats_case-0.4.3.tar.gz --markdown 20230413/a/ats-case/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-13 04:21:24] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-13 04:21:24] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.285.1.tar.gz tmp/policyengine-us-0.286.0.tar.gz --markdown 20230413/p/policyengine-us/0.285.1-0.286.0/diff.md --exclude *.pyd
+[2023-04-13 04:21:24] INFO root fetch - processPackages [onnxmodel-utils]: Downloading https://files.pythonhosted.org/packages/bd/b3/87db32e1c20669149d0f1d1cc59be4c397d5777658df4e51a84a717b4d8a/onnxmodel-utils-0.0.7.tar.gz
+[2023-04-13 04:21:24] INFO root fetch - processPackages [onnxmodel-utils]: executing diffoscope
+[2023-04-13 04:21:24] INFO root fetch - processPackages [onnxmodel-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxmodel-utils-0.0.5.tar.gz tmp/onnxmodel-utils-0.0.7.tar.gz --markdown 20230413/o/onnxmodel-utils/0.0.5-0.0.7/diff.md --exclude *.pyd
+[2023-04-13 04:21:25] INFO root fetch - processPackages [ats-case]: Start processing: IOTELLME
+[2023-04-13 04:21:25] INFO root fetch - main [MainThread]: End processing [ats-case]: success
+[2023-04-13 04:21:25] WARNING root fetch - processPackages [IOTELLME]: Skipping, unable to determine old version
+[2023-04-13 04:21:25] INFO root fetch - processPackages [IOTELLME]: Start processing: gpt-api
+[2023-04-13 04:21:25] INFO root fetch - main [MainThread]: End processing [IOTELLME] error
+[2023-04-13 04:21:25] WARNING root fetch - processPackages [gpt-api]: Skipping, unable to determine old version
+[2023-04-13 04:21:25] INFO root fetch - processPackages [gpt-api]: Start processing: mctc-hackathon-robot297
+[2023-04-13 04:21:25] INFO root fetch - main [MainThread]: End processing [gpt-api] error
+[2023-04-13 04:21:25] INFO root fetch - main [MainThread]: End processing [yhgit]: success
+[2023-04-13 04:21:25] INFO root fetch - processPackages [mctc-hackathon-robot297]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 04:21:25] INFO root fetch - main [MainThread]: End processing [onnxmodel-utils]: success
+[2023-04-13 04:21:26] INFO root fetch - processPackages [mctc-hackathon-robot297]: Downloading https://files.pythonhosted.org/packages/7d/34/8a615f027b1bad70579ea22f88f941dacb25731948b125ab5d1155893f34/mctc_hackathon_robot297-0.0.1.tar.gz
+[2023-04-13 04:21:26] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-04-13 04:21:26] INFO root fetch - processPackages [mctc-hackathon-robot297]: Downloading https://files.pythonhosted.org/packages/23/02/c50b7ac418fbe9748f96dd8d905932730b5059ab30440348418c024bf909/mctc_hackathon_robot297-0.0.2.tar.gz
+[2023-04-13 04:21:26] INFO root fetch - processPackages [mctc-hackathon-robot297]: executing diffoscope
+[2023-04-13 04:21:26] INFO root fetch - processPackages [mctc-hackathon-robot297]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mctc_hackathon_robot297-0.0.1.tar.gz tmp/mctc_hackathon_robot297-0.0.2.tar.gz --markdown 20230413/m/mctc-hackathon-robot297/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 04:21:27] INFO root fetch - main [MainThread]: End processing [mctc-hackathon-robot297]: success
+[2023-04-13 04:22:30] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-13 04:22:30] INFO root fetch - main [MainThread]: Store serial: [17685950]
