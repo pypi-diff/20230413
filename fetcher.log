@@ -17416,3 +17416,133 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 15:02:18] INFO root fetch - main [MainThread]: End processing [dask-geomodeling]: success
 [2023-04-13 15:02:19] INFO root fetch - main [MainThread]: End processing [sefazetllib]: success
 [2023-04-13 15:02:19] INFO root fetch - main [MainThread]: Store serial: [17692647]
+[2023-04-13 15:07:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17692647]
+[2023-04-13 15:07:28] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-13 15:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-priming
+[2023-04-13 15:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jianglab
+[2023-04-13 15:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crabpy
+[2023-04-13 15:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: router-log-preprocessor
+[2023-04-13 15:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openhexa.cli
+[2023-04-13 15:07:28] INFO root fetch - processPackages [openhexa.cli]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-13 15:07:28] INFO root fetch - processPackages [jianglab]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-13 15:07:28] INFO root fetch - processPackages [router-log-preprocessor]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 15:07:28] INFO root fetch - processPackages [crabpy]: New version: [1.0.0] Old Version: [0.9.0]
+[2023-04-13 15:07:28] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-13 15:07:28] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-13 15:07:28] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230413/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 15:07:28] INFO root fetch - processPackages [openhexa.cli]: Downloading https://files.pythonhosted.org/packages/b5/a9/b14bbb928db54c2f6b2d76e39e5a6a8479bd18ff60c1d425ff1478c33ec1/openhexa.cli-0.0.1.tar.gz
+[2023-04-13 15:07:28] INFO root fetch - processPackages [crabpy]: Downloading https://files.pythonhosted.org/packages/28/93/7dca86a64ad8a6d01d6a09c38314d8fb412015f4f44e9082e7c7432fe590/crabpy-0.9.0.tar.gz
+[2023-04-13 15:07:28] INFO root fetch - processPackages [router-log-preprocessor]: Downloading https://files.pythonhosted.org/packages/5e/0d/2db392eea8a9f0f007d8df37743ffa1f1d0d39bfce874a21f048b63a142a/router_log_preprocessor-0.1.1.tar.gz
+[2023-04-13 15:07:28] INFO root fetch - processPackages [jianglab]: Downloading https://files.pythonhosted.org/packages/4f/1f/2abbd47730fd27ead6dcacf2cb858b2995aa0026f9869d2b934b3a94559a/jianglab-0.1.3.tar.gz
+[2023-04-13 15:07:28] INFO root fetch - processPackages [openhexa.cli]: Downloading https://files.pythonhosted.org/packages/c3/77/9d87a2599d7fc91abddc6b2ff2908580ab1fe14afded5f2bfc15bee453a8/openhexa.cli-0.1.0.tar.gz
+[2023-04-13 15:07:28] INFO root fetch - processPackages [openhexa.cli]: executing diffoscope
+[2023-04-13 15:07:28] INFO root fetch - processPackages [openhexa.cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openhexa.cli-0.0.1.tar.gz tmp/openhexa.cli-0.1.0.tar.gz --markdown 20230413/o/openhexa.cli/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-13 15:07:28] INFO root fetch - processPackages [jianglab]: executing diffoscope
+[2023-04-13 15:07:28] INFO root fetch - processPackages [jianglab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jianglab-0.1.2.tar.gz tmp/jianglab-0.1.3.tar.gz --markdown 20230413/j/jianglab/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-13 15:07:28] INFO root fetch - processPackages [crabpy]: Downloading https://files.pythonhosted.org/packages/2c/a9/512a23c3147eac97e896f0befa6c209ef45f869d61cba805224f3c5f46cc/crabpy-1.0.0.tar.gz
+[2023-04-13 15:07:28] INFO root fetch - processPackages [router-log-preprocessor]: Downloading https://files.pythonhosted.org/packages/f3/d6/8431f714f30f152051c3febdf982f28371bea14bca0606e59b0eaecb45a5/router_log_preprocessor-0.1.2.tar.gz
+[2023-04-13 15:07:28] INFO root fetch - processPackages [crabpy]: executing diffoscope
+[2023-04-13 15:07:28] INFO root fetch - processPackages [crabpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crabpy-0.9.0.tar.gz tmp/crabpy-1.0.0.tar.gz --markdown 20230413/c/crabpy/0.9.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-13 15:07:28] INFO root fetch - processPackages [router-log-preprocessor]: executing diffoscope
+[2023-04-13 15:07:28] INFO root fetch - processPackages [router-log-preprocessor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/router_log_preprocessor-0.1.1.tar.gz tmp/router_log_preprocessor-0.1.2.tar.gz --markdown 20230413/r/router-log-preprocessor/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 15:07:29] INFO root fetch - processPackages [few-shot-priming]: Start processing: swh.core
+[2023-04-13 15:07:29] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-04-13 15:07:29] INFO root fetch - processPackages [swh.core]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-04-13 15:07:29] INFO root fetch - processPackages [openhexa.cli]: Start processing: nbdev-stdlib
+[2023-04-13 15:07:29] INFO root fetch - main [MainThread]: End processing [openhexa.cli]: success
+[2023-04-13 15:07:29] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-13 15:07:29] INFO root fetch - processPackages [swh.core]: Downloading https://files.pythonhosted.org/packages/eb/c4/6ab443b2fa35f8668b1282a3226d4c556c7aa68ea091558e8269e7d759b8/swh.core-2.8.1.tar.gz
+[2023-04-13 15:07:29] INFO root fetch - processPackages [jianglab]: Start processing: webssh-embedded
+[2023-04-13 15:07:29] INFO root fetch - main [MainThread]: End processing [jianglab]: success
+[2023-04-13 15:07:29] INFO root fetch - processPackages [webssh-embedded]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 15:07:29] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-13 15:07:29] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230413/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 15:07:29] INFO root fetch - processPackages [webssh-embedded]: Downloading https://files.pythonhosted.org/packages/89/b9/745b2a419bd4a3507726b71e4d3593c4153d017c40cf0e0a1b57b71247c7/webssh_embedded-1.0.1.tar.gz
+[2023-04-13 15:07:30] INFO root fetch - processPackages [webssh-embedded]: executing diffoscope
+[2023-04-13 15:07:30] INFO root fetch - processPackages [webssh-embedded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webssh_embedded-1.0.0.tar.gz tmp/webssh_embedded-1.0.1.tar.gz --markdown 20230413/w/webssh-embedded/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 15:07:30] INFO root fetch - processPackages [router-log-preprocessor]: Start processing: bacalhau-airflow
+[2023-04-13 15:07:30] INFO root fetch - main [MainThread]: End processing [router-log-preprocessor]: success
+[2023-04-13 15:07:30] INFO root fetch - processPackages [bacalhau-airflow]: New version: [0.3.26] Old Version: [0.3.25]
+[2023-04-13 15:07:30] INFO root fetch - processPackages [crabpy]: Start processing: oakvar
+[2023-04-13 15:07:30] INFO root fetch - main [MainThread]: End processing [crabpy]: success
+[2023-04-13 15:07:30] INFO root fetch - processPackages [oakvar]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-04-13 15:07:30] INFO root fetch - processPackages [bacalhau-airflow]: Downloading https://files.pythonhosted.org/packages/10/51/871c9e2d5d80b07acd32e738e84903c7693815579d37250f62a5215033a5/bacalhau_airflow-0.3.25.tar.gz
+[2023-04-13 15:07:30] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/e4/c2/69b7c1ff79a3dd17db69dff3b9c943f9532080cb799bb30dc4db234c5df9/oakvar-2.9.7.tar.gz
+[2023-04-13 15:07:30] INFO root fetch - processPackages [swh.core]: Downloading https://files.pythonhosted.org/packages/49/8b/36c6404dc1c5d1b66968b7d72a99d17d7339e3ed5baadf762bec13820e76/swh.core-2.9.0.tar.gz
+[2023-04-13 15:07:30] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-04-13 15:07:30] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.6.tar.gz tmp/oakvar-2.9.7.tar.gz --markdown 20230413/o/oakvar/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-04-13 15:07:30] INFO root fetch - processPackages [nbdev-stdlib]: Start processing: zcatalyst-sdk
+[2023-04-13 15:07:30] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-04-13 15:07:30] INFO root fetch - processPackages [zcatalyst-sdk]: New version: [0.0.2rc2] Old Version: [0.0.2rc1]
+[2023-04-13 15:07:31] INFO root fetch - processPackages [zcatalyst-sdk]: Downloading https://files.pythonhosted.org/packages/c0/b5/424f08fe49106a8fb626217035fa8ca07ae6594cf8d678c4fd1d85dd9333/zcatalyst_sdk-0.0.2rc1.tar.gz
+[2023-04-13 15:07:31] INFO root fetch - processPackages [webssh-embedded]: Start processing: pink-noise-rl
+[2023-04-13 15:07:31] INFO root fetch - main [MainThread]: End processing [webssh-embedded]: success
+[2023-04-13 15:07:31] INFO root fetch - processPackages [pink-noise-rl]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-13 15:07:31] INFO root fetch - processPackages [bacalhau-airflow]: Downloading https://files.pythonhosted.org/packages/50/c5/bd371c10e6192c1136d4001517a964dad67373b7134c671ac11bd107cd10/bacalhau_airflow-0.3.26.tar.gz
+[2023-04-13 15:07:31] INFO root fetch - processPackages [bacalhau-airflow]: executing diffoscope
+[2023-04-13 15:07:31] INFO root fetch - processPackages [bacalhau-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacalhau_airflow-0.3.25.tar.gz tmp/bacalhau_airflow-0.3.26.tar.gz --markdown 20230413/b/bacalhau-airflow/0.3.25-0.3.26/diff.md --exclude *.pyd
+[2023-04-13 15:07:31] INFO root fetch - processPackages [pink-noise-rl]: Downloading https://files.pythonhosted.org/packages/22/37/e40cdfdd7153953e825999efc21c2ba1e6be558c3614d2d36b7a2116776c/pink_noise_rl-2.0.0.tar.gz
+[2023-04-13 15:07:31] INFO root fetch - processPackages [zcatalyst-sdk]: Downloading https://files.pythonhosted.org/packages/0b/30/06c1404d42ab7848284706a9fd6484255f666c37c97c4f0c338fa58b5b4b/zcatalyst_sdk-0.0.2rc2.tar.gz
+[2023-04-13 15:07:31] INFO root fetch - processPackages [swh.core]: executing diffoscope
+[2023-04-13 15:07:31] INFO root fetch - processPackages [swh.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swh.core-2.8.1.tar.gz tmp/swh.core-2.9.0.tar.gz --markdown 20230413/s/swh.core/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-04-13 15:07:31] INFO root fetch - processPackages [zcatalyst-sdk]: executing diffoscope
+[2023-04-13 15:07:31] INFO root fetch - processPackages [zcatalyst-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zcatalyst_sdk-0.0.2rc1.tar.gz tmp/zcatalyst_sdk-0.0.2rc2.tar.gz --markdown 20230413/z/zcatalyst-sdk/0.0.2rc1-0.0.2rc2/diff.md --exclude *.pyd
+[2023-04-13 15:07:31] INFO root fetch - processPackages [pink-noise-rl]: Downloading https://files.pythonhosted.org/packages/4d/cb/dc3ed54c7938bdf95f84e3b68e13e7297d6c80e071144f9d77132bfcb1f1/pink_noise_rl-2.0.1.tar.gz
+[2023-04-13 15:07:31] INFO root fetch - processPackages [pink-noise-rl]: executing diffoscope
+[2023-04-13 15:07:31] INFO root fetch - processPackages [pink-noise-rl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pink_noise_rl-2.0.0.tar.gz tmp/pink_noise_rl-2.0.1.tar.gz --markdown 20230413/p/pink-noise-rl/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-13 15:07:32] INFO root fetch - processPackages [bacalhau-airflow]: Start processing: openai-async-client
+[2023-04-13 15:07:32] INFO root fetch - main [MainThread]: End processing [bacalhau-airflow]: success
+[2023-04-13 15:07:32] INFO root fetch - processPackages [openai-async-client]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-13 15:07:32] INFO root fetch - processPackages [pink-noise-rl]: Start processing: nonebot-plugin-osuverify
+[2023-04-13 15:07:32] INFO root fetch - main [MainThread]: End processing [pink-noise-rl]: success
+[2023-04-13 15:07:32] INFO root fetch - processPackages [nonebot-plugin-osuverify]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 15:07:32] INFO root fetch - processPackages [zcatalyst-sdk]: Start processing: nbdev-numpy
+[2023-04-13 15:07:32] INFO root fetch - main [MainThread]: End processing [zcatalyst-sdk]: success
+[2023-04-13 15:07:32] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-13 15:07:32] INFO root fetch - processPackages [openai-async-client]: Downloading https://files.pythonhosted.org/packages/d7/46/50e5ec3bebc2c99822d8fd752710c80da264321e7b6db57cfadd668ed6bb/openai-async-client-0.2.1.tar.gz
+[2023-04-13 15:07:32] INFO root fetch - processPackages [nonebot-plugin-osuverify]: Downloading https://files.pythonhosted.org/packages/04/57/c98cd2ef532d385bdeb69f87b5127c12fb4c2876fad25a6cf9e5812c92c7/nonebot-plugin-osuverify-0.0.1.tar.gz
+[2023-04-13 15:07:32] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-13 15:07:32] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230413/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 15:07:32] INFO root fetch - processPackages [swh.core]: Start processing: visiumlint
+[2023-04-13 15:07:32] INFO root fetch - main [MainThread]: End processing [swh.core]: success
+[2023-04-13 15:07:33] WARNING root fetch - processPackages [visiumlint]: Skipping, unable to determine old version
+[2023-04-13 15:07:33] INFO root fetch - processPackages [visiumlint]: Start processing: pyinflux3
+[2023-04-13 15:07:33] INFO root fetch - main [MainThread]: End processing [visiumlint] error
+[2023-04-13 15:07:33] INFO root fetch - processPackages [pyinflux3]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-13 15:07:33] INFO root fetch - processPackages [openai-async-client]: Downloading https://files.pythonhosted.org/packages/b5/28/963f096ac85df3baf4704fe04ba2a444efd67ab456f20b4ac9e537f7ace6/openai_async_client-0.2.2-py3-none-any.whl
+[2023-04-13 15:07:33] INFO root fetch - processPackages [openai-async-client]: executing diffoscope
+[2023-04-13 15:07:33] INFO root fetch - processPackages [openai-async-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai-async-client-0.2.1.tar.gz tmp/openai_async_client-0.2.2-py3-none-any.whl.zip --markdown 20230413/o/openai-async-client/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-13 15:07:33] INFO root fetch - processPackages [nonebot-plugin-osuverify]: Downloading https://files.pythonhosted.org/packages/b1/56/b5e5d1c328956a968ef73a4910b0302db3ca426cd18cb87182586055c96a/nonebot-plugin-osuverify-0.0.2.tar.gz
+[2023-04-13 15:07:33] INFO root fetch - processPackages [nonebot-plugin-osuverify]: executing diffoscope
+[2023-04-13 15:07:33] INFO root fetch - processPackages [nonebot-plugin-osuverify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-osuverify-0.0.1.tar.gz tmp/nonebot-plugin-osuverify-0.0.2.tar.gz --markdown 20230413/n/nonebot-plugin-osuverify/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 15:07:33] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/fc/00/ba422aa4e8ef646f532c80b49319bc040be4125e354abc330c2c67603d60/pyinflux3-0.7.1.tar.gz
+[2023-04-13 15:07:33] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-13 15:07:33] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.7.0.tar.gz tmp/pyinflux3-0.7.1.tar.gz --markdown 20230413/p/pyinflux3/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-13 15:07:34] INFO root fetch - processPackages [nbdev-numpy]: Start processing: pyinflux3
+[2023-04-13 15:07:34] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-04-13 15:07:34] INFO root fetch - processPackages [pyinflux3]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-13 15:07:34] INFO root fetch - processPackages [openai-async-client]: Start processing: text2mapviewer
+[2023-04-13 15:07:34] INFO root fetch - main [MainThread]: End processing [openai-async-client]: success
+[2023-04-13 15:07:34] INFO root fetch - processPackages [text2mapviewer]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 15:07:34] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-13 15:07:34] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.7.0.tar.gz tmp/pyinflux3-0.7.1.tar.gz --markdown 20230413/p/pyinflux3/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-13 15:07:34] INFO root fetch - processPackages [nonebot-plugin-osuverify]: Start processing: nbdev-pandas
+[2023-04-13 15:07:34] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-osuverify]: success
+[2023-04-13 15:07:34] INFO root fetch - processPackages [text2mapviewer]: Downloading https://files.pythonhosted.org/packages/4b/c9/ee9d2be44c479cc634611c23b8870cd278af512c49f4921ac3372f368ef2/text2mapviewer-0.2.1.tar.gz
+[2023-04-13 15:07:34] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-13 15:07:34] INFO root fetch - processPackages [text2mapviewer]: executing diffoscope
+[2023-04-13 15:07:34] INFO root fetch - processPackages [text2mapviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2mapviewer-0.2.0.tar.gz tmp/text2mapviewer-0.2.1.tar.gz --markdown 20230413/t/text2mapviewer/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 15:07:34] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-13 15:07:34] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230413/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 15:07:34] INFO root fetch - processPackages [pyinflux3]: Start processing: OpenGeode-Geosciences
+[2023-04-13 15:07:34] INFO root fetch - main [MainThread]: End processing [pyinflux3]: success
+[2023-04-13 15:07:34] INFO root fetch - processPackages [OpenGeode-Geosciences]: New version: [6.1.0] Old Version: [6.0.3]
+[2023-04-13 15:07:34] INFO root fetch - processPackages [OpenGeode-Geosciences]: Downloading https://files.pythonhosted.org/packages/6c/ad/2c0411b920cf9273629dedcde0b50c2e5d8ff21c9707eba9c4c25f0e97c1/OpenGeode_Geosciences-6.1.0-cp39-cp39-win_amd64.whl
+[2023-04-13 15:07:34] INFO root fetch - processPackages [OpenGeode-Geosciences]: executing diffoscope
+[2023-04-13 15:07:34] INFO root fetch - processPackages [OpenGeode-Geosciences]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_Geosciences-6.0.3-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_Geosciences-6.1.0-cp39-cp39-win_amd64.whl.zip --markdown 20230413/O/OpenGeode-Geosciences/6.0.3-6.1.0/diff.md --exclude *.pyd
+[2023-04-13 15:07:35] INFO root fetch - main [MainThread]: End processing [pyinflux3]: success
+[2023-04-13 15:07:35] INFO root fetch - main [MainThread]: End processing [text2mapviewer]: success
+[2023-04-13 15:07:35] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-04-13 15:07:35] INFO root fetch - main [MainThread]: End processing [OpenGeode-Geosciences]: success
+[2023-04-13 15:07:36] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-04-13 15:07:36] INFO root fetch - main [MainThread]: Store serial: [17692713]
