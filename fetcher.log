@@ -8615,3 +8615,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 07:56:47] INFO root fetch - main [MainThread]: End processing [pm4pyminimal]: success
 [2023-04-13 07:56:47] INFO root fetch - main [MainThread]: End processing [merlin-sdk]: success
 [2023-04-13 07:56:47] INFO root fetch - main [MainThread]: Store serial: [17687429]
+[2023-04-13 08:01:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687429]
+[2023-04-13 08:01:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-13 08:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diskimage-builder
+[2023-04-13 08:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: refnx
+[2023-04-13 08:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slackflylog
+[2023-04-13 08:01:55] INFO root fetch - processPackages [refnx]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 08:01:55] INFO root fetch - processPackages [slackflylog]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-13 08:01:55] INFO root fetch - processPackages [diskimage-builder]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-04-13 08:01:55] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-13 08:01:55] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-1.0.2-py2-none-any.whl.zip tmp/slackflylog-1.0.3.tar.gz --markdown 20230413/s/slackflylog/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-13 08:01:55] INFO root fetch - processPackages [diskimage-builder]: Downloading https://files.pythonhosted.org/packages/03/0f/778b7260b26eae810bd85872721ca4fcd94d8e311f67fbdd5eaeaaf769c3/diskimage-builder-3.8.0.tar.gz
+[2023-04-13 08:01:55] INFO root fetch - processPackages [refnx]: Downloading https://files.pythonhosted.org/packages/13/76/d5abf74e726036eff9698aad9d4fc1312f309b9834e5fb78e3c95f05f684/refnx-0.1.8.tar.gz
+[2023-04-13 08:01:56] INFO root fetch - processPackages [diskimage-builder]: Downloading https://files.pythonhosted.org/packages/d0/36/40fe2cb1e3f820fc35d972471f50b3565788522db7b2f686d65dfcccc394/diskimage-builder-3.9.0.tar.gz
+[2023-04-13 08:01:56] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-13 08:01:57] INFO root fetch - processPackages [diskimage-builder]: executing diffoscope
+[2023-04-13 08:01:57] INFO root fetch - processPackages [diskimage-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diskimage-builder-3.8.0.tar.gz tmp/diskimage-builder-3.9.0.tar.gz --markdown 20230413/d/diskimage-builder/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-04-13 08:01:57] INFO root fetch - processPackages [refnx]: Downloading https://files.pythonhosted.org/packages/00/ea/41c5310e4637fdc34ce783bf02ec315a7590f0dc184dc89291d299fe8857/refnx-0.1.9.tar.gz
+[2023-04-13 08:02:00] INFO root fetch - processPackages [refnx]: executing diffoscope
+[2023-04-13 08:02:00] INFO root fetch - processPackages [refnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/refnx-0.1.8.tar.gz tmp/refnx-0.1.9.tar.gz --markdown 20230413/r/refnx/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 08:02:04] INFO root fetch - main [MainThread]: End processing [refnx]: success
+[2023-04-13 08:02:07] INFO root fetch - main [MainThread]: End processing [diskimage-builder]: success
+[2023-04-13 08:02:07] INFO root fetch - main [MainThread]: Store serial: [17687451]
