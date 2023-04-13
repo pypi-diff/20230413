@@ -13124,3 +13124,82 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 12:04:34] INFO root fetch - main [MainThread]: End processing [transformers-gradients]: success
 [2023-04-13 12:04:35] INFO root fetch - main [MainThread]: End processing [scikit-misc]: success
 [2023-04-13 12:04:35] INFO root fetch - main [MainThread]: Store serial: [17690306]
+[2023-04-13 12:09:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690306]
+[2023-04-13 12:09:42] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-13 12:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opensesame-core
+[2023-04-13 12:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flake8-pyi
+[2023-04-13 12:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: retroperm
+[2023-04-13 12:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tinybird-cli
+[2023-04-13 12:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yourtools
+[2023-04-13 12:09:42] INFO root fetch - processPackages [opensesame-core]: New version: [4.0.0a5] Old Version: [4.0.0a3]
+[2023-04-13 12:09:42] INFO root fetch - processPackages [retroperm]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-13 12:09:42] INFO root fetch - processPackages [tinybird-cli]: New version: [1.0.0b99] Old Version: [1.0.0b98]
+[2023-04-13 12:09:42] INFO root fetch - processPackages [yourtools]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-13 12:09:42] INFO root fetch - processPackages [flake8-pyi]: New version: [23.4.1] Old Version: [23.4.0]
+[2023-04-13 12:09:42] INFO root fetch - processPackages [tinybird-cli]: executing diffoscope
+[2023-04-13 12:09:42] INFO root fetch - processPackages [tinybird-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinybird-cli-1.0.0b98.tar.gz tmp/tinybird-cli-1.0.0b99.tar.gz --markdown 20230413/t/tinybird-cli/1.0.0b98-1.0.0b99/diff.md --exclude *.pyd
+[2023-04-13 12:09:43] INFO root fetch - processPackages [retroperm]: Downloading https://files.pythonhosted.org/packages/f6/06/77319161731e333d36bcba87ef62b5e73822f9ea972df7475f6c21cfd335/retroperm-0.0.0.tar.gz
+[2023-04-13 12:09:43] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/c3/be/f5e0e1021084dc9a4b0d3f94597e5faa554f0f2186369ed06577e895bd33/yourtools-0.4.3.tar.gz
+[2023-04-13 12:09:43] INFO root fetch - processPackages [opensesame-core]: Downloading https://files.pythonhosted.org/packages/42/3e/bd20b88d0e998c47d4cd4a8f5752d7147d28866434db727f275c00413e40/opensesame_core-4.0.0a3.tar.gz
+[2023-04-13 12:09:43] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-13 12:09:43] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.4.2.tar.gz tmp/yourtools-0.4.3.tar.gz --markdown 20230413/y/yourtools/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-13 12:09:43] INFO root fetch - processPackages [flake8-pyi]: Downloading https://files.pythonhosted.org/packages/7a/1e/37cc2e044b49a7b06fd9977d2b18a819b19fbe22c716f23169d74cf4670a/flake8_pyi-23.4.1.tar.gz
+[2023-04-13 12:09:43] INFO root fetch - processPackages [retroperm]: Downloading https://files.pythonhosted.org/packages/47/fb/aaa676ad173c1fdd1add50730fbef3e476cccc00b85c2157f1c55612a3b2/retroperm-0.0.1.tar.gz
+[2023-04-13 12:09:43] INFO root fetch - processPackages [flake8-pyi]: executing diffoscope
+[2023-04-13 12:09:43] INFO root fetch - processPackages [flake8-pyi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8_pyi-23.4.0.tar.gz tmp/flake8_pyi-23.4.1.tar.gz --markdown 20230413/f/flake8-pyi/23.4.0-23.4.1/diff.md --exclude *.pyd
+[2023-04-13 12:09:43] WARNING root fetch - processPackages [opensesame-core]: Skipping package: exceeds size limit 18335907>=10485760
+[2023-04-13 12:09:43] INFO root fetch - processPackages [opensesame-core]: Start processing: data-portfolio
+[2023-04-13 12:09:43] INFO root fetch - main [MainThread]: End processing [opensesame-core] error
+[2023-04-13 12:09:43] INFO root fetch - processPackages [retroperm]: executing diffoscope
+[2023-04-13 12:09:43] INFO root fetch - processPackages [retroperm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retroperm-0.0.0.tar.gz tmp/retroperm-0.0.1.tar.gz --markdown 20230413/r/retroperm/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-13 12:09:43] WARNING root fetch - processPackages [data-portfolio]: Skipping, unable to determine old version
+[2023-04-13 12:09:43] INFO root fetch - processPackages [data-portfolio]: Start processing: charactr-api-sdk
+[2023-04-13 12:09:43] INFO root fetch - main [MainThread]: End processing [data-portfolio] error
+[2023-04-13 12:09:43] WARNING root fetch - processPackages [charactr-api-sdk]: Skipping, unable to determine old version
+[2023-04-13 12:09:43] INFO root fetch - processPackages [charactr-api-sdk]: Start processing: retrofix
+[2023-04-13 12:09:43] INFO root fetch - main [MainThread]: End processing [charactr-api-sdk] error
+[2023-04-13 12:09:43] INFO root fetch - processPackages [retrofix]: New version: [0.9] Old Version: [0.8]
+[2023-04-13 12:09:43] INFO root fetch - processPackages [retrofix]: Downloading https://files.pythonhosted.org/packages/b4/8e/b66dcada310838a8e464776f0b1c3bc978cd5f337b42a0814b4e33364ba6/retrofix-0.8.tar.gz
+[2023-04-13 12:09:44] INFO root fetch - processPackages [retrofix]: Downloading https://files.pythonhosted.org/packages/8c/c3/9af43c0fce9f8afdd6bb90493f66665488e9f51f5875f7f1cedcb5670637/retrofix-0.9.tar.gz
+[2023-04-13 12:09:44] INFO root fetch - processPackages [tinybird-cli]: Start processing: sienna
+[2023-04-13 12:09:44] INFO root fetch - main [MainThread]: End processing [tinybird-cli]: success
+[2023-04-13 12:09:44] INFO root fetch - processPackages [sienna]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-04-13 12:09:44] INFO root fetch - processPackages [yourtools]: Start processing: pytapo
+[2023-04-13 12:09:44] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-13 12:09:44] INFO root fetch - processPackages [pytapo]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-04-13 12:09:44] INFO root fetch - processPackages [retrofix]: executing diffoscope
+[2023-04-13 12:09:44] INFO root fetch - processPackages [retrofix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retrofix-0.8.tar.gz tmp/retrofix-0.9.tar.gz --markdown 20230413/r/retrofix/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-13 12:09:44] INFO root fetch - processPackages [sienna]: Downloading https://files.pythonhosted.org/packages/d4/bf/f50864ea6e059b0ba132171ea0f0bfdab8d21b1ccccde3565ed9b98e6e7d/sienna-0.1.5.tar.gz
+[2023-04-13 12:09:44] INFO root fetch - processPackages [retroperm]: Start processing: dm-reverb-nightly
+[2023-04-13 12:09:44] INFO root fetch - main [MainThread]: End processing [retroperm]: success
+[2023-04-13 12:09:44] INFO root fetch - processPackages [pytapo]: Downloading https://files.pythonhosted.org/packages/95/4f/9985f3bb3806f3a31ac29ec24201f1a60ec7a15baa0d3d89751970525d2b/pytapo-3.1.8.tar.gz
+[2023-04-13 12:09:44] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-04-13 12:09:44] INFO root fetch - processPackages [flake8-pyi]: Start processing: pyams-auth-apikey
+[2023-04-13 12:09:44] INFO root fetch - main [MainThread]: End processing [flake8-pyi]: success
+[2023-04-13 12:09:44] INFO root fetch - processPackages [pyams-auth-apikey]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 12:09:44] INFO root fetch - processPackages [sienna]: Downloading https://files.pythonhosted.org/packages/e1/52/bf4bcaaf79ed1c97b36d23c191e4283dd033e64c331bdb58becd8f7b1724/sienna-0.2.0.tar.gz
+[2023-04-13 12:09:44] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-04-13 12:09:44] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230413/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-04-13 12:09:44] INFO root fetch - processPackages [pytapo]: Downloading https://files.pythonhosted.org/packages/b8/35/ef0eb89373b79054918fa255f52e89f05fbd7b56d9e1930c405ad90d46b7/pytapo-3.1.9.tar.gz
+[2023-04-13 12:09:44] INFO root fetch - processPackages [sienna]: executing diffoscope
+[2023-04-13 12:09:44] INFO root fetch - processPackages [sienna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sienna-0.1.5.tar.gz tmp/sienna-0.2.0.tar.gz --markdown 20230413/s/sienna/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-04-13 12:09:44] INFO root fetch - processPackages [pytapo]: executing diffoscope
+[2023-04-13 12:09:44] INFO root fetch - processPackages [pytapo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytapo-3.1.8.tar.gz tmp/pytapo-3.1.9.tar.gz --markdown 20230413/p/pytapo/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-04-13 12:09:44] INFO root fetch - processPackages [pyams-auth-apikey]: Downloading https://files.pythonhosted.org/packages/16/a4/9f6665bf0fdda4868d44847a6be190cd79b2f4d5a00aa37d1770c35ba682/pyams_auth_apikey-1.0.0.tar.gz
+[2023-04-13 12:09:45] INFO root fetch - processPackages [pyams-auth-apikey]: Downloading https://files.pythonhosted.org/packages/e4/77/a2820601ed1f0715c7f848f6e20ad6a111acc04f0d519f5b95b789584b8a/pyams_auth_apikey-1.0.1.tar.gz
+[2023-04-13 12:09:45] INFO root fetch - processPackages [pyams-auth-apikey]: executing diffoscope
+[2023-04-13 12:09:45] INFO root fetch - processPackages [pyams-auth-apikey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_auth_apikey-1.0.0.tar.gz tmp/pyams_auth_apikey-1.0.1.tar.gz --markdown 20230413/p/pyams-auth-apikey/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 12:09:45] INFO root fetch - processPackages [retrofix]: Start processing: slackflylog
+[2023-04-13 12:09:45] INFO root fetch - main [MainThread]: End processing [retrofix]: success
+[2023-04-13 12:09:45] INFO root fetch - processPackages [slackflylog]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-13 12:09:45] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-13 12:09:45] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-3.0.4.tar.gz tmp/slackflylog-3.0.5.tar.gz --markdown 20230413/s/slackflylog/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-13 12:09:45] INFO root fetch - processPackages [pytapo]: Start processing: mpltWrappers
+[2023-04-13 12:09:45] INFO root fetch - main [MainThread]: End processing [pytapo]: success
+[2023-04-13 12:09:45] INFO root fetch - main [MainThread]: End processing [sienna]: success
+[2023-04-13 12:09:46] WARNING root fetch - processPackages [mpltWrappers]: Skipping, unable to determine old version
+[2023-04-13 12:09:46] INFO root fetch - main [MainThread]: End processing [mpltWrappers] error
+[2023-04-13 12:09:46] INFO root fetch - main [MainThread]: End processing [pyams-auth-apikey]: success
+[2023-04-13 12:09:46] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-13 12:10:37] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-04-13 12:10:37] INFO root fetch - main [MainThread]: Store serial: [17690368]
