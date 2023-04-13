@@ -6815,3 +6815,101 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:19:47] INFO root fetch - main [MainThread]: End processing [dLux]: success
 [2023-04-13 05:19:47] INFO root fetch - main [MainThread]: End processing [ShellcodeTester]: success
 [2023-04-13 05:19:47] INFO root fetch - main [MainThread]: Store serial: [17686404]
+[2023-04-13 05:24:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686404]
+[2023-04-13 05:24:56] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-13 05:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-ecosystem-services
+[2023-04-13 05:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: novauniverse
+[2023-04-13 05:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: always-updates
+[2023-04-13 05:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mb-pytorch
+[2023-04-13 05:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: always-updates
+[2023-04-13 05:24:56] INFO root fetch - processPackages [data-ecosystem-services]: New version: [202304.0.9] Old Version: [202304.0.8]
+[2023-04-13 05:24:56] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304130326] Old Version: [1.0.202304130324]
+[2023-04-13 05:24:56] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-13 05:24:56] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-13 05:24:56] INFO root fetch - processPackages [novauniverse]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-13 05:24:56] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/1b/a2/6546c181e30bb7d7ef33c2a0b46e2cd933fe2b70029488187180e0ab8eef/mb_pytorch-1.0.202304130324-py3-none-any.whl
+[2023-04-13 05:24:56] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-13 05:24:56] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230413/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-13 05:24:56] INFO root fetch - processPackages [data-ecosystem-services]: executing diffoscope
+[2023-04-13 05:24:56] INFO root fetch - processPackages [data-ecosystem-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_ecosystem_services-202304.0.8.tar.gz tmp/data_ecosystem_services-202304.0.9.tar.gz --markdown 20230413/d/data-ecosystem-services/202304.0.8-202304.0.9/diff.md --exclude *.pyd
+[2023-04-13 05:24:56] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-13 05:24:56] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230413/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-13 05:24:56] INFO root fetch - processPackages [novauniverse]: Downloading https://files.pythonhosted.org/packages/e8/ca/bbe89547044fb43548103a186322a4db537fbc5e8c91cbc74faf4bfe29f2/novauniverse-2.0.2.tar.gz
+[2023-04-13 05:24:56] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/54/3a/ae85b16386b4f4182b5acc2674db106b6ebda2e50ae3525368db1fd1d5fa/mb_pytorch-1.0.202304130326-py3-none-any.whl
+[2023-04-13 05:24:56] INFO root fetch - processPackages [novauniverse]: executing diffoscope
+[2023-04-13 05:24:56] INFO root fetch - processPackages [novauniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novauniverse-2.0.1.tar.gz tmp/novauniverse-2.0.2.tar.gz --markdown 20230413/n/novauniverse/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-13 05:24:57] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-13 05:24:57] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304130324-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304130326-py3-none-any.whl.zip --markdown 20230413/m/mb-pytorch/1.0.202304130324-1.0.202304130326/diff.md --exclude *.pyd
+[2023-04-13 05:24:57] INFO root fetch - processPackages [always-updates]: Start processing: odoo-addon-commission
+[2023-04-13 05:24:57] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-04-13 05:24:57] INFO root fetch - processPackages [always-updates]: Start processing: netbox-loadbalancer
+[2023-04-13 05:24:57] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-04-13 05:24:57] WARNING root fetch - processPackages [netbox-loadbalancer]: Skipping, unable to determine old version
+[2023-04-13 05:24:57] INFO root fetch - processPackages [netbox-loadbalancer]: Start processing: konfuzio-sdk
+[2023-04-13 05:24:57] INFO root fetch - main [MainThread]: End processing [netbox-loadbalancer] error
+[2023-04-13 05:24:57] INFO root fetch - processPackages [data-ecosystem-services]: Start processing: ml-starter
+[2023-04-13 05:24:57] INFO root fetch - main [MainThread]: End processing [data-ecosystem-services]: success
+[2023-04-13 05:24:57] INFO root fetch - processPackages [odoo-addon-commission]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.0.8]
+[2023-04-13 05:24:57] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-04-13 05:24:57] INFO root fetch - processPackages [ml-starter]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-04-13 05:24:57] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-04-13 05:24:57] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230413/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-04-13 05:24:57] INFO root fetch - processPackages [odoo-addon-commission]: Downloading https://files.pythonhosted.org/packages/3b/c0/e205a925caf63160d203ec24283830665c6ea2709b8686608c899284cf4f/odoo_addon_commission-16.0.1.0.0.8-py3-none-any.whl
+[2023-04-13 05:24:57] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/b8/c8/07f0fbf096466418cd089a27a67a2dff9f59dbf9849337484de95209328f/ml-starter-0.0.15.tar.gz
+[2023-04-13 05:24:58] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/ab/58/0690718903fb639200dcc45075287c8fa02f5a72edad2695b0c5029efbb5/ml-starter-0.0.16.tar.gz
+[2023-04-13 05:24:58] INFO root fetch - processPackages [mb-pytorch]: Start processing: mb-pytorch
+[2023-04-13 05:24:58] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-13 05:24:58] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304130326] Old Version: [1.0.202304130324]
+[2023-04-13 05:24:58] INFO root fetch - processPackages [novauniverse]: Start processing: dknovautils
+[2023-04-13 05:24:58] INFO root fetch - main [MainThread]: End processing [novauniverse]: success
+[2023-04-13 05:24:58] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-13 05:24:58] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304130324-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304130326-py3-none-any.whl.zip --markdown 20230413/m/mb-pytorch/1.0.202304130324-1.0.202304130326/diff.md --exclude *.pyd
+[2023-04-13 05:24:58] INFO root fetch - processPackages [dknovautils]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 05:24:58] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-04-13 05:24:58] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.15.tar.gz tmp/ml-starter-0.0.16.tar.gz --markdown 20230413/m/ml-starter/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-04-13 05:24:58] INFO root fetch - processPackages [dknovautils]: executing diffoscope
+[2023-04-13 05:24:58] INFO root fetch - processPackages [dknovautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dknovautils-0.0.2.tar.gz tmp/dknovautils-0.0.3.tar.gz --markdown 20230413/d/dknovautils/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 05:24:58] INFO root fetch - processPackages [odoo-addon-commission]: Downloading https://files.pythonhosted.org/packages/de/08/87ed7eac4bdf24d18c12c3a068e56de9a7aa9fb9490f33cea3155cf0048b/odoo_addon_commission-16.0.1.1.0-py3-none-any.whl
+[2023-04-13 05:24:58] INFO root fetch - processPackages [odoo-addon-commission]: executing diffoscope
+[2023-04-13 05:24:58] INFO root fetch - processPackages [odoo-addon-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_commission-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_commission-16.0.1.1.0-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-commission/16.0.1.0.0.8-16.0.1.1.0/diff.md --exclude *.pyd
+[2023-04-13 05:24:59] INFO root fetch - processPackages [mb-pytorch]: Start processing: kfsdutils
+[2023-04-13 05:24:59] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-13 05:24:59] INFO root fetch - processPackages [kfsdutils]: New version: [0.0.9] Old Version: [0.0.88]
+[2023-04-13 05:24:59] INFO root fetch - processPackages [kfsdutils]: Downloading https://files.pythonhosted.org/packages/a0/64/b5c3176565eb9ec0277a8b69d1564123d5610defd929bdde9714b779dc2b/kfsdutils-0.0.88.tar.gz
+[2023-04-13 05:24:59] INFO root fetch - processPackages [dknovautils]: Start processing: ops-channel
+[2023-04-13 05:24:59] INFO root fetch - main [MainThread]: End processing [dknovautils]: success
+[2023-04-13 05:24:59] INFO root fetch - processPackages [ops-channel]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-04-13 05:24:59] INFO root fetch - processPackages [ops-channel]: Downloading https://files.pythonhosted.org/packages/2b/c4/93d8b82e1152bce8747ef7c125ac73858d52cc2c7fa811305725ddf0d721/ops_channel-0.5.4.tar.gz
+[2023-04-13 05:24:59] INFO root fetch - processPackages [kfsdutils]: executing diffoscope
+[2023-04-13 05:24:59] INFO root fetch - processPackages [kfsdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsdutils-0.0.88.tar.gz tmp/kfsdutils-0.0.9.tar.gz --markdown 20230413/k/kfsdutils/0.0.88-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 05:24:59] INFO root fetch - processPackages [odoo-addon-commission]: Start processing: magnum-cluster-api
+[2023-04-13 05:24:59] INFO root fetch - main [MainThread]: End processing [odoo-addon-commission]: success
+[2023-04-13 05:24:59] INFO root fetch - processPackages [ml-starter]: Start processing: openapi-python-client
+[2023-04-13 05:24:59] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-04-13 05:24:59] INFO root fetch - processPackages [magnum-cluster-api]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-13 05:24:59] INFO root fetch - processPackages [konfuzio-sdk]: Start processing: riemann
+[2023-04-13 05:24:59] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-04-13 05:25:00] INFO root fetch - processPackages [openapi-python-client]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-13 05:25:00] INFO root fetch - processPackages [ops-channel]: Downloading https://files.pythonhosted.org/packages/0c/c5/5e3cb125515fa207463271423a53276732b54fff9388eea8a8989cc37899/ops_channel-0.5.5.tar.gz
+[2023-04-13 05:25:00] INFO root fetch - processPackages [riemann]: New version: [1.0.0a2] Old Version: [1.0.0a1]
+[2023-04-13 05:25:00] INFO root fetch - processPackages [ops-channel]: executing diffoscope
+[2023-04-13 05:25:00] INFO root fetch - processPackages [ops-channel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ops_channel-0.5.4.tar.gz tmp/ops_channel-0.5.5.tar.gz --markdown 20230413/o/ops-channel/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-04-13 05:25:00] INFO root fetch - processPackages [openapi-python-client]: Downloading https://files.pythonhosted.org/packages/6d/81/a16696f6f341ef2b9872d69c8b9c5016abb1bc93edd4ba73c66adf26c1c3/openapi-python-client-0.9.1.tar.gz
+[2023-04-13 05:25:00] INFO root fetch - processPackages [magnum-cluster-api]: Downloading https://files.pythonhosted.org/packages/36/e9/7e77f7bb00be3af68445cc288db833acd6a09154e5c0b4ab319675647de3/magnum_cluster_api-0.5.2.tar.gz
+[2023-04-13 05:25:00] INFO root fetch - processPackages [riemann]: Downloading https://files.pythonhosted.org/packages/50/54/e4c8766183b3c881c10ed32ed6188118c0744791a75006997443f07855a5/riemann-1.0.0a2.tar.gz
+[2023-04-13 05:25:00] INFO root fetch - processPackages [magnum-cluster-api]: executing diffoscope
+[2023-04-13 05:25:00] INFO root fetch - processPackages [magnum-cluster-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magnum_cluster_api-0.5.1.tar.gz tmp/magnum_cluster_api-0.5.2.tar.gz --markdown 20230413/m/magnum-cluster-api/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-13 05:25:00] INFO root fetch - processPackages [riemann]: executing diffoscope
+[2023-04-13 05:25:00] INFO root fetch - processPackages [riemann]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riemann-1.0.0a1.tar.gz tmp/riemann-1.0.0a2.tar.gz --markdown 20230413/r/riemann/1.0.0a1-1.0.0a2/diff.md --exclude *.pyd
+[2023-04-13 05:25:00] INFO root fetch - processPackages [openapi-python-client]: Downloading https://files.pythonhosted.org/packages/4a/de/95e3c3a2a0b3b1e23b0a640e8c7751a17201bd319a98e3a1ab72cc101d34/openapi-python-client-0.9.2.tar.gz
+[2023-04-13 05:25:01] INFO root fetch - processPackages [openapi-python-client]: executing diffoscope
+[2023-04-13 05:25:01] INFO root fetch - processPackages [openapi-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapi-python-client-0.9.1.tar.gz tmp/openapi-python-client-0.9.2.tar.gz --markdown 20230413/o/openapi-python-client/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-13 05:25:01] INFO root fetch - processPackages [ops-channel]: Start processing: BOsHaNiC
+[2023-04-13 05:25:01] INFO root fetch - main [MainThread]: End processing [ops-channel]: success
+[2023-04-13 05:25:01] WARNING root fetch - processPackages [BOsHaNiC]: Skipping, unable to determine old version
+[2023-04-13 05:25:01] INFO root fetch - main [MainThread]: End processing [BOsHaNiC] error
+[2023-04-13 05:25:01] INFO root fetch - main [MainThread]: End processing [kfsdutils]: success
+[2023-04-13 05:25:01] INFO root fetch - main [MainThread]: End processing [riemann]: success
+[2023-04-13 05:25:01] INFO root fetch - main [MainThread]: End processing [magnum-cluster-api]: success
+[2023-04-13 05:25:02] INFO root fetch - main [MainThread]: End processing [openapi-python-client]: success
+[2023-04-13 05:25:02] INFO root fetch - main [MainThread]: Store serial: [17686460]
