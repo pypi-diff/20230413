@@ -9660,3 +9660,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 09:01:47] INFO root fetch - main [MainThread]: End processing [odoo12-addon-rma]: success
 [2023-04-13 09:01:48] INFO root fetch - main [MainThread]: End processing [ar-ex-sys-worker]: success
 [2023-04-13 09:01:48] INFO root fetch - main [MainThread]: Store serial: [17688018]
+[2023-04-13 09:06:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17688018]
+[2023-04-13 09:06:55] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-13 09:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-rma
+[2023-04-13 09:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-rma
+[2023-04-13 09:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vaporetto
+[2023-04-13 09:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sentential
+[2023-04-13 09:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: HELML
+[2023-04-13 09:06:55] INFO root fetch - processPackages [odoo-addon-rma]: New version: [15.0.1.1.2.5] Old Version: [15.0.1.1.2.4]
+[2023-04-13 09:06:55] INFO root fetch - processPackages [sentential]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 09:06:55] INFO root fetch - processPackages [vaporetto]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-13 09:06:55] INFO root fetch - processPackages [HELML]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 09:06:56] INFO root fetch - processPackages [odoo14-addon-rma]: New version: [14.0.3.2.6.dev4] Old Version: [14.0.3.2.6.dev3]
+[2023-04-13 09:06:56] INFO root fetch - processPackages [vaporetto]: Downloading https://files.pythonhosted.org/packages/5e/4e/f3f3d0bb53a0031cbb76c99abdb0cf0e6a7aa198e32893932785e439372a/vaporetto-0.2.1.tar.gz
+[2023-04-13 09:06:56] INFO root fetch - processPackages [HELML]: Downloading https://files.pythonhosted.org/packages/9b/84/ccbfcb7976a1d03e7288dc2e8c674a29acc4abe649c6a3a9ba7fd6fe0bae/HELML-0.1.9.tar.gz
+[2023-04-13 09:06:56] INFO root fetch - processPackages [odoo-addon-rma]: Downloading https://files.pythonhosted.org/packages/0f/a8/07e6c63fec7ccabba12766083ae56c0585c7be3eec574bd6c4a5c7df758b/odoo_addon_rma-15.0.1.1.2.5-py3-none-any.whl
+[2023-04-13 09:06:56] INFO root fetch - processPackages [odoo14-addon-rma]: Downloading https://files.pythonhosted.org/packages/58/32/b07e36ccbe5fd0ce1b2e6f77b3636a7fe612233f52007c61c669ff6831a6/odoo14_addon_rma-14.0.3.2.6.dev4-py3-none-any.whl
+[2023-04-13 09:06:56] INFO root fetch - processPackages [sentential]: executing diffoscope
+[2023-04-13 09:06:56] INFO root fetch - processPackages [sentential]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentential-0.9.0.tar.gz tmp/sentential-0.9.1.tar.gz --markdown 20230413/s/sentential/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 09:06:56] INFO root fetch - processPackages [HELML]: executing diffoscope
+[2023-04-13 09:06:56] INFO root fetch - processPackages [HELML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HELML-0.1.8.tar.gz tmp/HELML-0.1.9.tar.gz --markdown 20230413/H/HELML/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 09:06:56] INFO root fetch - processPackages [odoo-addon-rma]: executing diffoscope
+[2023-04-13 09:06:56] INFO root fetch - processPackages [odoo-addon-rma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_rma-15.0.1.1.2.4-py3-none-any.whl.zip tmp/odoo_addon_rma-15.0.1.1.2.5-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-rma/15.0.1.1.2.4-15.0.1.1.2.5/diff.md --exclude *.pyd
+[2023-04-13 09:06:56] INFO root fetch - processPackages [vaporetto]: Downloading https://files.pythonhosted.org/packages/c4/73/b00e4e5e45e771edadc089e7fb03ae7f47f0c9525361fecf71dd9a44e933/vaporetto-0.3.0.tar.gz
+[2023-04-13 09:06:56] INFO root fetch - processPackages [odoo14-addon-rma]: executing diffoscope
+[2023-04-13 09:06:56] INFO root fetch - processPackages [odoo14-addon-rma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_rma-14.0.3.2.6.dev3-py3-none-any.whl.zip tmp/odoo14_addon_rma-14.0.3.2.6.dev4-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-rma/14.0.3.2.6.dev3-14.0.3.2.6.dev4/diff.md --exclude *.pyd
+[2023-04-13 09:06:56] INFO root fetch - processPackages [vaporetto]: executing diffoscope
+[2023-04-13 09:06:56] INFO root fetch - processPackages [vaporetto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaporetto-0.2.1.tar.gz tmp/vaporetto-0.3.0.tar.gz --markdown 20230413/v/vaporetto/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-13 09:06:57] INFO root fetch - processPackages [HELML]: Start processing: ar-ex-sys-worker
+[2023-04-13 09:06:57] INFO root fetch - main [MainThread]: End processing [HELML]: success
+[2023-04-13 09:06:57] INFO root fetch - processPackages [ar-ex-sys-worker]: New version: [1.5.71] Old Version: [1.5.7]
+[2023-04-13 09:06:57] INFO root fetch - processPackages [sentential]: Start processing: deepprofile
+[2023-04-13 09:06:57] INFO root fetch - main [MainThread]: End processing [sentential]: success
+[2023-04-13 09:06:57] INFO root fetch - processPackages [deepprofile]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-13 09:06:57] INFO root fetch - processPackages [ar-ex-sys-worker]: Downloading https://files.pythonhosted.org/packages/56/78/56e3fc08140ba89d63881d73e71a3de377794d9a95170bd4770eb881b8c7/ar_ex_sys_worker-1.5.71-py3-none-any.whl
+[2023-04-13 09:06:57] INFO root fetch - processPackages [deepprofile]: Downloading https://files.pythonhosted.org/packages/7c/bc/c4767d5dc1729d6b3d326fe17ff3b83cd5b55209bcf438babdad182500cc/deepprofile-0.0.7.tar.gz
+[2023-04-13 09:06:58] INFO root fetch - processPackages [ar-ex-sys-worker]: executing diffoscope
+[2023-04-13 09:06:58] INFO root fetch - processPackages [ar-ex-sys-worker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ar_ex_sys_worker-1.5.7-py3-none-any.whl.zip tmp/ar_ex_sys_worker-1.5.71-py3-none-any.whl.zip --markdown 20230413/a/ar-ex-sys-worker/1.5.7-1.5.71/diff.md --exclude *.pyd
+[2023-04-13 09:06:58] INFO root fetch - processPackages [vaporetto]: Start processing: pepperize.cdk-terraform-state-backend
+[2023-04-13 09:06:58] INFO root fetch - main [MainThread]: End processing [vaporetto]: success
+[2023-04-13 09:06:58] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-13 09:06:58] INFO root fetch - processPackages [odoo14-addon-rma]: Start processing: exodusutils
+[2023-04-13 09:06:58] INFO root fetch - main [MainThread]: End processing [odoo14-addon-rma]: success
+[2023-04-13 09:06:58] INFO root fetch - processPackages [deepprofile]: Downloading https://files.pythonhosted.org/packages/bb/05/89b9edaefc7df89ab29a1ef4edf459e579d88130f1e014877c64240c3a1a/deepprofile-0.0.8.tar.gz
+[2023-04-13 09:06:58] INFO root fetch - processPackages [exodusutils]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-13 09:06:58] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-04-13 09:06:58] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230413/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-13 09:06:58] INFO root fetch - processPackages [odoo-addon-rma]: Start processing: pynativeextractor
+[2023-04-13 09:06:58] INFO root fetch - main [MainThread]: End processing [odoo-addon-rma]: success
+[2023-04-13 09:06:58] INFO root fetch - processPackages [pynativeextractor]: New version: [10.0.12] Old Version: [1.0.9]
+[2023-04-13 09:06:58] INFO root fetch - processPackages [exodusutils]: executing diffoscope
+[2023-04-13 09:06:58] INFO root fetch - processPackages [exodusutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exodusutils-0.3.7.tar.gz tmp/exodusutils-0.3.9.tar.gz --markdown 20230413/e/exodusutils/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 09:06:58] INFO root fetch - processPackages [deepprofile]: executing diffoscope
+[2023-04-13 09:06:58] INFO root fetch - processPackages [deepprofile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepprofile-0.0.7.tar.gz tmp/deepprofile-0.0.8.tar.gz --markdown 20230413/d/deepprofile/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-13 09:06:58] INFO root fetch - processPackages [pynativeextractor]: Downloading https://files.pythonhosted.org/packages/58/9d/def76148b92573bddd20a1526fafdb93e42cb8f0a42147474eb10723d0f3/pynativeextractor-1.0.9.tar.gz
+[2023-04-13 09:06:58] INFO root fetch - processPackages [pynativeextractor]: Downloading https://files.pythonhosted.org/packages/ae/61/7be4bb317ee6434504f3b34d823f7339e525e5fc6a74bdee0514ceb0182f/pynativeextractor-10.0.12.tar.gz
+[2023-04-13 09:06:58] INFO root fetch - processPackages [pynativeextractor]: executing diffoscope
+[2023-04-13 09:06:58] INFO root fetch - processPackages [pynativeextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynativeextractor-1.0.9.tar.gz tmp/pynativeextractor-10.0.12.tar.gz --markdown 20230413/p/pynativeextractor/1.0.9-10.0.12/diff.md --exclude *.pyd
+[2023-04-13 09:06:59] INFO root fetch - processPackages [ar-ex-sys-worker]: Start processing: MyJpHolidays
+[2023-04-13 09:06:59] INFO root fetch - main [MainThread]: End processing [ar-ex-sys-worker]: success
+[2023-04-13 09:06:59] WARNING root fetch - processPackages [MyJpHolidays]: Skipping, unable to determine old version
+[2023-04-13 09:06:59] INFO root fetch - processPackages [MyJpHolidays]: Start processing: psa-car-controller
+[2023-04-13 09:06:59] INFO root fetch - main [MainThread]: End processing [MyJpHolidays] error
+[2023-04-13 09:06:59] INFO root fetch - processPackages [psa-car-controller]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-13 09:06:59] INFO root fetch - processPackages [psa-car-controller]: Downloading https://files.pythonhosted.org/packages/a8/fa/c86a458d2e0a55bc2dbb7d614006dabdf6daabc6b1ce43b43d1f52eb5a2d/psa_car_controller-3.0.8.tar.gz
+[2023-04-13 09:06:59] INFO root fetch - processPackages [exodusutils]: Start processing: tf-hub-nightly
+[2023-04-13 09:06:59] INFO root fetch - main [MainThread]: End processing [exodusutils]: success
+[2023-04-13 09:06:59] INFO root fetch - main [MainThread]: End processing [deepprofile]: success
+[2023-04-13 09:06:59] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-04-13 09:06:59] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-04-13 09:06:59] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230413/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-04-13 09:06:59] INFO root fetch - processPackages [psa-car-controller]: Downloading https://files.pythonhosted.org/packages/77/6e/c7927d668eccc92515817b36a48718e8ac156274843fdc95de7a09279412/psa_car_controller-3.0.9.tar.gz
+[2023-04-13 09:06:59] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-terraform-state-backend]: success
+[2023-04-13 09:06:59] INFO root fetch - processPackages [psa-car-controller]: executing diffoscope
+[2023-04-13 09:06:59] INFO root fetch - processPackages [psa-car-controller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psa_car_controller-3.0.8.tar.gz tmp/psa_car_controller-3.0.9.tar.gz --markdown 20230413/p/psa-car-controller/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-13 09:07:00] INFO root fetch - main [MainThread]: End processing [pynativeextractor]: success
+[2023-04-13 09:07:00] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-04-13 09:07:02] INFO root fetch - main [MainThread]: End processing [psa-car-controller]: success
+[2023-04-13 09:07:02] INFO root fetch - main [MainThread]: Store serial: [17688095]
