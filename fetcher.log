@@ -11970,3 +11970,93 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 11:10:52] INFO root fetch - main [MainThread]: End processing [hctest-install-help]: success
 [2023-04-13 11:10:53] INFO root fetch - main [MainThread]: End processing [PaperCrawlerUtil]: success
 [2023-04-13 11:10:53] INFO root fetch - main [MainThread]: Store serial: [17689569]
+[2023-04-13 11:15:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689569]
+[2023-04-13 11:16:01] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-13 11:16:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: basking-sdk
+[2023-04-13 11:16:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bimmm
+[2023-04-13 11:16:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pcl-pangu
+[2023-04-13 11:16:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly
+[2023-04-13 11:16:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spectrochempy
+[2023-04-13 11:16:01] INFO root fetch - processPackages [basking-sdk]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 11:16:01] INFO root fetch - processPackages [spectrochempy]: New version: [0.6.1] Old Version: [0.5.5]
+[2023-04-13 11:16:01] WARNING root fetch - processPackages [bimmm]: Skipping, unable to determine old version
+[2023-04-13 11:16:01] INFO root fetch - processPackages [bimmm]: Start processing: bmcs-utils
+[2023-04-13 11:16:01] INFO root fetch - main [MainThread]: End processing [bimmm] error
+[2023-04-13 11:16:01] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 11:16:01] INFO root fetch - processPackages [bmcs-utils]: New version: [0.0.9a0] Old Version: [0.0.8a0]
+[2023-04-13 11:16:01] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 11:16:01] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 11:16:01] INFO root fetch - processPackages [tf-nightly]: New version: [2.13.0.dev20230413] Old Version: [2.13.0.dev20230412]
+[2023-04-13 11:16:01] INFO root fetch - processPackages [bmcs-utils]: Downloading https://files.pythonhosted.org/packages/db/cb/380b6ace769c5d2b3acc6bd04adcf110ae91beb266d4e2fc5c114d4055f6/bmcs_utils-0.0.8a0.tar.gz
+[2023-04-13 11:16:01] INFO root fetch - processPackages [spectrochempy]: Downloading https://files.pythonhosted.org/packages/5f/8e/7c77db3c9df3374aa946ebdb582c81b13956f154deafa71169c8bd5f3065/spectrochempy-0.6.1.tar.gz
+[2023-04-13 11:16:01] INFO root fetch - processPackages [basking-sdk]: executing diffoscope
+[2023-04-13 11:16:01] INFO root fetch - processPackages [basking-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basking-sdk-0.9.8.tar.gz tmp/basking-sdk-0.9.9.tar.gz --markdown 20230413/b/basking-sdk/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 11:16:02] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/91/5e/887fb5922c0e4526f314d6e8480192cf9e2dd37adb4071a69485526c3a29/tf_nightly-2.13.0.dev20230413-cp39-cp39-win_amd64.whl
+[2023-04-13 11:16:02] INFO root fetch - processPackages [bmcs-utils]: Downloading https://files.pythonhosted.org/packages/51/31/6a20bc52a4c89a989f6e900701337c21f08d3f355629ffc3f5bb2b294b3f/bmcs_utils-0.0.9a0.tar.gz
+[2023-04-13 11:16:02] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2023-04-13 11:16:02] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.13.0.dev20230412-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.13.0.dev20230413-cp39-cp39-win_amd64.whl.zip --markdown 20230413/t/tf-nightly/2.13.0.dev20230412-2.13.0.dev20230413/diff.md --exclude *.pyd
+[2023-04-13 11:16:02] INFO root fetch - processPackages [bmcs-utils]: executing diffoscope
+[2023-04-13 11:16:02] INFO root fetch - processPackages [bmcs-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmcs_utils-0.0.8a0.tar.gz tmp/bmcs_utils-0.0.9a0.tar.gz --markdown 20230413/b/bmcs-utils/0.0.8a0-0.0.9a0/diff.md --exclude *.pyd
+[2023-04-13 11:16:02] INFO root fetch - processPackages [spectrochempy]: executing diffoscope
+[2023-04-13 11:16:02] INFO root fetch - processPackages [spectrochempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectrochempy-0.5.5.tar.gz tmp/spectrochempy-0.6.1.tar.gz --markdown 20230413/s/spectrochempy/0.5.5-0.6.1/diff.md --exclude *.pyd
+[2023-04-13 11:16:03] INFO root fetch - processPackages [tf-nightly]: Start processing: tala
+[2023-04-13 11:16:03] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2023-04-13 11:16:03] INFO root fetch - processPackages [tala]: New version: [9.0.0] Old Version: [8.0.0]
+[2023-04-13 11:16:03] INFO root fetch - processPackages [bmcs-utils]: Start processing: lightning-habana
+[2023-04-13 11:16:03] INFO root fetch - main [MainThread]: End processing [bmcs-utils]: success
+[2023-04-13 11:16:03] INFO root fetch - processPackages [tala]: executing diffoscope
+[2023-04-13 11:16:03] INFO root fetch - processPackages [tala]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tala-8.0.0-py3-none-any.whl.zip tmp/tala-9.0.0-py3-none-any.whl.zip --markdown 20230413/t/tala/8.0.0-9.0.0/diff.md --exclude *.pyd
+[2023-04-13 11:16:03] INFO root fetch - processPackages [lightning-habana]: New version: [0.1.0rc0] Old Version: [0.1.0]
+[2023-04-13 11:16:03] INFO root fetch - processPackages [lightning-habana]: Downloading https://files.pythonhosted.org/packages/6a/dd/41fd2f7f9d7530eb13de75d9e0be892b402a2fef13909412ee36da3cf7e8/lightning-habana-0.1.0.tar.gz
+[2023-04-13 11:16:03] INFO root fetch - processPackages [basking-sdk]: Start processing: pyProcessAutom
+[2023-04-13 11:16:03] INFO root fetch - main [MainThread]: End processing [basking-sdk]: success
+[2023-04-13 11:16:03] INFO root fetch - processPackages [pyProcessAutom]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-04-13 11:16:03] INFO root fetch - processPackages [pyProcessAutom]: Downloading https://files.pythonhosted.org/packages/56/37/30f26785b2604988f700945ad916a2e5b5c76ed4a6584fc7ec183f612211/pyProcessAutom-1.4.4.tar.gz
+[2023-04-13 11:16:03] INFO root fetch - processPackages [lightning-habana]: Downloading https://files.pythonhosted.org/packages/ca/89/a9c223d5c734832b905aefdc7ce2347c5849e79a6c819a86b1135442afca/lightning-habana-0.1.0rc0.tar.gz
+[2023-04-13 11:16:04] INFO root fetch - processPackages [pyProcessAutom]: executing diffoscope
+[2023-04-13 11:16:04] INFO root fetch - processPackages [pyProcessAutom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyProcessAutom-1.4.3.tar.gz tmp/pyProcessAutom-1.4.4.tar.gz --markdown 20230413/p/pyProcessAutom/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-04-13 11:16:04] INFO root fetch - processPackages [pcl-pangu]: Start processing: django-mails
+[2023-04-13 11:16:04] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 11:16:04] WARNING root fetch - processPackages [django-mails]: Skipping, unable to determine old version
+[2023-04-13 11:16:04] INFO root fetch - processPackages [django-mails]: Start processing: ansys-fluent-visualization
+[2023-04-13 11:16:04] INFO root fetch - main [MainThread]: End processing [django-mails] error
+[2023-04-13 11:16:04] INFO root fetch - processPackages [ansys-fluent-visualization]: New version: [0.7.dev1] Old Version: [0.7.dev0]
+[2023-04-13 11:16:04] INFO root fetch - processPackages [lightning-habana]: executing diffoscope
+[2023-04-13 11:16:04] INFO root fetch - processPackages [lightning-habana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-habana-0.1.0.tar.gz tmp/lightning-habana-0.1.0rc0.tar.gz --markdown 20230413/l/lightning-habana/0.1.0-0.1.0rc0/diff.md --exclude *.pyd
+[2023-04-13 11:16:04] INFO root fetch - processPackages [ansys-fluent-visualization]: Downloading https://files.pythonhosted.org/packages/b9/4f/7b174c126fe955003dae27419918e73132f96c3dd88e524b0db5d831f545/ansys_fluent_visualization-0.7.dev0.tar.gz
+[2023-04-13 11:16:04] INFO root fetch - processPackages [ansys-fluent-visualization]: Downloading https://files.pythonhosted.org/packages/1d/95/c9febef2f9785b2039127b8cc0a2938bc041634a5baa0d0c5fd2cd582d7a/ansys_fluent_visualization-0.7.dev1.tar.gz
+[2023-04-13 11:16:04] INFO root fetch - processPackages [ansys-fluent-visualization]: executing diffoscope
+[2023-04-13 11:16:04] INFO root fetch - processPackages [ansys-fluent-visualization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansys_fluent_visualization-0.7.dev0.tar.gz tmp/ansys_fluent_visualization-0.7.dev1.tar.gz --markdown 20230413/a/ansys-fluent-visualization/0.7.dev0-0.7.dev1/diff.md --exclude *.pyd
+[2023-04-13 11:16:05] INFO root fetch - processPackages [pyProcessAutom]: Start processing: novu
+[2023-04-13 11:16:05] INFO root fetch - main [MainThread]: End processing [pyProcessAutom]: success
+[2023-04-13 11:16:05] WARNING root fetch - processPackages [novu]: Skipping, unable to determine old version
+[2023-04-13 11:16:05] INFO root fetch - processPackages [novu]: Start processing: supy
+[2023-04-13 11:16:05] INFO root fetch - main [MainThread]: End processing [novu] error
+[2023-04-13 11:16:05] INFO root fetch - processPackages [supy]: New version: [2023.4.13.dev0] Old Version: [2023.2.23.dev0]
+[2023-04-13 11:16:05] INFO root fetch - processPackages [lightning-habana]: Start processing: hagworm
+[2023-04-13 11:16:05] INFO root fetch - main [MainThread]: End processing [lightning-habana]: success
+[2023-04-13 11:16:05] INFO root fetch - processPackages [hagworm]: New version: [5.4.4] Old Version: [5.4.3]
+[2023-04-13 11:16:05] INFO root fetch - processPackages [supy]: Downloading https://files.pythonhosted.org/packages/a8/fe/d85f51b68bc434b9a8310c15c8d632011e00186fa3d84f521696c2803f10/supy-2023.2.23.dev0-cp39-cp39-win_amd64.whl
+[2023-04-13 11:16:05] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/c8/51/a07b76af550c295c67472339e9279d5852f9e625056f7f28b210cb030999/hagworm-5.4.3.tar.gz
+[2023-04-13 11:16:05] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/e9/16/9834d6881358ba4e2746663110d851b6016aa83a22ab80afaf067fd2f898/hagworm-5.4.4.tar.gz
+[2023-04-13 11:16:06] INFO root fetch - processPackages [hagworm]: executing diffoscope
+[2023-04-13 11:16:06] INFO root fetch - processPackages [hagworm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagworm-5.4.3.tar.gz tmp/hagworm-5.4.4.tar.gz --markdown 20230413/h/hagworm/5.4.3-5.4.4/diff.md --exclude *.pyd
+[2023-04-13 11:16:06] INFO root fetch - processPackages [ansys-fluent-visualization]: Start processing: tbp-nightly
+[2023-04-13 11:16:06] INFO root fetch - main [MainThread]: End processing [ansys-fluent-visualization]: success
+[2023-04-13 11:16:06] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-04-13 11:16:06] INFO root fetch - processPackages [tala]: Start processing: hbshare
+[2023-04-13 11:16:06] INFO root fetch - main [MainThread]: End processing [tala]: success
+[2023-04-13 11:16:06] INFO root fetch - processPackages [hbshare]: New version: [3.7.9] Old Version: [3.7.8]
+[2023-04-13 11:16:06] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-04-13 11:16:06] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230413/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-04-13 11:16:06] INFO root fetch - main [MainThread]: End processing [spectrochempy]: success
+[2023-04-13 11:16:06] INFO root fetch - processPackages [supy]: Downloading https://files.pythonhosted.org/packages/70/73/938c21082a441650cfb01981ad3d574e162efa4e5a644a0966759b96a41d/supy-2023.4.13.dev0-cp39-cp39-win_amd64.whl
+[2023-04-13 11:16:06] INFO root fetch - processPackages [hbshare]: executing diffoscope
+[2023-04-13 11:16:06] INFO root fetch - processPackages [hbshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbshare-3.7.8.tar.gz tmp/hbshare-3.7.9.tar.gz --markdown 20230413/h/hbshare/3.7.8-3.7.9/diff.md --exclude *.pyd
+[2023-04-13 11:16:06] INFO root fetch - processPackages [supy]: executing diffoscope
+[2023-04-13 11:16:06] INFO root fetch - processPackages [supy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supy-2023.2.23.dev0-cp39-cp39-win_amd64.whl.zip tmp/supy-2023.4.13.dev0-cp39-cp39-win_amd64.whl.zip --markdown 20230413/s/supy/2023.2.23.dev0-2023.4.13.dev0/diff.md --exclude *.pyd
+[2023-04-13 11:16:07] INFO root fetch - main [MainThread]: End processing [hagworm]: success
+[2023-04-13 11:16:08] INFO root fetch - main [MainThread]: End processing [supy]: success
+[2023-04-13 11:16:08] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-04-13 11:16:09] INFO root fetch - main [MainThread]: End processing [hbshare]: success
+[2023-04-13 11:16:09] INFO root fetch - main [MainThread]: Store serial: [17689648]
