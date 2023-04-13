@@ -13391,3 +13391,105 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 12:21:30] INFO root fetch - main [MainThread]: End processing [gm]: success
 [2023-04-13 12:21:56] INFO root fetch - main [MainThread]: End processing [manila]: success
 [2023-04-13 12:21:56] INFO root fetch - main [MainThread]: Store serial: [17690535]
+[2023-04-13 12:26:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690535]
+[2023-04-13 12:27:04] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-13 12:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datagen-protocol-core
+[2023-04-13 12:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datagen-protocol-functional
+[2023-04-13 12:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datagen-validation-protocol
+[2023-04-13 12:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: p-ttauto-crawler
+[2023-04-13 12:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bemserver-api
+[2023-04-13 12:27:04] INFO root fetch - processPackages [datagen-validation-protocol]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-13 12:27:04] INFO root fetch - processPackages [p-ttauto-crawler]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 12:27:04] INFO root fetch - processPackages [bemserver-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 12:27:04] INFO root fetch - processPackages [datagen-protocol-functional]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-13 12:27:04] INFO root fetch - processPackages [datagen-protocol-core]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-13 12:27:04] INFO root fetch - processPackages [bemserver-api]: executing diffoscope
+[2023-04-13 12:27:04] INFO root fetch - processPackages [bemserver-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bemserver-api-0.8.0.tar.gz tmp/bemserver-api-0.9.0.tar.gz --markdown 20230413/b/bemserver-api/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 12:27:04] INFO root fetch - processPackages [p-ttauto-crawler]: Downloading https://files.pythonhosted.org/packages/e2/b6/b4414e1964288fd8252e20bcf1eee7ff9588a7dcf28fd6148af49125cd7a/p-ttauto-crawler-0.0.2.tar.gz
+[2023-04-13 12:27:04] INFO root fetch - processPackages [datagen-validation-protocol]: executing diffoscope
+[2023-04-13 12:27:04] INFO root fetch - processPackages [datagen-validation-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_validation_protocol-0.8.3.tar.gz tmp/datagen_validation_protocol-0.9.0.tar.gz --markdown 20230413/d/datagen-validation-protocol/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 12:27:04] INFO root fetch - processPackages [datagen-protocol-functional]: executing diffoscope
+[2023-04-13 12:27:04] INFO root fetch - processPackages [datagen-protocol-functional]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_protocol_functional-0.8.3.tar.gz tmp/datagen_protocol_functional-0.9.0.tar.gz --markdown 20230413/d/datagen-protocol-functional/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 12:27:04] INFO root fetch - processPackages [datagen-protocol-core]: executing diffoscope
+[2023-04-13 12:27:04] INFO root fetch - processPackages [datagen-protocol-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_protocol_core-0.8.3.tar.gz tmp/datagen_protocol_core-0.9.0.tar.gz --markdown 20230413/d/datagen-protocol-core/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 12:27:04] INFO root fetch - processPackages [p-ttauto-crawler]: Downloading https://files.pythonhosted.org/packages/24/7b/6b677440fd0c39b68a196e1d25d22f8d932836118d79e4f090b1e690f86f/p_ttauto_crawler-0.0.3-py3-none-any.whl
+[2023-04-13 12:27:04] INFO root fetch - processPackages [p-ttauto-crawler]: executing diffoscope
+[2023-04-13 12:27:04] INFO root fetch - processPackages [p-ttauto-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-ttauto-crawler-0.0.2.tar.gz tmp/p_ttauto_crawler-0.0.3-py3-none-any.whl.zip --markdown 20230413/p/p-ttauto-crawler/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 12:27:05] INFO root fetch - processPackages [datagen-protocol-functional]: Start processing: Pandora-ChatGPT
+[2023-04-13 12:27:05] INFO root fetch - main [MainThread]: End processing [datagen-protocol-functional]: success
+[2023-04-13 12:27:05] INFO root fetch - processPackages [Pandora-ChatGPT]: New version: [1.0.0] Old Version: [0.9.8]
+[2023-04-13 12:27:05] INFO root fetch - processPackages [p-ttauto-crawler]: Start processing: manila
+[2023-04-13 12:27:05] INFO root fetch - main [MainThread]: End processing [p-ttauto-crawler]: success
+[2023-04-13 12:27:05] INFO root fetch - processPackages [manila]: New version: [9.1.5] Old Version: [9.1.4]
+[2023-04-13 12:27:05] INFO root fetch - processPackages [manila]: executing diffoscope
+[2023-04-13 12:27:05] INFO root fetch - processPackages [manila]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manila-9.1.4.tar.gz tmp/manila-9.1.5.tar.gz --markdown 20230413/m/manila/9.1.4-9.1.5/diff.md --exclude *.pyd
+[2023-04-13 12:27:05] INFO root fetch - processPackages [datagen-protocol-core]: Start processing: mpltWrappers
+[2023-04-13 12:27:05] INFO root fetch - main [MainThread]: End processing [datagen-protocol-core]: success
+[2023-04-13 12:27:05] WARNING root fetch - processPackages [mpltWrappers]: Skipping, unable to determine old version
+[2023-04-13 12:27:05] INFO root fetch - processPackages [mpltWrappers]: Start processing: extr
+[2023-04-13 12:27:05] INFO root fetch - main [MainThread]: End processing [mpltWrappers] error
+[2023-04-13 12:27:05] INFO root fetch - processPackages [Pandora-ChatGPT]: Downloading https://files.pythonhosted.org/packages/3c/d1/7d42b5d32bb9ad80c91f689aeb20bef7c770c6be99f48716f104640995bb/Pandora-ChatGPT-0.9.8.tar.gz
+[2023-04-13 12:27:05] INFO root fetch - processPackages [extr]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-13 12:27:06] INFO root fetch - processPackages [datagen-validation-protocol]: Start processing: dovado-rtl
+[2023-04-13 12:27:06] INFO root fetch - main [MainThread]: End processing [datagen-validation-protocol]: success
+[2023-04-13 12:27:06] INFO root fetch - processPackages [dovado-rtl]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 12:27:06] INFO root fetch - processPackages [extr]: Downloading https://files.pythonhosted.org/packages/83/3e/eb8bc8bfeb04754df2701da5ed40db5f9b44337a070442d1202f0b083c66/extr-0.0.4.tar.gz
+[2023-04-13 12:27:06] INFO root fetch - processPackages [dovado-rtl]: Downloading https://files.pythonhosted.org/packages/83/4c/15d96bfbd77a19ab10f9564974b041d310dc5b79aeef5d6563de6e86c8ed/dovado-rtl-0.9.8.tar.gz
+[2023-04-13 12:27:06] INFO root fetch - processPackages [extr]: executing diffoscope
+[2023-04-13 12:27:06] INFO root fetch - processPackages [extr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-0.0.3.tar.gz tmp/extr-0.0.4.tar.gz --markdown 20230413/e/extr/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-13 12:27:06] INFO root fetch - processPackages [Pandora-ChatGPT]: Downloading https://files.pythonhosted.org/packages/ac/bd/26b1ddeaccb29bc452af34df0064fe73bac9fb80b0026d698a6222576b16/Pandora-ChatGPT-1.0.0.tar.gz
+[2023-04-13 12:27:06] INFO root fetch - processPackages [Pandora-ChatGPT]: executing diffoscope
+[2023-04-13 12:27:06] INFO root fetch - processPackages [Pandora-ChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pandora-ChatGPT-0.9.8.tar.gz tmp/Pandora-ChatGPT-1.0.0.tar.gz --markdown 20230413/P/Pandora-ChatGPT/0.9.8-1.0.0/diff.md --exclude *.pyd
+[2023-04-13 12:27:07] INFO root fetch - processPackages [bemserver-api]: Start processing: qontract-reconcile
+[2023-04-13 12:27:07] INFO root fetch - main [MainThread]: End processing [bemserver-api]: success
+[2023-04-13 12:27:07] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-13 12:27:07] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-13 12:27:07] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230413/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-13 12:27:07] INFO root fetch - processPackages [extr]: Start processing: doc-ufcn
+[2023-04-13 12:27:07] INFO root fetch - main [MainThread]: End processing [extr]: success
+[2023-04-13 12:27:07] INFO root fetch - processPackages [doc-ufcn]: New version: [0.1.9rc4] Old Version: [0.1.9rc3]
+[2023-04-13 12:27:07] INFO root fetch - processPackages [doc-ufcn]: Downloading https://files.pythonhosted.org/packages/88/ce/1230c863fa097b075b0f5c11cbe29f824bbb9b0b5a60341def893d34565a/doc-ufcn-0.1.9rc4.tar.gz
+[2023-04-13 12:27:07] INFO root fetch - processPackages [doc-ufcn]: executing diffoscope
+[2023-04-13 12:27:07] INFO root fetch - processPackages [doc-ufcn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doc-ufcn-0.1.9rc3.tar.gz tmp/doc-ufcn-0.1.9rc4.tar.gz --markdown 20230413/d/doc-ufcn/0.1.9rc3-0.1.9rc4/diff.md --exclude *.pyd
+[2023-04-13 12:27:08] INFO root fetch - processPackages [dovado-rtl]: Downloading https://files.pythonhosted.org/packages/23/f7/2cb2dae51a2bc21651e4da5799bbfe2e1650bf4193685db98fd67e0f7b7a/dovado-rtl-0.9.9.tar.gz
+[2023-04-13 12:27:08] INFO root fetch - processPackages [Pandora-ChatGPT]: Start processing: openfl-x
+[2023-04-13 12:27:08] INFO root fetch - main [MainThread]: End processing [Pandora-ChatGPT]: success
+[2023-04-13 12:27:08] INFO root fetch - processPackages [openfl-x]: New version: [1.4.0.dev3] Old Version: [1.4.0.dev2]
+[2023-04-13 12:27:08] INFO root fetch - processPackages [openfl-x]: Downloading https://files.pythonhosted.org/packages/73/9a/5545a85185c89632b8da9d4792f611e18a3e84c74018c28436a1f7867eda/openfl-x-1.4.0.dev2.tar.gz
+[2023-04-13 12:27:08] INFO root fetch - processPackages [openfl-x]: Downloading https://files.pythonhosted.org/packages/0a/a2/48dd028d938bbcb073647aa9202ef1f836f1911f9e6688fcbae722c8737a/openfl-x-1.4.0.dev3.tar.gz
+[2023-04-13 12:27:08] INFO root fetch - processPackages [openfl-x]: executing diffoscope
+[2023-04-13 12:27:08] INFO root fetch - processPackages [openfl-x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openfl-x-1.4.0.dev2.tar.gz tmp/openfl-x-1.4.0.dev3.tar.gz --markdown 20230413/o/openfl-x/1.4.0.dev2-1.4.0.dev3/diff.md --exclude *.pyd
+[2023-04-13 12:27:08] INFO root fetch - processPackages [doc-ufcn]: Start processing: pyams-auth-jwt
+[2023-04-13 12:27:08] INFO root fetch - main [MainThread]: End processing [doc-ufcn]: success
+[2023-04-13 12:27:08] INFO root fetch - processPackages [pyams-auth-jwt]: New version: [1.4.5] Old Version: [1.4.4]
+[2023-04-13 12:27:09] INFO root fetch - processPackages [pyams-auth-jwt]: Downloading https://files.pythonhosted.org/packages/e9/b6/ecac993adf5c8bb365588fea2c351d5a3f55c62d620a4abdc602f914e634/pyams_auth_jwt-1.4.4.tar.gz
+[2023-04-13 12:27:09] INFO root fetch - processPackages [pyams-auth-jwt]: Downloading https://files.pythonhosted.org/packages/a0/9b/a566e1de4fe5ca5a643be90437fb72dfa3807ab53881fc368b20c5bb962b/pyams_auth_jwt-1.4.5.tar.gz
+[2023-04-13 12:27:09] INFO root fetch - processPackages [pyams-auth-jwt]: executing diffoscope
+[2023-04-13 12:27:09] INFO root fetch - processPackages [pyams-auth-jwt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_auth_jwt-1.4.4.tar.gz tmp/pyams_auth_jwt-1.4.5.tar.gz --markdown 20230413/p/pyams-auth-jwt/1.4.4-1.4.5/diff.md --exclude *.pyd
+[2023-04-13 12:27:10] INFO root fetch - processPackages [dovado-rtl]: executing diffoscope
+[2023-04-13 12:27:10] INFO root fetch - processPackages [dovado-rtl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dovado-rtl-0.9.8.tar.gz tmp/dovado-rtl-0.9.9.tar.gz --markdown 20230413/d/dovado-rtl/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 12:27:10] INFO root fetch - processPackages [pyams-auth-jwt]: Start processing: mlopsatt
+[2023-04-13 12:27:10] INFO root fetch - main [MainThread]: End processing [pyams-auth-jwt]: success
+[2023-04-13 12:27:10] WARNING root fetch - processPackages [mlopsatt]: Skipping, unable to determine old version
+[2023-04-13 12:27:10] INFO root fetch - processPackages [mlopsatt]: Start processing: slackflylog
+[2023-04-13 12:27:10] INFO root fetch - main [MainThread]: End processing [mlopsatt] error
+[2023-04-13 12:27:10] INFO root fetch - processPackages [slackflylog]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-13 12:27:10] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-13 12:27:10] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-3.0.4.tar.gz tmp/slackflylog-3.0.5.tar.gz --markdown 20230413/s/slackflylog/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-13 12:27:11] INFO root fetch - processPackages [slackflylog]: Start processing: langchain-utils
+[2023-04-13 12:27:11] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-13 12:27:11] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 12:27:11] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-13 12:27:11] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.8.tar.gz tmp/langchain_utils-0.3.9.tar.gz --markdown 20230413/l/langchain-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 12:27:12] INFO root fetch - processPackages [qontract-reconcile]: Start processing: getswish
+[2023-04-13 12:27:12] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-04-13 12:27:12] INFO root fetch - processPackages [getswish]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 12:27:12] INFO root fetch - processPackages [getswish]: Downloading https://files.pythonhosted.org/packages/a1/d4/53876e16f893ced9b7cadbab2584d5028d1502d06d6f58a6c1b1921d48fe/getswish-0.2.1.tar.gz
+[2023-04-13 12:27:12] INFO root fetch - main [MainThread]: End processing [langchain-utils]: success
+[2023-04-13 12:27:13] INFO root fetch - processPackages [getswish]: executing diffoscope
+[2023-04-13 12:27:13] INFO root fetch - processPackages [getswish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getswish-0.2.0.tar.gz tmp/getswish-0.2.1.tar.gz --markdown 20230413/g/getswish/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 12:27:13] INFO root fetch - main [MainThread]: End processing [openfl-x]: success
+[2023-04-13 12:27:14] INFO root fetch - main [MainThread]: End processing [getswish]: success
+[2023-04-13 12:27:17] INFO root fetch - main [MainThread]: End processing [dovado-rtl]: success
+[2023-04-13 12:27:33] INFO root fetch - main [MainThread]: End processing [manila]: success
+[2023-04-13 12:27:33] INFO root fetch - main [MainThread]: Store serial: [17690593]
