@@ -12965,3 +12965,114 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 11:53:30] INFO root fetch - main [MainThread]: End processing [test-query-tool]: success
 [2023-04-13 11:53:32] INFO root fetch - main [MainThread]: End processing [ansible-lint]: success
 [2023-04-13 11:53:32] INFO root fetch - main [MainThread]: Store serial: [17690198]
+[2023-04-13 11:58:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690198]
+[2023-04-13 11:58:40] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-13 11:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-sharepoint
+[2023-04-13 11:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sihodictapi
+[2023-04-13 11:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: test-query-tool
+[2023-04-13 11:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: text2mapview
+[2023-04-13 11:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kogger
+[2023-04-13 11:58:40] INFO root fetch - processPackages [text2mapview]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 11:58:40] INFO root fetch - processPackages [sihodictapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 11:58:40] INFO root fetch - processPackages [kogger]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 11:58:40] INFO root fetch - processPackages [simple-sharepoint]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-13 11:58:40] INFO root fetch - processPackages [test-query-tool]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-04-13 11:58:40] INFO root fetch - processPackages [sihodictapi]: executing diffoscope
+[2023-04-13 11:58:40] INFO root fetch - processPackages [sihodictapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sihodictapi-0.1.8.tar.gz tmp/sihodictapi-0.1.9.tar.gz --markdown 20230413/s/sihodictapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 11:58:41] INFO root fetch - processPackages [text2mapview]: Downloading https://files.pythonhosted.org/packages/c5/35/228292fe317e2313781e8cb3656767fb1f512baa16561acf0fd04b3fc930/text2mapview-0.2.0.tar.gz
+[2023-04-13 11:58:41] INFO root fetch - processPackages [simple-sharepoint]: Downloading https://files.pythonhosted.org/packages/9b/3b/ec6b20422e89d429f874082e408077e53e41397dc0b01045a72cc87e68bb/simple_sharepoint-0.1.0-py3-none-any.whl
+[2023-04-13 11:58:41] INFO root fetch - processPackages [test-query-tool]: Downloading https://files.pythonhosted.org/packages/a1/4f/679261a22d66d29f0f6953065f5bad3ae4c6c3bdebc942f557054e652932/test_query_tool-0.3.0.tar.gz
+[2023-04-13 11:58:41] INFO root fetch - processPackages [kogger]: Downloading https://files.pythonhosted.org/packages/9a/f2/0ccca31f0f114b9de86b0b017bc4b551fdc09d5a645203957231ccb83dd2/kogger-0.1.2.tar.gz
+[2023-04-13 11:58:41] INFO root fetch - processPackages [text2mapview]: Downloading https://files.pythonhosted.org/packages/cd/2e/ff773a641486bbf92cdadf21d33596f277b03ced83f6d68dfd3030f27b64/text2mapview-0.2.1.tar.gz
+[2023-04-13 11:58:41] INFO root fetch - processPackages [test-query-tool]: executing diffoscope
+[2023-04-13 11:58:41] INFO root fetch - processPackages [test-query-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_query_tool-0.2.9.tar.gz tmp/test_query_tool-0.3.0.tar.gz --markdown 20230413/t/test-query-tool/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-04-13 11:58:41] INFO root fetch - processPackages [simple-sharepoint]: executing diffoscope
+[2023-04-13 11:58:41] INFO root fetch - processPackages [simple-sharepoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_sharepoint-0.0.5-py3-none-any.whl.zip tmp/simple_sharepoint-0.1.0-py3-none-any.whl.zip --markdown 20230413/s/simple-sharepoint/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-13 11:58:41] INFO root fetch - processPackages [kogger]: executing diffoscope
+[2023-04-13 11:58:41] INFO root fetch - processPackages [kogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kogger-0.1.1.tar.gz tmp/kogger-0.1.2.tar.gz --markdown 20230413/k/kogger/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 11:58:41] INFO root fetch - processPackages [text2mapview]: executing diffoscope
+[2023-04-13 11:58:41] INFO root fetch - processPackages [text2mapview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2mapview-0.2.0.tar.gz tmp/text2mapview-0.2.1.tar.gz --markdown 20230413/t/text2mapview/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 11:58:42] INFO root fetch - processPackages [sihodictapi]: Start processing: django-juss2
+[2023-04-13 11:58:42] INFO root fetch - main [MainThread]: End processing [sihodictapi]: success
+[2023-04-13 11:58:42] WARNING root fetch - processPackages [django-juss2]: Skipping, unable to determine old version
+[2023-04-13 11:58:42] INFO root fetch - processPackages [django-juss2]: Start processing: os2ds-rules
+[2023-04-13 11:58:42] INFO root fetch - main [MainThread]: End processing [django-juss2] error
+[2023-04-13 11:58:42] WARNING root fetch - processPackages [os2ds-rules]: Skipping, unable to determine old version
+[2023-04-13 11:58:42] INFO root fetch - processPackages [os2ds-rules]: Start processing: alphaz
+[2023-04-13 11:58:42] INFO root fetch - main [MainThread]: End processing [os2ds-rules] error
+[2023-04-13 11:58:42] INFO root fetch - processPackages [alphaz]: New version: [0.7.3.9] Old Version: [0.7.3.8]
+[2023-04-13 11:58:42] INFO root fetch - processPackages [alphaz]: executing diffoscope
+[2023-04-13 11:58:42] INFO root fetch - processPackages [alphaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphaz-0.7.3.8.tar.gz tmp/alphaz-0.7.3.9.tar.gz --markdown 20230413/a/alphaz/0.7.3.8-0.7.3.9/diff.md --exclude *.pyd
+[2023-04-13 11:58:42] INFO root fetch - processPackages [simple-sharepoint]: Start processing: cbig-network-correspondence
+[2023-04-13 11:58:42] INFO root fetch - main [MainThread]: End processing [simple-sharepoint]: success
+[2023-04-13 11:58:42] INFO root fetch - processPackages [test-query-tool]: Start processing: test-query-tool
+[2023-04-13 11:58:42] INFO root fetch - main [MainThread]: End processing [test-query-tool]: success
+[2023-04-13 11:58:42] INFO root fetch - processPackages [cbig-network-correspondence]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-13 11:58:42] INFO root fetch - processPackages [test-query-tool]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-04-13 11:58:42] INFO root fetch - processPackages [kogger]: Start processing: charactr-api
+[2023-04-13 11:58:42] INFO root fetch - main [MainThread]: End processing [kogger]: success
+[2023-04-13 11:58:42] WARNING root fetch - processPackages [charactr-api]: Skipping, unable to determine old version
+[2023-04-13 11:58:42] INFO root fetch - processPackages [charactr-api]: Start processing: napari-svetlana
+[2023-04-13 11:58:42] INFO root fetch - main [MainThread]: End processing [charactr-api] error
+[2023-04-13 11:58:42] INFO root fetch - processPackages [napari-svetlana]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-13 11:58:42] INFO root fetch - processPackages [test-query-tool]: executing diffoscope
+[2023-04-13 11:58:42] INFO root fetch - processPackages [test-query-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_query_tool-0.2.9.tar.gz tmp/test_query_tool-0.3.0.tar.gz --markdown 20230413/t/test-query-tool/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-04-13 11:58:42] INFO root fetch - processPackages [text2mapview]: Start processing: TB2J
+[2023-04-13 11:58:42] INFO root fetch - main [MainThread]: End processing [text2mapview]: success
+[2023-04-13 11:58:42] INFO root fetch - processPackages [TB2J]: New version: [0.7.4rc3] Old Version: [0.7.4rc2]
+[2023-04-13 11:58:42] INFO root fetch - processPackages [cbig-network-correspondence]: Downloading https://files.pythonhosted.org/packages/a4/ed/f0df374c7c06aed03cf3b8cdb6d1c7124e7ca654c50ae5da11202de20df1/cbig_network_correspondence-0.0.4.tar.gz
+[2023-04-13 11:58:42] INFO root fetch - processPackages [cbig-network-correspondence]: executing diffoscope
+[2023-04-13 11:58:42] INFO root fetch - processPackages [cbig-network-correspondence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbig_network_correspondence-0.0.3.tar.gz tmp/cbig_network_correspondence-0.0.4.tar.gz --markdown 20230413/c/cbig-network-correspondence/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-13 11:58:42] INFO root fetch - processPackages [TB2J]: Downloading https://files.pythonhosted.org/packages/fb/3a/de74500bee0e34978b52f3c5505651636970b477ccb904cebdd8c89866e5/TB2J-0.7.4rc2.tar.gz
+[2023-04-13 11:58:42] INFO root fetch - processPackages [napari-svetlana]: Downloading https://files.pythonhosted.org/packages/05/c6/3665526c00a485ae61855fc7d3e2596df216147714fb6b73a0f38cb8ffb9/napari_svetlana-0.2.5.tar.gz
+[2023-04-13 11:58:43] INFO root fetch - processPackages [TB2J]: Downloading https://files.pythonhosted.org/packages/89/b5/af087b006fb39a8bce77a4db0dae9b44d2e79f358b166a92cc7bc341ab86/TB2J-0.7.4rc3.tar.gz
+[2023-04-13 11:58:43] INFO root fetch - processPackages [napari-svetlana]: Downloading https://files.pythonhosted.org/packages/8d/8b/846d87eddac817cae5e00e24ac033d6bc0e184a860a2e528750510026e9d/napari_svetlana-0.2.6.tar.gz
+[2023-04-13 11:58:43] INFO root fetch - processPackages [TB2J]: executing diffoscope
+[2023-04-13 11:58:43] INFO root fetch - processPackages [TB2J]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TB2J-0.7.4rc2.tar.gz tmp/TB2J-0.7.4rc3.tar.gz --markdown 20230413/T/TB2J/0.7.4rc2-0.7.4rc3/diff.md --exclude *.pyd
+[2023-04-13 11:58:43] INFO root fetch - processPackages [napari-svetlana]: executing diffoscope
+[2023-04-13 11:58:43] INFO root fetch - processPackages [napari-svetlana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_svetlana-0.2.5.tar.gz tmp/napari_svetlana-0.2.6.tar.gz --markdown 20230413/n/napari-svetlana/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-13 11:58:43] INFO root fetch - processPackages [test-query-tool]: Start processing: blinpy
+[2023-04-13 11:58:43] INFO root fetch - main [MainThread]: End processing [test-query-tool]: success
+[2023-04-13 11:58:43] INFO root fetch - processPackages [blinpy]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-13 11:58:43] INFO root fetch - processPackages [blinpy]: Downloading https://files.pythonhosted.org/packages/9e/a0/3171367ff24375073aa5dc064fa13e4ff7b44f50b34c27965be51aa8e18c/blinpy-0.1.6.tar.gz
+[2023-04-13 11:58:43] INFO root fetch - processPackages [cbig-network-correspondence]: Start processing: gflanguages
+[2023-04-13 11:58:43] INFO root fetch - main [MainThread]: End processing [cbig-network-correspondence]: success
+[2023-04-13 11:58:43] INFO root fetch - processPackages [gflanguages]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-13 11:58:44] INFO root fetch - processPackages [gflanguages]: Downloading https://files.pythonhosted.org/packages/09/cf/355e5aa46de1850b381446cec13df4099c368fa7dc85fb05b78b4f436ae0/gflanguages-0.4.6.tar.gz
+[2023-04-13 11:58:44] INFO root fetch - processPackages [blinpy]: Downloading https://files.pythonhosted.org/packages/eb/9f/d4a091bf1c13f2b02ead2abad29a7977a96b554835b6b55c0a96fbcb9965/blinpy-0.1.7.tar.gz
+[2023-04-13 11:58:44] INFO root fetch - processPackages [blinpy]: executing diffoscope
+[2023-04-13 11:58:44] INFO root fetch - processPackages [blinpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blinpy-0.1.6.tar.gz tmp/blinpy-0.1.7.tar.gz --markdown 20230413/b/blinpy/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-13 11:58:44] INFO root fetch - processPackages [gflanguages]: Downloading https://files.pythonhosted.org/packages/e0/f4/3f6fe6129ddc390bf2cf051fca6f5f743a07b4a746eb40f953e552f5b04b/gflanguages-0.4.7.tar.gz
+[2023-04-13 11:58:44] INFO root fetch - processPackages [gflanguages]: executing diffoscope
+[2023-04-13 11:58:44] INFO root fetch - processPackages [gflanguages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gflanguages-0.4.6.tar.gz tmp/gflanguages-0.4.7.tar.gz --markdown 20230413/g/gflanguages/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-13 11:58:44] INFO root fetch - processPackages [TB2J]: Start processing: vizelec
+[2023-04-13 11:58:44] INFO root fetch - main [MainThread]: End processing [TB2J]: success
+[2023-04-13 11:58:44] INFO root fetch - processPackages [napari-svetlana]: Start processing: sihodictapi
+[2023-04-13 11:58:44] INFO root fetch - main [MainThread]: End processing [napari-svetlana]: success
+[2023-04-13 11:58:44] INFO root fetch - processPackages [vizelec]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 11:58:44] INFO root fetch - processPackages [sihodictapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 11:58:44] INFO root fetch - processPackages [sihodictapi]: executing diffoscope
+[2023-04-13 11:58:44] INFO root fetch - processPackages [sihodictapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sihodictapi-0.1.8.tar.gz tmp/sihodictapi-0.1.9.tar.gz --markdown 20230413/s/sihodictapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 11:58:44] INFO root fetch - processPackages [vizelec]: Downloading https://files.pythonhosted.org/packages/44/52/02e8a05d6478de3aebd5e1a4b91aaa6b5aff26bdb4c7f7523ded967281a2/vizelec-0.1.1.tar.gz
+[2023-04-13 11:58:45] INFO root fetch - processPackages [vizelec]: Downloading https://files.pythonhosted.org/packages/33/b5/46312260c4e5bccf548d44e64bd7d5ae460795aa65093e345220dadbb62c/vizelec-0.1.2.tar.gz
+[2023-04-13 11:58:45] INFO root fetch - processPackages [vizelec]: executing diffoscope
+[2023-04-13 11:58:45] INFO root fetch - processPackages [vizelec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vizelec-0.1.1.tar.gz tmp/vizelec-0.1.2.tar.gz --markdown 20230413/v/vizelec/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 11:58:45] INFO root fetch - processPackages [blinpy]: Start processing: cognite-gql-pygen
+[2023-04-13 11:58:45] INFO root fetch - main [MainThread]: End processing [blinpy]: success
+[2023-04-13 11:58:45] INFO root fetch - processPackages [cognite-gql-pygen]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-13 11:58:45] INFO root fetch - processPackages [cognite-gql-pygen]: Downloading https://files.pythonhosted.org/packages/8b/83/d2c030df08cf3567aef6bdb98eb3293748662685be62312161560a5a170d/cognite_gql_pygen-0.1.4.tar.gz
+[2023-04-13 11:58:45] INFO root fetch - processPackages [sihodictapi]: Start processing: pytac
+[2023-04-13 11:58:45] INFO root fetch - main [MainThread]: End processing [sihodictapi]: success
+[2023-04-13 11:58:45] INFO root fetch - processPackages [pytac]: New version: [0.6.0b1] Old Version: [0.5.0]
+[2023-04-13 11:58:45] INFO root fetch - processPackages [cognite-gql-pygen]: executing diffoscope
+[2023-04-13 11:58:45] INFO root fetch - processPackages [cognite-gql-pygen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_gql_pygen-0.1.3.tar.gz tmp/cognite_gql_pygen-0.1.4.tar.gz --markdown 20230413/c/cognite-gql-pygen/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-13 11:58:45] INFO root fetch - processPackages [pytac]: Downloading https://files.pythonhosted.org/packages/eb/2e/18e1ce8fe9967bf05c751e9639da56e52aebcd4bcbd0e6afe8111fe9de23/pytac-0.5.0.tar.gz
+[2023-04-13 11:58:46] INFO root fetch - main [MainThread]: End processing [vizelec]: success
+[2023-04-13 11:58:46] INFO root fetch - processPackages [pytac]: Downloading https://files.pythonhosted.org/packages/de/c8/408d1235a6048dc00bdb4d943f97e88e1f8ed53d0c664da3898029c2b4a5/pytac-0.6.0b1.tar.gz
+[2023-04-13 11:58:46] INFO root fetch - processPackages [pytac]: executing diffoscope
+[2023-04-13 11:58:46] INFO root fetch - processPackages [pytac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytac-0.5.0.tar.gz tmp/pytac-0.6.0b1.tar.gz --markdown 20230413/p/pytac/0.5.0-0.6.0b1/diff.md --exclude *.pyd
+[2023-04-13 11:58:46] INFO root fetch - main [MainThread]: End processing [alphaz]: success
+[2023-04-13 11:58:46] INFO root fetch - main [MainThread]: End processing [cognite-gql-pygen]: success
+[2023-04-13 11:58:48] INFO root fetch - main [MainThread]: End processing [pytac]: success
+[2023-04-13 11:59:22] INFO root fetch - main [MainThread]: End processing [gflanguages]: success
+[2023-04-13 11:59:22] INFO root fetch - main [MainThread]: Store serial: [17690276]
