@@ -10250,3 +10250,95 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 09:40:17] INFO root fetch - main [MainThread]: End processing [gnssrefl]: success
 [2023-04-13 09:40:22] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-04-13 09:40:22] INFO root fetch - main [MainThread]: Store serial: [17688482]
+[2023-04-13 09:45:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17688482]
+[2023-04-13 09:45:30] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-13 09:45:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynarrator
+[2023-04-13 09:45:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datar
+[2023-04-13 09:45:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MyJpHolidays
+[2023-04-13 09:45:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hctest-install-help
+[2023-04-13 09:45:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: termgpt
+[2023-04-13 09:45:30] INFO root fetch - processPackages [pynarrator]: New version: [0.0.1.9] Old Version: [0.0.1.8]
+[2023-04-13 09:45:30] INFO root fetch - processPackages [termgpt]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-04-13 09:45:30] INFO root fetch - processPackages [MyJpHolidays]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-13 09:45:30] INFO root fetch - processPackages [hctest-install-help]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-13 09:45:30] INFO root fetch - processPackages [datar]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 09:45:30] INFO root fetch - processPackages [MyJpHolidays]: Downloading https://files.pythonhosted.org/packages/37/dc/428accbee4b0dc9795bd3adfce5b90d7bbd9f33827c735f639b97fbe95c4/MyJpHolidays-0.8.0.tar.gz
+[2023-04-13 09:45:30] INFO root fetch - processPackages [termgpt]: Downloading https://files.pythonhosted.org/packages/d6/9c/aa6152567151d11f340a09494b258b5acaac580e92204d0979ccd91e383b/termgpt-0.5.1.tar.gz
+[2023-04-13 09:45:30] INFO root fetch - processPackages [datar]: executing diffoscope
+[2023-04-13 09:45:30] INFO root fetch - processPackages [pynarrator]: Downloading https://files.pythonhosted.org/packages/a6/9b/fb0e69abe9d01802f858684ac78365a817f066e003445b1be9c1e999e4db/pynarrator-0.0.1.9.tar.gz
+[2023-04-13 09:45:30] INFO root fetch - processPackages [datar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datar-0.9.0.tar.gz tmp/datar-0.9.1.tar.gz --markdown 20230413/d/datar/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 09:45:30] INFO root fetch - processPackages [hctest-install-help]: Downloading https://files.pythonhosted.org/packages/96/a3/6732865caa21f1db45b9f70724e643832f810b7583f9bad4f84f1c528fd9/hctest_install_help-0.9.2.tar.gz
+[2023-04-13 09:45:30] INFO root fetch - processPackages [pynarrator]: executing diffoscope
+[2023-04-13 09:45:30] INFO root fetch - processPackages [pynarrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynarrator-0.0.1.8.tar.gz tmp/pynarrator-0.0.1.9.tar.gz --markdown 20230413/p/pynarrator/0.0.1.8-0.0.1.9/diff.md --exclude *.pyd
+[2023-04-13 09:45:30] INFO root fetch - processPackages [termgpt]: Downloading https://files.pythonhosted.org/packages/f8/64/c3de00e2bfbc2a0fd7689add67fdadf57e7f4598c3e8a9f020e87466a9cc/termgpt-0.6.0.tar.gz
+[2023-04-13 09:45:30] INFO root fetch - processPackages [MyJpHolidays]: Downloading https://files.pythonhosted.org/packages/e8/fd/704e95c423aacf8532f36d39e0ed8e5017a8caebb9425549666f6e81a068/MyJpHolidays-0.8.1.tar.gz
+[2023-04-13 09:45:30] INFO root fetch - processPackages [hctest-install-help]: executing diffoscope
+[2023-04-13 09:45:30] INFO root fetch - processPackages [hctest-install-help]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hctest_install_help-0.9.1.tar.gz tmp/hctest_install_help-0.9.2.tar.gz --markdown 20230413/h/hctest-install-help/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-13 09:45:30] INFO root fetch - processPackages [termgpt]: executing diffoscope
+[2023-04-13 09:45:30] INFO root fetch - processPackages [termgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/termgpt-0.5.1.tar.gz tmp/termgpt-0.6.0.tar.gz --markdown 20230413/t/termgpt/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-04-13 09:45:30] INFO root fetch - processPackages [MyJpHolidays]: executing diffoscope
+[2023-04-13 09:45:30] INFO root fetch - processPackages [MyJpHolidays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyJpHolidays-0.8.0.tar.gz tmp/MyJpHolidays-0.8.1.tar.gz --markdown 20230413/M/MyJpHolidays/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-13 09:45:32] INFO root fetch - processPackages [pynarrator]: Start processing: protoletariat
+[2023-04-13 09:45:32] INFO root fetch - main [MainThread]: End processing [pynarrator]: success
+[2023-04-13 09:45:32] INFO root fetch - processPackages [protoletariat]: New version: [3.2.2] Old Version: [3.2.1]
+[2023-04-13 09:45:32] INFO root fetch - processPackages [termgpt]: Start processing: adaflow-python
+[2023-04-13 09:45:32] INFO root fetch - main [MainThread]: End processing [termgpt]: success
+[2023-04-13 09:45:32] WARNING root fetch - processPackages [adaflow-python]: Skipping, unable to determine old version
+[2023-04-13 09:45:32] INFO root fetch - processPackages [adaflow-python]: Start processing: ansys-tools-path
+[2023-04-13 09:45:32] INFO root fetch - main [MainThread]: End processing [adaflow-python] error
+[2023-04-13 09:45:32] INFO root fetch - processPackages [hctest-install-help]: Start processing: DLMS-SPODES
+[2023-04-13 09:45:32] INFO root fetch - main [MainThread]: End processing [hctest-install-help]: success
+[2023-04-13 09:45:32] INFO root fetch - processPackages [DLMS-SPODES]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-13 09:45:32] INFO root fetch - processPackages [protoletariat]: Downloading https://files.pythonhosted.org/packages/86/d9/c25666983e8deabea04e5c89b83fae3b14ba01d321cf6942c1bc4bd439dc/protoletariat-3.2.1.tar.gz
+[2023-04-13 09:45:32] WARNING root fetch - processPackages [ansys-tools-path]: Skipping, unable to determine old version
+[2023-04-13 09:45:32] INFO root fetch - processPackages [ansys-tools-path]: Start processing: jsongraphtree
+[2023-04-13 09:45:32] INFO root fetch - main [MainThread]: End processing [ansys-tools-path] error
+[2023-04-13 09:45:32] INFO root fetch - processPackages [DLMS-SPODES]: executing diffoscope
+[2023-04-13 09:45:32] INFO root fetch - processPackages [DLMS-SPODES]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DLMS_SPODES-0.8.3.tar.gz tmp/DLMS_SPODES-0.9.0.tar.gz --markdown 20230413/D/DLMS-SPODES/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 09:45:32] WARNING root fetch - processPackages [jsongraphtree]: Skipping, unable to determine old version
+[2023-04-13 09:45:32] INFO root fetch - processPackages [jsongraphtree]: Start processing: baize
+[2023-04-13 09:45:32] INFO root fetch - main [MainThread]: End processing [jsongraphtree] error
+[2023-04-13 09:45:32] INFO root fetch - processPackages [baize]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-13 09:45:32] INFO root fetch - processPackages [baize]: Downloading https://files.pythonhosted.org/packages/74/a1/d85d129205b48d7776ca788cdad82d2a75162f73fad2ed8410d24b51b518/baize-0.8.2.tar.gz
+[2023-04-13 09:45:32] INFO root fetch - processPackages [protoletariat]: Downloading https://files.pythonhosted.org/packages/35/ff/c7862d71bc14508625364f4738cb9575d0dbbfeee313ff1753e83b0de5ec/protoletariat-3.2.2.tar.gz
+[2023-04-13 09:45:32] INFO root fetch - processPackages [protoletariat]: executing diffoscope
+[2023-04-13 09:45:32] INFO root fetch - processPackages [protoletariat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoletariat-3.2.1.tar.gz tmp/protoletariat-3.2.2.tar.gz --markdown 20230413/p/protoletariat/3.2.1-3.2.2/diff.md --exclude *.pyd
+[2023-04-13 09:45:32] INFO root fetch - processPackages [baize]: Downloading https://files.pythonhosted.org/packages/43/ba/70da73158ef8ed443aac613e8216939bbbabe90ab176d5174c3b919e5eea/baize-0.9.0.tar.gz
+[2023-04-13 09:45:32] INFO root fetch - processPackages [MyJpHolidays]: Start processing: tf-nightly-macos
+[2023-04-13 09:45:32] INFO root fetch - main [MainThread]: End processing [MyJpHolidays]: success
+[2023-04-13 09:45:32] INFO root fetch - processPackages [tf-nightly-macos]: New version: [2.13.0.dev20230412] Old Version: [2.13.0.dev20230411]
+[2023-04-13 09:45:33] INFO root fetch - processPackages [baize]: executing diffoscope
+[2023-04-13 09:45:33] INFO root fetch - processPackages [baize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baize-0.8.2.tar.gz tmp/baize-0.9.0.tar.gz --markdown 20230413/b/baize/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 09:45:33] INFO root fetch - processPackages [tf-nightly-macos]: Downloading https://files.pythonhosted.org/packages/50/c6/fede4ab847078a0f465b1dc84a0206eff7ec38d14a9eea6265043500dd2b/tf_nightly_macos-2.13.0.dev20230411-cp39-cp39-macosx_12_0_arm64.whl
+[2023-04-13 09:45:33] WARNING root fetch - processPackages [tf-nightly-macos]: Skipping package: exceeds size limit 186180097>=10485760
+[2023-04-13 09:45:33] INFO root fetch - processPackages [tf-nightly-macos]: Start processing: napari-sam
+[2023-04-13 09:45:33] INFO root fetch - main [MainThread]: End processing [tf-nightly-macos] error
+[2023-04-13 09:45:33] INFO root fetch - processPackages [napari-sam]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-13 09:45:33] INFO root fetch - processPackages [napari-sam]: Downloading https://files.pythonhosted.org/packages/07/20/33b10833641360e8023cde4898aa93cec09128103a0b1b28163574500ff3/napari-sam-0.3.4.tar.gz
+[2023-04-13 09:45:33] INFO root fetch - processPackages [datar]: Start processing: biglist
+[2023-04-13 09:45:33] INFO root fetch - main [MainThread]: End processing [datar]: success
+[2023-04-13 09:45:33] INFO root fetch - processPackages [biglist]: New version: [0.7.9b5] Old Version: [0.7.9b4]
+[2023-04-13 09:45:33] INFO root fetch - processPackages [napari-sam]: executing diffoscope
+[2023-04-13 09:45:33] INFO root fetch - processPackages [napari-sam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-sam-0.3.3.tar.gz tmp/napari-sam-0.3.4.tar.gz --markdown 20230413/n/napari-sam/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-13 09:45:33] INFO root fetch - processPackages [biglist]: Downloading https://files.pythonhosted.org/packages/9e/05/053215acfa101b840372778585b1723596b863aec546acf8c6a0868c3e64/biglist-0.7.9b5.tar.gz
+[2023-04-13 09:45:33] INFO root fetch - processPackages [biglist]: executing diffoscope
+[2023-04-13 09:45:33] INFO root fetch - processPackages [biglist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biglist-0.7.9b4.tar.gz tmp/biglist-0.7.9b5.tar.gz --markdown 20230413/b/biglist/0.7.9b4-0.7.9b5/diff.md --exclude *.pyd
+[2023-04-13 09:45:33] INFO root fetch - processPackages [protoletariat]: Start processing: autoworker
+[2023-04-13 09:45:33] INFO root fetch - main [MainThread]: End processing [protoletariat]: success
+[2023-04-13 09:45:33] INFO root fetch - processPackages [autoworker]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 09:45:34] INFO root fetch - processPackages [DLMS-SPODES]: Start processing: returnn
+[2023-04-13 09:45:34] INFO root fetch - main [MainThread]: End processing [DLMS-SPODES]: success
+[2023-04-13 09:45:34] INFO root fetch - processPackages [autoworker]: Downloading https://files.pythonhosted.org/packages/08/a3/b65431eee3e42b5dc3aa743cec386f28647833ecc46242c2af3f812eb4f9/autoworker-0.8.0.tar.gz
+[2023-04-13 09:45:34] INFO root fetch - main [MainThread]: End processing [baize]: success
+[2023-04-13 09:45:34] INFO root fetch - processPackages [returnn]: New version: [1.20230413.93323] Old Version: [1.20230412.153312]
+[2023-04-13 09:45:34] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/de/fc/607808a1628a03f2e925fc304fcbf208948dda64ad040c40bdcbde1ee779/returnn-1.20230413.93323.tar.gz
+[2023-04-13 09:45:34] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-13 09:45:34] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230412.153312.tar.gz tmp/returnn-1.20230413.93323.tar.gz --markdown 20230413/r/returnn/1.20230412.153312-1.20230413.93323/diff.md --exclude *.pyd
+[2023-04-13 09:45:34] INFO root fetch - processPackages [autoworker]: Downloading https://files.pythonhosted.org/packages/e4/58/acb756c2c01b67eb073c32d3623e08466d411677e7869f731370a5a6d478/autoworker-0.9.0.tar.gz
+[2023-04-13 09:45:34] INFO root fetch - processPackages [autoworker]: executing diffoscope
+[2023-04-13 09:45:34] INFO root fetch - processPackages [autoworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoworker-0.8.0.tar.gz tmp/autoworker-0.9.0.tar.gz --markdown 20230413/a/autoworker/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 09:45:34] INFO root fetch - main [MainThread]: End processing [napari-sam]: success
+[2023-04-13 09:45:34] INFO root fetch - main [MainThread]: End processing [biglist]: success
+[2023-04-13 09:45:35] INFO root fetch - main [MainThread]: End processing [autoworker]: success
+[2023-04-13 09:45:38] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-13 09:45:38] INFO root fetch - main [MainThread]: Store serial: [17688554]
