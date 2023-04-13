@@ -21967,3 +21967,90 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 18:11:42] INFO root fetch - main [MainThread]: End processing [oda-data]: success
 [2023-04-13 18:11:43] INFO root fetch - main [MainThread]: End processing [XlsxWriter]: success
 [2023-04-13 18:11:43] INFO root fetch - main [MainThread]: Store serial: [17695252]
+[2023-04-13 18:16:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17695252]
+[2023-04-13 18:16:52] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-13 18:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyclic-boosting
+[2023-04-13 18:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bacalhau-apiclient
+[2023-04-13 18:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bacalhau-sdk
+[2023-04-13 18:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pepperize.cdk-vpc
+[2023-04-13 18:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bacalhau-airflow
+[2023-04-13 18:16:52] INFO root fetch - processPackages [bacalhau-airflow]: New version: [0.3.27] Old Version: [0.3.26]
+[2023-04-13 18:16:52] INFO root fetch - processPackages [cyclic-boosting]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-13 18:16:52] INFO root fetch - processPackages [bacalhau-apiclient]: New version: [0.3.27] Old Version: [0.3.26]
+[2023-04-13 18:16:52] INFO root fetch - processPackages [bacalhau-sdk]: New version: [0.3.27] Old Version: [0.3.26]
+[2023-04-13 18:16:52] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-13 18:16:52] INFO root fetch - processPackages [bacalhau-airflow]: Downloading https://files.pythonhosted.org/packages/2d/40/bf2f6d900c3b13813bac340262e31d65ad2d156725d54bf0dce25c403731/bacalhau_airflow-0.3.27.tar.gz
+[2023-04-13 18:16:52] INFO root fetch - processPackages [bacalhau-apiclient]: Downloading https://files.pythonhosted.org/packages/fe/15/d67bcdc14a483781ec26b430cf0ccb0514cbe6d146ae7bd0f808896fd64c/bacalhau_apiclient-0.3.27.tar.gz
+[2023-04-13 18:16:52] INFO root fetch - processPackages [cyclic-boosting]: Downloading https://files.pythonhosted.org/packages/57/1c/5445326d3bc3a6ab0adecb43873f9749417c5d46a06be48efa5c6edd44ac/cyclic_boosting-0.1.0.tar.gz
+[2023-04-13 18:16:52] INFO root fetch - processPackages [bacalhau-sdk]: Downloading https://files.pythonhosted.org/packages/1a/51/68f4017f40470bcce9633a9f0bcc140a6f125078ac64ac27e2dcdb19d4ba/bacalhau_sdk-0.3.27.tar.gz
+[2023-04-13 18:16:52] INFO root fetch - processPackages [cyclic-boosting]: executing diffoscope
+[2023-04-13 18:16:52] INFO root fetch - processPackages [cyclic-boosting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclic-boosting-0.0.5.tar.gz tmp/cyclic_boosting-0.1.0.tar.gz --markdown 20230413/c/cyclic-boosting/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-13 18:16:52] INFO root fetch - processPackages [bacalhau-apiclient]: executing diffoscope
+[2023-04-13 18:16:52] INFO root fetch - processPackages [bacalhau-apiclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacalhau_apiclient-0.3.26.tar.gz tmp/bacalhau_apiclient-0.3.27.tar.gz --markdown 20230413/b/bacalhau-apiclient/0.3.26-0.3.27/diff.md --exclude *.pyd
+[2023-04-13 18:16:52] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-04-13 18:16:52] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230413/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-13 18:16:52] INFO root fetch - processPackages [bacalhau-sdk]: executing diffoscope
+[2023-04-13 18:16:52] INFO root fetch - processPackages [bacalhau-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacalhau_sdk-0.3.26.tar.gz tmp/bacalhau_sdk-0.3.27.tar.gz --markdown 20230413/b/bacalhau-sdk/0.3.26-0.3.27/diff.md --exclude *.pyd
+[2023-04-13 18:16:53] INFO root fetch - processPackages [bacalhau-airflow]: executing diffoscope
+[2023-04-13 18:16:53] INFO root fetch - processPackages [bacalhau-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacalhau_airflow-0.3.26.tar.gz tmp/bacalhau_airflow-0.3.27.tar.gz --markdown 20230413/b/bacalhau-airflow/0.3.26-0.3.27/diff.md --exclude *.pyd
+[2023-04-13 18:16:53] INFO root fetch - processPackages [pepperize.cdk-vpc]: Start processing: voici
+[2023-04-13 18:16:53] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-vpc]: success
+[2023-04-13 18:16:53] INFO root fetch - processPackages [voici]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-13 18:16:54] INFO root fetch - processPackages [bacalhau-sdk]: Start processing: certora-cli-alpha-master
+[2023-04-13 18:16:54] INFO root fetch - main [MainThread]: End processing [bacalhau-sdk]: success
+[2023-04-13 18:16:54] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230413.9.5.948824] Old Version: [20230413.9.44.47373]
+[2023-04-13 18:16:54] INFO root fetch - processPackages [voici]: Downloading https://files.pythonhosted.org/packages/2c/03/aa08ca18fc303d3ef1da3a49e22053f5cdaebace96ed1c3465e5dfdbc8c8/voici-0.3.3.tar.gz
+[2023-04-13 18:16:54] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/ec/ba/c10afbdd268f315990bcbecf2e5c813f86b5f3ad19369e727b950ae35fad/certora-cli-alpha-master-20230413.9.44.47373.tar.gz
+[2023-04-13 18:16:54] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38004849>=10485760
+[2023-04-13 18:16:54] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: openbb
+[2023-04-13 18:16:54] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-13 18:16:54] INFO root fetch - processPackages [openbb]: New version: [3.0.0rc2] Old Version: [3.0.0rc1]
+[2023-04-13 18:16:54] INFO root fetch - processPackages [cyclic-boosting]: Start processing: matplotlib-backend-wezterm
+[2023-04-13 18:16:54] INFO root fetch - main [MainThread]: End processing [cyclic-boosting]: success
+[2023-04-13 18:16:54] WARNING root fetch - processPackages [matplotlib-backend-wezterm]: Skipping, unable to determine old version
+[2023-04-13 18:16:54] INFO root fetch - processPackages [matplotlib-backend-wezterm]: Start processing: riptable
+[2023-04-13 18:16:54] INFO root fetch - main [MainThread]: End processing [matplotlib-backend-wezterm] error
+[2023-04-13 18:16:54] INFO root fetch - processPackages [riptable]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-04-13 18:16:54] INFO root fetch - processPackages [openbb]: Downloading https://files.pythonhosted.org/packages/69/7c/d51ed1df2e0bf98471a3143284ecb0d959845268ce9e5f400995bc6cfead/openbb-3.0.0rc1.tar.gz
+[2023-04-13 18:16:54] INFO root fetch - processPackages [voici]: executing diffoscope
+[2023-04-13 18:16:54] INFO root fetch - processPackages [voici]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voici-0.3.2.tar.gz tmp/voici-0.3.3.tar.gz --markdown 20230413/v/voici/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-13 18:16:54] INFO root fetch - processPackages [riptable]: Downloading https://files.pythonhosted.org/packages/69/75/7795a387e117efa440cc9eebe66190269dd0467b753f91d470e31adc7155/riptable-1.6.8.tar.gz
+[2023-04-13 18:16:54] INFO root fetch - processPackages [bacalhau-apiclient]: Start processing: motionpicture
+[2023-04-13 18:16:54] INFO root fetch - main [MainThread]: End processing [bacalhau-apiclient]: success
+[2023-04-13 18:16:54] INFO root fetch - processPackages [motionpicture]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-13 18:16:54] INFO root fetch - processPackages [bacalhau-airflow]: Start processing: python-eigen-ingenuity
+[2023-04-13 18:16:54] INFO root fetch - main [MainThread]: End processing [bacalhau-airflow]: success
+[2023-04-13 18:16:54] INFO root fetch - processPackages [python-eigen-ingenuity]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-13 18:16:54] INFO root fetch - processPackages [motionpicture]: Downloading https://files.pythonhosted.org/packages/21/e0/b3fe45032b80deccedf4cad98b93af223511960d1c415dee1ca165286620/motionpicture-0.3.1.tar.gz
+[2023-04-13 18:16:54] INFO root fetch - processPackages [python-eigen-ingenuity]: Downloading https://files.pythonhosted.org/packages/0d/41/adafbc3c47fc5c396a39b6eaa3fdc1f4c3ffeac0706a561455a2b0582b8e/python-eigen-ingenuity-0.4.4.tar.gz
+[2023-04-13 18:16:55] INFO root fetch - processPackages [motionpicture]: Downloading https://files.pythonhosted.org/packages/4d/71/dd076691e02013218782e6a8dd0aff6ea181a0274513aab8a7b01df3343f/motionpicture-0.3.2.tar.gz
+[2023-04-13 18:16:55] INFO root fetch - processPackages [python-eigen-ingenuity]: Downloading https://files.pythonhosted.org/packages/e5/3d/1338c7e40678875c22973658d0f18b9141bee742a90376bdff8fb9cf23a0/python-eigen-ingenuity-0.4.5.tar.gz
+[2023-04-13 18:16:55] INFO root fetch - processPackages [motionpicture]: executing diffoscope
+[2023-04-13 18:16:55] INFO root fetch - processPackages [motionpicture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motionpicture-0.3.1.tar.gz tmp/motionpicture-0.3.2.tar.gz --markdown 20230413/m/motionpicture/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-13 18:16:55] INFO root fetch - processPackages [python-eigen-ingenuity]: executing diffoscope
+[2023-04-13 18:16:55] INFO root fetch - processPackages [python-eigen-ingenuity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-eigen-ingenuity-0.4.4.tar.gz tmp/python-eigen-ingenuity-0.4.5.tar.gz --markdown 20230413/p/python-eigen-ingenuity/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-13 18:16:55] INFO root fetch - processPackages [openbb]: Downloading https://files.pythonhosted.org/packages/9f/ad/953c6367d609cb4648829447f86c9eb7d33520d875a6eaef30a3d03475ba/openbb-3.0.0rc2.tar.gz
+[2023-04-13 18:16:55] INFO root fetch - processPackages [riptable]: Downloading https://files.pythonhosted.org/packages/ac/80/3004549f3fb140a88fed0abfca40adcc342138817799a05678e61fd66ac8/riptable-1.6.9.tar.gz
+[2023-04-13 18:16:56] INFO root fetch - processPackages [riptable]: executing diffoscope
+[2023-04-13 18:16:56] INFO root fetch - processPackages [riptable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riptable-1.6.8.tar.gz tmp/riptable-1.6.9.tar.gz --markdown 20230413/r/riptable/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-04-13 18:16:56] INFO root fetch - processPackages [motionpicture]: Start processing: TraffiX
+[2023-04-13 18:16:56] INFO root fetch - main [MainThread]: End processing [motionpicture]: success
+[2023-04-13 18:16:56] INFO root fetch - processPackages [TraffiX]: New version: [0.1.2a0] Old Version: [0.1.1a0]
+[2023-04-13 18:16:56] INFO root fetch - processPackages [python-eigen-ingenuity]: Start processing: saltgang
+[2023-04-13 18:16:56] INFO root fetch - main [MainThread]: End processing [python-eigen-ingenuity]: success
+[2023-04-13 18:16:56] INFO root fetch - processPackages [TraffiX]: Downloading https://files.pythonhosted.org/packages/11/a0/0a25a1b711d47d04921f0227d8aeb2492c6db9140d8b9a45613c050489b9/TraffiX-0.1.2a0.tar.gz
+[2023-04-13 18:16:56] INFO root fetch - processPackages [saltgang]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 18:16:56] INFO root fetch - processPackages [TraffiX]: executing diffoscope
+[2023-04-13 18:16:56] INFO root fetch - processPackages [TraffiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TraffiX-0.1.1a0.tar.gz tmp/TraffiX-0.1.2a0.tar.gz --markdown 20230413/T/TraffiX/0.1.1a0-0.1.2a0/diff.md --exclude *.pyd
+[2023-04-13 18:16:56] INFO root fetch - processPackages [saltgang]: Downloading https://files.pythonhosted.org/packages/16/bf/9443cff3205e81af654e1a61f32183c912b678457535981077fbf10b3238/saltgang-0.1.8.tar.gz
+[2023-04-13 18:16:57] INFO root fetch - processPackages [openbb]: executing diffoscope
+[2023-04-13 18:16:57] INFO root fetch - processPackages [openbb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb-3.0.0rc1.tar.gz tmp/openbb-3.0.0rc2.tar.gz --markdown 20230413/o/openbb/3.0.0rc1-3.0.0rc2/diff.md --exclude *.pyd
+[2023-04-13 18:16:57] INFO root fetch - processPackages [saltgang]: Downloading https://files.pythonhosted.org/packages/91/02/b5fe37b6008ecfdcc955cdab8c98606cd5738661fa7ca825924b35ac396b/saltgang-0.1.9.tar.gz
+[2023-04-13 18:16:57] INFO root fetch - processPackages [saltgang]: executing diffoscope
+[2023-04-13 18:16:57] INFO root fetch - processPackages [saltgang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saltgang-0.1.8.tar.gz tmp/saltgang-0.1.9.tar.gz --markdown 20230413/s/saltgang/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 18:16:57] INFO root fetch - main [MainThread]: End processing [TraffiX]: success
+[2023-04-13 18:16:58] INFO root fetch - main [MainThread]: End processing [saltgang]: success
+[2023-04-13 18:17:00] INFO root fetch - main [MainThread]: End processing [voici]: success
+[2023-04-13 18:17:03] INFO root fetch - main [MainThread]: End processing [riptable]: success
+[2023-04-13 18:17:16] INFO root fetch - main [MainThread]: End processing [openbb]: success
+[2023-04-13 18:17:16] INFO root fetch - main [MainThread]: Store serial: [17695299]
