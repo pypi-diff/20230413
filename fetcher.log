@@ -8705,3 +8705,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 08:07:23] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-04-13 08:07:23] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-04-13 08:07:23] INFO root fetch - main [MainThread]: Store serial: [17687499]
+[2023-04-13 08:12:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687499]
+[2023-04-13 08:12:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-13 08:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysura
+[2023-04-13 08:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pystokes
+[2023-04-13 08:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kkpyutil
+[2023-04-13 08:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: viqi-api
+[2023-04-13 08:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py3dchart
+[2023-04-13 08:12:31] INFO root fetch - processPackages [pystokes]: New version: [2.2.6] Old Version: [2.2.5]
+[2023-04-13 08:12:31] INFO root fetch - processPackages [viqi-api]: New version: [0.6.4.4] Old Version: [0.6.4.3]
+[2023-04-13 08:12:31] INFO root fetch - processPackages [py3dchart]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 08:12:31] INFO root fetch - processPackages [pysura]: New version: [0.99.99] Old Version: [0.99.98]
+[2023-04-13 08:12:31] INFO root fetch - processPackages [kkpyutil]: New version: [0.99.1] Old Version: [0.99.0]
+[2023-04-13 08:12:32] INFO root fetch - processPackages [kkpyutil]: executing diffoscope
+[2023-04-13 08:12:32] INFO root fetch - processPackages [kkpyutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyutil-0.99.0.tar.gz tmp/kkpyutil-0.99.1.tar.gz --markdown 20230413/k/kkpyutil/0.99.0-0.99.1/diff.md --exclude *.pyd
+[2023-04-13 08:12:32] INFO root fetch - processPackages [viqi-api]: Downloading https://files.pythonhosted.org/packages/b4/d2/548308c9837227077d5f0f674d336b486ba2fd045c5fe6b03e412d363f12/viqi_api-0.6.4.4-py3-none-any.whl
+[2023-04-13 08:12:32] INFO root fetch - processPackages [pystokes]: Downloading https://files.pythonhosted.org/packages/63/2b/385a0f981be37d1c79cc1c497ebca6cb36abb335c553f1b12ab377749c2e/pystokes-2.2.5.tar.gz
+[2023-04-13 08:12:32] INFO root fetch - processPackages [py3dchart]: Downloading https://files.pythonhosted.org/packages/17/a4/34b4797088af632fb463224eeee68342795774459c98b1f336e292f69440/py3dchart-0.1.8.tar.gz
+[2023-04-13 08:12:32] INFO root fetch - processPackages [py3dchart]: executing diffoscope
+[2023-04-13 08:12:32] INFO root fetch - processPackages [py3dchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3dchart-0.1.7.tar.gz tmp/py3dchart-0.1.8.tar.gz --markdown 20230413/p/py3dchart/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 08:12:32] INFO root fetch - processPackages [pysura]: executing diffoscope
+[2023-04-13 08:12:32] INFO root fetch - processPackages [pysura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysura-0.99.98.tar.gz tmp/pysura-0.99.99.tar.gz --markdown 20230413/p/pysura/0.99.98-0.99.99/diff.md --exclude *.pyd
+[2023-04-13 08:12:32] INFO root fetch - processPackages [viqi-api]: executing diffoscope
+[2023-04-13 08:12:32] INFO root fetch - processPackages [viqi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viqi_api-0.6.4.3-py3-none-any.whl.zip tmp/viqi_api-0.6.4.4-py3-none-any.whl.zip --markdown 20230413/v/viqi-api/0.6.4.3-0.6.4.4/diff.md --exclude *.pyd
+[2023-04-13 08:12:32] INFO root fetch - processPackages [pystokes]: Downloading https://files.pythonhosted.org/packages/b6/fd/866510d3352da9491fe5daaf4d1ff3b27be3a4d8167e1650b6ad0b84e023/pystokes-2.2.6.tar.gz
+[2023-04-13 08:12:33] INFO root fetch - processPackages [pystokes]: executing diffoscope
+[2023-04-13 08:12:33] INFO root fetch - processPackages [pystokes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystokes-2.2.5.tar.gz tmp/pystokes-2.2.6.tar.gz --markdown 20230413/p/pystokes/2.2.5-2.2.6/diff.md --exclude *.pyd
+[2023-04-13 08:12:33] INFO root fetch - processPackages [kkpyutil]: Start processing: interval-tools
+[2023-04-13 08:12:33] INFO root fetch - main [MainThread]: End processing [kkpyutil]: success
+[2023-04-13 08:12:33] INFO root fetch - processPackages [interval-tools]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 08:12:33] INFO root fetch - main [MainThread]: End processing [py3dchart]: success
+[2023-04-13 08:12:33] INFO root fetch - main [MainThread]: End processing [viqi-api]: success
+[2023-04-13 08:12:33] INFO root fetch - processPackages [interval-tools]: executing diffoscope
+[2023-04-13 08:12:33] INFO root fetch - processPackages [interval-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interval-tools-0.9.0.tar.gz tmp/interval-tools-0.9.1.tar.gz --markdown 20230413/i/interval-tools/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 08:12:33] INFO root fetch - main [MainThread]: End processing [pysura]: success
+[2023-04-13 08:12:34] INFO root fetch - main [MainThread]: End processing [interval-tools]: success
+[2023-04-13 08:12:41] INFO root fetch - main [MainThread]: End processing [pystokes]: success
+[2023-04-13 08:12:41] INFO root fetch - main [MainThread]: Store serial: [17687516]
