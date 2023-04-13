@@ -21722,3 +21722,80 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 17:55:34] INFO root fetch - main [MainThread]: End processing [pydeflate]: success
 [2023-04-13 17:55:36] INFO root fetch - main [MainThread]: End processing [google-cloud-aiplatform]: success
 [2023-04-13 17:55:36] INFO root fetch - main [MainThread]: Store serial: [17695058]
+[2023-04-13 18:00:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17695058]
+[2023-04-13 18:00:44] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-13 18:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fra
+[2023-04-13 18:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keops-vt
+[2023-04-13 18:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fplore
+[2023-04-13 18:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: markdown-link-attr-modifier
+[2023-04-13 18:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quarchpy
+[2023-04-13 18:00:44] INFO root fetch - processPackages [fplore]: New version: [0.5b1] Old Version: [0.4a1]
+[2023-04-13 18:00:44] INFO root fetch - processPackages [markdown-link-attr-modifier]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 18:00:44] INFO root fetch - processPackages [fra]: New version: [2.4.0] Old Version: [2.3.5]
+[2023-04-13 18:00:44] WARNING root fetch - processPackages [keops-vt]: Skipping, unable to determine old version
+[2023-04-13 18:00:44] INFO root fetch - processPackages [keops-vt]: Start processing: paramiko-stat
+[2023-04-13 18:00:44] INFO root fetch - main [MainThread]: End processing [keops-vt] error
+[2023-04-13 18:00:44] INFO root fetch - processPackages [quarchpy]: New version: [2.1.9.dev3] Old Version: [2.1.9.dev2]
+[2023-04-13 18:00:44] WARNING root fetch - processPackages [paramiko-stat]: Skipping, unable to determine old version
+[2023-04-13 18:00:44] INFO root fetch - processPackages [paramiko-stat]: Start processing: steam-sdk
+[2023-04-13 18:00:44] INFO root fetch - main [MainThread]: End processing [paramiko-stat] error
+[2023-04-13 18:00:44] INFO root fetch - processPackages [steam-sdk]: New version: [2023.4.0] Old Version: [2023.2.3]
+[2023-04-13 18:00:44] INFO root fetch - processPackages [markdown-link-attr-modifier]: Downloading https://files.pythonhosted.org/packages/ac/8f/ac862d2a45d8eab22302af8858b7e08c06c70616b98d4aeb0d3399b174e8/markdown_link_attr_modifier-0.2.0.tar.gz
+[2023-04-13 18:00:44] INFO root fetch - processPackages [quarchpy]: Downloading https://files.pythonhosted.org/packages/4c/58/57c71932b71449bc466e74bd8478a30bedf723227a6aa33c2934896c2345/quarchpy-2.1.9.dev2-py2.py3-none-any.whl
+[2023-04-13 18:00:44] INFO root fetch - processPackages [fplore]: Downloading https://files.pythonhosted.org/packages/91/a2/bca75cbd7721acedff7d0993d8c0f186551f8c48597d1425aea94a5b6522/fplore-0.4a1.tar.gz
+[2023-04-13 18:00:44] INFO root fetch - processPackages [steam-sdk]: Downloading https://files.pythonhosted.org/packages/fb/7c/8ad86b47884d29a3ba61108e3c2d16a42824f83519977772763985c4c2b2/steam_sdk-2023.2.3.tar.gz
+[2023-04-13 18:00:44] WARNING root fetch - processPackages [quarchpy]: Skipping package: exceeds size limit 34469980>=10485760
+[2023-04-13 18:00:44] INFO root fetch - processPackages [quarchpy]: Start processing: mvt
+[2023-04-13 18:00:44] INFO root fetch - main [MainThread]: End processing [quarchpy] error
+[2023-04-13 18:00:45] INFO root fetch - processPackages [fra]: Downloading https://files.pythonhosted.org/packages/8c/02/85df5792faf806243012740953e1a39abf64f43a8548275592a935ec4337/fra-2.4.0.tar.gz
+[2023-04-13 18:00:45] INFO root fetch - processPackages [mvt]: New version: [2.2.5] Old Version: [2.2.4]
+[2023-04-13 18:00:45] INFO root fetch - processPackages [fplore]: Downloading https://files.pythonhosted.org/packages/7c/0f/85dd114bdb09846944669e690e43db66f83ed454969c1df84e5525999da0/fplore-0.5b1.tar.gz
+[2023-04-13 18:00:45] INFO root fetch - processPackages [steam-sdk]: Downloading https://files.pythonhosted.org/packages/30/fd/13e94ee8a5a6939ab292c3bc06b01426406c60679901fe70d8cf472ca55f/steam_sdk-2023.4.0.tar.gz
+[2023-04-13 18:00:45] INFO root fetch - processPackages [markdown-link-attr-modifier]: Downloading https://files.pythonhosted.org/packages/e0/30/d35aad054a27f119bff2408523d82c3f9a6d9936712c872f5b9fe817de5b/markdown_link_attr_modifier-0.2.1.tar.gz
+[2023-04-13 18:00:45] INFO root fetch - processPackages [fra]: executing diffoscope
+[2023-04-13 18:00:45] INFO root fetch - processPackages [fra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fra-2.3.5.tar.gz tmp/fra-2.4.0.tar.gz --markdown 20230413/f/fra/2.3.5-2.4.0/diff.md --exclude *.pyd
+[2023-04-13 18:00:45] INFO root fetch - processPackages [fplore]: executing diffoscope
+[2023-04-13 18:00:45] INFO root fetch - processPackages [fplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fplore-0.4a1.tar.gz tmp/fplore-0.5b1.tar.gz --markdown 20230413/f/fplore/0.4a1-0.5b1/diff.md --exclude *.pyd
+[2023-04-13 18:00:45] INFO root fetch - processPackages [markdown-link-attr-modifier]: executing diffoscope
+[2023-04-13 18:00:45] INFO root fetch - processPackages [markdown-link-attr-modifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markdown_link_attr_modifier-0.2.0.tar.gz tmp/markdown_link_attr_modifier-0.2.1.tar.gz --markdown 20230413/m/markdown-link-attr-modifier/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 18:00:45] INFO root fetch - processPackages [mvt]: Downloading https://files.pythonhosted.org/packages/10/7e/3bde1821bfeca23ba6e72900de03d2ddb563bd758868ea04c475753e437e/mvt-2.2.5.tar.gz
+[2023-04-13 18:00:45] INFO root fetch - processPackages [steam-sdk]: executing diffoscope
+[2023-04-13 18:00:45] INFO root fetch - processPackages [steam-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steam_sdk-2023.2.3.tar.gz tmp/steam_sdk-2023.4.0.tar.gz --markdown 20230413/s/steam-sdk/2023.2.3-2023.4.0/diff.md --exclude *.pyd
+[2023-04-13 18:00:45] INFO root fetch - processPackages [mvt]: executing diffoscope
+[2023-04-13 18:00:45] INFO root fetch - processPackages [mvt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mvt-2.2.4.tar.gz tmp/mvt-2.2.5.tar.gz --markdown 20230413/m/mvt/2.2.4-2.2.5/diff.md --exclude *.pyd
+[2023-04-13 18:00:46] INFO root fetch - processPackages [fra]: Start processing: pycodeless
+[2023-04-13 18:00:46] INFO root fetch - main [MainThread]: End processing [fra]: success
+[2023-04-13 18:00:46] WARNING root fetch - processPackages [pycodeless]: Skipping, unable to determine old version
+[2023-04-13 18:00:46] INFO root fetch - processPackages [pycodeless]: Start processing: localstack-core
+[2023-04-13 18:00:46] INFO root fetch - main [MainThread]: End processing [pycodeless] error
+[2023-04-13 18:00:46] INFO root fetch - processPackages [fplore]: Start processing: hu-nev
+[2023-04-13 18:00:46] INFO root fetch - main [MainThread]: End processing [fplore]: success
+[2023-04-13 18:00:46] INFO root fetch - processPackages [localstack-core]: New version: [2.0.2.dev20230413160220] Old Version: [2.0.2.dev20230413131426]
+[2023-04-13 18:00:46] WARNING root fetch - processPackages [hu-nev]: Skipping, unable to determine old version
+[2023-04-13 18:00:46] INFO root fetch - processPackages [hu-nev]: Start processing: polywrap-msgpack
+[2023-04-13 18:00:46] INFO root fetch - main [MainThread]: End processing [hu-nev] error
+[2023-04-13 18:00:46] INFO root fetch - processPackages [polywrap-msgpack]: New version: [0.1.0a9] Old Version: [0.1.0a8]
+[2023-04-13 18:00:46] INFO root fetch - processPackages [markdown-link-attr-modifier]: Start processing: returnn
+[2023-04-13 18:00:46] INFO root fetch - main [MainThread]: End processing [markdown-link-attr-modifier]: success
+[2023-04-13 18:00:46] INFO root fetch - processPackages [polywrap-msgpack]: executing diffoscope
+[2023-04-13 18:00:46] INFO root fetch - processPackages [polywrap-msgpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_msgpack-0.1.0a8.tar.gz tmp/polywrap_msgpack-0.1.0a9.tar.gz --markdown 20230413/p/polywrap-msgpack/0.1.0a8-0.1.0a9/diff.md --exclude *.pyd
+[2023-04-13 18:00:46] INFO root fetch - processPackages [returnn]: New version: [1.20230413.93323] Old Version: [1.20230413.174949]
+[2023-04-13 18:00:46] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/c5/8e/636cea5f780c0df8b596f18c1eca44740ca537f013d3bc44651b0ac18c21/localstack-core-2.0.2.dev20230413160220.tar.gz
+[2023-04-13 18:00:46] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/49/d4/efd453477ec0e8a14bba238c1bb69ec8b27421962198d156749fc1a7464f/returnn-1.20230413.174949.tar.gz
+[2023-04-13 18:00:47] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-04-13 18:00:47] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.2.dev20230413131426.tar.gz tmp/localstack-core-2.0.2.dev20230413160220.tar.gz --markdown 20230413/l/localstack-core/2.0.2.dev20230413131426-2.0.2.dev20230413160220/diff.md --exclude *.pyd
+[2023-04-13 18:00:47] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-13 18:00:47] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230413.174949.tar.gz tmp/returnn-1.20230413.93323.tar.gz --markdown 20230413/r/returnn/1.20230413.174949-1.20230413.93323/diff.md --exclude *.pyd
+[2023-04-13 18:00:47] INFO root fetch - processPackages [mvt]: Start processing: python-ms-core
+[2023-04-13 18:00:47] INFO root fetch - main [MainThread]: End processing [mvt]: success
+[2023-04-13 18:00:47] INFO root fetch - processPackages [python-ms-core]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 18:00:47] INFO root fetch - main [MainThread]: End processing [polywrap-msgpack]: success
+[2023-04-13 18:00:47] INFO root fetch - processPackages [python-ms-core]: Downloading https://files.pythonhosted.org/packages/8b/cb/b66113396fd3898574b01935799477bc74fd098ed667fcdd87c3b3fa8d82/python_ms_core-0.0.8-py3-none-any.whl
+[2023-04-13 18:00:48] INFO root fetch - processPackages [python-ms-core]: Downloading https://files.pythonhosted.org/packages/36/68/f44aaef418d79d525b7c72f7705b33327f55471582b3f3d12e768365b053/python_ms_core-0.0.9-py3-none-any.whl
+[2023-04-13 18:00:48] INFO root fetch - processPackages [python-ms-core]: executing diffoscope
+[2023-04-13 18:00:48] INFO root fetch - processPackages [python-ms-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_ms_core-0.0.8-py3-none-any.whl.zip tmp/python_ms_core-0.0.9-py3-none-any.whl.zip --markdown 20230413/p/python-ms-core/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 18:00:49] INFO root fetch - main [MainThread]: End processing [python-ms-core]: success
+[2023-04-13 18:00:49] INFO root fetch - main [MainThread]: End processing [steam-sdk]: success
+[2023-04-13 18:00:51] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-13 18:00:53] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-04-13 18:00:53] INFO root fetch - main [MainThread]: Store serial: [17695113]
