@@ -6679,3 +6679,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:09:24] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-04-13 05:09:24] INFO root fetch - main [MainThread]: End processing [dpsa4fl-bindings]: success
 [2023-04-13 05:09:24] INFO root fetch - main [MainThread]: Store serial: [17686297]
+[2023-04-13 05:14:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686297]
+[2023-04-13 05:14:31] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-13 05:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-account-payment-order
+[2023-04-13 05:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-account-payment-partner
+[2023-04-13 05:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py3dchart
+[2023-04-13 05:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lorettOrbital
+[2023-04-13 05:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openrl
+[2023-04-13 05:14:31] INFO root fetch - processPackages [lorettOrbital]: New version: [1.0.13042023] Old Version: [1.0.12042023]
+[2023-04-13 05:14:31] WARNING root fetch - processPackages [openrl]: Skipping, unable to determine old version
+[2023-04-13 05:14:31] INFO root fetch - processPackages [openrl]: Start processing: aTemUsON
+[2023-04-13 05:14:31] INFO root fetch - main [MainThread]: End processing [openrl] error
+[2023-04-13 05:14:31] WARNING root fetch - processPackages [py3dchart]: Skipping, unable to determine old version
+[2023-04-13 05:14:31] INFO root fetch - processPackages [py3dchart]: Start processing: cdktf-cdktf-provider-pagerduty
+[2023-04-13 05:14:31] INFO root fetch - main [MainThread]: End processing [py3dchart] error
+[2023-04-13 05:14:31] INFO root fetch - processPackages [odoo14-addon-account-payment-order]: New version: [14.0.2.0.2.dev8] Old Version: [14.0.2.0.2.dev7]
+[2023-04-13 05:14:31] INFO root fetch - processPackages [odoo-addon-account-payment-partner]: New version: [16.0.1.1.1.1] Old Version: [16.0.1.1.1]
+[2023-04-13 05:14:31] INFO root fetch - processPackages [aTemUsON]: New version: [1.2] Old Version: [1.1]
+[2023-04-13 05:14:31] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: New version: [6.0.1] Old Version: [6.0.0]
+[2023-04-13 05:14:31] INFO root fetch - processPackages [lorettOrbital]: Downloading https://files.pythonhosted.org/packages/a2/99/ad10277bd3e0e8a1ce3a74ec9afb4095b2a2d649890032212ab02153b3cc/lorettOrbital-1.0.12042023-py2.py3-none-any.whl
+[2023-04-13 05:14:32] INFO root fetch - processPackages [odoo-addon-account-payment-partner]: Downloading https://files.pythonhosted.org/packages/6e/7c/eaabdaa363169d13d4d328ebd0f484846565b1f20affc2529876504ac0d2/odoo_addon_account_payment_partner-16.0.1.1.1-py3-none-any.whl
+[2023-04-13 05:14:32] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: Downloading https://files.pythonhosted.org/packages/72/ea/056adc76e74b45b63e1989dd375f41aa6989c510ee6b779350dae95c47c3/cdktf-cdktf-provider-pagerduty-6.0.1.tar.gz
+[2023-04-13 05:14:32] INFO root fetch - processPackages [odoo14-addon-account-payment-order]: Downloading https://files.pythonhosted.org/packages/41/f4/f34f890c1edd3207f3a8b6ae281c45f64dad337e9a0954932e14d0987865/odoo14_addon_account_payment_order-14.0.2.0.2.dev8-py3-none-any.whl
+[2023-04-13 05:14:32] INFO root fetch - processPackages [aTemUsON]: Downloading https://files.pythonhosted.org/packages/95/92/9bdf19aad0ca77cebaf451d6856a3e7ecd034124a00489a24c81b31096ce/aTemUsON-1.2.tar.gz
+[2023-04-13 05:14:32] INFO root fetch - processPackages [lorettOrbital]: executing diffoscope
+[2023-04-13 05:14:32] INFO root fetch - processPackages [lorettOrbital]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lorettOrbital-1.0.12042023-py2.py3-none-any.whl.zip tmp/lorettOrbital-1.0.13042023.tar.gz --markdown 20230413/l/lorettOrbital/1.0.12042023-1.0.13042023/diff.md --exclude *.pyd
+[2023-04-13 05:14:32] INFO root fetch - processPackages [odoo14-addon-account-payment-order]: executing diffoscope
+[2023-04-13 05:14:32] INFO root fetch - processPackages [odoo14-addon-account-payment-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_payment_order-14.0.2.0.2.dev7-py3-none-any.whl.zip tmp/odoo14_addon_account_payment_order-14.0.2.0.2.dev8-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-account-payment-order/14.0.2.0.2.dev7-14.0.2.0.2.dev8/diff.md --exclude *.pyd
+[2023-04-13 05:14:32] INFO root fetch - processPackages [odoo-addon-account-payment-partner]: Downloading https://files.pythonhosted.org/packages/02/29/002001a8b815fa2d2cd9ba92333aabd55769424d7f69cb99d787a995b440/odoo_addon_account_payment_partner-16.0.1.1.1.1-py3-none-any.whl
+[2023-04-13 05:14:32] INFO root fetch - processPackages [aTemUsON]: executing diffoscope
+[2023-04-13 05:14:32] INFO root fetch - processPackages [aTemUsON]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aTemUsON-1.1.tar.gz tmp/aTemUsON-1.2.tar.gz --markdown 20230413/a/aTemUsON/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-13 05:14:32] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: executing diffoscope
+[2023-04-13 05:14:32] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-pagerduty-6.0.0.tar.gz tmp/cdktf-cdktf-provider-pagerduty-6.0.1.tar.gz --markdown 20230413/c/cdktf-cdktf-provider-pagerduty/6.0.0-6.0.1/diff.md --exclude *.pyd
+[2023-04-13 05:14:32] INFO root fetch - processPackages [odoo-addon-account-payment-partner]: executing diffoscope
+[2023-04-13 05:14:32] INFO root fetch - processPackages [odoo-addon-account-payment-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_partner-16.0.1.1.1-py3-none-any.whl.zip tmp/odoo_addon_account_payment_partner-16.0.1.1.1.1-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-account-payment-partner/16.0.1.1.1-16.0.1.1.1.1/diff.md --exclude *.pyd
+[2023-04-13 05:14:33] INFO root fetch - processPackages [lorettOrbital]: Start processing: common-test
+[2023-04-13 05:14:33] INFO root fetch - main [MainThread]: End processing [lorettOrbital]: success
+[2023-04-13 05:14:33] INFO root fetch - processPackages [common-test]: New version: [9.9.0] Old Version: [9.8.0]
+[2023-04-13 05:14:33] INFO root fetch - processPackages [aTemUsON]: Start processing: sassss
+[2023-04-13 05:14:33] INFO root fetch - main [MainThread]: End processing [aTemUsON]: success
+[2023-04-13 05:14:33] WARNING root fetch - processPackages [sassss]: Skipping, unable to determine old version
+[2023-04-13 05:14:33] INFO root fetch - processPackages [sassss]: Start processing: cdktf-cdktf-provider-random
+[2023-04-13 05:14:33] INFO root fetch - main [MainThread]: End processing [sassss] error
+[2023-04-13 05:14:33] INFO root fetch - processPackages [cdktf-cdktf-provider-random]: New version: [6.0.1] Old Version: [6.0.0]
+[2023-04-13 05:14:33] INFO root fetch - processPackages [cdktf-cdktf-provider-random]: Downloading https://files.pythonhosted.org/packages/59/dc/6ba65ca3d55172d242d46a9149d1cb90eb1a5f4325bb655e2c00a69d5b35/cdktf-cdktf-provider-random-6.0.1.tar.gz
+[2023-04-13 05:14:33] INFO root fetch - processPackages [common-test]: executing diffoscope
+[2023-04-13 05:14:33] INFO root fetch - processPackages [common-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/common-test-9.8.0.tar.gz tmp/common-test-9.9.0.tar.gz --markdown 20230413/c/common-test/9.8.0-9.9.0/diff.md --exclude *.pyd
+[2023-04-13 05:14:33] INFO root fetch - processPackages [odoo-addon-account-payment-partner]: Start processing: always-updates
+[2023-04-13 05:14:33] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-partner]: success
+[2023-04-13 05:14:33] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-13 05:14:34] INFO root fetch - processPackages [cdktf-cdktf-provider-random]: executing diffoscope
+[2023-04-13 05:14:34] INFO root fetch - processPackages [cdktf-cdktf-provider-random]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-random-6.0.0.tar.gz tmp/cdktf-cdktf-provider-random-6.0.1.tar.gz --markdown 20230413/c/cdktf-cdktf-provider-random/6.0.0-6.0.1/diff.md --exclude *.pyd
+[2023-04-13 05:14:34] INFO root fetch - processPackages [odoo14-addon-account-payment-order]: Start processing: caesar-rock
+[2023-04-13 05:14:34] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-payment-order]: success
+[2023-04-13 05:14:34] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-13 05:14:34] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230413/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-13 05:14:34] WARNING root fetch - processPackages [caesar-rock]: Skipping, unable to determine old version
+[2023-04-13 05:14:34] INFO root fetch - processPackages [caesar-rock]: Start processing: cqepyutils
+[2023-04-13 05:14:34] INFO root fetch - main [MainThread]: End processing [caesar-rock] error
+[2023-04-13 05:14:34] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 05:14:34] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-13 05:14:34] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230413/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 05:14:34] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-pagerduty]: success
+[2023-04-13 05:14:35] INFO root fetch - main [MainThread]: End processing [common-test]: success
+[2023-04-13 05:14:35] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-random]: success
+[2023-04-13 05:14:35] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-04-13 05:14:35] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-13 05:14:35] INFO root fetch - main [MainThread]: Store serial: [17686352]
