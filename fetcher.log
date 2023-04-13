@@ -13076,3 +13076,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 11:58:48] INFO root fetch - main [MainThread]: End processing [pytac]: success
 [2023-04-13 11:59:22] INFO root fetch - main [MainThread]: End processing [gflanguages]: success
 [2023-04-13 11:59:22] INFO root fetch - main [MainThread]: Store serial: [17690276]
+[2023-04-13 12:04:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690276]
+[2023-04-13 12:04:31] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-13 12:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xj-flow
+[2023-04-13 12:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: retroperm
+[2023-04-13 12:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wagtail-airtable
+[2023-04-13 12:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: finbourne-identity-sdk
+[2023-04-13 12:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scikit-misc
+[2023-04-13 12:04:31] INFO root fetch - processPackages [wagtail-airtable]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-04-13 12:04:31] INFO root fetch - processPackages [xj-flow]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 12:04:31] WARNING root fetch - processPackages [retroperm]: Skipping, unable to determine old version
+[2023-04-13 12:04:31] INFO root fetch - processPackages [retroperm]: Start processing: pymycobot
+[2023-04-13 12:04:31] INFO root fetch - main [MainThread]: End processing [retroperm] error
+[2023-04-13 12:04:31] INFO root fetch - processPackages [scikit-misc]: New version: [0.2.0rc4] Old Version: [0.1.4]
+[2023-04-13 12:04:31] INFO root fetch - processPackages [finbourne-identity-sdk]: New version: [0.0.840] Old Version: [0.0.2371]
+[2023-04-13 12:04:31] INFO root fetch - processPackages [pymycobot]: New version: [3.0.8b2] Old Version: [3.0.8b1]
+[2023-04-13 12:04:31] INFO root fetch - processPackages [xj-flow]: executing diffoscope
+[2023-04-13 12:04:31] INFO root fetch - processPackages [xj-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_flow-1.0.8.tar.gz tmp/xj_flow-1.0.9.tar.gz --markdown 20230413/x/xj-flow/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 12:04:31] INFO root fetch - processPackages [wagtail-airtable]: Downloading https://files.pythonhosted.org/packages/c4/ca/e371e8d8ce6002e76d97ef0330af0e6971ea833ce5fe3f7113cff4d01815/wagtail_airtable-0.5.1-py3-none-any.whl
+[2023-04-13 12:04:31] INFO root fetch - processPackages [finbourne-identity-sdk]: Downloading https://files.pythonhosted.org/packages/c0/73/793a355b5b7d5f0fc64101319519623475698f7cf96229f32c09c0c0646b/finbourne-identity-sdk-0.0.2371.tar.gz
+[2023-04-13 12:04:31] INFO root fetch - processPackages [scikit-misc]: Downloading https://files.pythonhosted.org/packages/7f/4c/09b815280c0362fda3172272973b3e18d9347df7607d491abc53e9a47f00/scikit-misc-0.1.4.tar.gz
+[2023-04-13 12:04:31] INFO root fetch - processPackages [pymycobot]: Downloading https://files.pythonhosted.org/packages/46/be/112965f99fe70cb5be889e78526befe421346a3a4d0c97a4ce29032764f7/pymycobot-3.0.8b1.tar.gz
+[2023-04-13 12:04:32] INFO root fetch - processPackages [wagtail-airtable]: Downloading https://files.pythonhosted.org/packages/f6/c3/e3715d98b28b6d1db5002fbe9b700b50e7417e59d182023082736651803a/wagtail_airtable-0.6.0-py3-none-any.whl
+[2023-04-13 12:04:32] INFO root fetch - processPackages [finbourne-identity-sdk]: Downloading https://files.pythonhosted.org/packages/60/02/556fee55b1aaf556ab945658f46e9f25aae842d2790fb15aa1ad81b2ba2a/finbourne-identity-sdk-0.0.840.tar.gz
+[2023-04-13 12:04:32] INFO root fetch - processPackages [wagtail-airtable]: executing diffoscope
+[2023-04-13 12:04:32] INFO root fetch - processPackages [wagtail-airtable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_airtable-0.5.1-py3-none-any.whl.zip tmp/wagtail_airtable-0.6.0-py3-none-any.whl.zip --markdown 20230413/w/wagtail-airtable/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-04-13 12:04:32] INFO root fetch - processPackages [scikit-misc]: Downloading https://files.pythonhosted.org/packages/1f/8f/8e2d7ed6069d7ec772de14a463ca455258e4d0afd9008433d7ed4543136c/scikit_misc-0.2.0rc4-cp39-cp39-macosx_12_0_arm64.whl
+[2023-04-13 12:04:32] INFO root fetch - processPackages [pymycobot]: Downloading https://files.pythonhosted.org/packages/75/42/8127341cdd8caa1e9a9efbc91991faab67287e1a41feee27c5ed757a8f99/pymycobot-3.0.8b2.tar.gz
+[2023-04-13 12:04:32] INFO root fetch - processPackages [pymycobot]: executing diffoscope
+[2023-04-13 12:04:32] INFO root fetch - processPackages [pymycobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymycobot-3.0.8b1.tar.gz tmp/pymycobot-3.0.8b2.tar.gz --markdown 20230413/p/pymycobot/3.0.8b1-3.0.8b2/diff.md --exclude *.pyd
+[2023-04-13 12:04:32] INFO root fetch - processPackages [finbourne-identity-sdk]: executing diffoscope
+[2023-04-13 12:04:32] INFO root fetch - processPackages [finbourne-identity-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-identity-sdk-0.0.2371.tar.gz tmp/finbourne-identity-sdk-0.0.840.tar.gz --markdown 20230413/f/finbourne-identity-sdk/0.0.2371-0.0.840/diff.md --exclude *.pyd
+[2023-04-13 12:04:33] INFO root fetch - processPackages [wagtail-airtable]: Start processing: odoo14-addon-purchase-requisition-auto-rfq
+[2023-04-13 12:04:33] INFO root fetch - main [MainThread]: End processing [wagtail-airtable]: success
+[2023-04-13 12:04:33] WARNING root fetch - processPackages [odoo14-addon-purchase-requisition-auto-rfq]: Skipping, unable to determine old version
+[2023-04-13 12:04:33] INFO root fetch - processPackages [odoo14-addon-purchase-requisition-auto-rfq]: Start processing: transformers-gradients
+[2023-04-13 12:04:33] INFO root fetch - main [MainThread]: End processing [odoo14-addon-purchase-requisition-auto-rfq] error
+[2023-04-13 12:04:33] INFO root fetch - processPackages [transformers-gradients]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 12:04:33] INFO root fetch - main [MainThread]: End processing [xj-flow]: success
+[2023-04-13 12:04:33] INFO root fetch - processPackages [transformers-gradients]: Downloading https://files.pythonhosted.org/packages/5f/02/ab63f30c3ea8b810f3ec5e13d1d1ebd219631f66478f5db84cb187bae379/transformers_gradients-0.0.5.tar.gz
+[2023-04-13 12:04:33] INFO root fetch - main [MainThread]: End processing [pymycobot]: success
+[2023-04-13 12:04:33] INFO root fetch - processPackages [scikit-misc]: executing diffoscope
+[2023-04-13 12:04:33] INFO root fetch - processPackages [scikit-misc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-misc-0.1.4.tar.gz tmp/scikit_misc-0.2.0rc4-cp39-cp39-macosx_12_0_arm64.whl.zip --markdown 20230413/s/scikit-misc/0.1.4-0.2.0rc4/diff.md --exclude *.pyd
+[2023-04-13 12:04:33] INFO root fetch - processPackages [transformers-gradients]: executing diffoscope
+[2023-04-13 12:04:33] INFO root fetch - processPackages [transformers-gradients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformers_gradients-0.0.4.tar.gz tmp/transformers_gradients-0.0.5.tar.gz --markdown 20230413/t/transformers-gradients/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 12:04:34] INFO root fetch - main [MainThread]: End processing [finbourne-identity-sdk]: success
+[2023-04-13 12:04:34] INFO root fetch - main [MainThread]: End processing [transformers-gradients]: success
+[2023-04-13 12:04:35] INFO root fetch - main [MainThread]: End processing [scikit-misc]: success
+[2023-04-13 12:04:35] INFO root fetch - main [MainThread]: Store serial: [17690306]
