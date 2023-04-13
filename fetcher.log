@@ -20304,3 +20304,198 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 17:01:52] INFO root fetch - main [MainThread]: End processing [dagster]: success
 [2023-04-13 17:03:05] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-04-13 17:03:05] INFO root fetch - main [MainThread]: Store serial: [17694227]
+[2023-04-13 17:08:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17694227]
+[2023-04-13 17:08:23] INFO root fetch - main [MainThread]: Found 33 changed packages
+[2023-04-13 17:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paasta-tools
+[2023-04-13 17:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-casdoor
+[2023-04-13 17:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seq2pat
+[2023-04-13 17:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: twlib
+[2023-04-13 17:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: coiled
+[2023-04-13 17:08:23] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-13 17:08:23] INFO root fetch - processPackages [fastapi-casdoor]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 17:08:23] INFO root fetch - processPackages [twlib]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-13 17:08:23] INFO root fetch - processPackages [seq2pat]: New version: [1.4.0] Old Version: [1.3.4]
+[2023-04-13 17:08:23] INFO root fetch - processPackages [paasta-tools]: New version: [0.92.1] Old Version: [0.92.0]
+[2023-04-13 17:08:23] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-13 17:08:23] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230413/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-13 17:08:23] INFO root fetch - processPackages [twlib]: Downloading https://files.pythonhosted.org/packages/f9/b4/aea7826a9259a65e703d6e8d68ade297527a641de500c330da2a30f85bf3/twlib-2.1.0.tar.gz
+[2023-04-13 17:08:23] INFO root fetch - processPackages [seq2pat]: Downloading https://files.pythonhosted.org/packages/23/a9/a5682c59aeaba1d8e464352d5fab064c5d932347eff4761a2ad9b523e3a4/seq2pat-1.3.4.tar.gz
+[2023-04-13 17:08:23] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/c7/b3/0a383a7f68a76c50dc6508603df2587e6d09e011af51d088754f44774389/fastapi_casdoor-0.1.8-py3.10.egg
+[2023-04-13 17:08:23] INFO root fetch - processPackages [paasta-tools]: executing diffoscope
+[2023-04-13 17:08:23] INFO root fetch - processPackages [paasta-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paasta-tools-0.92.0.tar.gz tmp/paasta-tools-0.92.1.tar.gz --markdown 20230413/p/paasta-tools/0.92.0-0.92.1/diff.md --exclude *.pyd
+[2023-04-13 17:08:23] INFO root fetch - processPackages [twlib]: Downloading https://files.pythonhosted.org/packages/d2/da/e0c2b5df53996eca9f9e18b1320f9ada6ebcc0734f4b677d49f1adeea61c/twlib-2.1.1.tar.gz
+[2023-04-13 17:08:23] INFO root fetch - processPackages [fastapi-casdoor]: executing diffoscope
+[2023-04-13 17:08:23] INFO root fetch - processPackages [fastapi-casdoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_casdoor-0.1.7-py3.8.egg tmp/fastapi_casdoor-0.1.8-py3.10.egg --markdown 20230413/f/fastapi-casdoor/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 17:08:23] INFO root fetch - processPackages [seq2pat]: Downloading https://files.pythonhosted.org/packages/a7/5f/8943b2c6b09aac177c3a6cd4a0304e1291031baf5f48db94876306de0be0/seq2pat-1.4.0.tar.gz
+[2023-04-13 17:08:23] INFO root fetch - processPackages [twlib]: executing diffoscope
+[2023-04-13 17:08:23] INFO root fetch - processPackages [twlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twlib-2.1.0.tar.gz tmp/twlib-2.1.1.tar.gz --markdown 20230413/t/twlib/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-13 17:08:23] INFO root fetch - processPackages [seq2pat]: executing diffoscope
+[2023-04-13 17:08:23] INFO root fetch - processPackages [seq2pat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seq2pat-1.3.4.tar.gz tmp/seq2pat-1.4.0.tar.gz --markdown 20230413/s/seq2pat/1.3.4-1.4.0/diff.md --exclude *.pyd
+[2023-04-13 17:08:24] INFO root fetch - processPackages [fastapi-casdoor]: Start processing: easys-ordermanager
+[2023-04-13 17:08:24] INFO root fetch - main [MainThread]: End processing [fastapi-casdoor]: success
+[2023-04-13 17:08:24] INFO root fetch - processPackages [easys-ordermanager]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-13 17:08:24] INFO root fetch - processPackages [twlib]: Start processing: pyarmor.cli.runtime
+[2023-04-13 17:08:24] INFO root fetch - main [MainThread]: End processing [twlib]: success
+[2023-04-13 17:08:24] INFO root fetch - processPackages [easys-ordermanager]: Downloading https://files.pythonhosted.org/packages/52/f9/287d5d2a66a43a811b2b7b19f38b64379a955da4e337eea21c54c752cc94/easys-ordermanager-2.1.1.tar.gz
+[2023-04-13 17:08:24] INFO root fetch - processPackages [pyarmor.cli.runtime]: New version: [2.1.dev9] Old Version: [2.1.dev8]
+[2023-04-13 17:08:24] INFO root fetch - processPackages [pyarmor.cli.runtime]: executing diffoscope
+[2023-04-13 17:08:24] INFO root fetch - processPackages [pyarmor.cli.runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.runtime-2.1.dev8-cp39-none-any.whl.zip tmp/pyarmor.cli.runtime-2.1.dev9-cp39-none-any.whl.zip --markdown 20230413/p/pyarmor.cli.runtime/2.1.dev8-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-13 17:08:25] INFO root fetch - processPackages [easys-ordermanager]: Downloading https://files.pythonhosted.org/packages/67/1d/1338bfa18390cae9116974d0682a30041d20445c03715352f69db4e15d4c/easys-ordermanager-2.1.2.tar.gz
+[2023-04-13 17:08:25] INFO root fetch - processPackages [easys-ordermanager]: executing diffoscope
+[2023-04-13 17:08:25] INFO root fetch - processPackages [easys-ordermanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easys-ordermanager-2.1.1.tar.gz tmp/easys-ordermanager-2.1.2.tar.gz --markdown 20230413/e/easys-ordermanager/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-13 17:08:25] INFO root fetch - processPackages [paasta-tools]: Start processing: jina-now
+[2023-04-13 17:08:25] INFO root fetch - main [MainThread]: End processing [paasta-tools]: success
+[2023-04-13 17:08:25] INFO root fetch - processPackages [jina-now]: New version: [0.0.9.dev2] Old Version: [0.0.9]
+[2023-04-13 17:08:26] INFO root fetch - processPackages [jina-now]: executing diffoscope
+[2023-04-13 17:08:26] INFO root fetch - processPackages [jina-now]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jina-now-0.0.9.tar.gz tmp/jina-now-0.0.9.dev2.tar.gz --markdown 20230413/j/jina-now/0.0.9-0.0.9.dev2/diff.md --exclude *.pyd
+[2023-04-13 17:08:26] INFO root fetch - processPackages [pyarmor.cli.runtime]: Start processing: mindsdb-sdk
+[2023-04-13 17:08:26] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.runtime]: success
+[2023-04-13 17:08:26] INFO root fetch - processPackages [mindsdb-sdk]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-13 17:08:26] INFO root fetch - processPackages [mindsdb-sdk]: Downloading https://files.pythonhosted.org/packages/cb/88/ba444682549a1115ecd41b792321f7919c43f2c4f949f08a6e3da8f64bad/mindsdb_sdk-1.0.1.tar.gz
+[2023-04-13 17:08:26] INFO root fetch - processPackages [easys-ordermanager]: Start processing: OpenMEASURE
+[2023-04-13 17:08:26] INFO root fetch - main [MainThread]: End processing [easys-ordermanager]: success
+[2023-04-13 17:08:26] INFO root fetch - processPackages [OpenMEASURE]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 17:08:26] INFO root fetch - processPackages [seq2pat]: Start processing: pyarmor
+[2023-04-13 17:08:26] INFO root fetch - main [MainThread]: End processing [seq2pat]: success
+[2023-04-13 17:08:26] INFO root fetch - processPackages [pyarmor]: New version: [8.1.dev9] Old Version: [8.1.dev7]
+[2023-04-13 17:08:26] INFO root fetch - processPackages [pyarmor]: executing diffoscope
+[2023-04-13 17:08:26] INFO root fetch - processPackages [pyarmor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor-8.1.dev7.zip tmp/pyarmor-8.1.dev9.zip --markdown 20230413/p/pyarmor/8.1.dev7-8.1.dev9/diff.md --exclude *.pyd
+[2023-04-13 17:08:26] INFO root fetch - processPackages [mindsdb-sdk]: Downloading https://files.pythonhosted.org/packages/ed/7a/d0b93047449bdd40d53b52b5e971942d2ac2200c89c7277b18dd922ba00b/mindsdb_sdk-1.0.2.tar.gz
+[2023-04-13 17:08:27] INFO root fetch - processPackages [OpenMEASURE]: executing diffoscope
+[2023-04-13 17:08:27] INFO root fetch - processPackages [OpenMEASURE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenMEASURE-0.1.8.tar.gz tmp/OpenMEASURE-0.1.9.tar.gz --markdown 20230413/O/OpenMEASURE/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 17:08:27] INFO root fetch - processPackages [mindsdb-sdk]: executing diffoscope
+[2023-04-13 17:08:27] INFO root fetch - processPackages [mindsdb-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindsdb_sdk-1.0.1.tar.gz tmp/mindsdb_sdk-1.0.2.tar.gz --markdown 20230413/m/mindsdb-sdk/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-13 17:08:27] INFO root fetch - processPackages [jina-now]: Start processing: openctp-ctp
+[2023-04-13 17:08:27] INFO root fetch - main [MainThread]: End processing [jina-now]: success
+[2023-04-13 17:08:27] WARNING root fetch - processPackages [openctp-ctp]: Skipping, unable to determine old version
+[2023-04-13 17:08:27] INFO root fetch - processPackages [openctp-ctp]: Start processing: locscale
+[2023-04-13 17:08:27] INFO root fetch - main [MainThread]: End processing [openctp-ctp] error
+[2023-04-13 17:08:27] INFO root fetch - processPackages [locscale]: New version: [2.1.4b0] Old Version: [2.1.2]
+[2023-04-13 17:08:27] INFO root fetch - processPackages [locscale]: Downloading https://files.pythonhosted.org/packages/5d/8b/5c9b50578da1f0272bb7bfb576d55480d0591041997a2c4130920dae6e33/locscale-2.1.2.tar.gz
+[2023-04-13 17:08:28] INFO root fetch - processPackages [OpenMEASURE]: Start processing: torch-simple-timing
+[2023-04-13 17:08:28] INFO root fetch - main [MainThread]: End processing [OpenMEASURE]: success
+[2023-04-13 17:08:28] INFO root fetch - processPackages [locscale]: Downloading https://files.pythonhosted.org/packages/c8/96/0c087c89c4edbb24acbb68c7acf55fa5da6bbd3a8b0381b3f568d96bfe8e/locscale-2.1.4b0.tar.gz
+[2023-04-13 17:08:28] INFO root fetch - processPackages [torch-simple-timing]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 17:08:28] INFO root fetch - processPackages [mindsdb-sdk]: Start processing: mlserver-sklearn
+[2023-04-13 17:08:28] INFO root fetch - main [MainThread]: End processing [mindsdb-sdk]: success
+[2023-04-13 17:08:28] INFO root fetch - processPackages [mlserver-sklearn]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-13 17:08:28] INFO root fetch - processPackages [torch-simple-timing]: Downloading https://files.pythonhosted.org/packages/50/34/d0a33738ade61b316f42c742cf5c3d2ce943987714c000ac26f8f311b637/torch_simple_timing-0.1.2.tar.gz
+[2023-04-13 17:08:28] INFO root fetch - processPackages [locscale]: executing diffoscope
+[2023-04-13 17:08:28] INFO root fetch - processPackages [locscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locscale-2.1.2.tar.gz tmp/locscale-2.1.4b0.tar.gz --markdown 20230413/l/locscale/2.1.2-2.1.4b0/diff.md --exclude *.pyd
+[2023-04-13 17:08:28] INFO root fetch - processPackages [mlserver-sklearn]: executing diffoscope
+[2023-04-13 17:08:28] INFO root fetch - processPackages [mlserver-sklearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-sklearn-1.3.0rc1.tar.gz tmp/mlserver-sklearn-1.3.0rc2.tar.gz --markdown 20230413/m/mlserver-sklearn/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-13 17:08:28] INFO root fetch - processPackages [torch-simple-timing]: executing diffoscope
+[2023-04-13 17:08:28] INFO root fetch - processPackages [torch-simple-timing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_simple_timing-0.1.1.tar.gz tmp/torch_simple_timing-0.1.2.tar.gz --markdown 20230413/t/torch-simple-timing/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 17:08:28] INFO root fetch - processPackages [pyarmor]: Start processing: mlserver-lightgbm
+[2023-04-13 17:08:28] INFO root fetch - main [MainThread]: End processing [pyarmor]: success
+[2023-04-13 17:08:28] INFO root fetch - processPackages [mlserver-lightgbm]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-13 17:08:29] INFO root fetch - processPackages [mlserver-lightgbm]: executing diffoscope
+[2023-04-13 17:08:29] INFO root fetch - processPackages [mlserver-lightgbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-lightgbm-1.3.0rc1.tar.gz tmp/mlserver-lightgbm-1.3.0rc2.tar.gz --markdown 20230413/m/mlserver-lightgbm/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-13 17:08:29] INFO root fetch - processPackages [mlserver-sklearn]: Start processing: mlserver-mlflow
+[2023-04-13 17:08:29] INFO root fetch - main [MainThread]: End processing [mlserver-sklearn]: success
+[2023-04-13 17:08:29] INFO root fetch - processPackages [mlserver-mlflow]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-13 17:08:29] INFO root fetch - processPackages [torch-simple-timing]: Start processing: mlserver-huggingface
+[2023-04-13 17:08:29] INFO root fetch - main [MainThread]: End processing [torch-simple-timing]: success
+[2023-04-13 17:08:29] INFO root fetch - processPackages [mlserver-mlflow]: executing diffoscope
+[2023-04-13 17:08:29] INFO root fetch - processPackages [mlserver-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mlflow-1.3.0rc1.tar.gz tmp/mlserver-mlflow-1.3.0rc2.tar.gz --markdown 20230413/m/mlserver-mlflow/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-13 17:08:29] INFO root fetch - processPackages [mlserver-huggingface]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-13 17:08:29] INFO root fetch - processPackages [mlserver-huggingface]: executing diffoscope
+[2023-04-13 17:08:29] INFO root fetch - processPackages [mlserver-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-huggingface-1.3.0rc1.tar.gz tmp/mlserver-huggingface-1.3.0rc2.tar.gz --markdown 20230413/m/mlserver-huggingface/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-13 17:08:30] INFO root fetch - processPackages [locscale]: Start processing: mlserver-alibi-explain
+[2023-04-13 17:08:30] INFO root fetch - main [MainThread]: End processing [locscale]: success
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-alibi-explain]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-alibi-explain]: executing diffoscope
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-alibi-explain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-explain-1.3.0rc1.tar.gz tmp/mlserver-alibi-explain-1.3.0rc2.tar.gz --markdown 20230413/m/mlserver-alibi-explain/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-13 17:08:30] INFO root fetch - processPackages [coiled]: Start processing: mlserver-alibi-detect
+[2023-04-13 17:08:30] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-alibi-detect]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-lightgbm]: Start processing: mlserver-xgboost
+[2023-04-13 17:08:30] INFO root fetch - main [MainThread]: End processing [mlserver-lightgbm]: success
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-xgboost]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-alibi-detect]: executing diffoscope
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-alibi-detect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-detect-1.3.0rc1.tar.gz tmp/mlserver-alibi-detect-1.3.0rc2.tar.gz --markdown 20230413/m/mlserver-alibi-detect/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-xgboost]: executing diffoscope
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-xgboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-xgboost-1.3.0rc1.tar.gz tmp/mlserver-xgboost-1.3.0rc2.tar.gz --markdown 20230413/m/mlserver-xgboost/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-mlflow]: Start processing: mlserver-mllib
+[2023-04-13 17:08:30] INFO root fetch - main [MainThread]: End processing [mlserver-mlflow]: success
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-mllib]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-mllib]: executing diffoscope
+[2023-04-13 17:08:30] INFO root fetch - processPackages [mlserver-mllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mllib-1.3.0rc1.tar.gz tmp/mlserver-mllib-1.3.0rc2.tar.gz --markdown 20230413/m/mlserver-mllib/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-13 17:08:31] INFO root fetch - processPackages [mlserver-huggingface]: Start processing: hcli
+[2023-04-13 17:08:31] INFO root fetch - main [MainThread]: End processing [mlserver-huggingface]: success
+[2023-04-13 17:08:31] INFO root fetch - processPackages [hcli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-13 17:08:31] INFO root fetch - processPackages [mlserver-alibi-explain]: Start processing: dagit
+[2023-04-13 17:08:31] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-explain]: success
+[2023-04-13 17:08:31] INFO root fetch - processPackages [hcli]: Downloading https://files.pythonhosted.org/packages/7e/d6/9cab5b42a42d91870beadd1071e8974b72cae99b242509da7e3f5e358182/hcli-1.0.8.tar.gz
+[2023-04-13 17:08:31] INFO root fetch - processPackages [mlserver-xgboost]: Start processing: dagster-graphql
+[2023-04-13 17:08:31] INFO root fetch - main [MainThread]: End processing [mlserver-xgboost]: success
+[2023-04-13 17:08:31] INFO root fetch - processPackages [mlserver-alibi-detect]: Start processing: dagster-slack
+[2023-04-13 17:08:31] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-detect]: success
+[2023-04-13 17:08:31] INFO root fetch - processPackages [dagit]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-04-13 17:08:31] INFO root fetch - processPackages [dagster-graphql]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-04-13 17:08:31] INFO root fetch - processPackages [dagster-slack]: New version: [1.0.5] Old Version: [0.9.9rc1]
+[2023-04-13 17:08:31] INFO root fetch - processPackages [dagit]: Downloading https://files.pythonhosted.org/packages/de/69/6632f1cf58adb5da2b8e49fbd4d572cff2bbce462ca4788cfcb42f64ef19/dagit-1.2.6.tar.gz
+[2023-04-13 17:08:31] INFO root fetch - processPackages [mlserver-mllib]: Start processing: dagster-celery-docker
+[2023-04-13 17:08:31] INFO root fetch - main [MainThread]: End processing [mlserver-mllib]: success
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-graphql]: Downloading https://files.pythonhosted.org/packages/58/ff/e2f1a4fc7ee2c537a94221e66c1ec27b2108cdc4e874036948ae21bfad90/dagster-graphql-1.2.6.tar.gz
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-slack]: Downloading https://files.pythonhosted.org/packages/1a/a3/5f2506dc9a1180a999e354706161051dd6084fa6108273bc7fa05d795949/dagster-slack-0.9.9rc1.tar.gz
+[2023-04-13 17:08:32] INFO root fetch - processPackages [hcli]: Downloading https://files.pythonhosted.org/packages/3f/71/077b43e086520b8178696bc3883823caf204f5770f4310ba068827b2ade0/hcli-1.0.9.tar.gz
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-celery-docker]: New version: [1.0.5] Old Version: [0.9.9rc1]
+[2023-04-13 17:08:32] INFO root fetch - processPackages [hcli]: executing diffoscope
+[2023-04-13 17:08:32] INFO root fetch - processPackages [hcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcli-1.0.8.tar.gz tmp/hcli-1.0.9.tar.gz --markdown 20230413/h/hcli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-celery-docker]: Downloading https://files.pythonhosted.org/packages/b6/f1/217f008ce62d57396e2fda40eca516e257abdc1090ef68fb3a1a3b9ab0a2/dagster-celery-docker-0.9.9rc1.tar.gz
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagit]: Downloading https://files.pythonhosted.org/packages/6b/89/e78bd7c03fcae73729978d6255e565e70ca0c4af5a95a5f3da6ed8dcff8d/dagit-1.2.7.tar.gz
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-graphql]: Downloading https://files.pythonhosted.org/packages/35/19/74e7c6fce9f593f26d4b99f3c2741e4e2f1768e1a84db1f6ca2113be58f9/dagster-graphql-1.2.7.tar.gz
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-slack]: Downloading https://files.pythonhosted.org/packages/a1/28/2e73253f330cd5d95c99d4d5ff694d4167ab13a197786a2f423af3b9aafa/dagster-slack-1.0.5.tar.gz
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-graphql]: executing diffoscope
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dagster-graphql-1.2.6.tar.gz tmp/dagster-graphql-1.2.7.tar.gz --markdown 20230413/d/dagster-graphql/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-celery-docker]: Downloading https://files.pythonhosted.org/packages/95/e8/234a845bae94aa2ebac35be3812bf25f2cdeba79493f5287a4d1705c3a41/dagster-celery-docker-1.0.5.tar.gz
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-slack]: executing diffoscope
+[2023-04-13 17:08:32] INFO root fetch - processPackages [dagster-slack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dagster-slack-0.9.9rc1.tar.gz tmp/dagster-slack-1.0.5.tar.gz --markdown 20230413/d/dagster-slack/0.9.9rc1-1.0.5/diff.md --exclude *.pyd
+[2023-04-13 17:08:33] INFO root fetch - processPackages [dagster-celery-docker]: executing diffoscope
+[2023-04-13 17:08:33] INFO root fetch - processPackages [dagster-celery-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dagster-celery-docker-0.9.9rc1.tar.gz tmp/dagster-celery-docker-1.0.5.tar.gz --markdown 20230413/d/dagster-celery-docker/0.9.9rc1-1.0.5/diff.md --exclude *.pyd
+[2023-04-13 17:08:33] INFO root fetch - processPackages [hcli]: Start processing: dagster-postgres
+[2023-04-13 17:08:33] INFO root fetch - main [MainThread]: End processing [hcli]: success
+[2023-04-13 17:08:33] INFO root fetch - processPackages [dagster-postgres]: New version: [1.0.5] Old Version: [0.9.9rc1]
+[2023-04-13 17:08:33] INFO root fetch - processPackages [dagster-postgres]: Downloading https://files.pythonhosted.org/packages/0b/ff/066cc4697c453cd53be4db9e469a242da3514d6b7fc77052113cd9efbcab/dagster-postgres-0.9.9rc1.tar.gz
+[2023-04-13 17:08:33] INFO root fetch - processPackages [dagster-slack]: Start processing: dagster-managed-elements
+[2023-04-13 17:08:33] INFO root fetch - main [MainThread]: End processing [dagster-slack]: success
+[2023-04-13 17:08:33] INFO root fetch - processPackages [dagit]: executing diffoscope
+[2023-04-13 17:08:33] INFO root fetch - processPackages [dagit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dagit-1.2.6.tar.gz tmp/dagit-1.2.7.tar.gz --markdown 20230413/d/dagit/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-04-13 17:08:33] INFO root fetch - processPackages [dagster-managed-elements]: New version: [0.18.7] Old Version: [0.18.6]
+[2023-04-13 17:08:34] INFO root fetch - processPackages [dagster-managed-elements]: Downloading https://files.pythonhosted.org/packages/49/3e/e4740b48efe75d757b3935f97c27075571f044232a752ec701f6ceeeae94/dagster-managed-elements-0.18.6.tar.gz
+[2023-04-13 17:08:34] INFO root fetch - processPackages [dagster-celery-docker]: Start processing: finbourne-access-sdk
+[2023-04-13 17:08:34] INFO root fetch - main [MainThread]: End processing [dagster-celery-docker]: success
+[2023-04-13 17:08:34] INFO root fetch - processPackages [dagster-postgres]: Downloading https://files.pythonhosted.org/packages/01/a3/911f3e27a8a96145c7f8ebd9200075b21e1dc505fda3f15d4bd9568e8fd1/dagster-postgres-1.0.5.tar.gz
+[2023-04-13 17:08:34] INFO root fetch - processPackages [dagster-postgres]: executing diffoscope
+[2023-04-13 17:08:34] INFO root fetch - processPackages [dagster-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dagster-postgres-0.9.9rc1.tar.gz tmp/dagster-postgres-1.0.5.tar.gz --markdown 20230413/d/dagster-postgres/0.9.9rc1-1.0.5/diff.md --exclude *.pyd
+[2023-04-13 17:08:34] INFO root fetch - processPackages [finbourne-access-sdk]: New version: [0.0.815] Old Version: [0.0.616]
+[2023-04-13 17:08:34] INFO root fetch - processPackages [dagster-graphql]: Start processing: cf-changelog
+[2023-04-13 17:08:34] INFO root fetch - main [MainThread]: End processing [dagster-graphql]: success
+[2023-04-13 17:08:34] INFO root fetch - processPackages [dagster-managed-elements]: Downloading https://files.pythonhosted.org/packages/29/6a/fa32194e7df78c641a159b835ade4925e887ac4cc756ba2c8083c0e749b4/dagster-managed-elements-0.18.7.tar.gz
+[2023-04-13 17:08:34] INFO root fetch - processPackages [cf-changelog]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-13 17:08:34] INFO root fetch - processPackages [dagster-managed-elements]: executing diffoscope
+[2023-04-13 17:08:34] INFO root fetch - processPackages [dagster-managed-elements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dagster-managed-elements-0.18.6.tar.gz tmp/dagster-managed-elements-0.18.7.tar.gz --markdown 20230413/d/dagster-managed-elements/0.18.6-0.18.7/diff.md --exclude *.pyd
+[2023-04-13 17:08:34] INFO root fetch - processPackages [finbourne-access-sdk]: executing diffoscope
+[2023-04-13 17:08:34] INFO root fetch - processPackages [finbourne-access-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-access-sdk-0.0.616.tar.gz tmp/finbourne-access-sdk-0.0.815.tar.gz --markdown 20230413/f/finbourne-access-sdk/0.0.616-0.0.815/diff.md --exclude *.pyd
+[2023-04-13 17:08:34] INFO root fetch - processPackages [cf-changelog]: Downloading https://files.pythonhosted.org/packages/15/8a/80b7b03eaab1dbcff412b4f52b0c8a7b65ad3bd3fe941d900e43ef74b4b1/cf_changelog-1.0.1.tar.gz
+[2023-04-13 17:08:34] INFO root fetch - processPackages [cf-changelog]: executing diffoscope
+[2023-04-13 17:08:34] INFO root fetch - processPackages [cf-changelog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf_changelog-1.0.0.tar.gz tmp/cf_changelog-1.0.1.tar.gz --markdown 20230413/c/cf-changelog/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-13 17:08:35] INFO root fetch - processPackages [dagster-postgres]: Start processing: att-mlops
+[2023-04-13 17:08:35] INFO root fetch - main [MainThread]: End processing [dagster-postgres]: success
+[2023-04-13 17:08:35] INFO root fetch - processPackages [att-mlops]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-13 17:08:35] INFO root fetch - processPackages [att-mlops]: executing diffoscope
+[2023-04-13 17:08:35] INFO root fetch - processPackages [att-mlops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/att_mlops-0.1.4.tar.gz tmp/att_mlops-0.1.5.tar.gz --markdown 20230413/a/att-mlops/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-13 17:08:35] INFO root fetch - processPackages [dagster-managed-elements]: Start processing: dagster-snowflake
+[2023-04-13 17:08:35] INFO root fetch - main [MainThread]: End processing [dagster-managed-elements]: success
+[2023-04-13 17:08:35] INFO root fetch - processPackages [dagster-snowflake]: New version: [1.0.5] Old Version: [0.9.9rc1]
+[2023-04-13 17:08:35] INFO root fetch - processPackages [dagster-snowflake]: Downloading https://files.pythonhosted.org/packages/fe/56/cd72a389118ea8d1382c341ae850bb376ea9662a8897473ffaec2be23ebb/dagster-snowflake-0.9.9rc1.tar.gz
+[2023-04-13 17:08:35] INFO root fetch - main [MainThread]: End processing [cf-changelog]: success
+[2023-04-13 17:08:36] INFO root fetch - processPackages [dagster-snowflake]: Downloading https://files.pythonhosted.org/packages/c8/8d/33e72a97a091c64e8726210b76a85d9f1a5fa0225cc20bdc7f1fdfeb2104/dagster-snowflake-1.0.5.tar.gz
+[2023-04-13 17:08:36] INFO root fetch - main [MainThread]: End processing [att-mlops]: success
+[2023-04-13 17:08:36] INFO root fetch - processPackages [dagster-snowflake]: executing diffoscope
+[2023-04-13 17:08:36] INFO root fetch - processPackages [dagster-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dagster-snowflake-0.9.9rc1.tar.gz tmp/dagster-snowflake-1.0.5.tar.gz --markdown 20230413/d/dagster-snowflake/0.9.9rc1-1.0.5/diff.md --exclude *.pyd
+[2023-04-13 17:08:36] INFO root fetch - main [MainThread]: End processing [finbourne-access-sdk]: success
+[2023-04-13 17:08:37] INFO root fetch - main [MainThread]: End processing [dagster-snowflake]: success
+[2023-04-13 17:09:42] INFO root fetch - main [MainThread]: End processing [dagit]: success
+[2023-04-13 17:09:42] INFO root fetch - main [MainThread]: Store serial: [17694371]
