@@ -19861,3 +19861,120 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 16:40:13] INFO root fetch - main [MainThread]: End processing [SCALECAST]: success
 [2023-04-13 16:40:27] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
 [2023-04-13 16:40:27] INFO root fetch - main [MainThread]: Store serial: [17693894]
+[2023-04-13 16:45:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17693894]
+[2023-04-13 16:45:35] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-13 16:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rucio-consistency
+[2023-04-13 16:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: launchflow
+[2023-04-13 16:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: duty
+[2023-04-13 16:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfsdutils
+[2023-04-13 16:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smt
+[2023-04-13 16:45:35] INFO root fetch - processPackages [smt]: New version: [2.0b2] Old Version: [2.0b1]
+[2023-04-13 16:45:35] INFO root fetch - processPackages [rucio-consistency]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-13 16:45:35] INFO root fetch - processPackages [kfsdutils]: New version: [0.0.90] Old Version: [0.0.9]
+[2023-04-13 16:45:35] INFO root fetch - processPackages [duty]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 16:45:35] INFO root fetch - processPackages [launchflow]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 16:45:35] INFO root fetch - processPackages [rucio-consistency]: Downloading https://files.pythonhosted.org/packages/ea/d9/a7362b47c6c3c356002e778a2b90edd176e3949dacc5cc0791f90b691657/rucio-consistency-1.0.3.tar.gz
+[2023-04-13 16:45:35] INFO root fetch - processPackages [kfsdutils]: Downloading https://files.pythonhosted.org/packages/f0/be/4d40e8aca92f77f9c098a76ef0deb83c8fa232706cfe02e48616d457f1dd/kfsdutils-0.0.90.tar.gz
+[2023-04-13 16:45:35] INFO root fetch - processPackages [smt]: Downloading https://files.pythonhosted.org/packages/5d/39/6c135f396e8e453f1fbfa6382ad30cb7c899a57e05682c68b13925ac13ee/smt-2.0b1.tar.gz
+[2023-04-13 16:45:36] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/2a/b0/56dc7bd9ba2263bd34aa1a371f6b9c20aea5efc162d9c5179983dcd3fd1b/launchflow-0.1.8.tar.gz
+[2023-04-13 16:45:36] WARNING root fetch - processPackages [launchflow]: Skipping package: exceeds size limit 96610312>=10485760
+[2023-04-13 16:45:36] INFO root fetch - processPackages [launchflow]: Start processing: pyinflux3
+[2023-04-13 16:45:36] INFO root fetch - main [MainThread]: End processing [launchflow] error
+[2023-04-13 16:45:36] INFO root fetch - processPackages [pyinflux3]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-04-13 16:45:36] INFO root fetch - processPackages [kfsdutils]: executing diffoscope
+[2023-04-13 16:45:36] INFO root fetch - processPackages [kfsdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsdutils-0.0.9.tar.gz tmp/kfsdutils-0.0.90.tar.gz --markdown 20230413/k/kfsdutils/0.0.9-0.0.90/diff.md --exclude *.pyd
+[2023-04-13 16:45:36] INFO root fetch - processPackages [rucio-consistency]: Downloading https://files.pythonhosted.org/packages/b9/ab/4480431bd43996fe2b4560adb0faba1b12e732a513d5bef33c6bec85fc31/rucio-consistency-1.0.4.tar.gz
+[2023-04-13 16:45:36] INFO root fetch - processPackages [duty]: executing diffoscope
+[2023-04-13 16:45:36] INFO root fetch - processPackages [duty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duty-0.8.0.tar.gz tmp/duty-0.9.0.tar.gz --markdown 20230413/d/duty/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 16:45:36] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/1a/77/c56a48693bee29ff3d18138e3493c0989e92bc958c35b9f2670df7fa6a4c/pyinflux3-0.7.4.tar.gz
+[2023-04-13 16:45:36] INFO root fetch - processPackages [rucio-consistency]: executing diffoscope
+[2023-04-13 16:45:36] INFO root fetch - processPackages [rucio-consistency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rucio-consistency-1.0.3.tar.gz tmp/rucio-consistency-1.0.4.tar.gz --markdown 20230413/r/rucio-consistency/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-13 16:45:36] INFO root fetch - processPackages [smt]: Downloading https://files.pythonhosted.org/packages/ed/1e/8e5979cb4d983c970c2aa18cbc8afa57fc42732f1c5bcd6aed5df5cc491b/smt-2.0b2.tar.gz
+[2023-04-13 16:45:36] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/b6/5e/3263c2873d4d2487de081845b53fce63496174f9e19e89de2498b478d729/pyinflux3-0.7.5.tar.gz
+[2023-04-13 16:45:36] INFO root fetch - processPackages [smt]: executing diffoscope
+[2023-04-13 16:45:36] INFO root fetch - processPackages [smt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smt-2.0b1.tar.gz tmp/smt-2.0b2.tar.gz --markdown 20230413/s/smt/2.0b1-2.0b2/diff.md --exclude *.pyd
+[2023-04-13 16:45:36] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-13 16:45:36] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.7.4.tar.gz tmp/pyinflux3-0.7.5.tar.gz --markdown 20230413/p/pyinflux3/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-04-13 16:45:37] INFO root fetch - processPackages [kfsdutils]: Start processing: gordo
+[2023-04-13 16:45:37] INFO root fetch - main [MainThread]: End processing [kfsdutils]: success
+[2023-04-13 16:45:37] INFO root fetch - processPackages [gordo]: New version: [5.0.0rc2] Old Version: [5.0.0rc1]
+[2023-04-13 16:45:37] INFO root fetch - processPackages [rucio-consistency]: Start processing: pyinflux3-cli
+[2023-04-13 16:45:37] INFO root fetch - main [MainThread]: End processing [rucio-consistency]: success
+[2023-04-13 16:45:37] WARNING root fetch - processPackages [pyinflux3-cli]: Skipping, unable to determine old version
+[2023-04-13 16:45:37] INFO root fetch - processPackages [pyinflux3-cli]: Start processing: gym-trading-env
+[2023-04-13 16:45:37] INFO root fetch - main [MainThread]: End processing [pyinflux3-cli] error
+[2023-04-13 16:45:37] INFO root fetch - processPackages [gym-trading-env]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 16:45:37] INFO root fetch - processPackages [gym-trading-env]: executing diffoscope
+[2023-04-13 16:45:37] INFO root fetch - processPackages [gym-trading-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym-trading-env-0.1.8.tar.gz tmp/gym-trading-env-0.1.9.tar.gz --markdown 20230413/g/gym-trading-env/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 16:45:37] INFO root fetch - processPackages [pyinflux3]: Start processing: qontract-reconcile
+[2023-04-13 16:45:37] INFO root fetch - main [MainThread]: End processing [pyinflux3]: success
+[2023-04-13 16:45:37] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-13 16:45:37] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-13 16:45:37] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230413/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-13 16:45:37] INFO root fetch - processPackages [gordo]: executing diffoscope
+[2023-04-13 16:45:37] INFO root fetch - processPackages [gordo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gordo-5.0.0rc1.tar.gz tmp/gordo-5.0.0rc2.tar.gz --markdown 20230413/g/gordo/5.0.0rc1-5.0.0rc2/diff.md --exclude *.pyd
+[2023-04-13 16:45:38] INFO root fetch - processPackages [duty]: Start processing: idf-analysis
+[2023-04-13 16:45:38] INFO root fetch - main [MainThread]: End processing [duty]: success
+[2023-04-13 16:45:38] INFO root fetch - processPackages [gym-trading-env]: Start processing: snapper-ont
+[2023-04-13 16:45:38] INFO root fetch - main [MainThread]: End processing [gym-trading-env]: success
+[2023-04-13 16:45:38] INFO root fetch - processPackages [idf-analysis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 16:45:38] INFO root fetch - processPackages [snapper-ont]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-13 16:45:38] INFO root fetch - processPackages [smt]: Start processing: swmm-api
+[2023-04-13 16:45:38] INFO root fetch - main [MainThread]: End processing [smt]: success
+[2023-04-13 16:45:38] INFO root fetch - processPackages [swmm-api]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-13 16:45:38] INFO root fetch - processPackages [idf-analysis]: Downloading https://files.pythonhosted.org/packages/c1/24/90019ad484548e3525ff29f5fef6a14d6dcdf66686925ebd6ebcee71f1be/idf_analysis-0.1.8-py3-none-any.whl
+[2023-04-13 16:45:38] INFO root fetch - processPackages [snapper-ont]: Downloading https://files.pythonhosted.org/packages/a3/30/9f6a3815305e99d6d06f84208a80ceb1fd3903a1f1353be34a49058700cc/snapper-ont-0.4.4.tar.gz
+[2023-04-13 16:45:39] INFO root fetch - processPackages [snapper-ont]: Downloading https://files.pythonhosted.org/packages/f9/2c/847523d70195732fd52bc67c9940a19271c7ba02520d1f350385cee4b585/snapper-ont-0.4.5.tar.gz
+[2023-04-13 16:45:39] INFO root fetch - processPackages [snapper-ont]: executing diffoscope
+[2023-04-13 16:45:39] INFO root fetch - processPackages [snapper-ont]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapper-ont-0.4.4.tar.gz tmp/snapper-ont-0.4.5.tar.gz --markdown 20230413/s/snapper-ont/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-13 16:45:39] INFO root fetch - processPackages [swmm-api]: executing diffoscope
+[2023-04-13 16:45:39] INFO root fetch - processPackages [swmm-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swmm-api-0.4.8.tar.gz tmp/swmm-api-0.4.9.tar.gz --markdown 20230413/s/swmm-api/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-13 16:45:39] INFO root fetch - processPackages [idf-analysis]: Downloading https://files.pythonhosted.org/packages/59/40/c0ea655eb7aa3402ad2f6a3654c10f65580916f4c4ebb07e027ef581ebaf/idf_analysis-0.1.9-py3-none-any.whl
+[2023-04-13 16:45:39] INFO root fetch - processPackages [idf-analysis]: executing diffoscope
+[2023-04-13 16:45:39] INFO root fetch - processPackages [idf-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idf_analysis-0.1.8-py3-none-any.whl.zip tmp/idf_analysis-0.1.9-py3-none-any.whl.zip --markdown 20230413/i/idf-analysis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 16:45:40] INFO root fetch - processPackages [gordo]: Start processing: tinybird-cdk
+[2023-04-13 16:45:40] INFO root fetch - main [MainThread]: End processing [gordo]: success
+[2023-04-13 16:45:40] INFO root fetch - processPackages [tinybird-cdk]: New version: [0.16.4] Old Version: [0.16.3]
+[2023-04-13 16:45:40] INFO root fetch - processPackages [snapper-ont]: Start processing: pozalabs-compose
+[2023-04-13 16:45:40] INFO root fetch - main [MainThread]: End processing [snapper-ont]: success
+[2023-04-13 16:45:40] INFO root fetch - processPackages [pozalabs-compose]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 16:45:40] INFO root fetch - processPackages [tinybird-cdk]: Downloading https://files.pythonhosted.org/packages/11/07/0713afa6644f7621fda816fea30cdf949d7a823bf94fd55e421f5f73164e/tinybird-cdk-0.16.4.tar.gz
+[2023-04-13 16:45:40] INFO root fetch - processPackages [pozalabs-compose]: executing diffoscope
+[2023-04-13 16:45:40] INFO root fetch - processPackages [pozalabs-compose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pozalabs-compose-0.9.0.tar.gz tmp/pozalabs-compose-0.9.1.tar.gz --markdown 20230413/p/pozalabs-compose/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 16:45:40] INFO root fetch - processPackages [tinybird-cdk]: executing diffoscope
+[2023-04-13 16:45:40] INFO root fetch - processPackages [tinybird-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinybird-cdk-0.16.3.tar.gz tmp/tinybird-cdk-0.16.4.tar.gz --markdown 20230413/t/tinybird-cdk/0.16.3-0.16.4/diff.md --exclude *.pyd
+[2023-04-13 16:45:40] INFO root fetch - processPackages [swmm-api]: Start processing: polywrap-msgpack
+[2023-04-13 16:45:40] INFO root fetch - main [MainThread]: End processing [swmm-api]: success
+[2023-04-13 16:45:40] INFO root fetch - processPackages [polywrap-msgpack]: New version: [0.1.0a9] Old Version: [0.1.0a8]
+[2023-04-13 16:45:41] INFO root fetch - processPackages [polywrap-msgpack]: executing diffoscope
+[2023-04-13 16:45:41] INFO root fetch - processPackages [polywrap-msgpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_msgpack-0.1.0a8.tar.gz tmp/polywrap_msgpack-0.1.0a9.tar.gz --markdown 20230413/p/polywrap-msgpack/0.1.0a8-0.1.0a9/diff.md --exclude *.pyd
+[2023-04-13 16:45:41] INFO root fetch - processPackages [idf-analysis]: Start processing: fedml
+[2023-04-13 16:45:41] INFO root fetch - main [MainThread]: End processing [idf-analysis]: success
+[2023-04-13 16:45:41] INFO root fetch - processPackages [fedml]: New version: [0.8.3a9] Old Version: [0.8.3a6]
+[2023-04-13 16:45:41] INFO root fetch - processPackages [fedml]: Downloading https://files.pythonhosted.org/packages/0f/e8/2d9508069e4b6e388c3b4fe360966e50f4fb6caa00ef8ddbe10aa3830177/fedml-0.8.3a9.tar.gz
+[2023-04-13 16:45:41] INFO root fetch - processPackages [fedml]: executing diffoscope
+[2023-04-13 16:45:41] INFO root fetch - processPackages [fedml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedml-0.8.3a6.tar.gz tmp/fedml-0.8.3a9.tar.gz --markdown 20230413/f/fedml/0.8.3a6-0.8.3a9/diff.md --exclude *.pyd
+[2023-04-13 16:45:41] INFO root fetch - processPackages [tinybird-cdk]: Start processing: pyinflux3
+[2023-04-13 16:45:41] INFO root fetch - main [MainThread]: End processing [tinybird-cdk]: success
+[2023-04-13 16:45:41] INFO root fetch - processPackages [pyinflux3]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-04-13 16:45:41] INFO root fetch - processPackages [pozalabs-compose]: Start processing: att-mlops
+[2023-04-13 16:45:41] INFO root fetch - main [MainThread]: End processing [pozalabs-compose]: success
+[2023-04-13 16:45:41] INFO root fetch - processPackages [att-mlops]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-13 16:45:41] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-13 16:45:41] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.7.4.tar.gz tmp/pyinflux3-0.7.5.tar.gz --markdown 20230413/p/pyinflux3/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-04-13 16:45:42] INFO root fetch - processPackages [att-mlops]: Downloading https://files.pythonhosted.org/packages/ea/a6/de0f6c366950eb9240d1d8ce9c5d36e05eb8623fa1c52e0833448cd5ff81/att_mlops-0.1.5.tar.gz
+[2023-04-13 16:45:42] INFO root fetch - processPackages [att-mlops]: executing diffoscope
+[2023-04-13 16:45:42] INFO root fetch - processPackages [att-mlops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/att_mlops-0.1.4.tar.gz tmp/att_mlops-0.1.5.tar.gz --markdown 20230413/a/att-mlops/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-13 16:45:42] INFO root fetch - processPackages [polywrap-msgpack]: Start processing: mkdocs-risonia-theme
+[2023-04-13 16:45:42] INFO root fetch - main [MainThread]: End processing [polywrap-msgpack]: success
+[2023-04-13 16:45:42] INFO root fetch - processPackages [mkdocs-risonia-theme]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-13 16:45:42] INFO root fetch - processPackages [mkdocs-risonia-theme]: Downloading https://files.pythonhosted.org/packages/f7/78/1f101f21e4aad35de0e41074db267d49aa2bc9fe56887c79545e1ea36859/mkdocs-risonia-theme-0.1.5.tar.gz
+[2023-04-13 16:45:42] INFO root fetch - processPackages [mkdocs-risonia-theme]: Downloading https://files.pythonhosted.org/packages/68/05/8db060fbcd303fbaaf0cb1aa732b52fcaea51b28bfa6476d843dd085cb9e/mkdocs-risonia-theme-0.1.6.tar.gz
+[2023-04-13 16:45:42] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-04-13 16:45:42] INFO root fetch - processPackages [mkdocs-risonia-theme]: executing diffoscope
+[2023-04-13 16:45:42] INFO root fetch - processPackages [mkdocs-risonia-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-risonia-theme-0.1.5.tar.gz tmp/mkdocs-risonia-theme-0.1.6.tar.gz --markdown 20230413/m/mkdocs-risonia-theme/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-13 16:45:43] INFO root fetch - main [MainThread]: End processing [pyinflux3]: success
+[2023-04-13 16:45:43] INFO root fetch - main [MainThread]: End processing [att-mlops]: success
+[2023-04-13 16:45:43] INFO root fetch - main [MainThread]: End processing [mkdocs-risonia-theme]: success
+[2023-04-13 16:45:59] INFO root fetch - main [MainThread]: End processing [fedml]: success
+[2023-04-13 16:45:59] INFO root fetch - main [MainThread]: Store serial: [17693954]
