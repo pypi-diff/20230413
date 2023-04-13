@@ -6280,3 +6280,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:33:02] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-analytic]: success
 [2023-04-13 04:33:02] INFO root fetch - main [MainThread]: End processing [buildlackey]: success
 [2023-04-13 04:33:02] INFO root fetch - main [MainThread]: Store serial: [17686082]
+[2023-04-13 04:38:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686082]
+[2023-04-13 04:38:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 04:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: symdexer
+[2023-04-13 04:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exodusutils
+[2023-04-13 04:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slackflylog
+[2023-04-13 04:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: diengine-connect
+[2023-04-13 04:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-account-cutoff-base
+[2023-04-13 04:38:10] INFO root fetch - processPackages [exodusutils]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-13 04:38:10] INFO root fetch - processPackages [slackflylog]: New version: [0.0.7] Old Version: [0.0.4]
+[2023-04-13 04:38:10] INFO root fetch - processPackages [odoo-addon-account-cutoff-base]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-13 04:38:10] WARNING root fetch - processPackages [symdexer]: Skipping, unable to determine old version
+[2023-04-13 04:38:10] INFO root fetch - processPackages [symdexer]: Start processing: uptick-datawarehouse
+[2023-04-13 04:38:10] INFO root fetch - main [MainThread]: End processing [symdexer] error
+[2023-04-13 04:38:10] INFO root fetch - processPackages [uptick-datawarehouse]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-13 04:38:10] INFO root fetch - processPackages [exodusutils]: executing diffoscope
+[2023-04-13 04:38:10] INFO root fetch - processPackages [exodusutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exodusutils-0.3.7.tar.gz tmp/exodusutils-0.3.9.tar.gz --markdown 20230413/e/exodusutils/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 04:38:10] WARNING root fetch - processPackages [diengine-connect]: Skipping, unable to determine old version
+[2023-04-13 04:38:10] INFO root fetch - processPackages [diengine-connect]: Start processing: odoo14-addon-account-cutoff-base
+[2023-04-13 04:38:10] INFO root fetch - main [MainThread]: End processing [diengine-connect] error
+[2023-04-13 04:38:10] INFO root fetch - processPackages [odoo14-addon-account-cutoff-base]: New version: [14.0.1.4.1.dev5] Old Version: [14.0.1.4.1.dev4]
+[2023-04-13 04:38:10] INFO root fetch - processPackages [uptick-datawarehouse]: Downloading https://files.pythonhosted.org/packages/e3/63/05aa59357e5261afedba3aa72fa6f83afdc101d0d2159e68abb4a2c08f23/uptick_datawarehouse-0.2.5.tar.gz
+[2023-04-13 04:38:10] INFO root fetch - processPackages [odoo-addon-account-cutoff-base]: Downloading https://files.pythonhosted.org/packages/e2/67/f24da458f299f320d664e5e1f920898c2b0f87935dcd69ecf7be3cad4420/odoo_addon_account_cutoff_base-16.0.1.0.0.8-py3-none-any.whl
+[2023-04-13 04:38:10] INFO root fetch - processPackages [slackflylog]: Downloading https://files.pythonhosted.org/packages/9b/9a/f27017ab2fb51f3b416000efce213cebf04d1cd3fa6978fbeed13f644001/slackflylog-0.0.7.tar.gz
+[2023-04-13 04:38:10] INFO root fetch - processPackages [odoo14-addon-account-cutoff-base]: Downloading https://files.pythonhosted.org/packages/9b/31/ec38adb162ab5d6bc58cee63aa563923f2754ca1340d7712cbb9717666d7/odoo14_addon_account_cutoff_base-14.0.1.4.1.dev4-py3-none-any.whl
+[2023-04-13 04:38:11] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-13 04:38:11] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-0.0.4.tar.gz tmp/slackflylog-0.0.7.tar.gz --markdown 20230413/s/slackflylog/0.0.4-0.0.7/diff.md --exclude *.pyd
+[2023-04-13 04:38:11] INFO root fetch - processPackages [uptick-datawarehouse]: Downloading https://files.pythonhosted.org/packages/79/d2/740a9a5b5639ef9d328c7a019f66acceb4e1b5b040d1b05b64d962fca731/uptick_datawarehouse-0.2.6.tar.gz
+[2023-04-13 04:38:11] INFO root fetch - processPackages [odoo-addon-account-cutoff-base]: Downloading https://files.pythonhosted.org/packages/85/5d/89d6078f7fe412542bb2571a69f23410d32ac5fdc618479b73932da8570f/odoo_addon_account_cutoff_base-16.0.1.0.0.9-py3-none-any.whl
+[2023-04-13 04:38:11] INFO root fetch - processPackages [odoo14-addon-account-cutoff-base]: Downloading https://files.pythonhosted.org/packages/ea/ef/5fa193a446530e27220418dcb2e42e1c257184f2615a7a4bbbdd66d2efda/odoo14_addon_account_cutoff_base-14.0.1.4.1.dev5-py3-none-any.whl
+[2023-04-13 04:38:11] INFO root fetch - processPackages [uptick-datawarehouse]: executing diffoscope
+[2023-04-13 04:38:11] INFO root fetch - processPackages [uptick-datawarehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uptick_datawarehouse-0.2.5.tar.gz tmp/uptick_datawarehouse-0.2.6.tar.gz --markdown 20230413/u/uptick-datawarehouse/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-13 04:38:11] INFO root fetch - processPackages [odoo-addon-account-cutoff-base]: executing diffoscope
+[2023-04-13 04:38:11] INFO root fetch - processPackages [odoo-addon-account-cutoff-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_cutoff_base-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_account_cutoff_base-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-account-cutoff-base/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:38:11] INFO root fetch - processPackages [odoo14-addon-account-cutoff-base]: executing diffoscope
+[2023-04-13 04:38:11] INFO root fetch - processPackages [odoo14-addon-account-cutoff-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_cutoff_base-14.0.1.4.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_account_cutoff_base-14.0.1.4.1.dev5-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-account-cutoff-base/14.0.1.4.1.dev4-14.0.1.4.1.dev5/diff.md --exclude *.pyd
+[2023-04-13 04:38:12] INFO root fetch - processPackages [exodusutils]: Start processing: odoo-addon-account-cutoff-base
+[2023-04-13 04:38:12] INFO root fetch - main [MainThread]: End processing [exodusutils]: success
+[2023-04-13 04:38:12] INFO root fetch - processPackages [odoo-addon-account-cutoff-base]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-13 04:38:12] INFO root fetch - processPackages [odoo-addon-account-cutoff-base]: executing diffoscope
+[2023-04-13 04:38:12] INFO root fetch - processPackages [odoo-addon-account-cutoff-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_cutoff_base-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_account_cutoff_base-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-account-cutoff-base/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:38:12] INFO root fetch - processPackages [slackflylog]: Start processing: geeup
+[2023-04-13 04:38:12] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-13 04:38:12] INFO root fetch - processPackages [geeup]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-13 04:38:12] INFO root fetch - processPackages [geeup]: Downloading https://files.pythonhosted.org/packages/aa/3a/9359e5f260647bf735560649551de7c3ef5826eb15a5b2672822654dca69/geeup-0.6.3.tar.gz
+[2023-04-13 04:38:12] INFO root fetch - processPackages [geeup]: Downloading https://files.pythonhosted.org/packages/9c/fc/8fa7fe5805532d2f071dbc08886f0dac6ff54f7847d7583be31c74b6d970/geeup-0.6.4.tar.gz
+[2023-04-13 04:38:12] INFO root fetch - main [MainThread]: End processing [uptick-datawarehouse]: success
+[2023-04-13 04:38:12] INFO root fetch - processPackages [geeup]: executing diffoscope
+[2023-04-13 04:38:12] INFO root fetch - processPackages [geeup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geeup-0.6.3.tar.gz tmp/geeup-0.6.4.tar.gz --markdown 20230413/g/geeup/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-13 04:38:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-cutoff-base]: success
+[2023-04-13 04:38:13] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-cutoff-base]: success
+[2023-04-13 04:38:13] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-cutoff-base]: success
+[2023-04-13 04:38:14] INFO root fetch - main [MainThread]: End processing [geeup]: success
+[2023-04-13 04:38:14] INFO root fetch - main [MainThread]: Store serial: [17686109]
