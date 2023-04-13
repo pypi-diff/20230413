@@ -6145,3 +6145,85 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:21:27] INFO root fetch - main [MainThread]: End processing [mctc-hackathon-robot297]: success
 [2023-04-13 04:22:30] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-04-13 04:22:30] INFO root fetch - main [MainThread]: Store serial: [17685950]
+[2023-04-13 04:27:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17685950]
+[2023-04-13 04:27:37] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-13 04:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inhandtest
+[2023-04-13 04:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thetadata
+[2023-04-13 04:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iam-actions
+[2023-04-13 04:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shared-atomic-enterprise
+[2023-04-13 04:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: data-ecosystem-services
+[2023-04-13 04:27:37] INFO root fetch - processPackages [shared-atomic-enterprise]: New version: [5!2.3.1] Old Version: [5!2.2.9]
+[2023-04-13 04:27:37] INFO root fetch - processPackages [data-ecosystem-services]: New version: [202304.0.9] Old Version: [202304.0.8]
+[2023-04-13 04:27:37] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230413] Old Version: [1.2.20230412]
+[2023-04-13 04:27:37] INFO root fetch - processPackages [inhandtest]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 04:27:37] INFO root fetch - processPackages [thetadata]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-13 04:27:37] INFO root fetch - processPackages [shared-atomic-enterprise]: Downloading https://files.pythonhosted.org/packages/10/77/59307bb1b2d4e2e64f6ac5cc2f8cf63c22623351e8e00783d08d9a63a616/shared_atomic_enterprise-5!2.2.9-py39-none-win_amd64.whl
+[2023-04-13 04:27:38] INFO root fetch - processPackages [data-ecosystem-services]: executing diffoscope
+[2023-04-13 04:27:38] INFO root fetch - processPackages [data-ecosystem-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_ecosystem_services-202304.0.8.tar.gz tmp/data_ecosystem_services-202304.0.9.tar.gz --markdown 20230413/d/data-ecosystem-services/202304.0.8-202304.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:27:38] INFO root fetch - processPackages [thetadata]: Downloading https://files.pythonhosted.org/packages/10/5c/f077ef0572d4b9b87a3747ab4ac60aa9ea688de79c3f7d40e20ce2861824/thetadata-0.9.2.tar.gz
+[2023-04-13 04:27:38] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/a0/e9/b41ff046413fb4ac47be649c15afcfb25d343c8c926ddcd7599c60959307/iam_actions-1.2.20230413.tar.gz
+[2023-04-13 04:27:38] INFO root fetch - processPackages [inhandtest]: executing diffoscope
+[2023-04-13 04:27:38] INFO root fetch - processPackages [inhandtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inhandtest-0.0.4.tar.gz tmp/inhandtest-0.0.5.tar.gz --markdown 20230413/i/inhandtest/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 04:27:38] INFO root fetch - processPackages [thetadata]: executing diffoscope
+[2023-04-13 04:27:38] INFO root fetch - processPackages [thetadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thetadata-0.9.1.tar.gz tmp/thetadata-0.9.2.tar.gz --markdown 20230413/t/thetadata/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-13 04:27:38] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-04-13 04:27:38] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230412.tar.gz tmp/iam_actions-1.2.20230413.tar.gz --markdown 20230413/i/iam-actions/1.2.20230412-1.2.20230413/diff.md --exclude *.pyd
+[2023-04-13 04:27:39] INFO root fetch - processPackages [data-ecosystem-services]: Start processing: aicspylibczi
+[2023-04-13 04:27:39] INFO root fetch - main [MainThread]: End processing [data-ecosystem-services]: success
+[2023-04-13 04:27:39] INFO root fetch - processPackages [aicspylibczi]: New version: [3.1.1.dev2] Old Version: [3.1.1.dev0]
+[2023-04-13 04:27:39] INFO root fetch - processPackages [aicspylibczi]: executing diffoscope
+[2023-04-13 04:27:39] INFO root fetch - processPackages [aicspylibczi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aicspylibczi-3.1.1.dev0.tar.gz tmp/aicspylibczi-3.1.1.dev2.tar.gz --markdown 20230413/a/aicspylibczi/3.1.1.dev0-3.1.1.dev2/diff.md --exclude *.pyd
+[2023-04-13 04:27:39] INFO root fetch - processPackages [inhandtest]: Start processing: heizer
+[2023-04-13 04:27:39] INFO root fetch - main [MainThread]: End processing [inhandtest]: success
+[2023-04-13 04:27:39] INFO root fetch - processPackages [heizer]: New version: [999999.dev1681352876] Old Version: [999999.dev1681350078]
+[2023-04-13 04:27:39] INFO root fetch - processPackages [thetadata]: Start processing: yhgit
+[2023-04-13 04:27:39] INFO root fetch - main [MainThread]: End processing [thetadata]: success
+[2023-04-13 04:27:39] INFO root fetch - processPackages [yhgit]: New version: [2.8.9] Old Version: [2.8.8]
+[2023-04-13 04:27:39] INFO root fetch - processPackages [heizer]: Downloading https://files.pythonhosted.org/packages/a4/fd/1fddac8cc4e2ffde9db59b4cd7e2bd083cb44a3691209a596bbc5ec78b96/heizer-999999.dev1681352876.tar.gz
+[2023-04-13 04:27:39] INFO root fetch - processPackages [yhgit]: executing diffoscope
+[2023-04-13 04:27:39] INFO root fetch - processPackages [yhgit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yhgit-2.8.8.tar.gz tmp/yhgit-2.8.9.tar.gz --markdown 20230413/y/yhgit/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2023-04-13 04:27:39] INFO root fetch - processPackages [heizer]: executing diffoscope
+[2023-04-13 04:27:39] INFO root fetch - processPackages [heizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heizer-999999.dev1681350078.tar.gz tmp/heizer-999999.dev1681352876.tar.gz --markdown 20230413/h/heizer/999999.dev1681350078-999999.dev1681352876/diff.md --exclude *.pyd
+[2023-04-13 04:27:40] INFO root fetch - processPackages [shared-atomic-enterprise]: Downloading https://files.pythonhosted.org/packages/a9/22/a89273e354c12e6de28950267bceb1360e6df5cd33d39105b8a3336f6977/shared_atomic_enterprise-5!2.3.1-py39-none-win_amd64.whl
+[2023-04-13 04:27:40] INFO root fetch - processPackages [shared-atomic-enterprise]: executing diffoscope
+[2023-04-13 04:27:40] INFO root fetch - processPackages [shared-atomic-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shared_atomic_enterprise-5!2.2.9-py39-none-win_amd64.whl.zip tmp/shared_atomic_enterprise-5!2.3.1-py39-none-win_amd64.whl.zip --markdown 20230413/s/shared-atomic-enterprise/5!2.2.9-5!2.3.1/diff.md --exclude *.pyd
+[2023-04-13 04:27:40] INFO root fetch - processPackages [yhgit]: Start processing: pdxtra
+[2023-04-13 04:27:40] INFO root fetch - main [MainThread]: End processing [yhgit]: success
+[2023-04-13 04:27:40] INFO root fetch - processPackages [pdxtra]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-13 04:27:40] INFO root fetch - processPackages [pdxtra]: Downloading https://files.pythonhosted.org/packages/73/15/ed1d0e23ebd1c2347faaad9a7b0052b7b9f339869b1f31961f14ebaa9f1d/pdxtra-1.0.1-py3-none-any.whl
+[2023-04-13 04:27:41] INFO root fetch - processPackages [heizer]: Start processing: inhandtest
+[2023-04-13 04:27:41] INFO root fetch - main [MainThread]: End processing [heizer]: success
+[2023-04-13 04:27:41] INFO root fetch - processPackages [inhandtest]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 04:27:41] INFO root fetch - processPackages [pdxtra]: Downloading https://files.pythonhosted.org/packages/88/cd/1ae61fa129a5a597b6e70f6a7ec3ff91c24af093b0eae3543e6060729663/pdxtra-1.0.2-py3-none-any.whl
+[2023-04-13 04:27:41] INFO root fetch - processPackages [inhandtest]: executing diffoscope
+[2023-04-13 04:27:41] INFO root fetch - processPackages [inhandtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inhandtest-0.0.4.tar.gz tmp/inhandtest-0.0.5.tar.gz --markdown 20230413/i/inhandtest/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 04:27:41] INFO root fetch - processPackages [pdxtra]: executing diffoscope
+[2023-04-13 04:27:41] INFO root fetch - processPackages [pdxtra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdxtra-1.0.1-py3-none-any.whl.zip tmp/pdxtra-1.0.2-py3-none-any.whl.zip --markdown 20230413/p/pdxtra/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-13 04:27:42] INFO root fetch - processPackages [inhandtest]: Start processing: azure-storage-file-datalake
+[2023-04-13 04:27:42] INFO root fetch - main [MainThread]: End processing [inhandtest]: success
+[2023-04-13 04:27:42] INFO root fetch - processPackages [azure-storage-file-datalake]: New version: [12.9.1] Old Version: [12.9.0b1]
+[2023-04-13 04:27:42] INFO root fetch - processPackages [pdxtra]: Start processing: tvault
+[2023-04-13 04:27:42] INFO root fetch - main [MainThread]: End processing [pdxtra]: success
+[2023-04-13 04:27:42] INFO root fetch - processPackages [tvault]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 04:27:42] INFO root fetch - processPackages [azure-storage-file-datalake]: Downloading https://files.pythonhosted.org/packages/be/69/ca18cbfcc175046da49df768a085a16e0f0e550df3aad42b5fa25533b47e/azure-storage-file-datalake-12.9.0b1.zip
+[2023-04-13 04:27:42] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-13 04:27:42] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.3.8-py3-none-any.whl.zip tmp/tvault-0.3.9-py3-none-any.whl.zip --markdown 20230413/t/tvault/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 04:27:42] INFO root fetch - processPackages [azure-storage-file-datalake]: Downloading https://files.pythonhosted.org/packages/a9/3a/6a1f4e6e2b09159f3e4da0dc39c1c52f3b85c83cb4f005b3b0772bdaf630/azure-storage-file-datalake-12.9.1.zip
+[2023-04-13 04:27:42] INFO root fetch - processPackages [azure-storage-file-datalake]: executing diffoscope
+[2023-04-13 04:27:42] INFO root fetch - processPackages [azure-storage-file-datalake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-storage-file-datalake-12.9.0b1.zip tmp/azure-storage-file-datalake-12.9.1.zip --markdown 20230413/a/azure-storage-file-datalake/12.9.0b1-12.9.1/diff.md --exclude *.pyd
+[2023-04-13 04:27:43] INFO root fetch - processPackages [iam-actions]: Start processing: f5manager
+[2023-04-13 04:27:43] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-04-13 04:27:43] ERROR root fetch - processPackages [f5manager]: Unable to get metadata: No such project 'f5manager'
+[2023-04-13 04:27:43] INFO root fetch - processPackages [f5manager]: Start processing: loci-cli
+[2023-04-13 04:27:43] INFO root fetch - main [MainThread]: End processing [f5manager] error
+[2023-04-13 04:27:43] INFO root fetch - processPackages [loci-cli]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 04:27:43] INFO root fetch - main [MainThread]: End processing [tvault]: success
+[2023-04-13 04:27:43] INFO root fetch - processPackages [loci-cli]: Downloading https://files.pythonhosted.org/packages/8d/32/d27377aa261fb325dc018b0f4f89117b9076443abefca0b91cbbed3a5942/loci-cli-0.8.0.tar.gz
+[2023-04-13 04:27:44] INFO root fetch - processPackages [loci-cli]: Downloading https://files.pythonhosted.org/packages/29/ac/770511169ac6f359ea53536bca5dd9e4567300460e9f49bac8807f092145/loci-cli-0.9.0.tar.gz
+[2023-04-13 04:27:44] INFO root fetch - processPackages [loci-cli]: executing diffoscope
+[2023-04-13 04:27:44] INFO root fetch - processPackages [loci-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loci-cli-0.8.0.tar.gz tmp/loci-cli-0.9.0.tar.gz --markdown 20230413/l/loci-cli/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 04:27:45] INFO root fetch - main [MainThread]: End processing [loci-cli]: success
+[2023-04-13 04:27:45] INFO root fetch - main [MainThread]: End processing [azure-storage-file-datalake]: success
+[2023-04-13 04:27:46] INFO root fetch - main [MainThread]: End processing [aicspylibczi]: success
+[2023-04-13 04:27:48] INFO root fetch - main [MainThread]: End processing [shared-atomic-enterprise]: success
+[2023-04-13 04:27:48] INFO root fetch - main [MainThread]: Store serial: [17686017]
