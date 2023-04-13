@@ -17944,3 +17944,107 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 15:27:24] ERROR root fetch - processPackages [diambra]: Timeout during execution of pkgdiff
 [2023-04-13 15:27:24] INFO root fetch - main [MainThread]: End processing [diambra] error
 [2023-04-13 15:27:24] INFO root fetch - main [MainThread]: Store serial: [17692940]
+[2023-04-13 15:32:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17692940]
+[2023-04-13 15:32:32] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-13 15:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: time-util-wj
+[2023-04-13 15:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GXN
+[2023-04-13 15:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oakvar
+[2023-04-13 15:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imod2relion
+[2023-04-13 15:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apache-airflow-providers-fastetl
+[2023-04-13 15:32:32] INFO root fetch - processPackages [imod2relion]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-13 15:32:32] WARNING root fetch - processPackages [apache-airflow-providers-fastetl]: Skipping, unable to determine old version
+[2023-04-13 15:32:32] INFO root fetch - processPackages [apache-airflow-providers-fastetl]: Start processing: vegafusion-python-embed
+[2023-04-13 15:32:32] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-fastetl] error
+[2023-04-13 15:32:32] INFO root fetch - processPackages [time-util-wj]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-13 15:32:32] INFO root fetch - processPackages [oakvar]: New version: [2.9.9] Old Version: [2.9.7]
+[2023-04-13 15:32:32] INFO root fetch - processPackages [vegafusion-python-embed]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-13 15:32:32] INFO root fetch - processPackages [GXN]: New version: [0.0.27] Old Version: [0.0.26]
+[2023-04-13 15:32:33] INFO root fetch - processPackages [vegafusion-python-embed]: Downloading https://files.pythonhosted.org/packages/4e/bf/dbc8f4a4e78339bde459497ae08065d14450f9d6af1981f8a9c3075c928d/vegafusion_python_embed-1.2.0.tar.gz
+[2023-04-13 15:32:33] INFO root fetch - processPackages [GXN]: Downloading https://files.pythonhosted.org/packages/20/69/cb65773469a668d757bc571d9d1a6fe6320ba7f9befab3495a3555ba6b98/GXN-0.0.26.tar.gz
+[2023-04-13 15:32:33] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/aa/b5/98830752d15a39d3fe7ee973d8ff37f1a3498ab33f56838ffd4d470de442/oakvar-2.9.9.tar.gz
+[2023-04-13 15:32:33] INFO root fetch - processPackages [imod2relion]: Downloading https://files.pythonhosted.org/packages/b7/f6/7b29e00d06e96ad8b28bb1aee6b1bb7676d3ce6b81e9f31183cde7dd305a/imod2relion-1.1.0.tar.gz
+[2023-04-13 15:32:33] INFO root fetch - processPackages [time-util-wj]: Downloading https://files.pythonhosted.org/packages/b0/f8/d2a677adddd8026a0249bb02d800823fd613983bd65a46cfc5764fa97558/time_util_wj-1.0.4.tar.gz
+[2023-04-13 15:32:33] WARNING root fetch - processPackages [GXN]: Skipping package: exceeds size limit 54515097>=10485760
+[2023-04-13 15:32:33] INFO root fetch - processPackages [GXN]: Start processing: crabpy-pyramid
+[2023-04-13 15:32:33] INFO root fetch - main [MainThread]: End processing [GXN] error
+[2023-04-13 15:32:33] INFO root fetch - processPackages [crabpy-pyramid]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-13 15:32:33] INFO root fetch - processPackages [imod2relion]: executing diffoscope
+[2023-04-13 15:32:33] INFO root fetch - processPackages [imod2relion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imod2relion-1.0.2.tar.gz tmp/imod2relion-1.1.0.tar.gz --markdown 20230413/i/imod2relion/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-13 15:32:33] INFO root fetch - processPackages [time-util-wj]: executing diffoscope
+[2023-04-13 15:32:33] INFO root fetch - processPackages [time-util-wj]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_util_wj-1.0.3.tar.gz tmp/time_util_wj-1.0.4.tar.gz --markdown 20230413/t/time-util-wj/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-13 15:32:33] INFO root fetch - processPackages [vegafusion-python-embed]: Downloading https://files.pythonhosted.org/packages/7f/2a/3b149f4072824b67de0d9236ac4aca4130f38cd334429324eea69bf9b60e/vegafusion_python_embed-1.2.1.tar.gz
+[2023-04-13 15:32:33] INFO root fetch - processPackages [crabpy-pyramid]: Downloading https://files.pythonhosted.org/packages/a7/8c/46489a3cd51cf37e39a03423ad9103313d5aa69222dc37f3a6b62e305945/crabpy_pyramid-1.1.0.tar.gz
+[2023-04-13 15:32:33] INFO root fetch - processPackages [crabpy-pyramid]: Downloading https://files.pythonhosted.org/packages/f9/61/d4a5a4f12c06eab93df71b67207bf9108787c60f110bef93ee6f57303bfa/crabpy_pyramid-1.2.0.tar.gz
+[2023-04-13 15:32:33] INFO root fetch - processPackages [crabpy-pyramid]: executing diffoscope
+[2023-04-13 15:32:33] INFO root fetch - processPackages [crabpy-pyramid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crabpy_pyramid-1.1.0.tar.gz tmp/crabpy_pyramid-1.2.0.tar.gz --markdown 20230413/c/crabpy-pyramid/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-13 15:32:34] INFO root fetch - processPackages [vegafusion-python-embed]: executing diffoscope
+[2023-04-13 15:32:34] INFO root fetch - processPackages [vegafusion-python-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion_python_embed-1.2.0.tar.gz tmp/vegafusion_python_embed-1.2.1.tar.gz --markdown 20230413/v/vegafusion-python-embed/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-13 15:32:34] INFO root fetch - processPackages [imod2relion]: Start processing: bridgecrew
+[2023-04-13 15:32:34] INFO root fetch - main [MainThread]: End processing [imod2relion]: success
+[2023-04-13 15:32:34] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-13 15:32:34] INFO root fetch - processPackages [time-util-wj]: Start processing: pyinflux3
+[2023-04-13 15:32:34] INFO root fetch - main [MainThread]: End processing [time-util-wj]: success
+[2023-04-13 15:32:34] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-04-13 15:32:34] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.7.tar.gz tmp/oakvar-2.9.9.tar.gz --markdown 20230413/o/oakvar/2.9.7-2.9.9/diff.md --exclude *.pyd
+[2023-04-13 15:32:34] INFO root fetch - processPackages [pyinflux3]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-13 15:32:34] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/b0/14/ba82bed852a9565d20f37489e612de3e42addaa1f548d3db21ef07c3945a/pyinflux3-0.7.3.tar.gz
+[2023-04-13 15:32:34] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-13 15:32:34] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.7.2.tar.gz tmp/pyinflux3-0.7.3.tar.gz --markdown 20230413/p/pyinflux3/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-13 15:32:34] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-13 15:32:34] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230413/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-13 15:32:35] INFO root fetch - processPackages [crabpy-pyramid]: Start processing: glue-jupyter
+[2023-04-13 15:32:35] INFO root fetch - main [MainThread]: End processing [crabpy-pyramid]: success
+[2023-04-13 15:32:35] INFO root fetch - processPackages [glue-jupyter]: New version: [0.9] Old Version: [0.8.1]
+[2023-04-13 15:32:35] INFO root fetch - processPackages [pyinflux3]: Start processing: vegafusion
+[2023-04-13 15:32:35] INFO root fetch - main [MainThread]: End processing [pyinflux3]: success
+[2023-04-13 15:32:35] INFO root fetch - processPackages [vegafusion]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-13 15:32:35] INFO root fetch - processPackages [bridgecrew]: Start processing: vegafusion-jupyter
+[2023-04-13 15:32:35] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-13 15:32:35] INFO root fetch - processPackages [glue-jupyter]: Downloading https://files.pythonhosted.org/packages/0e/98/96e876cdb94555cb68ab97c57d455516379a21d382e35ba4085fd4868bf0/glue-jupyter-0.8.1.tar.gz
+[2023-04-13 15:32:35] INFO root fetch - processPackages [vegafusion-jupyter]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-13 15:32:36] INFO root fetch - processPackages [vegafusion]: Downloading https://files.pythonhosted.org/packages/68/d5/b1fc72848b9ef817f32ba4e33edabee3eaa9cbe9291aa0534c353eabe5f9/vegafusion-1.2.1.tar.gz
+[2023-04-13 15:32:36] INFO root fetch - processPackages [vegafusion]: executing diffoscope
+[2023-04-13 15:32:36] INFO root fetch - processPackages [vegafusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion-1.2.0.tar.gz tmp/vegafusion-1.2.1.tar.gz --markdown 20230413/v/vegafusion/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-13 15:32:36] INFO root fetch - processPackages [vegafusion-jupyter]: Downloading https://files.pythonhosted.org/packages/f1/aa/c63dfbde6b015eadf1150b156f6ca75bc60d93f450a6b1ac9c0d394f64c1/vegafusion-jupyter-1.2.1.tar.gz
+[2023-04-13 15:32:36] INFO root fetch - processPackages [vegafusion-jupyter]: executing diffoscope
+[2023-04-13 15:32:36] INFO root fetch - processPackages [vegafusion-jupyter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion-jupyter-1.2.0.tar.gz tmp/vegafusion-jupyter-1.2.1.tar.gz --markdown 20230413/v/vegafusion-jupyter/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-13 15:32:36] INFO root fetch - processPackages [glue-jupyter]: Downloading https://files.pythonhosted.org/packages/8e/3f/49f4bd6e055f894bf9d05c703d4bae73d2a122cdac367ee2235ca1dab678/glue-jupyter-0.9.tar.gz
+[2023-04-13 15:32:36] INFO root fetch - processPackages [glue-jupyter]: executing diffoscope
+[2023-04-13 15:32:36] INFO root fetch - processPackages [glue-jupyter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glue-jupyter-0.8.1.tar.gz tmp/glue-jupyter-0.9.tar.gz --markdown 20230413/g/glue-jupyter/0.8.1-0.9/diff.md --exclude *.pyd
+[2023-04-13 15:32:37] INFO root fetch - processPackages [vegafusion]: Start processing: py-qgis-wps
+[2023-04-13 15:32:37] INFO root fetch - main [MainThread]: End processing [vegafusion]: success
+[2023-04-13 15:32:37] INFO root fetch - processPackages [py-qgis-wps]: New version: [1.8.6] Old Version: [1.8.5]
+[2023-04-13 15:32:37] INFO root fetch - processPackages [py-qgis-wps]: Downloading https://files.pythonhosted.org/packages/11/17/39d03909a6703cc4b686ff480e5d1e82486d284b1642f9d939d6d7d86306/py-qgis-wps-1.8.5.tar.gz
+[2023-04-13 15:32:37] INFO root fetch - processPackages [py-qgis-wps]: Downloading https://files.pythonhosted.org/packages/81/fb/af32236e488a75a6070e30197d41e090a10a048e38773d89b6ff7dbd3522/py-qgis-wps-1.8.6.tar.gz
+[2023-04-13 15:32:37] INFO root fetch - processPackages [py-qgis-wps]: executing diffoscope
+[2023-04-13 15:32:37] INFO root fetch - processPackages [py-qgis-wps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-qgis-wps-1.8.5.tar.gz tmp/py-qgis-wps-1.8.6.tar.gz --markdown 20230413/p/py-qgis-wps/1.8.5-1.8.6/diff.md --exclude *.pyd
+[2023-04-13 15:32:38] INFO root fetch - processPackages [glue-jupyter]: Start processing: openai-async-client
+[2023-04-13 15:32:38] INFO root fetch - main [MainThread]: End processing [glue-jupyter]: success
+[2023-04-13 15:32:38] INFO root fetch - processPackages [openai-async-client]: New version: [0.2.4] Old Version: [0.2.1]
+[2023-04-13 15:32:38] INFO root fetch - processPackages [openai-async-client]: Downloading https://files.pythonhosted.org/packages/3d/b5/87108ae9958890135c1ce8fedf2b7d1604f9f199f9ab9cfeed534da9611b/openai_async_client-0.2.4-py3-none-any.whl
+[2023-04-13 15:32:38] INFO root fetch - processPackages [openai-async-client]: executing diffoscope
+[2023-04-13 15:32:38] INFO root fetch - processPackages [openai-async-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai-async-client-0.2.1.tar.gz tmp/openai_async_client-0.2.4-py3-none-any.whl.zip --markdown 20230413/o/openai-async-client/0.2.1-0.2.4/diff.md --exclude *.pyd
+[2023-04-13 15:32:39] INFO root fetch - processPackages [oakvar]: Start processing: idun-guardian-client
+[2023-04-13 15:32:39] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-04-13 15:32:39] INFO root fetch - processPackages [idun-guardian-client]: New version: [1.1b9] Old Version: [1.1b4]
+[2023-04-13 15:32:39] INFO root fetch - processPackages [idun-guardian-client]: executing diffoscope
+[2023-04-13 15:32:39] INFO root fetch - processPackages [idun-guardian-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idun_guardian_client-1.1b4.tar.gz tmp/idun_guardian_client-1.1b9.tar.gz --markdown 20230413/i/idun-guardian-client/1.1b4-1.1b9/diff.md --exclude *.pyd
+[2023-04-13 15:32:39] INFO root fetch - processPackages [openai-async-client]: Start processing: grammarette
+[2023-04-13 15:32:39] INFO root fetch - main [MainThread]: End processing [openai-async-client]: success
+[2023-04-13 15:32:39] WARNING root fetch - processPackages [grammarette]: Skipping, unable to determine old version
+[2023-04-13 15:32:39] INFO root fetch - processPackages [grammarette]: Start processing: knowledge-mapper
+[2023-04-13 15:32:39] INFO root fetch - main [MainThread]: End processing [grammarette] error
+[2023-04-13 15:32:39] INFO root fetch - processPackages [knowledge-mapper]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 15:32:40] INFO root fetch - processPackages [knowledge-mapper]: Downloading https://files.pythonhosted.org/packages/e1/c4/333445c2ec0243e62f309068e8a41955ddf11a836af27f2025c8cd5391b5/knowledge_mapper-0.0.8.tar.gz
+[2023-04-13 15:32:40] INFO root fetch - processPackages [knowledge-mapper]: Downloading https://files.pythonhosted.org/packages/2f/9b/a166c5c3e6002b4781476baaeba108f8f0ac74c13380133187bbe37e2269/knowledge_mapper-0.0.9.tar.gz
+[2023-04-13 15:32:40] INFO root fetch - processPackages [idun-guardian-client]: Start processing: html4quiz
+[2023-04-13 15:32:40] INFO root fetch - main [MainThread]: End processing [idun-guardian-client]: success
+[2023-04-13 15:32:40] INFO root fetch - processPackages [knowledge-mapper]: executing diffoscope
+[2023-04-13 15:32:40] INFO root fetch - processPackages [knowledge-mapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledge_mapper-0.0.8.tar.gz tmp/knowledge_mapper-0.0.9.tar.gz --markdown 20230413/k/knowledge-mapper/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 15:32:40] WARNING root fetch - processPackages [html4quiz]: Skipping, unable to determine old version
+[2023-04-13 15:32:40] INFO root fetch - main [MainThread]: End processing [html4quiz] error
+[2023-04-13 15:32:41] INFO root fetch - main [MainThread]: End processing [py-qgis-wps]: success
+[2023-04-13 15:32:41] INFO root fetch - main [MainThread]: End processing [knowledge-mapper]: success
+[2023-04-13 15:33:06] INFO root fetch - main [MainThread]: End processing [vegafusion-python-embed]: success
+[2023-04-13 15:33:54] INFO root fetch - main [MainThread]: End processing [vegafusion-jupyter]: success
+[2023-04-13 15:33:54] INFO root fetch - main [MainThread]: Store serial: [17693021]
