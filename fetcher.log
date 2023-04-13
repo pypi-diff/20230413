@@ -22956,3 +22956,124 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 19:01:02] INFO root fetch - main [MainThread]: End processing [BOsHaNiC]: success
 [2023-04-13 19:01:02] INFO root fetch - main [MainThread]: End processing [inductiva]: success
 [2023-04-13 19:01:02] INFO root fetch - main [MainThread]: Store serial: [17695830]
+[2023-04-13 19:06:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17695830]
+[2023-04-13 19:06:10] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-13 19:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bowtie-json-schema
+[2023-04-13 19:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beymax
+[2023-04-13 19:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: novauniverse
+[2023-04-13 19:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: horsetalk
+[2023-04-13 19:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: semantic-kernel
+[2023-04-13 19:06:10] INFO root fetch - processPackages [horsetalk]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-13 19:06:10] INFO root fetch - processPackages [beymax]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-13 19:06:10] INFO root fetch - processPackages [bowtie-json-schema]: New version: [0.9.1] Old Version: [0.81.1]
+[2023-04-13 19:06:10] INFO root fetch - processPackages [semantic-kernel]: New version: [0.2.2.dev0] Old Version: [0.2.1.dev0]
+[2023-04-13 19:06:10] INFO root fetch - processPackages [novauniverse]: New version: [2.1.1] Old Version: [2.1]
+[2023-04-13 19:06:10] INFO root fetch - processPackages [bowtie-json-schema]: Downloading https://files.pythonhosted.org/packages/8e/0a/b4aab2247e1d168377f18b4fc3b62add224a7cbf44bd5982949d3c12ae92/bowtie_json_schema-0.81.1.tar.gz
+[2023-04-13 19:06:10] INFO root fetch - processPackages [novauniverse]: Downloading https://files.pythonhosted.org/packages/6d/7d/6dfbbbfa814b9633c942f1034ff2ca0d87158949c66166c7645d949cf981/novauniverse-2.1.1.tar.gz
+[2023-04-13 19:06:10] INFO root fetch - processPackages [beymax]: Downloading https://files.pythonhosted.org/packages/ba/21/6cfcf4d437e01ce2c9926db8b625f32dafb70f1b4088f77a0f6fdd4158a3/beymax-1.1.0.tar.gz
+[2023-04-13 19:06:10] INFO root fetch - processPackages [horsetalk]: Downloading https://files.pythonhosted.org/packages/25/c3/da2627fd69de028f79125572307f12587f7a4171cad9c0f814322e1c647e/horsetalk-0.7.0.tar.gz
+[2023-04-13 19:06:11] INFO root fetch - processPackages [semantic-kernel]: Downloading https://files.pythonhosted.org/packages/aa/a2/32f79786f98aafe8c54e66e6f8f778a5969d825071948cd5d8573830274c/semantic_kernel-0.2.2.dev0.tar.gz
+[2023-04-13 19:06:11] INFO root fetch - processPackages [novauniverse]: executing diffoscope
+[2023-04-13 19:06:11] INFO root fetch - processPackages [novauniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novauniverse-2.1.tar.gz tmp/novauniverse-2.1.1.tar.gz --markdown 20230413/n/novauniverse/2.1-2.1.1/diff.md --exclude *.pyd
+[2023-04-13 19:06:11] INFO root fetch - processPackages [horsetalk]: executing diffoscope
+[2023-04-13 19:06:11] INFO root fetch - processPackages [horsetalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/horsetalk-0.6.1.tar.gz tmp/horsetalk-0.7.0.tar.gz --markdown 20230413/h/horsetalk/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-13 19:06:11] INFO root fetch - processPackages [beymax]: Downloading https://files.pythonhosted.org/packages/65/df/9e715c0e9cb05c55088774a1b03c905b51fa6a69debee323ac9fe3c3d802/beymax-1.2.0.tar.gz
+[2023-04-13 19:06:11] INFO root fetch - processPackages [semantic-kernel]: executing diffoscope
+[2023-04-13 19:06:11] INFO root fetch - processPackages [semantic-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_kernel-0.2.1.dev0.tar.gz tmp/semantic_kernel-0.2.2.dev0.tar.gz --markdown 20230413/s/semantic-kernel/0.2.1.dev0-0.2.2.dev0/diff.md --exclude *.pyd
+[2023-04-13 19:06:11] INFO root fetch - processPackages [bowtie-json-schema]: executing diffoscope
+[2023-04-13 19:06:11] INFO root fetch - processPackages [bowtie-json-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bowtie_json_schema-0.81.1.tar.gz tmp/bowtie_json_schema-0.9.1.tar.gz --markdown 20230413/b/bowtie-json-schema/0.81.1-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 19:06:11] INFO root fetch - processPackages [beymax]: executing diffoscope
+[2023-04-13 19:06:11] INFO root fetch - processPackages [beymax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beymax-1.1.0.tar.gz tmp/beymax-1.2.0.tar.gz --markdown 20230413/b/beymax/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-13 19:06:12] INFO root fetch - processPackages [horsetalk]: Start processing: gym-trading-env
+[2023-04-13 19:06:12] INFO root fetch - main [MainThread]: End processing [horsetalk]: success
+[2023-04-13 19:06:12] INFO root fetch - processPackages [gym-trading-env]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 19:06:12] INFO root fetch - processPackages [gym-trading-env]: executing diffoscope
+[2023-04-13 19:06:12] INFO root fetch - processPackages [gym-trading-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym-trading-env-0.1.8.tar.gz tmp/gym-trading-env-0.1.9.tar.gz --markdown 20230413/g/gym-trading-env/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 19:06:12] INFO root fetch - processPackages [novauniverse]: Start processing: pyoomysql
+[2023-04-13 19:06:12] INFO root fetch - main [MainThread]: End processing [novauniverse]: success
+[2023-04-13 19:06:12] INFO root fetch - processPackages [pyoomysql]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-13 19:06:12] INFO root fetch - processPackages [bowtie-json-schema]: Start processing: katalytic-files
+[2023-04-13 19:06:12] INFO root fetch - main [MainThread]: End processing [bowtie-json-schema]: success
+[2023-04-13 19:06:12] INFO root fetch - processPackages [katalytic-files]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 19:06:12] INFO root fetch - processPackages [beymax]: Start processing: cirq-core
+[2023-04-13 19:06:12] INFO root fetch - main [MainThread]: End processing [beymax]: success
+[2023-04-13 19:06:12] INFO root fetch - processPackages [pyoomysql]: Downloading https://files.pythonhosted.org/packages/5a/cf/ac0905ff81247b6a3bff39f0fd30bc83d853f8eb264ed63aac82626a01ab/pyoomysql-0.2.3.tar.gz
+[2023-04-13 19:06:12] INFO root fetch - processPackages [cirq-core]: New version: [1.2.0.dev20230413170759] Old Version: [1.2.0.dev20230413044243]
+[2023-04-13 19:06:12] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-13 19:06:12] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.3.8.tar.gz tmp/katalytic-files-0.3.9.tar.gz --markdown 20230413/k/katalytic-files/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 19:06:12] INFO root fetch - processPackages [semantic-kernel]: Start processing: cirq-aqt
+[2023-04-13 19:06:12] INFO root fetch - main [MainThread]: End processing [semantic-kernel]: success
+[2023-04-13 19:06:12] INFO root fetch - processPackages [cirq-core]: Downloading https://files.pythonhosted.org/packages/bd/3b/8d83d31eb76f7944bb1f50a73d2cf8ecdefc784f4a79ebafa83e542b8b78/cirq_core-1.2.0.dev20230413170759-py3-none-any.whl
+[2023-04-13 19:06:12] INFO root fetch - processPackages [cirq-aqt]: New version: [1.2.0.dev20230413170759] Old Version: [1.2.0.dev20230413044243]
+[2023-04-13 19:06:12] INFO root fetch - processPackages [pyoomysql]: Downloading https://files.pythonhosted.org/packages/f9/1c/64634d20e4caeeebaa59987d0e7b8ad3e31aa784fd2cdb28fd4754b6c953/pyoomysql-0.2.4.tar.gz
+[2023-04-13 19:06:13] INFO root fetch - processPackages [cirq-aqt]: Downloading https://files.pythonhosted.org/packages/67/d4/6cf63521c90bba94a4e7067b93332ce11c63a64c6f3e2195981c4c8abd64/cirq_aqt-1.2.0.dev20230413170759-py3-none-any.whl
+[2023-04-13 19:06:13] INFO root fetch - processPackages [pyoomysql]: executing diffoscope
+[2023-04-13 19:06:13] INFO root fetch - processPackages [pyoomysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyoomysql-0.2.3.tar.gz tmp/pyoomysql-0.2.4.tar.gz --markdown 20230413/p/pyoomysql/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-13 19:06:13] INFO root fetch - processPackages [cirq-core]: executing diffoscope
+[2023-04-13 19:06:13] INFO root fetch - processPackages [cirq-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_core-1.2.0.dev20230413044243-py3-none-any.whl.zip tmp/cirq_core-1.2.0.dev20230413170759-py3-none-any.whl.zip --markdown 20230413/c/cirq-core/1.2.0.dev20230413044243-1.2.0.dev20230413170759/diff.md --exclude *.pyd
+[2023-04-13 19:06:13] INFO root fetch - processPackages [cirq-aqt]: executing diffoscope
+[2023-04-13 19:06:13] INFO root fetch - processPackages [cirq-aqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_aqt-1.2.0.dev20230413044243-py3-none-any.whl.zip tmp/cirq_aqt-1.2.0.dev20230413170759-py3-none-any.whl.zip --markdown 20230413/c/cirq-aqt/1.2.0.dev20230413044243-1.2.0.dev20230413170759/diff.md --exclude *.pyd
+[2023-04-13 19:06:13] INFO root fetch - processPackages [gym-trading-env]: Start processing: cirq-ionq
+[2023-04-13 19:06:13] INFO root fetch - main [MainThread]: End processing [gym-trading-env]: success
+[2023-04-13 19:06:13] INFO root fetch - processPackages [cirq-ionq]: New version: [1.2.0.dev20230413170759] Old Version: [1.2.0.dev20230413044243]
+[2023-04-13 19:06:13] INFO root fetch - processPackages [cirq-ionq]: Downloading https://files.pythonhosted.org/packages/4a/e1/41097699fb74f1f67612fba9fe8a23e0863ab53317bc836d4046d0f06df7/cirq_ionq-1.2.0.dev20230413170759-py3-none-any.whl
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-ionq]: executing diffoscope
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-ionq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_ionq-1.2.0.dev20230413044243-py3-none-any.whl.zip tmp/cirq_ionq-1.2.0.dev20230413170759-py3-none-any.whl.zip --markdown 20230413/c/cirq-ionq/1.2.0.dev20230413044243-1.2.0.dev20230413170759/diff.md --exclude *.pyd
+[2023-04-13 19:06:14] INFO root fetch - processPackages [pyoomysql]: Start processing: cirq-google
+[2023-04-13 19:06:14] INFO root fetch - main [MainThread]: End processing [pyoomysql]: success
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-google]: New version: [1.2.0.dev20230413170759] Old Version: [1.2.0.dev20230413044243]
+[2023-04-13 19:06:14] INFO root fetch - processPackages [katalytic-files]: Start processing: cirq
+[2023-04-13 19:06:14] INFO root fetch - main [MainThread]: End processing [katalytic-files]: success
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq]: New version: [1.2.0.dev20230413170759] Old Version: [1.2.0.dev20230413044243]
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-aqt]: Start processing: cirq-pasqal
+[2023-04-13 19:06:14] INFO root fetch - main [MainThread]: End processing [cirq-aqt]: success
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-pasqal]: New version: [1.2.0.dev20230413170759] Old Version: [1.2.0.dev20230413044243]
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq]: Downloading https://files.pythonhosted.org/packages/d0/d5/9f9ae45477c748ad8e97718b0966def161521cde31dbafe3ebf70cfc124a/cirq-1.2.0.dev20230413170759-py3-none-any.whl
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-google]: Downloading https://files.pythonhosted.org/packages/ad/49/149699c228c7d626049d45699bfde6de1d5ce69c8a9c4269ec47e7348127/cirq_google-1.2.0.dev20230413170759-py3-none-any.whl
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-pasqal]: Downloading https://files.pythonhosted.org/packages/cb/91/41304aef3a8ed32a2d91af9b5f4c4da27ff159c2649939aa130548b1a038/cirq_pasqal-1.2.0.dev20230413170759-py3-none-any.whl
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq]: executing diffoscope
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq-1.2.0.dev20230413044243-py3-none-any.whl.zip tmp/cirq-1.2.0.dev20230413170759-py3-none-any.whl.zip --markdown 20230413/c/cirq/1.2.0.dev20230413044243-1.2.0.dev20230413170759/diff.md --exclude *.pyd
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-google]: executing diffoscope
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_google-1.2.0.dev20230413044243-py3-none-any.whl.zip tmp/cirq_google-1.2.0.dev20230413170759-py3-none-any.whl.zip --markdown 20230413/c/cirq-google/1.2.0.dev20230413044243-1.2.0.dev20230413170759/diff.md --exclude *.pyd
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-pasqal]: executing diffoscope
+[2023-04-13 19:06:14] INFO root fetch - processPackages [cirq-pasqal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_pasqal-1.2.0.dev20230413044243-py3-none-any.whl.zip tmp/cirq_pasqal-1.2.0.dev20230413170759-py3-none-any.whl.zip --markdown 20230413/c/cirq-pasqal/1.2.0.dev20230413044243-1.2.0.dev20230413170759/diff.md --exclude *.pyd
+[2023-04-13 19:06:15] INFO root fetch - processPackages [cirq-ionq]: Start processing: cirq-rigetti
+[2023-04-13 19:06:15] INFO root fetch - main [MainThread]: End processing [cirq-ionq]: success
+[2023-04-13 19:06:15] INFO root fetch - processPackages [cirq-rigetti]: New version: [1.2.0.dev20230413170759] Old Version: [1.2.0.dev20230413044243]
+[2023-04-13 19:06:15] INFO root fetch - processPackages [cirq-rigetti]: Downloading https://files.pythonhosted.org/packages/2c/39/8bb14c340ec5506cbffd4ad48ea203876e66ee6f8181afb8974724318681/cirq_rigetti-1.2.0.dev20230413170759-py3-none-any.whl
+[2023-04-13 19:06:15] INFO root fetch - processPackages [cirq]: Start processing: cirq-web
+[2023-04-13 19:06:15] INFO root fetch - main [MainThread]: End processing [cirq]: success
+[2023-04-13 19:06:15] INFO root fetch - processPackages [cirq-web]: New version: [1.2.0.dev20230413170759] Old Version: [1.2.0.dev20230413044243]
+[2023-04-13 19:06:15] INFO root fetch - processPackages [cirq-rigetti]: executing diffoscope
+[2023-04-13 19:06:15] INFO root fetch - processPackages [cirq-rigetti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_rigetti-1.2.0.dev20230413044243-py3-none-any.whl.zip tmp/cirq_rigetti-1.2.0.dev20230413170759-py3-none-any.whl.zip --markdown 20230413/c/cirq-rigetti/1.2.0.dev20230413044243-1.2.0.dev20230413170759/diff.md --exclude *.pyd
+[2023-04-13 19:06:16] INFO root fetch - processPackages [cirq-web]: Downloading https://files.pythonhosted.org/packages/5d/2d/af009f3aee20395ae1c1b4dbb0ac7ff9700c54a7fbd3e597d59f3fb96a54/cirq_web-1.2.0.dev20230413170759-py3-none-any.whl
+[2023-04-13 19:06:16] INFO root fetch - processPackages [cirq-pasqal]: Start processing: confguard
+[2023-04-13 19:06:16] INFO root fetch - main [MainThread]: End processing [cirq-pasqal]: success
+[2023-04-13 19:06:16] INFO root fetch - processPackages [confguard]: New version: [1.2.0] Old Version: [1.1.5]
+[2023-04-13 19:06:16] INFO root fetch - processPackages [cirq-web]: executing diffoscope
+[2023-04-13 19:06:16] INFO root fetch - processPackages [cirq-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_web-1.2.0.dev20230413044243-py3-none-any.whl.zip tmp/cirq_web-1.2.0.dev20230413170759-py3-none-any.whl.zip --markdown 20230413/c/cirq-web/1.2.0.dev20230413044243-1.2.0.dev20230413170759/diff.md --exclude *.pyd
+[2023-04-13 19:06:16] INFO root fetch - processPackages [confguard]: Downloading https://files.pythonhosted.org/packages/b3/15/d45eda3fac89fb74b65ff23381881656dda4c59b64a3060a0d86607edc29/confguard-1.2.0.tar.gz
+[2023-04-13 19:06:16] INFO root fetch - processPackages [confguard]: executing diffoscope
+[2023-04-13 19:06:16] INFO root fetch - processPackages [confguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/confguard-1.1.5.tar.gz tmp/confguard-1.2.0.tar.gz --markdown 20230413/c/confguard/1.1.5-1.2.0/diff.md --exclude *.pyd
+[2023-04-13 19:06:17] INFO root fetch - processPackages [cirq-rigetti]: Start processing: dj-beatcloud
+[2023-04-13 19:06:17] INFO root fetch - main [MainThread]: End processing [cirq-rigetti]: success
+[2023-04-13 19:06:17] INFO root fetch - processPackages [dj-beatcloud]: New version: [2.4.1b4] Old Version: [2.4.1b3]
+[2023-04-13 19:06:17] INFO root fetch - processPackages [cirq-web]: Start processing: miki-helpful-functions
+[2023-04-13 19:06:17] INFO root fetch - main [MainThread]: End processing [cirq-web]: success
+[2023-04-13 19:06:17] INFO root fetch - processPackages [dj-beatcloud]: Downloading https://files.pythonhosted.org/packages/5b/84/57e5429d560c024d54b6805949228b403198880ab616143347027acc7598/dj_beatcloud-2.4.1b4.tar.gz
+[2023-04-13 19:06:17] WARNING root fetch - processPackages [miki-helpful-functions]: Skipping, unable to determine old version
+[2023-04-13 19:06:17] INFO root fetch - processPackages [miki-helpful-functions]: Start processing: cctk
+[2023-04-13 19:06:17] INFO root fetch - main [MainThread]: End processing [miki-helpful-functions] error
+[2023-04-13 19:06:17] INFO root fetch - processPackages [cctk]: New version: [v0.1.5] Old Version: [v0.1.4]
+[2023-04-13 19:06:17] INFO root fetch - processPackages [dj-beatcloud]: executing diffoscope
+[2023-04-13 19:06:17] INFO root fetch - processPackages [dj-beatcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_beatcloud-2.4.1b3.tar.gz tmp/dj_beatcloud-2.4.1b4.tar.gz --markdown 20230413/d/dj-beatcloud/2.4.1b3-2.4.1b4/diff.md --exclude *.pyd
+[2023-04-13 19:06:17] INFO root fetch - processPackages [cctk]: Downloading https://files.pythonhosted.org/packages/84/06/13b9a4a05ef45d5cd9c4e9ea0f6e929330b92f806764bd52c35e721780fb/cctk-v0.1.4.tar.gz
+[2023-04-13 19:06:17] INFO root fetch - main [MainThread]: End processing [confguard]: success
+[2023-04-13 19:06:17] INFO root fetch - processPackages [cctk]: Downloading https://files.pythonhosted.org/packages/29/3e/bda5fa41bc6cedff330407a198803bd094dbb807617c9209b9e4aa330dd5/cctk-v0.1.5.tar.gz
+[2023-04-13 19:06:18] INFO root fetch - processPackages [cctk]: executing diffoscope
+[2023-04-13 19:06:18] INFO root fetch - processPackages [cctk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cctk-v0.1.4.tar.gz tmp/cctk-v0.1.5.tar.gz --markdown 20230413/c/cctk/v0.1.4-v0.1.5/diff.md --exclude *.pyd
+[2023-04-13 19:06:18] INFO root fetch - main [MainThread]: End processing [cirq-google]: success
+[2023-04-13 19:06:19] INFO root fetch - main [MainThread]: End processing [dj-beatcloud]: success
+[2023-04-13 19:06:19] INFO root fetch - main [MainThread]: End processing [cctk]: success
+[2023-04-13 19:06:28] INFO root fetch - main [MainThread]: End processing [cirq-core]: success
+[2023-04-13 19:06:28] INFO root fetch - main [MainThread]: Store serial: [17695885]
