@@ -8896,3 +8896,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 08:24:15] INFO root fetch - main [MainThread]: End processing [proteinTools]: success
 [2023-04-13 08:24:15] INFO root fetch - main [MainThread]: End processing [libsnew]: success
 [2023-04-13 08:24:15] INFO root fetch - main [MainThread]: Store serial: [17687622]
+[2023-04-13 08:29:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687622]
+[2023-04-13 08:29:23] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-13 08:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrgasp
+[2023-04-13 08:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyquil
+[2023-04-13 08:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: axterdb
+[2023-04-13 08:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbox
+[2023-04-13 08:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scrapy-zyte-api
+[2023-04-13 08:29:23] INFO root fetch - processPackages [pyquil]: New version: [4.0.0rc9] Old Version: [4.0.0rc8]
+[2023-04-13 08:29:23] ERROR root fetch - processPackages [pyrgasp]: Unable to get metadata: No such project 'pyrgasp'
+[2023-04-13 08:29:23] INFO root fetch - processPackages [pyrgasp]: Start processing: odoo-addon-pos-default-partner
+[2023-04-13 08:29:23] INFO root fetch - main [MainThread]: End processing [pyrgasp] error
+[2023-04-13 08:29:23] INFO root fetch - processPackages [axterdb]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-13 08:29:23] INFO root fetch - processPackages [scrapy-zyte-api]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-13 08:29:23] INFO root fetch - processPackages [nbox]: New version: [0.9.9rc0] Old Version: [0.9.9]
+[2023-04-13 08:29:23] INFO root fetch - processPackages [odoo-addon-pos-default-partner]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2023-04-13 08:29:23] INFO root fetch - processPackages [pyquil]: executing diffoscope
+[2023-04-13 08:29:23] INFO root fetch - processPackages [pyquil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyquil-4.0.0rc8.tar.gz tmp/pyquil-4.0.0rc9.tar.gz --markdown 20230413/p/pyquil/4.0.0rc8-4.0.0rc9/diff.md --exclude *.pyd
+[2023-04-13 08:29:23] INFO root fetch - processPackages [odoo-addon-pos-default-partner]: executing diffoscope
+[2023-04-13 08:29:23] INFO root fetch - processPackages [odoo-addon-pos-default-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_default_partner-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_pos_default_partner-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-pos-default-partner/16.0.1.0.0.5-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-04-13 08:29:23] INFO root fetch - processPackages [axterdb]: Downloading https://files.pythonhosted.org/packages/d3/26/f361f6ff4e61e316c1c7a7d3d13e75e63cf376e51b950157cd23997c1138/axterdb-1.2.3.tar.gz
+[2023-04-13 08:29:23] INFO root fetch - processPackages [scrapy-zyte-api]: Downloading https://files.pythonhosted.org/packages/e5/12/4de1f1edff3925d58b457a60e111d638b36e3e6763b466a22a8247f7c4cc/scrapy-zyte-api-0.8.0.tar.gz
+[2023-04-13 08:29:23] INFO root fetch - processPackages [nbox]: Downloading https://files.pythonhosted.org/packages/3d/74/98cb97a2dc0cd9f45292cd8ded3d3da9318b1bede8a34420822679c48c34/nbox-0.9.9.tar.gz
+[2023-04-13 08:29:23] INFO root fetch - processPackages [axterdb]: executing diffoscope
+[2023-04-13 08:29:23] INFO root fetch - processPackages [axterdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/axterdb-1.2.2.tar.gz tmp/axterdb-1.2.3.tar.gz --markdown 20230413/a/axterdb/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-13 08:29:23] INFO root fetch - processPackages [scrapy-zyte-api]: Downloading https://files.pythonhosted.org/packages/ac/cf/7a2c8c219bcce4cb25d29156d9323a143f6509fceecff2841bba6e4fa647/scrapy-zyte-api-0.8.1.tar.gz
+[2023-04-13 08:29:23] INFO root fetch - processPackages [nbox]: Downloading https://files.pythonhosted.org/packages/e9/5a/a1cec5678c7bcca81531e8e340b7ace580efc6d998e285970e6d0a94f7cd/nbox-0.9.9rc0.tar.gz
+[2023-04-13 08:29:23] INFO root fetch - processPackages [scrapy-zyte-api]: executing diffoscope
+[2023-04-13 08:29:23] INFO root fetch - processPackages [scrapy-zyte-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapy-zyte-api-0.8.0.tar.gz tmp/scrapy-zyte-api-0.8.1.tar.gz --markdown 20230413/s/scrapy-zyte-api/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-13 08:29:24] INFO root fetch - processPackages [nbox]: executing diffoscope
+[2023-04-13 08:29:24] INFO root fetch - processPackages [nbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbox-0.9.9.tar.gz tmp/nbox-0.9.9rc0.tar.gz --markdown 20230413/n/nbox/0.9.9-0.9.9rc0/diff.md --exclude *.pyd
+[2023-04-13 08:29:24] INFO root fetch - processPackages [odoo-addon-pos-default-partner]: Start processing: odoo-addons-oca-pos
+[2023-04-13 08:29:24] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-default-partner]: success
+[2023-04-13 08:29:24] INFO root fetch - processPackages [odoo-addons-oca-pos]: New version: [16.0.20230327.0] Old Version: [16.0.20230306.1]
+[2023-04-13 08:29:24] INFO root fetch - processPackages [odoo-addons-oca-pos]: Downloading https://files.pythonhosted.org/packages/49/48/a7d30be2edbf710a15370b8fc51eb4d0f0da366b58a07d44fc4cbc0b9155/odoo_addons_oca_pos-16.0.20230306.1-py3-none-any.whl
+[2023-04-13 08:29:24] INFO root fetch - processPackages [axterdb]: Start processing: pcl-pangu
+[2023-04-13 08:29:24] INFO root fetch - main [MainThread]: End processing [axterdb]: success
+[2023-04-13 08:29:24] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 08:29:24] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 08:29:24] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 08:29:25] INFO root fetch - processPackages [scrapy-zyte-api]: Start processing: xia-api
+[2023-04-13 08:29:25] INFO root fetch - main [MainThread]: End processing [scrapy-zyte-api]: success
+[2023-04-13 08:29:25] INFO root fetch - processPackages [xia-api]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 08:29:25] INFO root fetch - processPackages [odoo-addons-oca-pos]: Downloading https://files.pythonhosted.org/packages/0d/41/0ec05e7b30d239d46b38b73385de6531e8e07b85ea2c680d67ce121eb02e/odoo_addons_oca_pos-16.0.20230327.0-py3-none-any.whl
+[2023-04-13 08:29:25] INFO root fetch - processPackages [xia-api]: Downloading https://files.pythonhosted.org/packages/b0/ab/184b281f3d4ad8f284a5cd9f74836e0c591f18e2ecddbd53f48d6469fecc/xia_api-0.1.7-cp39-none-win_amd64.whl
+[2023-04-13 08:29:25] INFO root fetch - processPackages [odoo-addons-oca-pos]: executing diffoscope
+[2023-04-13 08:29:25] INFO root fetch - processPackages [odoo-addons-oca-pos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_pos-16.0.20230306.1-py3-none-any.whl.zip tmp/odoo_addons_oca_pos-16.0.20230327.0-py3-none-any.whl.zip --markdown 20230413/o/odoo-addons-oca-pos/16.0.20230306.1-16.0.20230327.0/diff.md --exclude *.pyd
+[2023-04-13 08:29:25] INFO root fetch - processPackages [nbox]: Start processing: TerraSegmentation
+[2023-04-13 08:29:25] INFO root fetch - main [MainThread]: End processing [nbox]: success
+[2023-04-13 08:29:25] INFO root fetch - processPackages [TerraSegmentation]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 08:29:25] INFO root fetch - processPackages [xia-api]: Downloading https://files.pythonhosted.org/packages/b1/00/4d37e2d46632482a5027f6051a435b67c1af54080f0172cc9136468f748d/xia_api-0.1.8-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-13 08:29:25] INFO root fetch - processPackages [xia-api]: executing diffoscope
+[2023-04-13 08:29:25] INFO root fetch - processPackages [xia-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_api-0.1.7-cp39-none-win_amd64.whl.zip tmp/xia_api-0.1.8-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230413/x/xia-api/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 08:29:25] INFO root fetch - processPackages [TerraSegmentation]: Downloading https://files.pythonhosted.org/packages/33/d2/77836a77520301e6c751b21f64e424ff4210a8c79fd0fed1da746550823b/TerraSegmentation-0.0.1.tar.gz
+[2023-04-13 08:29:26] INFO root fetch - processPackages [TerraSegmentation]: Downloading https://files.pythonhosted.org/packages/ab/cd/f5ee9d4004ff108887a04ac359a998c3774a568381ea21fe20c724c77f77/TerraSegmentation-0.0.2.tar.gz
+[2023-04-13 08:29:26] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-pos]: success
+[2023-04-13 08:29:26] INFO root fetch - processPackages [TerraSegmentation]: executing diffoscope
+[2023-04-13 08:29:26] INFO root fetch - processPackages [TerraSegmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TerraSegmentation-0.0.1.tar.gz tmp/TerraSegmentation-0.0.2.tar.gz --markdown 20230413/T/TerraSegmentation/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 08:29:26] INFO root fetch - main [MainThread]: End processing [pyquil]: success
+[2023-04-13 08:29:26] INFO root fetch - main [MainThread]: End processing [xia-api]: success
+[2023-04-13 08:29:27] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 08:29:27] INFO root fetch - main [MainThread]: End processing [TerraSegmentation]: success
+[2023-04-13 08:29:27] INFO root fetch - main [MainThread]: Store serial: [17687668]
