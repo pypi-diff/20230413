@@ -15946,3 +15946,85 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 13:57:59] INFO root fetch - main [MainThread]: End processing [OpenGeode-IO]: success
 [2023-04-13 13:58:33] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-13 13:58:33] INFO root fetch - main [MainThread]: Store serial: [17691763]
+[2023-04-13 14:03:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17691763]
+[2023-04-13 14:03:46] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-13 14:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: topologicpy
+[2023-04-13 14:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: halo-reader
+[2023-04-13 14:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alphamed-federated
+[2023-04-13 14:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webssh-embedded
+[2023-04-13 14:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wis-s3api
+[2023-04-13 14:03:46] INFO root fetch - processPackages [wis-s3api]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-13 14:03:46] WARNING root fetch - processPackages [webssh-embedded]: Skipping, unable to determine old version
+[2023-04-13 14:03:46] INFO root fetch - processPackages [webssh-embedded]: Start processing: django-data-history
+[2023-04-13 14:03:46] INFO root fetch - main [MainThread]: End processing [webssh-embedded] error
+[2023-04-13 14:03:46] INFO root fetch - processPackages [topologicpy]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-13 14:03:46] INFO root fetch - processPackages [halo-reader]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 14:03:46] INFO root fetch - processPackages [alphamed-federated]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-13 14:03:46] INFO root fetch - processPackages [django-data-history]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 14:03:46] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/09/2d/87ff20ef3b8d6b69b5fce28924e0a42d53154261dc5cc1886fcab5ebdc64/topologicpy-0.4.2.tar.gz
+[2023-04-13 14:03:46] INFO root fetch - processPackages [wis-s3api]: Downloading https://files.pythonhosted.org/packages/f9/c7/0549a35b503b4157041a381609cdb91abc22537156810ca3b6d856ffd56e/wis-s3api-0.0.7.tar.gz
+[2023-04-13 14:03:46] INFO root fetch - processPackages [alphamed-federated]: Downloading https://files.pythonhosted.org/packages/bc/42/ad174de454e37208601dcee969f7e6a853576d58cfbb5625e9b3e188841d/alphamed-federated-0.4.6.tar.gz
+[2023-04-13 14:03:46] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34012151>=10485760
+[2023-04-13 14:03:46] INFO root fetch - processPackages [topologicpy]: Start processing: text2mapviewer
+[2023-04-13 14:03:46] INFO root fetch - main [MainThread]: End processing [topologicpy] error
+[2023-04-13 14:03:46] WARNING root fetch - processPackages [text2mapviewer]: Skipping, unable to determine old version
+[2023-04-13 14:03:46] INFO root fetch - processPackages [text2mapviewer]: Start processing: pytest-mpiexec
+[2023-04-13 14:03:46] INFO root fetch - main [MainThread]: End processing [text2mapviewer] error
+[2023-04-13 14:03:46] WARNING root fetch - processPackages [pytest-mpiexec]: Skipping, unable to determine old version
+[2023-04-13 14:03:46] INFO root fetch - processPackages [pytest-mpiexec]: Start processing: kmergenetyper
+[2023-04-13 14:03:46] INFO root fetch - processPackages [alphamed-federated]: executing diffoscope
+[2023-04-13 14:03:46] INFO root fetch - main [MainThread]: End processing [pytest-mpiexec] error
+[2023-04-13 14:03:46] INFO root fetch - processPackages [halo-reader]: Downloading https://files.pythonhosted.org/packages/06/ee/602fcc340507df18c240ab969b9a69f4a15a683ce88b2521d9b8f955770f/halo-reader-0.0.9.tar.gz
+[2023-04-13 14:03:46] INFO root fetch - processPackages [alphamed-federated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphamed-federated-0.4.5.tar.gz tmp/alphamed-federated-0.4.6.tar.gz --markdown 20230413/a/alphamed-federated/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-13 14:03:46] INFO root fetch - processPackages [kmergenetyper]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-13 14:03:46] INFO root fetch - processPackages [django-data-history]: Downloading https://files.pythonhosted.org/packages/37/7c/8bce5afddf7b8cb1697d519b349e6020d3db00eef0141b3d49b7d5c329c4/django-data-history-0.1.9.tar.gz
+[2023-04-13 14:03:46] INFO root fetch - processPackages [halo-reader]: executing diffoscope
+[2023-04-13 14:03:46] INFO root fetch - processPackages [halo-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/halo-reader-0.0.8.tar.gz tmp/halo-reader-0.0.9.tar.gz --markdown 20230413/h/halo-reader/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 14:03:46] INFO root fetch - processPackages [django-data-history]: executing diffoscope
+[2023-04-13 14:03:46] INFO root fetch - processPackages [django-data-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-data-history-0.1.8.tar.gz tmp/django-data-history-0.1.9.tar.gz --markdown 20230413/d/django-data-history/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 14:03:46] INFO root fetch - processPackages [wis-s3api]: Downloading https://files.pythonhosted.org/packages/1b/33/77fad54fbab3f67edda775b8490c224e14c15a074f6ec4887a7b714792c8/wis-s3api-0.0.8.tar.gz
+[2023-04-13 14:03:47] INFO root fetch - processPackages [wis-s3api]: executing diffoscope
+[2023-04-13 14:03:47] INFO root fetch - processPackages [wis-s3api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wis-s3api-0.0.7.tar.gz tmp/wis-s3api-0.0.8.tar.gz --markdown 20230413/w/wis-s3api/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-13 14:03:47] INFO root fetch - processPackages [kmergenetyper]: Downloading https://files.pythonhosted.org/packages/e3/e7/127c1d33013b6176bd975ec56c2793b2888b903479794639d464251ebf17/kmergenetyper-1.0.8.tar.gz
+[2023-04-13 14:03:47] INFO root fetch - processPackages [kmergenetyper]: executing diffoscope
+[2023-04-13 14:03:47] INFO root fetch - processPackages [kmergenetyper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmergenetyper-1.0.7.tar.gz tmp/kmergenetyper-1.0.8.tar.gz --markdown 20230413/k/kmergenetyper/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-13 14:03:47] INFO root fetch - processPackages [django-data-history]: Start processing: krrsnkapi
+[2023-04-13 14:03:47] INFO root fetch - main [MainThread]: End processing [django-data-history]: success
+[2023-04-13 14:03:48] INFO root fetch - processPackages [krrsnkapi]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-13 14:03:48] INFO root fetch - processPackages [wis-s3api]: Start processing: locuaz
+[2023-04-13 14:03:48] INFO root fetch - main [MainThread]: End processing [wis-s3api]: success
+[2023-04-13 14:03:48] INFO root fetch - processPackages [krrsnkapi]: Downloading https://files.pythonhosted.org/packages/a2/0e/4f2d7183c6149aa5cefa2de654ab26818548d0fde535237c6b288a2e5270/krrsnkapi-1.0.2.tar.gz
+[2023-04-13 14:03:48] WARNING root fetch - processPackages [locuaz]: Skipping, unable to determine old version
+[2023-04-13 14:03:48] INFO root fetch - processPackages [locuaz]: Start processing: pycontrails
+[2023-04-13 14:03:48] INFO root fetch - main [MainThread]: End processing [locuaz] error
+[2023-04-13 14:03:48] INFO root fetch - processPackages [halo-reader]: Start processing: oakvar
+[2023-04-13 14:03:48] INFO root fetch - main [MainThread]: End processing [halo-reader]: success
+[2023-04-13 14:03:48] INFO root fetch - processPackages [pycontrails]: New version: [0.39.6] Old Version: [0.39.5]
+[2023-04-13 14:03:48] INFO root fetch - processPackages [krrsnkapi]: executing diffoscope
+[2023-04-13 14:03:48] INFO root fetch - processPackages [krrsnkapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krrsnkapi-1.0.1.tar.gz tmp/krrsnkapi-1.0.2.tar.gz --markdown 20230413/k/krrsnkapi/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-13 14:03:48] INFO root fetch - processPackages [oakvar]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-13 14:03:48] INFO root fetch - processPackages [kmergenetyper]: Start processing: data-cliff
+[2023-04-13 14:03:48] INFO root fetch - main [MainThread]: End processing [kmergenetyper]: success
+[2023-04-13 14:03:48] INFO root fetch - processPackages [data-cliff]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-13 14:03:48] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/d0/dd/e9e5de9a2c9dbc2fa4313639f38c59f294119bf0bcf876063c142dab9649/oakvar-2.9.6.tar.gz
+[2023-04-13 14:03:48] INFO root fetch - processPackages [pycontrails]: Downloading https://files.pythonhosted.org/packages/82/6a/45f6a0a77365ba1486cc88a844f2256e58031e6e53767056758b49c8e48d/pycontrails-0.39.5.tar.gz
+[2023-04-13 14:03:48] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-04-13 14:03:48] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.5.tar.gz tmp/oakvar-2.9.6.tar.gz --markdown 20230413/o/oakvar/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-13 14:03:48] WARNING root fetch - processPackages [pycontrails]: Skipping package: exceeds size limit 10989736>=10485760
+[2023-04-13 14:03:48] INFO root fetch - processPackages [pycontrails]: Start processing: maxdmg-back
+[2023-04-13 14:03:48] INFO root fetch - main [MainThread]: End processing [pycontrails] error
+[2023-04-13 14:03:48] INFO root fetch - processPackages [data-cliff]: Downloading https://files.pythonhosted.org/packages/92/c5/5daa71e33ec52fb6c5d3dd06c64262abb60d5125c57cdfce6110abcfb7a1/data_cliff-0.1.0.tar.gz
+[2023-04-13 14:03:48] INFO root fetch - processPackages [maxdmg-back]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-13 14:03:48] INFO root fetch - main [MainThread]: End processing [alphamed-federated]: success
+[2023-04-13 14:03:48] INFO root fetch - processPackages [data-cliff]: Downloading https://files.pythonhosted.org/packages/88/b3/5ff28b78f89f7e3d28d3bfc81a1fd3f1723be3447604eb57152c8f9394d9/data_cliff-0.1.2.tar.gz
+[2023-04-13 14:03:48] INFO root fetch - processPackages [maxdmg-back]: Downloading https://files.pythonhosted.org/packages/60/37/e66dfba7871d1798b349d618ba4968ee7f7d3de153fc4667bde5458d3abf/maxdmg_back-0.0.4.tar.gz
+[2023-04-13 14:03:49] INFO root fetch - processPackages [data-cliff]: executing diffoscope
+[2023-04-13 14:03:49] INFO root fetch - processPackages [data-cliff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_cliff-0.1.0.tar.gz tmp/data_cliff-0.1.2.tar.gz --markdown 20230413/d/data-cliff/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 14:03:49] INFO root fetch - processPackages [maxdmg-back]: Downloading https://files.pythonhosted.org/packages/ef/e5/b413667d1a6441cba2d9ff13579e71124a4df36b640ffc10d8b42e41e516/maxdmg_back-0.0.5.tar.gz
+[2023-04-13 14:03:49] INFO root fetch - main [MainThread]: End processing [krrsnkapi]: success
+[2023-04-13 14:03:49] INFO root fetch - processPackages [maxdmg-back]: executing diffoscope
+[2023-04-13 14:03:49] INFO root fetch - processPackages [maxdmg-back]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maxdmg_back-0.0.4.tar.gz tmp/maxdmg_back-0.0.5.tar.gz --markdown 20230413/m/maxdmg-back/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-13 14:03:50] INFO root fetch - main [MainThread]: End processing [data-cliff]: success
+[2023-04-13 14:03:50] INFO root fetch - main [MainThread]: End processing [maxdmg-back]: success
+[2023-04-13 14:03:55] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-04-13 14:03:55] INFO root fetch - main [MainThread]: Store serial: [17691817]
