@@ -15112,3 +15112,114 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 13:16:08] INFO root fetch - main [MainThread]: End processing [dorsa-logging]: success
 [2023-04-13 13:16:09] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-04-13 13:16:09] INFO root fetch - main [MainThread]: Store serial: [17691248]
+[2023-04-13 13:21:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17691248]
+[2023-04-13 13:21:17] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-13 13:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openapify
+[2023-04-13 13:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dknovautils
+[2023-04-13 13:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cqepyutils
+[2023-04-13 13:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: symdexer
+[2023-04-13 13:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aadetools
+[2023-04-13 13:21:17] INFO root fetch - processPackages [symdexer]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-13 13:21:17] INFO root fetch - processPackages [aadetools]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-13 13:21:17] INFO root fetch - processPackages [dknovautils]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 13:21:17] INFO root fetch - processPackages [openapify]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-13 13:21:17] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 13:21:17] INFO root fetch - processPackages [symdexer]: Downloading https://files.pythonhosted.org/packages/3b/4f/641b9639f06d2596bd77fe4578ab18415555ec39e85a4eff2ace8c09d575/symdexer-0.0.5.tar.gz
+[2023-04-13 13:21:18] INFO root fetch - processPackages [aadetools]: Downloading https://files.pythonhosted.org/packages/00/14/11645bbef969c2f47928293856146b7bc1c0ce33eb182b533c18d436f4ee/aadetools-0.1.0.tar.gz
+[2023-04-13 13:21:18] INFO root fetch - processPackages [openapify]: Downloading https://files.pythonhosted.org/packages/96/b0/d92e7ada96feddd3eb6c06703513e2eae3506f5a1ea496fe65433ec78467/openapify-0.3.4.tar.gz
+[2023-04-13 13:21:18] INFO root fetch - processPackages [dknovautils]: executing diffoscope
+[2023-04-13 13:21:18] INFO root fetch - processPackages [dknovautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dknovautils-0.0.2.tar.gz tmp/dknovautils-0.0.3.tar.gz --markdown 20230413/d/dknovautils/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 13:21:18] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-13 13:21:18] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230413/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 13:21:18] INFO root fetch - processPackages [symdexer]: Downloading https://files.pythonhosted.org/packages/cd/02/8ebb2a72a778295bcb3ff7f235819f00a39ca4bc08308a6994283380295e/symdexer-0.1.0.tar.gz
+[2023-04-13 13:21:18] INFO root fetch - processPackages [aadetools]: executing diffoscope
+[2023-04-13 13:21:18] INFO root fetch - processPackages [aadetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aadetools-0.0.9.tar.gz tmp/aadetools-0.1.0.tar.gz --markdown 20230413/a/aadetools/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-13 13:21:18] INFO root fetch - processPackages [openapify]: executing diffoscope
+[2023-04-13 13:21:18] INFO root fetch - processPackages [openapify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapify-0.3.3.tar.gz tmp/openapify-0.3.4.tar.gz --markdown 20230413/o/openapify/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-13 13:21:18] INFO root fetch - processPackages [symdexer]: executing diffoscope
+[2023-04-13 13:21:18] INFO root fetch - processPackages [symdexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symdexer-0.0.5.tar.gz tmp/symdexer-0.1.0.tar.gz --markdown 20230413/s/symdexer/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-13 13:21:19] INFO root fetch - processPackages [dknovautils]: Start processing: retroperm
+[2023-04-13 13:21:19] INFO root fetch - main [MainThread]: End processing [dknovautils]: success
+[2023-04-13 13:21:19] INFO root fetch - processPackages [retroperm]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 13:21:19] INFO root fetch - processPackages [aadetools]: Start processing: WaBach
+[2023-04-13 13:21:19] INFO root fetch - main [MainThread]: End processing [aadetools]: success
+[2023-04-13 13:21:19] INFO root fetch - processPackages [WaBach]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 13:21:19] INFO root fetch - processPackages [symdexer]: Start processing: tensorflow-datasets
+[2023-04-13 13:21:19] INFO root fetch - main [MainThread]: End processing [symdexer]: success
+[2023-04-13 13:21:19] INFO root fetch - processPackages [tensorflow-datasets]: New version: [4.9.2] Old Version: [4.9.1]
+[2023-04-13 13:21:19] INFO root fetch - processPackages [retroperm]: Downloading https://files.pythonhosted.org/packages/6d/0f/11910295e75e56cc866db11f82724ab838ce8b899c85c859b0e164ac7531/retroperm-0.0.2.tar.gz
+[2023-04-13 13:21:19] INFO root fetch - processPackages [openapify]: Start processing: sarp-utils
+[2023-04-13 13:21:19] INFO root fetch - main [MainThread]: End processing [openapify]: success
+[2023-04-13 13:21:19] INFO root fetch - processPackages [sarp-utils]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-13 13:21:19] INFO root fetch - processPackages [WaBach]: Downloading https://files.pythonhosted.org/packages/11/27/a0297d8af51001ffff984566db6c23466a29a081e475bc85e26b9a1628e1/WaBach-0.1.1.tar.gz
+[2023-04-13 13:21:19] INFO root fetch - processPackages [retroperm]: executing diffoscope
+[2023-04-13 13:21:19] INFO root fetch - processPackages [retroperm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retroperm-0.0.1.tar.gz tmp/retroperm-0.0.2.tar.gz --markdown 20230413/r/retroperm/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 13:21:19] INFO root fetch - processPackages [cqepyutils]: Start processing: mindfoundry.client.analyze
+[2023-04-13 13:21:19] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-13 13:21:19] INFO root fetch - processPackages [mindfoundry.client.analyze]: New version: [1.9.2] Old Version: [1.20.4]
+[2023-04-13 13:21:19] INFO root fetch - processPackages [sarp-utils]: executing diffoscope
+[2023-04-13 13:21:19] INFO root fetch - processPackages [sarp-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarp_utils-1.2.8.tar.gz tmp/sarp_utils-1.2.9.tar.gz --markdown 20230413/s/sarp-utils/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-13 13:21:19] INFO root fetch - processPackages [tensorflow-datasets]: Downloading https://files.pythonhosted.org/packages/16/76/1fb7925616c4227907af5003e82a6da4cd0c77e576787cd5d1bfd94f91b9/tensorflow-datasets-4.9.2.tar.gz
+[2023-04-13 13:21:19] INFO root fetch - processPackages [WaBach]: Downloading https://files.pythonhosted.org/packages/7e/d7/46a217cc033f3019160269e88cb506595435f64d4c640d87f98ed1127249/WaBach-0.1.2.tar.gz
+[2023-04-13 13:21:20] INFO root fetch - processPackages [mindfoundry.client.analyze]: Downloading https://files.pythonhosted.org/packages/c4/c1/ea62650f0c5af860e428bb09acb3f5c45d15f7976bf99acc22a53a700cff/mindfoundry.client.analyze-1.20.4.tar.gz
+[2023-04-13 13:21:20] INFO root fetch - processPackages [WaBach]: executing diffoscope
+[2023-04-13 13:21:20] INFO root fetch - processPackages [WaBach]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WaBach-0.1.1.tar.gz tmp/WaBach-0.1.2.tar.gz --markdown 20230413/W/WaBach/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 13:21:20] INFO root fetch - processPackages [mindfoundry.client.analyze]: Downloading https://files.pythonhosted.org/packages/34/1a/da4df2e435fe5b36b034b7707e42da963971b89f001a9b762668c5925129/mindfoundry.client.analyze-1.9.2.tar.gz
+[2023-04-13 13:21:20] INFO root fetch - processPackages [tensorflow-datasets]: executing diffoscope
+[2023-04-13 13:21:20] INFO root fetch - processPackages [tensorflow-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow-datasets-4.9.1.tar.gz tmp/tensorflow-datasets-4.9.2.tar.gz --markdown 20230413/t/tensorflow-datasets/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2023-04-13 13:21:20] INFO root fetch - processPackages [mindfoundry.client.analyze]: executing diffoscope
+[2023-04-13 13:21:20] INFO root fetch - processPackages [mindfoundry.client.analyze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindfoundry.client.analyze-1.20.4.tar.gz tmp/mindfoundry.client.analyze-1.9.2.tar.gz --markdown 20230413/m/mindfoundry.client.analyze/1.20.4-1.9.2/diff.md --exclude *.pyd
+[2023-04-13 13:21:20] INFO root fetch - processPackages [sarp-utils]: Start processing: iranetf
+[2023-04-13 13:21:20] INFO root fetch - main [MainThread]: End processing [sarp-utils]: success
+[2023-04-13 13:21:21] INFO root fetch - processPackages [iranetf]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-13 13:21:21] INFO root fetch - processPackages [iranetf]: Downloading https://files.pythonhosted.org/packages/de/32/2fd33eafec94b14d144edffe2e00b0d68221076651e8f8cd029b26311acd/iranetf-0.9.0.tar.gz
+[2023-04-13 13:21:21] INFO root fetch - processPackages [retroperm]: Start processing: ovn-octavia-provider
+[2023-04-13 13:21:21] INFO root fetch - main [MainThread]: End processing [retroperm]: success
+[2023-04-13 13:21:21] INFO root fetch - processPackages [WaBach]: Start processing: os2ds-rules
+[2023-04-13 13:21:21] INFO root fetch - main [MainThread]: End processing [WaBach]: success
+[2023-04-13 13:21:21] INFO root fetch - processPackages [os2ds-rules]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 13:21:21] INFO root fetch - processPackages [ovn-octavia-provider]: New version: [4.0.0.0rc2] Old Version: [4.0.0.0rc1]
+[2023-04-13 13:21:21] INFO root fetch - processPackages [ovn-octavia-provider]: Downloading https://files.pythonhosted.org/packages/60/62/8747b39884a9ed385ea3456bd1fba1d9186dd0bc41f2bda10d2c6d56d1d2/ovn-octavia-provider-4.0.0.0rc1.tar.gz
+[2023-04-13 13:21:21] INFO root fetch - processPackages [os2ds-rules]: Downloading https://files.pythonhosted.org/packages/0b/7a/3b151e455653497320bff91c01de376e5bea64689c4858c3d6b4e962ab5a/os2ds-rules-0.0.1.tar.gz
+[2023-04-13 13:21:21] INFO root fetch - processPackages [iranetf]: executing diffoscope
+[2023-04-13 13:21:21] INFO root fetch - processPackages [iranetf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iranetf-0.8.1.tar.gz tmp/iranetf-0.9.0.tar.gz --markdown 20230413/i/iranetf/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 13:21:21] INFO root fetch - processPackages [os2ds-rules]: Downloading https://files.pythonhosted.org/packages/75/a7/9d70428e652ac314f10be33815d5ac69fc9805c35465aa0d1c945285f662/os2ds-rules-0.0.2.tar.gz
+[2023-04-13 13:21:21] INFO root fetch - processPackages [os2ds-rules]: executing diffoscope
+[2023-04-13 13:21:21] INFO root fetch - processPackages [os2ds-rules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os2ds-rules-0.0.1.tar.gz tmp/os2ds-rules-0.0.2.tar.gz --markdown 20230413/o/os2ds-rules/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 13:21:22] INFO root fetch - processPackages [ovn-octavia-provider]: Downloading https://files.pythonhosted.org/packages/46/dc/6f293b4e314856caa23d801648515cbb34351e82c92699c52ad76f3e3756/ovn-octavia-provider-4.0.0.0rc2.tar.gz
+[2023-04-13 13:21:22] INFO root fetch - processPackages [ovn-octavia-provider]: executing diffoscope
+[2023-04-13 13:21:22] INFO root fetch - processPackages [ovn-octavia-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovn-octavia-provider-4.0.0.0rc1.tar.gz tmp/ovn-octavia-provider-4.0.0.0rc2.tar.gz --markdown 20230413/o/ovn-octavia-provider/4.0.0.0rc1-4.0.0.0rc2/diff.md --exclude *.pyd
+[2023-04-13 13:21:22] INFO root fetch - processPackages [iranetf]: Start processing: torchtnt-nightly
+[2023-04-13 13:21:22] INFO root fetch - main [MainThread]: End processing [iranetf]: success
+[2023-04-13 13:21:22] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-13 13:21:22] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-04-13 13:21:22] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.4.8.tar.gz tmp/torchtnt-nightly-2023.4.9.tar.gz --markdown 20230413/t/torchtnt-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-13 13:21:23] INFO root fetch - processPackages [os2ds-rules]: Start processing: neutron
+[2023-04-13 13:21:23] INFO root fetch - main [MainThread]: End processing [os2ds-rules]: success
+[2023-04-13 13:21:23] INFO root fetch - processPackages [neutron]: New version: [22.0.0.0rc2] Old Version: [22.0.0.0rc1]
+[2023-04-13 13:21:23] INFO root fetch - processPackages [neutron]: Downloading https://files.pythonhosted.org/packages/13/e1/9b75623c41ecb76eb3b116d954d2c04a1aa234610b59a93b8db96c818f5a/neutron-22.0.0.0rc1.tar.gz
+[2023-04-13 13:21:24] INFO root fetch - processPackages [torchtnt-nightly]: Start processing: tb-nightly
+[2023-04-13 13:21:24] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-04-13 13:21:24] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-04-13 13:21:24] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-04-13 13:21:24] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230413/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-04-13 13:21:24] WARNING root fetch - processPackages [neutron]: Skipping package: exceeds size limit 14035778>=10485760
+[2023-04-13 13:21:24] INFO root fetch - processPackages [neutron]: Start processing: strato-dyndns
+[2023-04-13 13:21:24] INFO root fetch - main [MainThread]: End processing [neutron] error
+[2023-04-13 13:21:24] INFO root fetch - processPackages [strato-dyndns]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-04-13 13:21:24] INFO root fetch - processPackages [ovn-octavia-provider]: Start processing: retroperm
+[2023-04-13 13:21:24] INFO root fetch - main [MainThread]: End processing [ovn-octavia-provider]: success
+[2023-04-13 13:21:24] INFO root fetch - processPackages [retroperm]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 13:21:24] INFO root fetch - processPackages [strato-dyndns]: Downloading https://files.pythonhosted.org/packages/c6/2c/0dca6238ff62e1153d01d64bc7dea9051ed1b686cc08705fc4f309a4a086/strato_dyndns-2.3.1.tar.gz
+[2023-04-13 13:21:24] INFO root fetch - processPackages [retroperm]: Downloading https://files.pythonhosted.org/packages/25/ec/d4cbd11c2364742aa15e9e0b29a17b99c32a51ee64796b1a85a3b01abdf7/retroperm-0.0.3.tar.gz
+[2023-04-13 13:21:24] INFO root fetch - main [MainThread]: End processing [mindfoundry.client.analyze]: success
+[2023-04-13 13:21:24] INFO root fetch - processPackages [strato-dyndns]: Downloading https://files.pythonhosted.org/packages/c7/9a/52ed7ef521efb5344f6155021dad3298f4f8cff5e862fb25b97b4a63c2e8/strato_dyndns-2.3.2.tar.gz
+[2023-04-13 13:21:24] INFO root fetch - processPackages [retroperm]: executing diffoscope
+[2023-04-13 13:21:24] INFO root fetch - processPackages [retroperm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retroperm-0.0.2.tar.gz tmp/retroperm-0.0.3.tar.gz --markdown 20230413/r/retroperm/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 13:21:24] INFO root fetch - processPackages [strato-dyndns]: executing diffoscope
+[2023-04-13 13:21:24] INFO root fetch - processPackages [strato-dyndns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strato_dyndns-2.3.1.tar.gz tmp/strato_dyndns-2.3.2.tar.gz --markdown 20230413/s/strato-dyndns/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-04-13 13:21:25] INFO root fetch - main [MainThread]: End processing [retroperm]: success
+[2023-04-13 13:21:25] INFO root fetch - main [MainThread]: End processing [strato-dyndns]: success
+[2023-04-13 13:21:27] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-04-13 13:22:08] INFO root fetch - main [MainThread]: End processing [tensorflow-datasets]: success
+[2023-04-13 13:22:08] INFO root fetch - main [MainThread]: Store serial: [17691309]
