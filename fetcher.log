@@ -11675,3 +11675,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 10:55:09] INFO root fetch - main [MainThread]: End processing [pylife-odbserver]: success
 [2023-04-13 10:55:09] INFO root fetch - main [MainThread]: End processing [pylife-odbclient]: success
 [2023-04-13 10:55:09] INFO root fetch - main [MainThread]: Store serial: [17689409]
+[2023-04-13 11:00:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689409]
+[2023-04-13 11:00:18] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-13 11:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-stock-restrict-lot
+[2023-04-13 11:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: supervision
+[2023-04-13 11:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xsarslc
+[2023-04-13 11:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: puploader
+[2023-04-13 11:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uvw
+[2023-04-13 11:00:18] WARNING root fetch - processPackages [puploader]: Skipping, unable to determine old version
+[2023-04-13 11:00:18] INFO root fetch - processPackages [puploader]: Start processing: falra-run-github
+[2023-04-13 11:00:18] INFO root fetch - main [MainThread]: End processing [puploader] error
+[2023-04-13 11:00:18] INFO root fetch - processPackages [supervision]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-13 11:00:18] INFO root fetch - processPackages [odoo-addon-stock-restrict-lot]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.0.2]
+[2023-04-13 11:00:18] INFO root fetch - processPackages [uvw]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-13 11:00:18] INFO root fetch - processPackages [xsarslc]: New version: [2023.4.5] Old Version: [2023.4.4]
+[2023-04-13 11:00:18] WARNING root fetch - processPackages [falra-run-github]: Skipping, unable to determine old version
+[2023-04-13 11:00:18] INFO root fetch - processPackages [falra-run-github]: Start processing: playmolecule
+[2023-04-13 11:00:18] INFO root fetch - main [MainThread]: End processing [falra-run-github] error
+[2023-04-13 11:00:18] INFO root fetch - processPackages [playmolecule]: New version: [1.6.7] Old Version: [1.6.6]
+[2023-04-13 11:00:19] INFO root fetch - processPackages [odoo-addon-stock-restrict-lot]: Downloading https://files.pythonhosted.org/packages/55/74/e78d8ad51460557f3037a1174addfc343393628a969f168e7febd4983b7e/odoo_addon_stock_restrict_lot-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-13 11:00:19] INFO root fetch - processPackages [xsarslc]: Downloading https://files.pythonhosted.org/packages/ce/41/d4505fb9dcd43adbab9a4425c52ce75172dcd98d46adb991ee10f4834cf9/xsarslc-2023.4.4.tar.gz
+[2023-04-13 11:00:19] INFO root fetch - processPackages [supervision]: Downloading https://files.pythonhosted.org/packages/23/8f/22985d1c61df9bf128ea9ccd937d6abcd69ef76b5199b9e108b373f93d08/supervision-0.5.2.tar.gz
+[2023-04-13 11:00:19] INFO root fetch - processPackages [playmolecule]: Downloading https://files.pythonhosted.org/packages/c7/3f/54bcb1484db77177357e17e81eb14dcf86bbdcb2f0414e0f395f12d0724e/playmolecule-1.6.6.tar.gz
+[2023-04-13 11:00:19] INFO root fetch - processPackages [supervision]: executing diffoscope
+[2023-04-13 11:00:19] INFO root fetch - processPackages [supervision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervision-0.5.1.tar.gz tmp/supervision-0.5.2.tar.gz --markdown 20230413/s/supervision/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-13 11:00:19] INFO root fetch - processPackages [uvw]: Downloading https://files.pythonhosted.org/packages/b7/f5/5b4060fe91dae3ba77d36b00c4a514446db9d2f2b309caa86b07fe7253cc/uvw-0.5.0.tar.gz
+[2023-04-13 11:00:19] INFO root fetch - processPackages [playmolecule]: Downloading https://files.pythonhosted.org/packages/91/99/0e0970db104b9b9773e86d64afdc0a84e0432b7e390d2827a9c913a626a7/playmolecule-1.6.7.tar.gz
+[2023-04-13 11:00:19] INFO root fetch - processPackages [odoo-addon-stock-restrict-lot]: Downloading https://files.pythonhosted.org/packages/ac/1a/a8f01b87694a30725e1aaa71b536d9e1801b8789144e9a42ea17a22bb813/odoo_addon_stock_restrict_lot-16.0.1.1.0-py3-none-any.whl
+[2023-04-13 11:00:19] INFO root fetch - processPackages [playmolecule]: executing diffoscope
+[2023-04-13 11:00:19] INFO root fetch - processPackages [playmolecule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playmolecule-1.6.6.tar.gz tmp/playmolecule-1.6.7.tar.gz --markdown 20230413/p/playmolecule/1.6.6-1.6.7/diff.md --exclude *.pyd
+[2023-04-13 11:00:19] INFO root fetch - processPackages [odoo-addon-stock-restrict-lot]: executing diffoscope
+[2023-04-13 11:00:19] INFO root fetch - processPackages [odoo-addon-stock-restrict-lot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_restrict_lot-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_stock_restrict_lot-16.0.1.1.0-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-stock-restrict-lot/16.0.1.0.0.2-16.0.1.1.0/diff.md --exclude *.pyd
+[2023-04-13 11:00:19] INFO root fetch - processPackages [uvw]: Downloading https://files.pythonhosted.org/packages/e6/74/a060a87195b28bb0f05d2f4590c2fac2e1fd9cabd67a53699461d3056624/uvw-0.5.1.tar.gz
+[2023-04-13 11:00:19] INFO root fetch - processPackages [uvw]: executing diffoscope
+[2023-04-13 11:00:19] INFO root fetch - processPackages [uvw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uvw-0.5.0.tar.gz tmp/uvw-0.5.1.tar.gz --markdown 20230413/u/uvw/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-13 11:00:19] INFO root fetch - processPackages [xsarslc]: Downloading https://files.pythonhosted.org/packages/44/34/07fa9e252fc9d0aeba6a086c40b58d6aed7060b27fbabe4cb2aa520e9ee9/xsarslc-2023.4.5.tar.gz
+[2023-04-13 11:00:19] INFO root fetch - processPackages [xsarslc]: executing diffoscope
+[2023-04-13 11:00:19] INFO root fetch - processPackages [xsarslc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xsarslc-2023.4.4.tar.gz tmp/xsarslc-2023.4.5.tar.gz --markdown 20230413/x/xsarslc/2023.4.4-2023.4.5/diff.md --exclude *.pyd
+[2023-04-13 11:00:20] INFO root fetch - processPackages [odoo-addon-stock-restrict-lot]: Start processing: p-template-generator
+[2023-04-13 11:00:20] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-restrict-lot]: success
+[2023-04-13 11:00:20] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 11:00:20] INFO root fetch - processPackages [supervision]: Start processing: kloppy
+[2023-04-13 11:00:20] INFO root fetch - main [MainThread]: End processing [supervision]: success
+[2023-04-13 11:00:20] INFO root fetch - processPackages [uvw]: Start processing: autogluon.common
+[2023-04-13 11:00:20] INFO root fetch - main [MainThread]: End processing [uvw]: success
+[2023-04-13 11:00:20] INFO root fetch - processPackages [autogluon.common]: New version: [0.7.0b20230412] Old Version: [0.7.0b20230411]
+[2023-04-13 11:00:20] INFO root fetch - processPackages [kloppy]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-04-13 11:00:20] INFO root fetch - main [MainThread]: End processing [playmolecule]: success
+[2023-04-13 11:00:20] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2023-04-13 11:00:20] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-0.7.0b20230411.tar.gz tmp/autogluon.common-0.7.0b20230412.tar.gz --markdown 20230413/a/autogluon.common/0.7.0b20230411-0.7.0b20230412/diff.md --exclude *.pyd
+[2023-04-13 11:00:20] INFO root fetch - processPackages [kloppy]: Downloading https://files.pythonhosted.org/packages/2e/68/f4d6cdde2050f7065a504ca779b8a4e574953a3c73d8a424e6ed68b2cb1f/kloppy-3.8.0.tar.gz
+[2023-04-13 11:00:20] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2023-04-13 11:00:20] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.8.tar.gz tmp/p-template-generator-0.1.9.tar.gz --markdown 20230413/p/p-template-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 11:00:21] INFO root fetch - processPackages [kloppy]: Downloading https://files.pythonhosted.org/packages/19/fe/452e394b29ae4d7b1bed22162b883386a1e6dcac70e8c6d301cc78324cf8/kloppy-3.9.0.tar.gz
+[2023-04-13 11:00:21] INFO root fetch - main [MainThread]: End processing [xsarslc]: success
+[2023-04-13 11:00:21] INFO root fetch - processPackages [kloppy]: executing diffoscope
+[2023-04-13 11:00:21] INFO root fetch - processPackages [kloppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kloppy-3.8.0.tar.gz tmp/kloppy-3.9.0.tar.gz --markdown 20230413/k/kloppy/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-04-13 11:00:21] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2023-04-13 11:00:21] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2023-04-13 11:00:22] INFO root fetch - main [MainThread]: End processing [kloppy]: success
+[2023-04-13 11:00:22] INFO root fetch - main [MainThread]: Store serial: [17689446]
