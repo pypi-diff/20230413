@@ -8475,3 +8475,79 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 07:44:41] INFO root fetch - main [MainThread]: End processing [odoo12-addon-quality-control]: success
 [2023-04-13 07:46:19] INFO root fetch - main [MainThread]: End processing [optuna-dashboard]: success
 [2023-04-13 07:46:19] INFO root fetch - main [MainThread]: Store serial: [17687373]
+[2023-04-13 07:51:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687373]
+[2023-04-13 07:51:26] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-13 07:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zepben.eas
+[2023-04-13 07:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cellmap
+[2023-04-13 07:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-quality-control-oca
+[2023-04-13 07:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py3dchart
+[2023-04-13 07:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kmspy
+[2023-04-13 07:51:26] INFO root fetch - processPackages [zepben.eas]: New version: [0.9.0b2] Old Version: [0.9.0b1]
+[2023-04-13 07:51:26] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: New version: [15.0.1.0.0.9] Old Version: [15.0.1.0.0.8]
+[2023-04-13 07:51:26] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304130547] Old Version: [1.0.1.dev202304130509]
+[2023-04-13 07:51:26] INFO root fetch - processPackages [py3dchart]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-13 07:51:26] INFO root fetch - processPackages [kmspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 07:51:27] INFO root fetch - processPackages [zepben.eas]: Downloading https://files.pythonhosted.org/packages/2f/b3/ec049a419708db25a4d1be790b31403ba115bef6c08038f07251c923e2ea/zepben.eas-0.9.0b1-py3-none-any.whl
+[2023-04-13 07:51:27] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: Downloading https://files.pythonhosted.org/packages/7b/a9/ad48066d772ddbc073a853d1ff345d7c52078101eae68935d6aab442d2e4/odoo_addon_quality_control_oca-15.0.1.0.0.8-py3-none-any.whl
+[2023-04-13 07:51:27] INFO root fetch - processPackages [py3dchart]: Downloading https://files.pythonhosted.org/packages/ca/66/991de3c9691538a83f4f63c86871b2640bbd6713c122fc1a3e1fdfe80cbc/py3dchart-0.1.7.tar.gz
+[2023-04-13 07:51:27] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/f9/e4/e92baff804715bbf9566902ec7fdbec34cc55ea5de4e452ddfe60884d044/cellmap-1.0.1.dev202304130547-py3-none-any.whl
+[2023-04-13 07:51:27] INFO root fetch - processPackages [kmspy]: executing diffoscope
+[2023-04-13 07:51:27] INFO root fetch - processPackages [kmspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmspy-0.0.8.tar.gz tmp/kmspy-0.0.9.tar.gz --markdown 20230413/k/kmspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 07:51:27] INFO root fetch - processPackages [py3dchart]: executing diffoscope
+[2023-04-13 07:51:27] INFO root fetch - processPackages [py3dchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3dchart-0.1.6.tar.gz tmp/py3dchart-0.1.7.tar.gz --markdown 20230413/p/py3dchart/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-13 07:51:27] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-13 07:51:27] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304130509-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304130547-py3-none-any.whl.zip --markdown 20230413/c/cellmap/1.0.1.dev202304130509-1.0.1.dev202304130547/diff.md --exclude *.pyd
+[2023-04-13 07:51:27] INFO root fetch - processPackages [zepben.eas]: Downloading https://files.pythonhosted.org/packages/cd/86/8ed9e9b02166ad4cd86f58ad280766f9a66a641256471505c1ad241f9d69/zepben.eas-0.9.0b2-py3-none-any.whl
+[2023-04-13 07:51:27] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: Downloading https://files.pythonhosted.org/packages/95/6b/86aa6b3dd17902e1cbe315148ee03e5fe41e185b285373c444f4a9b4a25f/odoo_addon_quality_control_oca-15.0.1.0.0.9-py3-none-any.whl
+[2023-04-13 07:51:27] INFO root fetch - processPackages [zepben.eas]: executing diffoscope
+[2023-04-13 07:51:27] INFO root fetch - processPackages [zepben.eas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zepben.eas-0.9.0b1-py3-none-any.whl.zip tmp/zepben.eas-0.9.0b2-py3-none-any.whl.zip --markdown 20230413/z/zepben.eas/0.9.0b1-0.9.0b2/diff.md --exclude *.pyd
+[2023-04-13 07:51:28] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: executing diffoscope
+[2023-04-13 07:51:28] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_quality_control_oca-15.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_quality_control_oca-15.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-quality-control-oca/15.0.1.0.0.8-15.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-13 07:51:28] INFO root fetch - processPackages [kmspy]: Start processing: odoo14-addon-quality-control-oca
+[2023-04-13 07:51:28] INFO root fetch - main [MainThread]: End processing [kmspy]: success
+[2023-04-13 07:51:28] INFO root fetch - processPackages [odoo14-addon-quality-control-oca]: New version: [14.0.1.4.1.dev9] Old Version: [14.0.1.4.1.dev8]
+[2023-04-13 07:51:28] INFO root fetch - processPackages [py3dchart]: Start processing: devpi-client
+[2023-04-13 07:51:28] INFO root fetch - main [MainThread]: End processing [py3dchart]: success
+[2023-04-13 07:51:28] INFO root fetch - processPackages [devpi-client]: New version: [6.0.4] Old Version: [6.0.3]
+[2023-04-13 07:51:28] INFO root fetch - processPackages [cellmap]: Start processing: svgdigitizer
+[2023-04-13 07:51:28] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-13 07:51:28] INFO root fetch - processPackages [svgdigitizer]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-13 07:51:28] INFO root fetch - processPackages [zepben.eas]: Start processing: CheckmarxPythonSDK
+[2023-04-13 07:51:28] INFO root fetch - main [MainThread]: End processing [zepben.eas]: success
+[2023-04-13 07:51:28] INFO root fetch - processPackages [CheckmarxPythonSDK]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-13 07:51:28] INFO root fetch - processPackages [devpi-client]: Downloading https://files.pythonhosted.org/packages/e8/9c/913f61b3ca13d699417b506a66cafcb4ceb122e11e36c2c30239a8af4858/devpi-client-6.0.3.tar.gz
+[2023-04-13 07:51:28] INFO root fetch - processPackages [svgdigitizer]: Downloading https://files.pythonhosted.org/packages/85/a8/d573235091a9ba406328e9243144eeedaa33d01a91334dc81b0b872cfa9a/svgdigitizer-0.9.0.tar.gz
+[2023-04-13 07:51:28] INFO root fetch - processPackages [odoo14-addon-quality-control-oca]: executing diffoscope
+[2023-04-13 07:51:28] INFO root fetch - processPackages [odoo14-addon-quality-control-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_quality_control_oca-14.0.1.4.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_quality_control_oca-14.0.1.4.1.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo14-addon-quality-control-oca/14.0.1.4.1.dev8-14.0.1.4.1.dev9/diff.md --exclude *.pyd
+[2023-04-13 07:51:29] INFO root fetch - processPackages [CheckmarxPythonSDK]: Downloading https://files.pythonhosted.org/packages/17/10/5d9bd1517cd9e1e73474468d362057eb3c3c57b722f0efa857a5ebce0fc7/CheckmarxPythonSDK-0.7.2.tar.gz
+[2023-04-13 07:51:29] INFO root fetch - processPackages [devpi-client]: Downloading https://files.pythonhosted.org/packages/81/a5/c2244a2d3c575f43886ade5cf44f245eb3f71387ba29fc2d4a5ac76e8979/devpi-client-6.0.4.tar.gz
+[2023-04-13 07:51:29] INFO root fetch - processPackages [svgdigitizer]: Downloading https://files.pythonhosted.org/packages/cf/0d/c5c9130c49a9f6a7ede4a2e1ee9c5d7fef63cab7b8648ddb42a21d168185/svgdigitizer-0.9.1.tar.gz
+[2023-04-13 07:51:29] INFO root fetch - processPackages [CheckmarxPythonSDK]: executing diffoscope
+[2023-04-13 07:51:29] INFO root fetch - processPackages [CheckmarxPythonSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CheckmarxPythonSDK-0.7.1.tar.gz tmp/CheckmarxPythonSDK-0.7.2.tar.gz --markdown 20230413/C/CheckmarxPythonSDK/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-13 07:51:29] INFO root fetch - processPackages [svgdigitizer]: executing diffoscope
+[2023-04-13 07:51:29] INFO root fetch - processPackages [svgdigitizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/svgdigitizer-0.9.0.tar.gz tmp/svgdigitizer-0.9.1.tar.gz --markdown 20230413/s/svgdigitizer/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-13 07:51:29] INFO root fetch - processPackages [devpi-client]: executing diffoscope
+[2023-04-13 07:51:29] INFO root fetch - processPackages [devpi-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devpi-client-6.0.3.tar.gz tmp/devpi-client-6.0.4.tar.gz --markdown 20230413/d/devpi-client/6.0.3-6.0.4/diff.md --exclude *.pyd
+[2023-04-13 07:51:30] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: Start processing: zepben.evolve
+[2023-04-13 07:51:30] INFO root fetch - main [MainThread]: End processing [odoo-addon-quality-control-oca]: success
+[2023-04-13 07:51:30] INFO root fetch - processPackages [zepben.evolve]: New version: [0.35.0b9] Old Version: [0.35.0b8]
+[2023-04-13 07:51:30] INFO root fetch - processPackages [zepben.evolve]: Downloading https://files.pythonhosted.org/packages/3c/52/68c39e64538c250415cd6d029e45608e6961056e4ce7039b8404433ac826/zepben.evolve-0.35.0b8-py3-none-any.whl
+[2023-04-13 07:51:30] INFO root fetch - processPackages [svgdigitizer]: Start processing: stackscope
+[2023-04-13 07:51:30] INFO root fetch - main [MainThread]: End processing [svgdigitizer]: success
+[2023-04-13 07:51:30] WARNING root fetch - processPackages [stackscope]: Skipping, unable to determine old version
+[2023-04-13 07:51:30] INFO root fetch - processPackages [stackscope]: Start processing: fsoft-diff-patch
+[2023-04-13 07:51:30] INFO root fetch - main [MainThread]: End processing [stackscope] error
+[2023-04-13 07:51:30] INFO root fetch - processPackages [fsoft-diff-patch]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-13 07:51:30] INFO root fetch - processPackages [zepben.evolve]: Downloading https://files.pythonhosted.org/packages/66/1b/a52596e200440f9a72d7d09097b404a931ff67b44418a525f5ec2c47603a/zepben.evolve-0.35.0b9-py3-none-any.whl
+[2023-04-13 07:51:30] INFO root fetch - processPackages [fsoft-diff-patch]: Downloading https://files.pythonhosted.org/packages/c3/14/7f889476fe43f1179bc8d8e9219706ada09a9ae6c65d92a7c8888fc2b8c4/fsoft_diff_patch-0.1.0.tar.gz
+[2023-04-13 07:51:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-quality-control-oca]: success
+[2023-04-13 07:51:30] INFO root fetch - processPackages [zepben.evolve]: executing diffoscope
+[2023-04-13 07:51:30] INFO root fetch - processPackages [zepben.evolve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zepben.evolve-0.35.0b8-py3-none-any.whl.zip tmp/zepben.evolve-0.35.0b9-py3-none-any.whl.zip --markdown 20230413/z/zepben.evolve/0.35.0b8-0.35.0b9/diff.md --exclude *.pyd
+[2023-04-13 07:51:30] INFO root fetch - main [MainThread]: End processing [devpi-client]: success
+[2023-04-13 07:51:31] INFO root fetch - processPackages [fsoft-diff-patch]: Downloading https://files.pythonhosted.org/packages/8f/aa/fb0099468975f80e63917edb400a15b0980ba520a85637816ffcb30dc1af/fsoft_diff_patch-0.1.1.tar.gz
+[2023-04-13 07:51:31] INFO root fetch - processPackages [fsoft-diff-patch]: executing diffoscope
+[2023-04-13 07:51:31] INFO root fetch - processPackages [fsoft-diff-patch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fsoft_diff_patch-0.1.0.tar.gz tmp/fsoft_diff_patch-0.1.1.tar.gz --markdown 20230413/f/fsoft-diff-patch/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-13 07:51:32] INFO root fetch - main [MainThread]: End processing [fsoft-diff-patch]: success
+[2023-04-13 07:51:32] INFO root fetch - main [MainThread]: End processing [CheckmarxPythonSDK]: success
+[2023-04-13 07:51:35] INFO root fetch - main [MainThread]: End processing [zepben.evolve]: success
+[2023-04-13 07:51:35] INFO root fetch - main [MainThread]: Store serial: [17687407]
