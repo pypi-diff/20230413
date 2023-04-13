@@ -13679,3 +13679,94 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 12:43:10] INFO root fetch - main [MainThread]: End processing [elpigraph-python]: success
 [2023-04-13 12:43:10] INFO root fetch - main [MainThread]: End processing [pyoxynet]: success
 [2023-04-13 12:43:10] INFO root fetch - main [MainThread]: Store serial: [17690708]
+[2023-04-13 12:48:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17690708]
+[2023-04-13 12:48:18] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-13 12:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cbig-network-correspondence
+[2023-04-13 12:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: appmesh
+[2023-04-13 12:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gov-uk-dashboards
+[2023-04-13 12:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: utbot-executor
+[2023-04-13 12:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: terra-ai-datasets
+[2023-04-13 12:48:18] INFO root fetch - processPackages [cbig-network-correspondence]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-13 12:48:18] INFO root fetch - processPackages [terra-ai-datasets]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-13 12:48:18] INFO root fetch - processPackages [gov-uk-dashboards]: New version: [9.0.0] Old Version: [8.0.1]
+[2023-04-13 12:48:18] INFO root fetch - processPackages [appmesh]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 12:48:18] INFO root fetch - processPackages [utbot-executor]: New version: [1.5.6] Old Version: [1.5.5]
+[2023-04-13 12:48:18] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/e6/20/7801a9ffe87f9d6a7591e3c593443a8059f0ba5a1a676b849811f701ecd4/appmesh-0.3.8-py3-none-any.whl
+[2023-04-13 12:48:18] INFO root fetch - processPackages [cbig-network-correspondence]: Downloading https://files.pythonhosted.org/packages/ce/53/e8697dc5e42a58da09c522e262016c277200deba0036c7d547ef567fe4dc/cbig_network_correspondence-0.0.6.tar.gz
+[2023-04-13 12:48:18] INFO root fetch - processPackages [terra-ai-datasets]: Downloading https://files.pythonhosted.org/packages/c2/24/fea0fda0b844d9ee7939cd5fded5d7cd3ac9367f37afc4840b886dae098f/terra_ai_datasets-1.1.4.tar.gz
+[2023-04-13 12:48:18] INFO root fetch - processPackages [utbot-executor]: Downloading https://files.pythonhosted.org/packages/7c/a9/689763c07cda4144a9948bd030b5724f31ff402a65cc75fc66c170b2f0fc/utbot_executor-1.5.6.tar.gz
+[2023-04-13 12:48:18] INFO root fetch - processPackages [cbig-network-correspondence]: executing diffoscope
+[2023-04-13 12:48:18] INFO root fetch - processPackages [cbig-network-correspondence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbig_network_correspondence-0.0.5.tar.gz tmp/cbig_network_correspondence-0.0.6.tar.gz --markdown 20230413/c/cbig-network-correspondence/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-13 12:48:18] INFO root fetch - processPackages [utbot-executor]: executing diffoscope
+[2023-04-13 12:48:18] INFO root fetch - processPackages [utbot-executor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utbot_executor-1.5.5.tar.gz tmp/utbot_executor-1.5.6.tar.gz --markdown 20230413/u/utbot-executor/1.5.5-1.5.6/diff.md --exclude *.pyd
+[2023-04-13 12:48:18] INFO root fetch - processPackages [terra-ai-datasets]: executing diffoscope
+[2023-04-13 12:48:18] INFO root fetch - processPackages [terra-ai-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terra_ai_datasets-1.1.3.tar.gz tmp/terra_ai_datasets-1.1.4.tar.gz --markdown 20230413/t/terra-ai-datasets/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-13 12:48:18] INFO root fetch - processPackages [gov-uk-dashboards]: Downloading https://files.pythonhosted.org/packages/7b/9d/9efe8ea601d66d5b71de46ab2f4284841e711072f93baeaac4dd013efb78/gov_uk_dashboards-9.0.0.tar.gz
+[2023-04-13 12:48:18] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/1a/56/54af7a0389241f6956e03e4a0bb0bfc8e0b85a4df79f5ef94e16b212dfc7/appmesh-0.3.9-py3-none-any.whl
+[2023-04-13 12:48:18] INFO root fetch - processPackages [appmesh]: executing diffoscope
+[2023-04-13 12:48:18] INFO root fetch - processPackages [appmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appmesh-0.3.8-py3-none-any.whl.zip tmp/appmesh-0.3.9-py3-none-any.whl.zip --markdown 20230413/a/appmesh/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 12:48:18] INFO root fetch - processPackages [gov-uk-dashboards]: executing diffoscope
+[2023-04-13 12:48:18] INFO root fetch - processPackages [gov-uk-dashboards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gov_uk_dashboards-8.0.1.tar.gz tmp/gov_uk_dashboards-9.0.0.tar.gz --markdown 20230413/g/gov-uk-dashboards/8.0.1-9.0.0/diff.md --exclude *.pyd
+[2023-04-13 12:48:19] INFO root fetch - processPackages [cbig-network-correspondence]: Start processing: gmltools
+[2023-04-13 12:48:19] INFO root fetch - main [MainThread]: End processing [cbig-network-correspondence]: success
+[2023-04-13 12:48:19] INFO root fetch - processPackages [gmltools]: New version: [0.0.49] Old Version: [0.0.48]
+[2023-04-13 12:48:19] INFO root fetch - processPackages [utbot-executor]: Start processing: vikingreddy
+[2023-04-13 12:48:19] INFO root fetch - main [MainThread]: End processing [utbot-executor]: success
+[2023-04-13 12:48:19] WARNING root fetch - processPackages [vikingreddy]: Skipping, unable to determine old version
+[2023-04-13 12:48:19] INFO root fetch - processPackages [vikingreddy]: Start processing: arclet-alconna
+[2023-04-13 12:48:19] INFO root fetch - main [MainThread]: End processing [vikingreddy] error
+[2023-04-13 12:48:19] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/f4/b3/3ab3b4b07c360c1d8c3f680f8872a0c744a18d42c5cb7e3cc078bc24cb63/gmltools-0.0.49.tar.gz
+[2023-04-13 12:48:19] INFO root fetch - processPackages [arclet-alconna]: New version: [1.7.0rc2] Old Version: [1.7.0rc1]
+[2023-04-13 12:48:19] INFO root fetch - processPackages [appmesh]: Start processing: sienna
+[2023-04-13 12:48:19] INFO root fetch - main [MainThread]: End processing [appmesh]: success
+[2023-04-13 12:48:19] INFO root fetch - processPackages [sienna]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 12:48:19] INFO root fetch - processPackages [sienna]: Downloading https://files.pythonhosted.org/packages/31/eb/23fd8b9365bc334aee07b9a55fb4657c14b305424d68dbeb698d438cdd1f/sienna-0.2.1.tar.gz
+[2023-04-13 12:48:20] INFO root fetch - processPackages [arclet-alconna]: Downloading https://files.pythonhosted.org/packages/9f/5a/90e4b3f3a835476b81076927e5b0fc1e1c95bdd45acf798d0d66b9958a54/arclet-alconna-1.7.0rc1.tar.gz
+[2023-04-13 12:48:20] INFO root fetch - processPackages [sienna]: executing diffoscope
+[2023-04-13 12:48:20] INFO root fetch - processPackages [sienna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sienna-0.2.0.tar.gz tmp/sienna-0.2.1.tar.gz --markdown 20230413/s/sienna/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 12:48:20] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-04-13 12:48:20] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.48.tar.gz tmp/gmltools-0.0.49.tar.gz --markdown 20230413/g/gmltools/0.0.48-0.0.49/diff.md --exclude *.pyd
+[2023-04-13 12:48:20] INFO root fetch - processPackages [terra-ai-datasets]: Start processing: yzhanurlparser
+[2023-04-13 12:48:20] INFO root fetch - main [MainThread]: End processing [terra-ai-datasets]: success
+[2023-04-13 12:48:20] WARNING root fetch - processPackages [yzhanurlparser]: Skipping, unable to determine old version
+[2023-04-13 12:48:20] INFO root fetch - processPackages [yzhanurlparser]: Start processing: cloudpss
+[2023-04-13 12:48:20] INFO root fetch - main [MainThread]: End processing [yzhanurlparser] error
+[2023-04-13 12:48:20] INFO root fetch - processPackages [cloudpss]: New version: [3.2.0a2] Old Version: [3.2.0a1]
+[2023-04-13 12:48:20] INFO root fetch - processPackages [cloudpss]: Downloading https://files.pythonhosted.org/packages/06/24/552bc63d66d84c64a063680a3c1727a134dd850f5baefcabc8b0d003396b/cloudpss-3.2.0a1.tar.gz
+[2023-04-13 12:48:20] INFO root fetch - processPackages [arclet-alconna]: Downloading https://files.pythonhosted.org/packages/5c/b2/27665c995e5fc473e87f2a455ba8900db2aece09dda7cf14e57f8be76014/arclet-alconna-1.7.0rc2.tar.gz
+[2023-04-13 12:48:20] INFO root fetch - processPackages [gov-uk-dashboards]: Start processing: synergy-dataset
+[2023-04-13 12:48:20] INFO root fetch - main [MainThread]: End processing [gov-uk-dashboards]: success
+[2023-04-13 12:48:20] INFO root fetch - processPackages [synergy-dataset]: New version: [1.0a1] Old Version: [1.0a0]
+[2023-04-13 12:48:20] INFO root fetch - processPackages [arclet-alconna]: executing diffoscope
+[2023-04-13 12:48:20] INFO root fetch - processPackages [arclet-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-1.7.0rc1.tar.gz tmp/arclet-alconna-1.7.0rc2.tar.gz --markdown 20230413/a/arclet-alconna/1.7.0rc1-1.7.0rc2/diff.md --exclude *.pyd
+[2023-04-13 12:48:20] INFO root fetch - processPackages [synergy-dataset]: Downloading https://files.pythonhosted.org/packages/3d/74/2d2561cbc3890e313f5be617ddddceb29d3dcc3b72fd1c5619982d4e2da9/synergy-dataset-1.0a0.tar.gz
+[2023-04-13 12:48:20] INFO root fetch - processPackages [cloudpss]: Downloading https://files.pythonhosted.org/packages/d4/62/6fdc296728e9dbacd42b2b9936ef21cc09b12d2915d01265d884f4b78863/cloudpss-3.2.0a2.tar.gz
+[2023-04-13 12:48:20] INFO root fetch - processPackages [cloudpss]: executing diffoscope
+[2023-04-13 12:48:20] INFO root fetch - processPackages [cloudpss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpss-3.2.0a1.tar.gz tmp/cloudpss-3.2.0a2.tar.gz --markdown 20230413/c/cloudpss/3.2.0a1-3.2.0a2/diff.md --exclude *.pyd
+[2023-04-13 12:48:20] INFO root fetch - processPackages [synergy-dataset]: Downloading https://files.pythonhosted.org/packages/c0/6d/9463f019df2ab72ea579efce6b457386d039b2a903b848695f031eb04a98/synergy-dataset-1.0a1.tar.gz
+[2023-04-13 12:48:20] INFO root fetch - processPackages [sienna]: Start processing: cognite-sdk
+[2023-04-13 12:48:20] INFO root fetch - main [MainThread]: End processing [sienna]: success
+[2023-04-13 12:48:20] INFO root fetch - processPackages [synergy-dataset]: executing diffoscope
+[2023-04-13 12:48:20] INFO root fetch - processPackages [synergy-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synergy-dataset-1.0a0.tar.gz tmp/synergy-dataset-1.0a1.tar.gz --markdown 20230413/s/synergy-dataset/1.0a0-1.0a1/diff.md --exclude *.pyd
+[2023-04-13 12:48:20] INFO root fetch - processPackages [cognite-sdk]: New version: [5.9.3] Old Version: [5.9.2]
+[2023-04-13 12:48:21] INFO root fetch - processPackages [cognite-sdk]: executing diffoscope
+[2023-04-13 12:48:21] INFO root fetch - processPackages [cognite-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_sdk-5.9.2.tar.gz tmp/cognite_sdk-5.9.3.tar.gz --markdown 20230413/c/cognite-sdk/5.9.2-5.9.3/diff.md --exclude *.pyd
+[2023-04-13 12:48:21] INFO root fetch - processPackages [gmltools]: Start processing: appmesh
+[2023-04-13 12:48:21] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-04-13 12:48:21] INFO root fetch - processPackages [appmesh]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 12:48:21] INFO root fetch - processPackages [appmesh]: executing diffoscope
+[2023-04-13 12:48:21] INFO root fetch - processPackages [appmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appmesh-0.3.8-py3-none-any.whl.zip tmp/appmesh-0.3.9-py3-none-any.whl.zip --markdown 20230413/a/appmesh/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 12:48:21] INFO root fetch - processPackages [arclet-alconna]: Start processing: orchestra-logger
+[2023-04-13 12:48:21] INFO root fetch - main [MainThread]: End processing [arclet-alconna]: success
+[2023-04-13 12:48:21] INFO root fetch - processPackages [orchestra-logger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 12:48:21] INFO root fetch - processPackages [orchestra-logger]: executing diffoscope
+[2023-04-13 12:48:21] INFO root fetch - processPackages [orchestra-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orchestra-logger-0.0.8.tar.gz tmp/orchestra-logger-0.0.9.tar.gz --markdown 20230413/o/orchestra-logger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 12:48:21] INFO root fetch - processPackages [cloudpss]: Start processing: dorsa-logging
+[2023-04-13 12:48:21] INFO root fetch - main [MainThread]: End processing [cloudpss]: success
+[2023-04-13 12:48:22] WARNING root fetch - processPackages [dorsa-logging]: Skipping, unable to determine old version
+[2023-04-13 12:48:22] INFO root fetch - main [MainThread]: End processing [dorsa-logging] error
+[2023-04-13 12:48:22] INFO root fetch - main [MainThread]: End processing [synergy-dataset]: success
+[2023-04-13 12:48:22] INFO root fetch - main [MainThread]: End processing [appmesh]: success
+[2023-04-13 12:48:22] INFO root fetch - main [MainThread]: End processing [cognite-sdk]: success
+[2023-04-13 12:48:22] INFO root fetch - main [MainThread]: End processing [orchestra-logger]: success
+[2023-04-13 12:48:22] INFO root fetch - main [MainThread]: Store serial: [17690760]
