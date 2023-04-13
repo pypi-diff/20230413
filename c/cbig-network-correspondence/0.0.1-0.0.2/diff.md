@@ -1,0 +1,89 @@
+# Comparing `tmp/cbig_network_correspondence-0.0.1.tar.gz` & `tmp/cbig_network_correspondence-0.0.2.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "cbig_network_correspondence-0.0.1.tar", max compression
++gzip compressed data, was "cbig_network_correspondence-0.0.2.tar", max compression
+```
+
+## Comparing `cbig_network_correspondence-0.0.1.tar` & `cbig_network_correspondence-0.0.2.tar`
+
+### file list
+
+```diff
+@@ -1,9 +1,9 @@
+--rw-r--r--   0        0        0     3180 2023-04-13 06:46:29.677974 cbig_network_correspondence-0.0.1/README.md
+--rw-r--r--   0        0        0     2261 2023-04-13 06:46:29.677974 cbig_network_correspondence-0.0.1/pyproject.toml
+--rw-r--r--   0        0        0      329 2023-04-13 06:46:29.677974 cbig_network_correspondence-0.0.1/src/cbig_network_correspondence/__init__.py
+--rw-r--r--   0        0        0    10455 2023-04-13 06:46:29.677974 cbig_network_correspondence-0.0.1/src/cbig_network_correspondence/compute_overlap_with_atlases.py
+--rw-r--r--   0        0        0     2189 2023-04-13 06:46:29.677974 cbig_network_correspondence-0.0.1/src/cbig_network_correspondence/grab_data_info.py
+--rw-r--r--   0        0        0      429 2023-04-13 06:46:29.677974 cbig_network_correspondence-0.0.1/src/cbig_network_correspondence/load_example.py
+--rw-r--r--   0        0        0        0 2023-04-13 06:46:29.677974 cbig_network_correspondence-0.0.1/src/cbig_network_correspondence/py.typed
+--rw-r--r--   0        0        0     5442 2023-04-13 06:46:29.677974 cbig_network_correspondence-0.0.1/src/cbig_network_correspondence/visualize_overlap_lib.py
+--rw-r--r--   0        0        0     4465 1970-01-01 00:00:00.000000 cbig_network_correspondence-0.0.1/PKG-INFO
++-rw-r--r--   0        0        0     3180 2023-04-13 07:30:02.542973 cbig_network_correspondence-0.0.2/README.md
++-rw-r--r--   0        0        0     2261 2023-04-13 07:30:02.542973 cbig_network_correspondence-0.0.2/pyproject.toml
++-rw-r--r--   0        0        0      326 2023-04-13 07:30:02.542973 cbig_network_correspondence-0.0.2/src/cbig_network_correspondence/__init__.py
++-rw-r--r--   0        0        0    10455 2023-04-13 07:30:02.542973 cbig_network_correspondence-0.0.2/src/cbig_network_correspondence/compute_overlap_with_atlases.py
++-rw-r--r--   0        0        0     2189 2023-04-13 07:30:02.542973 cbig_network_correspondence-0.0.2/src/cbig_network_correspondence/grab_data_info.py
++-rw-r--r--   0        0        0      429 2023-04-13 07:30:02.542973 cbig_network_correspondence-0.0.2/src/cbig_network_correspondence/load_example.py
++-rw-r--r--   0        0        0        0 2023-04-13 07:30:02.542973 cbig_network_correspondence-0.0.2/src/cbig_network_correspondence/py.typed
++-rw-r--r--   0        0        0     5442 2023-04-13 07:30:02.542973 cbig_network_correspondence-0.0.2/src/cbig_network_correspondence/visualize_overlap_lib.py
++-rw-r--r--   0        0        0     4465 1970-01-01 00:00:00.000000 cbig_network_correspondence-0.0.2/PKG-INFO
+```
+
+### Comparing `cbig_network_correspondence-0.0.1/README.md` & `cbig_network_correspondence-0.0.2/README.md`
+
+ * *Files identical despite different names*
+
+### Comparing `cbig_network_correspondence-0.0.1/pyproject.toml` & `cbig_network_correspondence-0.0.2/pyproject.toml`
+
+ * *Files 0% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ [tool.poetry]
+ name = "cbig_network_correspondence"
+-version = "0.0.1"
++version = "0.0.2"
+ description = "A toolbox for exploring network correspondence across atlases"
+ authors = [
+     "Ruby Kong <roo.cone@gmail.com>",
+ ]
+ license = "MIT"
+ readme = "README.md"
+```
+
+### Comparing `cbig_network_correspondence-0.0.1/src/cbig_network_correspondence/compute_overlap_with_atlases.py` & `cbig_network_correspondence-0.0.2/src/cbig_network_correspondence/compute_overlap_with_atlases.py`
+
+ * *Files identical despite different names*
+
+### Comparing `cbig_network_correspondence-0.0.1/src/cbig_network_correspondence/grab_data_info.py` & `cbig_network_correspondence-0.0.2/src/cbig_network_correspondence/grab_data_info.py`
+
+ * *Files identical despite different names*
+
+### Comparing `cbig_network_correspondence-0.0.1/src/cbig_network_correspondence/visualize_overlap_lib.py` & `cbig_network_correspondence-0.0.2/src/cbig_network_correspondence/visualize_overlap_lib.py`
+
+ * *Files identical despite different names*
+
+### Comparing `cbig_network_correspondence-0.0.1/PKG-INFO` & `cbig_network_correspondence-0.0.2/PKG-INFO`
+
+ * *Files 0% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: cbig-network-correspondence
+-Version: 0.0.1
++Version: 0.0.2
+ Summary: A toolbox for exploring network correspondence across atlases
+ Home-page: https://rubykong.github.io/cbig_network_correspondence
+ License: MIT
+ Author: Ruby Kong
+ Author-email: roo.cone@gmail.com
+ Requires-Python: >=3.7.1,<4.0
+ Classifier: Development Status :: 4 - Beta
+```
+

@@ -9973,3 +9973,119 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 09:23:38] INFO root fetch - main [MainThread]: End processing [pikepdf]: success
 [2023-04-13 09:23:42] INFO root fetch - main [MainThread]: End processing [shared-atomic-enterprise]: success
 [2023-04-13 09:23:42] INFO root fetch - main [MainThread]: Store serial: [17688317]
+[2023-04-13 09:28:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17688317]
+[2023-04-13 09:28:49] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-13 09:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rpaframework
+[2023-04-13 09:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slackflylog
+[2023-04-13 09:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pcl-pangu
+[2023-04-13 09:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymultilint
+[2023-04-13 09:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ifd-python
+[2023-04-13 09:28:49] INFO root fetch - processPackages [ifd-python]: New version: [7.1] Old Version: [7.0]
+[2023-04-13 09:28:49] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 09:28:49] INFO root fetch - processPackages [slackflylog]: New version: [3.0.4] Old Version: [1.0.5]
+[2023-04-13 09:28:49] INFO root fetch - processPackages [rpaframework]: New version: [9.6.0] Old Version: [9.5.0]
+[2023-04-13 09:28:49] INFO root fetch - processPackages [pymultilint]: New version: [1.0.0] Old Version: [0.9.0]
+[2023-04-13 09:28:49] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 09:28:49] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 09:28:49] INFO root fetch - processPackages [slackflylog]: Downloading https://files.pythonhosted.org/packages/2f/ce/5f4063ba9361e083651595d85227e5e9876b5e1e679667e91cacb7896cb2/slackflylog-1.0.5.tar.gz
+[2023-04-13 09:28:49] INFO root fetch - processPackages [ifd-python]: Downloading https://files.pythonhosted.org/packages/91/1e/285ab2b1467cbee3e7ab19e9e3030dede21ab1d1810424fedb529ed44e93/ifd_python-7.1.tar.gz
+[2023-04-13 09:28:49] INFO root fetch - processPackages [rpaframework]: Downloading https://files.pythonhosted.org/packages/08/36/2753b6863128fce0fd17301c85f3767b92c880658c31f1a1f8773dd22d10/rpaframework-9.5.0.tar.gz
+[2023-04-13 09:28:49] INFO root fetch - processPackages [pymultilint]: Downloading https://files.pythonhosted.org/packages/72/8c/97e9c702809119efe73f34df053150641f810474121472a439785c6d1f12/pymultilint-1.0.0.tar.gz
+[2023-04-13 09:28:49] INFO root fetch - processPackages [ifd-python]: executing diffoscope
+[2023-04-13 09:28:49] INFO root fetch - processPackages [ifd-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifd_python-7.0.tar.gz tmp/ifd_python-7.1.tar.gz --markdown 20230413/i/ifd-python/7.0-7.1/diff.md --exclude *.pyd
+[2023-04-13 09:28:49] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-13 09:28:49] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-1.0.5.tar.gz tmp/slackflylog-3.0.4.tar.gz --markdown 20230413/s/slackflylog/1.0.5-3.0.4/diff.md --exclude *.pyd
+[2023-04-13 09:28:50] INFO root fetch - processPackages [pymultilint]: executing diffoscope
+[2023-04-13 09:28:50] INFO root fetch - processPackages [pymultilint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymultilint-0.9.0.tar.gz tmp/pymultilint-1.0.0.tar.gz --markdown 20230413/p/pymultilint/0.9.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-13 09:28:50] INFO root fetch - processPackages [ifd-python]: Start processing: hystorian
+[2023-04-13 09:28:50] INFO root fetch - main [MainThread]: End processing [ifd-python]: success
+[2023-04-13 09:28:51] INFO root fetch - processPackages [hystorian]: New version: [1.0.5.2] Old Version: [1.0.5.1]
+[2023-04-13 09:28:51] INFO root fetch - processPackages [slackflylog]: Start processing: bmb-martlet-organization-client
+[2023-04-13 09:28:51] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-13 09:28:51] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-13 09:28:51] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-04-13 09:28:51] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230413/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-13 09:28:51] INFO root fetch - processPackages [hystorian]: Downloading https://files.pythonhosted.org/packages/36/11/36ae5a18432769ec3f78bec49426e4a9a226f194f5901c410fff2f067205/hystorian-1.0.5.1.tar.gz
+[2023-04-13 09:28:51] INFO root fetch - processPackages [pymultilint]: Start processing: aloso
+[2023-04-13 09:28:51] INFO root fetch - main [MainThread]: End processing [pymultilint]: success
+[2023-04-13 09:28:51] INFO root fetch - processPackages [aloso]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 09:28:51] INFO root fetch - processPackages [rpaframework]: Downloading https://files.pythonhosted.org/packages/ec/52/e237349f170c7f11301bcd83a500356a47b1480cdeee67c6971b224571b0/rpaframework-9.6.0.tar.gz
+[2023-04-13 09:28:51] INFO root fetch - processPackages [hystorian]: Downloading https://files.pythonhosted.org/packages/9d/f2/0a19e8e57f6575f90055ffe4246df5b6ad62637cfd048a089a14a83c8998/hystorian-1.0.5.2.tar.gz
+[2023-04-13 09:28:51] INFO root fetch - processPackages [hystorian]: executing diffoscope
+[2023-04-13 09:28:51] INFO root fetch - processPackages [hystorian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hystorian-1.0.5.1.tar.gz tmp/hystorian-1.0.5.2.tar.gz --markdown 20230413/h/hystorian/1.0.5.1-1.0.5.2/diff.md --exclude *.pyd
+[2023-04-13 09:28:51] INFO root fetch - processPackages [aloso]: executing diffoscope
+[2023-04-13 09:28:51] INFO root fetch - processPackages [aloso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aloso-0.0.8-py3-none-any.whl.zip tmp/aloso-0.0.9-py3-none-any.whl.zip --markdown 20230413/a/aloso/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 09:28:52] INFO root fetch - processPackages [pcl-pangu]: Start processing: cbig-network-correspondence
+[2023-04-13 09:28:52] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 09:28:52] INFO root fetch - processPackages [cbig-network-correspondence]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 09:28:52] INFO root fetch - processPackages [cbig-network-correspondence]: Downloading https://files.pythonhosted.org/packages/9b/2b/7117bcebb2c5116bca8c282e9f1412fcc2c526a991437f2fe5fb44b2055c/cbig_network_correspondence-0.0.1.tar.gz
+[2023-04-13 09:28:52] INFO root fetch - processPackages [rpaframework]: executing diffoscope
+[2023-04-13 09:28:52] INFO root fetch - processPackages [rpaframework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpaframework-9.5.0.tar.gz tmp/rpaframework-9.6.0.tar.gz --markdown 20230413/r/rpaframework/9.5.0-9.6.0/diff.md --exclude *.pyd
+[2023-04-13 09:28:52] INFO root fetch - processPackages [cbig-network-correspondence]: Downloading https://files.pythonhosted.org/packages/f0/db/0055a111db1d7935d3e67f0c4b3bdebaa39d88970ef2222d51921394c8bc/cbig_network_correspondence-0.0.2.tar.gz
+[2023-04-13 09:28:52] INFO root fetch - processPackages [cbig-network-correspondence]: executing diffoscope
+[2023-04-13 09:28:52] INFO root fetch - processPackages [cbig-network-correspondence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbig_network_correspondence-0.0.1.tar.gz tmp/cbig_network_correspondence-0.0.2.tar.gz --markdown 20230413/c/cbig-network-correspondence/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 09:28:52] INFO root fetch - processPackages [hystorian]: Start processing: purgelogs
+[2023-04-13 09:28:52] INFO root fetch - main [MainThread]: End processing [hystorian]: success
+[2023-04-13 09:28:52] INFO root fetch - processPackages [purgelogs]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-13 09:28:52] INFO root fetch - processPackages [aloso]: Start processing: paneltime
+[2023-04-13 09:28:52] INFO root fetch - main [MainThread]: End processing [aloso]: success
+[2023-04-13 09:28:52] INFO root fetch - processPackages [paneltime]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-13 09:28:53] INFO root fetch - processPackages [paneltime]: executing diffoscope
+[2023-04-13 09:28:53] INFO root fetch - processPackages [paneltime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paneltime-1.2.8-py3-none-any.whl.zip tmp/paneltime-1.2.9.tar.gz --markdown 20230413/p/paneltime/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-13 09:28:53] INFO root fetch - processPackages [purgelogs]: Downloading https://files.pythonhosted.org/packages/41/66/5a184dccc34ec63ff929d0031ce3b60dfeb551b15381add1907655031966/purgelogs-0.2.0.tar.gz
+[2023-04-13 09:28:53] INFO root fetch - processPackages [purgelogs]: Downloading https://files.pythonhosted.org/packages/fc/fb/3c26a0f7a75c650ca6309f36418fab63c94bfc781598d08070f8192d745e/purgelogs-0.2.1.tar.gz
+[2023-04-13 09:28:53] INFO root fetch - processPackages [purgelogs]: executing diffoscope
+[2023-04-13 09:28:53] INFO root fetch - processPackages [purgelogs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/purgelogs-0.2.0.tar.gz tmp/purgelogs-0.2.1.tar.gz --markdown 20230413/p/purgelogs/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-13 09:28:53] INFO root fetch - processPackages [cbig-network-correspondence]: Start processing: bemserver-api
+[2023-04-13 09:28:53] INFO root fetch - main [MainThread]: End processing [cbig-network-correspondence]: success
+[2023-04-13 09:28:53] INFO root fetch - processPackages [bemserver-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 09:28:54] INFO root fetch - processPackages [bemserver-api]: Downloading https://files.pythonhosted.org/packages/d1/96/d63eab3b697c60441c8e4773f0f7e4f7ae0cc4ac6c9b80c1b861c1726f94/bemserver-api-0.8.0.tar.gz
+[2023-04-13 09:28:54] INFO root fetch - processPackages [paneltime]: Start processing: mnnllzz
+[2023-04-13 09:28:54] INFO root fetch - main [MainThread]: End processing [paneltime]: success
+[2023-04-13 09:28:54] INFO root fetch - processPackages [mnnllzz]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-13 09:28:54] INFO root fetch - processPackages [bemserver-api]: Downloading https://files.pythonhosted.org/packages/5c/e7/77a339a63998e92a93bf92e8d87de9152b25180a76f0d202f8550beef516/bemserver-api-0.9.0.tar.gz
+[2023-04-13 09:28:54] INFO root fetch - processPackages [purgelogs]: Start processing: byteblower-test-framework
+[2023-04-13 09:28:54] INFO root fetch - main [MainThread]: End processing [purgelogs]: success
+[2023-04-13 09:28:54] INFO root fetch - processPackages [byteblower-test-framework]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-04-13 09:28:54] INFO root fetch - processPackages [mnnllzz]: Downloading https://files.pythonhosted.org/packages/c6/81/6a944528e7fa04d0c87c6e4f3abdf1024648fe2c8530b0e4323388bc7c68/mnnllzz-1.4.1.tar.gz
+[2023-04-13 09:28:54] INFO root fetch - processPackages [bemserver-api]: executing diffoscope
+[2023-04-13 09:28:54] INFO root fetch - processPackages [bemserver-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bemserver-api-0.8.0.tar.gz tmp/bemserver-api-0.9.0.tar.gz --markdown 20230413/b/bemserver-api/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 09:28:54] INFO root fetch - processPackages [byteblower-test-framework]: Downloading https://files.pythonhosted.org/packages/bc/2e/58188c17e1fd53144f8638ed3c624d586a4a12393bd1485770d711374440/byteblower-test-framework-1.0.0b8.tar.gz
+[2023-04-13 09:28:54] INFO root fetch - processPackages [mnnllzz]: executing diffoscope
+[2023-04-13 09:28:54] INFO root fetch - processPackages [mnnllzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mnnllzz-1.4.0.tar.gz tmp/mnnllzz-1.4.1.tar.gz --markdown 20230413/m/mnnllzz/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-13 09:28:55] INFO root fetch - processPackages [rpaframework]: Start processing: freechatgpt
+[2023-04-13 09:28:55] INFO root fetch - main [MainThread]: End processing [rpaframework]: success
+[2023-04-13 09:28:55] INFO root fetch - processPackages [byteblower-test-framework]: Downloading https://files.pythonhosted.org/packages/5b/a7/6eaf91d0eb0adfb4ee40a72618a4be1877beb0cca2533ba9c01a614974df/byteblower-test-framework-1.0.0b9.tar.gz
+[2023-04-13 09:28:55] INFO root fetch - processPackages [freechatgpt]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-13 09:28:55] INFO root fetch - processPackages [byteblower-test-framework]: executing diffoscope
+[2023-04-13 09:28:55] INFO root fetch - processPackages [byteblower-test-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byteblower-test-framework-1.0.0b8.tar.gz tmp/byteblower-test-framework-1.0.0b9.tar.gz --markdown 20230413/b/byteblower-test-framework/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-04-13 09:28:55] INFO root fetch - processPackages [bmb-martlet-organization-client]: Start processing: dnstwist
+[2023-04-13 09:28:55] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
+[2023-04-13 09:28:55] INFO root fetch - processPackages [dnstwist]: New version: [20230413] Old Version: [20230402]
+[2023-04-13 09:28:55] INFO root fetch - processPackages [freechatgpt]: Downloading https://files.pythonhosted.org/packages/2a/4d/44830e1610777c40803d13bb0aee2e663c4cb7711a7078ddc8a1340ba4fa/freechatgpt-1.3.4.tar.gz
+[2023-04-13 09:28:55] INFO root fetch - processPackages [dnstwist]: Downloading https://files.pythonhosted.org/packages/78/8f/7ccfe3119f6663be38abfa1e253efdbc74c6ff6a9dc53fed5ac158c601cd/dnstwist-20230402.tar.gz
+[2023-04-13 09:28:55] INFO root fetch - processPackages [freechatgpt]: executing diffoscope
+[2023-04-13 09:28:55] INFO root fetch - processPackages [freechatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freechatgpt-1.3.3.tar.gz tmp/freechatgpt-1.3.4.tar.gz --markdown 20230413/f/freechatgpt/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-13 09:28:55] INFO root fetch - processPackages [mnnllzz]: Start processing: foliantcontrib.showcommits
+[2023-04-13 09:28:55] INFO root fetch - main [MainThread]: End processing [mnnllzz]: success
+[2023-04-13 09:28:55] INFO root fetch - processPackages [foliantcontrib.showcommits]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-13 09:28:56] INFO root fetch - processPackages [dnstwist]: Downloading https://files.pythonhosted.org/packages/d6/29/fd443d1730c3da3679bf1f6bf2d870688c1a2d55dec60b650309de744712/dnstwist-20230413.tar.gz
+[2023-04-13 09:28:56] INFO root fetch - processPackages [foliantcontrib.showcommits]: Downloading https://files.pythonhosted.org/packages/be/c4/748c7a4b6d91e65cad8cdecd58a514f54690684038b73c5dd9bb57358282/foliantcontrib.showcommits-1.0.3.tar.gz
+[2023-04-13 09:28:56] INFO root fetch - processPackages [dnstwist]: executing diffoscope
+[2023-04-13 09:28:56] INFO root fetch - processPackages [dnstwist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnstwist-20230402.tar.gz tmp/dnstwist-20230413.tar.gz --markdown 20230413/d/dnstwist/20230402-20230413/diff.md --exclude *.pyd
+[2023-04-13 09:28:56] INFO root fetch - processPackages [foliantcontrib.showcommits]: Downloading https://files.pythonhosted.org/packages/c6/72/ecf7249f9a7b5fcb3afda9d71b729ba1d6c2af2afc798d40470a44ff207b/foliantcontrib.showcommits-1.0.4.tar.gz
+[2023-04-13 09:28:56] INFO root fetch - processPackages [foliantcontrib.showcommits]: executing diffoscope
+[2023-04-13 09:28:56] INFO root fetch - processPackages [foliantcontrib.showcommits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foliantcontrib.showcommits-1.0.3.tar.gz tmp/foliantcontrib.showcommits-1.0.4.tar.gz --markdown 20230413/f/foliantcontrib.showcommits/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-13 09:28:56] INFO root fetch - processPackages [byteblower-test-framework]: Start processing: ert
+[2023-04-13 09:28:56] INFO root fetch - main [MainThread]: End processing [byteblower-test-framework]: success
+[2023-04-13 09:28:56] INFO root fetch - main [MainThread]: End processing [freechatgpt]: success
+[2023-04-13 09:28:56] INFO root fetch - processPackages [ert]: New version: [5.0.0b5] Old Version: [5.0.0b3]
+[2023-04-13 09:28:57] INFO root fetch - processPackages [ert]: Downloading https://files.pythonhosted.org/packages/e0/11/1da5862772691d5c32f1fe8356275dc7dbfdf3b2158d7da9a1fd90fd825f/ert-5.0.0b3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-13 09:28:57] INFO root fetch - main [MainThread]: End processing [dnstwist]: success
+[2023-04-13 09:28:57] INFO root fetch - main [MainThread]: End processing [bemserver-api]: success
+[2023-04-13 09:28:57] INFO root fetch - main [MainThread]: End processing [foliantcontrib.showcommits]: success
+[2023-04-13 09:28:57] INFO root fetch - processPackages [ert]: Downloading https://files.pythonhosted.org/packages/c3/61/00404eab331d6f85809a8cc1ee1cc8cd83846181643e2db8932a98de7b17/ert-5.0.0b5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-13 09:28:58] INFO root fetch - processPackages [ert]: executing diffoscope
+[2023-04-13 09:28:58] INFO root fetch - processPackages [ert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ert-5.0.0b3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/ert-5.0.0b5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230413/e/ert/5.0.0b3-5.0.0b5/diff.md --exclude *.pyd
+[2023-04-13 09:29:12] INFO root fetch - main [MainThread]: End processing [ert]: success
+[2023-04-13 09:29:12] INFO root fetch - main [MainThread]: Store serial: [17688368]
