@@ -1159,3 +1159,88 @@
 [2023-04-13 02:01:01] INFO root fetch - main [MainThread]: End processing [baseball]: success
 [2023-04-13 02:01:04] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-04-13 02:01:04] INFO root fetch - main [MainThread]: Store serial: [17683130]
+[2023-04-13 02:06:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17683130]
+[2023-04-13 02:06:11] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-13 02:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxkern-nightly
+[2023-04-13 02:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cd2t
+[2023-04-13 02:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quantconnect-stubs
+[2023-04-13 02:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ultralytics
+[2023-04-13 02:06:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaxutils-nightly
+[2023-04-13 02:06:11] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230412] Old Version: [0.0.8.dev20230411]
+[2023-04-13 02:06:11] INFO root fetch - processPackages [ultralytics]: New version: [8.0.9] Old Version: [8.0.8]
+[2023-04-13 02:06:12] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-13 02:06:12] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-04-13 02:06:12] INFO root fetch - processPackages [cd2t]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-04-13 02:06:12] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-13 02:06:12] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230413/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-13 02:06:12] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/70/55/b29ac356d2e778ef09fc2fa564680dab3b3af875703c3bf98cc3d2065c42/jaxutils-nightly-0.0.8.dev20230412.tar.gz
+[2023-04-13 02:06:12] INFO root fetch - processPackages [cd2t]: Downloading https://files.pythonhosted.org/packages/c2/c8/63a70c32717a1df3c1631a3a31a2ea0487afcf8aebf4df30b7bc19b1675a/cd2t-1.4.0.tar.gz
+[2023-04-13 02:06:12] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-04-13 02:06:12] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230411.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230412.tar.gz --markdown 20230413/j/jaxutils-nightly/0.0.8.dev20230411-0.0.8.dev20230412/diff.md --exclude *.pyd
+[2023-04-13 02:06:12] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-04-13 02:06:12] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.8.tar.gz tmp/ultralytics-8.0.9.tar.gz --markdown 20230413/u/ultralytics/8.0.8-8.0.9/diff.md --exclude *.pyd
+[2023-04-13 02:06:12] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-04-13 02:06:12] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230413/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-04-13 02:06:12] INFO root fetch - processPackages [cd2t]: Downloading https://files.pythonhosted.org/packages/82/80/d4ee6f03a596b12f5bc99d40ed1cb53a5ddbeb09054609655e33f895e1e3/cd2t-1.5.0.tar.gz
+[2023-04-13 02:06:12] INFO root fetch - processPackages [cd2t]: executing diffoscope
+[2023-04-13 02:06:12] INFO root fetch - processPackages [cd2t]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cd2t-1.4.0.tar.gz tmp/cd2t-1.5.0.tar.gz --markdown 20230413/c/cd2t/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-04-13 02:06:13] INFO root fetch - processPackages [jaxutils-nightly]: Start processing: torchlayers-nightly
+[2023-04-13 02:06:13] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-04-13 02:06:13] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1681258016] Old Version: [1681171628]
+[2023-04-13 02:06:13] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-04-13 02:06:13] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1681171628.tar.gz tmp/torchlayers-nightly-1681258016.tar.gz --markdown 20230413/t/torchlayers-nightly/1681171628-1681258016/diff.md --exclude *.pyd
+[2023-04-13 02:06:13] INFO root fetch - processPackages [cd2t]: Start processing: StudyN
+[2023-04-13 02:06:13] INFO root fetch - main [MainThread]: End processing [cd2t]: success
+[2023-04-13 02:06:13] INFO root fetch - processPackages [jaxkern-nightly]: Start processing: qontract-reconcile
+[2023-04-13 02:06:13] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-04-13 02:06:13] ERROR root fetch - processPackages [StudyN]: Unable to get metadata: No such project 'StudyN'
+[2023-04-13 02:06:13] INFO root fetch - processPackages [StudyN]: Start processing: protobuf
+[2023-04-13 02:06:13] INFO root fetch - main [MainThread]: End processing [StudyN] error
+[2023-04-13 02:06:14] INFO root fetch - processPackages [protobuf]: New version: [4.22.3] Old Version: [4.22.1]
+[2023-04-13 02:06:14] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-13 02:06:14] INFO root fetch - processPackages [protobuf]: Downloading https://files.pythonhosted.org/packages/4a/e0/9da6a25f4ac72455f5da9d4af8d75144d15e29d415220773850e0ec23d3e/protobuf-4.22.1.tar.gz
+[2023-04-13 02:06:14] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-13 02:06:14] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230413/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-13 02:06:14] INFO root fetch - processPackages [ultralytics]: Start processing: replit-bot
+[2023-04-13 02:06:14] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2023-04-13 02:06:14] INFO root fetch - processPackages [replit-bot]: New version: [4.2.5] Old Version: [4.2.4]
+[2023-04-13 02:06:14] INFO root fetch - processPackages [protobuf]: Downloading https://files.pythonhosted.org/packages/e2/86/44a1e4990a81cb4248a2091a182bb76a6417fddcaff560ceb6b44eb05c55/protobuf-4.22.3.tar.gz
+[2023-04-13 02:06:14] INFO root fetch - processPackages [protobuf]: executing diffoscope
+[2023-04-13 02:06:14] INFO root fetch - processPackages [protobuf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protobuf-4.22.1.tar.gz tmp/protobuf-4.22.3.tar.gz --markdown 20230413/p/protobuf/4.22.1-4.22.3/diff.md --exclude *.pyd
+[2023-04-13 02:06:14] INFO root fetch - processPackages [replit-bot]: Downloading https://files.pythonhosted.org/packages/86/92/3a85ccb11442e39f7c83b8a2736543a8560584109fb9ddd4177661fa67fd/replit-bot-4.2.5.tar.gz
+[2023-04-13 02:06:14] INFO root fetch - processPackages [replit-bot]: executing diffoscope
+[2023-04-13 02:06:14] INFO root fetch - processPackages [replit-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replit-bot-4.2.4.tar.gz tmp/replit-bot-4.2.5.tar.gz --markdown 20230413/r/replit-bot/4.2.4-4.2.5/diff.md --exclude *.pyd
+[2023-04-13 02:06:15] INFO root fetch - processPackages [torchlayers-nightly]: Start processing: py-irt
+[2023-04-13 02:06:15] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-04-13 02:06:15] INFO root fetch - processPackages [py-irt]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-13 02:06:15] INFO root fetch - processPackages [py-irt]: Downloading https://files.pythonhosted.org/packages/54/b0/120d54b8157df2581bb616b960babdb9772a103b99a6ee80615dbee46a97/py-irt-0.4.8.tar.gz
+[2023-04-13 02:06:15] INFO root fetch - processPackages [replit-bot]: Start processing: cdk-common
+[2023-04-13 02:06:15] INFO root fetch - main [MainThread]: End processing [replit-bot]: success
+[2023-04-13 02:06:15] INFO root fetch - processPackages [py-irt]: Downloading https://files.pythonhosted.org/packages/54/2a/6d62a66f0af5f8733bd09abaa405d22d3724c684592df651ce1d2d851abf/py_irt-0.4.9.tar.gz
+[2023-04-13 02:06:15] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-13 02:06:15] INFO root fetch - processPackages [py-irt]: executing diffoscope
+[2023-04-13 02:06:15] INFO root fetch - processPackages [py-irt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-irt-0.4.8.tar.gz tmp/py_irt-0.4.9.tar.gz --markdown 20230413/p/py-irt/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-13 02:06:15] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-04-13 02:06:15] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230413/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-13 02:06:16] INFO root fetch - processPackages [py-irt]: Start processing: tccli
+[2023-04-13 02:06:16] INFO root fetch - main [MainThread]: End processing [py-irt]: success
+[2023-04-13 02:06:16] INFO root fetch - processPackages [tccli]: New version: [3.0.99.1] Old Version: [3.0.98.1]
+[2023-04-13 02:06:17] INFO root fetch - processPackages [tccli]: executing diffoscope
+[2023-04-13 02:06:17] INFO root fetch - processPackages [tccli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tccli-3.0.98.1.tar.gz tmp/tccli-3.0.99.1.tar.gz --markdown 20230413/t/tccli/3.0.98.1-3.0.99.1/diff.md --exclude *.pyd
+[2023-04-13 02:06:17] INFO root fetch - processPackages [quantconnect-stubs]: Start processing: openbb-nightly
+[2023-04-13 02:06:17] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-04-13 02:06:17] INFO root fetch - processPackages [cdk-common]: Start processing: constructs
+[2023-04-13 02:06:17] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-04-13 02:06:17] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-04-13 02:06:17] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc1.dev20230413] Old Version: [3.0.0rc1.dev20230411]
+[2023-04-13 02:06:17] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-04-13 02:06:17] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230413/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-04-13 02:06:17] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/4e/5d/02a244f5542bd50f1fc5f9ed08d51689885f7a457551698c5f4785cfbee5/openbb_nightly-3.0.0rc1.dev20230413.tar.gz
+[2023-04-13 02:06:18] INFO root fetch - main [MainThread]: End processing [constructs]: success
+[2023-04-13 02:06:18] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-04-13 02:06:18] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc1.dev20230411.tar.gz tmp/openbb_nightly-3.0.0rc1.dev20230413.tar.gz --markdown 20230413/o/openbb-nightly/3.0.0rc1.dev20230411-3.0.0rc1.dev20230413/diff.md --exclude *.pyd
+[2023-04-13 02:06:19] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-04-13 02:06:20] INFO root fetch - main [MainThread]: End processing [protobuf]: success
+[2023-04-13 02:06:21] INFO root fetch - main [MainThread]: End processing [tccli]: success
+[2023-04-13 02:06:35] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-04-13 02:06:35] INFO root fetch - main [MainThread]: Store serial: [17683188]
