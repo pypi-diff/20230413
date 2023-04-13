@@ -10342,3 +10342,102 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 09:45:35] INFO root fetch - main [MainThread]: End processing [autoworker]: success
 [2023-04-13 09:45:38] INFO root fetch - main [MainThread]: End processing [returnn]: success
 [2023-04-13 09:45:38] INFO root fetch - main [MainThread]: Store serial: [17688554]
+[2023-04-13 09:50:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17688554]
+[2023-04-13 09:50:45] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-13 09:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bridgecrew
+[2023-04-13 09:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-cpu
+[2023-04-13 09:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: femagtools
+[2023-04-13 09:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foambryo
+[2023-04-13 09:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pynarrator
+[2023-04-13 09:50:45] WARNING root fetch - processPackages [foambryo]: Skipping, unable to determine old version
+[2023-04-13 09:50:45] INFO root fetch - processPackages [foambryo]: Start processing: master-dac
+[2023-04-13 09:50:45] INFO root fetch - main [MainThread]: End processing [foambryo] error
+[2023-04-13 09:50:45] INFO root fetch - processPackages [femagtools]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-04-13 09:50:45] INFO root fetch - processPackages [pynarrator]: New version: [0.0.1.9] Old Version: [0.0.1.8]
+[2023-04-13 09:50:45] INFO root fetch - processPackages [master-dac]: New version: [2023.4.6.post3] Old Version: [2023.4.6.post2]
+[2023-04-13 09:50:45] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-13 09:50:45] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.13.0.dev20230413] Old Version: [2.13.0.dev20230412]
+[2023-04-13 09:50:45] INFO root fetch - processPackages [pynarrator]: executing diffoscope
+[2023-04-13 09:50:46] INFO root fetch - processPackages [pynarrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynarrator-0.0.1.8.tar.gz tmp/pynarrator-0.0.1.9.tar.gz --markdown 20230413/p/pynarrator/0.0.1.8-0.0.1.9/diff.md --exclude *.pyd
+[2023-04-13 09:50:46] INFO root fetch - processPackages [femagtools]: Downloading https://files.pythonhosted.org/packages/e0/9f/82c87ddba18905120095a6c0cd8753da142af8acaebbeb39c1a9e046b697/femagtools-1.2.6.tar.gz
+[2023-04-13 09:50:46] INFO root fetch - processPackages [master-dac]: Downloading https://files.pythonhosted.org/packages/7a/a9/69d1adae7c7682a288a63cde80cd3cfeb05c78a3883669b180c472f42264/master_dac-2023.4.6.post2.tar.gz
+[2023-04-13 09:50:46] INFO root fetch - processPackages [master-dac]: Downloading https://files.pythonhosted.org/packages/a1/c5/d5e219464760090278f32d0ff468acdc9314ced8da721d0c11ecee5e35b2/master_dac-2023.4.6.post3.tar.gz
+[2023-04-13 09:50:46] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/fc/55/f0247546c434149b654281bfa460d35b6cbe790a0ce63f64533e255bd3e0/tf_nightly_cpu-2.13.0.dev20230413-cp39-cp39-win_amd64.whl
+[2023-04-13 09:50:46] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-13 09:50:46] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230413/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-13 09:50:46] INFO root fetch - processPackages [master-dac]: executing diffoscope
+[2023-04-13 09:50:46] INFO root fetch - processPackages [master-dac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/master_dac-2023.4.6.post2.tar.gz tmp/master_dac-2023.4.6.post3.tar.gz --markdown 20230413/m/master-dac/2023.4.6.post2-2023.4.6.post3/diff.md --exclude *.pyd
+[2023-04-13 09:50:46] INFO root fetch - processPackages [femagtools]: Downloading https://files.pythonhosted.org/packages/ba/9a/aac7b6fe8fc22ac96fa66bf90f52c8c9200c64e48455ec88d51c405576e9/femagtools-1.2.7.tar.gz
+[2023-04-13 09:50:46] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-04-13 09:50:46] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.13.0.dev20230412-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.13.0.dev20230413-cp39-cp39-win_amd64.whl.zip --markdown 20230413/t/tf-nightly-cpu/2.13.0.dev20230412-2.13.0.dev20230413/diff.md --exclude *.pyd
+[2023-04-13 09:50:46] INFO root fetch - processPackages [femagtools]: executing diffoscope
+[2023-04-13 09:50:46] INFO root fetch - processPackages [femagtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/femagtools-1.2.6.tar.gz tmp/femagtools-1.2.7.tar.gz --markdown 20230413/f/femagtools/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-04-13 09:50:47] INFO root fetch - processPackages [pynarrator]: Start processing: macrometa-source-snowflake
+[2023-04-13 09:50:47] INFO root fetch - main [MainThread]: End processing [pynarrator]: success
+[2023-04-13 09:50:47] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 09:50:47] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-04-13 09:50:47] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230413/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 09:50:47] INFO root fetch - processPackages [bridgecrew]: Start processing: jsongraphtree
+[2023-04-13 09:50:47] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-13 09:50:47] INFO root fetch - processPackages [jsongraphtree]: New version: [0.2] Old Version: [0.1]
+[2023-04-13 09:50:47] INFO root fetch - processPackages [master-dac]: Start processing: django-group-role
+[2023-04-13 09:50:47] INFO root fetch - main [MainThread]: End processing [master-dac]: success
+[2023-04-13 09:50:47] INFO root fetch - processPackages [django-group-role]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-04-13 09:50:47] INFO root fetch - processPackages [jsongraphtree]: Downloading https://files.pythonhosted.org/packages/3d/8b/008e0327b87e99529f417ee04f50f1d48f72b346368647bfb0e114d9c111/jsongraphtree-0.1-py3-none-any.whl
+[2023-04-13 09:50:47] INFO root fetch - processPackages [tf-nightly-cpu]: Start processing: alnoda-wrk
+[2023-04-13 09:50:47] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-04-13 09:50:47] INFO root fetch - processPackages [alnoda-wrk]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-13 09:50:47] INFO root fetch - processPackages [django-group-role]: Downloading https://files.pythonhosted.org/packages/24/aa/e561019fa38ef9b6e4b22341dcdcf102dc060fcb4e29069dd59dedbfbaed/django-group-role-0.5.1.tar.gz
+[2023-04-13 09:50:47] INFO root fetch - processPackages [alnoda-wrk]: Downloading https://files.pythonhosted.org/packages/b1/4a/f8ac75dbb6104e5fd38b4cdd64ccffa2adf4884ebce05559c13994c76698/alnoda_wrk-0.3.8.tar.gz
+[2023-04-13 09:50:47] INFO root fetch - processPackages [jsongraphtree]: Downloading https://files.pythonhosted.org/packages/44/ec/4a98c3bde849a34f56e1cb3bb1539aeaebf0fb83e16c318abbb1b75f6661/jsongraphtree-0.2-py3-none-any.whl
+[2023-04-13 09:50:48] INFO root fetch - processPackages [django-group-role]: Downloading https://files.pythonhosted.org/packages/2c/bf/4f12ba7ba9b3b294d944ef4a10325baa0f9429c78ee17a8a79022be0863c/django-group-role-0.6.0.tar.gz
+[2023-04-13 09:50:48] INFO root fetch - processPackages [jsongraphtree]: executing diffoscope
+[2023-04-13 09:50:48] INFO root fetch - processPackages [jsongraphtree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsongraphtree-0.1-py3-none-any.whl.zip tmp/jsongraphtree-0.2-py3-none-any.whl.zip --markdown 20230413/j/jsongraphtree/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-13 09:50:48] INFO root fetch - processPackages [django-group-role]: executing diffoscope
+[2023-04-13 09:50:48] INFO root fetch - processPackages [django-group-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-group-role-0.5.1.tar.gz tmp/django-group-role-0.6.0.tar.gz --markdown 20230413/d/django-group-role/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-04-13 09:50:48] INFO root fetch - processPackages [alnoda-wrk]: Downloading https://files.pythonhosted.org/packages/63/7e/e3a18ffc2adfc8368cd1337ca3c63c795ab71c73bf599211c68d47fa0b19/alnoda_wrk-0.3.9.tar.gz
+[2023-04-13 09:50:48] INFO root fetch - processPackages [macrometa-source-snowflake]: Start processing: greenbone-feed-sync
+[2023-04-13 09:50:48] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-04-13 09:50:48] INFO root fetch - processPackages [alnoda-wrk]: executing diffoscope
+[2023-04-13 09:50:48] INFO root fetch - processPackages [greenbone-feed-sync]: New version: [23.4.0] Old Version: [23.2.1]
+[2023-04-13 09:50:48] INFO root fetch - processPackages [alnoda-wrk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alnoda_wrk-0.3.8.tar.gz tmp/alnoda_wrk-0.3.9.tar.gz --markdown 20230413/a/alnoda-wrk/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 09:50:48] INFO root fetch - processPackages [greenbone-feed-sync]: Downloading https://files.pythonhosted.org/packages/cd/1b/c6d0699aa8c6e4deee35ae423279dd7b9f245440083cbc94745aa18fada7/greenbone_feed_sync-23.2.1.tar.gz
+[2023-04-13 09:50:48] INFO root fetch - processPackages [femagtools]: Start processing: datar-pandas
+[2023-04-13 09:50:48] INFO root fetch - main [MainThread]: End processing [femagtools]: success
+[2023-04-13 09:50:48] INFO root fetch - processPackages [datar-pandas]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-13 09:50:48] INFO root fetch - processPackages [greenbone-feed-sync]: Downloading https://files.pythonhosted.org/packages/1f/79/3a31226a39f2f5fc9be9cef6d7a181dbc850fe3ffb5f7638a71149261ad9/greenbone_feed_sync-23.4.0.tar.gz
+[2023-04-13 09:50:49] INFO root fetch - processPackages [datar-pandas]: Downloading https://files.pythonhosted.org/packages/24/50/1cbcedb9162f9c5d01dabca75ffb7f5d6752747401958116c89ead21ebc4/datar_pandas-0.2.1.tar.gz
+[2023-04-13 09:50:49] INFO root fetch - processPackages [jsongraphtree]: Start processing: yourtools
+[2023-04-13 09:50:49] INFO root fetch - main [MainThread]: End processing [jsongraphtree]: success
+[2023-04-13 09:50:49] INFO root fetch - processPackages [greenbone-feed-sync]: executing diffoscope
+[2023-04-13 09:50:49] INFO root fetch - processPackages [greenbone-feed-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greenbone_feed_sync-23.2.1.tar.gz tmp/greenbone_feed_sync-23.4.0.tar.gz --markdown 20230413/g/greenbone-feed-sync/23.2.1-23.4.0/diff.md --exclude *.pyd
+[2023-04-13 09:50:49] INFO root fetch - processPackages [yourtools]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-13 09:50:49] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/59/59/a4213140f36c677cef8ae759d7cc6fc96006c2dd95cf0879f4375bbc01d9/yourtools-0.3.7.tar.gz
+[2023-04-13 09:50:49] INFO root fetch - processPackages [datar-pandas]: Downloading https://files.pythonhosted.org/packages/22/84/d5b2f56649be1f572576caa91ac3edb858db02958971d8e63471d2d59c2a/datar_pandas-0.3.0.tar.gz
+[2023-04-13 09:50:49] INFO root fetch - processPackages [django-group-role]: Start processing: pysura
+[2023-04-13 09:50:49] INFO root fetch - main [MainThread]: End processing [django-group-role]: success
+[2023-04-13 09:50:49] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-13 09:50:49] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.3.6.tar.gz tmp/yourtools-0.3.7.tar.gz --markdown 20230413/y/yourtools/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-13 09:50:49] INFO root fetch - processPackages [pysura]: New version: [0.99.99] Old Version: [0.99.98]
+[2023-04-13 09:50:49] INFO root fetch - processPackages [datar-pandas]: executing diffoscope
+[2023-04-13 09:50:49] INFO root fetch - processPackages [datar-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datar_pandas-0.2.1.tar.gz tmp/datar_pandas-0.3.0.tar.gz --markdown 20230413/d/datar-pandas/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-13 09:50:49] INFO root fetch - processPackages [pysura]: executing diffoscope
+[2023-04-13 09:50:49] INFO root fetch - processPackages [pysura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysura-0.99.98.tar.gz tmp/pysura-0.99.99.tar.gz --markdown 20230413/p/pysura/0.99.98-0.99.99/diff.md --exclude *.pyd
+[2023-04-13 09:50:49] INFO root fetch - processPackages [alnoda-wrk]: Start processing: leaguecloser
+[2023-04-13 09:50:49] INFO root fetch - main [MainThread]: End processing [alnoda-wrk]: success
+[2023-04-13 09:50:50] INFO root fetch - processPackages [leaguecloser]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-13 09:50:50] INFO root fetch - processPackages [leaguecloser]: executing diffoscope
+[2023-04-13 09:50:50] INFO root fetch - processPackages [leaguecloser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leaguecloser-1.0.3.tar.gz tmp/leaguecloser-1.0.4.tar.gz --markdown 20230413/l/leaguecloser/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-13 09:50:50] INFO root fetch - processPackages [greenbone-feed-sync]: Start processing: tools-hjh
+[2023-04-13 09:50:50] INFO root fetch - main [MainThread]: End processing [greenbone-feed-sync]: success
+[2023-04-13 09:50:50] INFO root fetch - processPackages [tools-hjh]: New version: [2.5.2] Old Version: [2.5.1]
+[2023-04-13 09:50:50] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-13 09:50:50] INFO root fetch - processPackages [tools-hjh]: Downloading https://files.pythonhosted.org/packages/29/7c/5ba21c8250ab65817fbd7df3c82aaf6fa7d95cf04eab230a06f4f1fd6a18/tools_hjh-2.5.1.tar.gz
+[2023-04-13 09:50:51] INFO root fetch - processPackages [tools-hjh]: Downloading https://files.pythonhosted.org/packages/44/d1/f73b107ee471297ff7bed648bc25d3118fedaa9ba71f92286521f3393227/tools_hjh-2.5.2.tar.gz
+[2023-04-13 09:50:51] INFO root fetch - main [MainThread]: End processing [datar-pandas]: success
+[2023-04-13 09:50:51] INFO root fetch - main [MainThread]: End processing [leaguecloser]: success
+[2023-04-13 09:50:51] INFO root fetch - processPackages [tools-hjh]: executing diffoscope
+[2023-04-13 09:50:51] INFO root fetch - processPackages [tools-hjh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tools_hjh-2.5.1.tar.gz tmp/tools_hjh-2.5.2.tar.gz --markdown 20230413/t/tools-hjh/2.5.1-2.5.2/diff.md --exclude *.pyd
+[2023-04-13 09:50:51] INFO root fetch - main [MainThread]: End processing [pysura]: success
+[2023-04-13 09:50:52] INFO root fetch - main [MainThread]: End processing [tools-hjh]: success
+[2023-04-13 09:50:52] INFO root fetch - main [MainThread]: Store serial: [17688614]
