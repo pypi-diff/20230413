@@ -9540,3 +9540,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 08:51:25] INFO root fetch - main [MainThread]: End processing [countess]: success
 [2023-04-13 08:51:25] INFO root fetch - main [MainThread]: End processing [experimaestro-ir]: success
 [2023-04-13 08:51:25] INFO root fetch - main [MainThread]: Store serial: [17687938]
+[2023-04-13 08:56:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17687938]
+[2023-04-13 08:56:33] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-13 08:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vctoolkit
+[2023-04-13 08:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iio
+[2023-04-13 08:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TerraSegmentation
+[2023-04-13 08:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slackflylog
+[2023-04-13 08:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jina
+[2023-04-13 08:56:33] INFO root fetch - processPackages [TerraSegmentation]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 08:56:33] INFO root fetch - processPackages [iio]: New version: [9] Old Version: [8]
+[2023-04-13 08:56:33] INFO root fetch - processPackages [vctoolkit]: New version: [0.1.9.9] Old Version: [0.1.9.8]
+[2023-04-13 08:56:33] INFO root fetch - processPackages [slackflylog]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-04-13 08:56:33] INFO root fetch - processPackages [jina]: New version: [3.9.3.dev9] Old Version: [3.9.3.dev8]
+[2023-04-13 08:56:33] INFO root fetch - processPackages [jina]: executing diffoscope
+[2023-04-13 08:56:33] INFO root fetch - processPackages [jina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jina-3.9.3.dev8.tar.gz tmp/jina-3.9.3.dev9.tar.gz --markdown 20230413/j/jina/3.9.3.dev8-3.9.3.dev9/diff.md --exclude *.pyd
+[2023-04-13 08:56:33] INFO root fetch - processPackages [iio]: Downloading https://files.pythonhosted.org/packages/7a/36/699084a491185fd3d701a56ac9e0858cf7682e97fe4cfce8fae079d736b4/iio-8.tar.gz
+[2023-04-13 08:56:33] INFO root fetch - processPackages [TerraSegmentation]: Downloading https://files.pythonhosted.org/packages/63/a8/7cc8327a396ffbc64f72bda4da761d2daa7530e999566dd3114cdafbca52/TerraSegmentation-0.0.3.tar.gz
+[2023-04-13 08:56:33] INFO root fetch - processPackages [slackflylog]: Downloading https://files.pythonhosted.org/packages/e9/db/93e78f4ec670dc9b73ffbcf014f6817e9ed081a0c02082b772e15ce9196d/slackflylog-3.0.4.tar.gz
+[2023-04-13 08:56:33] INFO root fetch - processPackages [vctoolkit]: Downloading https://files.pythonhosted.org/packages/73/3f/e6ff0a5a6ee790fa1a78c72c102761ec0e941da4a8d5bf73c7a4c7bce6ac/vctoolkit-0.1.9.8.tar.gz
+[2023-04-13 08:56:33] INFO root fetch - processPackages [TerraSegmentation]: executing diffoscope
+[2023-04-13 08:56:33] INFO root fetch - processPackages [TerraSegmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TerraSegmentation-0.0.2.tar.gz tmp/TerraSegmentation-0.0.3.tar.gz --markdown 20230413/T/TerraSegmentation/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 08:56:33] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-13 08:56:33] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-3.0.3.tar.gz tmp/slackflylog-3.0.4.tar.gz --markdown 20230413/s/slackflylog/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-04-13 08:56:34] INFO root fetch - processPackages [iio]: Downloading https://files.pythonhosted.org/packages/4b/34/1e8fe08b1f8250625fbec896ced04def67adb6ad5ce832270ae3222c5dcb/iio-9.tar.gz
+[2023-04-13 08:56:34] INFO root fetch - processPackages [iio]: executing diffoscope
+[2023-04-13 08:56:34] INFO root fetch - processPackages [iio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iio-8.tar.gz tmp/iio-9.tar.gz --markdown 20230413/i/iio/8-9/diff.md --exclude *.pyd
+[2023-04-13 08:56:34] INFO root fetch - processPackages [vctoolkit]: Downloading https://files.pythonhosted.org/packages/9f/6c/6a277206a9c4b2b5c7547a6e6eebd27de1cc909aa9b029b5061514f84898/vctoolkit-0.1.9.9.tar.gz
+[2023-04-13 08:56:34] INFO root fetch - processPackages [vctoolkit]: executing diffoscope
+[2023-04-13 08:56:34] INFO root fetch - processPackages [vctoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vctoolkit-0.1.9.8.tar.gz tmp/vctoolkit-0.1.9.9.tar.gz --markdown 20230413/v/vctoolkit/0.1.9.8-0.1.9.9/diff.md --exclude *.pyd
+[2023-04-13 08:56:35] INFO root fetch - processPackages [slackflylog]: Start processing: paneltime
+[2023-04-13 08:56:35] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-13 08:56:35] INFO root fetch - processPackages [paneltime]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-13 08:56:35] INFO root fetch - processPackages [TerraSegmentation]: Start processing: config-yml
+[2023-04-13 08:56:35] INFO root fetch - main [MainThread]: End processing [TerraSegmentation]: success
+[2023-04-13 08:56:35] WARNING root fetch - processPackages [config-yml]: Skipping, unable to determine old version
+[2023-04-13 08:56:35] INFO root fetch - processPackages [config-yml]: Start processing: proteinTools
+[2023-04-13 08:56:35] INFO root fetch - main [MainThread]: End processing [config-yml] error
+[2023-04-13 08:56:35] INFO root fetch - processPackages [proteinTools]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 08:56:35] INFO root fetch - processPackages [paneltime]: executing diffoscope
+[2023-04-13 08:56:35] INFO root fetch - processPackages [paneltime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paneltime-1.2.8-py3-none-any.whl.zip tmp/paneltime-1.2.9.tar.gz --markdown 20230413/p/paneltime/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-13 08:56:35] INFO root fetch - processPackages [proteinTools]: executing diffoscope
+[2023-04-13 08:56:35] INFO root fetch - processPackages [proteinTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proteinTools-0.1.7.tar.gz tmp/proteinTools-0.1.8.tar.gz --markdown 20230413/p/proteinTools/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 08:56:35] INFO root fetch - main [MainThread]: End processing [iio]: success
+[2023-04-13 08:56:35] INFO root fetch - main [MainThread]: End processing [jina]: success
+[2023-04-13 08:56:36] INFO root fetch - main [MainThread]: End processing [vctoolkit]: success
+[2023-04-13 08:56:36] INFO root fetch - main [MainThread]: End processing [paneltime]: success
+[2023-04-13 08:56:36] INFO root fetch - main [MainThread]: End processing [proteinTools]: success
+[2023-04-13 08:56:36] INFO root fetch - main [MainThread]: Store serial: [17687964]
