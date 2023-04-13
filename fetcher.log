@@ -6746,3 +6746,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:14:35] INFO root fetch - main [MainThread]: End processing [always-updates]: success
 [2023-04-13 05:14:35] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
 [2023-04-13 05:14:35] INFO root fetch - main [MainThread]: Store serial: [17686352]
+[2023-04-13 05:19:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686352]
+[2023-04-13 05:19:42] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-13 05:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usa-net
+[2023-04-13 05:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dLux
+[2023-04-13 05:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mb-pytorch
+[2023-04-13 05:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-clock
+[2023-04-13 05:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dangqu-sdk
+[2023-04-13 05:19:43] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304130318] Old Version: [1.0.202304130150]
+[2023-04-13 05:19:43] WARNING root fetch - processPackages [usa-net]: Skipping, unable to determine old version
+[2023-04-13 05:19:43] INFO root fetch - processPackages [usa-net]: Start processing: odoo12-addon-business-requirement
+[2023-04-13 05:19:43] INFO root fetch - main [MainThread]: End processing [usa-net] error
+[2023-04-13 05:19:43] INFO root fetch - processPackages [nonebot-plugin-clock]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-13 05:19:43] INFO root fetch - processPackages [dLux]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-13 05:19:43] INFO root fetch - processPackages [dangqu-sdk]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-13 05:19:43] INFO root fetch - processPackages [odoo12-addon-business-requirement]: New version: [12.0.1.2.0.99.dev9] Old Version: [12.0.1.2.0.99.dev7]
+[2023-04-13 05:19:43] INFO root fetch - processPackages [odoo12-addon-business-requirement]: executing diffoscope
+[2023-04-13 05:19:43] INFO root fetch - processPackages [odoo12-addon-business-requirement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_business_requirement-12.0.1.2.0.99.dev7-py3-none-any.whl.zip tmp/odoo12_addon_business_requirement-12.0.1.2.0.99.dev9-py3-none-any.whl.zip --markdown 20230413/o/odoo12-addon-business-requirement/12.0.1.2.0.99.dev7-12.0.1.2.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-13 05:19:43] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/1d/af/0a6b91f73d391e0c5fe0c0c0f679bddcceaa4ba7a07c83ff5ab6b6123e6b/mb_pytorch-1.0.202304130318-py3-none-any.whl
+[2023-04-13 05:19:43] INFO root fetch - processPackages [nonebot-plugin-clock]: Downloading https://files.pythonhosted.org/packages/b5/01/3657ca51834f0bd381cbd04214443badb8e0c8d55160966702d10f31840d/nonebot-plugin-clock-0.8.2.tar.gz
+[2023-04-13 05:19:43] INFO root fetch - processPackages [dangqu-sdk]: Downloading https://files.pythonhosted.org/packages/31/b2/f3a6c1ebd6e2e881f7a40eaca5c45d9a2633628b175f0b867b61ec90b370/dangqu-sdk-0.5.1.tar.gz
+[2023-04-13 05:19:43] INFO root fetch - processPackages [dLux]: Downloading https://files.pythonhosted.org/packages/08/cd/33b0f9aac62a239f88e839c71d68f1c633f44493924447cd2241abcc3e86/dLux-0.9.1.tar.gz
+[2023-04-13 05:19:43] INFO root fetch - processPackages [nonebot-plugin-clock]: executing diffoscope
+[2023-04-13 05:19:43] INFO root fetch - processPackages [nonebot-plugin-clock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-clock-0.8.1.tar.gz tmp/nonebot-plugin-clock-0.8.2.tar.gz --markdown 20230413/n/nonebot-plugin-clock/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-13 05:19:43] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-13 05:19:43] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304130150-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304130318-py3-none-any.whl.zip --markdown 20230413/m/mb-pytorch/1.0.202304130150-1.0.202304130318/diff.md --exclude *.pyd
+[2023-04-13 05:19:43] INFO root fetch - processPackages [dangqu-sdk]: Downloading https://files.pythonhosted.org/packages/e0/fb/6aa4ccf0a12cfd48750022f4c0c969b6860fc3a970214bc834f12c7d5d34/dangqu-sdk-0.5.2.tar.gz
+[2023-04-13 05:19:43] INFO root fetch - processPackages [dLux]: Downloading https://files.pythonhosted.org/packages/7d/e0/d7e1d8e5a6f5c1eaf16a2aa0c2fc99e5504fe6a8b347bf8ff967640462b3/dLux-0.9.2.tar.gz
+[2023-04-13 05:19:43] INFO root fetch - processPackages [dangqu-sdk]: executing diffoscope
+[2023-04-13 05:19:43] INFO root fetch - processPackages [dangqu-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dangqu-sdk-0.5.1.tar.gz tmp/dangqu-sdk-0.5.2.tar.gz --markdown 20230413/d/dangqu-sdk/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-13 05:19:43] INFO root fetch - processPackages [dLux]: executing diffoscope
+[2023-04-13 05:19:43] INFO root fetch - processPackages [dLux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dLux-0.9.1.tar.gz tmp/dLux-0.9.2.tar.gz --markdown 20230413/d/dLux/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-13 05:19:44] INFO root fetch - processPackages [nonebot-plugin-clock]: Start processing: odoo-addon-business-requirement
+[2023-04-13 05:19:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-clock]: success
+[2023-04-13 05:19:44] INFO root fetch - processPackages [odoo-addon-business-requirement]: New version: [15.0.1.0.2.2] Old Version: [15.0.1.0.2.1]
+[2023-04-13 05:19:44] INFO root fetch - processPackages [odoo-addon-business-requirement]: Downloading https://files.pythonhosted.org/packages/06/e3/e6b9685fcaf4427f870b6cb4b5c35e560d79be3659ae9d921835cd425f44/odoo_addon_business_requirement-15.0.1.0.2.2-py3-none-any.whl
+[2023-04-13 05:19:44] INFO root fetch - processPackages [odoo12-addon-business-requirement]: Start processing: vellumdev
+[2023-04-13 05:19:44] INFO root fetch - main [MainThread]: End processing [odoo12-addon-business-requirement]: success
+[2023-04-13 05:19:44] INFO root fetch - processPackages [vellumdev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 05:19:44] INFO root fetch - processPackages [mb-pytorch]: Start processing: susass
+[2023-04-13 05:19:44] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-13 05:19:44] WARNING root fetch - processPackages [susass]: Skipping, unable to determine old version
+[2023-04-13 05:19:44] INFO root fetch - processPackages [susass]: Start processing: ShellcodeTester
+[2023-04-13 05:19:44] INFO root fetch - main [MainThread]: End processing [susass] error
+[2023-04-13 05:19:44] INFO root fetch - processPackages [ShellcodeTester]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-13 05:19:44] INFO root fetch - processPackages [vellumdev]: executing diffoscope
+[2023-04-13 05:19:44] INFO root fetch - processPackages [vellumdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vellumdev-0.0.8.tar.gz tmp/vellumdev-0.0.9-py3-none-any.whl.zip --markdown 20230413/v/vellumdev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 05:19:44] INFO root fetch - processPackages [dangqu-sdk]: Start processing: sunyata
+[2023-04-13 05:19:44] INFO root fetch - main [MainThread]: End processing [dangqu-sdk]: success
+[2023-04-13 05:19:44] INFO root fetch - processPackages [sunyata]: New version: [0.0.31] Old Version: [0.0.30]
+[2023-04-13 05:19:44] INFO root fetch - processPackages [ShellcodeTester]: Downloading https://files.pythonhosted.org/packages/dc/82/f074fedc85e892a148496f3efa3aa92d8acdd4391117ef1e71ab91f86056/ShellcodeTester-0.2.5.tar.gz
+[2023-04-13 05:19:45] INFO root fetch - processPackages [odoo-addon-business-requirement]: executing diffoscope
+[2023-04-13 05:19:45] INFO root fetch - processPackages [odoo-addon-business-requirement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_business_requirement-15.0.1.0.2.1-py3-none-any.whl.zip tmp/odoo_addon_business_requirement-15.0.1.0.2.2-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-business-requirement/15.0.1.0.2.1-15.0.1.0.2.2/diff.md --exclude *.pyd
+[2023-04-13 05:19:45] INFO root fetch - processPackages [sunyata]: Downloading https://files.pythonhosted.org/packages/db/e2/408ab460ea2be4831bd50329c5ef0fd35a8da21918b11d3f2d6550b89b22/sunyata-0.0.31.tar.gz
+[2023-04-13 05:19:45] INFO root fetch - processPackages [sunyata]: executing diffoscope
+[2023-04-13 05:19:45] INFO root fetch - processPackages [sunyata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunyata-0.0.30.tar.gz tmp/sunyata-0.0.31.tar.gz --markdown 20230413/s/sunyata/0.0.30-0.0.31/diff.md --exclude *.pyd
+[2023-04-13 05:19:45] INFO root fetch - processPackages [vellumdev]: Start processing: HTTP-PyServer
+[2023-04-13 05:19:45] INFO root fetch - main [MainThread]: End processing [vellumdev]: success
+[2023-04-13 05:19:45] INFO root fetch - processPackages [HTTP-PyServer]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 05:19:46] INFO root fetch - processPackages [HTTP-PyServer]: Downloading https://files.pythonhosted.org/packages/4b/18/70d3b66ed6423fcfdc28adcda1e9715c7a6d8a0a02dea9790d0fd19ce842/HTTP-PyServer-0.0.3.tar.gz
+[2023-04-13 05:19:46] INFO root fetch - processPackages [ShellcodeTester]: executing diffoscope
+[2023-04-13 05:19:46] INFO root fetch - processPackages [ShellcodeTester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ShellcodeTester-0.2.4.tar.gz tmp/ShellcodeTester-0.2.5.tar.gz --markdown 20230413/S/ShellcodeTester/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-13 05:19:46] INFO root fetch - processPackages [HTTP-PyServer]: executing diffoscope
+[2023-04-13 05:19:46] INFO root fetch - processPackages [HTTP-PyServer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HTTP_PyServer-0.0.2-py3-none-any.whl.zip tmp/HTTP-PyServer-0.0.3.tar.gz --markdown 20230413/H/HTTP-PyServer/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 05:19:46] INFO root fetch - main [MainThread]: End processing [odoo-addon-business-requirement]: success
+[2023-04-13 05:19:46] INFO root fetch - main [MainThread]: End processing [sunyata]: success
+[2023-04-13 05:19:47] INFO root fetch - main [MainThread]: End processing [HTTP-PyServer]: success
+[2023-04-13 05:19:47] INFO root fetch - main [MainThread]: End processing [dLux]: success
+[2023-04-13 05:19:47] INFO root fetch - main [MainThread]: End processing [ShellcodeTester]: success
+[2023-04-13 05:19:47] INFO root fetch - main [MainThread]: Store serial: [17686404]
