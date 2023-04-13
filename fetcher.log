@@ -11433,3 +11433,117 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 10:39:15] INFO root fetch - main [MainThread]: End processing [yourtools]: success
 [2023-04-13 10:39:15] INFO root fetch - main [MainThread]: End processing [sirms]: success
 [2023-04-13 10:39:15] INFO root fetch - main [MainThread]: Store serial: [17689270]
+[2023-04-13 10:44:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17689270]
+[2023-04-13 10:44:23] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-13 10:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yourtools
+[2023-04-13 10:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tripmaster
+[2023-04-13 10:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo13-addon-account-bank-statement-import-paypal
+[2023-04-13 10:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-module-auto-update
+[2023-04-13 10:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wonder-sdk
+[2023-04-13 10:44:23] INFO root fetch - processPackages [wonder-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 10:44:23] INFO root fetch - processPackages [yourtools]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-13 10:44:23] INFO root fetch - processPackages [odoo-addon-module-auto-update]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.0.1.1]
+[2023-04-13 10:44:23] INFO root fetch - processPackages [tripmaster]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-13 10:44:23] INFO root fetch - processPackages [odoo13-addon-account-bank-statement-import-paypal]: New version: [13.0.1.0.2.dev1] Old Version: [13.0.1.0.2]
+[2023-04-13 10:44:23] INFO root fetch - processPackages [wonder-sdk]: Downloading https://files.pythonhosted.org/packages/f5/25/4991f4bef37b01368e06cda988181108fda8312bf6cdff12e141d0b13a80/wonder-sdk-0.1.9.tar.gz
+[2023-04-13 10:44:23] INFO root fetch - processPackages [odoo13-addon-account-bank-statement-import-paypal]: Downloading https://files.pythonhosted.org/packages/ff/56/158b54bff12e83da458a576fbc4c5a193bb29cf1247a975cf70441605758/odoo13_addon_account_bank_statement_import_paypal-13.0.1.0.2-py3-none-any.whl
+[2023-04-13 10:44:23] INFO root fetch - processPackages [yourtools]: Downloading https://files.pythonhosted.org/packages/d6/b2/2d2adb0b9d32efa9dbe966b3a01610763fb4e1c58dcad594009eb8fcebdd/yourtools-0.3.9.tar.gz
+[2023-04-13 10:44:23] INFO root fetch - processPackages [tripmaster]: Downloading https://files.pythonhosted.org/packages/c4/50/f47066e32184cb7dcabb53a0d90bf20b6316d8bb5eddb65b4aa3553b4e99/tripmaster-1.0.2-py3-none-any.whl
+[2023-04-13 10:44:23] INFO root fetch - processPackages [odoo-addon-module-auto-update]: Downloading https://files.pythonhosted.org/packages/82/c3/ac69dea844589ab3218c0ab4376d1bfdc4bce9db271556eae907163b1375/odoo_addon_module_auto_update-15.0.1.0.1.1-py3-none-any.whl
+[2023-04-13 10:44:23] INFO root fetch - processPackages [wonder-sdk]: executing diffoscope
+[2023-04-13 10:44:23] INFO root fetch - processPackages [wonder-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wonder-sdk-0.1.8.tar.gz tmp/wonder-sdk-0.1.9.tar.gz --markdown 20230413/w/wonder-sdk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 10:44:23] INFO root fetch - processPackages [yourtools]: executing diffoscope
+[2023-04-13 10:44:23] INFO root fetch - processPackages [yourtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yourtools-0.3.7.tar.gz tmp/yourtools-0.3.9.tar.gz --markdown 20230413/y/yourtools/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-13 10:44:24] INFO root fetch - processPackages [tripmaster]: Downloading https://files.pythonhosted.org/packages/31/67/4a972986c84730c68d39428cc388f8823db09fce8fdced35a77193301c9f/tripmaster-1.0.3-py3-none-any.whl
+[2023-04-13 10:44:24] INFO root fetch - processPackages [odoo-addon-module-auto-update]: Downloading https://files.pythonhosted.org/packages/6a/2c/9e58ed465723ae9223b398bbfabed9fd671178c4e2f3ebb85635ce6f74e1/odoo_addon_module_auto_update-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-13 10:44:24] INFO root fetch - processPackages [odoo13-addon-account-bank-statement-import-paypal]: Downloading https://files.pythonhosted.org/packages/2d/0b/b16a407c280da7b2ca5e1cce884eea633af9e6c26ec8c1faafb4083db089/odoo13_addon_account_bank_statement_import_paypal-13.0.1.0.2.dev1-py3-none-any.whl
+[2023-04-13 10:44:24] INFO root fetch - processPackages [tripmaster]: executing diffoscope
+[2023-04-13 10:44:24] INFO root fetch - processPackages [tripmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tripmaster-1.0.2-py3-none-any.whl.zip tmp/tripmaster-1.0.3-py3-none-any.whl.zip --markdown 20230413/t/tripmaster/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-13 10:44:24] INFO root fetch - processPackages [odoo-addon-module-auto-update]: executing diffoscope
+[2023-04-13 10:44:24] INFO root fetch - processPackages [odoo-addon-module-auto-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_module_auto_update-15.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_module_auto_update-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230413/o/odoo-addon-module-auto-update/15.0.1.0.1.1-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-04-13 10:44:24] INFO root fetch - processPackages [odoo13-addon-account-bank-statement-import-paypal]: executing diffoscope
+[2023-04-13 10:44:24] INFO root fetch - processPackages [odoo13-addon-account-bank-statement-import-paypal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_account_bank_statement_import_paypal-13.0.1.0.2-py3-none-any.whl.zip tmp/odoo13_addon_account_bank_statement_import_paypal-13.0.1.0.2.dev1-py3-none-any.whl.zip --markdown 20230413/o/odoo13-addon-account-bank-statement-import-paypal/13.0.1.0.2-13.0.1.0.2.dev1/diff.md --exclude *.pyd
+[2023-04-13 10:44:24] INFO root fetch - processPackages [wonder-sdk]: Start processing: dune-query-translator
+[2023-04-13 10:44:24] INFO root fetch - main [MainThread]: End processing [wonder-sdk]: success
+[2023-04-13 10:44:24] INFO root fetch - processPackages [dune-query-translator]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-13 10:44:25] INFO root fetch - processPackages [yourtools]: Start processing: modelon-impact-client
+[2023-04-13 10:44:25] INFO root fetch - main [MainThread]: End processing [yourtools]: success
+[2023-04-13 10:44:25] INFO root fetch - processPackages [modelon-impact-client]: New version: [3.0.0.dev9] Old Version: [3.0.0.dev8]
+[2023-04-13 10:44:25] INFO root fetch - processPackages [dune-query-translator]: Downloading https://files.pythonhosted.org/packages/3f/bf/c16d6aec6071c116d09dfaa7b13201698311a09794ddbe4e7199b6a2c939/dune_query_translator-0.3.0.tar.gz
+[2023-04-13 10:44:25] INFO root fetch - processPackages [dune-query-translator]: Downloading https://files.pythonhosted.org/packages/c9/a8/6c39bb82b8dbb076651cdfcaea7a647ea69128f67a02d62e6cb7aecf3cee/dune_query_translator-0.3.1.tar.gz
+[2023-04-13 10:44:25] INFO root fetch - processPackages [modelon-impact-client]: executing diffoscope
+[2023-04-13 10:44:25] INFO root fetch - processPackages [modelon-impact-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelon_impact_client-3.0.0.dev8.tar.gz tmp/modelon_impact_client-3.0.0.dev9.tar.gz --markdown 20230413/m/modelon-impact-client/3.0.0.dev8-3.0.0.dev9/diff.md --exclude *.pyd
+[2023-04-13 10:44:25] INFO root fetch - processPackages [odoo13-addon-account-bank-statement-import-paypal]: Start processing: dargus
+[2023-04-13 10:44:25] INFO root fetch - main [MainThread]: End processing [odoo13-addon-account-bank-statement-import-paypal]: success
+[2023-04-13 10:44:25] INFO root fetch - processPackages [odoo-addon-module-auto-update]: Start processing: Geode-Conversion
+[2023-04-13 10:44:25] INFO root fetch - main [MainThread]: End processing [odoo-addon-module-auto-update]: success
+[2023-04-13 10:44:25] INFO root fetch - processPackages [dargus]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-13 10:44:25] INFO root fetch - processPackages [Geode-Conversion]: New version: [4.4.8] Old Version: [4.4.7]
+[2023-04-13 10:44:25] INFO root fetch - processPackages [dune-query-translator]: executing diffoscope
+[2023-04-13 10:44:25] INFO root fetch - processPackages [dune-query-translator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_query_translator-0.3.0.tar.gz tmp/dune_query_translator-0.3.1.tar.gz --markdown 20230413/d/dune-query-translator/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-13 10:44:25] INFO root fetch - processPackages [Geode-Conversion]: Downloading https://files.pythonhosted.org/packages/35/08/7d488b7f64e23bbd73ab2ca9fa3a35ea938f9415409185e3e786db4c8ed6/Geode_Conversion-4.4.7-cp39-cp39-win_amd64.whl
+[2023-04-13 10:44:25] INFO root fetch - processPackages [tripmaster]: Start processing: dokuwikidumper
+[2023-04-13 10:44:25] INFO root fetch - main [MainThread]: End processing [tripmaster]: success
+[2023-04-13 10:44:25] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-13 10:44:25] INFO root fetch - processPackages [dargus]: Downloading https://files.pythonhosted.org/packages/03/84/ed2f78eddd72a98418534b36328f648844749a0b44e569e2c16cc606eb14/dargus-1.0.2.tar.gz
+[2023-04-13 10:44:26] INFO root fetch - processPackages [Geode-Conversion]: Downloading https://files.pythonhosted.org/packages/8d/24/a1156149c9a5a12a5b1af4e3d21cd0c110c7bf023cdd2de6b768e4b784be/Geode_Conversion-4.4.8-cp39-cp39-win_amd64.whl
+[2023-04-13 10:44:26] INFO root fetch - processPackages [dokuwikidumper]: Downloading https://files.pythonhosted.org/packages/c4/4f/82e994f6773d09803b574e9add28f123291fce98e1c6f055024f947b7695/dokuwikidumper-0.1.7.tar.gz
+[2023-04-13 10:44:26] INFO root fetch - processPackages [dargus]: executing diffoscope
+[2023-04-13 10:44:26] INFO root fetch - processPackages [dargus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dargus-1.0.1.tar.gz tmp/dargus-1.0.2.tar.gz --markdown 20230413/d/dargus/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-13 10:44:26] INFO root fetch - processPackages [Geode-Conversion]: executing diffoscope
+[2023-04-13 10:44:26] INFO root fetch - processPackages [Geode-Conversion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Conversion-4.4.7-cp39-cp39-win_amd64.whl.zip tmp/Geode_Conversion-4.4.8-cp39-cp39-win_amd64.whl.zip --markdown 20230413/G/Geode-Conversion/4.4.7-4.4.8/diff.md --exclude *.pyd
+[2023-04-13 10:44:26] INFO root fetch - processPackages [dokuwikidumper]: Downloading https://files.pythonhosted.org/packages/8a/77/6dec3b11bf518fac347215309f743f5b619907f701930657ce67b1a56294/dokuwikidumper-0.1.8.tar.gz
+[2023-04-13 10:44:26] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-04-13 10:44:26] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.7.tar.gz tmp/dokuwikidumper-0.1.8.tar.gz --markdown 20230413/d/dokuwikidumper/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-13 10:44:26] INFO root fetch - processPackages [dune-query-translator]: Start processing: tap-flexopus
+[2023-04-13 10:44:26] INFO root fetch - main [MainThread]: End processing [dune-query-translator]: success
+[2023-04-13 10:44:26] WARNING root fetch - processPackages [tap-flexopus]: Skipping, unable to determine old version
+[2023-04-13 10:44:26] INFO root fetch - processPackages [tap-flexopus]: Start processing: tff-nightly
+[2023-04-13 10:44:26] INFO root fetch - main [MainThread]: End processing [tap-flexopus] error
+[2023-04-13 10:44:26] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230412] Old Version: [0.0.1.dev20230411]
+[2023-04-13 10:44:26] INFO root fetch - processPackages [modelon-impact-client]: Start processing: tfp-nightly
+[2023-04-13 10:44:26] INFO root fetch - main [MainThread]: End processing [modelon-impact-client]: success
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/06/6c/b0da91ae2309554c3d1cdd5013765db9dcc935f02eba39aef92f620afb0d/tff_nightly-0.0.1.dev20230412-py2.py3-none-any.whl
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230413/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-04-13 10:44:27] INFO root fetch - processPackages [dargus]: Start processing: tf2-som
+[2023-04-13 10:44:27] INFO root fetch - main [MainThread]: End processing [dargus]: success
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tf2-som]: New version: [0.0.9] Old Version: [0.0.10]
+[2023-04-13 10:44:27] INFO root fetch - processPackages [Geode-Conversion]: Start processing: oneai
+[2023-04-13 10:44:27] INFO root fetch - main [MainThread]: End processing [Geode-Conversion]: success
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230411-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230412-py2.py3-none-any.whl.zip --markdown 20230413/t/tff-nightly/0.0.1.dev20230411-0.0.1.dev20230412/diff.md --exclude *.pyd
+[2023-04-13 10:44:27] INFO root fetch - processPackages [oneai]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tf2-som]: Downloading https://files.pythonhosted.org/packages/e2/9d/e51e309a8203afba7338a2ef1944417ffcfb54ec8bcc7772910a2d197599/tf2-som-0.0.10.tar.gz
+[2023-04-13 10:44:27] INFO root fetch - processPackages [oneai]: executing diffoscope
+[2023-04-13 10:44:27] INFO root fetch - processPackages [oneai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oneai-0.9.8.tar.gz tmp/oneai-0.9.9.tar.gz --markdown 20230413/o/oneai/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-13 10:44:27] INFO root fetch - processPackages [dokuwikidumper]: Start processing: climify-api
+[2023-04-13 10:44:27] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-04-13 10:44:27] INFO root fetch - processPackages [climify-api]: New version: [1.0.0] Old Version: [0.0.3]
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tf2-som]: Downloading https://files.pythonhosted.org/packages/62/c9/a443a51c1e7e0ee39b707b5d74df6e703373e252accd559264d8bb835631/tf2-som-0.0.9.tar.gz
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tf2-som]: executing diffoscope
+[2023-04-13 10:44:27] INFO root fetch - processPackages [tf2-som]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf2-som-0.0.10.tar.gz tmp/tf2-som-0.0.9.tar.gz --markdown 20230413/t/tf2-som/0.0.10-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 10:44:27] INFO root fetch - processPackages [climify-api]: Downloading https://files.pythonhosted.org/packages/73/0a/ba181de9e5e66023b110c8f225db2526d4d6e4e4091948af738720007cbb/climify_api-0.0.3.tar.gz
+[2023-04-13 10:44:28] INFO root fetch - processPackages [climify-api]: Downloading https://files.pythonhosted.org/packages/f5/87/f1ede705c21fad504f15f02e05e395bb51f699036b56e2daee1b718b241b/climify_api-1.0.0.tar.gz
+[2023-04-13 10:44:28] INFO root fetch - processPackages [oneai]: Start processing: dxsp
+[2023-04-13 10:44:28] INFO root fetch - main [MainThread]: End processing [oneai]: success
+[2023-04-13 10:44:28] INFO root fetch - processPackages [climify-api]: executing diffoscope
+[2023-04-13 10:44:28] INFO root fetch - processPackages [climify-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/climify_api-0.0.3.tar.gz tmp/climify_api-1.0.0.tar.gz --markdown 20230413/c/climify-api/0.0.3-1.0.0/diff.md --exclude *.pyd
+[2023-04-13 10:44:28] INFO root fetch - processPackages [dxsp]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-13 10:44:28] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/a4/b9/4e9c355af04babf6fcf7d9ba19e267abc3c77f4997db19a26d58c6b4d9e5/dxsp-1.0.5.tar.gz
+[2023-04-13 10:44:28] INFO root fetch - processPackages [tf2-som]: Start processing: py-redis-utils
+[2023-04-13 10:44:28] INFO root fetch - main [MainThread]: End processing [tf2-som]: success
+[2023-04-13 10:44:29] INFO root fetch - processPackages [py-redis-utils]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-13 10:44:29] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-13 10:44:29] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.0.4.tar.gz tmp/dxsp-1.0.5.tar.gz --markdown 20230413/d/dxsp/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-13 10:44:29] INFO root fetch - processPackages [py-redis-utils]: Downloading https://files.pythonhosted.org/packages/23/84/c7cb7391393ce4147655527bb761f65e2a32fa1b8f70b89f4683a1cf3088/py-redis-utils-1.0.5.tar.gz
+[2023-04-13 10:44:29] INFO root fetch - processPackages [py-redis-utils]: Downloading https://files.pythonhosted.org/packages/ad/26/2efa1826e8d54ba793ac6b09a81c60cb854d9dcae2f1b8c6b77b20457b8b/py-redis-utils-1.0.6.tar.gz
+[2023-04-13 10:44:29] INFO root fetch - main [MainThread]: End processing [climify-api]: success
+[2023-04-13 10:44:29] INFO root fetch - processPackages [py-redis-utils]: executing diffoscope
+[2023-04-13 10:44:29] INFO root fetch - processPackages [py-redis-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-redis-utils-1.0.5.tar.gz tmp/py-redis-utils-1.0.6.tar.gz --markdown 20230413/p/py-redis-utils/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-13 10:44:30] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-04-13 10:44:30] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-13 10:44:30] INFO root fetch - main [MainThread]: End processing [py-redis-utils]: success
+[2023-04-13 10:44:41] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-04-13 10:44:41] INFO root fetch - main [MainThread]: Store serial: [17689327]
