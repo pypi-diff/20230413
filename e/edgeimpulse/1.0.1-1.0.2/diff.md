@@ -1,0 +1,2921 @@
+# Comparing `tmp/edgeimpulse-1.0.1.tar.gz` & `tmp/edgeimpulse-1.0.2.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "edgeimpulse-1.0.1.tar", max compression
++gzip compressed data, was "edgeimpulse-1.0.2.tar", max compression
+```
+
+## Comparing `edgeimpulse-1.0.1.tar` & `edgeimpulse-1.0.2.tar`
+
+### file list
+
+```diff
+@@ -1,21 +1,26 @@
+--rw-r--r--   0        0        0     1531 2023-04-04 13:40:36.903777 edgeimpulse-1.0.1/README.md
+--rw-r--r--   0        0        0     6148 2023-03-23 20:55:38.931408 edgeimpulse-1.0.1/edgeimpulse/.DS_Store
+--rw-r--r--   0        0        0      297 2023-04-04 11:17:47.104762 edgeimpulse-1.0.1/edgeimpulse/__init__.py
+--rw-r--r--   0        0        0     3017 2023-04-04 11:17:47.105255 edgeimpulse-1.0.1/edgeimpulse/exceptions.py
+--rw-r--r--   0        0        0        0 2023-04-03 21:03:55.903004 edgeimpulse-1.0.1/edgeimpulse/methods/__init__.py
+--rw-r--r--   0        0        0      165 2023-04-03 21:04:12.088019 edgeimpulse-1.0.1/edgeimpulse/methods/__pycache__/__init__.cpython-38.pyc
+--rw-r--r--   0        0        0    13059 2023-04-03 23:00:40.706790 edgeimpulse-1.0.1/edgeimpulse/methods/__pycache__/deploy.cpython-38.pyc
+--rw-r--r--   0        0        0     5557 2023-04-03 22:49:16.637349 edgeimpulse-1.0.1/edgeimpulse/methods/__pycache__/profile.cpython-38.pyc
+--rw-r--r--   0        0        0    16925 2023-04-04 13:40:36.904472 edgeimpulse-1.0.1/edgeimpulse/methods/deploy.py
+--rw-r--r--   0        0        0     7218 2023-04-04 13:40:36.904769 edgeimpulse-1.0.1/edgeimpulse/methods/profile.py
+--rw-r--r--   0        0        0      313 2023-04-04 11:17:47.106546 edgeimpulse-1.0.1/edgeimpulse/model/__init__.py
+--rw-r--r--   0        0        0      451 2023-04-03 22:49:16.636177 edgeimpulse-1.0.1/edgeimpulse/model/__pycache__/__init__.cpython-38.pyc
+--rw-r--r--   0        0        0     1181 2023-04-03 11:58:15.129480 edgeimpulse-1.0.1/edgeimpulse/model/__pycache__/input_type.cpython-38.pyc
+--rw-r--r--   0        0        0      960 2023-04-03 20:48:53.873519 edgeimpulse-1.0.1/edgeimpulse/model/__pycache__/model_info.cpython-38.pyc
+--rw-r--r--   0        0        0     1346 2023-04-03 11:58:15.128716 edgeimpulse-1.0.1/edgeimpulse/model/__pycache__/output_type.cpython-38.pyc
+--rw-r--r--   0        0        0      466 2023-04-03 11:31:42.614417 edgeimpulse-1.0.1/edgeimpulse/model/input_type.py
+--rw-r--r--   0        0        0      673 2023-04-03 11:31:42.614707 edgeimpulse-1.0.1/edgeimpulse/model/model_info.py
+--rw-r--r--   0        0        0      607 2023-04-04 00:05:41.384268 edgeimpulse-1.0.1/edgeimpulse/model/output_type.py
+--rw-r--r--   0        0        0    15511 2023-04-04 11:17:47.107043 edgeimpulse-1.0.1/edgeimpulse/util.py
+--rw-r--r--   0        0        0      802 2023-04-04 13:42:29.502763 edgeimpulse-1.0.1/pyproject.toml
+--rw-r--r--   0        0        0     2443 1970-01-01 00:00:00.000000 edgeimpulse-1.0.1/PKG-INFO
++-rw-r--r--   0        0        0     1531 2023-04-11 14:48:06.888998 edgeimpulse-1.0.2/README.md
++-rw-r--r--   0        0        0      297 2023-04-11 14:48:06.889249 edgeimpulse-1.0.2/edgeimpulse/__init__.py
++-rw-r--r--   0        0        0     3017 2023-04-11 14:48:06.889354 edgeimpulse-1.0.2/edgeimpulse/exceptions.py
++-rw-r--r--   0        0        0        0 2023-03-17 15:56:20.819238 edgeimpulse-1.0.2/edgeimpulse/methods/__init__.py
++-rw-r--r--   0        0        0      179 2023-04-13 14:10:19.981597 edgeimpulse-1.0.2/edgeimpulse/methods/__pycache__/__init__.cpython-310.pyc
++-rw-r--r--   0        0        0      124 2023-04-13 20:28:50.677287 edgeimpulse-1.0.2/edgeimpulse/methods/__pycache__/__init__.cpython-38.pyc
++-rw-r--r--   0        0        0    13356 2023-04-13 14:10:19.986029 edgeimpulse-1.0.2/edgeimpulse/methods/__pycache__/deploy.cpython-310.pyc
++-rw-r--r--   0        0        0    13241 2023-04-13 20:28:50.158896 edgeimpulse-1.0.2/edgeimpulse/methods/__pycache__/deploy.cpython-38.pyc
++-rw-r--r--   0        0        0     6401 2023-04-13 14:21:36.704259 edgeimpulse-1.0.2/edgeimpulse/methods/__pycache__/profile.cpython-310.pyc
++-rw-r--r--   0        0        0     6187 2023-04-13 20:28:50.429340 edgeimpulse-1.0.2/edgeimpulse/methods/__pycache__/profile.cpython-38.pyc
++-rw-r--r--   0        0        0    16925 2023-04-13 14:43:29.187839 edgeimpulse-1.0.2/edgeimpulse/methods/deploy.py
++-rw-r--r--   0        0        0     7079 2023-04-13 14:24:20.503484 edgeimpulse-1.0.2/edgeimpulse/methods/profile.py
++-rw-r--r--   0        0        0      313 2023-04-13 14:43:29.187994 edgeimpulse-1.0.2/edgeimpulse/model/__init__.py
++-rw-r--r--   0        0        0      459 2023-04-13 14:16:13.974578 edgeimpulse-1.0.2/edgeimpulse/model/__pycache__/__init__.cpython-310.pyc
++-rw-r--r--   0        0        0      410 2023-04-13 20:28:51.718454 edgeimpulse-1.0.2/edgeimpulse/model/__pycache__/__init__.cpython-38.pyc
++-rw-r--r--   0        0        0     1199 2023-04-13 14:10:19.986757 edgeimpulse-1.0.2/edgeimpulse/model/__pycache__/input_type.cpython-310.pyc
++-rw-r--r--   0        0        0     1140 2023-04-13 20:28:51.468709 edgeimpulse-1.0.2/edgeimpulse/model/__pycache__/input_type.cpython-38.pyc
++-rw-r--r--   0        0        0      919 2023-04-13 20:28:51.969256 edgeimpulse-1.0.2/edgeimpulse/model/__pycache__/model_info.cpython-38.pyc
++-rw-r--r--   0        0        0     1372 2023-04-13 14:10:19.986426 edgeimpulse-1.0.2/edgeimpulse/model/__pycache__/output_type.cpython-310.pyc
++-rw-r--r--   0        0        0     1305 2023-04-13 20:28:52.222246 edgeimpulse-1.0.2/edgeimpulse/model/__pycache__/output_type.cpython-38.pyc
++-rw-r--r--   0        0        0      466 2023-04-03 13:45:58.875930 edgeimpulse-1.0.2/edgeimpulse/model/input_type.py
++-rw-r--r--   0        0        0      673 2023-04-03 13:45:58.876012 edgeimpulse-1.0.2/edgeimpulse/model/model_info.py
++-rw-r--r--   0        0        0      607 2023-04-03 13:45:58.876076 edgeimpulse-1.0.2/edgeimpulse/model/output_type.py
++-rw-r--r--   0        0        0    15524 2023-04-13 19:51:28.026063 edgeimpulse-1.0.2/edgeimpulse/util.py
++-rw-r--r--   0        0        0      802 2023-04-13 20:14:38.968427 edgeimpulse-1.0.2/pyproject.toml
++-rw-r--r--   0        0        0     2443 1970-01-01 00:00:00.000000 edgeimpulse-1.0.2/PKG-INFO
+```
+
+### Comparing `edgeimpulse-1.0.1/README.md` & `edgeimpulse-1.0.2/README.md`
+
+ * *Files identical despite different names*
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/exceptions.py` & `edgeimpulse-1.0.2/edgeimpulse/exceptions.py`
+
+ * *Files identical despite different names*
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/methods/__pycache__/deploy.cpython-38.pyc` & `edgeimpulse-1.0.2/edgeimpulse/methods/__pycache__/deploy.cpython-38.pyc`
+
+ * *Format-specific differences are supported for Python .pyc files but no file-specific differences were detected; falling back to a binary diff. file(1) reports: Byte-compiled Python module for CPython 3.8, timestamp-based, .py timestamp: Mon Apr  3 22:58:58 2023 UTC, .py size: 16830 bytes*
+
+ * *Could not decompile bytecode: bad marshal data (unknown type code)*
+
+ * *Files 8% similar despite different names*
+
+```diff
+@@ -1,8 +1,8 @@
+-00000000: 550d 0d0a 0000 0000 325a 2b64 be41 0000  U.......2Z+d.A..
++00000000: 550d 0d0a 0000 0000 1115 3864 1d42 0000  U.........8d.B..
+ 00000010: e300 0000 0000 0000 0000 0000 0000 0000  ................
+ 00000020: 000c 0000 0040 0000 0073 e801 0000 6400  .....@...s....d.
+ 00000030: 6401 6c00 5a00 6400 6401 6c01 5a01 6400  d.l.Z.d.d.l.Z.d.
+ 00000040: 6401 6c02 5a02 6400 6401 6c03 5a03 6400  d.l.Z.d.d.l.Z.d.
+ 00000050: 6402 6c04 6d05 5a05 0100 6400 6403 6c06  d.l.m.Z...d.d.l.
+ 00000060: 6d07 5a07 6d08 5a08 6d09 5a09 6d0a 5a0a  m.Z.m.Z.m.Z.m.Z.
+ 00000070: 0100 6400 6401 6c0b 5a0b 6400 6401 6c0c  ..d.d.l.Z.d.d.l.
+@@ -138,680 +138,691 @@
+ 00000890: 0101 0074 357c 1a64 2183 028f 127d 1b7c  ...t5|.d!....}.|
+ 000008a0: 1ba0 367c 0f6a 2ba1 0101 0057 0035 0051  ..6|.j+....W.5.Q
+ 000008b0: 0052 0058 0057 006e 4404 0074 166b 0a90  .R.X.W.nD..t.k..
+ 000008c0: 0372 da01 007d 1201 007a 2474 17a0 1864  .r...}...z$t...d
+ 000008d0: 227c 1a9b 0064 2374 197c 1283 019b 0064  "|...d#t.|.....d
+ 000008e0: 0b9d 05a1 0101 007c 1282 0157 0035 0064  .......|...W.5.d
+ 000008f0: 017d 127e 1258 0059 006e 0258 007c 0f6a  .}.~.X.Y.n.X.|.j
+-00000900: 2b53 0029 2461 e112 0000 0a20 2020 2020  +S.)$a.....     
+-00000910: 2020 2054 7261 6e73 666f 726d 7320 6120     Transforms a 
+-00000920: 7472 6169 6e65 6420 6d6f 6465 6c20 696e  trained model in
+-00000930: 746f 2061 206c 6962 7261 7279 2c20 7061  to a library, pa
+-00000940: 636b 6167 652c 206f 7220 6669 726d 7761  ckage, or firmwa
+-00000950: 7265 2072 6561 6479 2074 6f20 6465 706c  re ready to depl
+-00000960: 6f79 206f 6e20 616e 2065 6d62 6564 6465  oy on an embedde
+-00000970: 6420 6465 7669 6365 2e20 4361 6e20 6f70  d device. Can op
+-00000980: 7469 6f6e 616c 6c79 0a20 2020 2020 2020  tionally.       
+-00000990: 2061 7070 6c79 2070 6f73 742d 7472 6169   apply post-trai
+-000009a0: 6e69 6e67 2071 7561 6e74 697a 6174 696f  ning quantizatio
+-000009b0: 6e20 6966 2061 2072 6570 7265 7365 6e74  n if a represent
+-000009c0: 6174 6976 6520 6461 7461 2073 616d 706c  ative data sampl
+-000009d0: 6520 6973 2075 706c 6f61 6465 642e 0a0a  e is uploaded...
+-000009e0: 2020 2020 2020 2020 5375 7070 6f72 7465          Supporte
+-000009f0: 6420 6d6f 6465 6c20 666f 726d 6174 733a  d model formats:
+-00000a00: 0a20 2020 2020 2020 2020 2020 202a 205b  .            * [
+-00000a10: 4b65 7261 7320 4d6f 6465 6c20 696e 7374  Keras Model inst
+-00000a20: 616e 6365 5d28 6874 7470 733a 2f2f 7777  ance](https://ww
+-00000a30: 772e 7465 6e73 6f72 666c 6f77 2e6f 7267  w.tensorflow.org
+-00000a40: 2f61 7069 5f64 6f63 732f 7079 7468 6f6e  /api_docs/python
+-00000a50: 2f74 662f 6b65 7261 732f 4d6f 6465 6c29  /tf/keras/Model)
+-00000a60: 0a20 2020 2020 2020 2020 2020 202a 205b  .            * [
+-00000a70: 5465 6e73 6f72 466c 6f77 2053 6176 6564  TensorFlow Saved
+-00000a80: 4d6f 6465 6c5d 2868 7474 7073 3a2f 2f77  Model](https://w
+-00000a90: 7777 2e74 656e 736f 7266 6c6f 772e 6f72  ww.tensorflow.or
+-00000aa0: 672f 6775 6964 652f 7361 7665 645f 6d6f  g/guide/saved_mo
+-00000ab0: 6465 6c29 2028 6173 2070 6174 6820 746f  del) (as path to
+-00000ac0: 2064 6972 6563 746f 7279 206f 7220 602e   directory or `.
+-00000ad0: 7a69 7060 2066 696c 6529 0a20 2020 2020  zip` file).     
+-00000ae0: 2020 2020 2020 202a 205b 4f4e 4e58 206d         * [ONNX m
+-00000af0: 6f64 656c 2066 696c 655d 2868 7474 7073  odel file](https
+-00000b00: 3a2f 2f6c 6561 726e 2e6d 6963 726f 736f  ://learn.microso
+-00000b10: 6674 2e63 6f6d 2f65 6e2d 7573 2f77 696e  ft.com/en-us/win
+-00000b20: 646f 7773 2f61 692f 7769 6e64 6f77 732d  dows/ai/windows-
+-00000b30: 6d6c 2f67 6574 2d6f 6e6e 782d 6d6f 6465  ml/get-onnx-mode
+-00000b40: 6c29 2028 6173 2070 6174 6820 746f 2060  l) (as path to `
+-00000b50: 2e6f 6e6e 7860 2066 696c 6529 0a20 2020  .onnx` file).   
+-00000b60: 2020 2020 2020 2020 202a 205b 5465 6e73           * [Tens
+-00000b70: 6f72 466c 6f77 204c 6974 6520 6669 6c65  orFlow Lite file
+-00000b80: 5d28 6874 7470 733a 2f2f 7777 772e 7465  ](https://www.te
+-00000b90: 6e73 6f72 666c 6f77 2e6f 7267 2f6c 6974  nsorflow.org/lit
+-00000ba0: 652f 6775 6964 6529 2028 6173 2062 7974  e/guide) (as byt
+-00000bb0: 6573 2c20 6f72 2070 6174 6820 746f 2061  es, or path to a
+-00000bc0: 6e79 2066 696c 6520 7468 6174 2069 7320  ny file that is 
+-00000bd0: 6e6f 7420 602e 7a69 7060 206f 7220 602e  not `.zip` or `.
+-00000be0: 6f6e 6e78 6029 0a0a 2020 2020 2020 2020  onnx`)..        
+-00000bf0: 5265 7072 6573 656e 7461 7469 7665 2064  Representative d
+-00000c00: 6174 6120 666f 7220 7175 616e 7469 7a61  ata for quantiza
+-00000c10: 7469 6f6e 3a0a 2020 2020 2020 2020 2020  tion:.          
+-00000c20: 2020 2a20 4d75 7374 2062 6520 6120 6e75    * Must be a nu
+-00000c30: 6d70 7920 6172 7261 7920 6f72 2060 2e6e  mpy array or `.n
+-00000c40: 7079 6020 6669 6c65 2e0a 2020 2020 2020  py` file..      
+-00000c50: 2020 2020 2020 2a20 4561 6368 2065 6c65        * Each ele
+-00000c60: 6d65 6e74 206d 7573 7420 6861 7665 2074  ment must have t
+-00000c70: 6865 2073 616d 6520 7368 6170 6520 6173  he same shape as
+-00000c80: 2079 6f75 7220 6d6f 6465 6c27 7320 696e   your model's in
+-00000c90: 7075 742e 0a20 2020 2020 2020 2020 2020  put..           
+-00000ca0: 202a 204d 7573 7420 6265 2072 6570 7265   * Must be repre
+-00000cb0: 7365 6e74 6174 6976 6520 6f66 2074 6865  sentative of the
+-00000cc0: 2072 616e 6765 2028 6d61 7869 6d75 6d20   range (maximum 
+-00000cd0: 616e 6420 6d69 6e69 6d75 6d29 206f 6620  and minimum) of 
+-00000ce0: 7661 6c75 6573 2069 6e20 796f 7572 2074  values in your t
+-00000cf0: 7261 696e 696e 6720 6461 7461 2e0a 0a20  raining data... 
+-00000d00: 2020 2020 2020 2045 7861 6d70 6c65 3a0a         Example:.
+-00000d10: 0a20 2020 2020 2020 2020 2020 2023 2054  .            # T
+-00000d20: 7572 6e20 6120 4b65 7261 7320 6d6f 6465  urn a Keras mode
+-00000d30: 6c20 696e 746f 2061 2043 2b2b 206c 6962  l into a C++ lib
+-00000d40: 7261 7279 2061 6e64 2077 7269 7465 2074  rary and write t
+-00000d50: 6f20 6469 736b 0a20 2020 2020 2020 2020  o disk.         
+-00000d60: 2020 2065 692e 6d6f 6465 6c2e 6465 706c     ei.model.depl
+-00000d70: 6f79 286d 6f64 656c 3d6b 6572 6173 5f6d  oy(model=keras_m
+-00000d80: 6f64 656c 2c0a 2020 2020 2020 2020 2020  odel,.          
+-00000d90: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000da0: 2020 6d6f 6465 6c5f 6f75 7470 7574 5f74    model_output_t
+-00000db0: 7970 653d 6569 2e6d 6f64 656c 2e6f 7574  ype=ei.model.out
+-00000dc0: 7075 745f 7479 7065 2e43 6c61 7373 6966  put_type.Classif
+-00000dd0: 6963 6174 696f 6e28 292c 0a20 2020 2020  ication(),.     
+-00000de0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000df0: 2020 2020 2020 206f 7574 7075 745f 6469         output_di
+-00000e00: 7265 6374 6f72 793d 222e 2229 0a0a 2020  rectory=".")..  
+-00000e10: 2020 2020 2020 2020 2020 2320 436f 6e76            # Conv
+-00000e20: 6572 7420 7661 7269 6f75 7320 7479 7065  ert various type
+-00000e30: 7320 6f66 2073 6572 6961 6c69 7a65 6420  s of serialized 
+-00000e40: 6d6f 6465 6c73 3a0a 2020 2020 2020 2020  models:.        
+-00000e50: 2020 2020 6569 2e6d 6f64 656c 2e64 6570      ei.model.dep
+-00000e60: 6c6f 7928 6d6f 6465 6c3d 2268 6561 7274  loy(model="heart
+-00000e70: 5f72 6174 652e 6f6e 6e78 222c 2023 204f  _rate.onnx", # O
+-00000e80: 4e4e 580a 2020 2020 2020 2020 2020 2020  NNX.            
+-00000e90: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000ea0: 6d6f 6465 6c5f 6f75 7470 7574 5f74 7970  model_output_typ
+-00000eb0: 653d 6569 2e6d 6f64 656c 2e6f 7574 7075  e=ei.model.outpu
+-00000ec0: 745f 7479 7065 2e43 6c61 7373 6966 6963  t_type.Classific
+-00000ed0: 6174 696f 6e28 2929 0a20 2020 2020 2020  ation()).       
+-00000ee0: 2020 2020 2065 692e 6d6f 6465 6c2e 6465       ei.model.de
+-00000ef0: 706c 6f79 286d 6f64 656c 3d22 6865 6172  ploy(model="hear
+-00000f00: 745f 7261 7465 2e7a 6970 222c 2023 2054  t_rate.zip", # T
+-00000f10: 656e 736f 7246 6c6f 7720 5361 7665 644d  ensorFlow SavedM
+-00000f20: 6f64 656c 2028 6361 6e20 616c 736f 2062  odel (can also b
+-00000f30: 6520 6120 6469 7265 6374 6f72 7929 0a20  e a directory). 
+-00000f40: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000f50: 2020 2020 2020 2020 2020 206d 6f64 656c             model
+-00000f60: 5f6f 7574 7075 745f 7479 7065 3d65 692e  _output_type=ei.
+-00000f70: 6d6f 6465 6c2e 6f75 7470 7574 5f74 7970  model.output_typ
+-00000f80: 652e 436c 6173 7369 6669 6361 7469 6f6e  e.Classification
+-00000f90: 2829 290a 2020 2020 2020 2020 2020 2020  ()).            
+-00000fa0: 6569 2e6d 6f64 656c 2e64 6570 6c6f 7928  ei.model.deploy(
+-00000fb0: 6d6f 6465 6c3d 2268 6561 7274 5f72 6174  model="heart_rat
+-00000fc0: 652e 6c69 7465 222c 2023 2054 656e 736f  e.lite", # Tenso
+-00000fd0: 7246 6c6f 7720 4c69 7465 0a20 2020 2020  rFlow Lite.     
+-00000fe0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000ff0: 2020 2020 2020 206d 6f64 656c 5f6f 7574         model_out
+-00001000: 7075 745f 7479 7065 3d65 692e 6d6f 6465  put_type=ei.mode
+-00001010: 6c2e 6f75 7470 7574 5f74 7970 652e 436c  l.output_type.Cl
+-00001020: 6173 7369 6669 6361 7469 6f6e 2829 290a  assification()).
+-00001030: 0a20 2020 2020 2020 2020 2020 2023 2051  .            # Q
+-00001040: 7561 6e74 697a 6520 6120 6d6f 6465 6c20  uantize a model 
+-00001050: 746f 2069 6e74 3820 6475 7269 6e67 2064  to int8 during d
+-00001060: 6570 6c6f 796d 656e 7420 6279 2070 6173  eployment by pas
+-00001070: 7369 6e67 2061 206e 756d 7079 2061 7272  sing a numpy arr
+-00001080: 6179 206f 6620 6461 7461 0a20 2020 2020  ay of data.     
+-00001090: 2020 2020 2020 2065 692e 6d6f 6465 6c2e         ei.model.
+-000010a0: 6465 706c 6f79 286d 6f64 656c 3d6b 6572  deploy(model=ker
+-000010b0: 6173 5f6d 6f64 656c 2c0a 2020 2020 2020  as_model,.      
+-000010c0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000010d0: 2020 2020 2020 7265 7072 6573 656e 7461        representa
+-000010e0: 7469 7665 5f64 6174 615f 666f 725f 7175  tive_data_for_qu
+-000010f0: 616e 7469 7a61 7469 6f6e 3d78 5f74 6573  antization=x_tes
+-00001100: 742c 0a20 2020 2020 2020 2020 2020 2020  t,.             
+-00001110: 2020 2020 2020 2020 2020 2020 2020 206d                 m
+-00001120: 6f64 656c 5f6f 7574 7075 745f 7479 7065  odel_output_type
+-00001130: 3d65 692e 6d6f 6465 6c2e 6f75 7470 7574  =ei.model.output
+-00001140: 5f74 7970 652e 436c 6173 7369 6669 6361  _type.Classifica
+-00001150: 7469 6f6e 2829 2c0a 2020 2020 2020 2020  tion(),.        
+-00001160: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001170: 2020 2020 6f75 7470 7574 5f64 6972 6563      output_direc
+-00001180: 746f 7279 3d22 2e22 290a 0a0a 2020 2020  tory=".")...    
+-00001190: 4172 6773 3a0a 2020 2020 2020 2020 6d6f  Args:.        mo
+-000011a0: 6465 6c20 2855 6e69 6f6e 5b50 6174 682c  del (Union[Path,
+-000011b0: 2073 7472 2c20 6279 7465 732c 2041 6e79   str, bytes, Any
+-000011c0: 5d29 3a20 4120 6d61 6368 696e 6520 6c65  ]): A machine le
+-000011d0: 6172 6e69 6e67 206d 6f64 656c 2c20 6f72  arning model, or
+-000011e0: 2073 696d 696c 6172 6c79 2072 6570 7265   similarly repre
+-000011f0: 7365 6e74 6564 2063 6f6d 7075 7461 7469  sented computati
+-00001200: 6f6e 616c 2067 7261 7068 2e0a 2020 2020  onal graph..    
+-00001210: 2020 2020 2020 2020 4361 6e20 6265 2060          Can be `
+-00001220: 5061 7468 6020 6f72 2060 7374 7260 2064  Path` or `str` d
+-00001230: 656e 6f74 696e 6720 6669 6c65 2070 6174  enoting file pat
+-00001240: 682c 2050 7974 686f 6e20 6062 7974 6573  h, Python `bytes
+-00001250: 6020 636f 6e74 6169 6e69 6e67 2061 206d  ` containing a m
+-00001260: 6f64 656c 2c20 6f72 2061 204b 6572 6173  odel, or a Keras
+-00001270: 206d 6f64 656c 2069 6e73 7461 6e63 652e   model instance.
+-00001280: 0a20 2020 2020 2020 206d 6f64 656c 5f6f  .        model_o
+-00001290: 7574 7075 745f 7479 7065 2028 556e 696f  utput_type (Unio
+-000012a0: 6e5b 436c 6173 7369 6669 6361 7469 6f6e  n[Classification
+-000012b0: 2c20 5265 6772 6573 7369 6f6e 2c20 4f62  , Regression, Ob
+-000012c0: 6a65 6374 4465 7465 6374 696f 6e5d 293a  jectDetection]):
+-000012d0: 2044 6573 6372 6962 6520 796f 7572 206d   Describe your m
+-000012e0: 6f64 656c 2773 2074 7970 653a 0a20 2020  odel's type:.   
+-000012f0: 2020 2020 2020 2020 2043 6c61 7373 6966           Classif
+-00001300: 6963 6174 696f 6e2c 2052 6567 7265 7373  ication, Regress
+-00001310: 696f 6e2c 206f 7220 4f62 6a65 6374 4465  ion, or ObjectDe
+-00001320: 7465 6374 696f 6e2e 2054 6865 2074 7970  tection. The typ
+-00001330: 6573 2061 7265 2061 7661 696c 6162 6c65  es are available
+-00001340: 2069 6e20 7468 6520 6d6f 6475 6c65 2060   in the module `
+-00001350: 6564 6765 696d 7075 6c73 652e 6d6f 6465  edgeimpulse.mode
+-00001360: 6c2e 6f75 7470 7574 5f74 7970 6560 2e0a  l.output_type`..
+-00001370: 2020 2020 2020 2020 6d6f 6465 6c5f 696e          model_in
+-00001380: 7075 745f 7479 7065 2028 556e 696f 6e5b  put_type (Union[
+-00001390: 4175 6469 6f49 6e70 7574 2c20 5469 6d65  AudioInput, Time
+-000013a0: 5365 7269 6573 496e 7075 742c 204f 7468  SeriesInput, Oth
+-000013b0: 6572 496e 7075 745d 2c20 6f70 7469 6f6e  erInput], option
+-000013c0: 616c 293a 2044 6574 6572 6d69 6e65 7320  al): Determines 
+-000013d0: 616e 7920 696e 7075 7420 7072 6570 726f  any input prepro
+-000013e0: 6365 7373 696e 670a 2020 2020 2020 2020  cessing.        
+-000013f0: 2020 2020 2877 696e 646f 7769 6e67 2c20      (windowing, 
+-00001400: 646f 776e 7361 6d70 6c69 6e67 2920 7468  downsampling) th
+-00001410: 6174 2073 686f 756c 6420 6265 2070 6572  at should be per
+-00001420: 666f 726d 6564 2062 7920 7468 6520 7265  formed by the re
+-00001430: 7375 6c74 696e 6720 6c69 6272 6172 792e  sulting library.
+-00001440: 2054 6865 2074 7970 6573 2061 7265 2061   The types are a
+-00001450: 7661 696c 6162 6c65 0a20 2020 2020 2020  vailable.       
+-00001460: 2020 2020 2069 6e20 6065 6467 6569 6d70       in `edgeimp
+-00001470: 756c 7365 2e6d 6f64 656c 2e69 6e70 7574  ulse.model.input
+-00001480: 5f74 7970 6560 2e20 5468 6520 6465 6661  _type`. The defa
+-00001490: 756c 7420 6973 206e 6f20 7072 6570 726f  ult is no prepro
+-000014a0: 6365 7373 696e 672e 0a20 2020 2020 2020  cessing..       
+-000014b0: 2072 6570 7265 7365 6e74 6174 6976 655f   representative_
+-000014c0: 6461 7461 5f66 6f72 5f71 7561 6e74 697a  data_for_quantiz
+-000014d0: 6174 696f 6e3a 2041 206e 756d 7079 2072  ation: A numpy r
+-000014e0: 6570 7265 7365 6e74 6174 6976 6520 696e  epresentative in
+-000014f0: 7075 7420 6461 7461 7365 742e 2041 6363  put dataset. Acc
+-00001500: 6570 7473 2065 6974 6865 7220 616e 2069  epts either an i
+-00001510: 6e20 6d65 6d6f 7279 206e 756d 7079 0a20  n memory numpy. 
+-00001520: 2020 2020 2020 2020 2020 2061 7272 6179             array
+-00001530: 206f 7220 7468 6520 5061 7468 2f73 7472   or the Path/str
+-00001540: 2066 696c 656e 616d 6520 6f66 2061 206e   filename of a n
+-00001550: 702e 7361 7665 202e 6e70 7920 6669 6c65  p.save .npy file
+-00001560: 2e0a 2020 2020 2020 2020 6465 706c 6f79  ..        deploy
+-00001570: 5f6d 6f64 656c 5f74 7970 6520 2873 7472  _model_type (str
+-00001580: 2c20 6f70 7469 6f6e 616c 293a 2055 7365  , optional): Use
+-00001590: 2060 696e 7438 6020 746f 2072 6563 6569   `int8` to recei
+-000015a0: 7665 2061 6e20 382d 6269 7420 7175 616e  ve an 8-bit quan
+-000015b0: 7469 7a65 6420 6d6f 6465 6c2c 2060 666c  tized model, `fl
+-000015c0: 6f61 7433 3260 2066 6f72 0a20 2020 2020  oat32` for.     
+-000015d0: 2020 2020 2020 206e 6f6e 2d71 7561 6e74         non-quant
+-000015e0: 697a 6564 2e20 4465 6661 756c 7473 2074  ized. Defaults t
+-000015f0: 6f20 4e6f 6e65 2c20 696e 2077 6869 6368  o None, in which
+-00001600: 2063 6173 6520 6974 2077 696c 6c20 6265   case it will be
+-00001610: 636f 6d65 2060 696e 7438 6020 6966 2072  come `int8` if r
+-00001620: 6570 7265 7365 6e74 6174 6976 655f 6461  epresentative_da
+-00001630: 7461 5f66 6f72 5f71 7561 6e74 697a 6174  ta_for_quantizat
+-00001640: 696f 6e20 6966 2070 726f 7669 6465 6420  ion if provided 
+-00001650: 616e 6420 6066 6c6f 6174 3332 6020 6f74  and `float32` ot
+-00001660: 6865 7277 6973 652e 2046 6f72 206f 7468  herwise. For oth
+-00001670: 6572 2076 616c 7565 7320 7365 6520 6065  er values see `e
+-00001680: 6467 6569 6d70 756c 7365 2e6d 6f64 656c  dgeimpulse.model
+-00001690: 2e6c 6973 745f 6d6f 6465 6c5f 7479 7065  .list_model_type
+-000016a0: 7328 2960 2e0a 2020 2020 2020 2020 656e  s()`..        en
+-000016b0: 6769 6e65 2028 7374 722c 206f 7074 696f  gine (str, optio
+-000016c0: 6e61 6c29 3a20 496e 6665 7265 6e63 6520  nal): Inference 
+-000016d0: 656e 6769 6e65 2e20 4569 7468 6572 2060  engine. Either `
+-000016e0: 7466 6c69 7465 6020 2866 6f72 2054 656e  tflite` (for Ten
+-000016f0: 736f 7246 6c6f 7720 4c69 7465 2066 6f72  sorFlow Lite for
+-00001700: 204d 6963 726f 636f 6e74 726f 6c6c 6572   Microcontroller
+-00001710: 7329 0a20 2020 2020 2020 2020 2020 206f  s).            o
+-00001720: 7220 6074 666c 6974 652d 656f 6e60 2028  r `tflite-eon` (
+-00001730: 666f 7220 454f 4e20 436f 6d70 696c 6572  for EON Compiler
+-00001740: 2920 746f 206f 7574 7075 7420 6120 706f  ) to output a po
+-00001750: 7274 6162 6c65 2043 2b2b 206c 6962 7261  rtable C++ libra
+-00001760: 7279 2e20 466f 7220 616c 6c20 656e 6769  ry. For all engi
+-00001770: 6e65 732c 2063 616c 6c20 6065 6467 6569  nes, call `edgei
+-00001780: 6d70 756c 7365 2e64 6570 6c6f 792e 6c69  mpulse.deploy.li
+-00001790: 7374 5f65 6e67 696e 6573 2829 602e 2044  st_engines()`. D
+-000017a0: 6566 6175 6c74 7320 746f 2060 7466 6c69  efaults to `tfli
+-000017b0: 7465 602e 0a20 2020 2020 2020 2064 6570  te`..        dep
+-000017c0: 6c6f 795f 7461 7267 6574 2028 7374 722c  loy_target (str,
+-000017d0: 206f 7074 696f 6e61 6c29 3a20 5461 7267   optional): Targ
+-000017e0: 6574 2074 6f20 6465 706c 6f79 2074 6f2c  et to deploy to,
+-000017f0: 2064 6566 6175 6c74 696e 6720 746f 2061   defaulting to a
+-00001800: 2070 6f72 7461 626c 6520 432b 2b20 6c69   portable C++ li
+-00001810: 6272 6172 7920 7375 6974 6162 6c65 2066  brary suitable f
+-00001820: 6f72 0a20 2020 2020 2020 2020 2020 206d  or.            m
+-00001830: 6f73 7420 6465 7669 6365 732e 2053 6565  ost devices. See
+-00001840: 2060 6564 6765 696d 7075 6c73 652e 6d6f   `edgeimpulse.mo
+-00001850: 6465 6c2e 6c69 7374 5f64 6570 6c6f 796d  del.list_deploym
+-00001860: 656e 745f 7461 7267 6574 7328 2960 2066  ent_targets()` f
+-00001870: 6f72 2061 206c 6973 742e 0a20 2020 2020  or a list..     
+-00001880: 2020 206f 7574 7075 745f 6469 7265 6374     output_direct
+-00001890: 6f72 7920 2873 7472 2c20 6f70 7469 6f6e  ory (str, option
+-000018a0: 616c 293a 2044 6972 6563 746f 7279 2074  al): Directory t
+-000018b0: 6f20 7772 6974 6520 6465 706c 6f79 6d65  o write deployme
+-000018c0: 6e74 2061 7274 6966 6163 7420 746f 2e20  nt artifact to. 
+-000018d0: 4669 6c65 206e 616d 6520 6d61 7920 7661  File name may va
+-000018e0: 7279 2064 6570 656e 6469 6e67 0a20 2020  ry depending.   
+-000018f0: 2020 2020 2020 2020 206f 6e20 6465 706c           on depl
+-00001900: 6f79 6d65 6e74 2074 7970 652e 2044 6566  oyment type. Def
+-00001910: 6175 6c74 7320 746f 204e 6f6e 6520 696e  aults to None in
+-00001920: 2077 6869 6368 2063 6173 6520 6d6f 6465   which case mode
+-00001930: 6c20 7769 6c6c 206e 6f74 2062 6520 7772  l will not be wr
+-00001940: 6974 7465 6e20 746f 2066 696c 652e 0a20  itten to file.. 
+-00001950: 2020 2020 2020 2061 7069 5f6b 6579 2028         api_key (
+-00001960: 7374 722c 206f 7074 696f 6e61 6c29 3a20  str, optional): 
+-00001970: 5468 6520 4150 4920 6b65 7920 666f 7220  The API key for 
+-00001980: 616e 2045 6467 6520 496d 7075 6c73 6520  an Edge Impulse 
+-00001990: 7072 6f6a 6563 742e 2054 6869 7320 6361  project. This ca
+-000019a0: 6e20 616c 736f 2062 6520 7365 7420 7669  n also be set vi
+-000019b0: 6120 7468 6520 6d6f 6475 6c65 2d6c 6576  a the module-lev
+-000019c0: 656c 0a20 2020 2020 2020 2020 2020 2076  el.            v
+-000019d0: 6172 6961 626c 6520 6065 6467 6569 6d70  ariable `edgeimp
+-000019e0: 756c 7365 2e41 5049 5f4b 4559 602c 206f  ulse.API_KEY`, o
+-000019f0: 7220 7468 6520 656e 7620 7661 7220 6045  r the env var `E
+-00001a00: 495f 4150 495f 4b45 5960 2e0a 2020 2020  I_API_KEY`..    
+-00001a10: 5261 6973 6573 3a0a 2020 2020 2020 2020  Raises:.        
+-00001a20: 496e 7661 6c69 6441 7574 6854 7970 6545  InvalidAuthTypeE
+-00001a30: 7863 6570 7469 6f6e 3a20 496e 636f 7272  xception: Incorr
+-00001a40: 6563 7420 6175 7468 656e 7469 6361 7469  ect authenticati
+-00001a50: 6f6e 2074 7970 6520 7761 7320 7072 6f76  on type was prov
+-00001a60: 6964 6564 2e0a 2020 2020 2020 2020 496e  ided..        In
+-00001a70: 7661 6c69 6444 6570 6c6f 7950 6172 616d  validDeployParam
+-00001a80: 6574 6572 4578 6365 7074 696f 6e3a 2055  eterException: U
+-00001a90: 6e61 6363 6570 7461 626c 6520 7061 7261  nacceptable para
+-00001aa0: 6d65 7465 7220 6769 7665 6e20 746f 2064  meter given to d
+-00001ab0: 6570 6c6f 7920 6675 6e63 7469 6f6e 2e0a  eploy function..
+-00001ac0: 2020 2020 2020 2020 496e 7661 6c69 6445          InvalidE
+-00001ad0: 6e67 696e 6545 7863 6570 7469 6f6e 3a20  ngineException: 
+-00001ae0: 556e 6163 6365 7074 6162 6c65 2065 6e67  Unacceptable eng
+-00001af0: 696e 6520 666f 7220 7468 6973 2074 6172  ine for this tar
+-00001b00: 6765 742e 0a20 2020 2020 2020 2049 6e76  get..        Inv
+-00001b10: 616c 6964 5461 7267 6574 4578 6365 7074  alidTargetExcept
+-00001b20: 696f 6e3a 2055 6e61 6363 6570 7461 626c  ion: Unacceptabl
+-00001b30: 6520 6465 706c 6f79 5f74 6172 6765 7420  e deploy_target 
+-00001b40: 666f 7220 7468 6973 2070 726f 6a65 6374  for this project
+-00001b50: 2e0a 2020 2020 2020 2020 4669 6c65 4e6f  ..        FileNo
+-00001b60: 7446 6f75 6e64 4572 726f 723a 204d 6f64  tFoundError: Mod
+-00001b70: 656c 2066 696c 6520 636f 756c 6420 6e6f  el file could no
+-00001b80: 7420 6265 206c 6f61 6465 642e 0a20 2020  t be loaded..   
+-00001b90: 2020 2020 2045 7863 6570 7469 6f6e 0a20       Exception. 
+-00001ba0: 2020 2052 6574 7572 6e73 3a0a 2020 2020     Returns:.    
+-00001bb0: 2020 2020 6279 7465 733a 2042 696e 6172      bytes: Binar
+-00001bc0: 7920 7265 7072 6573 656e 7461 7469 6f6e  y representation
+-00001bd0: 206f 6620 6465 706c 6f79 6d65 6e74 206f   of deployment o
+-00001be0: 7574 7075 742e 0a20 2020 204e 7a39 6465  utput..    Nz9de
+-00001bf0: 706c 6f79 5f6d 6f64 656c 5f74 7970 6520  ploy_model_type 
+-00001c00: 6d75 7374 2062 6520 4e6f 6e65 2c20 6f72  must be None, or
+-00001c10: 206f 6e65 206f 6620 7468 6520 666f 6c6c   one of the foll
+-00001c20: 6f77 696e 673a 0a7a c20a 2049 6620 4e6f  owing:.z.. If No
+-00001c30: 6e65 2061 6e64 2072 6570 7265 7365 6e74  ne and represent
+-00001c40: 6174 6976 655f 6461 7461 5f66 6f72 5f71  ative_data_for_q
+-00001c50: 7561 6e74 697a 6174 696f 6e20 6973 2073  uantization is s
+-00001c60: 7065 6369 6669 6564 2c20 7468 656e 2069  pecified, then i
+-00001c70: 6e74 3820 7769 6c6c 2062 6520 7573 6564  nt8 will be used
+-00001c80: 2c20 6f74 6865 7277 6973 6520 666c 6f61  , otherwise floa
+-00001c90: 7433 3220 6973 2061 7373 756d 6564 2e0a  t32 is assumed..
+-00001ca0: 466f 7220 6120 6c69 7374 206f 6620 7661  For a list of va
+-00001cb0: 6c69 6420 6d6f 6465 6c20 7479 7065 7320  lid model types 
+-00001cc0: 7573 6520 6065 6467 6569 6d70 756c 7365  use `edgeimpulse
+-00001cd0: 2e6d 6f64 656c 2e6c 6973 745f 6d6f 6465  .model.list_mode
+-00001ce0: 6c5f 7479 7065 7328 2960 2e7a 0845 6e67  l_types()`.z.Eng
+-00001cf0: 696e 6520 277a 3127 2069 7320 6e6f 7420  ine 'z1' is not 
+-00001d00: 7661 6c69 642e 2049 7420 6d75 7374 2062  valid. It must b
+-00001d10: 6520 6f6e 6520 6f66 2074 6865 2066 6f6c  e one of the fol
+-00001d20: 6c6f 7769 6e67 3a0a a902 da03 6b65 79da  lowing:.....key.
+-00001d30: 0468 6f73 7429 05da 0774 656d 7064 6972  .host)...tempdir
+-00001d40: da06 636c 6965 6e74 da0a 7072 6f6a 6563  ..client..projec
+-00001d50: 745f 6964 7224 0000 00da 1372 6570 7265  t_idr$.....repre
+-00001d60: 7365 6e74 6174 6976 655f 6461 7461 2901  sentative_data).
+-00001d70: 7233 0000 007a 3767 6574 5f70 7265 7472  r3...z7get_pretr
+-00001d80: 6169 6e65 645f 6d6f 6465 6c5f 696e 666f  ained_model_info
+-00001d90: 2064 6964 206e 6f74 2072 6574 7572 6e20   did not return 
+-00001da0: 6d6f 6465 6c20 6465 7461 696c 732e 7a20  model details.z 
+-00001db0: 4578 6365 7074 696f 6e20 6665 7463 6869  Exception fetchi
+-00001dc0: 6e67 206d 6f64 656c 2069 6e66 6f3a 205b  ng model info: [
+-00001dd0: fa01 5da9 0372 2800 0000 7227 0000 00da  ..]..r(...r'....
+-00001de0: 1561 7661 696c 6162 6c65 5f6d 6f64 656c  .available_model
+-00001df0: 5f74 7970 6573 a902 7225 0000 00da 076f  _types..r%.....o
+-00001e00: 7574 7075 7473 2902 da05 696e 7075 7472  utputs)...inputr
+-00001e10: 2400 0000 2902 7233 0000 00da 1d73 6176  $...).r3.....sav
+-00001e20: 655f 7072 6574 7261 696e 6564 5f6d 6f64  e_pretrained_mod
+-00001e30: 656c 5f72 6571 7565 7374 7a34 4578 6365  el_requestz4Exce
+-00001e40: 7074 696f 6e20 6361 6c6c 696e 6720 7361  ption calling sa
+-00001e50: 7665 5f70 7265 7472 6169 6e65 645f 6d6f  ve_pretrained_mo
+-00001e60: 6465 6c5f 7061 7261 6d65 7465 7273 205b  del_parameters [
+-00001e70: 2902 7229 0000 00da 096d 6f64 656c 5479  ).r).....modelTy
+-00001e80: 7065 7a36 5661 6c69 6461 7469 6f6e 2065  pez6Validation e
+-00001e90: 7272 6f72 2066 6f72 2042 7569 6c64 4f6e  rror for BuildOn
+-00001ea0: 4465 7669 6365 4d6f 6465 6c52 6571 7565  DeviceModelReque
+-00001eb0: 7374 0a65 6e67 696e 650a 2903 7233 0000  st.engine.).r3..
+-00001ec0: 00da 0474 7970 65da 1d62 7569 6c64 5f6f  ...type..build_o
+-00001ed0: 6e5f 6465 7669 6365 5f6d 6f64 656c 5f72  n_device_model_r
+-00001ee0: 6571 7565 7374 7a1e 4578 6365 7074 696f  equestz.Exceptio
+-00001ef0: 6e20 7374 6172 7469 6e67 2062 7569 6c64  n starting build
+-00001f00: 206a 6f62 205b 2903 da0b 6a6f 6273 5f63   job [)...jobs_c
+-00001f10: 6c69 656e 7472 3300 0000 da06 6a6f 625f  lientr3.....job_
+-00001f20: 6964 4629 0572 3300 0000 723d 0000 0072  idF).r3...r=...r
+-00001f30: 2900 0000 da0a 6d6f 6465 6c5f 7479 7065  ).....model_type
+-00001f40: da10 5f70 7265 6c6f 6164 5f63 6f6e 7465  .._preload_conte
+-00001f50: 6e74 7a0e 4465 706c 6f79 6d65 6e74 2069  ntz.Deployment i
+-00001f60: 7320 7a06 2062 7974 6573 7a1e 4578 6365  s z. bytesz.Exce
+-00001f70: 7074 696f 6e20 646f 776e 6c6f 6164 696e  ption downloadin
+-00001f80: 6720 6f75 7470 7574 205b 7a13 436f 6e74  g output [z.Cont
+-00001f90: 656e 742d 4469 7370 6f73 6974 696f 6e7a  ent-Dispositionz
+-00001fa0: 1066 696c 656e 616d 655c 2a3f 3d28 2e2b  .filename\*?=(.+
+-00001fb0: 2972 0100 0000 7a07 7574 662d 3827 27da  )r....z.utf-8''.
+-00001fc0: 007a 0f57 7269 7469 6e67 206f 7574 2074  .z.Writing out t
+-00001fd0: 6f20 da02 7762 7a1c 4578 6365 7074 696f  o ..wbz.Exceptio
+-00001fe0: 6e20 7361 7669 6e67 206f 7574 7075 7420  n saving output 
+-00001ff0: 746f 2027 7a03 2720 5b29 3772 0c00 0000  to 'z.' [)7r....
+-00002000: da10 6c69 7374 5f6d 6f64 656c 5f74 7970  ..list_model_typ
+-00002010: 6573 720f 0000 00da 0c6c 6973 745f 656e  esr......list_en
+-00002020: 6769 6e65 7372 0e00 0000 7212 0000 00da  ginesr....r.....
+-00002030: 0b65 6467 6569 6d70 756c 7365 da07 4150  .edgeimpulse..AP
+-00002040: 495f 4b45 59da 0c41 5049 5f45 4e44 504f  I_KEY..API_ENDPO
+-00002050: 494e 5472 1400 0000 da08 7465 6d70 6669  INTr......tempfi
+-00002060: 6c65 da12 5465 6d70 6f72 6172 7944 6972  le..TemporaryDir
+-00002070: 6563 746f 7279 7216 0000 0072 1a00 0000  ectoryr....r....
+-00002080: 7218 0000 0072 1900 0000 da19 6765 745f  r....r......get_
+-00002090: 7072 6574 7261 696e 6564 5f6d 6f64 656c  pretrained_model
+-000020a0: 5f69 6e66 6f72 1700 0000 7237 0000 0072  _infor....r7...r
+-000020b0: 2400 0000 7210 0000 0072 3900 0000 da09  $...r....r9.....
+-000020c0: 4578 6365 7074 696f 6eda 076c 6f67 6769  Exception..loggi
+-000020d0: 6e67 da05 6465 6275 67da 0373 7472 da16  ng..debug..str..
+-000020e0: 5f64 6574 6572 6d69 6e65 5f64 6570 6c6f  _determine_deplo
+-000020f0: 795f 7479 7065 da16 5f64 6574 6572 6d69  y_type.._determi
+-00002100: 6e65 5f6f 7574 7075 745f 7479 7065 721b  ne_output_typer.
+-00002110: 0000 00da 0966 726f 6d5f 6469 6374 da20  .....from_dict. 
+-00002120: 7361 7665 5f70 7265 7472 6169 6e65 645f  save_pretrained_
+-00002130: 6d6f 6465 6c5f 7061 7261 6d65 7465 7273  model_parameters
+-00002140: 7215 0000 0072 0d00 0000 721c 0000 00da  r....r....r.....
+-00002150: 0870 7964 616e 7469 63da 0e65 7272 6f72  .pydantic..error
+-00002160: 5f77 7261 7070 6572 73da 0f56 616c 6964  _wrappers..Valid
+-00002170: 6174 696f 6e45 7272 6f72 da19 6275 696c  ationError..buil
+-00002180: 645f 6f6e 5f64 6576 6963 655f 6d6f 6465  d_on_device_mode
+-00002190: 6c5f 6a6f 62da 0269 6472 1300 0000 da04  l_job..idr......
+-000021a0: 696e 666f da0e 646f 776e 6c6f 6164 5f62  info..download_b
+-000021b0: 7569 6c64 da03 6c65 6eda 0464 6174 61da  uild..len..data.
+-000021c0: 0768 6561 6465 7273 da02 7265 da07 6669  .headers..re..fi
+-000021d0: 6e64 616c 6cda 0772 6570 6c61 6365 da02  ndall..replace..
+-000021e0: 6f73 da04 7061 7468 da04 6a6f 696e da06  os..path..join..
+-000021f0: 6578 6973 7473 da08 6d61 6b65 6469 7273  exists..makedirs
+-00002200: da04 6f70 656e da05 7772 6974 6529 1c72  ..open..write).r
+-00002210: 2400 0000 7225 0000 0072 2600 0000 7227  $...r%...r&...r'
+-00002220: 0000 0072 2800 0000 7229 0000 0072 2a00  ...r(...r)...r*.
+-00002230: 0000 722b 0000 0072 2c00 0000 7232 0000  ..r+...r,...r2..
+-00002240: 0072 3300 0000 7231 0000 00da 056c 6561  .r3...r1.....lea
+-00002250: 726e da04 6a6f 6273 da06 6465 706c 6f79  rn..jobs..deploy
+-00002260: da08 7265 7370 6f6e 7365 7237 0000 0072  ..responser7...r
+-00002270: 3900 0000 da01 65da 0172 da0c 7461 7267  9.....e..r..targ
+-00002280: 6574 5f6e 616d 6573 da07 7265 7175 6573  et_names..reques
+-00002290: 7472 4000 0000 da0c 6a6f 625f 7265 7370  tr@.....job_resp
+-000022a0: 6f6e 7365 da01 645a 0f6f 7574 7075 745f  onse..dZ.output_
+-000022b0: 6669 6c65 6e61 6d65 5a0b 6f75 7470 7574  filenameZ.output
+-000022c0: 5f70 6174 68da 0166 a900 7274 0000 00fa  _path..f..rt....
+-000022d0: 482f 5573 6572 732f 6461 6e73 6974 752f  H/Users/dansitu/
+-000022e0: 636f 6465 2f65 6467 6569 6d70 756c 7365  code/edgeimpulse
+-000022f0: 2f70 7974 686f 6e2d 7364 6b2f 6564 6765  /python-sdk/edge
+-00002300: 696d 7075 6c73 652f 6d65 7468 6f64 732f  impulse/methods/
+-00002310: 6465 706c 6f79 2e70 7972 6b00 0000 2f00  deploy.pyrk.../.
+-00002320: 0000 73e2 0000 0000 4f08 0106 0212 0102  ..s.....O.......
+-00002330: 010c ff04 080a 0102 0110 ff04 0602 010c  ................
+-00002340: 0104 fe06 0608 040a 0102 0102 0102 0102  ................
+-00002350: 0102 0102 fb10 0808 0108 0108 0202 010c  ................
+-00002360: 0108 0106 010a 0102 0102 ff04 030c 0112  ................
+-00002370: 0116 0116 0202 0102 0102 0102 fd06 0602  ................
+-00002380: 0102 0002 ff06 0402 0104 0108 ff04 0304  ................
+-00002390: 0102 0002 ff06 030c 0112 0116 0116 030c  ................
+-000023a0: 010a 010a 0202 0104 0108 ff08 0316 010e  ................
+-000023b0: 0108 0116 0202 0104 0102 0102 0102 fd06  ................
+-000023c0: 0508 010a 0112 0116 0116 0202 0102 0102  ................
+-000023d0: 0102 fd06 050a 0202 0104 0102 0102 0102  ................
+-000023e0: 0102 0102 fb06 071c 0112 0116 0116 040a  ................
+-000023f0: 010a 0118 010e 0102 010e 010a 0110 010c  ................
+-00002400: 011a 0112 011c 0116 0272 6b00 0000 7a09  .........rk...z.
+-00002410: 4c69 7374 5b73 7472 5d29 0272 2c00 0000  List[str]).r,...
+-00002420: 722d 0000 0063 0100 0000 0000 0000 0000  r-...c..........
+-00002430: 0000 0200 0000 0400 0000 4300 0000 7320  ..........C...s 
+-00002440: 0000 0074 007c 0072 0a7c 006e 0474 016a  ...t.|.r.|.n.t.j
+-00002450: 0274 016a 0364 018d 027d 0174 047c 0183  .t.j.d...}.t.|..
+-00002460: 0153 0029 0261 2201 0000 4c69 7374 7320  .S.).a"...Lists 
+-00002470: 7375 6974 6162 6c65 2064 6570 6c6f 796d  suitable deploym
+-00002480: 656e 7420 7461 7267 6574 7320 666f 7220  ent targets for 
+-00002490: 7468 6520 7072 6f6a 6563 7420 6173 736f  the project asso
+-000024a0: 6369 6174 6564 2077 6974 6820 636f 6e66  ciated with conf
+-000024b0: 6967 7572 6564 206f 7220 7072 6f76 6964  igured or provid
+-000024c0: 6564 2061 7069 206b 6579 2e0a 0a20 2020  ed api key...   
+-000024d0: 2041 7267 733a 0a20 2020 2020 2020 2061   Args:.        a
+-000024e0: 7069 5f6b 6579 2028 7374 722c 206f 7074  pi_key (str, opt
+-000024f0: 696f 6e61 6c29 3a20 5468 6520 4150 4920  ional): The API 
+-00002500: 6b65 7920 666f 7220 616e 2045 6467 6520  key for an Edge 
+-00002510: 496d 7075 6c73 6520 7072 6f6a 6563 742e  Impulse project.
+-00002520: 2054 6869 7320 6361 6e20 616c 736f 2062   This can also b
+-00002530: 6520 7365 7420 7669 6120 7468 6520 6d6f  e set via the mo
+-00002540: 6475 6c65 2d6c 6576 656c 2076 6172 6961  dule-level varia
+-00002550: 626c 6520 6065 6467 6569 6d70 756c 7365  ble `edgeimpulse
+-00002560: 2e41 5049 5f4b 4559 602c 206f 7220 7468  .API_KEY`, or th
+-00002570: 6520 656e 7620 7661 7220 6045 495f 4150  e env var `EI_AP
+-00002580: 495f 4b45 5960 2e0a 2020 2020 722e 0000  I_KEY`..    r...
+-00002590: 0029 0572 1200 0000 7247 0000 0072 4800  .).r....rG...rH.
+-000025a0: 0000 7249 0000 0072 1500 0000 2902 722c  ..rI...r....).r,
+-000025b0: 0000 0072 3200 0000 7274 0000 0072 7400  ...r2...rt...rt.
+-000025c0: 0000 7275 0000 00da 176c 6973 745f 6465  ..ru.....list_de
+-000025d0: 706c 6f79 6d65 6e74 5f74 6172 6765 7473  ployment_targets
+-000025e0: 0c01 0000 730a 0000 0000 0602 010c 0104  ....s...........
+-000025f0: fe06 0472 7600 0000 2901 722d 0000 0063  ...rv...).r-...c
+-00002600: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+-00002610: 0200 0000 4300 0000 730e 0000 0064 0164  ....C...s....d.d
+-00002620: 0284 0074 0044 0083 0153 0029 037a 4c4c  ...t.D...S.).zLL
+-00002630: 6973 7473 2061 6c6c 2074 6865 2065 6e67  ists all the eng
+-00002640: 696e 6573 2074 6861 7420 6361 6e20 6265  ines that can be
+-00002650: 2070 6173 7365 6420 746f 2060 6465 706c   passed to `depl
+-00002660: 6f79 2829 6027 7320 6065 6e67 696e 6560  oy()`'s `engine`
+-00002670: 2070 6172 616d 6574 6572 2e63 0100 0000   parameter.c....
+-00002680: 0000 0000 0000 0000 0200 0000 0300 0000  ................
+-00002690: 5300 0000 7312 0000 0067 007c 005d 0a7d  S...s....g.|.].}
+-000026a0: 017c 016a 0091 0271 0453 0072 7400 0000  .|.j...q.S.rt...
+-000026b0: a901 da05 7661 6c75 6529 02da 022e 3072  ....value)....0r
+-000026c0: 6d00 0000 7274 0000 0072 7400 0000 7275  m...rt...rt...ru
+-000026d0: 0000 00da 0a3c 6c69 7374 636f 6d70 3e1b  .....<listcomp>.
+-000026e0: 0100 0073 0400 0000 0600 0200 7a20 6c69  ...s........z li
+-000026f0: 7374 5f65 6e67 696e 6573 2e3c 6c6f 6361  st_engines.<loca
+-00002700: 6c73 3e2e 3c6c 6973 7463 6f6d 703e 721d  ls>.<listcomp>r.
+-00002710: 0000 0072 7400 0000 7274 0000 0072 7400  ...rt...rt...rt.
+-00002720: 0000 7275 0000 0072 4600 0000 1901 0000  ..ru...rF.......
+-00002730: 7302 0000 0000 0272 4600 0000 6300 0000  s......rF...c...
+-00002740: 0000 0000 0000 0000 0000 0000 0002 0000  ................
+-00002750: 0043 0000 0073 0e00 0000 6401 6402 8400  .C...s....d.d...
+-00002760: 7400 4400 8301 5300 2903 7a58 4c69 7374  t.D...S.).zXList
+-00002770: 7320 616c 6c20 7468 6520 6d6f 6465 6c20  s all the model 
+-00002780: 7479 7065 7320 7468 6174 2063 616e 2070  types that can p
+-00002790: 6173 7365 6420 746f 2060 6465 706c 6f79  assed to `deploy
+-000027a0: 2829 6027 7320 6064 6570 6c6f 795f 6d6f  ()`'s `deploy_mo
+-000027b0: 6465 6c5f 7479 7065 6020 7061 7261 6d65  del_type` parame
+-000027c0: 7465 722e 6301 0000 0000 0000 0000 0000  ter.c...........
+-000027d0: 0002 0000 0003 0000 0053 0000 0073 1200  .........S...s..
+-000027e0: 0000 6700 7c00 5d0a 7d01 7c01 6a00 9102  ..g.|.].}.|.j...
+-000027f0: 7104 5300 7274 0000 0072 7700 0000 2902  q.S.rt...rw...).
+-00002800: 7279 0000 00da 0174 7274 0000 0072 7400  ry.....trt...rt.
+-00002810: 0000 7275 0000 0072 7a00 0000 2001 0000  ..ru...rz... ...
+-00002820: 7304 0000 0006 0002 007a 246c 6973 745f  s........z$list_
+-00002830: 6d6f 6465 6c5f 7479 7065 732e 3c6c 6f63  model_types.<loc
+-00002840: 616c 733e 2e3c 6c69 7374 636f 6d70 3e72  als>.<listcomp>r
+-00002850: 1f00 0000 7274 0000 0072 7400 0000 7274  ....rt...rt...rt
+-00002860: 0000 0072 7500 0000 7245 0000 001e 0100  ...ru...rE......
+-00002870: 0073 0200 0000 0002 7245 0000 0072 3600  .s......rE...r6.
+-00002880: 0000 6303 0000 0000 0000 0000 0000 0003  ..c.............
+-00002890: 0000 0006 0000 0043 0000 0073 a800 0000  .......C...s....
+-000028a0: 7c00 6400 6b09 7228 7c00 7c02 6b07 7228  |.d.k.r(|.|.k.r(
+-000028b0: 7400 6401 7c00 9b00 6402 7401 7c02 8301  t.d.|...d.t.|...
+-000028c0: 9b00 9d04 8301 8201 7c01 6400 6b08 7272  ........|.d.k.rr
+-000028d0: 7c00 6400 6b08 72a4 7402 a003 6403 a101  |.d.k.r.t...d...
+-000028e0: 0100 6404 7c02 6b06 7250 6404 7d00 71a4  ..d.|.k.rPd.}.q.
+-000028f0: 6405 7c02 6b06 725e 6405 7d00 71a4 7400  d.|.k.r^d.}.q.t.
+-00002900: 6406 7401 7c02 8301 9b00 9d02 8301 8201  d.t.|...........
+-00002910: 6e32 7c00 6400 6b08 72a4 7402 a003 6407  n2|.d.k.r.t...d.
+-00002920: a101 0100 6405 7c02 6b06 7292 6405 7d00  ....d.|.k.r.d.}.
+-00002930: 6e12 7400 6408 7401 7c02 8301 9b00 9d02  n.t.d.t.|.......
+-00002940: 8301 8201 7c00 5300 2909 4e7a 2559 6f75  ....|.S.).Nz%You
+-00002950: 2073 7065 6369 6669 6564 2061 2064 6570   specified a dep
+-00002960: 6c6f 795f 6d6f 6465 6c5f 7479 7065 206f  loy_model_type o
+-00002970: 6620 7a2f 2c20 6275 7420 666f 7220 7468  f z/, but for th
+-00002980: 6973 206d 6f64 656c 206f 6e6c 7920 7468  is model only th
+-00002990: 6573 6520 6172 6520 6176 6169 6c61 626c  ese are availabl
+-000029a0: 653a 0a7a 6e42 6f74 6820 7265 7072 6573  e:.znBoth repres
+-000029b0: 656e 7461 7469 7665 5f64 6174 615f 666f  entative_data_fo
+-000029c0: 725f 7175 616e 7469 7a61 7469 6f6e 2026  r_quantization &
+-000029d0: 2064 6570 6c6f 795f 6d6f 6465 6c5f 7479   deploy_model_ty
+-000029e0: 7065 2061 7265 204e 6f6e 6520 736f 2073  pe are None so s
+-000029f0: 6574 7469 6e67 2064 6570 6c6f 795f 6d6f  etting deploy_mo
+-00002a00: 6465 6c5f 7479 7065 2074 6f20 666c 6f61  del_type to floa
+-00002a10: 7433 32da 0766 6c6f 6174 3332 da04 696e  t32..float32..in
+-00002a20: 7438 7a7f 596f 7520 6469 6420 6e6f 7420  t8z.You did not 
+-00002a30: 7370 6563 6966 7920 6120 6465 706c 6f79  specify a deploy
+-00002a40: 5f6d 6f64 656c 5f74 7970 6520 616e 6420  _model_type and 
+-00002a50: 7765 2077 6572 6520 756e 6162 6c65 2074  we were unable t
+-00002a60: 6f20 6465 7465 726d 696e 6520 6974 2061  o determine it a
+-00002a70: 7574 6f6d 6174 6963 616c 6c79 2e20 4163  utomatically. Ac
+-00002a80: 6365 7074 6162 6c65 7661 6c75 6573 2066  ceptablevalues f
+-00002a90: 6f72 2074 6869 7320 6d6f 6465 6c20 6172  or this model ar
+-00002aa0: 653a 0a7a 7342 6f74 6820 7265 7072 6573  e:.zsBoth repres
+-00002ab0: 656e 7461 7469 7665 5f64 6174 615f 666f  entative_data_fo
+-00002ac0: 725f 7175 616e 7469 7a61 7469 6f6e 2070  r_quantization p
+-00002ad0: 726f 7669 6465 6420 2620 6465 706c 6f79  rovided & deploy
+-00002ae0: 5f6d 6f64 656c 5f74 7970 6520 6973 204e  _model_type is N
+-00002af0: 6f6e 6520 736f 2073 6574 7469 6e67 2064  one so setting d
+-00002b00: 6570 6c6f 795f 6d6f 6465 6c5f 7479 7065  eploy_model_type
+-00002b10: 2074 6f20 696e 7438 7a9b 596f 7520 7072   to int8z.You pr
+-00002b20: 6f76 6964 6564 2072 6570 7265 7365 6e74  ovided represent
+-00002b30: 6174 6976 655f 6461 7461 5f66 6f72 5f71  ative_data_for_q
+-00002b40: 7561 6e74 697a 6174 696f 6e2c 2077 6869  uantization, whi
+-00002b50: 6368 2069 6d70 6c69 6573 2061 6e20 696e  ch implies an in
+-00002b60: 7438 2064 6570 6c6f 795f 6d6f 6465 6c5f  t8 deploy_model_
+-00002b70: 7479 7065 2c20 6275 7420 666f 7220 7468  type, but for th
+-00002b80: 6973 206d 6f64 656c 2069 6e74 3820 6973  is model int8 is
+-00002b90: 206e 6f74 2061 7661 696c 6162 6c65 2e20   not available. 
+-00002ba0: 4176 6169 6c61 626c 6520 7479 7065 7320  Available types 
+-00002bb0: 6172 653a 0a29 0472 0f00 0000 7250 0000  are:.).r....rP..
+-00002bc0: 0072 4e00 0000 725a 0000 0072 3600 0000  .rN...rZ...r6...
+-00002bd0: 7274 0000 0072 7400 0000 7275 0000 0072  rt...rt...ru...r
+-00002be0: 5100 0000 2301 0000 7334 0000 0000 0510  Q...#...s4......
+-00002bf0: 0102 0112 ff04 0808 0108 0104 0102 ff04  ................
+-00002c00: 0608 0106 0208 0106 0202 010c ff06 0708  ................
+-00002c10: 0104 0102 ff04 0508 0106 0202 010c ff04  ................
+-00002c20: 0772 5100 0000 7238 0000 0063 0200 0000  .rQ...r8...c....
+-00002c30: 0000 0000 0000 0000 0400 0000 0700 0000  ................
+-00002c40: 4300 0000 7320 0100 0074 007c 0083 0174  C...s ...t.|...t
+-00002c50: 016b 0372 9874 027c 0183 0164 016b 0472  .k.r.t.|...d.k.r
+-00002c60: 3474 0364 0274 007c 0083 019b 0064 0374  4t.d.t.|.....d.t
+-00002c70: 027c 0183 019b 009d 0483 0182 0174 027c  .|...........t.|
+-00002c80: 0164 0419 006a 0483 0164 056b 0372 6874  .d...j...d.k.rht
+-00002c90: 0364 0274 007c 0083 019b 0064 0674 027c  .d.t.|.....d.t.|
+-00002ca0: 0164 0419 006a 0483 019b 009d 0483 0182  .d...j..........
+-00002cb0: 0174 007c 0083 0174 056b 0272 987c 0164  .t.|...t.k.r.|.d
+-00002cc0: 0419 006a 0464 0119 007d 027c 0264 016b  ...j.d...}.|.d.k
+-00002cd0: 0472 9874 0364 077c 029b 009d 0283 0182  .r.t.d.|........
+-00002ce0: 0174 007c 0083 0174 066b 0290 0172 1c7c  .t.|...t.k...r.|
+-00002cf0: 0164 0419 006a 0464 0119 007d 027c 0064  .d...j.d...}.|.d
+-00002d00: 0819 0064 006b 0872 e874 07a0 0864 097c  ...d.k.r.t...d.|
+-00002d10: 029b 009d 02a1 0101 0064 0a64 0b84 0074  .........d.d...t
+-00002d20: 097c 0283 0144 0083 017c 0064 083c 006e  .|...D...|.d.<.n
+-00002d30: 3474 027c 0064 0819 0083 017d 037c 0274  4t.|.d.....}.|.t
+-00002d40: 027c 0064 0819 0083 016b 0390 0172 1c74  .|.d.....k...r.t
+-00002d50: 0a64 0c7c 039b 0064 0d7c 029b 0064 0e9d  .d.|...d.|...d..
+-00002d60: 0583 0182 017c 0053 0029 0f4e e901 0000  .....|.S.).N....
+-00002d70: 007a 0945 7870 6563 7465 6420 7a23 206d  .z.Expected z# m
+-00002d80: 6f64 656c 2074 6f20 6861 7665 2031 206f  odel to have 1 o
+-00002d90: 7574 7075 7420 6275 7420 6974 2068 6173  utput but it has
+-00002da0: 2072 0100 0000 e902 0000 007a 2b20 6d6f   r.........z+ mo
+-00002db0: 6465 6c20 746f 2068 6176 6520 3220 6f75  del to have 2 ou
+-00002dc0: 7470 7574 2064 696d 656e 7369 6f6e 7320  tput dimensions 
+-00002dd0: 6275 7420 6861 7320 7a4b 4578 7065 6374  but has zKExpect
+-00002de0: 6564 2052 6567 7265 7373 696f 6e20 6d6f  ed Regression mo
+-00002df0: 6465 6c20 746f 2068 6176 6520 7363 616c  del to have scal
+-00002e00: 6172 206f 7574 7075 7420 6275 7420 6861  ar output but ha
+-00002e10: 7320 7665 6374 6f72 2077 6974 6820 6c65  s vector with le
+-00002e20: 6e67 7468 20da 066c 6162 656c 737a 2f53  ngth ..labelsz/S
+-00002e30: 6574 7469 6e67 206c 6162 656c 7320 746f  etting labels to
+-00002e40: 206d 6174 6368 206d 6f64 656c 206f 7574   match model out
+-00002e50: 7075 7420 6c65 6e67 7468 206f 6620 6301  put length of c.
+-00002e60: 0000 0000 0000 0000 0000 0002 0000 0004  ................
+-00002e70: 0000 0053 0000 0073 1400 0000 6700 7c00  ...S...s....g.|.
+-00002e80: 5d0c 7d01 7400 7c01 8301 9102 7104 5300  ].}.t.|.....q.S.
+-00002e90: 7274 0000 0029 0172 5000 0000 2902 7279  rt...).rP...).ry
+-00002ea0: 0000 00da 036e 756d 7274 0000 0072 7400  .....numrt...rt.
+-00002eb0: 0000 7275 0000 0072 7a00 0000 7801 0000  ..ru...rz...x...
+-00002ec0: 7304 0000 0006 0002 007a 2a5f 6465 7465  s........z*_dete
+-00002ed0: 726d 696e 655f 6f75 7470 7574 5f74 7970  rmine_output_typ
+-00002ee0: 652e 3c6c 6f63 616c 733e 2e3c 6c69 7374  e.<locals>.<list
+-00002ef0: 636f 6d70 3e7a 2a59 6f75 2073 7065 6369  comp>z*You speci
+-00002f00: 6669 6564 2061 2043 6c61 7373 6966 6963  fied a Classific
+-00002f10: 6174 696f 6e20 6d6f 6465 6c20 7769 7468  ation model with
+-00002f20: 207a 1a20 6c61 6265 6c73 2062 7574 2074   z. labels but t
+-00002f30: 6865 206d 6f64 656c 2068 6173 207a 0820  he model has z. 
+-00002f40: 6c61 6265 6c73 2e29 0b72 3d00 0000 7209  labels.).r=...r.
+-00002f50: 0000 0072 5c00 0000 7211 0000 00da 0573  ...r\...r......s
+-00002f60: 6861 7065 7208 0000 0072 0700 0000 724e  haper....r....rN
+-00002f70: 0000 0072 5a00 0000 da05 7261 6e67 6572  ...rZ.....ranger
+-00002f80: 0f00 0000 2904 7225 0000 0072 3900 0000  ....).r%...r9...
+-00002f90: 5a0e 6f75 7470 7574 5f6e 6575 726f 6e73  Z.output_neurons
+-00002fa0: 5a10 6578 7065 6374 6564 5f6e 6575 726f  Z.expected_neuro
+-00002fb0: 6e73 7274 0000 0072 7400 0000 7275 0000  nsrt...rt...ru..
+-00002fc0: 0072 5200 0000 5901 0000 7338 0000 0000  .rR...Y...s8....
+-00002fd0: 050c 010c 0102 0116 ff04 0412 0102 011c  ................
+-00002fe0: ff04 040c 010e 0108 0102 0108 ff04 060e  ................
+-00002ff0: 010e 010c 0104 0108 ff04 0318 020c 0112  ................
+-00003000: 0102 0110 ff04 0672 5200 0000 2907 4e4e  .......rR...).NN
+-00003010: 4e72 2200 0000 7223 0000 004e 4e29 014e  Nr"...r#...NN).N
+-00003020: 2938 724e 0000 0072 5f00 0000 7262 0000  )8rN...r_...rb..
+-00003030: 0072 4a00 0000 da07 7061 7468 6c69 6272  .rJ.....pathlibr
+-00003040: 0200 0000 da06 7479 7069 6e67 7203 0000  ......typingr...
+-00003050: 0072 0400 0000 7205 0000 0072 0600 0000  .r....r....r....
+-00003060: 7247 0000 0072 5500 0000 5a1d 6564 6765  rG...rU...Z.edge
+-00003070: 696d 7075 6c73 652e 6d6f 6465 6c2e 6f75  impulse.model.ou
+-00003080: 7470 7574 5f74 7970 6572 0700 0000 7208  tput_typer....r.
+-00003090: 0000 0072 0900 0000 5a1c 6564 6765 696d  ...r....Z.edgeim
+-000030a0: 7075 6c73 652e 6d6f 6465 6c2e 696e 7075  pulse.model.inpu
+-000030b0: 745f 7479 7065 720a 0000 0072 0b00 0000  t_typer....r....
+-000030c0: 720c 0000 00da 1665 6467 6569 6d70 756c  r......edgeimpul
+-000030d0: 7365 2e65 7863 6570 7469 6f6e 7372 0d00  se.exceptionsr..
+-000030e0: 0000 720e 0000 0072 0f00 0000 7210 0000  ..r....r....r...
+-000030f0: 0072 1100 0000 da10 6564 6765 696d 7075  .r......edgeimpu
+-00003100: 6c73 652e 7574 696c 7212 0000 0072 1300  lse.utilr....r..
+-00003110: 0000 7214 0000 0072 1500 0000 7216 0000  ..r....r....r...
+-00003120: 0072 1700 0000 da0f 6564 6765 696d 7075  .r......edgeimpu
+-00003130: 6c73 655f 6170 6972 1800 0000 7219 0000  lse_apir....r...
+-00003140: 0072 1a00 0000 da34 6564 6765 696d 7075  .r.....4edgeimpu
+-00003150: 6c73 655f 6170 692e 6d6f 6465 6c73 2e73  lse_api.models.s
+-00003160: 6176 655f 7072 6574 7261 696e 6564 5f6d  ave_pretrained_m
+-00003170: 6f64 656c 5f72 6571 7565 7374 721b 0000  odel_requestr...
+-00003180: 00da 3465 6467 6569 6d70 756c 7365 5f61  ..4edgeimpulse_a
+-00003190: 7069 2e6d 6f64 656c 732e 6275 696c 645f  pi.models.build_
+-000031a0: 6f6e 5f64 6576 6963 655f 6d6f 6465 6c5f  on_device_model_
+-000031b0: 7265 7175 6573 7472 1c00 0000 da2f 6564  requestr...../ed
+-000031c0: 6765 696d 7075 6c73 655f 6170 692e 6d6f  geimpulse_api.mo
+-000031d0: 6465 6c73 2e64 6570 6c6f 796d 656e 745f  dels.deployment_
+-000031e0: 7461 7267 6574 5f65 6e67 696e 6572 1e00  target_enginer..
+-000031f0: 0000 da2c 6564 6765 696d 7075 6c73 655f  ...,edgeimpulse_
+-00003200: 6170 692e 6d6f 6465 6c73 2e6b 6572 6173  api.models.keras
+-00003210: 5f6d 6f64 656c 5f74 7970 655f 656e 756d  _model_type_enum
+-00003220: 7220 0000 00da 2e65 6467 6569 6d70 756c  r .....edgeimpul
+-00003230: 7365 5f61 7069 2e6d 6f64 656c 732e 7072  se_api.models.pr
+-00003240: 6574 7261 696e 6564 5f6d 6f64 656c 5f74  etrained_model_t
+-00003250: 656e 736f 7272 2100 0000 7250 0000 00da  ensorr!...rP....
+-00003260: 0562 7974 6573 726b 0000 0072 7600 0000  .bytesrk...rv...
+-00003270: 7246 0000 0072 4500 0000 7251 0000 0072  rF...rE...rQ...r
+-00003280: 5200 0000 7274 0000 0072 7400 0000 7274  R...rt...rt...rt
+-00003290: 0000 0072 7500 0000 da08 3c6d 6f64 756c  ...ru.....<modul
+-000032a0: 653e 0100 0000 7358 0000 0020 010c 0218  e>....sX... ....
+-000032b0: 0208 0108 0214 0514 051c 0820 0814 010c  ........... ....
+-000032c0: 030c 030c 010c 010c 0600 0100 0100 0100  ................
+-000032d0: 0100 0100 0100 f702 010e 010c 0110 0112  ................
+-000032e0: 0106 0102 0102 0106 0106 0102 f60c 7f00  ................
+-000032f0: 5e16 0d0e 050e 0606 0112 0106 fd0c 370c  ^.............7.
+-00003300: 0106 fe                                  ...
++00000900: 2b53 0029 2461 f012 0000 5472 616e 7366  +S.)$a....Transf
++00000910: 6f72 6d73 2061 206d 6163 6869 6e65 206c  orms a machine l
++00000920: 6561 726e 696e 6720 6d6f 6465 6c20 696e  earning model in
++00000930: 746f 2061 206c 6962 7261 7279 2066 6f72  to a library for
++00000940: 2061 6e20 6564 6765 2064 6576 6963 650a   an edge device.
++00000950: 0a20 2020 2054 7261 6e73 666f 726d 7320  .    Transforms 
++00000960: 6120 7472 6169 6e65 6420 6d6f 6465 6c20  a trained model 
++00000970: 696e 746f 2061 206c 6962 7261 7279 2c20  into a library, 
++00000980: 7061 636b 6167 652c 206f 7220 6669 726d  package, or firm
++00000990: 7761 7265 2072 6561 6479 2074 6f20 6465  ware ready to de
++000009a0: 706c 6f79 206f 6e20 616e 2065 6d62 6564  ploy on an embed
++000009b0: 6465 6420 6465 7669 6365 2e20 4361 6e20  ded device. Can 
++000009c0: 6f70 7469 6f6e 616c 6c79 0a20 2020 2061  optionally.    a
++000009d0: 7070 6c79 2070 6f73 742d 7472 6169 6e69  pply post-traini
++000009e0: 6e67 2071 7561 6e74 697a 6174 696f 6e20  ng quantization 
++000009f0: 6966 2061 2072 6570 7265 7365 6e74 6174  if a representat
++00000a00: 6976 6520 6461 7461 2073 616d 706c 6520  ive data sample 
++00000a10: 6973 2075 706c 6f61 6465 642e 0a0a 2020  is uploaded...  
++00000a20: 2020 5375 7070 6f72 7465 6420 6d6f 6465    Supported mode
++00000a30: 6c20 666f 726d 6174 733a 0a20 2020 202a  l formats:.    *
++00000a40: 205b 4b65 7261 7320 4d6f 6465 6c20 696e   [Keras Model in
++00000a50: 7374 616e 6365 5d28 6874 7470 733a 2f2f  stance](https://
++00000a60: 7777 772e 7465 6e73 6f72 666c 6f77 2e6f  www.tensorflow.o
++00000a70: 7267 2f61 7069 5f64 6f63 732f 7079 7468  rg/api_docs/pyth
++00000a80: 6f6e 2f74 662f 6b65 7261 732f 4d6f 6465  on/tf/keras/Mode
++00000a90: 6c29 0a20 2020 202a 205b 5465 6e73 6f72  l).    * [Tensor
++00000aa0: 466c 6f77 2053 6176 6564 4d6f 6465 6c5d  Flow SavedModel]
++00000ab0: 2868 7474 7073 3a2f 2f77 7777 2e74 656e  (https://www.ten
++00000ac0: 736f 7266 6c6f 772e 6f72 672f 6775 6964  sorflow.org/guid
++00000ad0: 652f 7361 7665 645f 6d6f 6465 6c29 2028  e/saved_model) (
++00000ae0: 6173 2070 6174 6820 746f 2064 6972 6563  as path to direc
++00000af0: 746f 7279 206f 7220 602e 7a69 7060 2066  tory or `.zip` f
++00000b00: 696c 6529 0a20 2020 202a 205b 4f4e 4e58  ile).    * [ONNX
++00000b10: 206d 6f64 656c 2066 696c 655d 2868 7474   model file](htt
++00000b20: 7073 3a2f 2f6c 6561 726e 2e6d 6963 726f  ps://learn.micro
++00000b30: 736f 6674 2e63 6f6d 2f65 6e2d 7573 2f77  soft.com/en-us/w
++00000b40: 696e 646f 7773 2f61 692f 7769 6e64 6f77  indows/ai/window
++00000b50: 732d 6d6c 2f67 6574 2d6f 6e6e 782d 6d6f  s-ml/get-onnx-mo
++00000b60: 6465 6c29 2028 6173 2070 6174 6820 746f  del) (as path to
++00000b70: 2060 2e6f 6e6e 7860 2066 696c 6529 0a20   `.onnx` file). 
++00000b80: 2020 202a 205b 5465 6e73 6f72 466c 6f77     * [TensorFlow
++00000b90: 204c 6974 6520 6669 6c65 5d28 6874 7470   Lite file](http
++00000ba0: 733a 2f2f 7777 772e 7465 6e73 6f72 666c  s://www.tensorfl
++00000bb0: 6f77 2e6f 7267 2f6c 6974 652f 6775 6964  ow.org/lite/guid
++00000bc0: 6529 2028 6173 2062 7974 6573 2c20 6f72  e) (as bytes, or
++00000bd0: 2070 6174 6820 746f 2061 6e79 2066 696c   path to any fil
++00000be0: 6520 7468 6174 2069 7320 6e6f 7420 602e  e that is not `.
++00000bf0: 7a69 7060 206f 7220 602e 6f6e 6e78 6029  zip` or `.onnx`)
++00000c00: 0a0a 2020 2020 5265 7072 6573 656e 7461  ..    Representa
++00000c10: 7469 7665 2064 6174 6120 666f 7220 7175  tive data for qu
++00000c20: 616e 7469 7a61 7469 6f6e 3a0a 2020 2020  antization:.    
++00000c30: 2a20 4d75 7374 2062 6520 6120 6e75 6d70  * Must be a nump
++00000c40: 7920 6172 7261 7920 6f72 2060 2e6e 7079  y array or `.npy
++00000c50: 6020 6669 6c65 2e0a 2020 2020 2a20 4561  ` file..    * Ea
++00000c60: 6368 2065 6c65 6d65 6e74 206d 7573 7420  ch element must 
++00000c70: 6861 7665 2074 6865 2073 616d 6520 7368  have the same sh
++00000c80: 6170 6520 6173 2079 6f75 7220 6d6f 6465  ape as your mode
++00000c90: 6c27 7320 696e 7075 742e 0a20 2020 202a  l's input..    *
++00000ca0: 204d 7573 7420 6265 2072 6570 7265 7365   Must be represe
++00000cb0: 6e74 6174 6976 6520 6f66 2074 6865 2072  ntative of the r
++00000cc0: 616e 6765 2028 6d61 7869 6d75 6d20 616e  ange (maximum an
++00000cd0: 6420 6d69 6e69 6d75 6d29 206f 6620 7661  d minimum) of va
++00000ce0: 6c75 6573 2069 6e20 796f 7572 2074 7261  lues in your tra
++00000cf0: 696e 696e 6720 6461 7461 2e0a 0a20 2020  ining data...   
++00000d00: 2041 7267 733a 0a20 2020 2020 2020 206d   Args:.        m
++00000d10: 6f64 656c 2028 556e 696f 6e5b 5061 7468  odel (Union[Path
++00000d20: 2c20 7374 722c 2062 7974 6573 2c20 416e  , str, bytes, An
++00000d30: 795d 293a 2041 206d 6163 6869 6e65 206c  y]): A machine l
++00000d40: 6561 726e 696e 6720 6d6f 6465 6c2c 206f  earning model, o
++00000d50: 7220 7369 6d69 6c61 726c 7920 7265 7072  r similarly repr
++00000d60: 6573 656e 7465 6420 636f 6d70 7574 6174  esented computat
++00000d70: 696f 6e61 6c20 6772 6170 682e 0a20 2020  ional graph..   
++00000d80: 2020 2020 2020 2020 2043 616e 2062 6520           Can be 
++00000d90: 6050 6174 6860 206f 7220 6073 7472 6020  `Path` or `str` 
++00000da0: 6465 6e6f 7469 6e67 2066 696c 6520 7061  denoting file pa
++00000db0: 7468 2c20 5079 7468 6f6e 2060 6279 7465  th, Python `byte
++00000dc0: 7360 2063 6f6e 7461 696e 696e 6720 6120  s` containing a 
++00000dd0: 6d6f 6465 6c2c 206f 7220 6120 4b65 7261  model, or a Kera
++00000de0: 7320 6d6f 6465 6c20 696e 7374 616e 6365  s model instance
++00000df0: 2e0a 2020 2020 2020 2020 6d6f 6465 6c5f  ..        model_
++00000e00: 6f75 7470 7574 5f74 7970 6520 2855 6e69  output_type (Uni
++00000e10: 6f6e 5b43 6c61 7373 6966 6963 6174 696f  on[Classificatio
++00000e20: 6e2c 2052 6567 7265 7373 696f 6e2c 204f  n, Regression, O
++00000e30: 626a 6563 7444 6574 6563 7469 6f6e 5d29  bjectDetection])
++00000e40: 3a20 4465 7363 7269 6265 2079 6f75 7220  : Describe your 
++00000e50: 6d6f 6465 6c27 7320 7479 7065 3a0a 2020  model's type:.  
++00000e60: 2020 2020 2020 2020 2020 436c 6173 7369            Classi
++00000e70: 6669 6361 7469 6f6e 2c20 5265 6772 6573  fication, Regres
++00000e80: 7369 6f6e 2c20 6f72 204f 626a 6563 7444  sion, or ObjectD
++00000e90: 6574 6563 7469 6f6e 2e20 5468 6520 7479  etection. The ty
++00000ea0: 7065 7320 6172 6520 6176 6169 6c61 626c  pes are availabl
++00000eb0: 6520 696e 2074 6865 206d 6f64 756c 6520  e in the module 
++00000ec0: 6065 6467 6569 6d70 756c 7365 2e6d 6f64  `edgeimpulse.mod
++00000ed0: 656c 2e6f 7574 7075 745f 7479 7065 602e  el.output_type`.
++00000ee0: 0a20 2020 2020 2020 206d 6f64 656c 5f69  .        model_i
++00000ef0: 6e70 7574 5f74 7970 6520 2855 6e69 6f6e  nput_type (Union
++00000f00: 5b41 7564 696f 496e 7075 742c 2054 696d  [AudioInput, Tim
++00000f10: 6553 6572 6965 7349 6e70 7574 2c20 4f74  eSeriesInput, Ot
++00000f20: 6865 7249 6e70 7574 5d2c 206f 7074 696f  herInput], optio
++00000f30: 6e61 6c29 3a20 4465 7465 726d 696e 6573  nal): Determines
++00000f40: 2061 6e79 2069 6e70 7574 2070 7265 7072   any input prepr
++00000f50: 6f63 6573 7369 6e67 0a20 2020 2020 2020  ocessing.       
++00000f60: 2020 2020 2028 7769 6e64 6f77 696e 672c       (windowing,
++00000f70: 2064 6f77 6e73 616d 706c 696e 6729 2074   downsampling) t
++00000f80: 6861 7420 7368 6f75 6c64 2062 6520 7065  hat should be pe
++00000f90: 7266 6f72 6d65 6420 6279 2074 6865 2072  rformed by the r
++00000fa0: 6573 756c 7469 6e67 206c 6962 7261 7279  esulting library
++00000fb0: 2e20 5468 6520 7479 7065 7320 6172 6520  . The types are 
++00000fc0: 6176 6169 6c61 626c 650a 2020 2020 2020  available.      
++00000fd0: 2020 2020 2020 696e 2060 6564 6765 696d        in `edgeim
++00000fe0: 7075 6c73 652e 6d6f 6465 6c2e 696e 7075  pulse.model.inpu
++00000ff0: 745f 7479 7065 602e 2054 6865 2064 6566  t_type`. The def
++00001000: 6175 6c74 2069 7320 6e6f 2070 7265 7072  ault is no prepr
++00001010: 6f63 6573 7369 6e67 2e0a 2020 2020 2020  ocessing..      
++00001020: 2020 7265 7072 6573 656e 7461 7469 7665    representative
++00001030: 5f64 6174 615f 666f 725f 7175 616e 7469  _data_for_quanti
++00001040: 7a61 7469 6f6e 3a20 4120 6e75 6d70 7920  zation: A numpy 
++00001050: 7265 7072 6573 656e 7461 7469 7665 2069  representative i
++00001060: 6e70 7574 2064 6174 6173 6574 2e20 4163  nput dataset. Ac
++00001070: 6365 7074 7320 6569 7468 6572 2061 6e20  cepts either an 
++00001080: 696e 206d 656d 6f72 7920 6e75 6d70 790a  in memory numpy.
++00001090: 2020 2020 2020 2020 2020 2020 6172 7261              arra
++000010a0: 7920 6f72 2074 6865 2050 6174 682f 7374  y or the Path/st
++000010b0: 7220 6669 6c65 6e61 6d65 206f 6620 6120  r filename of a 
++000010c0: 6e70 2e73 6176 6520 2e6e 7079 2066 696c  np.save .npy fil
++000010d0: 652e 0a20 2020 2020 2020 2064 6570 6c6f  e..        deplo
++000010e0: 795f 6d6f 6465 6c5f 7479 7065 2028 7374  y_model_type (st
++000010f0: 722c 206f 7074 696f 6e61 6c29 3a20 5573  r, optional): Us
++00001100: 6520 6069 6e74 3860 2074 6f20 7265 6365  e `int8` to rece
++00001110: 6976 6520 616e 2038 2d62 6974 2071 7561  ive an 8-bit qua
++00001120: 6e74 697a 6564 206d 6f64 656c 2c20 6066  ntized model, `f
++00001130: 6c6f 6174 3332 6020 666f 720a 2020 2020  loat32` for.    
++00001140: 2020 2020 2020 2020 6e6f 6e2d 7175 616e          non-quan
++00001150: 7469 7a65 642e 2044 6566 6175 6c74 7320  tized. Defaults 
++00001160: 746f 204e 6f6e 652c 2069 6e20 7768 6963  to None, in whic
++00001170: 6820 6361 7365 2069 7420 7769 6c6c 2062  h case it will b
++00001180: 6563 6f6d 6520 6069 6e74 3860 2069 6620  ecome `int8` if 
++00001190: 7265 7072 6573 656e 7461 7469 7665 5f64  representative_d
++000011a0: 6174 615f 666f 725f 7175 616e 7469 7a61  ata_for_quantiza
++000011b0: 7469 6f6e 2069 6620 7072 6f76 6964 6564  tion if provided
++000011c0: 2061 6e64 2060 666c 6f61 7433 3260 206f   and `float32` o
++000011d0: 7468 6572 7769 7365 2e20 466f 7220 6f74  therwise. For ot
++000011e0: 6865 7220 7661 6c75 6573 2073 6565 2060  her values see `
++000011f0: 6564 6765 696d 7075 6c73 652e 6d6f 6465  edgeimpulse.mode
++00001200: 6c2e 6c69 7374 5f6d 6f64 656c 5f74 7970  l.list_model_typ
++00001210: 6573 2829 602e 0a20 2020 2020 2020 2065  es()`..        e
++00001220: 6e67 696e 6520 2873 7472 2c20 6f70 7469  ngine (str, opti
++00001230: 6f6e 616c 293a 2049 6e66 6572 656e 6365  onal): Inference
++00001240: 2065 6e67 696e 652e 2045 6974 6865 7220   engine. Either 
++00001250: 6074 666c 6974 6560 2028 666f 7220 5465  `tflite` (for Te
++00001260: 6e73 6f72 466c 6f77 204c 6974 6520 666f  nsorFlow Lite fo
++00001270: 7220 4d69 6372 6f63 6f6e 7472 6f6c 6c65  r Microcontrolle
++00001280: 7273 290a 2020 2020 2020 2020 2020 2020  rs).            
++00001290: 6f72 2060 7466 6c69 7465 2d65 6f6e 6020  or `tflite-eon` 
++000012a0: 2866 6f72 2045 4f4e 2043 6f6d 7069 6c65  (for EON Compile
++000012b0: 7229 2074 6f20 6f75 7470 7574 2061 2070  r) to output a p
++000012c0: 6f72 7461 626c 6520 432b 2b20 6c69 6272  ortable C++ libr
++000012d0: 6172 792e 2046 6f72 2061 6c6c 2065 6e67  ary. For all eng
++000012e0: 696e 6573 2c20 6361 6c6c 2060 6564 6765  ines, call `edge
++000012f0: 696d 7075 6c73 652e 6465 706c 6f79 2e6c  impulse.deploy.l
++00001300: 6973 745f 656e 6769 6e65 7328 2960 2e20  ist_engines()`. 
++00001310: 4465 6661 756c 7473 2074 6f20 6074 666c  Defaults to `tfl
++00001320: 6974 6560 2e0a 2020 2020 2020 2020 6465  ite`..        de
++00001330: 706c 6f79 5f74 6172 6765 7420 2873 7472  ploy_target (str
++00001340: 2c20 6f70 7469 6f6e 616c 293a 2054 6172  , optional): Tar
++00001350: 6765 7420 746f 2064 6570 6c6f 7920 746f  get to deploy to
++00001360: 2c20 6465 6661 756c 7469 6e67 2074 6f20  , defaulting to 
++00001370: 6120 706f 7274 6162 6c65 2043 2b2b 206c  a portable C++ l
++00001380: 6962 7261 7279 2073 7569 7461 626c 6520  ibrary suitable 
++00001390: 666f 720a 2020 2020 2020 2020 2020 2020  for.            
++000013a0: 6d6f 7374 2064 6576 6963 6573 2e20 5365  most devices. Se
++000013b0: 6520 6065 6467 6569 6d70 756c 7365 2e6d  e `edgeimpulse.m
++000013c0: 6f64 656c 2e6c 6973 745f 6465 706c 6f79  odel.list_deploy
++000013d0: 6d65 6e74 5f74 6172 6765 7473 2829 6020  ment_targets()` 
++000013e0: 666f 7220 6120 6c69 7374 2e0a 2020 2020  for a list..    
++000013f0: 2020 2020 6f75 7470 7574 5f64 6972 6563      output_direc
++00001400: 746f 7279 2028 7374 722c 206f 7074 696f  tory (str, optio
++00001410: 6e61 6c29 3a20 4469 7265 6374 6f72 7920  nal): Directory 
++00001420: 746f 2077 7269 7465 2064 6570 6c6f 796d  to write deploym
++00001430: 656e 7420 6172 7469 6661 6374 2074 6f2e  ent artifact to.
++00001440: 2046 696c 6520 6e61 6d65 206d 6179 2076   File name may v
++00001450: 6172 7920 6465 7065 6e64 696e 670a 2020  ary depending.  
++00001460: 2020 2020 2020 2020 2020 6f6e 2064 6570            on dep
++00001470: 6c6f 796d 656e 7420 7479 7065 2e20 4465  loyment type. De
++00001480: 6661 756c 7473 2074 6f20 4e6f 6e65 2069  faults to None i
++00001490: 6e20 7768 6963 6820 6361 7365 206d 6f64  n which case mod
++000014a0: 656c 2077 696c 6c20 6e6f 7420 6265 2077  el will not be w
++000014b0: 7269 7474 656e 2074 6f20 6669 6c65 2e0a  ritten to file..
++000014c0: 2020 2020 2020 2020 6170 695f 6b65 7920          api_key 
++000014d0: 2873 7472 2c20 6f70 7469 6f6e 616c 293a  (str, optional):
++000014e0: 2054 6865 2041 5049 206b 6579 2066 6f72   The API key for
++000014f0: 2061 6e20 4564 6765 2049 6d70 756c 7365   an Edge Impulse
++00001500: 2070 726f 6a65 6374 2e20 5468 6973 2063   project. This c
++00001510: 616e 2061 6c73 6f20 6265 2073 6574 2076  an also be set v
++00001520: 6961 2074 6865 206d 6f64 756c 652d 6c65  ia the module-le
++00001530: 7665 6c0a 2020 2020 2020 2020 2020 2020  vel.            
++00001540: 7661 7269 6162 6c65 2060 6564 6765 696d  variable `edgeim
++00001550: 7075 6c73 652e 4150 495f 4b45 5960 2c20  pulse.API_KEY`, 
++00001560: 6f72 2074 6865 2065 6e76 2076 6172 2060  or the env var `
++00001570: 4549 5f41 5049 5f4b 4559 602e 0a20 2020  EI_API_KEY`..   
++00001580: 200a 2020 2020 5265 7475 726e 733a 0a20   .    Returns:. 
++00001590: 2020 2020 2020 2062 7974 6573 3a20 4269         bytes: Bi
++000015a0: 6e61 7279 2072 6570 7265 7365 6e74 6174  nary representat
++000015b0: 696f 6e20 6f66 2064 6570 6c6f 796d 656e  ion of deploymen
++000015c0: 7420 6f75 7470 7574 2e0a 0a20 2020 2052  t output...    R
++000015d0: 6169 7365 733a 0a20 2020 2020 2020 2049  aises:.        I
++000015e0: 6e76 616c 6964 4175 7468 5479 7065 4578  nvalidAuthTypeEx
++000015f0: 6365 7074 696f 6e3a 2049 6e63 6f72 7265  ception: Incorre
++00001600: 6374 2061 7574 6865 6e74 6963 6174 696f  ct authenticatio
++00001610: 6e20 7479 7065 2077 6173 2070 726f 7669  n type was provi
++00001620: 6465 642e 0a20 2020 2020 2020 2049 6e76  ded..        Inv
++00001630: 616c 6964 4465 706c 6f79 5061 7261 6d65  alidDeployParame
++00001640: 7465 7245 7863 6570 7469 6f6e 3a20 556e  terException: Un
++00001650: 6163 6365 7074 6162 6c65 2070 6172 616d  acceptable param
++00001660: 6574 6572 2067 6976 656e 2074 6f20 6465  eter given to de
++00001670: 706c 6f79 2066 756e 6374 696f 6e2e 0a20  ploy function.. 
++00001680: 2020 2020 2020 2049 6e76 616c 6964 456e         InvalidEn
++00001690: 6769 6e65 4578 6365 7074 696f 6e3a 2055  gineException: U
++000016a0: 6e61 6363 6570 7461 626c 6520 656e 6769  nacceptable engi
++000016b0: 6e65 2066 6f72 2074 6869 7320 7461 7267  ne for this targ
++000016c0: 6574 2e0a 2020 2020 2020 2020 496e 7661  et..        Inva
++000016d0: 6c69 6454 6172 6765 7445 7863 6570 7469  lidTargetExcepti
++000016e0: 6f6e 3a20 556e 6163 6365 7074 6162 6c65  on: Unacceptable
++000016f0: 2064 6570 6c6f 795f 7461 7267 6574 2066   deploy_target f
++00001700: 6f72 2074 6869 7320 7072 6f6a 6563 742e  or this project.
++00001710: 0a20 2020 2020 2020 2046 696c 654e 6f74  .        FileNot
++00001720: 466f 756e 6445 7272 6f72 3a20 4d6f 6465  FoundError: Mode
++00001730: 6c20 6669 6c65 2063 6f75 6c64 206e 6f74  l file could not
++00001740: 2062 6520 6c6f 6164 6564 2e0a 2020 2020   be loaded..    
++00001750: 2020 2020 4578 6365 7074 696f 6e0a 0a20      Exception.. 
++00001760: 2020 2045 7861 6d70 6c65 733a 0a0a 2020     Examples:..  
++00001770: 2020 2020 2020 2e2e 2063 6f64 652d 626c        .. code-bl
++00001780: 6f63 6b3a 3a20 7079 7468 6f6e 0a0a 2020  ock:: python..  
++00001790: 2020 2020 2020 2020 2020 2320 5475 726e            # Turn
++000017a0: 2061 204b 6572 6173 206d 6f64 656c 2069   a Keras model i
++000017b0: 6e74 6f20 6120 432b 2b20 6c69 6272 6172  nto a C++ librar
++000017c0: 7920 616e 6420 7772 6974 6520 746f 2064  y and write to d
++000017d0: 6973 6b0a 2020 2020 2020 2020 2020 2020  isk.            
++000017e0: 6569 2e6d 6f64 656c 2e64 6570 6c6f 7928  ei.model.deploy(
++000017f0: 6d6f 6465 6c3d 6b65 7261 735f 6d6f 6465  model=keras_mode
++00001800: 6c2c 0a20 2020 2020 2020 2020 2020 2020  l,.             
++00001810: 2020 2020 2020 2020 2020 2020 2020 206d                 m
++00001820: 6f64 656c 5f6f 7574 7075 745f 7479 7065  odel_output_type
++00001830: 3d65 692e 6d6f 6465 6c2e 6f75 7470 7574  =ei.model.output
++00001840: 5f74 7970 652e 436c 6173 7369 6669 6361  _type.Classifica
++00001850: 7469 6f6e 2829 2c0a 2020 2020 2020 2020  tion(),.        
++00001860: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001870: 2020 2020 6f75 7470 7574 5f64 6972 6563      output_direc
++00001880: 746f 7279 3d22 2e22 290a 0a20 2020 2020  tory=".")..     
++00001890: 2020 2020 2020 2023 2043 6f6e 7665 7274         # Convert
++000018a0: 2076 6172 696f 7573 2074 7970 6573 206f   various types o
++000018b0: 6620 7365 7269 616c 697a 6564 206d 6f64  f serialized mod
++000018c0: 656c 733a 0a20 2020 2020 2020 2020 2020  els:.           
++000018d0: 2065 692e 6d6f 6465 6c2e 6465 706c 6f79   ei.model.deploy
++000018e0: 286d 6f64 656c 3d22 6865 6172 745f 7261  (model="heart_ra
++000018f0: 7465 2e6f 6e6e 7822 2c20 2320 4f4e 4e58  te.onnx", # ONNX
++00001900: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
++00001910: 2020 2020 2020 2020 2020 2020 206d 6f64               mod
++00001920: 656c 5f6f 7574 7075 745f 7479 7065 3d65  el_output_type=e
++00001930: 692e 6d6f 6465 6c2e 6f75 7470 7574 5f74  i.model.output_t
++00001940: 7970 652e 5265 6772 6573 7369 6f6e 2829  ype.Regression()
++00001950: 290a 2020 2020 2020 2020 2020 2020 6569  ).            ei
++00001960: 2e6d 6f64 656c 2e64 6570 6c6f 7928 6d6f  .model.deploy(mo
++00001970: 6465 6c3d 2268 6561 7274 5f72 6174 6522  del="heart_rate"
++00001980: 2c20 2320 5465 6e73 6f72 466c 6f77 2053  , # TensorFlow S
++00001990: 6176 6564 4d6f 6465 6c20 2863 616e 2061  avedModel (can a
++000019a0: 6c73 6f20 6265 2061 207a 6970 290a 2020  lso be a zip).  
++000019b0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++000019c0: 2020 2020 2020 2020 2020 6d6f 6465 6c5f            model_
++000019d0: 6f75 7470 7574 5f74 7970 653d 6569 2e6d  output_type=ei.m
++000019e0: 6f64 656c 2e6f 7574 7075 745f 7479 7065  odel.output_type
++000019f0: 2e52 6567 7265 7373 696f 6e28 2929 0a20  .Regression()). 
++00001a00: 2020 2020 2020 2020 2020 2065 692e 6d6f             ei.mo
++00001a10: 6465 6c2e 6465 706c 6f79 286d 6f64 656c  del.deploy(model
++00001a20: 3d22 6865 6172 745f 7261 7465 2e6c 6974  ="heart_rate.lit
++00001a30: 6522 2c20 2320 5465 6e73 6f72 466c 6f77  e", # TensorFlow
++00001a40: 204c 6974 650a 2020 2020 2020 2020 2020   Lite.          
++00001a50: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001a60: 2020 6d6f 6465 6c5f 6f75 7470 7574 5f74    model_output_t
++00001a70: 7970 653d 6569 2e6d 6f64 656c 2e6f 7574  ype=ei.model.out
++00001a80: 7075 745f 7479 7065 2e52 6567 7265 7373  put_type.Regress
++00001a90: 696f 6e28 2929 0a0a 2020 2020 2020 2020  ion())..        
++00001aa0: 2020 2020 2320 5175 616e 7469 7a65 2061      # Quantize a
++00001ab0: 206d 6f64 656c 2074 6f20 696e 7438 2064   model to int8 d
++00001ac0: 7572 696e 6720 6465 706c 6f79 6d65 6e74  uring deployment
++00001ad0: 2062 7920 7061 7373 696e 6720 6120 6e75   by passing a nu
++00001ae0: 6d70 7920 6172 7261 7920 6f66 2064 6174  mpy array of dat
++00001af0: 610a 2020 2020 2020 2020 2020 2020 6569  a.            ei
++00001b00: 2e6d 6f64 656c 2e64 6570 6c6f 7928 6d6f  .model.deploy(mo
++00001b10: 6465 6c3d 6b65 7261 735f 6d6f 6465 6c2c  del=keras_model,
++00001b20: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
++00001b30: 2020 2020 2020 2020 2020 2020 2072 6570               rep
++00001b40: 7265 7365 6e74 6174 6976 655f 6461 7461  resentative_data
++00001b50: 5f66 6f72 5f71 7561 6e74 697a 6174 696f  _for_quantizatio
++00001b60: 6e3d 785f 7465 7374 2c0a 2020 2020 2020  n=x_test,.      
++00001b70: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001b80: 2020 2020 2020 6d6f 6465 6c5f 6f75 7470        model_outp
++00001b90: 7574 5f74 7970 653d 6569 2e6d 6f64 656c  ut_type=ei.model
++00001ba0: 2e6f 7574 7075 745f 7479 7065 2e43 6c61  .output_type.Cla
++00001bb0: 7373 6966 6963 6174 696f 6e28 292c 0a20  ssification(),. 
++00001bc0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001bd0: 2020 2020 2020 2020 2020 206f 7574 7075             outpu
++00001be0: 745f 6469 7265 6374 6f72 793d 222e 2229  t_directory=".")
++00001bf0: 0a20 2020 200a 2020 2020 4e7a 3964 6570  .    .    Nz9dep
++00001c00: 6c6f 795f 6d6f 6465 6c5f 7479 7065 206d  loy_model_type m
++00001c10: 7573 7420 6265 204e 6f6e 652c 206f 7220  ust be None, or 
++00001c20: 6f6e 6520 6f66 2074 6865 2066 6f6c 6c6f  one of the follo
++00001c30: 7769 6e67 3a0a 7ac2 0a20 4966 204e 6f6e  wing:.z.. If Non
++00001c40: 6520 616e 6420 7265 7072 6573 656e 7461  e and representa
++00001c50: 7469 7665 5f64 6174 615f 666f 725f 7175  tive_data_for_qu
++00001c60: 616e 7469 7a61 7469 6f6e 2069 7320 7370  antization is sp
++00001c70: 6563 6966 6965 642c 2074 6865 6e20 696e  ecified, then in
++00001c80: 7438 2077 696c 6c20 6265 2075 7365 642c  t8 will be used,
++00001c90: 206f 7468 6572 7769 7365 2066 6c6f 6174   otherwise float
++00001ca0: 3332 2069 7320 6173 7375 6d65 642e 0a46  32 is assumed..F
++00001cb0: 6f72 2061 206c 6973 7420 6f66 2076 616c  or a list of val
++00001cc0: 6964 206d 6f64 656c 2074 7970 6573 2075  id model types u
++00001cd0: 7365 2060 6564 6765 696d 7075 6c73 652e  se `edgeimpulse.
++00001ce0: 6d6f 6465 6c2e 6c69 7374 5f6d 6f64 656c  model.list_model
++00001cf0: 5f74 7970 6573 2829 602e 7a08 456e 6769  _types()`.z.Engi
++00001d00: 6e65 2027 7a31 2720 6973 206e 6f74 2076  ne 'z1' is not v
++00001d10: 616c 6964 2e20 4974 206d 7573 7420 6265  alid. It must be
++00001d20: 206f 6e65 206f 6620 7468 6520 666f 6c6c   one of the foll
++00001d30: 6f77 696e 673a 0aa9 02da 036b 6579 5a04  owing:.....keyZ.
++00001d40: 686f 7374 2905 da07 7465 6d70 6469 72da  host)...tempdir.
++00001d50: 0663 6c69 656e 74da 0a70 726f 6a65 6374  .client..project
++00001d60: 5f69 6472 2400 0000 5a13 7265 7072 6573  _idr$...Z.repres
++00001d70: 656e 7461 7469 7665 5f64 6174 6129 0172  entative_data).r
++00001d80: 3200 0000 7a37 6765 745f 7072 6574 7261  2...z7get_pretra
++00001d90: 696e 6564 5f6d 6f64 656c 5f69 6e66 6f20  ined_model_info 
++00001da0: 6469 6420 6e6f 7420 7265 7475 726e 206d  did not return m
++00001db0: 6f64 656c 2064 6574 6169 6c73 2e7a 2045  odel details.z E
++00001dc0: 7863 6570 7469 6f6e 2066 6574 6368 696e  xception fetchin
++00001dd0: 6720 6d6f 6465 6c20 696e 666f 3a20 5bfa  g model info: [.
++00001de0: 015d a903 7228 0000 0072 2700 0000 da15  .]..r(...r'.....
++00001df0: 6176 6169 6c61 626c 655f 6d6f 6465 6c5f  available_model_
++00001e00: 7479 7065 73a9 0272 2500 0000 da07 6f75  types..r%.....ou
++00001e10: 7470 7574 7329 02da 0569 6e70 7574 7224  tputs)...inputr$
++00001e20: 0000 0029 0272 3200 0000 5a1d 7361 7665  ...).r2...Z.save
++00001e30: 5f70 7265 7472 6169 6e65 645f 6d6f 6465  _pretrained_mode
++00001e40: 6c5f 7265 7175 6573 747a 3445 7863 6570  l_requestz4Excep
++00001e50: 7469 6f6e 2063 616c 6c69 6e67 2073 6176  tion calling sav
++00001e60: 655f 7072 6574 7261 696e 6564 5f6d 6f64  e_pretrained_mod
++00001e70: 656c 5f70 6172 616d 6574 6572 7320 5b29  el_parameters [)
++00001e80: 0272 2900 0000 5a09 6d6f 6465 6c54 7970  .r)...Z.modelTyp
++00001e90: 657a 3656 616c 6964 6174 696f 6e20 6572  ez6Validation er
++00001ea0: 726f 7220 666f 7220 4275 696c 644f 6e44  ror for BuildOnD
++00001eb0: 6576 6963 654d 6f64 656c 5265 7175 6573  eviceModelReques
++00001ec0: 740a 656e 6769 6e65 0a29 0372 3200 0000  t.engine.).r2...
++00001ed0: da04 7479 7065 5a1d 6275 696c 645f 6f6e  ..typeZ.build_on
++00001ee0: 5f64 6576 6963 655f 6d6f 6465 6c5f 7265  _device_model_re
++00001ef0: 7175 6573 747a 1e45 7863 6570 7469 6f6e  questz.Exception
++00001f00: 2073 7461 7274 696e 6720 6275 696c 6420   starting build 
++00001f10: 6a6f 6220 5b29 035a 0b6a 6f62 735f 636c  job [).Z.jobs_cl
++00001f20: 6965 6e74 7232 0000 00da 066a 6f62 5f69  ientr2.....job_i
++00001f30: 6446 2905 7232 0000 0072 3900 0000 7229  dF).r2...r9...r)
++00001f40: 0000 005a 0a6d 6f64 656c 5f74 7970 655a  ...Z.model_typeZ
++00001f50: 105f 7072 656c 6f61 645f 636f 6e74 656e  ._preload_conten
++00001f60: 747a 0e44 6570 6c6f 796d 656e 7420 6973  tz.Deployment is
++00001f70: 207a 0620 6279 7465 737a 1e45 7863 6570   z. bytesz.Excep
++00001f80: 7469 6f6e 2064 6f77 6e6c 6f61 6469 6e67  tion downloading
++00001f90: 206f 7574 7075 7420 5b7a 1343 6f6e 7465   output [z.Conte
++00001fa0: 6e74 2d44 6973 706f 7369 7469 6f6e 7a10  nt-Dispositionz.
++00001fb0: 6669 6c65 6e61 6d65 5c2a 3f3d 282e 2b29  filename\*?=(.+)
++00001fc0: 7201 0000 007a 0775 7466 2d38 2727 da00  r....z.utf-8''..
++00001fd0: 7a0f 5772 6974 696e 6720 6f75 7420 746f  z.Writing out to
++00001fe0: 20da 0277 627a 1c45 7863 6570 7469 6f6e   ..wbz.Exception
++00001ff0: 2073 6176 696e 6720 6f75 7470 7574 2074   saving output t
++00002000: 6f20 277a 0327 205b 2937 720c 0000 00da  o 'z.' [)7r.....
++00002010: 106c 6973 745f 6d6f 6465 6c5f 7479 7065  .list_model_type
++00002020: 7372 0f00 0000 da0c 6c69 7374 5f65 6e67  sr......list_eng
++00002030: 696e 6573 720e 0000 0072 1200 0000 da0b  inesr....r......
++00002040: 6564 6765 696d 7075 6c73 65da 0741 5049  edgeimpulse..API
++00002050: 5f4b 4559 da0c 4150 495f 454e 4450 4f49  _KEY..API_ENDPOI
++00002060: 4e54 7214 0000 00da 0874 656d 7066 696c  NTr......tempfil
++00002070: 655a 1254 656d 706f 7261 7279 4469 7265  eZ.TemporaryDire
++00002080: 6374 6f72 7972 1600 0000 721a 0000 0072  ctoryr....r....r
++00002090: 1800 0000 7219 0000 005a 1967 6574 5f70  ....r....Z.get_p
++000020a0: 7265 7472 6169 6e65 645f 6d6f 6465 6c5f  retrained_model_
++000020b0: 696e 666f 7217 0000 0072 3500 0000 7224  infor....r5...r$
++000020c0: 0000 0072 1000 0000 7237 0000 00da 0945  ...r....r7.....E
++000020d0: 7863 6570 7469 6f6e da07 6c6f 6767 696e  xception..loggin
++000020e0: 67da 0564 6562 7567 da03 7374 72da 165f  g..debug..str.._
++000020f0: 6465 7465 726d 696e 655f 6465 706c 6f79  determine_deploy
++00002100: 5f74 7970 65da 165f 6465 7465 726d 696e  _type.._determin
++00002110: 655f 6f75 7470 7574 5f74 7970 6572 1b00  e_output_typer..
++00002120: 0000 5a09 6672 6f6d 5f64 6963 745a 2073  ..Z.from_dictZ s
++00002130: 6176 655f 7072 6574 7261 696e 6564 5f6d  ave_pretrained_m
++00002140: 6f64 656c 5f70 6172 616d 6574 6572 7372  odel_parametersr
++00002150: 1500 0000 720d 0000 0072 1c00 0000 da08  ....r....r......
++00002160: 7079 6461 6e74 6963 5a0e 6572 726f 725f  pydanticZ.error_
++00002170: 7772 6170 7065 7273 5a0f 5661 6c69 6461  wrappersZ.Valida
++00002180: 7469 6f6e 4572 726f 725a 1962 7569 6c64  tionErrorZ.build
++00002190: 5f6f 6e5f 6465 7669 6365 5f6d 6f64 656c  _on_device_model
++000021a0: 5f6a 6f62 da02 6964 7213 0000 00da 0469  _job..idr......i
++000021b0: 6e66 6f5a 0e64 6f77 6e6c 6f61 645f 6275  nfoZ.download_bu
++000021c0: 696c 64da 036c 656e da04 6461 7461 5a07  ild..len..dataZ.
++000021d0: 6865 6164 6572 73da 0272 65da 0766 696e  headers..re..fin
++000021e0: 6461 6c6c da07 7265 706c 6163 65da 026f  dall..replace..o
++000021f0: 73da 0470 6174 68da 046a 6f69 6eda 0665  s..path..join..e
++00002200: 7869 7374 73da 086d 616b 6564 6972 73da  xists..makedirs.
++00002210: 046f 7065 6eda 0577 7269 7465 291c 7224  .open..write).r$
++00002220: 0000 0072 2500 0000 7226 0000 0072 2700  ...r%...r&...r'.
++00002230: 0000 7228 0000 0072 2900 0000 722a 0000  ..r(...r)...r*..
++00002240: 0072 2b00 0000 722c 0000 0072 3100 0000  .r+...r,...r1...
++00002250: 7232 0000 0072 3000 0000 5a05 6c65 6172  r2...r0...Z.lear
++00002260: 6e5a 046a 6f62 73da 0664 6570 6c6f 795a  nZ.jobs..deployZ
++00002270: 0872 6573 706f 6e73 6572 3500 0000 7237  .responser5...r7
++00002280: 0000 00da 0165 da01 725a 0c74 6172 6765  .....e..rZ.targe
++00002290: 745f 6e61 6d65 735a 0772 6571 7565 7374  t_namesZ.request
++000022a0: 723a 0000 005a 0c6a 6f62 5f72 6573 706f  r:...Z.job_respo
++000022b0: 6e73 65da 0164 5a0f 6f75 7470 7574 5f66  nse..dZ.output_f
++000022c0: 696c 656e 616d 655a 0b6f 7574 7075 745f  ilenameZ.output_
++000022d0: 7061 7468 da01 66a9 0072 5d00 0000 fa1f  path..f..r].....
++000022e0: 2e2f 6564 6765 696d 7075 6c73 652f 6d65  ./edgeimpulse/me
++000022f0: 7468 6f64 732f 6465 706c 6f79 2e70 7972  thods/deploy.pyr
++00002300: 5800 0000 2f00 0000 73e2 0000 0000 5408  X.../...s.....T.
++00002310: 0106 0212 0102 010c ff04 080a 0102 0110  ................
++00002320: ff04 0502 010c 0104 fe06 0508 040a 0102  ................
++00002330: 0102 0102 0102 0102 0102 fb10 0808 0108  ................
++00002340: 0108 0202 010c 0108 0106 010a 0102 0102  ................
++00002350: ff04 030c 0112 0116 0116 0202 0102 0102  ................
++00002360: 0102 fd06 0602 0102 0002 ff06 0402 0104  ................
++00002370: 0108 ff04 0304 0102 0002 ff06 030c 0112  ................
++00002380: 0116 0116 020c 010a 010a 0202 0104 0108  ................
++00002390: ff08 0316 010e 0108 0116 0202 0104 0102  ................
++000023a0: 0102 0102 fd06 0508 010a 0112 0116 0116  ................
++000023b0: 0202 0102 0102 0102 fd06 050a 0202 0104  ................
++000023c0: 0102 0102 0102 0102 0102 fb06 071c 0112  ................
++000023d0: 0116 0116 040a 010a 0118 010e 0102 010e  ................
++000023e0: 010a 0110 010c 011a 0112 011c 0116 0272  ...............r
++000023f0: 5800 0000 7a09 4c69 7374 5b73 7472 5d29  X...z.List[str])
++00002400: 0272 2c00 0000 722d 0000 0063 0100 0000  .r,...r-...c....
++00002410: 0000 0000 0000 0000 0200 0000 0400 0000  ................
++00002420: 4300 0000 7320 0000 0074 007c 0072 0a7c  C...s ...t.|.r.|
++00002430: 006e 0474 016a 0274 016a 0364 018d 027d  .n.t.j.t.j.d...}
++00002440: 0174 047c 0183 0153 0029 0261 7801 0000  .t.|...S.).ax...
++00002450: 4c69 7374 7320 7375 6974 6162 6c65 2064  Lists suitable d
++00002460: 6570 6c6f 796d 656e 7420 7461 7267 6574  eployment target
++00002470: 7320 666f 7220 7468 6520 7072 6f6a 6563  s for the projec
++00002480: 7420 6173 736f 6369 6174 6564 2077 6974  t associated wit
++00002490: 6820 636f 6e66 6967 7572 6564 206f 7220  h configured or 
++000024a0: 7072 6f76 6964 6564 2061 7069 206b 6579  provided api key
++000024b0: 2e0a 0a20 2020 2041 7267 733a 0a20 2020  ...    Args:.   
++000024c0: 2020 2020 2061 7069 5f6b 6579 2028 7374       api_key (st
++000024d0: 722c 206f 7074 696f 6e61 6c29 3a20 5468  r, optional): Th
++000024e0: 6520 4150 4920 6b65 7920 666f 7220 616e  e API key for an
++000024f0: 2045 6467 6520 496d 7075 6c73 6520 7072   Edge Impulse pr
++00002500: 6f6a 6563 742e 200a 2020 2020 2020 2020  oject. .        
++00002510: 2020 2020 5468 6973 2063 616e 2061 6c73      This can als
++00002520: 6f20 6265 2073 6574 2076 6961 2074 6865  o be set via the
++00002530: 206d 6f64 756c 652d 6c65 7665 6c20 7661   module-level va
++00002540: 7269 6162 6c65 2060 6564 6765 696d 7075  riable `edgeimpu
++00002550: 6c73 652e 4150 495f 4b45 5960 2c20 6f72  lse.API_KEY`, or
++00002560: 2074 6865 2065 6e76 2076 6172 2060 4549   the env var `EI
++00002570: 5f41 5049 5f4b 4559 602e 0a0a 2020 2020  _API_KEY`...    
++00002580: 5265 7475 726e 733a 0a20 2020 2020 2020  Returns:.       
++00002590: 204c 6973 745b 7374 725d 3a20 4c69 7374   List[str]: List
++000025a0: 206f 6620 6465 706c 6f79 2074 6172 6765   of deploy targe
++000025b0: 7473 2066 6f72 2070 726f 6a65 6374 0a20  ts for project. 
++000025c0: 2020 200a 2020 2020 722e 0000 0029 0572     .    r....).r
++000025d0: 1200 0000 723f 0000 0072 4000 0000 7241  ....r?...r@...rA
++000025e0: 0000 0072 1500 0000 2902 722c 0000 0072  ...r....).r,...r
++000025f0: 3100 0000 725d 0000 0072 5d00 0000 725e  1...r]...r]...r^
++00002600: 0000 00da 176c 6973 745f 6465 706c 6f79  .....list_deploy
++00002610: 6d65 6e74 5f74 6172 6765 7473 0e01 0000  ment_targets....
++00002620: 730a 0000 0000 0b02 010c 0104 fe06 0472  s..............r
++00002630: 5f00 0000 2901 722d 0000 0063 0000 0000  _...).r-...c....
++00002640: 0000 0000 0000 0000 0000 0000 0200 0000  ................
++00002650: 4300 0000 730e 0000 0064 0164 0284 0074  C...s....d.d...t
++00002660: 0044 0083 0153 0029 037a 874c 6973 7473  .D...S.).z.Lists
++00002670: 2061 6c6c 2074 6865 2065 6e67 696e 6573   all the engines
++00002680: 2074 6861 7420 6361 6e20 6265 2070 6173   that can be pas
++00002690: 7365 6420 746f 2060 6465 706c 6f79 2829  sed to `deploy()
++000026a0: 6027 7320 6065 6e67 696e 6560 2070 6172  `'s `engine` par
++000026b0: 616d 6574 6572 2e0a 0a20 2020 2052 6574  ameter...    Ret
++000026c0: 7572 6e73 3a0a 2020 2020 2020 2020 4c69  urns:.        Li
++000026d0: 7374 5b73 7472 5d3a 204c 6973 7420 6f66  st[str]: List of
++000026e0: 2065 6e67 696e 6573 0a20 2020 200a 2020   engines.    .  
++000026f0: 2020 6301 0000 0000 0000 0000 0000 0002    c.............
++00002700: 0000 0003 0000 0053 0000 0073 1200 0000  .......S...s....
++00002710: 6700 7c00 5d0a 7d01 7c01 6a00 9102 7104  g.|.].}.|.j...q.
++00002720: 5300 725d 0000 00a9 01da 0576 616c 7565  S.r].......value
++00002730: 2902 da02 2e30 7259 0000 0072 5d00 0000  )....0rY...r]...
++00002740: 725d 0000 0072 5e00 0000 da0a 3c6c 6973  r]...r^.....<lis
++00002750: 7463 6f6d 703e 2701 0000 7304 0000 0006  tcomp>'...s.....
++00002760: 0002 007a 206c 6973 745f 656e 6769 6e65  ...z list_engine
++00002770: 732e 3c6c 6f63 616c 733e 2e3c 6c69 7374  s.<locals>.<list
++00002780: 636f 6d70 3e72 1d00 0000 725d 0000 0072  comp>r....r]...r
++00002790: 5d00 0000 725d 0000 0072 5e00 0000 723e  ]...r]...r^...r>
++000027a0: 0000 0020 0100 0073 0200 0000 0007 723e  ... ...s......r>
++000027b0: 0000 0063 0000 0000 0000 0000 0000 0000  ...c............
++000027c0: 0000 0000 0200 0000 4300 0000 730e 0000  ........C...s...
++000027d0: 0064 0164 0284 0074 0044 0083 0153 0029  .d.d...t.D...S.)
++000027e0: 037a 974c 6973 7473 2061 6c6c 2074 6865  .z.Lists all the
++000027f0: 206d 6f64 656c 2074 7970 6573 2074 6861   model types tha
++00002800: 7420 6361 6e20 7061 7373 6564 2074 6f20  t can passed to 
++00002810: 6064 6570 6c6f 7928 2960 2773 2060 6465  `deploy()`'s `de
++00002820: 706c 6f79 5f6d 6f64 656c 5f74 7970 6560  ploy_model_type`
++00002830: 2070 6172 616d 6574 6572 2e0a 2020 2020   parameter..    
++00002840: 0a20 2020 2052 6574 7572 6e73 3a0a 2020  .    Returns:.  
++00002850: 2020 2020 2020 4c69 7374 5b73 7472 5d3a        List[str]:
++00002860: 204c 6973 7420 6f66 206d 6f64 656c 2074   List of model t
++00002870: 7970 6573 0a0a 2020 2020 6301 0000 0000  ypes..    c.....
++00002880: 0000 0000 0000 0002 0000 0003 0000 0053  ...............S
++00002890: 0000 0073 1200 0000 6700 7c00 5d0a 7d01  ...s....g.|.].}.
++000028a0: 7c01 6a00 9102 7104 5300 725d 0000 0072  |.j...q.S.r]...r
++000028b0: 6000 0000 2902 7262 0000 00da 0174 725d  `...).rb.....tr]
++000028c0: 0000 0072 5d00 0000 725e 0000 0072 6300  ...r]...r^...rc.
++000028d0: 0000 3101 0000 7304 0000 0006 0002 007a  ..1...s........z
++000028e0: 246c 6973 745f 6d6f 6465 6c5f 7479 7065  $list_model_type
++000028f0: 732e 3c6c 6f63 616c 733e 2e3c 6c69 7374  s.<locals>.<list
++00002900: 636f 6d70 3e72 1f00 0000 725d 0000 0072  comp>r....r]...r
++00002910: 5d00 0000 725d 0000 0072 5e00 0000 723d  ]...r]...r^...r=
++00002920: 0000 002a 0100 0073 0200 0000 0007 723d  ...*...s......r=
++00002930: 0000 0072 3400 0000 6303 0000 0000 0000  ...r4...c.......
++00002940: 0000 0000 0003 0000 0006 0000 0043 0000  .............C..
++00002950: 0073 a800 0000 7c00 6400 6b09 7228 7c00  .s....|.d.k.r(|.
++00002960: 7c02 6b07 7228 7400 6401 7c00 9b00 6402  |.k.r(t.d.|...d.
++00002970: 7401 7c02 8301 9b00 9d04 8301 8201 7c01  t.|...........|.
++00002980: 6400 6b08 7272 7c00 6400 6b08 72a4 7402  d.k.rr|.d.k.r.t.
++00002990: a003 6403 a101 0100 6404 7c02 6b06 7250  ..d.....d.|.k.rP
++000029a0: 6404 7d00 71a4 6405 7c02 6b06 725e 6405  d.}.q.d.|.k.r^d.
++000029b0: 7d00 71a4 7400 6406 7401 7c02 8301 9b00  }.q.t.d.t.|.....
++000029c0: 9d02 8301 8201 6e32 7c00 6400 6b08 72a4  ......n2|.d.k.r.
++000029d0: 7402 a003 6407 a101 0100 6405 7c02 6b06  t...d.....d.|.k.
++000029e0: 7292 6405 7d00 6e12 7400 6408 7401 7c02  r.d.}.n.t.d.t.|.
++000029f0: 8301 9b00 9d02 8301 8201 7c00 5300 2909  ..........|.S.).
++00002a00: 4e7a 2559 6f75 2073 7065 6369 6669 6564  Nz%You specified
++00002a10: 2061 2064 6570 6c6f 795f 6d6f 6465 6c5f   a deploy_model_
++00002a20: 7479 7065 206f 6620 7a2f 2c20 6275 7420  type of z/, but 
++00002a30: 666f 7220 7468 6973 206d 6f64 656c 206f  for this model o
++00002a40: 6e6c 7920 7468 6573 6520 6172 6520 6176  nly these are av
++00002a50: 6169 6c61 626c 653a 0a7a 6e42 6f74 6820  ailable:.znBoth 
++00002a60: 7265 7072 6573 656e 7461 7469 7665 5f64  representative_d
++00002a70: 6174 615f 666f 725f 7175 616e 7469 7a61  ata_for_quantiza
++00002a80: 7469 6f6e 2026 2064 6570 6c6f 795f 6d6f  tion & deploy_mo
++00002a90: 6465 6c5f 7479 7065 2061 7265 204e 6f6e  del_type are Non
++00002aa0: 6520 736f 2073 6574 7469 6e67 2064 6570  e so setting dep
++00002ab0: 6c6f 795f 6d6f 6465 6c5f 7479 7065 2074  loy_model_type t
++00002ac0: 6f20 666c 6f61 7433 325a 0766 6c6f 6174  o float32Z.float
++00002ad0: 3332 5a04 696e 7438 7a7f 596f 7520 6469  32Z.int8z.You di
++00002ae0: 6420 6e6f 7420 7370 6563 6966 7920 6120  d not specify a 
++00002af0: 6465 706c 6f79 5f6d 6f64 656c 5f74 7970  deploy_model_typ
++00002b00: 6520 616e 6420 7765 2077 6572 6520 756e  e and we were un
++00002b10: 6162 6c65 2074 6f20 6465 7465 726d 696e  able to determin
++00002b20: 6520 6974 2061 7574 6f6d 6174 6963 616c  e it automatical
++00002b30: 6c79 2e20 4163 6365 7074 6162 6c65 7661  ly. Acceptableva
++00002b40: 6c75 6573 2066 6f72 2074 6869 7320 6d6f  lues for this mo
++00002b50: 6465 6c20 6172 653a 0a7a 7342 6f74 6820  del are:.zsBoth 
++00002b60: 7265 7072 6573 656e 7461 7469 7665 5f64  representative_d
++00002b70: 6174 615f 666f 725f 7175 616e 7469 7a61  ata_for_quantiza
++00002b80: 7469 6f6e 2070 726f 7669 6465 6420 2620  tion provided & 
++00002b90: 6465 706c 6f79 5f6d 6f64 656c 5f74 7970  deploy_model_typ
++00002ba0: 6520 6973 204e 6f6e 6520 736f 2073 6574  e is None so set
++00002bb0: 7469 6e67 2064 6570 6c6f 795f 6d6f 6465  ting deploy_mode
++00002bc0: 6c5f 7479 7065 2074 6f20 696e 7438 7a9b  l_type to int8z.
++00002bd0: 596f 7520 7072 6f76 6964 6564 2072 6570  You provided rep
++00002be0: 7265 7365 6e74 6174 6976 655f 6461 7461  resentative_data
++00002bf0: 5f66 6f72 5f71 7561 6e74 697a 6174 696f  _for_quantizatio
++00002c00: 6e2c 2077 6869 6368 2069 6d70 6c69 6573  n, which implies
++00002c10: 2061 6e20 696e 7438 2064 6570 6c6f 795f   an int8 deploy_
++00002c20: 6d6f 6465 6c5f 7479 7065 2c20 6275 7420  model_type, but 
++00002c30: 666f 7220 7468 6973 206d 6f64 656c 2069  for this model i
++00002c40: 6e74 3820 6973 206e 6f74 2061 7661 696c  nt8 is not avail
++00002c50: 6162 6c65 2e20 4176 6169 6c61 626c 6520  able. Available 
++00002c60: 7479 7065 7320 6172 653a 0a29 0472 0f00  types are:.).r..
++00002c70: 0000 7246 0000 0072 4400 0000 724b 0000  ..rF...rD...rK..
++00002c80: 0072 3400 0000 725d 0000 0072 5d00 0000  .r4...r]...r]...
++00002c90: 725e 0000 0072 4700 0000 3401 0000 7334  r^...rG...4...s4
++00002ca0: 0000 0000 0510 0102 0112 ff04 0808 0108  ................
++00002cb0: 0104 0102 ff04 0608 0106 0208 0106 0202  ................
++00002cc0: 010c ff06 0708 0104 0102 ff04 0508 0106  ................
++00002cd0: 0202 010c ff04 0772 4700 0000 7236 0000  .......rG...r6..
++00002ce0: 0063 0200 0000 0000 0000 0000 0000 0400  .c..............
++00002cf0: 0000 0700 0000 4300 0000 7320 0100 0074  ......C...s ...t
++00002d00: 007c 0083 0174 016b 0372 9874 027c 0183  .|...t.k.r.t.|..
++00002d10: 0164 016b 0472 3474 0364 0274 007c 0083  .d.k.r4t.d.t.|..
++00002d20: 019b 0064 0374 027c 0183 019b 009d 0483  ...d.t.|........
++00002d30: 0182 0174 027c 0164 0419 006a 0483 0164  ...t.|.d...j...d
++00002d40: 056b 0372 6874 0364 0274 007c 0083 019b  .k.rht.d.t.|....
++00002d50: 0064 0674 027c 0164 0419 006a 0483 019b  .d.t.|.d...j....
++00002d60: 009d 0483 0182 0174 007c 0083 0174 056b  .......t.|...t.k
++00002d70: 0272 987c 0164 0419 006a 0464 0119 007d  .r.|.d...j.d...}
++00002d80: 027c 0264 016b 0472 9874 0364 077c 029b  .|.d.k.r.t.d.|..
++00002d90: 009d 0283 0182 0174 007c 0083 0174 066b  .......t.|...t.k
++00002da0: 0290 0172 1c7c 0164 0419 006a 0464 0119  ...r.|.d...j.d..
++00002db0: 007d 027c 0064 0819 0064 006b 0872 e874  .}.|.d...d.k.r.t
++00002dc0: 07a0 0864 097c 029b 009d 02a1 0101 0064  ...d.|.........d
++00002dd0: 0a64 0b84 0074 097c 0283 0144 0083 017c  .d...t.|...D...|
++00002de0: 0064 083c 006e 3474 027c 0064 0819 0083  .d.<.n4t.|.d....
++00002df0: 017d 037c 0274 027c 0064 0819 0083 016b  .}.|.t.|.d.....k
++00002e00: 0390 0172 1c74 0a64 0c7c 039b 0064 0d7c  ...r.t.d.|...d.|
++00002e10: 029b 0064 0e9d 0583 0182 017c 0053 0029  ...d.......|.S.)
++00002e20: 0f4e e901 0000 007a 0945 7870 6563 7465  .N.....z.Expecte
++00002e30: 6420 7a23 206d 6f64 656c 2074 6f20 6861  d z# model to ha
++00002e40: 7665 2031 206f 7574 7075 7420 6275 7420  ve 1 output but 
++00002e50: 6974 2068 6173 2072 0100 0000 e902 0000  it has r........
++00002e60: 007a 2b20 6d6f 6465 6c20 746f 2068 6176  .z+ model to hav
++00002e70: 6520 3220 6f75 7470 7574 2064 696d 656e  e 2 output dimen
++00002e80: 7369 6f6e 7320 6275 7420 6861 7320 7a4b  sions but has zK
++00002e90: 4578 7065 6374 6564 2052 6567 7265 7373  Expected Regress
++00002ea0: 696f 6e20 6d6f 6465 6c20 746f 2068 6176  ion model to hav
++00002eb0: 6520 7363 616c 6172 206f 7574 7075 7420  e scalar output 
++00002ec0: 6275 7420 6861 7320 7665 6374 6f72 2077  but has vector w
++00002ed0: 6974 6820 6c65 6e67 7468 20da 066c 6162  ith length ..lab
++00002ee0: 656c 737a 2f53 6574 7469 6e67 206c 6162  elsz/Setting lab
++00002ef0: 656c 7320 746f 206d 6174 6368 206d 6f64  els to match mod
++00002f00: 656c 206f 7574 7075 7420 6c65 6e67 7468  el output length
++00002f10: 206f 6620 6301 0000 0000 0000 0000 0000   of c...........
++00002f20: 0002 0000 0004 0000 0053 0000 0073 1400  .........S...s..
++00002f30: 0000 6700 7c00 5d0c 7d01 7400 7c01 8301  ..g.|.].}.t.|...
++00002f40: 9102 7104 5300 725d 0000 0029 0172 4600  ..q.S.r]...).rF.
++00002f50: 0000 2902 7262 0000 005a 036e 756d 725d  ..).rb...Z.numr]
++00002f60: 0000 0072 5d00 0000 725e 0000 0072 6300  ...r]...r^...rc.
++00002f70: 0000 8901 0000 7304 0000 0006 0002 007a  ......s........z
++00002f80: 2a5f 6465 7465 726d 696e 655f 6f75 7470  *_determine_outp
++00002f90: 7574 5f74 7970 652e 3c6c 6f63 616c 733e  ut_type.<locals>
++00002fa0: 2e3c 6c69 7374 636f 6d70 3e7a 2a59 6f75  .<listcomp>z*You
++00002fb0: 2073 7065 6369 6669 6564 2061 2043 6c61   specified a Cla
++00002fc0: 7373 6966 6963 6174 696f 6e20 6d6f 6465  ssification mode
++00002fd0: 6c20 7769 7468 207a 1a20 6c61 6265 6c73  l with z. labels
++00002fe0: 2062 7574 2074 6865 206d 6f64 656c 2068   but the model h
++00002ff0: 6173 207a 0820 6c61 6265 6c73 2e29 0b72  as z. labels.).r
++00003000: 3900 0000 7209 0000 0072 4c00 0000 7211  9...r....rL...r.
++00003010: 0000 00da 0573 6861 7065 7208 0000 0072  .....shaper....r
++00003020: 0700 0000 7244 0000 0072 4b00 0000 da05  ....rD...rK.....
++00003030: 7261 6e67 6572 0f00 0000 2904 7225 0000  ranger....).r%..
++00003040: 0072 3700 0000 5a0e 6f75 7470 7574 5f6e  .r7...Z.output_n
++00003050: 6575 726f 6e73 5a10 6578 7065 6374 6564  euronsZ.expected
++00003060: 5f6e 6575 726f 6e73 725d 0000 0072 5d00  _neuronsr]...r].
++00003070: 0000 725e 0000 0072 4800 0000 6a01 0000  ..r^...rH...j...
++00003080: 7338 0000 0000 050c 010c 0102 0116 ff04  s8..............
++00003090: 0412 0102 011c ff04 040c 010e 0108 0102  ................
++000030a0: 0108 ff04 060e 010e 010c 0104 0108 ff04  ................
++000030b0: 0318 020c 0112 0102 0110 ff04 0672 4800  .............rH.
++000030c0: 0000 2907 4e4e 4e72 2200 0000 7223 0000  ..).NNNr"...r#..
++000030d0: 004e 4e29 014e 2938 7244 0000 0072 4e00  .NN).N)8rD...rN.
++000030e0: 0000 7251 0000 0072 4200 0000 da07 7061  ..rQ...rB.....pa
++000030f0: 7468 6c69 6272 0200 0000 da06 7479 7069  thlibr......typi
++00003100: 6e67 7203 0000 0072 0400 0000 7205 0000  ngr....r....r...
++00003110: 0072 0600 0000 723f 0000 0072 4900 0000  .r....r?...rI...
++00003120: 5a1d 6564 6765 696d 7075 6c73 652e 6d6f  Z.edgeimpulse.mo
++00003130: 6465 6c2e 6f75 7470 7574 5f74 7970 6572  del.output_typer
++00003140: 0700 0000 7208 0000 0072 0900 0000 5a1c  ....r....r....Z.
++00003150: 6564 6765 696d 7075 6c73 652e 6d6f 6465  edgeimpulse.mode
++00003160: 6c2e 696e 7075 745f 7479 7065 720a 0000  l.input_typer...
++00003170: 0072 0b00 0000 720c 0000 005a 1665 6467  .r....r....Z.edg
++00003180: 6569 6d70 756c 7365 2e65 7863 6570 7469  eimpulse.excepti
++00003190: 6f6e 7372 0d00 0000 720e 0000 0072 0f00  onsr....r....r..
++000031a0: 0000 7210 0000 0072 1100 0000 5a10 6564  ..r....r....Z.ed
++000031b0: 6765 696d 7075 6c73 652e 7574 696c 7212  geimpulse.utilr.
++000031c0: 0000 0072 1300 0000 7214 0000 0072 1500  ...r....r....r..
++000031d0: 0000 7216 0000 0072 1700 0000 5a0f 6564  ..r....r....Z.ed
++000031e0: 6765 696d 7075 6c73 655f 6170 6972 1800  geimpulse_apir..
++000031f0: 0000 7219 0000 0072 1a00 0000 5a34 6564  ..r....r....Z4ed
++00003200: 6765 696d 7075 6c73 655f 6170 692e 6d6f  geimpulse_api.mo
++00003210: 6465 6c73 2e73 6176 655f 7072 6574 7261  dels.save_pretra
++00003220: 696e 6564 5f6d 6f64 656c 5f72 6571 7565  ined_model_reque
++00003230: 7374 721b 0000 005a 3465 6467 6569 6d70  str....Z4edgeimp
++00003240: 756c 7365 5f61 7069 2e6d 6f64 656c 732e  ulse_api.models.
++00003250: 6275 696c 645f 6f6e 5f64 6576 6963 655f  build_on_device_
++00003260: 6d6f 6465 6c5f 7265 7175 6573 7472 1c00  model_requestr..
++00003270: 0000 5a2f 6564 6765 696d 7075 6c73 655f  ..Z/edgeimpulse_
++00003280: 6170 692e 6d6f 6465 6c73 2e64 6570 6c6f  api.models.deplo
++00003290: 796d 656e 745f 7461 7267 6574 5f65 6e67  yment_target_eng
++000032a0: 696e 6572 1e00 0000 5a2c 6564 6765 696d  iner....Z,edgeim
++000032b0: 7075 6c73 655f 6170 692e 6d6f 6465 6c73  pulse_api.models
++000032c0: 2e6b 6572 6173 5f6d 6f64 656c 5f74 7970  .keras_model_typ
++000032d0: 655f 656e 756d 7220 0000 005a 2e65 6467  e_enumr ...Z.edg
++000032e0: 6569 6d70 756c 7365 5f61 7069 2e6d 6f64  eimpulse_api.mod
++000032f0: 656c 732e 7072 6574 7261 696e 6564 5f6d  els.pretrained_m
++00003300: 6f64 656c 5f74 656e 736f 7272 2100 0000  odel_tensorr!...
++00003310: 7246 0000 00da 0562 7974 6573 7258 0000  rF.....bytesrX..
++00003320: 0072 5f00 0000 723e 0000 0072 3d00 0000  .r_...r>...r=...
++00003330: 7247 0000 0072 4800 0000 725d 0000 0072  rG...rH...r]...r
++00003340: 5d00 0000 725d 0000 0072 5e00 0000 da08  ]...r]...r^.....
++00003350: 3c6d 6f64 756c 653e 0100 0000 7358 0000  <module>....sX..
++00003360: 0020 010c 0218 0208 0108 0214 0514 051c  . ..............
++00003370: 0820 0814 010c 030c 030c 010c 010c 0600  . ..............
++00003380: 0100 0100 0100 0100 0100 0100 f702 010e  ................
++00003390: 010c 0110 0112 0106 0102 0102 0106 0106  ................
++000033a0: 0102 f60c 7f00 6016 120e 0a0e 0b06 0112  ......`.........
++000033b0: 0106 fd0c 370c 0106 fe                   ....7....
+```
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/methods/__pycache__/profile.cpython-38.pyc` & `edgeimpulse-1.0.2/edgeimpulse/methods/__pycache__/profile.cpython-310.pyc`
+
+ * *Format-specific differences are supported for Python .pyc files but no file-specific differences were detected; falling back to a binary diff. file(1) reports: Byte-compiled Python module for CPython 3.8, timestamp-based, .py timestamp: Mon Apr  3 22:33:18 2023 UTC, .py size: 6554 bytes*
+
+ * *Could not decompile bytecode: bad marshal data (unknown type code)*
+
+ * *Files 18% similar despite different names*
+
+```diff
+@@ -1,348 +1,401 @@
+-00000000: 550d 0d0a 0000 0000 2e54 2b64 9a19 0000  U........T+d....
++00000000: 6f0d 0d0a 0000 0000 e90f 3864 b31c 0000  o.........8d....
+ 00000010: e300 0000 0000 0000 0000 0000 0000 0000  ................
+-00000020: 0006 0000 0040 0000 0073 dc00 0000 6400  .....@...s....d.
++00000020: 0009 0000 0040 0000 0073 e800 0000 6400  .....@...s....d.
+ 00000030: 6401 6c00 5a00 6400 6402 6c01 6d02 5a02  d.l.Z.d.d.l.m.Z.
+ 00000040: 0100 6400 6403 6c03 6d04 5a04 6d05 5a05  ..d.d.l.m.Z.m.Z.
+ 00000050: 6d06 5a06 6d07 5a07 0100 6400 6404 6c08  m.Z.m.Z...d.d.l.
+ 00000060: 6d09 5a09 0100 6400 6401 6c0a 5a0a 6400  m.Z...d.d.l.Z.d.
+ 00000070: 6401 6c0b 5a0b 6400 6405 6c0c 6d0d 5a0d  d.l.Z.d.d.l.m.Z.
+ 00000080: 0100 6400 6406 6c0e 6d0f 5a0f 6d10 5a10  ..d.d.l.m.Z.m.Z.
+ 00000090: 6d11 5a11 6d12 5a12 6d13 5a13 6d14 5a14  m.Z.m.Z.m.Z.m.Z.
+ 000000a0: 0100 6400 6407 6c15 6d16 5a16 6d17 5a17  ..d.d.l.m.Z.m.Z.
+ 000000b0: 6d18 5a18 0100 4700 6408 6409 8400 6409  m.Z...G.d.d...d.
+-000000c0: 6518 8303 5a19 6411 6504 6502 651a 651b  e...Z.d.e.e.e.e.
+-000000d0: 6506 6604 1900 6505 651a 1900 6505 651a  e.f...e.e...e.e.
+-000000e0: 1900 6519 640a 9c04 640b 640c 8405 5a1c  ..e.d...d.d...Z.
+-000000f0: 6412 6505 651a 1900 640d 640e 9c02 640f  d.e.e...d.d...d.
+-00000100: 6410 8405 5a1d 6401 5300 2913 e900 0000  d...Z.d.S.).....
+-00000110: 004e 2901 da04 5061 7468 2904 da05 556e  .N)...Path)...Un
+-00000120: 696f 6eda 084f 7074 696f 6e61 6cda 0341  ion..Optional..A
+-00000130: 6e79 da04 4c69 7374 2901 da07 7066 6f72  ny..List)...pfor
+-00000140: 6d61 7429 01da 1649 6e76 616c 6964 4465  mat)...InvalidDe
+-00000150: 7669 6365 4578 6365 7074 696f 6e29 06da  viceException)..
+-00000160: 1863 6f6e 6669 6775 7265 5f67 656e 6572  .configure_gener
+-00000170: 6963 5f63 6c69 656e 74da 0470 6f6c 6cda  ic_client..poll.
+-00000180: 1664 6566 6175 6c74 5f70 726f 6a65 6374  .default_project
+-00000190: 5f69 645f 666f 72da 1367 6574 5f70 726f  _id_for..get_pro
+-000001a0: 6669 6c65 5f64 6576 6963 6573 da20 7570  file_devices. up
+-000001b0: 6c6f 6164 5f70 7265 7472 6169 6e65 645f  load_pretrained_
+-000001c0: 6d6f 6465 6c5f 616e 645f 6461 7461 da15  model_and_data..
+-000001d0: 6368 6563 6b5f 7265 7370 6f6e 7365 5f65  check_response_e
+-000001e0: 7272 6f72 7329 03da 074a 6f62 7341 7069  rrors)...JobsApi
+-000001f0: da08 4c65 6172 6e41 7069 da1a 4765 7450  ..LearnApi..GetP
+-00000200: 7265 7472 6169 6e65 644d 6f64 656c 5265  retrainedModelRe
+-00000210: 7370 6f6e 7365 6300 0000 0000 0000 0000  sponsec.........
+-00000220: 0000 0000 0000 0004 0000 0040 0000 0073  ...........@...s
+-00000230: 2c00 0000 6500 5a01 6400 5a02 6401 6402  ,...e.Z.d.Z.d.d.
+-00000240: 9c01 6403 6404 8404 5a03 6504 6505 6405  ..d.d...Z.e.e.d.
+-00000250: 9c01 6406 6407 8404 8301 5a06 6401 5300  ..d.d.....Z.d.S.
+-00000260: 2908 da0f 5072 6f66 696c 6552 6573 706f  )...ProfileRespo
+-00000270: 6e73 654e 2901 da06 7265 7475 726e 6301  nseN)...returnc.
+-00000280: 0000 0000 0000 0000 0000 0002 0000 0007  ................
+-00000290: 0000 0043 0000 0073 f600 0000 6700 7d01  ...C...s....g.}.
+-000002a0: 7c00 6a00 72a4 7c00 6a01 72a4 7c00 6a01  |.j.r.|.j.r.|.j.
+-000002b0: 6a02 72a4 7c00 6a01 6a02 6a03 725e 7c01  j.r.|.j.j.j.r^|.
+-000002c0: a004 6401 a101 0100 7c01 a004 6402 a101  ..d.....|...d...
+-000002d0: 0100 7c01 a004 7405 7c00 6a01 6a02 6a03  ..|...t.|.j.j.j.
+-000002e0: a006 a100 6403 6404 6405 8d03 a101 0100  ....d.d.d.......
+-000002f0: 7c01 a004 6406 a101 0100 7c00 6a01 6a02  |...d.....|.j.j.
+-00000300: 6a07 72a4 7c01 a004 6407 a101 0100 7c01  j.r.|...d.....|.
+-00000310: a004 6408 a101 0100 7c01 a004 7405 7c00  ..d.....|...t.|.
+-00000320: 6a01 6a02 6a07 a006 a100 6403 6404 6405  j.j.j.....d.d.d.
+-00000330: 8d03 a101 0100 7c01 a004 6406 a101 0100  ......|...d.....
+-00000340: 7c00 6a01 72e4 7c00 6a01 6a02 72e4 7c01  |.j.r.|.j.j.r.|.
+-00000350: a004 6409 a101 0100 7c01 a004 640a a101  ..d.....|...d...
+-00000360: 0100 7c01 a004 7405 7c00 6a01 6a02 6a08  ..|...t.|.j.j.j.
+-00000370: a006 a100 6403 6404 6405 8d03 a101 0100  ....d.d.d.......
+-00000380: 7409 6406 a00a 7c01 a101 8301 0100 640b  t.d...|.......d.
+-00000390: 5300 290c 7a2a 5265 7475 726e 7320 6120  S.).z*Returns a 
+-000003a0: 7375 6d6d 6172 7920 6f66 2074 6865 2070  summary of the p
+-000003b0: 726f 6669 6c69 6e67 2072 6573 756c 7473  rofiling results
+-000003c0: 7a1b 5461 7267 6574 2072 6573 756c 7473  z.Target results
+-000003d0: 2066 6f72 2066 6c6f 6174 3332 3a7a 1b3d   for float32:z.=
+-000003e0: 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d  ================
+-000003f0: 3d3d 3d3d 3d3d 3d3d 3d3d e904 0000 0046  ==========.....F
+-00000400: 2902 da06 696e 6465 6e74 da0a 736f 7274  )...indent..sort
+-00000410: 5f64 6963 7473 da01 0a7a 1854 6172 6765  _dicts...z.Targe
+-00000420: 7420 7265 7375 6c74 7320 666f 7220 696e  t results for in
+-00000430: 7438 3a7a 183d 3d3d 3d3d 3d3d 3d3d 3d3d  t8:z.===========
+-00000440: 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d7a 1c50  =============z.P
+-00000450: 6572 666f 726d 616e 6365 206f 6e20 6465  erformance on de
+-00000460: 7669 6365 2074 7970 6573 3a7a 1c3d 3d3d  vice types:z.===
+-00000470: 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d  ================
+-00000480: 3d3d 3d3d 3d3d 3d3d 3d4e 290b 5a18 7370  =========N).Z.sp
+-00000490: 6563 6966 6963 5f64 6576 6963 655f 7365  ecific_device_se
+-000004a0: 6c65 6374 6564 da05 6d6f 6465 6c5a 0c70  lected..modelZ.p
+-000004b0: 726f 6669 6c65 5f69 6e66 6f5a 0766 6c6f  rofile_infoZ.flo
+-000004c0: 6174 3332 da06 6170 7065 6e64 7207 0000  at32..appendr...
+-000004d0: 00da 0774 6f5f 6469 6374 da04 696e 7438  ...to_dict..int8
+-000004e0: da05 7461 626c 65da 0570 7269 6e74 da04  ..table..print..
+-000004f0: 6a6f 696e 2902 da04 7365 6c66 da06 6f75  join)...self..ou
+-00000500: 7470 7574 a900 7221 0000 00fa 492f 5573  tput..r!....I/Us
+-00000510: 6572 732f 6461 6e73 6974 752f 636f 6465  ers/dansitu/code
+-00000520: 2f65 6467 6569 6d70 756c 7365 2f70 7974  /edgeimpulse/pyt
+-00000530: 686f 6e2d 7364 6b2f 6564 6765 696d 7075  hon-sdk/edgeimpu
+-00000540: 6c73 652f 6d65 7468 6f64 732f 7072 6f66  lse/methods/prof
+-00000550: 696c 652e 7079 da07 7375 6d6d 6172 791a  ile.py..summary.
+-00000560: 0000 0073 4600 0000 0002 0401 1401 0a01  ...sF...........
+-00000570: 0a01 0a01 0401 0201 0c01 0201 02fd 04ff  ................
+-00000580: 0407 0a01 0a01 0a01 0a01 0401 0201 0c01  ................
+-00000590: 0201 02fd 04ff 0407 0a01 0e01 0a01 0a01  ................
+-000005a0: 0401 0201 0c00 0200 02ff 04ff 0406 7a17  ..............z.
+-000005b0: 5072 6f66 696c 6552 6573 706f 6e73 652e  ProfileResponse.
+-000005c0: 7375 6d6d 6172 7929 01da 036f 626a 6302  summary)...objc.
+-000005d0: 0000 0000 0000 0000 0000 0002 0000 0003  ................
+-000005e0: 0000 0043 0000 0073 0a00 0000 7c00 6600  ...C...s....|.f.
+-000005f0: 7c01 8e01 5300 2901 7a31 4372 6561 7465  |...S.).z1Create
+-00000600: 2061 6e20 696e 7374 616e 6365 206f 6620   an instance of 
+-00000610: 5072 6f66 696c 6552 6573 706f 6e73 6520  ProfileResponse 
+-00000620: 6672 6f6d 2061 2064 6963 7472 2100 0000  from a dictr!...
+-00000630: 2902 da03 636c 7372 2400 0000 7221 0000  )...clsr$...r!..
+-00000640: 0072 2100 0000 7222 0000 00da 0966 726f  .r!...r".....fro
+-00000650: 6d5f 6469 6374 3f00 0000 7302 0000 0000  m_dict?...s.....
+-00000660: 037a 1950 726f 6669 6c65 5265 7370 6f6e  .z.ProfileRespon
+-00000670: 7365 2e66 726f 6d5f 6469 6374 2907 da08  se.from_dict)...
+-00000680: 5f5f 6e61 6d65 5f5f da0a 5f5f 6d6f 6475  __name__..__modu
+-00000690: 6c65 5f5f da0c 5f5f 7175 616c 6e61 6d65  le__..__qualname
+-000006a0: 5f5f 7223 0000 00da 0b63 6c61 7373 6d65  __r#.....classme
+-000006b0: 7468 6f64 da04 6469 6374 7226 0000 0072  thod..dictr&...r
+-000006c0: 2100 0000 7221 0000 0072 2100 0000 7222  !...r!...r!...r"
+-000006d0: 0000 0072 1200 0000 1900 0000 7306 0000  ...r........s...
+-000006e0: 0008 010e 2502 0172 1200 0000 2904 7218  ....%..r....).r.
+-000006f0: 0000 00da 0664 6576 6963 65da 0761 7069  .....device..api
+-00000700: 5f6b 6579 7213 0000 0063 0300 0000 0000  _keyr....c......
+-00000710: 0000 0000 0000 0e00 0000 0a00 0000 4300  ..............C.
+-00000720: 0000 7368 0100 0074 007c 0272 0a7c 026e  ..sh...t.|.r.|.n
+-00000730: 0474 016a 0274 016a 0364 018d 027d 0374  .t.j.t.j.d...}.t
+-00000740: 047c 0383 017d 0474 057c 0383 017d 0574  .|...}.t.|...}.t
+-00000750: 067c 0383 017d 067c 0172 5074 077c 037c  .|...}.|.rPt.|.|
+-00000760: 0683 027d 077c 017c 076b 0772 5074 087c  ...}.|.|.k.rPt.|
+-00000770: 017c 0783 0282 0174 09a0 0aa1 008f 1a7d  .|.....t.......}
+-00000780: 0874 0b7c 087c 037c 067c 007c 0164 0264  .t.|.|.|.|.|.d.d
+-00000790: 038d 0601 0057 0035 0051 0052 0058 007a  .....W.5.Q.R.X.z
+-000007a0: 1c7c 05a0 0c7c 06a1 017d 0974 0d7c 0983  .|...|...}.t.|..
+-000007b0: 0101 007c 096a 0e7d 0a57 006e 3c04 0074  ...|.j.}.W.n<..t
+-000007c0: 0f6b 0a72 d001 007d 0b01 007a 1e74 10a0  .k.r...}...z.t..
+-000007d0: 1164 0474 127c 0b83 019b 0064 059d 03a1  .d.t.|.....d....
+-000007e0: 0101 007c 0b82 0157 0035 0064 027d 0b7e  ...|...W.5.d.}.~
+-000007f0: 0b58 0059 006e 0258 0074 137c 047c 067c  .X.Y.n.X.t.|.|.|
+-00000800: 0a64 068d 037d 0c7a 167c 05a0 147c 06a1  .d...}.z.|...|..
+-00000810: 017d 0d74 0d7c 0d83 0101 0057 006e 3e04  .}.t.|.....W.n>.
+-00000820: 0074 0f6b 0a90 0172 3401 007d 0b01 007a  .t.k...r4..}...z
+-00000830: 1e74 10a0 1164 0774 127c 0b83 019b 0064  .t...d.t.|.....d
+-00000840: 059d 03a1 0101 007c 0b82 0157 0035 0064  .......|...W.5.d
+-00000850: 027d 0b7e 0b58 0059 006e 0258 0074 15a0  .}.~.X.Y.n.X.t..
+-00000860: 167c 0da0 17a1 00a1 017d 0974 10a0 1864  .|.......}.t...d
+-00000870: 087c 099b 029d 02a1 0101 0074 10a0 1164  .|.........t...d
+-00000880: 087c 099b 029d 02a1 0101 007c 0953 0029  .|.........|.S.)
+-00000890: 0961 7c07 0000 0a20 2020 2020 2020 2050  .a|....        P
+-000008a0: 726f 6669 6c65 7320 7468 6520 7065 7266  rofiles the perf
+-000008b0: 6f72 6d61 6e63 6520 6f66 2061 2074 7261  ormance of a tra
+-000008c0: 696e 6564 206d 6f64 656c 206f 6e20 6120  ined model on a 
+-000008d0: 7261 6e67 6520 6f66 2065 6d62 6564 6465  range of embedde
+-000008e0: 6420 7461 7267 6574 732c 206f 7220 6120  d targets, or a 
+-000008f0: 7370 6563 6966 6963 2064 6576 6963 652e  specific device.
+-00000900: 0a0a 2020 2020 2020 2020 5468 6520 7265  ..        The re
+-00000910: 7370 6f6e 7365 2069 6e63 6c75 6465 7320  sponse includes 
+-00000920: 6573 7469 6d61 7465 7320 6f66 206d 656d  estimates of mem
+-00000930: 6f72 7920 7573 6167 6520 616e 6420 6c61  ory usage and la
+-00000940: 7465 6e63 7920 666f 7220 7468 6520 6d6f  tency for the mo
+-00000950: 6465 6c20 6163 726f 7373 2061 2072 616e  del across a ran
+-00000960: 6765 206f 6620 7461 7267 6574 732c 0a20  ge of targets,. 
+-00000970: 2020 2020 2020 2069 6e63 6c75 6469 6e67         including
+-00000980: 206c 6f77 2d65 6e64 204d 4355 2c20 6869   low-end MCU, hi
+-00000990: 6768 2d65 6e64 204d 4355 2c20 6869 6768  gh-end MCU, high
+-000009a0: 2d65 6e64 204d 4355 2077 6974 6820 6163  -end MCU with ac
+-000009b0: 6365 6c65 7261 746f 722c 206d 6963 726f  celerator, micro
+-000009c0: 7072 6f63 6573 736f 7220 756e 6974 2028  processor unit (
+-000009d0: 4d50 5529 2c0a 2020 2020 2020 2020 616e  MPU),.        an
+-000009e0: 6420 6120 4750 5520 6f72 206e 6575 7261  d a GPU or neura
+-000009f0: 6c20 6e65 7477 6f72 6b20 6163 6365 6c65  l network accele
+-00000a00: 7261 746f 722e 2049 7420 7769 6c6c 2061  rator. It will a
+-00000a10: 6c73 6f20 696e 636c 7564 6520 6465 7461  lso include deta
+-00000a20: 696c 7320 6f66 2061 6e79 2063 6f6e 6469  ils of any condi
+-00000a30: 7469 6f6e 7320 7468 6174 2070 7265 636c  tions that precl
+-00000a40: 7564 650a 2020 2020 2020 2020 6f70 6572  ude.        oper
+-00000a50: 6174 696f 6e20 6f6e 2061 2067 6976 656e  ation on a given
+-00000a60: 2074 7970 6520 6f66 2064 6576 6963 652e   type of device.
+-00000a70: 0a0a 2020 2020 2020 2020 4966 2079 6f75  ..        If you
+-00000a80: 2072 6571 7565 7374 2061 2073 7065 6369   request a speci
+-00000a90: 6669 6320 6064 6576 6963 6560 2c20 7468  fic `device`, th
+-00000aa0: 6520 7265 7375 6c74 7320 7769 6c6c 2061  e results will a
+-00000ab0: 6c73 6f20 696e 636c 7564 6520 6573 7469  lso include esti
+-00000ac0: 6d61 7465 7320 666f 7220 7468 6174 2073  mates for that s
+-00000ad0: 7065 6369 6669 6320 6465 7669 6365 2e0a  pecific device..
+-00000ae0: 2020 2020 2020 2020 4120 6c69 7374 206f          A list o
+-00000af0: 6620 6465 7669 6365 7320 6361 6e20 6265  f devices can be
+-00000b00: 206f 6274 6169 6e65 6420 6672 6f6d 2060   obtained from `
+-00000b10: 6564 6765 696d 7075 6c73 652e 6d6f 6465  edgeimpulse.mode
+-00000b20: 6c2e 6c69 7374 5f70 726f 6669 6c65 5f64  l.list_profile_d
+-00000b30: 6576 6963 6573 2829 602e 0a0a 2020 2020  evices()`...    
+-00000b40: 2020 2020 596f 7520 6361 6e20 6361 6c6c      You can call
+-00000b50: 2060 2e73 756d 6d61 7279 2829 6020 6f6e   `.summary()` on
+-00000b60: 2074 6865 2072 6573 706f 6e73 6520 746f   the response to
+-00000b70: 206f 6274 6169 6e20 6120 6d6f 7265 2072   obtain a more r
+-00000b80: 6561 6461 626c 6520 7665 7273 696f 6e20  eadable version 
+-00000b90: 6f66 2074 6865 206d 6f73 7420 7265 6c65  of the most rele
+-00000ba0: 7661 6e74 0a20 2020 2020 2020 2069 6e66  vant.        inf
+-00000bb0: 6f72 6d61 7469 6f6e 2e0a 0a20 2020 2041  ormation...    A
+-00000bc0: 7267 733a 0a20 2020 2020 2020 206d 6f64  rgs:.        mod
+-00000bd0: 656c 2028 556e 696f 6e5b 5061 7468 2c20  el (Union[Path, 
+-00000be0: 7374 722c 2062 7974 6573 2c20 416e 795d  str, bytes, Any]
+-00000bf0: 293a 2041 206d 6163 6869 6e65 206c 6561  ): A machine lea
+-00000c00: 726e 696e 6720 6d6f 6465 6c2c 206f 7220  rning model, or 
+-00000c10: 7369 6d69 6c61 726c 7920 7265 7072 6573  similarly repres
+-00000c20: 656e 7465 6420 636f 6d70 7574 6174 696f  ented computatio
+-00000c30: 6e61 6c20 6772 6170 682e 0a20 2020 2020  nal graph..     
+-00000c40: 2020 2020 2020 2043 616e 2062 6520 6050         Can be `P
+-00000c50: 6174 6860 206f 7220 6073 7472 6020 6465  ath` or `str` de
+-00000c60: 6e6f 7469 6e67 2066 696c 6520 7061 7468  noting file path
+-00000c70: 2c20 5079 7468 6f6e 2060 6279 7465 7360  , Python `bytes`
+-00000c80: 2063 6f6e 7461 696e 696e 6720 6120 6d6f   containing a mo
+-00000c90: 6465 6c2c 206f 7220 6120 4b65 7261 7320  del, or a Keras 
+-00000ca0: 6d6f 6465 6c20 696e 7374 616e 6365 2e0a  model instance..
+-00000cb0: 2020 2020 2020 2020 6465 7669 6365 2028          device (
+-00000cc0: 4f70 7469 6f6e 616c 5b73 7472 5d2c 206f  Optional[str], o
+-00000cd0: 7074 696f 6e61 6c29 3a20 416e 2065 6d62  ptional): An emb
+-00000ce0: 6564 6465 6420 7072 6f63 6573 736f 7220  edded processor 
+-00000cf0: 666f 7220 7768 6963 6820 746f 2070 726f  for which to pro
+-00000d00: 6669 6c65 2074 6865 206d 6f64 656c 2e0a  file the model..
+-00000d10: 2020 2020 2020 2020 2020 2020 4120 636f              A co
+-00000d20: 6d70 7265 6865 6e73 6976 6520 6c69 7374  mprehensive list
+-00000d30: 2063 616e 2062 6520 6f62 7461 696e 6564   can be obtained
+-00000d40: 2076 6961 2060 6564 6765 696d 7075 6c73   via `edgeimpuls
+-00000d50: 652e 6d6f 6465 6c2e 6c69 7374 5f70 726f  e.model.list_pro
+-00000d60: 6669 6c65 5f64 6576 6963 6573 2829 602e  file_devices()`.
+-00000d70: 0a20 2020 2020 2020 2061 7069 5f6b 6579  .        api_key
+-00000d80: 2028 4f70 7469 6f6e 616c 5b73 7472 5d2c   (Optional[str],
+-00000d90: 206f 7074 696f 6e61 6c29 3a20 5468 6520   optional): The 
+-00000da0: 4150 4920 6b65 7920 666f 7220 616e 2045  API key for an E
+-00000db0: 6467 6520 496d 7075 6c73 6520 7072 6f6a  dge Impulse proj
+-00000dc0: 6563 742e 0a20 2020 2020 2020 2020 2020  ect..           
+-00000dd0: 2054 6869 7320 6361 6e20 616c 736f 2062   This can also b
+-00000de0: 6520 7365 7420 7669 6120 7468 6520 6d6f  e set via the mo
+-00000df0: 6475 6c65 2d6c 6576 656c 2076 6172 6961  dule-level varia
+-00000e00: 626c 6520 6065 6467 6569 6d70 756c 7365  ble `edgeimpulse
+-00000e10: 2e41 5049 5f4b 4559 602c 206f 7220 7468  .API_KEY`, or th
+-00000e20: 6520 656e 7620 7661 7220 6045 495f 4150  e env var `EI_AP
+-00000e30: 495f 4b45 5960 2e0a 0a20 2020 2052 6169  I_KEY`...    Rai
+-00000e40: 7365 733a 0a20 2020 2020 2020 2049 6e76  ses:.        Inv
+-00000e50: 616c 6964 4175 7468 5479 7065 4578 6365  alidAuthTypeExce
+-00000e60: 7074 696f 6e3a 2049 6e63 6f72 7265 6374  ption: Incorrect
+-00000e70: 2061 7574 6865 6e74 6963 6174 696f 6e20   authentication 
+-00000e80: 7479 7065 2077 6173 2070 726f 7669 6465  type was provide
+-00000e90: 642e 0a20 2020 2020 2020 2049 6e76 616c  d..        Inval
+-00000ea0: 6964 4465 7669 6365 4578 6365 7074 696f  idDeviceExceptio
+-00000eb0: 6e3a 2044 6576 6963 6520 6973 206e 6f74  n: Device is not
+-00000ec0: 2076 616c 6964 2e0a 0a20 2020 2052 6574   valid...    Ret
+-00000ed0: 7572 6e73 3a0a 2020 2020 2020 2020 5072  urns:.        Pr
+-00000ee0: 6f66 696c 6552 6573 706f 6e73 653a 2053  ofileResponse: S
+-00000ef0: 7472 7563 7475 7265 2063 6f6e 7461 696e  tructure contain
+-00000f00: 696e 6720 7072 6f66 696c 6520 696e 666f  ing profile info
+-00000f10: 726d 6174 696f 6e2e 0a20 2020 2020 2020  rmation..       
+-00000f20: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000f30: 2020 4120 7375 6263 6c61 7373 206f 6620    A subclass of 
+-00000f40: 6065 6467 6569 6d70 756c 7365 5f61 7069  `edgeimpulse_api
+-00000f50: 2e6d 6f64 656c 732e 6765 745f 7072 6574  .models.get_pret
+-00000f60: 7261 696e 6564 5f6d 6f64 656c 5f72 6573  rained_model_res
+-00000f70: 706f 6e73 6560 2e0a 2020 2020 2020 2020  ponse`..        
+-00000f80: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000f90: 2059 6f75 2063 616e 2063 616c 6c20 6974   You can call it
+-00000fa0: 7320 602e 7375 6d6d 6172 7928 2960 206d  s `.summary()` m
+-00000fb0: 6574 686f 6420 666f 7220 6120 6d6f 7265  ethod for a more
+-00000fc0: 2072 6561 6461 626c 6520 7665 7273 696f   readable versio
+-00000fd0: 6e20 6f66 2074 6865 0a20 2020 2020 2020  n of the.       
+-00000fe0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000ff0: 2020 6d6f 7374 2072 656c 6576 616e 7420    most relevant 
+-00001000: 696e 666f 726d 6174 696f 6e2e 0a0a 2020  information...  
+-00001010: 2020 a902 da03 6b65 79da 0468 6f73 744e    ....key..hostN
+-00001020: 2906 da07 7465 6d70 6469 72da 0663 6c69  )...tempdir..cli
+-00001030: 656e 74da 0a70 726f 6a65 6374 5f69 6472  ent..project_idr
+-00001040: 1800 0000 722c 0000 005a 1372 6570 7265  ....r,...Z.repre
+-00001050: 7365 6e74 6174 6976 655f 6461 7461 7a20  sentative_dataz 
+-00001060: 4578 6365 7074 696f 6e20 7374 6172 7469  Exception starti
+-00001070: 6e67 2070 726f 6669 6c65 206a 6f62 205b  ng profile job [
+-00001080: fa01 5d29 035a 0b6a 6f62 735f 636c 6965  ..]).Z.jobs_clie
+-00001090: 6e74 7233 0000 00da 066a 6f62 5f69 647a  ntr3.....job_idz
+-000010a0: 2845 7863 6570 7469 6f6e 2072 6574 7269  (Exception retri
+-000010b0: 6576 696e 6720 7072 6f66 696c 696e 6720  eving profiling 
+-000010c0: 7265 7375 6c74 7320 5b7a 1370 726f 6669  results [z.profi
+-000010d0: 6c65 5f72 6573 706f 6e73 6520 3d20 2919  le_response = ).
+-000010e0: 7209 0000 00da 0b65 6467 6569 6d70 756c  r......edgeimpul
+-000010f0: 7365 da07 4150 495f 4b45 59da 0c41 5049  se..API_KEY..API
+-00001100: 5f45 4e44 504f 494e 5472 0f00 0000 7210  _ENDPOINTr....r.
+-00001110: 0000 0072 0b00 0000 720c 0000 0072 0800  ...r....r....r..
+-00001120: 0000 da08 7465 6d70 6669 6c65 da12 5465  ....tempfile..Te
+-00001130: 6d70 6f72 6172 7944 6972 6563 746f 7279  mporaryDirectory
+-00001140: 720d 0000 005a 1870 726f 6669 6c65 5f70  r....Z.profile_p
+-00001150: 7265 7472 6169 6e65 645f 6d6f 6465 6c72  retrained_modelr
+-00001160: 0e00 0000 da02 6964 da09 4578 6365 7074  ......id..Except
+-00001170: 696f 6eda 076c 6f67 6769 6e67 da05 6465  ion..logging..de
+-00001180: 6275 67da 0373 7472 720a 0000 005a 1967  bug..strr....Z.g
+-00001190: 6574 5f70 7265 7472 6169 6e65 645f 6d6f  et_pretrained_mo
+-000011a0: 6465 6c5f 696e 666f 7212 0000 0072 2600  del_infor....r&.
+-000011b0: 0000 721a 0000 00da 0469 6e66 6f29 0e72  ..r......info).r
+-000011c0: 1800 0000 722c 0000 0072 2d00 0000 7232  ....r,...r-...r2
+-000011d0: 0000 00da 046a 6f62 735a 056c 6561 726e  .....jobsZ.learn
+-000011e0: 7233 0000 005a 0f70 726f 6669 6c65 5f64  r3...Z.profile_d
+-000011f0: 6576 6963 6573 7231 0000 005a 1070 726f  evicesr1...Z.pro
+-00001200: 6669 6c65 5f72 6573 706f 6e73 6572 3500  file_responser5.
+-00001210: 0000 da01 65da 015f 5a1d 6765 745f 7072  ....e.._Z.get_pr
+-00001220: 6574 7261 696e 6564 5f6d 6f64 656c 5f72  etrained_model_r
+-00001230: 6573 706f 6e73 6572 2100 0000 7221 0000  esponser!...r!..
+-00001240: 0072 2200 0000 da07 7072 6f66 696c 6545  .r".....profileE
+-00001250: 0000 0073 5800 0000 0028 0201 0c01 04fe  ...sX....(......
+-00001260: 0604 0801 0803 0802 0401 0a01 0801 0a04  ................
+-00001270: 0a01 0201 0201 0201 0201 0201 0201 02fa  ................
+-00001280: 1009 0201 0a01 0801 0a01 1001 1601 1602  ................
+-00001290: 0201 0201 0201 02fd 0606 0201 0a01 0c01  ................
+-000012a0: 1201 1601 1602 0401 06ff 0403 1001 1001  ................
+-000012b0: 7244 0000 007a 094c 6973 745b 7374 725d  rD...z.List[str]
+-000012c0: 2902 722d 0000 0072 1300 0000 6301 0000  ).r-...r....c...
+-000012d0: 0000 0000 0000 0000 0002 0000 0004 0000  ................
+-000012e0: 0043 0000 0073 2000 0000 7400 7c00 720a  .C...s ...t.|.r.
+-000012f0: 7c00 6e04 7401 6a02 7401 6a03 6401 8d02  |.n.t.j.t.j.d...
+-00001300: 7d01 7404 7c01 8301 5300 2902 6119 0100  }.t.|...S.).a...
+-00001310: 004c 6973 7473 2070 6f73 7369 626c 6520  .Lists possible 
+-00001320: 7661 6c75 6573 2066 6f72 2074 6865 2060  values for the `
+-00001330: 6465 7669 6365 6020 6669 656c 6420 7768  device` field wh
+-00001340: 656e 2063 616c 6c69 6e67 2060 6564 6765  en calling `edge
+-00001350: 696d 7075 6c73 652e 6d6f 6465 6c2e 7072  impulse.model.pr
+-00001360: 6f66 696c 6528 2960 2e0a 0a20 2020 2041  ofile()`...    A
+-00001370: 7267 733a 0a20 2020 2020 2020 2061 7069  rgs:.        api
+-00001380: 5f6b 6579 2028 7374 722c 206f 7074 696f  _key (str, optio
+-00001390: 6e61 6c29 3a20 5468 6520 4150 4920 6b65  nal): The API ke
+-000013a0: 7920 666f 7220 616e 2045 6467 6520 496d  y for an Edge Im
+-000013b0: 7075 6c73 6520 7072 6f6a 6563 742e 2054  pulse project. T
+-000013c0: 6869 7320 6361 6e20 616c 736f 2062 6520  his can also be 
+-000013d0: 7365 7420 7669 6120 7468 6520 6d6f 6475  set via the modu
+-000013e0: 6c65 2d6c 6576 656c 2076 6172 6961 626c  le-level variabl
+-000013f0: 6520 6065 6467 6569 6d70 756c 7365 2e41  e `edgeimpulse.A
+-00001400: 5049 5f4b 4559 602c 206f 7220 7468 6520  PI_KEY`, or the 
+-00001410: 656e 7620 7661 7220 6045 495f 4150 495f  env var `EI_API_
+-00001420: 4b45 5960 2e0a 2020 2020 722e 0000 0029  KEY`..    r....)
+-00001430: 0572 0900 0000 7236 0000 0072 3700 0000  .r....r6...r7...
+-00001440: 7238 0000 0072 0c00 0000 2902 722d 0000  r8...r....).r-..
+-00001450: 0072 3200 0000 7221 0000 0072 2100 0000  .r2...r!...r!...
+-00001460: 7222 0000 00da 146c 6973 745f 7072 6f66  r".....list_prof
+-00001470: 696c 655f 6465 7669 6365 73a5 0000 0073  ile_devices....s
+-00001480: 0a00 0000 0006 0201 0c01 04fe 0604 7245  ..............rE
+-00001490: 0000 0029 024e 4e29 014e 291e 723d 0000  ...).NN).N).r=..
+-000014a0: 00da 0770 6174 686c 6962 7202 0000 00da  ...pathlibr.....
+-000014b0: 0674 7970 696e 6772 0300 0000 7204 0000  .typingr....r...
+-000014c0: 0072 0500 0000 7206 0000 00da 0670 7072  .r....r......ppr
+-000014d0: 696e 7472 0700 0000 7239 0000 0072 3600  intr....r9...r6.
+-000014e0: 0000 da16 6564 6765 696d 7075 6c73 652e  ....edgeimpulse.
+-000014f0: 6578 6365 7074 696f 6e73 7208 0000 005a  exceptionsr....Z
+-00001500: 1065 6467 6569 6d70 756c 7365 2e75 7469  .edgeimpulse.uti
+-00001510: 6c72 0900 0000 720a 0000 0072 0b00 0000  lr....r....r....
+-00001520: 720c 0000 0072 0d00 0000 720e 0000 005a  r....r....r....Z
+-00001530: 0f65 6467 6569 6d70 756c 7365 5f61 7069  .edgeimpulse_api
+-00001540: 720f 0000 0072 1000 0000 7211 0000 0072  r....r....r....r
+-00001550: 1200 0000 723f 0000 00da 0562 7974 6573  ....r?.....bytes
+-00001560: 7244 0000 0072 4500 0000 7221 0000 0072  rD...rE...r!...r
+-00001570: 2100 0000 7221 0000 0072 2200 0000 da08  !...r!...r".....
+-00001580: 3c6d 6f64 756c 653e 0100 0000 7324 0000  <module>....s$..
+-00001590: 0008 010c 0118 010c 0108 0208 010c 0220  ............... 
+-000015a0: 0814 0710 2e00 0100 fd02 010e 0106 0106  ................
+-000015b0: 0102 fc0c 60                             ....`
++000000c0: 6518 8303 5a19 0901 0901 6413 640a 6504  e...Z.....d.d.e.
++000000d0: 6502 651a 651b 6506 6604 1900 640b 6505  e.e.e.e.f...d.e.
++000000e0: 651a 1900 640c 6505 651a 1900 640d 6519  e...d.e.e...d.e.
++000000f0: 6608 640e 640f 8405 5a1c 6414 640c 6505  f.d.d...Z.d.d.e.
++00000100: 651a 1900 640d 6410 6604 6411 6412 8405  e...d.d.f.d.d...
++00000110: 5a1d 6401 5300 2915 e900 0000 004e 2901  Z.d.S.)......N).
++00000120: da04 5061 7468 2904 da05 556e 696f 6eda  ..Path)...Union.
++00000130: 084f 7074 696f 6e61 6cda 0341 6e79 da04  .Optional..Any..
++00000140: 4c69 7374 2901 da07 7066 6f72 6d61 7429  List)...pformat)
++00000150: 01da 1649 6e76 616c 6964 4465 7669 6365  ...InvalidDevice
++00000160: 4578 6365 7074 696f 6e29 06da 1863 6f6e  Exception)...con
++00000170: 6669 6775 7265 5f67 656e 6572 6963 5f63  figure_generic_c
++00000180: 6c69 656e 74da 0470 6f6c 6cda 1664 6566  lient..poll..def
++00000190: 6175 6c74 5f70 726f 6a65 6374 5f69 645f  ault_project_id_
++000001a0: 666f 72da 1367 6574 5f70 726f 6669 6c65  for..get_profile
++000001b0: 5f64 6576 6963 6573 da20 7570 6c6f 6164  _devices. upload
++000001c0: 5f70 7265 7472 6169 6e65 645f 6d6f 6465  _pretrained_mode
++000001d0: 6c5f 616e 645f 6461 7461 da15 6368 6563  l_and_data..chec
++000001e0: 6b5f 7265 7370 6f6e 7365 5f65 7272 6f72  k_response_error
++000001f0: 7329 03da 074a 6f62 7341 7069 da08 4c65  s)...JobsApi..Le
++00000200: 6172 6e41 7069 da1a 4765 7450 7265 7472  arnApi..GetPretr
++00000210: 6169 6e65 644d 6f64 656c 5265 7370 6f6e  ainedModelRespon
++00000220: 7365 6300 0000 0000 0000 0000 0000 0000  sec.............
++00000230: 0000 0004 0000 0040 0000 0073 2800 0000  .......@...s(...
++00000240: 6500 5a01 6400 5a02 6408 6403 6404 8404  e.Z.d.Z.d.d.d...
++00000250: 5a03 6504 6405 6505 6602 6406 6407 8404  Z.e.d.e.f.d.d...
++00000260: 8301 5a06 6402 5300 2909 da0f 5072 6f66  ..Z.d.S.)...Prof
++00000270: 696c 6552 6573 706f 6e73 65da 0672 6574  ileResponse..ret
++00000280: 7572 6e4e 6301 0000 0000 0000 0000 0000  urnNc...........
++00000290: 0002 0000 0007 0000 0043 0000 0073 f600  .........C...s..
++000002a0: 0000 6700 7d01 7c00 6a00 7252 7c00 6a01  ..g.}.|.j.rR|.j.
++000002b0: 7252 7c00 6a01 6a02 7252 7c00 6a01 6a02  rR|.j.j.rR|.j.j.
++000002c0: 6a03 722f 7c01 a004 6401 a101 0100 7c01  j.r/|...d.....|.
++000002d0: a004 6402 a101 0100 7c01 a004 7405 7c00  ..d.....|...t.|.
++000002e0: 6a01 6a02 6a03 a006 a100 6403 6404 6405  j.j.j.....d.d.d.
++000002f0: 8d03 a101 0100 7c01 a004 6406 a101 0100  ......|...d.....
++00000300: 7c00 6a01 6a02 6a07 7252 7c01 a004 6407  |.j.j.j.rR|...d.
++00000310: a101 0100 7c01 a004 6408 a101 0100 7c01  ....|...d.....|.
++00000320: a004 7405 7c00 6a01 6a02 6a07 a006 a100  ..t.|.j.j.j.....
++00000330: 6403 6404 6405 8d03 a101 0100 7c01 a004  d.d.d.......|...
++00000340: 6406 a101 0100 7c00 6a01 7272 7c00 6a01  d.....|.j.rr|.j.
++00000350: 6a02 7272 7c01 a004 6409 a101 0100 7c01  j.rr|...d.....|.
++00000360: a004 640a a101 0100 7c01 a004 7405 7c00  ..d.....|...t.|.
++00000370: 6a01 6a02 6a08 a006 a100 6403 6404 6405  j.j.j.....d.d.d.
++00000380: 8d03 a101 0100 7409 6406 a00a 7c01 a101  ......t.d...|...
++00000390: 8301 0100 640b 5300 290c 7a2a 5265 7475  ....d.S.).z*Retu
++000003a0: 726e 7320 6120 7375 6d6d 6172 7920 6f66  rns a summary of
++000003b0: 2074 6865 2070 726f 6669 6c69 6e67 2072   the profiling r
++000003c0: 6573 756c 7473 7a1b 5461 7267 6574 2072  esultsz.Target r
++000003d0: 6573 756c 7473 2066 6f72 2066 6c6f 6174  esults for float
++000003e0: 3332 3a7a 1b3d 3d3d 3d3d 3d3d 3d3d 3d3d  32:z.===========
++000003f0: 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d  ================
++00000400: e904 0000 0046 2902 da06 696e 6465 6e74  .....F)...indent
++00000410: da0a 736f 7274 5f64 6963 7473 da01 0a7a  ..sort_dicts...z
++00000420: 1854 6172 6765 7420 7265 7375 6c74 7320  .Target results 
++00000430: 666f 7220 696e 7438 3a7a 183d 3d3d 3d3d  for int8:z.=====
++00000440: 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d  ================
++00000450: 3d3d 3d7a 1c50 6572 666f 726d 616e 6365  ===z.Performance
++00000460: 206f 6e20 6465 7669 6365 2074 7970 6573   on device types
++00000470: 3a7a 1c3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d  :z.=============
++00000480: 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d3d 3d4e  ===============N
++00000490: 290b da18 7370 6563 6966 6963 5f64 6576  )...specific_dev
++000004a0: 6963 655f 7365 6c65 6374 6564 da05 6d6f  ice_selected..mo
++000004b0: 6465 6cda 0c70 726f 6669 6c65 5f69 6e66  del..profile_inf
++000004c0: 6fda 0766 6c6f 6174 3332 da06 6170 7065  o..float32..appe
++000004d0: 6e64 7207 0000 00da 0774 6f5f 6469 6374  ndr......to_dict
++000004e0: da04 696e 7438 da05 7461 626c 65da 0570  ..int8..table..p
++000004f0: 7269 6e74 da04 6a6f 696e 2902 da04 7365  rint..join)...se
++00000500: 6c66 da06 6f75 7470 7574 a900 7224 0000  lf..output..r$..
++00000510: 00fa 552f 5573 6572 732f 656d 696c 6562  ..U/Users/emileb
++00000520: 6f73 6368 2f7a 2f65 6467 6569 6d70 756c  osch/z/edgeimpul
++00000530: 7365 2f65 6467 6569 6d70 756c 7365 2f70  se/edgeimpulse/p
++00000540: 7974 686f 6e2d 7364 6b2f 6564 6765 696d  ython-sdk/edgeim
++00000550: 7075 6c73 652f 6d65 7468 6f64 732f 7072  pulse/methods/pr
++00000560: 6f66 696c 652e 7079 da07 7375 6d6d 6172  ofile.py..summar
++00000570: 791a 0000 0073 4200 0000 0402 1401 0a01  y....sB.........
++00000580: 0a01 0a01 0401 0201 0c01 0201 0201 04fd  ................
++00000590: 04ff 0a07 0a01 0a01 0a01 0401 0201 0c01  ................
++000005a0: 0201 0201 04fd 04ff 0a07 0e01 0a01 0a01  ................
++000005b0: 0401 0201 1001 04ff 04ff 1206 7a17 5072  ............z.Pr
++000005c0: 6f66 696c 6552 6573 706f 6e73 652e 7375  ofileResponse.su
++000005d0: 6d6d 6172 79da 036f 626a 6302 0000 0000  mmary..objc.....
++000005e0: 0000 0000 0000 0002 0000 0004 0000 0043  ...............C
++000005f0: 0000 0073 0e00 0000 7c00 6402 6900 7c01  ...s....|.d.i.|.
++00000600: a401 8e01 5300 2903 7a31 4372 6561 7465  ....S.).z1Create
++00000610: 2061 6e20 696e 7374 616e 6365 206f 6620   an instance of 
++00000620: 5072 6f66 696c 6552 6573 706f 6e73 6520  ProfileResponse 
++00000630: 6672 6f6d 2061 2064 6963 744e 7224 0000  from a dictNr$..
++00000640: 0072 2400 0000 2902 da03 636c 7372 2700  .r$...)...clsr'.
++00000650: 0000 7224 0000 0072 2400 0000 7225 0000  ..r$...r$...r%..
++00000660: 00da 0966 726f 6d5f 6469 6374 3f00 0000  ...from_dict?...
++00000670: 7302 0000 000e 037a 1950 726f 6669 6c65  s......z.Profile
++00000680: 5265 7370 6f6e 7365 2e66 726f 6d5f 6469  Response.from_di
++00000690: 6374 2902 7213 0000 004e 2907 da08 5f5f  ct).r....N)...__
++000006a0: 6e61 6d65 5f5f da0a 5f5f 6d6f 6475 6c65  name__..__module
++000006b0: 5f5f da0c 5f5f 7175 616c 6e61 6d65 5f5f  __..__qualname__
++000006c0: 7226 0000 00da 0b63 6c61 7373 6d65 7468  r&.....classmeth
++000006d0: 6f64 da04 6469 6374 7229 0000 0072 2400  od..dictr)...r$.
++000006e0: 0000 7224 0000 0072 2400 0000 7225 0000  ..r$...r$...r%..
++000006f0: 0072 1200 0000 1900 0000 7308 0000 0008  .r........s.....
++00000700: 000a 0102 2514 0172 1200 0000 7219 0000  ....%..r....r...
++00000710: 00da 0664 6576 6963 65da 0761 7069 5f6b  ...device..api_k
++00000720: 6579 7213 0000 0063 0300 0000 0000 0000  eyr....c........
++00000730: 0000 0000 0e00 0000 0a00 0000 4300 0000  ............C...
++00000740: 7390 0100 0074 007c 0272 057c 026e 0274  s....t.|.r.|.n.t
++00000750: 016a 0274 016a 0364 018d 027d 0374 0464  .j.t.j.d...}.t.d
++00000760: 0283 0101 0074 0464 0283 0101 0074 0464  .....t.d.....t.d
++00000770: 0283 0101 0074 0464 0283 0101 0074 047c  .....t.d.....t.|
++00000780: 036a 0583 0101 0074 067c 0383 017d 0474  .j.....t.|...}.t
++00000790: 077c 0383 017d 0574 087c 0383 017d 067c  .|...}.t.|...}.|
++000007a0: 0172 3d74 097c 037c 0683 027d 077c 017c  .r=t.|.|...}.|.|
++000007b0: 0776 0172 3d74 0a7c 017c 0783 0282 0174  .v.r=t.|.|.....t
++000007c0: 0ba0 0ca1 008f 127d 0874 0d7c 087c 037c  .......}.t.|.|.|
++000007d0: 067c 007c 0164 0364 048d 0601 0057 0064  .|.|.d.d.....W.d
++000007e0: 0304 0004 0083 0301 006e 0831 0073 5677  .........n.1.sVw
++000007f0: 0101 0001 0001 0059 0001 007a 0e7c 05a0  .......Y...z.|..
++00000800: 0e7c 06a1 017d 0974 0f7c 0983 0101 007c  .|...}.t.|.....|
++00000810: 096a 107d 0a57 006e 1904 0074 1179 8201  .j.}.W.n...t.y..
++00000820: 007d 0b01 007a 0d74 12a0 1364 0574 147c  .}...z.t...d.t.|
++00000830: 0b83 019b 0064 069d 03a1 0101 007c 0b82  .....d.......|..
++00000840: 0164 037d 0b7e 0b77 0177 0074 157c 047c  .d.}.~.w.w.t.|.|
++00000850: 067c 0a64 078d 037d 0c7a 0b7c 05a0 167c  .|.d...}.z.|...|
++00000860: 06a1 017d 0d74 0f7c 0d83 0101 0057 006e  ...}.t.|.....W.n
++00000870: 1904 0074 1179 ae01 007d 0b01 007a 0d74  ...t.y...}...z.t
++00000880: 12a0 1364 0874 147c 0b83 019b 0064 069d  ...d.t.|.....d..
++00000890: 03a1 0101 007c 0b82 0164 037d 0b7e 0b77  .....|...d.}.~.w
++000008a0: 0177 0074 17a0 187c 0da0 19a1 00a1 017d  .w.t...|.......}
++000008b0: 0974 12a0 1a64 097c 099b 029d 02a1 0101  .t...d.|........
++000008c0: 0074 12a0 1364 097c 099b 029d 02a1 0101  .t...d.|........
++000008d0: 007c 0953 0029 0a61 0b0a 0000 0a20 2020  .|.S.).a.....   
++000008e0: 2050 726f 6669 6c65 7320 7468 6520 7065   Profiles the pe
++000008f0: 7266 6f72 6d61 6e63 6520 6f66 2061 2074  rformance of a t
++00000900: 7261 696e 6564 206d 6f64 656c 206f 6e20  rained model on 
++00000910: 6120 7261 6e67 6520 6f66 2065 6d62 6564  a range of embed
++00000920: 6465 6420 7461 7267 6574 732c 206f 7220  ded targets, or 
++00000930: 6120 7370 6563 6966 6963 2064 6576 6963  a specific devic
++00000940: 652e 0a0a 2020 2020 5468 6520 7265 7370  e...    The resp
++00000950: 6f6e 7365 2069 6e63 6c75 6465 7320 6573  onse includes es
++00000960: 7469 6d61 7465 7320 6f66 206d 656d 6f72  timates of memor
++00000970: 7920 7573 6167 6520 616e 6420 6c61 7465  y usage and late
++00000980: 6e63 7920 666f 7220 7468 6520 6d6f 6465  ncy for the mode
++00000990: 6c20 6163 726f 7373 2061 2072 616e 6765  l across a range
++000009a0: 206f 6620 7461 7267 6574 732c 0a20 2020   of targets,.   
++000009b0: 2069 6e63 6c75 6469 6e67 206c 6f77 2d65   including low-e
++000009c0: 6e64 204d 4355 2c20 6869 6768 2d65 6e64  nd MCU, high-end
++000009d0: 204d 4355 2c20 6869 6768 2d65 6e64 204d   MCU, high-end M
++000009e0: 4355 2077 6974 6820 6163 6365 6c65 7261  CU with accelera
++000009f0: 746f 722c 206d 6963 726f 7072 6f63 6573  tor, microproces
++00000a00: 736f 7220 756e 6974 2028 4d50 5529 2c0a  sor unit (MPU),.
++00000a10: 2020 2020 616e 6420 6120 4750 5520 6f72      and a GPU or
++00000a20: 206e 6575 7261 6c20 6e65 7477 6f72 6b20   neural network 
++00000a30: 6163 6365 6c65 7261 746f 722e 2049 7420  accelerator. It 
++00000a40: 7769 6c6c 2061 6c73 6f20 696e 636c 7564  will also includ
++00000a50: 6520 6465 7461 696c 7320 6f66 2061 6e79  e details of any
++00000a60: 2063 6f6e 6469 7469 6f6e 7320 7468 6174   conditions that
++00000a70: 2070 7265 636c 7564 650a 2020 2020 6f70   preclude.    op
++00000a80: 6572 6174 696f 6e20 6f6e 2061 2067 6976  eration on a giv
++00000a90: 656e 2074 7970 6520 6f66 2064 6576 6963  en type of devic
++00000aa0: 652e 0a0a 2020 2020 4966 2079 6f75 2072  e...    If you r
++00000ab0: 6571 7565 7374 2061 2073 7065 6369 6669  equest a specifi
++00000ac0: 6320 6064 6576 6963 6560 2c20 7468 6520  c `device`, the 
++00000ad0: 7265 7375 6c74 7320 7769 6c6c 2061 6c73  results will als
++00000ae0: 6f20 696e 636c 7564 6520 6573 7469 6d61  o include estima
++00000af0: 7465 7320 666f 7220 7468 6174 2073 7065  tes for that spe
++00000b00: 6369 6669 6320 6465 7669 6365 2e0a 2020  cific device..  
++00000b10: 2020 4120 6c69 7374 206f 6620 6465 7669    A list of devi
++00000b20: 6365 7320 6361 6e20 6265 206f 6274 6169  ces can be obtai
++00000b30: 6e65 6420 6672 6f6d 2060 6564 6765 696d  ned from `edgeim
++00000b40: 7075 6c73 652e 6d6f 6465 6c2e 6c69 7374  pulse.model.list
++00000b50: 5f70 726f 6669 6c65 5f64 6576 6963 6573  _profile_devices
++00000b60: 2829 602e 0a0a 2020 2020 596f 7520 6361  ()`...    You ca
++00000b70: 6e20 6361 6c6c 2060 2e73 756d 6d61 7279  n call `.summary
++00000b80: 2829 6020 6f6e 2074 6865 2072 6573 706f  ()` on the respo
++00000b90: 6e73 6520 746f 206f 6274 6169 6e20 6120  nse to obtain a 
++00000ba0: 6d6f 7265 2072 6561 6461 626c 6520 7665  more readable ve
++00000bb0: 7273 696f 6e20 6f66 2074 6865 206d 6f73  rsion of the mos
++00000bc0: 7420 7265 6c65 7661 6e74 0a20 2020 2069  t relevant.    i
++00000bd0: 6e66 6f72 6d61 7469 6f6e 2e0a 0a20 2020  nformation...   
++00000be0: 2041 7267 733a 0a20 2020 2020 2020 206d   Args:.        m
++00000bf0: 6f64 656c 2028 556e 696f 6e5b 5061 7468  odel (Union[Path
++00000c00: 2c20 7374 722c 2062 7974 6573 2c20 416e  , str, bytes, An
++00000c10: 795d 293a 2041 206d 6163 6869 6e65 206c  y]): A machine l
++00000c20: 6561 726e 696e 6720 6d6f 6465 6c2c 206f  earning model, o
++00000c30: 7220 7369 6d69 6c61 726c 7920 7265 7072  r similarly repr
++00000c40: 6573 656e 7465 6420 636f 6d70 7574 6174  esented computat
++00000c50: 696f 6e61 6c20 6772 6170 682e 0a20 2020  ional graph..   
++00000c60: 2020 2020 2020 2020 2043 616e 2062 6520           Can be 
++00000c70: 6050 6174 6860 206f 7220 6073 7472 6020  `Path` or `str` 
++00000c80: 6465 6e6f 7469 6e67 2066 696c 6520 7061  denoting file pa
++00000c90: 7468 2c20 5079 7468 6f6e 2060 6279 7465  th, Python `byte
++00000ca0: 7360 2063 6f6e 7461 696e 696e 6720 6120  s` containing a 
++00000cb0: 6d6f 6465 6c2c 206f 7220 6120 4b65 7261  model, or a Kera
++00000cc0: 7320 6d6f 6465 6c20 696e 7374 616e 6365  s model instance
++00000cd0: 2e0a 2020 2020 2020 2020 6465 7669 6365  ..        device
++00000ce0: 2028 4f70 7469 6f6e 616c 5b73 7472 5d2c   (Optional[str],
++00000cf0: 206f 7074 696f 6e61 6c29 3a20 416e 2065   optional): An e
++00000d00: 6d62 6564 6465 6420 7072 6f63 6573 736f  mbedded processo
++00000d10: 7220 666f 7220 7768 6963 6820 746f 2070  r for which to p
++00000d20: 726f 6669 6c65 2074 6865 206d 6f64 656c  rofile the model
++00000d30: 2e0a 2020 2020 2020 2020 2020 2020 4120  ..            A 
++00000d40: 636f 6d70 7265 6865 6e73 6976 6520 6c69  comprehensive li
++00000d50: 7374 2063 616e 2062 6520 6f62 7461 696e  st can be obtain
++00000d60: 6564 2076 6961 2060 6564 6765 696d 7075  ed via `edgeimpu
++00000d70: 6c73 652e 6d6f 6465 6c2e 6c69 7374 5f70  lse.model.list_p
++00000d80: 726f 6669 6c65 5f64 6576 6963 6573 2829  rofile_devices()
++00000d90: 602e 0a20 2020 2020 2020 2061 7069 5f6b  `..        api_k
++00000da0: 6579 2028 4f70 7469 6f6e 616c 5b73 7472  ey (Optional[str
++00000db0: 5d2c 206f 7074 696f 6e61 6c29 3a20 5468  ], optional): Th
++00000dc0: 6520 4150 4920 6b65 7920 666f 7220 616e  e API key for an
++00000dd0: 2045 6467 6520 496d 7075 6c73 6520 7072   Edge Impulse pr
++00000de0: 6f6a 6563 742e 0a20 2020 2020 2020 2020  oject..         
++00000df0: 2020 2054 6869 7320 6361 6e20 616c 736f     This can also
++00000e00: 2062 6520 7365 7420 7669 6120 7468 6520   be set via the 
++00000e10: 6d6f 6475 6c65 2d6c 6576 656c 2076 6172  module-level var
++00000e20: 6961 626c 6520 6065 6467 6569 6d70 756c  iable `edgeimpul
++00000e30: 7365 2e41 5049 5f4b 4559 602c 206f 7220  se.API_KEY`, or 
++00000e40: 7468 6520 656e 7620 7661 7220 6045 495f  the env var `EI_
++00000e50: 4150 495f 4b45 5960 2e0a 0a20 2020 2052  API_KEY`...    R
++00000e60: 6574 7572 6e73 3a0a 2020 2020 2020 2020  eturns:.        
++00000e70: 5072 6f66 696c 6552 6573 706f 6e73 653a  ProfileResponse:
++00000e80: 2053 7472 7563 7475 7265 2063 6f6e 7461   Structure conta
++00000e90: 696e 696e 6720 7072 6f66 696c 6520 696e  ining profile in
++00000ea0: 666f 726d 6174 696f 6e2e 0a20 2020 2020  formation..     
++00000eb0: 2020 2041 2073 7562 636c 6173 7320 6f66     A subclass of
++00000ec0: 2060 6564 6765 696d 7075 6c73 655f 6170   `edgeimpulse_ap
++00000ed0: 692e 6d6f 6465 6c73 2e67 6574 5f70 7265  i.models.get_pre
++00000ee0: 7472 6169 6e65 645f 6d6f 6465 6c5f 7265  trained_model_re
++00000ef0: 7370 6f6e 7365 602e 0a20 2020 2020 2020  sponse`..       
++00000f00: 2059 6f75 2063 616e 2063 616c 6c20 6974   You can call it
++00000f10: 7320 602e 7375 6d6d 6172 7928 2960 206d  s `.summary()` m
++00000f20: 6574 686f 6420 666f 7220 6120 6d6f 7265  ethod for a more
++00000f30: 2072 6561 6461 626c 6520 7665 7273 696f   readable versio
++00000f40: 6e20 6f66 2074 6865 0a20 2020 2020 2020  n of the.       
++00000f50: 206d 6f73 7420 7265 6c65 7661 6e74 2069   most relevant i
++00000f60: 6e66 6f72 6d61 7469 6f6e 2e0a 0a20 2020  nformation...   
++00000f70: 2052 6169 7365 733a 0a20 2020 2020 2020   Raises:.       
++00000f80: 2049 6e76 616c 6964 4175 7468 5479 7065   InvalidAuthType
++00000f90: 4578 6365 7074 696f 6e3a 2049 6e63 6f72  Exception: Incor
++00000fa0: 7265 6374 2061 7574 6865 6e74 6963 6174  rect authenticat
++00000fb0: 696f 6e20 7479 7065 2077 6173 2070 726f  ion type was pro
++00000fc0: 7669 6465 642e 0a20 2020 2020 2020 2049  vided..        I
++00000fd0: 6e76 616c 6964 4465 7669 6365 4578 6365  nvalidDeviceExce
++00000fe0: 7074 696f 6e3a 2044 6576 6963 6520 6973  ption: Device is
++00000ff0: 206e 6f74 2076 616c 6964 2e0a 0a20 2020   not valid...   
++00001000: 2045 7861 6d70 6c65 733a 0a0a 2020 2020   Examples:..    
++00001010: 2020 2020 2e2e 2063 6f64 652d 626c 6f63      .. code-bloc
++00001020: 6b3a 3a20 7079 7468 6f6e 0a0a 2020 2020  k:: python..    
++00001030: 2020 2020 2020 2020 2320 5072 6f66 696c          # Profil
++00001040: 6520 6120 4b65 7261 7320 6d6f 6465 6c20  e a Keras model 
++00001050: 6163 726f 7373 2061 2072 616e 6765 206f  across a range o
++00001060: 6620 6465 7669 6365 730a 2020 2020 2020  f devices.      
++00001070: 2020 2020 2020 7265 7375 6c74 203d 2065        result = e
++00001080: 692e 6d6f 6465 6c2e 7072 6f66 696c 6528  i.model.profile(
++00001090: 6d6f 6465 6c3d 6b65 7261 735f 6d6f 6465  model=keras_mode
++000010a0: 6c29 0a20 2020 2020 2020 2020 2020 2072  l).            r
++000010b0: 6573 756c 742e 7375 6d6d 6172 7928 290a  esult.summary().
++000010c0: 0a20 2020 2020 2020 2020 2020 2023 2050  .            # P
++000010d0: 726f 6669 6c65 2064 6966 6665 7265 6e74  rofile different
++000010e0: 2074 7970 6573 206f 6620 6d6f 6465 6c73   types of models
++000010f0: 206f 6e20 7370 6563 6966 6963 2064 6576   on specific dev
++00001100: 6963 6573 0a20 2020 2020 2020 2020 2020  ices.           
++00001110: 2072 6573 756c 7420 3d20 6569 2e6d 6f64   result = ei.mod
++00001120: 656c 2e70 726f 6669 6c65 286d 6f64 656c  el.profile(model
++00001130: 3d22 6865 6172 745f 7261 7465 2e6f 6e6e  ="heart_rate.onn
++00001140: 7822 2c20 2023 204f 4e4e 580a 2020 2020  x",  # ONNX.    
++00001150: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001160: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001170: 2020 2020 6465 7669 6365 3d22 636f 7274      device="cort
++00001180: 6578 2d6d 3466 2d38 306d 687a 2229 0a20  ex-m4f-80mhz"). 
++00001190: 2020 2020 2020 2020 2020 2072 6573 756c             resul
++000011a0: 7420 3d20 6569 2e6d 6f64 656c 2e70 726f  t = ei.model.pro
++000011b0: 6669 6c65 286d 6f64 656c 3d22 6865 6172  file(model="hear
++000011c0: 745f 7261 7465 222c 2020 2320 5465 6e73  t_rate",  # Tens
++000011d0: 6f72 466c 6f77 2053 6176 6564 4d6f 6465  orFlow SavedMode
++000011e0: 6c20 2863 616e 2061 6c73 6f20 6265 2061  l (can also be a
++000011f0: 207a 6970 290a 2020 2020 2020 2020 2020   zip).          
++00001200: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001210: 2020 2020 2020 2020 2020 2020 2020 6465                de
++00001220: 7669 6365 3d22 6e6f 7264 6963 2d6e 7266  vice="nordic-nrf
++00001230: 3931 3630 2d64 6b22 290a 2020 2020 2020  9160-dk").      
++00001240: 2020 2020 2020 7265 7375 6c74 203d 2065        result = e
++00001250: 692e 6d6f 6465 6c2e 7072 6f66 696c 6528  i.model.profile(
++00001260: 6d6f 6465 6c3d 2268 6561 7274 5f72 6174  model="heart_rat
++00001270: 652e 6c69 7465 222c 2020 2320 5465 6e73  e.lite",  # Tens
++00001280: 6f72 466c 6f77 204c 6974 6520 2866 6c6f  orFlow Lite (flo
++00001290: 6174 3332 206f 7220 696e 7438 290a 2020  at32 or int8).  
++000012a0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++000012b0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++000012c0: 2020 2020 2020 6465 7669 6365 3d22 7379        device="sy
++000012d0: 6e61 7074 6963 732d 6b61 3130 3030 3022  naptics-ka10000"
++000012e0: 290a 0a20 2020 20a9 02da 036b 6579 da04  )..    ....key..
++000012f0: 686f 7374 7a0e 2a2a 2a2a 2a2a 2a2a 2a2a  hostz.**********
++00001300: 2a2a 2a2a 4e29 06da 0774 656d 7064 6972  ****N)...tempdir
++00001310: da06 636c 6965 6e74 da0a 7072 6f6a 6563  ..client..projec
++00001320: 745f 6964 7219 0000 0072 2f00 0000 5a13  t_idr....r/...Z.
++00001330: 7265 7072 6573 656e 7461 7469 7665 5f64  representative_d
++00001340: 6174 617a 2045 7863 6570 7469 6f6e 2073  ataz Exception s
++00001350: 7461 7274 696e 6720 7072 6f66 696c 6520  tarting profile 
++00001360: 6a6f 6220 5bfa 015d 2903 5a0b 6a6f 6273  job [..]).Z.jobs
++00001370: 5f63 6c69 656e 7472 3600 0000 da06 6a6f  _clientr6.....jo
++00001380: 625f 6964 7a28 4578 6365 7074 696f 6e20  b_idz(Exception 
++00001390: 7265 7472 6965 7669 6e67 2070 726f 6669  retrieving profi
++000013a0: 6c69 6e67 2072 6573 756c 7473 205b 7a13  ling results [z.
++000013b0: 7072 6f66 696c 655f 7265 7370 6f6e 7365  profile_response
++000013c0: 203d 2029 1b72 0900 0000 da0b 6564 6765   = ).r......edge
++000013d0: 696d 7075 6c73 65da 0741 5049 5f4b 4559  impulse..API_KEY
++000013e0: da0c 4150 495f 454e 4450 4f49 4e54 7220  ..API_ENDPOINTr 
++000013f0: 0000 00da 0a75 7365 725f 6167 656e 7472  .....user_agentr
++00001400: 0f00 0000 7210 0000 0072 0b00 0000 720c  ....r....r....r.
++00001410: 0000 0072 0800 0000 da08 7465 6d70 6669  ...r......tempfi
++00001420: 6c65 da12 5465 6d70 6f72 6172 7944 6972  le..TemporaryDir
++00001430: 6563 746f 7279 720d 0000 00da 1870 726f  ectoryr......pro
++00001440: 6669 6c65 5f70 7265 7472 6169 6e65 645f  file_pretrained_
++00001450: 6d6f 6465 6c72 0e00 0000 da02 6964 da09  modelr......id..
++00001460: 4578 6365 7074 696f 6eda 076c 6f67 6769  Exception..loggi
++00001470: 6e67 da05 6465 6275 67da 0373 7472 720a  ng..debug..strr.
++00001480: 0000 00da 1967 6574 5f70 7265 7472 6169  .....get_pretrai
++00001490: 6e65 645f 6d6f 6465 6c5f 696e 666f 7212  ned_model_infor.
++000014a0: 0000 0072 2900 0000 721d 0000 00da 0469  ...r)...r......i
++000014b0: 6e66 6f29 0e72 1900 0000 722f 0000 0072  nfo).r....r/...r
++000014c0: 3000 0000 7235 0000 00da 046a 6f62 73da  0...r5.....jobs.
++000014d0: 056c 6561 726e 7236 0000 005a 0f70 726f  .learnr6...Z.pro
++000014e0: 6669 6c65 5f64 6576 6963 6573 7234 0000  file_devicesr4..
++000014f0: 00da 1070 726f 6669 6c65 5f72 6573 706f  ...profile_respo
++00001500: 6e73 6572 3800 0000 da01 65da 015f da1d  nser8.....e.._..
++00001510: 6765 745f 7072 6574 7261 696e 6564 5f6d  get_pretrained_m
++00001520: 6f64 656c 5f72 6573 706f 6e73 6572 2400  odel_responser$.
++00001530: 0000 7224 0000 0072 2500 0000 da07 7072  ..r$...r%.....pr
++00001540: 6f66 696c 6545 0000 0073 6c00 0000 0237  ofileE...sl....7
++00001550: 0c01 0401 06fe 0805 0802 0801 0801 0a02  ................
++00001560: 0802 0801 0802 0402 0a01 0801 0a01 0a04  ................
++00001570: 0201 0201 0201 0201 0201 0201 0201 08fa  ................
++00001580: 1cff 020a 0a01 0801 0a01 0e01 1601 0401  ................
++00001590: 0880 02fe 0204 0201 0201 0201 06fd 0206  ................
++000015a0: 0a01 0c01 0e01 1601 0401 0880 02fe 0404  ................
++000015b0: 0601 04ff 1003 1001 0401 724d 0000 007a  ..........rM...z
++000015c0: 094c 6973 745b 7374 725d 6301 0000 0000  .List[str]c.....
++000015d0: 0000 0000 0000 0002 0000 0004 0000 0043  ...............C
++000015e0: 0000 0073 2000 0000 7400 7c00 7205 7c00  ...s ...t.|.r.|.
++000015f0: 6e02 7401 6a02 7401 6a03 6401 8d02 7d01  n.t.j.t.j.d...}.
++00001600: 7404 7c01 8301 5300 2902 615f 0100 004c  t.|...S.).a_...L
++00001610: 6973 7473 2070 6f73 7369 626c 6520 7661  ists possible va
++00001620: 6c75 6573 2066 6f72 2074 6865 2060 6465  lues for the `de
++00001630: 7669 6365 6020 6669 656c 6420 7768 656e  vice` field when
++00001640: 2063 616c 6c69 6e67 2060 6564 6765 696d   calling `edgeim
++00001650: 7075 6c73 652e 6d6f 6465 6c2e 7072 6f66  pulse.model.prof
++00001660: 696c 6528 2960 2e0a 0a20 2020 2041 7267  ile()`...    Arg
++00001670: 733a 0a20 2020 2020 2020 2061 7069 5f6b  s:.        api_k
++00001680: 6579 2028 7374 722c 206f 7074 696f 6e61  ey (str, optiona
++00001690: 6c29 3a20 5468 6520 4150 4920 6b65 7920  l): The API key 
++000016a0: 666f 7220 616e 2045 6467 6520 496d 7075  for an Edge Impu
++000016b0: 6c73 6520 7072 6f6a 6563 742e 2054 6869  lse project. Thi
++000016c0: 7320 6361 6e20 616c 736f 2062 6520 7365  s can also be se
++000016d0: 7420 7669 6120 7468 6520 6d6f 6475 6c65  t via the module
++000016e0: 2d6c 6576 656c 2076 6172 6961 626c 6520  -level variable 
++000016f0: 6065 6467 6569 6d70 756c 7365 2e41 5049  `edgeimpulse.API
++00001700: 5f4b 4559 602c 206f 7220 7468 6520 656e  _KEY`, or the en
++00001710: 7620 7661 7220 6045 495f 4150 495f 4b45  v var `EI_API_KE
++00001720: 5960 2e0a 0a20 2020 2052 6574 7572 6e73  Y`...    Returns
++00001730: 3a0a 2020 2020 2020 2020 4c69 7374 5b73  :.        List[s
++00001740: 7472 5d3a 204c 6973 7420 6f66 2070 726f  tr]: List of pro
++00001750: 6669 6c65 2074 6172 6765 7473 2066 6f72  file targets for
++00001760: 2070 726f 6a65 6374 0a0a 2020 2020 7231   project..    r1
++00001770: 0000 0029 0572 0900 0000 7239 0000 0072  ...).r....r9...r
++00001780: 3a00 0000 723b 0000 0072 0c00 0000 2902  :...r;...r....).
++00001790: 7230 0000 0072 3500 0000 7224 0000 0072  r0...r5...r$...r
++000017a0: 2400 0000 7225 0000 00da 146c 6973 745f  $...r%.....list_
++000017b0: 7072 6f66 696c 655f 6465 7669 6365 73bc  profile_devices.
++000017c0: 0000 0073 0a00 0000 020a 0c01 0401 06fe  ...s............
++000017d0: 0804 724e 0000 0029 024e 4e29 014e 291e  ..rN...).NN).N).
++000017e0: 7242 0000 00da 0770 6174 686c 6962 7202  rB.....pathlibr.
++000017f0: 0000 00da 0674 7970 696e 6772 0300 0000  .....typingr....
++00001800: 7204 0000 0072 0500 0000 7206 0000 00da  r....r....r.....
++00001810: 0670 7072 696e 7472 0700 0000 723d 0000  .pprintr....r=..
++00001820: 0072 3900 0000 da16 6564 6765 696d 7075  .r9.....edgeimpu
++00001830: 6c73 652e 6578 6365 7074 696f 6e73 7208  lse.exceptionsr.
++00001840: 0000 005a 1065 6467 6569 6d70 756c 7365  ...Z.edgeimpulse
++00001850: 2e75 7469 6c72 0900 0000 720a 0000 0072  .utilr....r....r
++00001860: 0b00 0000 720c 0000 0072 0d00 0000 720e  ....r....r....r.
++00001870: 0000 00da 0f65 6467 6569 6d70 756c 7365  .....edgeimpulse
++00001880: 5f61 7069 720f 0000 0072 1000 0000 7211  _apir....r....r.
++00001890: 0000 0072 1200 0000 7244 0000 00da 0562  ...r....rD.....b
++000018a0: 7974 6573 724d 0000 0072 4e00 0000 7224  ytesrM...rN...r$
++000018b0: 0000 0072 2400 0000 7224 0000 0072 2500  ...r$...r$...r%.
++000018c0: 0000 da08 3c6d 6f64 756c 653e 0100 0000  ....<module>....
++000018d0: 732c 0000 0008 000c 0118 010c 0108 0108  s,..............
++000018e0: 020c 0120 0214 0810 0702 2e02 0104 fd0e  ... ............
++000018f0: 0102 ff06 0202 fe06 0302 fd02 040a fc1c  ................
++00001900: 77                                       w
+```
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/methods/deploy.py` & `edgeimpulse-1.0.2/edgeimpulse/methods/deploy.py`
+
+ * *Files identical despite different names*
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/methods/profile.py` & `edgeimpulse-1.0.2/edgeimpulse/methods/profile.py`
+
+ * *Files 3% similar despite different names*
+
+```diff
+@@ -1,11 +1,10 @@
+-import logging
++import logging, json
+ from pathlib import Path
+ from typing import Union, Optional, Any, List
+-from pprint import pformat
+ import tempfile
+ 
+ import edgeimpulse
+ from edgeimpulse.exceptions import InvalidDeviceException
+ 
+ from edgeimpulse.util import (
+     configure_generic_client,
+@@ -27,38 +26,37 @@
+         """Returns a summary of the profiling results"""
+         output = []
+         if self.specific_device_selected and self.model and self.model.profile_info:
+             if self.model.profile_info.float32:
+                 output.append("Target results for float32:")
+                 output.append("===========================")
+                 output.append(
+-                    pformat(
++                    json.dumps(
+                         self.model.profile_info.float32.to_dict(),
+                         indent=4,
+-                        sort_dicts=False,
+                     )
+                 )
+                 output.append("\n")
+             if self.model.profile_info.int8:
+                 output.append("Target results for int8:")
+                 output.append("========================")
+                 output.append(
+-                    pformat(
++                    json.dumps(
+                         self.model.profile_info.int8.to_dict(),
+                         indent=4,
+-                        sort_dicts=False,
+                     )
+                 )
+                 output.append("\n")
+         if self.model and self.model.profile_info:
+             output.append("Performance on device types:")
+             output.append("============================")
+             output.append(
+-                pformat(
+-                    self.model.profile_info.table.to_dict(), indent=4, sort_dicts=False
++                json.dumps(
++                    self.model.profile_info.table.to_dict(),
++                    indent=4,
+                 )
+             )
+ 
+         print("\n".join(output))
+ 
+     @classmethod
+     def from_dict(cls, obj: dict):
+@@ -98,15 +96,15 @@
+         A subclass of `edgeimpulse_api.models.get_pretrained_model_response`.
+         You can call its `.summary()` method for a more readable version of the
+         most relevant information.
+ 
+     Raises:
+         InvalidAuthTypeException: Incorrect authentication type was provided.
+         InvalidDeviceException: Device is not valid.
+-    
++
+     Examples:
+ 
+         .. code-block:: python
+ 
+             # Profile a Keras model across a range of devices
+             result = ei.model.profile(model=keras_model)
+             result.summary()
+@@ -114,15 +112,15 @@
+             # Profile different types of models on specific devices
+             result = ei.model.profile(model="heart_rate.onnx",  # ONNX
+                                         device="cortex-m4f-80mhz")
+             result = ei.model.profile(model="heart_rate",  # TensorFlow SavedModel (can also be a zip)
+                                         device="nordic-nrf9160-dk")
+             result = ei.model.profile(model="heart_rate.lite",  # TensorFlow Lite (float32 or int8)
+                                         device="synaptics-ka10000")
+-    
++
+     """
+ 
+     client = configure_generic_client(
+         key=api_key if api_key else edgeimpulse.API_KEY,
+         host=edgeimpulse.API_ENDPOINT,
+     )
+     jobs = JobsApi(client)
+@@ -167,27 +165,26 @@
+     except Exception as e:
+         logging.debug(f"Exception retrieving profiling results [{str(e)}]")
+         raise e
+ 
+     profile_response = ProfileResponse.from_dict(
+         get_pretrained_model_response.to_dict()
+     )
+-    logging.info(f"{profile_response = }")
+-    logging.debug(f"{profile_response = !r}")
++    logging.info(f"profile_response = {profile_response}")
+     return profile_response
+ 
+ 
+ def list_profile_devices(api_key: Optional[str] = None) -> "List[str]":
+     """Lists possible values for the `device` field when calling `edgeimpulse.model.profile()`.
+ 
+     Args:
+         api_key (str, optional): The API key for an Edge Impulse project. This can also be set via the module-level variable `edgeimpulse.API_KEY`, or the env var `EI_API_KEY`.
+-    
++
+     Returns:
+         List[str]: List of profile targets for project
+-    
++
+     """
+     client = configure_generic_client(
+         key=api_key if api_key else edgeimpulse.API_KEY,
+         host=edgeimpulse.API_ENDPOINT,
+     )
+     return get_profile_devices(client)
+```
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/model/__pycache__/input_type.cpython-38.pyc` & `edgeimpulse-1.0.2/edgeimpulse/model/__pycache__/input_type.cpython-310.pyc`
+
+ * *Format-specific differences are supported for Python .pyc files but no file-specific differences were detected; falling back to a binary diff. file(1) reports: Byte-compiled Python module for CPython 3.8, timestamp-based, .py timestamp: Mon Apr  3 11:31:42 2023 UTC, .py size: 466 bytes*
+
+ * *Could not decompile bytecode: bad marshal data (unknown type code)*
+
+ * *Files 11% similar despite different names*
+
+```diff
+@@ -1,74 +1,75 @@
+-00000000: 550d 0d0a 0000 0000 1eb9 2a64 d201 0000  U.........*d....
++00000000: 6f0d 0d0a 0000 0000 96d8 2a64 d201 0000  o.........*d....
+ 00000010: e300 0000 0000 0000 0000 0000 0000 0000  ................
+ 00000020: 0004 0000 0040 0000 0073 3400 0000 4700  .....@...s4...G.
+ 00000030: 6400 6401 8400 6401 6500 8303 5a01 4700  d.d...d.e...Z.G.
+ 00000040: 6402 6403 8400 6403 6500 8303 5a02 4700  d.d...d.e...Z.G.
+ 00000050: 6404 6405 8400 6405 6500 8303 5a03 6406  d.d...d.e...Z.d.
+ 00000060: 5300 2907 6300 0000 0000 0000 0000 0000  S.).c...........
+ 00000070: 0000 0000 0003 0000 0040 0000 0073 1a00  .........@...s..
+-00000080: 0000 6500 5a01 6400 5a02 6503 6401 9c01  ..e.Z.d.Z.e.d...
++00000080: 0000 6500 5a01 6400 5a02 6401 6503 6602  ..e.Z.d.Z.d.e.f.
+ 00000090: 6402 6403 8404 5a04 6404 5300 2905 da0a  d.d...Z.d.S.)...
+-000000a0: 4175 6469 6f49 6e70 7574 2901 da0c 6672  AudioInput)...fr
+-000000b0: 6571 7565 6e63 795f 687a 6302 0000 0000  equency_hzc.....
+-000000c0: 0000 0000 0000 0002 0000 0003 0000 0043  ...............C
+-000000d0: 0000 0073 1400 0000 6401 7c00 6402 3c00  ...s....d.|.d.<.
+-000000e0: 7c01 7c00 6403 3c00 6400 5300 2904 4eda  |.|.d.<.d.S.).N.
+-000000f0: 0561 7564 696f da09 696e 7075 7454 7970  .audio..inputTyp
+-00000100: 65da 0b66 7265 7175 656e 6379 487a a900  e..frequencyHz..
+-00000110: 2902 da04 7365 6c66 7202 0000 0072 0600  )...selfr....r..
+-00000120: 0000 7206 0000 00fa 4a2f 5573 6572 732f  ..r.....J/Users/
+-00000130: 6461 6e73 6974 752f 636f 6465 2f65 6467  dansitu/code/edg
+-00000140: 6569 6d70 756c 7365 2f70 7974 686f 6e2d  eimpulse/python-
+-00000150: 7364 6b2f 6564 6765 696d 7075 6c73 652f  sdk/edgeimpulse/
+-00000160: 6d6f 6465 6c2f 696e 7075 745f 7479 7065  model/input_type
+-00000170: 2e70 79da 085f 5f69 6e69 745f 5f02 0000  .py..__init__...
+-00000180: 0073 0400 0000 0001 0801 7a13 4175 6469  .s........z.Audi
+-00000190: 6f49 6e70 7574 2e5f 5f69 6e69 745f 5f4e  oInput.__init__N
+-000001a0: 2905 da08 5f5f 6e61 6d65 5f5f da0a 5f5f  )...__name__..__
+-000001b0: 6d6f 6475 6c65 5f5f da0c 5f5f 7175 616c  module__..__qual
+-000001c0: 6e61 6d65 5f5f da05 666c 6f61 7472 0900  name__..floatr..
+-000001d0: 0000 7206 0000 0072 0600 0000 7206 0000  ..r....r....r...
+-000001e0: 0072 0800 0000 7201 0000 0001 0000 0073  .r....r........s
+-000001f0: 0200 0000 0801 7201 0000 0063 0000 0000  ......r....c....
+-00000200: 0000 0000 0000 0000 0000 0000 0300 0000  ................
+-00000210: 4000 0000 731c 0000 0065 005a 0164 005a  @...s....e.Z.d.Z
+-00000220: 0265 0365 0464 019c 0264 0264 0384 045a  .e.e.d...d.d...Z
+-00000230: 0564 0453 0029 05da 0f54 696d 6553 6572  .d.S.)...TimeSer
+-00000240: 6965 7349 6e70 7574 2902 7202 0000 00da  iesInput).r.....
+-00000250: 0f77 696e 646f 776c 656e 6774 685f 6d73  .windowlength_ms
+-00000260: 6303 0000 0000 0000 0000 0000 0003 0000  c...............
+-00000270: 0003 0000 0043 0000 0073 1c00 0000 6401  .....C...s....d.
+-00000280: 7c00 6402 3c00 7c01 7c00 6403 3c00 7c02  |.d.<.|.|.d.<.|.
+-00000290: 7c00 6404 3c00 6400 5300 2905 4e7a 0b74  |.d.<.d.S.).Nz.t
+-000002a0: 696d 652d 7365 7269 6573 7204 0000 0072  ime-seriesr....r
+-000002b0: 0500 0000 da0e 7769 6e64 6f77 4c65 6e67  ......windowLeng
+-000002c0: 7468 4d73 7206 0000 0029 0372 0700 0000  thMsr....).r....
+-000002d0: 7202 0000 0072 0f00 0000 7206 0000 0072  r....r....r....r
+-000002e0: 0600 0000 7208 0000 0072 0900 0000 0800  ....r....r......
+-000002f0: 0000 7306 0000 0000 0108 0108 017a 1854  ..s..........z.T
+-00000300: 696d 6553 6572 6965 7349 6e70 7574 2e5f  imeSeriesInput._
+-00000310: 5f69 6e69 745f 5f4e 2906 720a 0000 0072  _init__N).r....r
+-00000320: 0b00 0000 720c 0000 0072 0d00 0000 da03  ....r....r......
+-00000330: 696e 7472 0900 0000 7206 0000 0072 0600  intr....r....r..
+-00000340: 0000 7206 0000 0072 0800 0000 720e 0000  ..r....r....r...
+-00000350: 0007 0000 0073 0200 0000 0801 720e 0000  .....s......r...
+-00000360: 0063 0000 0000 0000 0000 0000 0000 0000  .c..............
+-00000370: 0000 0200 0000 4000 0000 7314 0000 0065  ......@...s....e
+-00000380: 005a 0164 005a 0264 0164 0284 005a 0364  .Z.d.Z.d.d...Z.d
+-00000390: 0353 0029 04da 0a4f 7468 6572 496e 7075  .S.)...OtherInpu
+-000003a0: 7463 0100 0000 0000 0000 0000 0000 0100  tc..............
+-000003b0: 0000 0300 0000 4300 0000 730c 0000 0064  ......C...s....d
+-000003c0: 017c 0064 023c 0064 0053 0029 034e da05  .|.d.<.d.S.).N..
+-000003d0: 6f74 6865 7272 0400 0000 7206 0000 0029  otherr....r....)
+-000003e0: 0172 0700 0000 7206 0000 0072 0600 0000  .r....r....r....
+-000003f0: 7208 0000 0072 0900 0000 0f00 0000 7302  r....r........s.
+-00000400: 0000 0000 017a 134f 7468 6572 496e 7075  .....z.OtherInpu
+-00000410: 742e 5f5f 696e 6974 5f5f 4e29 0472 0a00  t.__init__N).r..
+-00000420: 0000 720b 0000 0072 0c00 0000 7209 0000  ..r....r....r...
+-00000430: 0072 0600 0000 7206 0000 0072 0600 0000  .r....r....r....
+-00000440: 7208 0000 0072 1200 0000 0e00 0000 7302  r....r........s.
+-00000450: 0000 0008 0172 1200 0000 4e29 04da 0464  .....r....N)...d
+-00000460: 6963 7472 0100 0000 720e 0000 0072 1200  ictr....r....r..
+-00000470: 0000 7206 0000 0072 0600 0000 7206 0000  ..r....r....r...
+-00000480: 0072 0800 0000 da08 3c6d 6f64 756c 653e  .r......<module>
+-00000490: 0100 0000 7304 0000 0010 0610 07         ....s........
++000000a0: 4175 6469 6f49 6e70 7574 da0c 6672 6571  AudioInput..freq
++000000b0: 7565 6e63 795f 687a 6302 0000 0000 0000  uency_hzc.......
++000000c0: 0000 0000 0002 0000 0003 0000 0043 0000  .............C..
++000000d0: 0073 1400 0000 6401 7c00 6402 3c00 7c01  .s....d.|.d.<.|.
++000000e0: 7c00 6403 3c00 6400 5300 2904 4eda 0561  |.d.<.d.S.).N..a
++000000f0: 7564 696f da09 696e 7075 7454 7970 65da  udio..inputType.
++00000100: 0b66 7265 7175 656e 6379 487a a900 2902  .frequencyHz..).
++00000110: da04 7365 6c66 7202 0000 0072 0600 0000  ..selfr....r....
++00000120: 7206 0000 00fa 562f 5573 6572 732f 656d  r.....V/Users/em
++00000130: 696c 6562 6f73 6368 2f7a 2f65 6467 6569  ilebosch/z/edgei
++00000140: 6d70 756c 7365 2f65 6467 6569 6d70 756c  mpulse/edgeimpul
++00000150: 7365 2f70 7974 686f 6e2d 7364 6b2f 6564  se/python-sdk/ed
++00000160: 6765 696d 7075 6c73 652f 6d6f 6465 6c2f  geimpulse/model/
++00000170: 696e 7075 745f 7479 7065 2e70 79da 085f  input_type.py.._
++00000180: 5f69 6e69 745f 5f02 0000 0073 0400 0000  _init__....s....
++00000190: 0801 0c01 7a13 4175 6469 6f49 6e70 7574  ....z.AudioInput
++000001a0: 2e5f 5f69 6e69 745f 5f4e 2905 da08 5f5f  .__init__N)...__
++000001b0: 6e61 6d65 5f5f da0a 5f5f 6d6f 6475 6c65  name__..__module
++000001c0: 5f5f da0c 5f5f 7175 616c 6e61 6d65 5f5f  __..__qualname__
++000001d0: da05 666c 6f61 7472 0900 0000 7206 0000  ..floatr....r...
++000001e0: 0072 0600 0000 7206 0000 0072 0800 0000  .r....r....r....
++000001f0: 7201 0000 0001 0000 0073 0400 0000 0800  r........s......
++00000200: 1201 7201 0000 0063 0000 0000 0000 0000  ..r....c........
++00000210: 0000 0000 0000 0000 0400 0000 4000 0000  ............@...
++00000220: 731e 0000 0065 005a 0164 005a 0264 0165  s....e.Z.d.Z.d.e
++00000230: 0364 0265 0466 0464 0364 0484 045a 0564  .d.e.f.d.d...Z.d
++00000240: 0553 0029 06da 0f54 696d 6553 6572 6965  .S.)...TimeSerie
++00000250: 7349 6e70 7574 7202 0000 00da 0f77 696e  sInputr......win
++00000260: 646f 776c 656e 6774 685f 6d73 6303 0000  dowlength_msc...
++00000270: 0000 0000 0000 0000 0003 0000 0003 0000  ................
++00000280: 0043 0000 0073 1c00 0000 6401 7c00 6402  .C...s....d.|.d.
++00000290: 3c00 7c01 7c00 6403 3c00 7c02 7c00 6404  <.|.|.d.<.|.|.d.
++000002a0: 3c00 6400 5300 2905 4e7a 0b74 696d 652d  <.d.S.).Nz.time-
++000002b0: 7365 7269 6573 7204 0000 0072 0500 0000  seriesr....r....
++000002c0: da0e 7769 6e64 6f77 4c65 6e67 7468 4d73  ..windowLengthMs
++000002d0: 7206 0000 0029 0372 0700 0000 7202 0000  r....).r....r...
++000002e0: 0072 0f00 0000 7206 0000 0072 0600 0000  .r....r....r....
++000002f0: 7208 0000 0072 0900 0000 0800 0000 7306  r....r........s.
++00000300: 0000 0008 0108 010c 017a 1854 696d 6553  .........z.TimeS
++00000310: 6572 6965 7349 6e70 7574 2e5f 5f69 6e69  eriesInput.__ini
++00000320: 745f 5f4e 2906 720a 0000 0072 0b00 0000  t__N).r....r....
++00000330: 720c 0000 0072 0d00 0000 da03 696e 7472  r....r......intr
++00000340: 0900 0000 7206 0000 0072 0600 0000 7206  ....r....r....r.
++00000350: 0000 0072 0800 0000 720e 0000 0007 0000  ...r....r.......
++00000360: 0073 0400 0000 0800 1601 720e 0000 0063  .s........r....c
++00000370: 0000 0000 0000 0000 0000 0000 0000 0000  ................
++00000380: 0200 0000 4000 0000 7314 0000 0065 005a  ....@...s....e.Z
++00000390: 0164 005a 0264 0164 0284 005a 0364 0353  .d.Z.d.d...Z.d.S
++000003a0: 0029 04da 0a4f 7468 6572 496e 7075 7463  .)...OtherInputc
++000003b0: 0100 0000 0000 0000 0000 0000 0100 0000  ................
++000003c0: 0300 0000 4300 0000 730c 0000 0064 017c  ....C...s....d.|
++000003d0: 0064 023c 0064 0053 0029 034e da05 6f74  .d.<.d.S.).N..ot
++000003e0: 6865 7272 0400 0000 7206 0000 0029 0172  herr....r....).r
++000003f0: 0700 0000 7206 0000 0072 0600 0000 7208  ....r....r....r.
++00000400: 0000 0072 0900 0000 0f00 0000 7302 0000  ...r........s...
++00000410: 000c 017a 134f 7468 6572 496e 7075 742e  ...z.OtherInput.
++00000420: 5f5f 696e 6974 5f5f 4e29 0472 0a00 0000  __init__N).r....
++00000430: 720b 0000 0072 0c00 0000 7209 0000 0072  r....r....r....r
++00000440: 0600 0000 7206 0000 0072 0600 0000 7208  ....r....r....r.
++00000450: 0000 0072 1200 0000 0e00 0000 7304 0000  ...r........s...
++00000460: 0008 000c 0172 1200 0000 4e29 04da 0464  .....r....N)...d
++00000470: 6963 7472 0100 0000 720e 0000 0072 1200  ictr....r....r..
++00000480: 0000 7206 0000 0072 0600 0000 7206 0000  ..r....r....r...
++00000490: 0072 0800 0000 da08 3c6d 6f64 756c 653e  .r......<module>
++000004a0: 0100 0000 7306 0000 0010 0010 0614 07    ....s..........
+```
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/model/__pycache__/model_info.cpython-38.pyc` & `edgeimpulse-1.0.2/edgeimpulse/model/__pycache__/model_info.cpython-38.pyc`
+
+ * *Format-specific differences are supported for Python .pyc files but no file-specific differences were detected; falling back to a binary diff. file(1) reports: Byte-compiled Python module for CPython 3.8, timestamp-based, .py timestamp: Mon Apr  3 11:31:42 2023 UTC, .py size: 673 bytes*
+
+ * *Could not decompile bytecode: bad marshal data (unknown type code)*
+
+ * *Files 24% similar despite different names*
+
+```diff
+@@ -1,8 +1,8 @@
+-00000000: 550d 0d0a 0000 0000 1eb9 2a64 a102 0000  U.........*d....
++00000000: 550d 0d0a 0000 0000 96d8 2a64 a102 0000  U.........*d....
+ 00000010: e300 0000 0000 0000 0000 0000 0000 0000  ................
+ 00000020: 0004 0000 0040 0000 0073 4400 0000 6400  .....@...sD...d.
+ 00000030: 6401 6c00 6d01 5a01 0100 6400 6402 6c02  d.l.m.Z...d.d.l.
+ 00000040: 6d03 5a03 0100 6400 6403 6c04 6d05 5a05  m.Z...d.d.l.m.Z.
+ 00000050: 0100 6400 6404 6c06 6d07 5a07 0100 4700  ..d.d.l.m.Z...G.
+ 00000060: 6405 6406 8400 6406 6508 8303 5a09 6407  d.d...d.e...Z.d.
+ 00000070: 5300 2908 e900 0000 0029 01da 084f 7074  S.)......)...Opt
+@@ -21,40 +21,38 @@
+ 00000140: 056d 6f64 656c da05 696e 7075 7463 0300  .model..inputc..
+ 00000150: 0000 0000 0000 0000 0000 0300 0000 0300  ................
+ 00000160: 0000 4300 0000 732e 0000 007c 0264 006b  ..C...s....|.d.k
+ 00000170: 0872 0e74 0083 007d 0274 01a0 027c 02a1  .r.t...}.t...|..
+ 00000180: 017c 0064 013c 0074 03a0 027c 01a1 017c  .|.d.<.t...|...|
+ 00000190: 0064 023c 0064 0053 0029 034e 7208 0000  .d.<.d.S.).Nr...
+ 000001a0: 0072 0700 0000 2904 7205 0000 0072 0300  .r....).r....r..
+-000001b0: 0000 da09 6672 6f6d 5f64 6963 7472 0400  ....from_dictr..
++000001b0: 0000 5a09 6672 6f6d 5f64 6963 7472 0400  ..Z.from_dictr..
+ 000001c0: 0000 2903 da04 7365 6c66 7207 0000 0072  ..)...selfr....r
+-000001d0: 0800 0000 a900 720b 0000 00fa 4a2f 5573  ......r.....J/Us
+-000001e0: 6572 732f 6461 6e73 6974 752f 636f 6465  ers/dansitu/code
+-000001f0: 2f65 6467 6569 6d70 756c 7365 2f70 7974  /edgeimpulse/pyt
+-00000200: 686f 6e2d 7364 6b2f 6564 6765 696d 7075  hon-sdk/edgeimpu
+-00000210: 6c73 652f 6d6f 6465 6c2f 6d6f 6465 6c5f  lse/model/model_
+-00000220: 696e 666f 2e70 79da 085f 5f69 6e69 745f  info.py..__init_
+-00000230: 5f0e 0000 0073 0800 0000 0001 0801 0601  _....s..........
+-00000240: 0e01 7a12 4d6f 6465 6c49 6e66 6f2e 5f5f  ..z.ModelInfo.__
+-00000250: 696e 6974 5f5f 2901 4e29 06da 085f 5f6e  init__).N)...__n
+-00000260: 616d 655f 5fda 0a5f 5f6d 6f64 756c 655f  ame__..__module_
+-00000270: 5fda 0c5f 5f71 7561 6c6e 616d 655f 5fda  _..__qualname__.
+-00000280: 0464 6963 7472 0200 0000 720d 0000 0072  .dictr....r....r
+-00000290: 0b00 0000 720b 0000 0072 0b00 0000 720c  ....r....r....r.
+-000002a0: 0000 0072 0600 0000 0d00 0000 7302 0000  ...r........s...
+-000002b0: 0008 0172 0600 0000 4e29 0ada 0674 7970  ...r....N)...typ
+-000002c0: 696e 6772 0200 0000 da47 6564 6765 696d  ingr.....Gedgeim
+-000002d0: 7075 6c73 655f 6170 692e 6d6f 6465 6c73  pulse_api.models
+-000002e0: 2e64 6570 6c6f 795f 7072 6574 7261 696e  .deploy_pretrain
+-000002f0: 6564 5f6d 6f64 656c 5f72 6571 7565 7374  ed_model_request
+-00000300: 5f6d 6f64 656c 5f69 6e66 6f5f 696e 7075  _model_info_inpu
+-00000310: 7472 0300 0000 da47 6564 6765 696d 7075  tr.....Gedgeimpu
+-00000320: 6c73 655f 6170 692e 6d6f 6465 6c73 2e64  lse_api.models.d
+-00000330: 6570 6c6f 795f 7072 6574 7261 696e 6564  eploy_pretrained
+-00000340: 5f6d 6f64 656c 5f72 6571 7565 7374 5f6d  _model_request_m
+-00000350: 6f64 656c 5f69 6e66 6f5f 6d6f 6465 6c72  odel_info_modelr
+-00000360: 0400 0000 da1c 6564 6765 696d 7075 6c73  ......edgeimpuls
+-00000370: 652e 6d6f 6465 6c2e 696e 7075 745f 7479  e.model.input_ty
+-00000380: 7065 7205 0000 0072 1100 0000 7206 0000  per....r....r...
+-00000390: 0072 0b00 0000 720b 0000 0072 0b00 0000  .r....r....r....
+-000003a0: 720c 0000 00da 083c 6d6f 6475 6c65 3e01  r......<module>.
+-000003b0: 0000 0073 0800 0000 0c02 0c03 0c04 0c03  ...s............
++000001d0: 0800 0000 a900 720a 0000 00fa 212e 2f65  ......r.....!./e
++000001e0: 6467 6569 6d70 756c 7365 2f6d 6f64 656c  dgeimpulse/model
++000001f0: 2f6d 6f64 656c 5f69 6e66 6f2e 7079 da08  /model_info.py..
++00000200: 5f5f 696e 6974 5f5f 0e00 0000 7308 0000  __init__....s...
++00000210: 0000 0108 0106 010e 017a 124d 6f64 656c  .........z.Model
++00000220: 496e 666f 2e5f 5f69 6e69 745f 5f29 014e  Info.__init__).N
++00000230: 2906 da08 5f5f 6e61 6d65 5f5f da0a 5f5f  )...__name__..__
++00000240: 6d6f 6475 6c65 5f5f da0c 5f5f 7175 616c  module__..__qual
++00000250: 6e61 6d65 5f5f da04 6469 6374 7202 0000  name__..dictr...
++00000260: 0072 0c00 0000 720a 0000 0072 0a00 0000  .r....r....r....
++00000270: 720a 0000 0072 0b00 0000 7206 0000 000d  r....r....r.....
++00000280: 0000 0073 0200 0000 0801 7206 0000 004e  ...s......r....N
++00000290: 290a da06 7479 7069 6e67 7202 0000 005a  )...typingr....Z
++000002a0: 4765 6467 6569 6d70 756c 7365 5f61 7069  Gedgeimpulse_api
++000002b0: 2e6d 6f64 656c 732e 6465 706c 6f79 5f70  .models.deploy_p
++000002c0: 7265 7472 6169 6e65 645f 6d6f 6465 6c5f  retrained_model_
++000002d0: 7265 7175 6573 745f 6d6f 6465 6c5f 696e  request_model_in
++000002e0: 666f 5f69 6e70 7574 7203 0000 005a 4765  fo_inputr....ZGe
++000002f0: 6467 6569 6d70 756c 7365 5f61 7069 2e6d  dgeimpulse_api.m
++00000300: 6f64 656c 732e 6465 706c 6f79 5f70 7265  odels.deploy_pre
++00000310: 7472 6169 6e65 645f 6d6f 6465 6c5f 7265  trained_model_re
++00000320: 7175 6573 745f 6d6f 6465 6c5f 696e 666f  quest_model_info
++00000330: 5f6d 6f64 656c 7204 0000 005a 1c65 6467  _modelr....Z.edg
++00000340: 6569 6d70 756c 7365 2e6d 6f64 656c 2e69  eimpulse.model.i
++00000350: 6e70 7574 5f74 7970 6572 0500 0000 7210  nput_typer....r.
++00000360: 0000 0072 0600 0000 720a 0000 0072 0a00  ...r....r....r..
++00000370: 0000 720a 0000 0072 0b00 0000 da08 3c6d  ..r....r......<m
++00000380: 6f64 756c 653e 0100 0000 7308 0000 000c  odule>....s.....
++00000390: 020c 030c 040c 03                        .......
+```
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/model/__pycache__/output_type.cpython-38.pyc` & `edgeimpulse-1.0.2/edgeimpulse/model/__pycache__/output_type.cpython-310.pyc`
+
+ * *Format-specific differences are supported for Python .pyc files but no file-specific differences were detected; falling back to a binary diff. file(1) reports: Byte-compiled Python module for CPython 3.8, timestamp-based, .py timestamp: Mon Apr  3 11:31:42 2023 UTC, .py size: 607 bytes*
+
+ * *Could not decompile bytecode: bad marshal data (unknown type code)*
+
+ * *Files 27% similar despite different names*
+
+```diff
+@@ -1,85 +1,86 @@
+-00000000: 550d 0d0a 0000 0000 1eb9 2a64 5f02 0000  U.........*d_...
++00000000: 6f0d 0d0a 0000 0000 96d8 2a64 5f02 0000  o.........*d_...
+ 00000010: e300 0000 0000 0000 0000 0000 0000 0000  ................
+ 00000020: 0004 0000 0040 0000 0073 4400 0000 6400  .....@...sD...d.
+ 00000030: 6401 6c00 6d01 5a01 6d02 5a02 0100 4700  d.l.m.Z.m.Z...G.
+ 00000040: 6402 6403 8400 6403 6503 8303 5a04 4700  d.d...d.e...Z.G.
+ 00000050: 6404 6405 8400 6405 6503 8303 5a05 4700  d.d...d.e...Z.G.
+ 00000060: 6406 6407 8400 6407 6503 8303 5a06 6408  d.d...d.e...Z.d.
+ 00000070: 5300 2909 e900 0000 0029 02da 084f 7074  S.)......)...Opt
+ 00000080: 696f 6e61 6cda 044c 6973 7463 0000 0000  ional..Listc....
+-00000090: 0000 0000 0000 0000 0000 0000 0400 0000  ................
++00000090: 0000 0000 0000 0000 0000 0000 0500 0000  ................
+ 000000a0: 4000 0000 7324 0000 0065 005a 0164 005a  @...s$...e.Z.d.Z
+-000000b0: 0264 0565 0365 0465 0519 0019 0064 029c  .d.e.e.e.....d..
+-000000c0: 0164 0364 0484 055a 0664 0153 0029 06da  .d.d...Z.d.S.)..
++000000b0: 0264 0564 0265 0365 0465 0519 0019 0066  .d.d.e.e.e.....f
++000000c0: 0264 0364 0484 055a 0664 0153 0029 06da  .d.d...Z.d.S.)..
+ 000000d0: 0e43 6c61 7373 6966 6963 6174 696f 6e4e  .ClassificationN
+-000000e0: 2901 da06 6c61 6265 6c73 6302 0000 0000  )...labelsc.....
+-000000f0: 0000 0000 0000 0002 0000 0003 0000 0043  ...............C
+-00000100: 0000 0073 1400 0000 6401 7c00 6402 3c00  ...s....d.|.d.<.
+-00000110: 7c01 7c00 6403 3c00 6400 5300 2904 4eda  |.|.d.<.d.S.).N.
+-00000120: 0e63 6c61 7373 6966 6963 6174 696f 6eda  .classification.
+-00000130: 096d 6f64 656c 5479 7065 7205 0000 00a9  .modelTyper.....
+-00000140: 0029 02da 0473 656c 6672 0500 0000 7208  .)...selfr....r.
+-00000150: 0000 0072 0800 0000 fa4b 2f55 7365 7273  ...r.....K/Users
+-00000160: 2f64 616e 7369 7475 2f63 6f64 652f 6564  /dansitu/code/ed
+-00000170: 6765 696d 7075 6c73 652f 7079 7468 6f6e  geimpulse/python
+-00000180: 2d73 646b 2f65 6467 6569 6d70 756c 7365  -sdk/edgeimpulse
+-00000190: 2f6d 6f64 656c 2f6f 7574 7075 745f 7479  /model/output_ty
+-000001a0: 7065 2e70 79da 085f 5f69 6e69 745f 5f05  pe.py..__init__.
+-000001b0: 0000 0073 0400 0000 0001 0801 7a17 436c  ...s........z.Cl
+-000001c0: 6173 7369 6669 6361 7469 6f6e 2e5f 5f69  assification.__i
+-000001d0: 6e69 745f 5f29 014e 2907 da08 5f5f 6e61  nit__).N)...__na
+-000001e0: 6d65 5f5f da0a 5f5f 6d6f 6475 6c65 5f5f  me__..__module__
+-000001f0: da0c 5f5f 7175 616c 6e61 6d65 5f5f 7202  ..__qualname__r.
+-00000200: 0000 0072 0300 0000 da03 7374 7272 0b00  ...r......strr..
+-00000210: 0000 7208 0000 0072 0800 0000 7208 0000  ..r....r....r...
+-00000220: 0072 0a00 0000 7204 0000 0004 0000 0073  .r....r........s
+-00000230: 0200 0000 0801 7204 0000 0063 0000 0000  ......r....c....
+-00000240: 0000 0000 0000 0000 0000 0000 0200 0000  ................
+-00000250: 4000 0000 7314 0000 0065 005a 0164 005a  @...s....e.Z.d.Z
+-00000260: 0264 0164 0284 005a 0364 0353 0029 04da  .d.d...Z.d.S.)..
+-00000270: 0a52 6567 7265 7373 696f 6e63 0100 0000  .Regressionc....
+-00000280: 0000 0000 0000 0000 0100 0000 0300 0000  ................
+-00000290: 4300 0000 730c 0000 0064 017c 0064 023c  C...s....d.|.d.<
+-000002a0: 0064 0053 0029 034e da0a 7265 6772 6573  .d.S.).N..regres
+-000002b0: 7369 6f6e 7207 0000 0072 0800 0000 2901  sionr....r....).
+-000002c0: 7209 0000 0072 0800 0000 7208 0000 0072  r....r....r....r
+-000002d0: 0a00 0000 720b 0000 000b 0000 0073 0200  ....r........s..
+-000002e0: 0000 0001 7a13 5265 6772 6573 7369 6f6e  ....z.Regression
+-000002f0: 2e5f 5f69 6e69 745f 5f4e 2904 720c 0000  .__init__N).r...
+-00000300: 0072 0d00 0000 720e 0000 0072 0b00 0000  .r....r....r....
+-00000310: 7208 0000 0072 0800 0000 7208 0000 0072  r....r....r....r
+-00000320: 0a00 0000 7210 0000 000a 0000 0073 0200  ....r........s..
+-00000330: 0000 0801 7210 0000 0063 0000 0000 0000  ....r....c......
+-00000340: 0000 0000 0000 0000 0000 0400 0000 4000  ..............@.
+-00000350: 0000 7322 0000 0065 005a 0164 005a 0265  ..s"...e.Z.d.Z.e
+-00000360: 0365 0419 0065 0465 0564 019c 0364 0264  .e...e.e.d...d.d
+-00000370: 0384 045a 0664 0453 0029 05da 0f4f 626a  ...Z.d.S.)...Obj
+-00000380: 6563 7444 6574 6563 7469 6f6e 2903 7205  ectDetection).r.
+-00000390: 0000 00da 0a6c 6173 745f 6c61 7965 72da  .....last_layer.
+-000003a0: 126d 696e 696d 756d 5f63 6f6e 6669 6465  .minimum_confide
+-000003b0: 6e63 6563 0400 0000 0000 0000 0000 0000  ncec............
+-000003c0: 0500 0000 0300 0000 4b00 0000 7324 0000  ........K...s$..
+-000003d0: 0064 017c 0064 023c 007c 017c 0064 033c  .d.|.d.<.|.|.d.<
+-000003e0: 007c 027c 0064 043c 007c 037c 0064 053c  .|.|.d.<.|.|.d.<
+-000003f0: 0064 0053 0029 064e 7a10 6f62 6a65 6374  .d.S.).Nz.object
+-00000400: 2d64 6574 6563 7469 6f6e 7207 0000 0072  -detectionr....r
+-00000410: 0500 0000 da09 6c61 7374 4c61 7965 72da  ......lastLayer.
+-00000420: 116d 696e 696d 756d 436f 6e66 6964 656e  .minimumConfiden
+-00000430: 6365 7208 0000 0029 0572 0900 0000 7205  cer....).r....r.
+-00000440: 0000 0072 1300 0000 7214 0000 00da 066b  ...r....r......k
+-00000450: 7761 7267 7372 0800 0000 7208 0000 0072  wargsr....r....r
+-00000460: 0a00 0000 720b 0000 0010 0000 0073 0800  ....r........s..
+-00000470: 0000 0003 0801 0801 0801 7a18 4f62 6a65  ..........z.Obje
+-00000480: 6374 4465 7465 6374 696f 6e2e 5f5f 696e  ctDetection.__in
+-00000490: 6974 5f5f 4e29 0772 0c00 0000 720d 0000  it__N).r....r...
+-000004a0: 0072 0e00 0000 7203 0000 0072 0f00 0000  .r....r....r....
+-000004b0: da05 666c 6f61 7472 0b00 0000 7208 0000  ..floatr....r...
+-000004c0: 0072 0800 0000 7208 0000 0072 0a00 0000  .r....r....r....
+-000004d0: 7212 0000 000f 0000 0073 0800 0000 0802  r........s......
+-000004e0: 0600 0200 02ff 7212 0000 004e 2907 da06  ......r....N)...
+-000004f0: 7479 7069 6e67 7202 0000 0072 0300 0000  typingr....r....
+-00000500: da04 6469 6374 7204 0000 0072 1000 0000  ..dictr....r....
+-00000510: 7212 0000 0072 0800 0000 7208 0000 0072  r....r....r....r
+-00000520: 0800 0000 720a 0000 00da 083c 6d6f 6475  ....r......<modu
+-00000530: 6c65 3e01 0000 0073 0600 0000 1003 1006  le>....s........
+-00000540: 1005                                     ..
++000000e0: da06 6c61 6265 6c73 6302 0000 0000 0000  ..labelsc.......
++000000f0: 0000 0000 0002 0000 0003 0000 0043 0000  .............C..
++00000100: 0073 1400 0000 6401 7c00 6402 3c00 7c01  .s....d.|.d.<.|.
++00000110: 7c00 6403 3c00 6400 5300 2904 4eda 0e63  |.d.<.d.S.).N..c
++00000120: 6c61 7373 6966 6963 6174 696f 6eda 096d  lassification..m
++00000130: 6f64 656c 5479 7065 7205 0000 00a9 0029  odelTyper......)
++00000140: 02da 0473 656c 6672 0500 0000 7208 0000  ...selfr....r...
++00000150: 0072 0800 0000 fa57 2f55 7365 7273 2f65  .r.....W/Users/e
++00000160: 6d69 6c65 626f 7363 682f 7a2f 6564 6765  milebosch/z/edge
++00000170: 696d 7075 6c73 652f 6564 6765 696d 7075  impulse/edgeimpu
++00000180: 6c73 652f 7079 7468 6f6e 2d73 646b 2f65  lse/python-sdk/e
++00000190: 6467 6569 6d70 756c 7365 2f6d 6f64 656c  dgeimpulse/model
++000001a0: 2f6f 7574 7075 745f 7479 7065 2e70 79da  /output_type.py.
++000001b0: 085f 5f69 6e69 745f 5f05 0000 0073 0400  .__init__....s..
++000001c0: 0000 0801 0c01 7a17 436c 6173 7369 6669  ......z.Classifi
++000001d0: 6361 7469 6f6e 2e5f 5f69 6e69 745f 5f29  cation.__init__)
++000001e0: 014e 2907 da08 5f5f 6e61 6d65 5f5f da0a  .N)...__name__..
++000001f0: 5f5f 6d6f 6475 6c65 5f5f da0c 5f5f 7175  __module__..__qu
++00000200: 616c 6e61 6d65 5f5f 7202 0000 0072 0300  alname__r....r..
++00000210: 0000 da03 7374 7272 0b00 0000 7208 0000  ....strr....r...
++00000220: 0072 0800 0000 7208 0000 0072 0a00 0000  .r....r....r....
++00000230: 7204 0000 0004 0000 0073 0400 0000 0800  r........s......
++00000240: 1c01 7204 0000 0063 0000 0000 0000 0000  ..r....c........
++00000250: 0000 0000 0000 0000 0200 0000 4000 0000  ............@...
++00000260: 7314 0000 0065 005a 0164 005a 0264 0164  s....e.Z.d.Z.d.d
++00000270: 0284 005a 0364 0353 0029 04da 0a52 6567  ...Z.d.S.)...Reg
++00000280: 7265 7373 696f 6e63 0100 0000 0000 0000  ressionc........
++00000290: 0000 0000 0100 0000 0300 0000 4300 0000  ............C...
++000002a0: 730c 0000 0064 017c 0064 023c 0064 0053  s....d.|.d.<.d.S
++000002b0: 0029 034e da0a 7265 6772 6573 7369 6f6e  .).N..regression
++000002c0: 7207 0000 0072 0800 0000 2901 7209 0000  r....r....).r...
++000002d0: 0072 0800 0000 7208 0000 0072 0a00 0000  .r....r....r....
++000002e0: 720b 0000 000b 0000 0073 0200 0000 0c01  r........s......
++000002f0: 7a13 5265 6772 6573 7369 6f6e 2e5f 5f69  z.Regression.__i
++00000300: 6e69 745f 5f4e 2904 720c 0000 0072 0d00  nit__N).r....r..
++00000310: 0000 720e 0000 0072 0b00 0000 7208 0000  ..r....r....r...
++00000320: 0072 0800 0000 7208 0000 0072 0a00 0000  .r....r....r....
++00000330: 7210 0000 000a 0000 0073 0400 0000 0800  r........s......
++00000340: 0c01 7210 0000 0063 0000 0000 0000 0000  ..r....c........
++00000350: 0000 0000 0000 0000 0600 0000 4000 0000  ............@...
++00000360: 7326 0000 0065 005a 0164 005a 0264 0165  s&...e.Z.d.Z.d.e
++00000370: 0365 0419 0064 0265 0464 0365 0566 0664  .e...d.e.d.e.f.d
++00000380: 0464 0584 045a 0664 0653 0029 07da 0f4f  .d...Z.d.S.)...O
++00000390: 626a 6563 7444 6574 6563 7469 6f6e 7205  bjectDetectionr.
++000003a0: 0000 00da 0a6c 6173 745f 6c61 7965 72da  .....last_layer.
++000003b0: 126d 696e 696d 756d 5f63 6f6e 6669 6465  .minimum_confide
++000003c0: 6e63 6563 0400 0000 0000 0000 0000 0000  ncec............
++000003d0: 0500 0000 0300 0000 4b00 0000 7324 0000  ........K...s$..
++000003e0: 0064 017c 0064 023c 007c 017c 0064 033c  .d.|.d.<.|.|.d.<
++000003f0: 007c 027c 0064 043c 007c 037c 0064 053c  .|.|.d.<.|.|.d.<
++00000400: 0064 0053 0029 064e 7a10 6f62 6a65 6374  .d.S.).Nz.object
++00000410: 2d64 6574 6563 7469 6f6e 7207 0000 0072  -detectionr....r
++00000420: 0500 0000 da09 6c61 7374 4c61 7965 72da  ......lastLayer.
++00000430: 116d 696e 696d 756d 436f 6e66 6964 656e  .minimumConfiden
++00000440: 6365 7208 0000 0029 0572 0900 0000 7205  cer....).r....r.
++00000450: 0000 0072 1300 0000 7214 0000 00da 066b  ...r....r......k
++00000460: 7761 7267 7372 0800 0000 7208 0000 0072  wargsr....r....r
++00000470: 0a00 0000 720b 0000 0010 0000 0073 0800  ....r........s..
++00000480: 0000 0803 0801 0801 0c01 7a18 4f62 6a65  ..........z.Obje
++00000490: 6374 4465 7465 6374 696f 6e2e 5f5f 696e  ctDetection.__in
++000004a0: 6974 5f5f 4e29 0772 0c00 0000 720d 0000  it__N).r....r...
++000004b0: 0072 0e00 0000 7203 0000 0072 0f00 0000  .r....r....r....
++000004c0: da05 666c 6f61 7472 0b00 0000 7208 0000  ..floatr....r...
++000004d0: 0072 0800 0000 7208 0000 0072 0a00 0000  .r....r....r....
++000004e0: 7212 0000 000f 0000 0073 1000 0000 0800  r........s......
++000004f0: 0201 0601 02ff 0201 02ff 0201 0eff 7212  ..............r.
++00000500: 0000 004e 2907 da06 7479 7069 6e67 7202  ...N)...typingr.
++00000510: 0000 0072 0300 0000 da04 6469 6374 7204  ...r......dictr.
++00000520: 0000 0072 1000 0000 7212 0000 0072 0800  ...r....r....r..
++00000530: 0000 7208 0000 0072 0800 0000 720a 0000  ..r....r....r...
++00000540: 00da 083c 6d6f 6475 6c65 3e01 0000 0073  ...<module>....s
++00000550: 0800 0000 1000 1003 1006 1405            ............
+```
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/model/model_info.py` & `edgeimpulse-1.0.2/edgeimpulse/model/model_info.py`
+
+ * *Files identical despite different names*
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/model/output_type.py` & `edgeimpulse-1.0.2/edgeimpulse/model/output_type.py`
+
+ * *Files identical despite different names*
+
+### Comparing `edgeimpulse-1.0.1/edgeimpulse/util.py` & `edgeimpulse-1.0.2/edgeimpulse/util.py`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -66,15 +66,15 @@
+         logging.error(msg)
+         raise InvalidAuthTypeException(msg)
+ 
+     client = ApiClient(config)
+     # So we know which calls come from the SDK vs the client
+     client.user_agent += f" edgeimpulse-sdk/{ei.__version__}"
+ 
+-    return ApiClient(config)
++    return client
+ 
+ 
+ def poll(
+     jobs_client: JobsApi,
+     project_id: int,
+     job_id: int,
+     timeout_sec: Optional[int] = None,
+@@ -99,15 +99,15 @@
+ 
+     while True:
+         try:
+             job_response = jobs_client.get_job_status(project_id, job_id)
+             check_response_errors(job_response)
+             logging.info(f"Waiting for job {job_id} to finish...")
+             if job_response.job.finished:
+-                logging.info(f"{job_response = }")
++                logging.info(f"job_response = {job_response}")
+                 logs = jobs_client.get_jobs_logs(project_id, job_id)
+                 # TODO: parse logs so each stdout entry appears on new line
+                 logging.debug(
+                     f"Logs for project: {project_id} " f"Job: {job_id}\n {logs}"
+                 )
+                 return job_response
+             time.sleep(1)
+@@ -449,15 +449,15 @@
+ ):
+     # Determine the type of model we have and make sure it is present on disk
+     model_file_type, model_path = inspect_model(model, tempdir)
+ 
+     # Determine the type of representative features we have and make sure they are
+     # present on disk
+     representative_features_path = inspect_representative_data(representative_data)
+-    if representative_data and not representative_features_path:
++    if representative_data is not None and not representative_features_path:
+         representative_features_path = save_representative_data(
+             representative_data, tempdir
+         )
+ 
+     learn = LearnApi(client)
+     jobs = JobsApi(client)
+```
+
+### Comparing `edgeimpulse-1.0.1/pyproject.toml` & `edgeimpulse-1.0.2/pyproject.toml`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -1,24 +1,24 @@
+ [tool.poetry]
+ name = "edgeimpulse"
+-version = "1.0.1"
++version = "1.0.2"
+ description = "Python SDK for Edge Impulse."
+ authors = ["EdgeImpulse Inc. <hello@edgeimpulse.com>"]
+ license = "Apache-2.0"
+ readme = "README.md"
+ homepage = "https://edgeimpulse.com"
+ documentation = "https://docs.edgeimpulse.com/docs/edge-impulse-python-sdk/overview"
+ classifiers = [
+     "Topic :: Scientific/Engineering :: Artificial Intelligence",
+     "Topic :: Software Development :: Embedded Systems"
+ ]
+ 
+ [tool.poetry.dependencies]
+ python = "^3.7"
+-edgeimpulse-api = "1.22.0"
++edgeimpulse-api = "1.22.1"
+ 
+ [tool.poetry.dev-dependencies]
+ sphinx = "5.3.0"
+ sphinx-markdown-builder = "0.5.5"
+ 
+ [build-system]
+ requires = ["poetry-core>=1.0.0"]
+```
+
+### Comparing `edgeimpulse-1.0.1/PKG-INFO` & `edgeimpulse-1.0.2/PKG-INFO`
+
+ * *Files 4% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: edgeimpulse
+-Version: 1.0.1
++Version: 1.0.2
+ Summary: Python SDK for Edge Impulse.
+ Home-page: https://edgeimpulse.com
+ License: Apache-2.0
+ Author: EdgeImpulse Inc.
+ Author-email: hello@edgeimpulse.com
+ Requires-Python: >=3.7,<4.0
+ Classifier: License :: OSI Approved :: Apache Software License
+@@ -12,15 +12,15 @@
+ Classifier: Programming Language :: Python :: 3.7
+ Classifier: Programming Language :: Python :: 3.8
+ Classifier: Programming Language :: Python :: 3.9
+ Classifier: Programming Language :: Python :: 3.10
+ Classifier: Programming Language :: Python :: 3.11
+ Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+ Classifier: Topic :: Software Development :: Embedded Systems
+-Requires-Dist: edgeimpulse-api (==1.22.0)
++Requires-Dist: edgeimpulse-api (==1.22.1)
+ Project-URL: Documentation, https://docs.edgeimpulse.com/docs/edge-impulse-python-sdk/overview
+ Description-Content-Type: text/markdown
+ 
+ <p align="center">
+     <a href="https://www.edgeimpulse.com/"><img src="https://events.edgeimpulse.com/hs-fs/hubfs/Edge%20Impulse%20Full%20Logo_RGB.png?width=1817&name=Edge%20Impulse%20Full%20Logo_RGB.png?raw=true" alt="Edge Impulse logo"/></a>
+ </p>
+```
+
+#### html2text {}
+
+```diff
+@@ -1,18 +1,18 @@
+-Metadata-Version: 2.1 Name: edgeimpulse Version: 1.0.1 Summary: Python SDK for
++Metadata-Version: 2.1 Name: edgeimpulse Version: 1.0.2 Summary: Python SDK for
+ Edge Impulse. Home-page: https://edgeimpulse.com License: Apache-2.0 Author:
+ EdgeImpulse Inc. Author-email: hello@edgeimpulse.com Requires-Python:
+ >=3.7,<4.0 Classifier: License :: OSI Approved :: Apache Software License
+ Classifier: Programming Language :: Python :: 3 Classifier: Programming
+ Language :: Python :: 3.7 Classifier: Programming Language :: Python :: 3.8
+ Classifier: Programming Language :: Python :: 3.9 Classifier: Programming
+ Language :: Python :: 3.10 Classifier: Programming Language :: Python :: 3.11
+ Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+ Classifier: Topic :: Software Development :: Embedded Systems Requires-Dist:
+-edgeimpulse-api (==1.22.0) Project-URL: Documentation, https://
++edgeimpulse-api (==1.22.1) Project-URL: Documentation, https://
+ docs.edgeimpulse.com/docs/edge-impulse-python-sdk/overview Description-Content-
+ Type: text/markdown
+                               [Edge_Impulse_logo]
+ # Edge Impulse SDK The official Python SDK for Edge Impulse is designed to help
+ machine learning practitioners build and deploy models for embedded hardware
+ and edge AI applications. * Profile your model to estimate RAM, ROM, and
+ inference speed * Convert your model to C++ to deploy on edge hardware *
+```
+
