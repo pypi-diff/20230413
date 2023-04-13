@@ -6486,3 +6486,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:48:40] INFO root fetch - main [MainThread]: End processing [sagemaker]: success
 [2023-04-13 04:48:40] INFO root fetch - main [MainThread]: End processing [xj-user]: success
 [2023-04-13 04:48:40] INFO root fetch - main [MainThread]: Store serial: [17686174]
+[2023-04-13 04:53:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686174]
+[2023-04-13 04:53:48] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-13 04:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-ecosystem-services
+[2023-04-13 04:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydtk
+[2023-04-13 04:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vellumdev
+[2023-04-13 04:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hagis
+[2023-04-13 04:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: minitrade
+[2023-04-13 04:53:48] WARNING root fetch - processPackages [hagis]: Skipping, unable to determine old version
+[2023-04-13 04:53:48] INFO root fetch - processPackages [hagis]: Start processing: duckdb
+[2023-04-13 04:53:48] INFO root fetch - main [MainThread]: End processing [hagis] error
+[2023-04-13 04:53:48] INFO root fetch - processPackages [minitrade]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-13 04:53:48] INFO root fetch - processPackages [data-ecosystem-services]: New version: [202304.0.9] Old Version: [202304.0.8]
+[2023-04-13 04:53:48] INFO root fetch - processPackages [vellumdev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 04:53:48] INFO root fetch - processPackages [pydtk]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-13 04:53:49] INFO root fetch - processPackages [duckdb]: New version: [0.7.2.dev1734] Old Version: [0.7.2.dev1684]
+[2023-04-13 04:53:49] INFO root fetch - processPackages [minitrade]: Downloading https://files.pythonhosted.org/packages/5f/b2/f641ba28684c7fa8b23f530366cc52dff178045351134c33142d49317684/minitrade-0.1.8.tar.gz
+[2023-04-13 04:53:49] INFO root fetch - processPackages [pydtk]: Downloading https://files.pythonhosted.org/packages/de/44/e4b8617d088b064e35b9cac64055a3d2acdf325b6624a89f09e8aadd71ee/pydtk-0.2.7.tar.gz
+[2023-04-13 04:53:49] INFO root fetch - processPackages [vellumdev]: Downloading https://files.pythonhosted.org/packages/de/51/bb0f7b3f604488a13382196efbd85af7b174fbffb00a5cece13e28d92387/vellumdev-0.0.9-py3-none-any.whl
+[2023-04-13 04:53:49] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/d3/f3/51b44380391145ee567160d3f9d3fd2158c09f0e457f8b5a884654632bbe/duckdb-0.7.2.dev1684.tar.gz
+[2023-04-13 04:53:49] INFO root fetch - processPackages [data-ecosystem-services]: executing diffoscope
+[2023-04-13 04:53:49] INFO root fetch - processPackages [data-ecosystem-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_ecosystem_services-202304.0.8.tar.gz tmp/data_ecosystem_services-202304.0.9.tar.gz --markdown 20230413/d/data-ecosystem-services/202304.0.8-202304.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:53:49] INFO root fetch - processPackages [vellumdev]: executing diffoscope
+[2023-04-13 04:53:49] INFO root fetch - processPackages [vellumdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vellumdev-0.0.8.tar.gz tmp/vellumdev-0.0.9-py3-none-any.whl.zip --markdown 20230413/v/vellumdev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:53:49] INFO root fetch - processPackages [pydtk]: Downloading https://files.pythonhosted.org/packages/90/99/3f17267af6d0352076f90a51c651ed7a2c03351d6681b6093427f1db8ae3/pydtk-0.2.9.tar.gz
+[2023-04-13 04:53:49] INFO root fetch - processPackages [minitrade]: Downloading https://files.pythonhosted.org/packages/8f/eb/d50633b35cb7154918ad47a8651b5cce6dbf62eaf0e1eabd97085addeae1/minitrade-0.1.9.tar.gz
+[2023-04-13 04:53:49] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/30/02/e11337834d0083814960c96eebb539d4b49738d537e55f74e1582017083f/duckdb-0.7.2.dev1734-cp36-cp36m-macosx_10_9_x86_64.whl
+[2023-04-13 04:53:49] INFO root fetch - processPackages [minitrade]: executing diffoscope
+[2023-04-13 04:53:49] INFO root fetch - processPackages [minitrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minitrade-0.1.8.tar.gz tmp/minitrade-0.1.9.tar.gz --markdown 20230413/m/minitrade/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-13 04:53:49] INFO root fetch - processPackages [pydtk]: executing diffoscope
+[2023-04-13 04:53:49] INFO root fetch - processPackages [pydtk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydtk-0.2.7.tar.gz tmp/pydtk-0.2.9.tar.gz --markdown 20230413/p/pydtk/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-13 04:53:49] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 14197942>=10485760
+[2023-04-13 04:53:49] INFO root fetch - processPackages [duckdb]: Start processing: numba-aot-compiler
+[2023-04-13 04:53:49] INFO root fetch - main [MainThread]: End processing [duckdb] error
+[2023-04-13 04:53:49] INFO root fetch - processPackages [numba-aot-compiler]: New version: [0.14] Old Version: [0.13]
+[2023-04-13 04:53:50] INFO root fetch - processPackages [numba-aot-compiler]: Downloading https://files.pythonhosted.org/packages/47/5f/6396d0f05c209a0fa569832f7fd25b3843b9f0fd9cdfd3fd82bbed5f18b6/numba_aot_compiler-0.14.tar.gz
+[2023-04-13 04:53:50] INFO root fetch - processPackages [numba-aot-compiler]: executing diffoscope
+[2023-04-13 04:53:50] INFO root fetch - processPackages [numba-aot-compiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numba_aot_compiler-0.13.tar.gz tmp/numba_aot_compiler-0.14.tar.gz --markdown 20230413/n/numba-aot-compiler/0.13-0.14/diff.md --exclude *.pyd
+[2023-04-13 04:53:50] INFO root fetch - processPackages [vellumdev]: Start processing: IOTELLME
+[2023-04-13 04:53:50] INFO root fetch - main [MainThread]: End processing [vellumdev]: success
+[2023-04-13 04:53:50] ERROR root fetch - processPackages [IOTELLME]: Unable to get metadata: No such project 'IOTELLME'
+[2023-04-13 04:53:50] INFO root fetch - processPackages [IOTELLME]: Start processing: pcl-pangu
+[2023-04-13 04:53:50] INFO root fetch - main [MainThread]: End processing [IOTELLME] error
+[2023-04-13 04:53:50] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-13 04:53:50] INFO root fetch - main [MainThread]: End processing [data-ecosystem-services]: success
+[2023-04-13 04:53:50] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-13 04:53:50] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230413/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-13 04:53:51] INFO root fetch - main [MainThread]: End processing [minitrade]: success
+[2023-04-13 04:53:51] INFO root fetch - main [MainThread]: End processing [numba-aot-compiler]: success
+[2023-04-13 04:53:53] INFO root fetch - main [MainThread]: End processing [pydtk]: success
+[2023-04-13 04:53:53] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
+[2023-04-13 04:53:53] INFO root fetch - main [MainThread]: Store serial: [17686209]
