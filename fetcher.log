@@ -5959,3 +5959,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 04:00:43] INFO root fetch - main [MainThread]: End processing [je-web-runner]: success
 [2023-04-13 04:00:43] INFO root fetch - main [MainThread]: End processing [smartnoise-sql]: success
 [2023-04-13 04:00:43] INFO root fetch - main [MainThread]: Store serial: [17685837]
+[2023-04-13 04:05:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17685837]
+[2023-04-13 04:05:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-13 04:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HTTP-PyServer
+[2023-04-13 04:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxrie
+[2023-04-13 04:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: isolate-proto
+[2023-04-13 04:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mia-accounting
+[2023-04-13 04:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: happydomain
+[2023-04-13 04:05:51] INFO root fetch - processPackages [HTTP-PyServer]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-13 04:05:51] INFO root fetch - processPackages [isolate-proto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 04:05:51] INFO root fetch - processPackages [jaxrie]: New version: [6] Old Version: [5]
+[2023-04-13 04:05:51] INFO root fetch - processPackages [mia-accounting]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-04-13 04:05:51] INFO root fetch - processPackages [happydomain]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 04:05:51] INFO root fetch - processPackages [isolate-proto]: Downloading https://files.pythonhosted.org/packages/fa/8a/f2719791cdda1843c75d559893bcfbee60dc9548d47a6c7ebbc5ca17efe1/isolate_proto-0.0.8.tar.gz
+[2023-04-13 04:05:51] INFO root fetch - processPackages [mia-accounting]: Downloading https://files.pythonhosted.org/packages/84/9b/f0fd63c3d74a97b960fc9d13e04c96dd6daa622319c3dceaa19004c834eb/mia-accounting-1.3.3.tar.gz
+[2023-04-13 04:05:51] INFO root fetch - processPackages [jaxrie]: Downloading https://files.pythonhosted.org/packages/18/d7/facb304de57903d63857b72774107b335b15886854c2988a64b900e130f6/jaxrie-6.tar.gz
+[2023-04-13 04:05:51] INFO root fetch - processPackages [happydomain]: Downloading https://files.pythonhosted.org/packages/4e/6b/b1761edc01506cc23686909087f59ec50f2fa6853d719cb138d791b5bda0/happydomain-0.0.3.tar.gz
+[2023-04-13 04:05:51] INFO root fetch - processPackages [HTTP-PyServer]: Downloading https://files.pythonhosted.org/packages/a3/d5/fad04bb5bf848f434c922e8111ecb95f0801c9ada61a548d35742cec04b1/HTTP_PyServer-0.0.1-py3-none-any.whl
+[2023-04-13 04:05:51] INFO root fetch - processPackages [jaxrie]: executing diffoscope
+[2023-04-13 04:05:51] INFO root fetch - processPackages [jaxrie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxrie-5.tar.gz tmp/jaxrie-6.tar.gz --markdown 20230413/j/jaxrie/5-6/diff.md --exclude *.pyd
+[2023-04-13 04:05:51] INFO root fetch - processPackages [happydomain]: executing diffoscope
+[2023-04-13 04:05:51] INFO root fetch - processPackages [happydomain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/happydomain-0.0.2.tar.gz tmp/happydomain-0.0.3.tar.gz --markdown 20230413/h/happydomain/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 04:05:51] INFO root fetch - processPackages [mia-accounting]: executing diffoscope
+[2023-04-13 04:05:51] INFO root fetch - processPackages [mia-accounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mia-accounting-1.3.2.tar.gz tmp/mia-accounting-1.3.3.tar.gz --markdown 20230413/m/mia-accounting/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-04-13 04:05:51] INFO root fetch - processPackages [isolate-proto]: Downloading https://files.pythonhosted.org/packages/b8/c1/616d33b533bec635af64d61f363188d18ee72950aa1fc3bf02c5073168cf/isolate_proto-0.0.9.tar.gz
+[2023-04-13 04:05:52] INFO root fetch - processPackages [isolate-proto]: executing diffoscope
+[2023-04-13 04:05:52] INFO root fetch - processPackages [isolate-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isolate_proto-0.0.8.tar.gz tmp/isolate_proto-0.0.9.tar.gz --markdown 20230413/i/isolate-proto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 04:05:52] INFO root fetch - processPackages [HTTP-PyServer]: Downloading https://files.pythonhosted.org/packages/a6/cd/81e0efa747d49eea77075afd1e58c55a1c822467ad5510c346b0af99aa1c/HTTP_PyServer-0.0.2-py3-none-any.whl
+[2023-04-13 04:05:52] INFO root fetch - processPackages [HTTP-PyServer]: executing diffoscope
+[2023-04-13 04:05:52] INFO root fetch - processPackages [HTTP-PyServer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HTTP_PyServer-0.0.1-py3-none-any.whl.zip tmp/HTTP_PyServer-0.0.2-py3-none-any.whl.zip --markdown 20230413/H/HTTP-PyServer/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-13 04:05:52] INFO root fetch - processPackages [jaxrie]: Start processing: ob-metaflow-extensions
+[2023-04-13 04:05:52] INFO root fetch - main [MainThread]: End processing [jaxrie]: success
+[2023-04-13 04:05:52] INFO root fetch - processPackages [ob-metaflow-extensions]: New version: [1.1.9rc1] Old Version: [1.1.9rc0]
+[2023-04-13 04:05:53] INFO root fetch - main [MainThread]: End processing [happydomain]: success
+[2023-04-13 04:05:53] INFO root fetch - processPackages [ob-metaflow-extensions]: Downloading https://files.pythonhosted.org/packages/f6/24/4fdd704647ebdded38ac1efc2b8dba106c9ab672518ddbb9b1dd783862e9/ob-metaflow-extensions-1.1.9rc0.tar.gz
+[2023-04-13 04:05:53] INFO root fetch - main [MainThread]: End processing [isolate-proto]: success
+[2023-04-13 04:05:53] INFO root fetch - main [MainThread]: End processing [HTTP-PyServer]: success
+[2023-04-13 04:05:53] INFO root fetch - processPackages [ob-metaflow-extensions]: Downloading https://files.pythonhosted.org/packages/13/fa/f6774ac8df2d55f441049045a0ed08e5ff1eef840d3cc15235e8a9411f42/ob-metaflow-extensions-1.1.9rc1.tar.gz
+[2023-04-13 04:05:54] INFO root fetch - processPackages [ob-metaflow-extensions]: executing diffoscope
+[2023-04-13 04:05:54] INFO root fetch - processPackages [ob-metaflow-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ob-metaflow-extensions-1.1.9rc0.tar.gz tmp/ob-metaflow-extensions-1.1.9rc1.tar.gz --markdown 20230413/o/ob-metaflow-extensions/1.1.9rc0-1.1.9rc1/diff.md --exclude *.pyd
+[2023-04-13 04:05:55] INFO root fetch - main [MainThread]: End processing [ob-metaflow-extensions]: success
+[2023-04-13 04:05:55] INFO root fetch - main [MainThread]: End processing [mia-accounting]: success
+[2023-04-13 04:05:55] INFO root fetch - main [MainThread]: Store serial: [17685855]
