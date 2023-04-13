@@ -7122,3 +7122,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-13 05:45:56] INFO root fetch - main [MainThread]: End processing [pcl-pangu]: success
 [2023-04-13 05:45:58] INFO root fetch - main [MainThread]: End processing [odoo-addon-contract]: success
 [2023-04-13 05:45:58] INFO root fetch - main [MainThread]: Store serial: [17686576]
+[2023-04-13 05:51:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17686576]
+[2023-04-13 05:51:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-13 05:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: je-load-density-dev
+[2023-04-13 05:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyDesmos
+[2023-04-13 05:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scikit-build
+[2023-04-13 05:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py3dchart
+[2023-04-13 05:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clt-requirements
+[2023-04-13 05:51:05] INFO root fetch - processPackages [PyDesmos]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-13 05:51:05] INFO root fetch - processPackages [scikit-build]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-13 05:51:05] INFO root fetch - processPackages [clt-requirements]: New version: [0.8] Old Version: [0.7]
+[2023-04-13 05:51:05] INFO root fetch - processPackages [je-load-density-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-13 05:51:05] INFO root fetch - processPackages [py3dchart]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-13 05:51:05] INFO root fetch - processPackages [je-load-density-dev]: executing diffoscope
+[2023-04-13 05:51:05] INFO root fetch - processPackages [je-load-density-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_load_density_dev-0.0.8.tar.gz tmp/je_load_density_dev-0.0.9.tar.gz --markdown 20230413/j/je-load-density-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-13 05:51:05] INFO root fetch - processPackages [PyDesmos]: Downloading https://files.pythonhosted.org/packages/de/32/7397a0587f5e73207d7db6ce4433437fc8ed4bf935d6ec572a96bb05a303/PyDesmos-0.0.3.tar.gz
+[2023-04-13 05:51:05] INFO root fetch - processPackages [clt-requirements]: Downloading https://files.pythonhosted.org/packages/9d/a4/0d9b5e34556f29bf53321fe6112ad81f10210e6892cf5ce27df2f44eb023/clt_requirements-0.7.tar.gz
+[2023-04-13 05:51:05] INFO root fetch - processPackages [py3dchart]: Downloading https://files.pythonhosted.org/packages/d3/59/0f5e167104959162db0a392d6470f3ea2bddb329c0a686f855a642c4c37b/py3dchart-0.1.2.tar.gz
+[2023-04-13 05:51:05] INFO root fetch - processPackages [py3dchart]: executing diffoscope
+[2023-04-13 05:51:05] INFO root fetch - processPackages [py3dchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3dchart-0.1.1.tar.gz tmp/py3dchart-0.1.2.tar.gz --markdown 20230413/p/py3dchart/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-13 05:51:05] INFO root fetch - processPackages [PyDesmos]: executing diffoscope
+[2023-04-13 05:51:05] INFO root fetch - processPackages [PyDesmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDesmos-0.0.2.tar.gz tmp/PyDesmos-0.0.3.tar.gz --markdown 20230413/P/PyDesmos/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-13 05:51:05] INFO root fetch - processPackages [scikit-build]: executing diffoscope
+[2023-04-13 05:51:05] INFO root fetch - processPackages [scikit-build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-build-0.8.1.tar.gz tmp/scikit-build-0.9.0.tar.gz --markdown 20230413/s/scikit-build/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 05:51:06] INFO root fetch - processPackages [clt-requirements]: Downloading https://files.pythonhosted.org/packages/2c/06/80c46560d6898274dd2b4eb6edd8e08256391388794ca588c18e7fb91343/clt_requirements-0.8.tar.gz
+[2023-04-13 05:51:06] INFO root fetch - processPackages [clt-requirements]: executing diffoscope
+[2023-04-13 05:51:06] INFO root fetch - processPackages [clt-requirements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clt_requirements-0.7.tar.gz tmp/clt_requirements-0.8.tar.gz --markdown 20230413/c/clt-requirements/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-13 05:51:06] INFO root fetch - processPackages [je-load-density-dev]: Start processing: jupyter-scatter
+[2023-04-13 05:51:06] INFO root fetch - main [MainThread]: End processing [je-load-density-dev]: success
+[2023-04-13 05:51:06] INFO root fetch - processPackages [jupyter-scatter]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-13 05:51:06] INFO root fetch - processPackages [py3dchart]: Start processing: fastapi-casdoor
+[2023-04-13 05:51:06] INFO root fetch - main [MainThread]: End processing [py3dchart]: success
+[2023-04-13 05:51:06] INFO root fetch - processPackages [fastapi-casdoor]: New version: [0.1.3] Old Version: [0.1.1]
+[2023-04-13 05:51:06] INFO root fetch - main [MainThread]: End processing [PyDesmos]: success
+[2023-04-13 05:51:07] INFO root fetch - processPackages [jupyter-scatter]: Downloading https://files.pythonhosted.org/packages/52/d5/fdc26b2c812cb9385e85072bac02324d0ca1640b477dc79843e799450fac/jupyter-scatter-0.8.0.tar.gz
+[2023-04-13 05:51:07] INFO root fetch - main [MainThread]: End processing [clt-requirements]: success
+[2023-04-13 05:51:07] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/cc/95/593509c20f03e51a13786435177ca30daac53575f5b07ea9f7849c6b5c38/fastapi_casdoor-0.1.3-py3.8.egg
+[2023-04-13 05:51:07] INFO root fetch - processPackages [fastapi-casdoor]: executing diffoscope
+[2023-04-13 05:51:07] INFO root fetch - processPackages [fastapi-casdoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_casdoor-0.1.1-py3.8.egg tmp/fastapi_casdoor-0.1.3-py3.8.egg --markdown 20230413/f/fastapi-casdoor/0.1.1-0.1.3/diff.md --exclude *.pyd
+[2023-04-13 05:51:07] INFO root fetch - processPackages [jupyter-scatter]: Downloading https://files.pythonhosted.org/packages/cd/a3/bab2feeb3c3ea460132cda34d75a2f6aac2e8c38ab82342eeae49bea3540/jupyter-scatter-0.9.0.tar.gz
+[2023-04-13 05:51:08] INFO root fetch - main [MainThread]: End processing [scikit-build]: success
+[2023-04-13 05:51:08] INFO root fetch - main [MainThread]: End processing [fastapi-casdoor]: success
+[2023-04-13 05:51:08] INFO root fetch - processPackages [jupyter-scatter]: executing diffoscope
+[2023-04-13 05:51:08] INFO root fetch - processPackages [jupyter-scatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230413:/home/abi/fetcher/20230413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter-scatter-0.8.0.tar.gz tmp/jupyter-scatter-0.9.0.tar.gz --markdown 20230413/j/jupyter-scatter/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-13 05:51:23] INFO root fetch - main [MainThread]: End processing [jupyter-scatter]: success
+[2023-04-13 05:51:23] INFO root fetch - main [MainThread]: Store serial: [17686604]
